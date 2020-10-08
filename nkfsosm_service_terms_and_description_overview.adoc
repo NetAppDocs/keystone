@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_service_terms_and_description_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:47.941062
+//
+
+* KFS is available for a minimum of one year and up to three years. After the initial term, the service is renewable on an annual basis.  Capacity can be increased in increments as small as 1TiB.
+* The minimum capacity is 100TiB per site, and each site can have one or more clusters to meet the minimum capacity requirement.
+* The 100TiB capacity can be one single performance level or a combination of levels.
+* 20% of burst capacity is available at each site;  any burst usage is billed only for that billing period.
+* Committed capacity or performance levels cannot be altered during a contract term.
+* Increasing capacity or changing to higher performance level during term is allowed; however,  moving from a higher performance level to a lower level is not permitted.
+* Any change request in the last 90 days of the term requires the customer to renew the service for a minimum of one year.
+
+[NOTE]
+For any additional burst requirements > 20%, please work with your Keystone Success Manager (KSM).
+
+

@@ -1,0 +1,242 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_support_processes.html
+keywords:
+summary:
+---
+
+= Support Processes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.982912
+//
+
+[.lead]
+GSSC is the primary delivery mechanism for the support services to the Keystone customers. GSSC is the single point of contact for all equipment support under Keystone. GSSC is available 24/7, 365 days a year.
+
+=== Opening a Case with Keystone Support
+
+For urgent issues, NetApp recommends that you call Keystone support instead of using the web portal for email. Table 21 lists the Keystone support contact information.
+
+|===
+|Contacting Keystone Support |Escalation Guidelines
+
+|Keystone services are automated and designed in a way that the customers rarely have to call in. The customers can still reach out to the operations team by email or by calling the Keystone Services line.
+NetApp Service Engine Portal:
+Raise a ticket directly from the portal describing the details of the issue or require any clarification on an issue.
+Email:
+ is available 24x7 to resolve customer Incidents, ad-hoc customer questions, challenges, and issues related to a Keystone product or service.
+Phone:
+NetApp Keystone support team are here to help, around the clock, every day. You can reach us via the numbers listed for NetApp Global Service Contacts :
+https://www.netapp.com/us/contact-us/support.aspx
+Follow these IVR Options to reach Keystone operations group.
+Press 2
+Press 2
+Press 5
+Type support authorization number 7003#
+Preparing for a Call:
+The case resolution time can be significantly shortened if you have the following information available when you call the Keystone operations:
+* Customer name and subscription ID*. Customer Subscription ID of Keystone environment.
+* Contact info. Keystone Customer Name and Your contact information, in case the call gets dropped.
+* Description. Problem description.
+* Impact. Business Impact and Service Level Status.
+* Actions. Actions taken so far.
+* Changes. Changes on storage controller, hosts, clients or network that could have triggered the issue.
+* Error messages. Error messages on hosts/clients, switches and NetApp filer (if any).
+*Subscription ID can be found in NSE portal. This is optional.
+|If you have an open case/ticket that needs to be escalated, please email  or call into the Keystone Support team and ask to speak to the tech lead or a KSDM. The NetApp Keystone tech lead or KSDM will take responsibility for problem resolution oversight and provide progress updates on a timely basis.
+NetApp uses every reasonable method available, aligned with the most appropriate skilled resources, to expedite a resolution or stable workaround. Certain external factors may not be under the direct control of the NetApp Support Services personnel engaged. The following factors may limit the ability to establish a resolution or effective workaround:
+The availability and/or knowledge of systems and technical resources at the customer site to adequately diagnose and troubleshoot the problem
+Full, accurate communication of critical technical details by the customer to the Keystone support team.
+Willingness of the customer's technical contact to fully engage and cooperate with NetApp technical personnel in obtaining essential debugging data as requested.
+Remote Gateway:
+NetApp uses OpsRamp, a cloud-based remote gateway solution to proactively monitor and connect to the Keystone environment for troubleshooting purposes. For information on OpsRamp, see
+
+A Message from the NetApp Keystone Support Team:
+Thank you for trusting NetApp for your data services and hybrid cloud needs. You have joined a group of leading global companies that run their businesses on NetApp technology. A very important reason for this trust is our commitment to your success. We look forward to a very successful relationship together.
+Visit  for more information about Keystone.
+
+|===
+
+Reactive incident management occurs when a customer experiences an unexpected disruption in the operations of the service and contacts NetApp to resolve. Proactive incident occurs when an alarm is raised on the service indicating an issue
+
+NetApp Support reacts and responds to both type of incidents. Keystone Operational Services and Support follow the incident- creation process and create the tickets (Figure 21)
+
+image:nkfsosm_image22.png[Error: Missing Graphic Image]
+
+The service desk determines the severity of any reported incident based on the customer’s impact assessment using the urgency and impact definitions listed in Table 22.
+
+|===
+|Urgency
+
+|Critical
+|High
+|Medium
+|Low
+|Critical keystone business function impacted.
+|Important keystone business function is impacted.
+|Keystone administration activities impacted.
+|Keystone business function continues.
+|Impact
+|Critical
+|High
+|Medium
+|Low
+|All keystone customer users are affected.
+|Keystone business unit or department users are affected.
+|All team users are affected.
+|Only an individual is affected.
+|===
+
+After receiving advice on the severity and impact of the incident, NetApp allocates a severity level in accordance with the definitions shown in Table 23.
+
+|===
+|Severity |Impact
+
+|
+|Critical
+|High
+|Medium
+|Low
+|Urgency
+|Critical
+|P1
+|P 2
+|P 2
+|P 3
+|
+|High
+|P 1
+|P 2
+|P 3
+|P 4
+|
+|Medium
+|n/a
+|P 3
+|P 4
+|P 4
+|
+|Low
+|n/a
+|P 4
+|P 4
+|P 4
+|===
+
+=== Time to Notify/Response Times
+
+With regard to the reporting of incidents, response time means the severity of the time calculated from the time the requester provides all mandatory details until the time the requester is provided with an incident ticket number. Table 24 lists the time to notify (TTN) metrics.
+
+Restoration/restored in relation to a service means the return to correct operability and can be achieved by temporary measures. Table 25 lists the times to restore service.
+
+|===
+| |Metric |Time to Notify |Service Level Objectives
+
+|NetApp notification obligation time
+|TTN for P1 incidents
+|15 minutes from ticket assignment to NetApp Keystone
+|98% of all P1 incidents
+|
+|TTN for P2 incidents
+|30 minutes from ticket assignment to NetApp Keystone
+|98% of all P2 incidents
+|
+|TTN for P3 incidents
+|45 Minutes from Ticket assignment to NetApp Keystone
+|95% of all P3 incidents
+|
+|TTN for P4 incidents
+|120 minutes from ticket assignment to NetApp Keystone
+|80% of all P4 incidents
+|Service requests
+|TTN for service requests
+|8 business hours rom ticket assignment to NetApp GSSC
+|95% of all service requests
+|===
+
+|===
+| |Metric |Restoration of Service Time |Objectives
+
+|Incident management
+|TTN for P1 incidents
+|4 hours from ticket assignment to NetApp GSSC
+|95% of all P1 incidents
+|
+|TTN for P2 incidents
+|8 hours from ticket assignment to NetApp GSSC
+|90% of all P2 incidents
+|
+|TTN for P3 incidents
+|24 hours from ticket assignment to NetApp GSSC
+|90% of all P3 incidents
+|
+|TTN for P4 incidents
+|Next business day from ticket assignment to NetApp GSSC
+|80% of all P4 incidents
+|Service requests
+|TTN for service requests 
+|5 business days from ticket assignment to NetApp GSSC
+|95% of all service requests
+|===
+
+Severity level 1 and level 2 NetApp Keystone storage incidents are triaged as major incidents.
+
+In the event of an unplanned outage on NetApp services, NetApp will take the following actions:
+
+* NetApp will manage the major incident with the level of attention deemed appropriate.
+* For major service-impacting events, NetApp will notify the Customer Service Desk and Customer Portfolio manager by phone and email. The notification, and subsequent updates, will be in regard to any service.
+
+=== Escalation Process
+
+If you have an open case/ticket that needs to be escalated, please email mailto:keystone.escalations@netapp.com[keystone.escalations@netapp.com^] or call into the Keystone Support team and ask to speak to the tech lead or a KSDM. The NetApp KSM will coordinate with the tech lead or SDM will take responsibility for a problem resolution oversight and provide progress updates on a timely basis.
+
+If a management escalation is required for an ongoing incident, the KSM provides a contact to request escalated support. As a general rule, all resources (or their delegates) are available 24/7 for NetApp Keystone storage escalations. If a resource is not available and does not respond within 15 minutes (severity 1) or 30 minutes (severity 2), the customer should work with the NetApp KSM to help with the required escalations and resolution. The escalation contact information is provided in Table 26.
+
+|===
+|Contact Order |Description |Name |Desk |Mobile |Email
+
+|# 1
+|NetApp Keystone Service Desk lead
+|Vaishnavi
+|+91 80 6110 3789
+|+91 97313 17488
+| 
+|# 2
+|Keystone Success Manager
+|Robert Krause
+|+1 614 766 3676
+|+1 954 275 1389
+|
+|# 3
+|Tech lead
+|Kunal Giridhar
+|–
+|+91 99705 67060
+| 
+|# 4
+|SDM
+|Deepu John
+|+91 80 6110 3038
+|+91 99801 53927
+| 
+|# 5
+|Consultant
+|Rajkumar Ekambaram
+|+91 80 6110 5382
+|+91 96633 67687
+| 
+|# 6
+|Senior manager
+|Shahul Hameed
+|+91 80 6110 3032
+|+91 81056 96006
+| 
+|===

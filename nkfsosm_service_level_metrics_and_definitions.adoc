@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_service_level_metrics_and_definitions.html
+keywords:
+summary:
+---
+
+= Service Level Metrics and Definitions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.016445
+//
+
+[.lead]
+The following terms and definitions are used within the KFS service:
+
+* *GiB, TiB, and PiB.* Measurements of data storage capacity using base of 1024 (1GiB = 10243 bytes, 1TiB = 10244 bytes, and 1PiB = 10245 bytes).
+* *IOPS/TiB. *The protocol operations per second requested by the application divided by the allocated logical size of the volume.
+* *Availability* is measured as a percentage of number of I/O requests successfully responded to by the service, divided by total number of I/O requests made of the service, measured at the service demarcation, in a given month, not including scheduled service downtime or unavailability of required facilities, network or other services to be provided by customer.
+* *Durability* is the percentage of data accessed without loss of fidelity, excluding customer-caused deletion or corruption.
+* *Target IOPS per TiB.* The guaranteed IOPS for all I/O requests made to a volume before the target IOPs per TiB threshold is reached. Performance on the volume is capped at the selected IOPS per TiB.
+
+[NOTE]
+The target IOPS per TiB performance metric is calculated based on the logical consumed capacity in TiB.
+
+* *Latency.* Time to service an I/O request received from a client, measured at the service demarcation (storage controller I/O port):
+** Latency is measured at five-minute intervals for each volume.
+** Over a 24-hour period of five-minute measurements, the highest 10% of latency values are discarded and an average of the remaining results are taken.
+** Latency from the network connection between the storage and the client, or latency introduced by quality of service throttling (as mentioned below) are both excluded from latency calculations.
+** Latency SLA applies to a volume only if the following criteria is met:
+** The average IOPS per volume in an hour is greater than or equal to 100.
+** The percentage of random reads is greater than or equal to 30%; more than 70% write might have higher latency.
+** The average I/O block size is less than or equal to 32KB.
+** The IOPS/TiB delivered is equal to or less than the greater of the SLA IOPS/TiB allocated or the SLO IOPS/TiB stored.
+
+

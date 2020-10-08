@@ -1,0 +1,83 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_capacity_and_performance_management.html
+keywords:
+summary:
+---
+
+= Capacity and Performance Management
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.825131
+//
+
+[.lead]
+On a daily basis,  NetApp GSSC monitors the following events: 
+
+[NOTE]
+The customer is not informed or impacted by these activities, which illustrates how NetApp is ensuring the Keystone service doesn’t cause any disruption to the customer.
+
+* Monitor total capacity used and what is available
+* Monitor metrics to ensures SLAs can be met
+* Detect unexpected operational events
+* Provide proactive break-fix when an operational event is detected on ongoing basis
+** Hardware issues, hard drive errors, network interface errors, power issues, and so on
+
+[NOTE]
+AutoSupport must be enabled on all storage devices
+
+Capacity and performance management procedures are necessary to ensure that NetApp has a plan to proactively monitor and manage the service infrastructure. This facilitates the adequate provisioning of existing infrastructure while providing a view of future usage of the service based on trending characteristics measured by the NetApp team.
+
+Capacity and performance management follows standard ITIL processes,  which ensure that both capacity and performance are:
+
+* Monitored
+* Measured
+* Acted upon
+* Reported onThe Keystone team proactively monitors and manages the capacity usage and performance. This process ensures capacity requirements are met in terms of usable space and performance, while providing a view of future usage based on trending characteristics. In addition to monitoring capacity, the KSM holds capacity planning meetings with the customer and receives forecast information for proactive planning and deployment of additional capacity as required.
+
+Capacity forecasting is based on the jointly-agreed projected capacity forecast plan. The plan and timetable for deployments are necessary in order to determine the delivery schedule for NetApp to deploy hardware into the customer’s data centers. Any changes or unforeseen adjustments to the capacity plan might result in a change to the expected hardware deployment configurations and deployment timeframe.
+
+It is important to establish robust processes internally to communicate the following topics to NetApp:
+
+* *Incremental growth.* Growth projections of existing data covering short and medium to long- term requirements from the internal lines of business.
+* *New growth.* Based on projects, new requirements from the internal lines of business.
+* *Customer growth.* Growth projections from sales for new customers or anticipated growth of existing customers with short and medium to long term requirements.NetApp will continually monitor the capacity being used in the environment at a given time. Should the actual capacity written to the KFS environment exceed the forecasted capacity, NetApp will provide advance notice detailing the remaining capacity available for the given hardware deployment period.
+
+During the proactive analysis, if capacity and performance issues are identified,  and if it is determined that SLAs are unable to be met, additional capacity or controllers will be deployed by NetApp at no additional cost to the customer. The NetApp installation team will coordinate with the customer for data center access to perform the necessary changes.
+
+The following section describes the tasks and responsibilities that relate to the capacity and performance management (Table 17).
+
+|===
+|Tasks |GSSC |Customer
+
+|Review capacity reporting with customer
+|R, A
+|C, I
+|Remediate capacity issues
+|R, A
+|I
+|Gather project pipeline requirements
+|R, A, C, I
+|I
+|Forecast and report capacity demand
+|R, A, C
+|C, I
+|Alert customer of any capacity/performance issues
+|R, A
+|C, I
+|Identify and alert on performance issues
+|R, A, C
+|I
+|Remediate capacity/performance issues
+|R, A
+|I
+|===
+
+

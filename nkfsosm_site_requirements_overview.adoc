@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_site_requirements_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.288839
+//
+
+[.lead]
+Site requirements for KFS differs based on the operational model selected. In general, site requirements consist of the following space, power, cooling, VMs, networking, and internet access. The final specifications for each category are provided when the BoM is finalized, with examples of space, power, and cooling requirements provided in the following subsections.
+
+

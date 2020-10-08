@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_performance.html
+keywords:
+summary:
+---
+
+= Performance
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:47.987174
+//
+
+[.lead]
+KFS offers capacity at predefined performance levels. Each Performance Service Level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
+
+Each volume within Keystone is associated with a performance service level. All I/O operations and all used storage used on the respective volume are factored into the volume’s I/O density calculation.
+
+Figure 5 defines the performance service levels.
+
+I/O density calculations at the volume level are reported to show peak I/O density during the prior week. The peak performance is determined on an hourly time interval. I/O density reports by volume are generated monthly to gauge adherence to the respective service levels.
+
+

@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_service_operations_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.671232
+//
+
+[.lead]
+Keystone service operations help operate and optimize and provision storage, add additional capacity, and health monitoring and alerting. In addition to generic Keystone service operations, NetApp also provides consumption monitoring and billing
+
+

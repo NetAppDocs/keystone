@@ -1,0 +1,64 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_remote_access.html
+keywords:
+summary:
+---
+
+= Remote Access
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.379930
+//
+
+[.lead]
+Keystone connects to external cloud services for billing and remote operations. As discussed in the earlier sections,  all the connections are established outbound (from inside the data center to the cloud services) and over a secured connection. Figure 11 is an overview of the connectivity and the traffic flow between the various deployed components.
+
+image:nkfsosm_image12.png[Error: Missing Graphic Image]
+
+NetApp Global Services and Support Center (GSSC) will have the capability to remotely log in and perform any maintenance process or collect any logs for triaging. This is achieved by using OpsRamp Cloud services.
+
+=== OpsRamp Architecture
+
+OpsRamp is a cloud-based service, which also has a gateway software deployed at the customer site. All the Keystone devices are registered to OpsRamp gateway and the gateway connects to the OpsRamp Cloud services through an outbound internet connectivity over a secured connection.
+
+Keystone infrastructure is configured through the OpsRamp web portal for remote access to the controller’s service processor or switch service port through SSH. OpsRamp gateway also collects the following information from the registered devices (the stats can be viewed on the web portal by NetApp GSSC):
+
+* Performance statistics, CPU, memory utilization, operating system events, and hardware events
+* Events and SNMP traps
+* System level information: make/model, DNS names, operating system configuration, and so onOpsRamp gateway is a virtual appliance that runs on VMWare vSphere with a hardened configuration of CentOS operating system (Figure 12).
+
+image:nkfsosm_image13.png[Error: Missing Graphic Image]
+
+=== OpsRamp Security
+
+OpsRamp security includes the following measures:
+
+* OpsRamp instance runs on Keystone service management network.
+* Single-sign-on (SSO) logins to OpsRamp platform are tightly secured with multifactor authentication and NetApp corporate login practices.
+* All logins and actions on OpsRamp platform are tracked to individual employees using SSO for auditing purposes and compliance.
+* Remote console sessions are automatically recorded and stored for a period of up to 180 days.
+* Role-based accounts for NetApp employees ensure that only authorized employees can access customer- managed environments and only in the capacity that is needed to perform the assigned functions. 
+* All sensitive data is encrypted in OpsRamp. Data such as inventory, alerts,  and tickets are logically partitioned and only available to authorized NetApp users based on their role in the project.
+* Communications between the customer environment, OpsRamp and NetApp are encrypted with 256-bit encryption.
+* All sensitive data in stored in encrypted format in non-web facing database, providing further levels of security and isolation.
+* OpsRamp development organization is ISO 27001 certified and is periodically being audited for security compliance.
+* All metadata collected from the customers IT infrastructure is stored in secured data centers in the continental Unites States.
+* OpsRamp creates an outbound tunnel through HTTPS/443 – no inbound access required. NetApp accesses environment through this tunnel.
+* Communications between the customer environment, OpsRamp,  and NetApp are encrypted with 256-bit encryption.
+* All sensitive data in stored in encrypted format in non-web facing database, providing further levels of security and isolation.
+* A dedicated Keystone Operations team exists to remotely monitor, and optionally manage Keystone deployments
+* OpsRamp development organization is ISO 27001 certified and is periodically being audited for security compliance.
+* All metadata collected from the customers IT infrastructure is stored in secured datacenters in the continental Unites States.
+* OpsRamp creates an outbound tunnel via HTTPS/443 – no inbound access required.
+* OpsRamp is SOC-2 Type 2 validated by NetApp
+* NetApp internal security team scans for vulnerabilities every six months
+
+

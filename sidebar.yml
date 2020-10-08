@@ -1,0 +1,117 @@
+entries:
+  - title: NDAC contents
+    url: /index.html
+  - title: Keystone Flex Operational Services Manual
+    entries:
+      - title: Keystone Overview
+        entries:
+          - title: Overview
+            url: /nkfsosm_keystone_overview_overview.html
+          - title: Keystone Flex Subscription
+            url: /nkfsosm_keystone_flex_subscription.html
+      - title: Service Terms and Description
+        entries:
+          - title: Overview
+            url: /nkfsosm_service_terms_and_description_overview.html
+          - title: Keystone Service Capacity Definitions
+            url: /nkfsosm_keystone_service_capacity_definitions.html
+          - title: Performance
+            url: /nkfsosm_performance.html
+          - title: Terms and Conditions for the Service Tiers
+            url: /nkfsosm_terms_and_conditions_for_the_service_tiers.html
+          - title: Service Level Metrics and Definitions
+            url: /nkfsosm_service_level_metrics_and_definitions.html
+          - title: Data Protection
+            url: /nkfsosm_data_protection.html
+          - title: Tiering
+            url: /nkfsosm_tiering.html
+      - title: Keystone Service Delivery Operational Model
+        entries:
+          - title: Overview
+            url: /nkfsosm_overview.html
+          - title: Detailed Roles and Responsibilities in Various Operational Models
+            url: /nkfsosm_detailed_roles_and_responsibilities_in_various_operational_models.html
+      - title: Keystone Service Delivery Architecture
+        entries:
+          - title: Overview
+            url: /nkfsosm_keystone_service_delivery_architecture_overview.html
+          - title: NetApp Service Engine
+            url: /nkfsosm_netapp_service_engine.html
+          - title: Software for Keystone Flex Subscription Service
+            url: /nkfsosm_software_for_keystone_flex_subscription_service.html
+          - title: Keystone Infrastructure
+            url: /nkfsosm_keystone_infrastructure.html
+          - title: Keystone Architecture
+            url: /nkfsosm_keystone_architecture.html
+      - title: Site Requirements
+        entries:
+          - title: Overview
+            url: /nkfsosm_site_requirements_overview.html
+          - title: Space
+            url: /nkfsosm_space.html
+          - title: Racks
+            url: /nkfsosm_racks.html
+          - title: PDUs
+            url: /nkfsosm_pdus.html
+          - title: Power
+            url: /nkfsosm_power.html
+          - title: Cooling
+            url: /nkfsosm_cooling.html
+          - title: Networking
+            url: /nkfsosm_networking.html
+          - title: Network Requirements
+            url: /nkfsosm_network_requirements.html
+          - title: Service Account (Customer-Operated)
+            url: /nkfsosm_service_account_@customer-operated@.html
+          - title: VMs (Customer-Operated)
+            url: /nkfsosm_vms_@customer-operated@.html
+          - title: Remote Access
+            url: /nkfsosm_remote_access.html
+          - title: Security
+            url: /nkfsosm_security.html
+          - title: Security Requirements
+            url: /nkfsosm_security_requirements.html
+      - title: Keystone Flex Subscription Operations
+        entries:
+          - title: Overview
+            url: /nkfsosm_overview_01.html
+          - title: NetApp Global Services and Support Center (GSSC)
+            url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
+          - title: Keystone Service Delivery Manager
+            url: /nkfsosm_keystone_service_delivery_manager.html
+      - title: Service Operations
+        entries:
+          - title: Overview
+            url: /nkfsosm_service_operations_overview.html
+          - title: Consuming Storage Using the GUI or Keystone APIs
+            url: /nkfsosm_consuming_storage_using_the_gui_or_keystone_apis.html
+      - title: Service Management
+        entries:
+          - title: Overview
+            url: /nkfsosm_service_management_overview.html
+          - title: Health Monitoring and Alerting
+            url: /nkfsosm_health_monitoring_and_alerting.html
+          - title: Capacity and Performance Management
+            url: /nkfsosm_capacity_and_performance_management.html
+          - title: Change Management
+            url: /nkfsosm_change_management.html
+          - title: Release Management
+            url: /nkfsosm_release_management.html
+          - title: Maintenance
+            url: /nkfsosm_maintenance.html
+          - title: System Expansion
+            url: /nkfsosm_system_expansion.html
+          - title: Reporting
+            url: /nkfsosm_reporting.html
+          - title: Support Processes
+            url: /nkfsosm_support_processes.html
+      - title: Other Services
+        entries:
+          - title: Data Migration Service
+            url: /nkfsosm_data_migration_service.html
+      - title: Conclusion
+        url: /nkfsosm_conclusion.html
+      - title: Where to Find Additional Information
+        url: /nkfsosm_where_to_find_additional_information.html
+      - title: Version History
+        url: /nkfsosm_version_history.html

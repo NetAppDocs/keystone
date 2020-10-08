@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_overview_01.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.528996
+//
+
+[.lead]
+KFS Services will be operationalized leveraging the NetApp Global Services and Support Center (GSSC), Keystone Success Manager (KSM),  and Keystone Service Delivery Manager (KSDM).
+
+
