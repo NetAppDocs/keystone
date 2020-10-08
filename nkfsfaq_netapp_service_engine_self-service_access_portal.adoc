@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+permalink: nkfsfaq_netapp_service_engine_self-service_access_portal.html
+keywords:
+summary:
+---
+
+= NetApp Service Engine/Self-Service Access Portal
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:15:37.133096
+//
+
+[.lead]
+*What is NetApp Service Engine?*
+
+NetApp Service Engine is a self-service portal that is available in the NetApp-operated model for customers to log into and provision storage based on their subscription. The tool also provides reports on what their consumption levels are against their subscription and initiate any service requests or subscription changes. 
+
+*NetApp Service Engine required in the customer- operated model?*
+
+In a customer- operated model, NetApp Service Engine is required. It provides basic reports on the consumption details and is required to collect and report the billing information.
+
+*Where is NetApp Service Engine installed?*
+
+In a NetApp- operated model, NetApp Service Engine is installed locally on the NetApp provided compute resources. In a customer- operated model, NetApp Service Engine is installed on the customer- provided compute resources.
+
+*Who can log into NetApp Service Engine?*
+
+Users can be authenticated against NetApp SSO or local users configured in NetApp Service Engine.
+
+*How is access controlled?*
+
+NetApp Service Engine provides role-based access control (RBAC), and each user can be associated to a role, which defines what actions they can perform. The RBAC assignment is done by the customer using NetApp Service Engine.
+
+*What access controls are available?*
+
+The following access controls are available:
+
+* *Customer Admin.* An administrative person from the customer side who has rights to create file services (which defines Active Directory authentication servers,  networking, and so on), changes to subscription, create new users,  and so on.
+* *Read-only.* Has access to portal but cannot create any storage or change anything.
+* *User.* Has rights to provision storage, resize, view reports, but cannot perform any administrative job like creating file servers, change subscription, etc.,
+* *App.* Specific results depend on each customer’s installation in accordance with published specifications.

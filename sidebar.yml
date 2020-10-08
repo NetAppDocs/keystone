@@ -1,5 +1,5 @@
 entries:
-  - title: NDAC contents
+  - title: NetApp Keystone Flex Service
     url: /index.html
   - title: Keystone Flex Operational Services Manual
     entries:
@@ -115,3 +115,19 @@ entries:
         url: /nkfsosm_where_to_find_additional_information.html
       - title: Version History
         url: /nkfsosm_version_history.html
+  - title: Keystone Flex Technical FAQ
+    entries:
+      - title: Overview
+        url: /nkfsfaq_overview.html
+      - title: Service Offer Details
+        url: /nkfsfaq_service_offer_details.html
+      - title: Keystone Subscription
+        url: /nkfsfaq_keystone_subscription.html
+      - title: Keystone Pricing and Billing
+        url: /nkfsfaq_keystone_pricing_and_billing.html
+      - title: Operating Models
+        url: /nkfsfaq_operating_models.html
+      - title: Operations and Support
+        url: /nkfsfaq_operations_and_support.html
+      - title: NetApp Service Engine/Self-Service Access Portal
+        url: /nkfsfaq_netapp_service_engine_self-service_access_portal.html
