@@ -21,14 +21,14 @@ summary:
 [.lead]
 The KSDM owns Service Delivery Management. The KSDM is responsible for managing the day-to-day administration and operations of the Keystone system. The KSDM’s primary role is to ensure that agreed service levels are being managed and met.
 
-The KSDM owns Service Delivery Management in coordination with the KSM. The KSDM is responsible for managing the day-to-day operations of the Managed Services team as well as being the primary contact for the customer’s stakeholders and NetApp account teams. The KSDM’s primary role is to ensure that agreed Service Levels are being managed and met, service delivery improvements are ongoing,  and that the customer/NetApp relationships are maintained.
+The KSDM owns Service Delivery Management in coordination with the KSM. The KSDM is responsible for managing the day-to-day operations of the Managed Services team as well as being the primary contact for the customer’s stakeholders and NetApp account teams. The KSDM’s primary role is to ensure that agreed Service Levels are being managed and met, service delivery improvements are ongoing, and that the customer/NetApp relationships are maintained.
 
-The KSDM is the primary contact for customer meetings, customer reporting,  and customer communication between the customer and the NetApp Managed Services team.
+The KSDM is the primary contact for customer meetings, customer reporting, and customer communication between the customer and the NetApp Managed Services team.
 
 The KSDM is responsible for the following activities during the length of the contract:
 
 * Champions operations and service delivery in accordance with the NetApp service delivery methodology.
-* Manages day-to-day activities and priorities for the NetApp operations team (in a NetApp- operated model).  
+* Manages day-to-day activities and priorities for the NetApp operations team (in a NetApp-operated model).
 * Is the point of escalation for all critical incidents; keeps account team updated on the operational status with respect to the supported environment.
 * Oversees the following reviews:
 ** Incident review
