@@ -19,14 +19,14 @@ summary:
 //
 
 [.lead]
-To manage changes to the NetApp Keystone Storage Platform, the following NetApp Change Management process is followed. Table 18 lists the risk levels and lead times.
+To manage changes to the NetApp Keystone Storage Platform, the following NetApp Change Management process is followed. The table below lists the risk levels and lead times.
 
 * NetApp KSM coordinates with customer change management to review or approve changes.
 +
 However, in the case of customer management seeking more information about an upcoming change, an escalation path is available to customer management.
 
 * A change management request originating from NetApp to the customer representative (excluding emergency changes) at a minimum includes:
-** Detailed description of the scope of the change, including benefits, risks,  and any outage
+** Detailed description of the scope of the change, including benefits, risks, and any outage
 ** Any dependencies
 ** List of resources required to successfully implement the change
 ** Proposed schedule, including implementation duration and dates
@@ -53,5 +53,3 @@ However, in the case of customer management seeking more information about an up
 |Not in use for IT
 |n/a
 |===
-
-

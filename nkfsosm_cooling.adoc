@@ -19,6 +19,4 @@ summary:
 //
 
 [.lead]
-The customer is responsible for providing the required cooling.  NetApp will provide the cooling requirement specifications (Typical BTU, Max BTU), based on the final configuration.
-
-
+The customer is responsible for providing the required cooling. NetApp will provide the cooling requirement specifications (Typical BTU, Max BTU), based on the final configuration.
