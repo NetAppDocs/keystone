@@ -20,5 +20,3 @@ summary:
 
 [.lead]
 This section details the process adopted by the Keystone Operations team to assure that the quantity and availability of the Keystone service.
-
-

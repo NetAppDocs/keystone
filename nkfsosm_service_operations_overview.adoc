@@ -20,5 +20,3 @@ summary:
 
 [.lead]
 Keystone service operations help operate and optimize and provision storage, add additional capacity, and health monitoring and alerting. In addition to generic Keystone service operations, NetApp also provides consumption monitoring and billing
-
-
