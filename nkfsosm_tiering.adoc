@@ -19,6 +19,6 @@ summary:
 //
 
 [.lead]
-NetApp KFS service includes a tiering capability that identifies less frequently used data and tiers it to a cold storage that is owned, deployed,  and managed on-premises by NetApp.
+NetApp KFS service includes a tiering capability that identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed on-premises by NetApp.
 
-The add- on tiering capability is available only with Extreme and Premium service tiers. NetApp assumes 25% of data is hot and 75% is less frequently used and can be moved to a cold storage.
+The add-on tiering capability is available only with Extreme and Premium service tiers. NetApp assumes 25% of data is hot and 75% is less frequently used and can be moved to a cold storage.

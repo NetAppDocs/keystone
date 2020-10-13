@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-In the customer-operated version, the customer is responsible for providing the VMs required for the consumption and health monitoring software (Table 14).
+In the customer-operated version, the customer is responsible for providing the VMs required for the consumption and health monitoring software.
 
 |===
 |Name |Function |OS/Version |vCPU |Memory (GB) |Storage
@@ -49,5 +49,3 @@ In the customer-operated version, the customer is responsible for providing the 
 |16
 |40GB
 |===
-
-
