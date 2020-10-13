@@ -19,16 +19,16 @@ summary:
 //
 
 [.lead]
-Figure 9 depicts the high-level Keystone NetApp-operated architecture. 
+The bellow figure depicts the high-level Keystone NetApp-operated architecture.
 
 [NOTE]
-The connectivity depicted between the customer switches to the Keystone firewalls is one of the few possible options based on customer network requirements (Figure 9).  
+The connectivity depicted between the customer switches to the Keystone firewalls is one of the few possible options based on customer network requirements.
 
 image:nkfsosm_image10.png[Error: Missing Graphic Image]
 
-Figure 10 depicts the high-level Keystone customer-operated architecture. 
+The below figure depicts the high-level Keystone customer-operated architecture.
 
 [NOTE]
-In this offering, the customer provides VMs to host the NetApp Service Engine components and the customer’s management network is used to provide connectivity to the KFS device’s management ports (Figure 10).  
+In this offering, the customer provides VMs to host the NetApp Service Engine components and the customer’s management network is used to provide connectivity to the KFS device’s management ports.
 
-image:nkfsosm_image11.emf[Error: Missing Graphic Image]
+image:nkfsosm_image11.png[Error: Missing Graphic Image]
