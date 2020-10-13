@@ -41,7 +41,7 @@ Yes, new subscriptions can have new terms separate from any existing subscriptio
 
 *Can a customer mix multiple subscriptions on the same ONTAP cluster?*
 
-No, each cluster is assigned to a particular subscription. 
+No, each cluster is assigned to a particular subscription.
 
 *Can the customer reduce the committed capacity?*
 

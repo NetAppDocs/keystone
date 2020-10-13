@@ -21,7 +21,7 @@ summary:
 [.lead]
 *What are the different operating models and the who is responsible for the major activities?*
 
-The following chart is an overview of the three operating models that a customer can select:  NetApp Operated, Partner Operated, and Customer Operated. For each of the operating models, the chart below shows the roles and responsibilities across the service lifecycle.
+The following chart is an overview of the three operating models that a customer can select: NetApp Operated, Partner Operated, and Customer Operated. For each of the operating models, the chart below shows the roles and responsibilities across the service lifecycle.
 
 image:nkfsfaq_image4.png[Error: Missing Graphic Image]
 
@@ -31,7 +31,7 @@ This operating model allows the customer to subscribe to the offered services, a
 
 *What is a partner-operated model?*
 
-The operating model for the partner is similar to the NetApp- operated model, but with the partner operating the service for their end customer. In this model, the partner is the referenced contracted party.
+The operating model for the partner is similar to the NetApp-operated model, but with the partner operating the service for their end customer. In this model, the partner is the referenced contracted party.
 
 *What is a customer-operated model?*
 
