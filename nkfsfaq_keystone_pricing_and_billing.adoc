@@ -56,7 +56,9 @@ The price used in the example is for illustration purposes only; it is not the f
 Consumption billing has two parts:
 
 * Fixed payment based on the committed capacity
-* Variable payment matched to capacity used in excess of committed capacity (burst)*What is the billing frequency?*
+* Variable payment matched to capacity used in excess of committed capacity (burst)
+
+*What is the billing frequency?*
 
 By default, the billing frequency is monthly. In certain cases, there is flexibility for the customer to negotiate a quarterly or a yearly upfront payment.
 
@@ -70,4 +72,4 @@ The invoice includes the charges for the committed capacity, any charges for usi
 
 *Who is responsible for data center costs?*
 
-The customer is responsible for data center costs, which includes space, power,  and cooling.
+The customer is responsible for data center costs, which includes space, power, and cooling.
