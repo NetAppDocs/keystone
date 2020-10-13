@@ -19,6 +19,4 @@ summary:
 //
 
 [.lead]
-KFS Services will be operationalized leveraging the NetApp Global Services and Support Center (GSSC), Keystone Success Manager (KSM),  and Keystone Service Delivery Manager (KSDM).
-
-
+KFS Services will be operationalized leveraging the NetApp Global Services and Support Center (GSSC), Keystone Success Manager (KSM), and Keystone Service Delivery Manager (KSDM).
