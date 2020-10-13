@@ -32,7 +32,7 @@ For example, if a 1TiB file is stored on NetApp Keystone, then at least 1TiB of 
 ** Committed capacity and additional performance levels can be added during the term.
 * *Burst capacity.* Logical capacity, in excess of committed capacity:
 ** NetApp Keystone provides 20% capacity in excess of the committed capacity.
-** Burst capacity can be consumed on an elastic basis and is charged on a daily, average- consumed basis.
+** Burst capacity can be consumed on an elastic basis and is charged on a daily, average-consumed basis.
 ** Burst capacity up to 20% is charged at a same rate as the committed capacity.
 ** Contact KSM for any additional burst requirements > 20%
 ** Burst capacity > 20% of committed is charged at a premium rate
@@ -45,5 +45,3 @@ For example, if a 1TiB file is stored on NetApp Keystone, then at least 1TiB of 
 ** The monthly bill contains a minimum charge based on the committed capacity.
 +
 The monthly bill varies beyond the minimum charge based on daily average burst capacity consumption.
-
-

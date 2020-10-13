@@ -19,20 +19,17 @@ summary:
 //
 
 [.lead]
-This section describes the infrastructure components used in the customer-  and NetApp-operated offerings. The components are also classified based on whether they reside in the data versus control plane that serve to segregate user data from command and control data (Table 9).
+This section describes the infrastructure components used in the customer- and NetApp-operated offerings. The components are also classified based on whether they reside in the data versus control plane that serve to segregate user data from command and control data.
 
 |===
-|Keystone Infrastructure Components
+|Component |Plane |Operation Model |Purpose
 
-|Component
-|Plane
-|Operation Model
-|Purpose
 |Storage controllers
 |Data
 |Customer and NetApp/partner
 |Provides storage capacity for KFS
 NetApp AFF and FAS controllers are used based on capacity and performance service level requirements.
+
 |Cluster switches
 |Data
 |Customer and NetApp/partner
@@ -66,5 +63,3 @@ Small NAS-based storage system is selected to meet the requirements of NetApp Se
 |NetApp/partner only
 |Provides serial console access to KFS devices.
 |===
-
-

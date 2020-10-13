@@ -19,13 +19,13 @@ summary:
 //
 
 [.lead]
-KFS is an outcome- based, on-premises, subscription service model. It enables customers to accelerate time to value by reducing the hurdles related to managing the unpredictable capacity growth and going through the complex procurement cycles. KFS allows customers to align economics and operations to their business priorities (Figure 2).
+KFS is an outcome-based, on-premises, subscription service model. It enables customers to accelerate time to value by reducing the hurdles related to managing the unpredictable capacity growth and going through the complex procurement cycles. KFS allows customers to align economics and operations to their business priorities.
 
 image:nkfsosm_image2.png[Error: Missing Graphic Image]
 
-KFS is a subscription-based service offering that provides storage capacity, at predefined performance service levels, for block, file, and object data types that can be deployed on-premises and can be operated by NetApp,  a partner, or the customer. In addition to the base service that KFS provides,  add-on services can be chosen at an additional cost. These services are described Figure 3.
+KFS is a subscription-based service offering that provides storage capacity, at predefined performance service levels, for block, file, and object data types that can be deployed on-premises and can be operated by NetApp, a partner, or the customer. In addition to the base service that KFS provides, add-on services can be chosen at an additional cost. These services are described in the below figure.
 
-* *Data Protection Basic* service provides NetApp SnapMirror® and NetApp SnapVault® capabilities with default settings.
+* *Data Protection Basic* service provides NetApp SnapMirror and NetApp SnapVault capabilities with default settings.
 * *Data Protection Advanced* provides a service with SLAs of RPO=0 by leveraging the NetApp MetroCluster capabilities.
 
 [NOTE]
@@ -43,6 +43,6 @@ KFS provides the following benefits:
 * Aligns data storage costs with business needs/activity
 * Simplifies infrastructure provisioning by bypassing complex organizational procurement procedures
 * Keeps data secure on their premises
-* Enables proper control over compliance, performance, and security (Figure 4)
+* Enables proper control over compliance, performance, and security
 
 image:nkfsosm_image4.png[Error: Missing Graphic Image]

@@ -19,11 +19,9 @@ summary:
 //
 
 [.lead]
-NetApp® Keystone is a portfolio of on-premises capital expenditure (capex) alternatives to enable the on-ramp to cloud journey,  which includes Keystone Flex Pay (KFP) and Keystone Flex Subscription (KFS) services (Figure 1).
+NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives to enable the on-ramp to cloud journey, which includes Keystone Flex Pay (KFP) and Keystone Flex Subscription (KFS) services.
 
-* *KFP*.  KFP is a portfolio of flexible financial alternatives that include traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
-* *KFS.* Formerly known as On-Premises Cloud Consumption, KFS is pay-as-you-grow,  outcome-based subscription service that brings an on-premises cloud-like experience.
+* *KFP*. KFP is a portfolio of flexible financial alternatives that include traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
+* *KFS.* Formerly known as On-Premises Cloud Consumption, KFS is pay-as-you-grow, outcome-based subscription service that brings an on-premises cloud-like experience.
 
 image:nkfsosm_image1.png[Error: Missing Graphic Image]
-
-
