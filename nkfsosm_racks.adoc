@@ -19,6 +19,4 @@ summary:
 //
 
 [.lead]
-The customer is responsible for providing four post racks in the customer- operated offering.  In the NetApp- operated offering, either NetApp or the customer can provide the racks, depending on requirements. NetApp provides 42 deep racks.
-
-
+The customer is responsible for providing four post racks in the customer-operated offering. In the NetApp-operated offering, either NetApp or the customer can provide the racks, depending on requirements. NetApp provides 42 deep racks.

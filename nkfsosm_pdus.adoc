@@ -19,6 +19,4 @@ summary:
 //
 
 [.lead]
-The customer is responsible for providing PDUs, connected to two separate, protected circuits with sufficient C13 outlets. In the customer-operated offering,  in some cases,  C19 outlets are required.  In the NetApp- operated offering, either NetApp or the customer can provide the PDUs, depending on requirements.
-
-
+The customer is responsible for providing PDUs, connected to two separate, protected circuits with sufficient C13 outlets. In the customer-operated offering, in some cases, C19 outlets are required. In the NetApp- operated offering, either NetApp or the customer can provide the PDUs, depending on requirements.
