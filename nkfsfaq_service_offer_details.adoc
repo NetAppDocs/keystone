@@ -21,7 +21,7 @@ summary:
 [.lead]
 *What is offered as part of Keystone Flex Subscription?*
 
-Keystone Flex Subscription is a subscription-based service offering for block, file, and object data services that can be deployed on- premises and can be operated by NetApp, a partner, or a customer.
+Keystone Flex Subscription is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
 
 *What storage service offers are provided as part of Keystone Flex Subscription?*
 
@@ -39,7 +39,7 @@ In a NetApp operated scenario, NetApp Keystone guarantees IOPS/TiB for the stora
 
 *What is the typical length of term of a NetApp Keystone Flex Subscription agreement?*
 
-The NetApp Keystone Flex Subscription offers 12- , 24- ,  and 36-month term periods.
+The NetApp Keystone Flex Subscription offers 12- , 24- , and 36-month term periods.
 
 *How does the customer access the storage?*
 
@@ -63,13 +63,13 @@ For the customer-operated service, customer is responsible for monitoring the in
 
 *What type of support is included in the offer?*
 
-For the NetApp-operated model,  SupportEdge Expert is offered. For the customer-operated model,  Support Edge Advisor is offered. For the partner- operated model,  either SupportEdge Expert or Advisor is offered.
+For the NetApp-operated model, SupportEdge Expert is offered. For the customer-operated model, Support Edge Advisor is offered. For the partner- operated model, either SupportEdge Expert or Advisor is offered.
 
 *What happens if the customer terminates early?*
 
 The minimum service commitment is 12 months. If the customer cancels the service early, the residual value needs to be paid up upfront.
 
-*Is there an opportunity to convert into a purchase after the initial term is completed? *
+*Is there an opportunity to convert into a purchase after the initial term is completed?*
 
 No. The offer does not include an option to convert into a purchase. Additionally, previously purchased NetApp products are outside the scope of this program.
 
@@ -95,7 +95,7 @@ The responsibilities are outlined in the table below.
 |Provide storage request and incident management (service SLA)
 |R, A
 |C, I
-|All other storage service management including events, problems, changes, assets, and all other operations processes 
+|All other storage service management including events, problems, changes, assets, and all other operations processes
 |R, A, C, I
 |
 |Provide data center power, space, and cooling per NetApp specifications
