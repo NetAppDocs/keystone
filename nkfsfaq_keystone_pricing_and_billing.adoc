@@ -25,11 +25,11 @@ The list price is defined at $/GB/month for each performance level and add-on so
 
 *Is migration service included?*
 
-No. Data migration must be done as a separate statement of work (SOW) through a partner or NetApp Professional Services. 
+No. Data migration must be done as a separate statement of work (SOW) through a partner or NetApp Professional Services.
 
 *What is included as part of the $/GB monthly payment?*
 
-The monthly storage costs include: 
+The monthly storage costs include:
 
 * Discovery services before service deployment.
 * Installation of the hardware and software required to meet the service levels.
