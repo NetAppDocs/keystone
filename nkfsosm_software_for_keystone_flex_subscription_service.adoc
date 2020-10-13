@@ -19,17 +19,15 @@ summary:
 //
 
 [.lead]
-Table 8 lists the software components KFS service. 
+The below table lists the software components KFS service.
 
 |===
 |Software |Description
 
 |NetApp Service Engine
-|NetApp Service Engine is the orchestration application that allows customers to automate provisioning, service level monitoring, and reporting. 
+|NetApp Service Engine is the orchestration application that allows customers to automate provisioning, service level monitoring, and reporting.
 |Active IQ Unified Manager
 |Active IQ Unified Manager enables NetApp to monitor health and performance of ONTAP storage systems.
 |OpsRamp
 |OpsRamp enables remote monitoring, operations, management, and support of the on-premises Keystone system.
 |===
-
-
