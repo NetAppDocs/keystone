@@ -73,6 +73,7 @@ image:nkfsosm_image22.png[Error: Missing Graphic Image]
 
 The service desk determines the severity of any reported incident based on the customer’s impact assessment using the urgency and impact definitions listed in the below table.
 
+*Urgency*
 |===
 |Critical |High |Medium |Low
 
@@ -82,6 +83,7 @@ The service desk determines the severity of any reported incident based on the c
 |Keystone business function continues.
 |===
 
+*Impact*
 |===
 |Critical |High |Medium |Low
 
@@ -93,39 +95,7 @@ The service desk determines the severity of any reported incident based on the c
 
 After receiving advice on the severity and impact of the incident, NetApp allocates a severity level in accordance with the definitions shown in the below table.
 
-|===
-|Severity |Impact
-
-|
-|Critical
-|High
-|Medium
-|Low
-|Urgency
-|Critical
-|P1
-|P 2
-|P 2
-|P 3
-|
-|High
-|P 1
-|P 2
-|P 3
-|P 4
-|
-|Medium
-|n/a
-|P 3
-|P 4
-|P 4
-|
-|Low
-|n/a
-|P 4
-|P 4
-|P 4
-|===
+image:nkfsosm_image26.png[Error: Missing Graphic Image]
 
 === Time to Notify/Response Times
 
@@ -136,7 +106,7 @@ Restoration/restored in relation to a service means the return to correct operab
 |===
 | |Metric |Time to Notify |Service Level Objectives
 
-|NetApp notification obligation time
+|*NetApp notification obligation time*
 |TTN for P1 incidents
 |15 minutes from ticket assignment to NetApp Keystone
 |98% of all P1 incidents
@@ -152,7 +122,7 @@ Restoration/restored in relation to a service means the return to correct operab
 |TTN for P4 incidents
 |120 minutes from ticket assignment to NetApp Keystone
 |80% of all P4 incidents
-|Service requests
+|*Service requests*
 |TTN for service requests
 |8 business hours rom ticket assignment to NetApp GSSC
 |95% of all service requests
@@ -161,7 +131,7 @@ Restoration/restored in relation to a service means the return to correct operab
 |===
 | |Metric |Restoration of Service Time |Objectives
 
-|Incident management
+|*Incident management*
 |TTN for P1 incidents
 |4 hours from ticket assignment to NetApp GSSC
 |95% of all P1 incidents
@@ -177,7 +147,7 @@ Restoration/restored in relation to a service means the return to correct operab
 |TTN for P4 incidents
 |Next business day from ticket assignment to NetApp GSSC
 |80% of all P4 incidents
-|Service requests
+|*Service requests*
 |TTN for service requests
 |5 business days from ticket assignment to NetApp GSSC
 |95% of all service requests
