@@ -1,18 +1,15 @@
 entries:
   - title: NetApp Keystone Flex Service
     url: /index.html
-  - title: Keystone Flex Operational Services Manual
     entries:
       - title: Keystone Overview
+        url: /nkfsosm_keystone_overview_overview.html
         entries:
-          - title: Overview
-            url: /nkfsosm_keystone_overview_overview.html
           - title: Keystone Flex Subscription
             url: /nkfsosm_keystone_flex_subscription.html
       - title: Service Terms and Description
+        url: /nkfsosm_service_terms_and_description_overview.html
         entries:
-          - title: Overview
-            url: /nkfsosm_service_terms_and_description_overview.html
           - title: Keystone Service Capacity Definitions
             url: /nkfsosm_keystone_service_capacity_definitions.html
           - title: Performance
@@ -26,15 +23,13 @@ entries:
           - title: Tiering
             url: /nkfsosm_tiering.html
       - title: Keystone Service Delivery Operational Model
+        url: /nkfsosm_overview.html
         entries:
-          - title: Overview
-            url: /nkfsosm_overview.html
           - title: Detailed Roles and Responsibilities in Various Operational Models
             url: /nkfsosm_detailed_roles_and_responsibilities_in_various_operational_models.html
       - title: Keystone Service Delivery Architecture
+        url: /nkfsosm_keystone_service_delivery_architecture_overview.html
         entries:
-          - title: Overview
-            url: /nkfsosm_keystone_service_delivery_architecture_overview.html
           - title: NetApp Service Engine
             url: /nkfsosm_netapp_service_engine.html
           - title: Software for Keystone Flex Subscription Service
@@ -44,9 +39,8 @@ entries:
           - title: Keystone Architecture
             url: /nkfsosm_keystone_architecture.html
       - title: Site Requirements
+        url: /nkfsosm_site_requirements_overview.html
         entries:
-          - title: Overview
-            url: /nkfsosm_site_requirements_overview.html
           - title: Space
             url: /nkfsosm_space.html
           - title: Racks
@@ -72,23 +66,20 @@ entries:
           - title: Security Requirements
             url: /nkfsosm_security_requirements.html
       - title: Keystone Flex Subscription Operations
+        url: /nkfsosm_overview_01.html
         entries:
-          - title: Overview
-            url: /nkfsosm_overview_01.html
           - title: NetApp Global Services and Support Center (GSSC)
             url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
           - title: Keystone Service Delivery Manager
             url: /nkfsosm_keystone_service_delivery_manager.html
       - title: Service Operations
+        url: /nkfsosm_service_operations_overview.html
         entries:
-          - title: Overview
-            url: /nkfsosm_service_operations_overview.html
           - title: Consuming Storage Using the GUI or Keystone APIs
             url: /nkfsosm_consuming_storage_using_the_gui_or_keystone_apis.html
       - title: Service Management
+        url: /nkfsosm_service_management_overview.html
         entries:
-          - title: Overview
-            url: /nkfsosm_service_management_overview.html
           - title: Health Monitoring and Alerting
             url: /nkfsosm_health_monitoring_and_alerting.html
           - title: Capacity and Performance Management
@@ -106,6 +97,7 @@ entries:
           - title: Support Processes
             url: /nkfsosm_support_processes.html
       - title: Other Services
+        url: /nkfsosm_other_services.html
         entries:
           - title: Data Migration Service
             url: /nkfsosm_data_migration_service.html
@@ -116,9 +108,8 @@ entries:
       - title: Version History
         url: /nkfsosm_version_history.html
   - title: Keystone Flex Technical FAQ
+    url: /nkfsfaq_overview.html
     entries:
-      - title: Overview
-        url: /nkfsfaq_overview.html
       - title: Service Offer Details
         url: /nkfsfaq_service_offer_details.html
       - title: Keystone Subscription
