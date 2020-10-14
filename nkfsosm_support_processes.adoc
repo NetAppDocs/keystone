@@ -95,7 +95,30 @@ The service desk determines the severity of any reported incident based on the c
 
 After receiving advice on the severity and impact of the incident, NetApp allocates a severity level in accordance with the definitions shown in the below table.
 
-image:nkfsosm_image26.png[Error: Missing Graphic Image]
+|===
+| |Critical Impact |High Impact |Medium Impact |Low Impact
+
+|Critical Urgency
+|P1
+|P 2
+|P 2
+|P 3
+|High Urgency
+|P 1
+|P 2
+|P 3
+|P 4
+|Medium Urgency
+|n/a
+|P 3
+|P 4
+|P 4
+|Low Urgency
+|n/a
+|P 4
+|P 4
+|P 4
+|===
 
 === Time to Notify/Response Times
 
