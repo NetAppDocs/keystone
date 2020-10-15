@@ -99,7 +99,7 @@ After receiving advice on the severity and impact of the incident, NetApp alloca
 | |Critical Impact |High Impact |Medium Impact |Low Impact
 
 |Critical Urgency
-|P1
+|P 1 
 |P 2
 |P 2
 |P 3
