@@ -23,7 +23,7 @@ summary:
 
 NetApp Service Engine is a self-service portal that is available in the NetApp-operated model for customers to log into and provision storage based on their subscription. The tool also provides reports on what their consumption levels are against their subscription and initiate any service requests or subscription changes.
 
-*NetApp Service Engine required in the customer- operated model?*
+*NetApp Service Engine required in the customer-operated model?*
 
 In a customer-operated model, NetApp Service Engine is required. It provides basic reports on the consumption details and is required to collect and report the billing information.
 

@@ -27,6 +27,4 @@ The below figure defines the performance service levels.
 
 image:nkfsosm_image5.png[Error: Missing Graphic Image]
 
-image:nkfsosm_image6.jpeg[Error: Missing Graphic Image]
-
 I/O density calculations at the volume level are reported to show peak I/O density during the prior week. The peak performance is determined on an hourly time interval. I/O density reports by volume are generated monthly to gauge adherence to the respective service levels.

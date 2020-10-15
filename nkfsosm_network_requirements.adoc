@@ -24,11 +24,12 @@ The following tables provide the KFS networking requirements.
 === IP Address Requirements (Customer-Operated)
 
 |===
-|Interface/Resource |Config. Spec |IPs |DNSName |Description
+|Interface/Resource |Config. Spec |IPs |DNS Name |Description
 
 |Service processor
 |Each node in the cluster
-|10.0.0.1 - Node1 Service Processor10.0.0.2 - Node2 Service Processor
+|10.0.0.1 - Node1 Service Processor
+10.0.0.2 - Node2 Service Processor
 |TBD
 |A remote management device that enables you to access, monitor, and troubleshoot a node remotely.
 |Cluster management
@@ -38,12 +39,16 @@ The following tables provide the KFS networking requirements.
 |Admin storage virtual machine (SVM) to manage the entire cluster from a single console
 |Node management
 |Each node in the cluster
-|10.0.0.4 - Node1 Management10.0.0.5 - Node2 Management
+|10.0.0.4 - Node1 Management
+10.0.0.5 - Node2 Management
 |TBD
 |A dedicated IP address for managing a particular node
 |Cluster-interconnect
 |Two ports of each node in the cluster
-|Node1 e0a portNode1 e0b portNode2 e0a portNode2 e0b port
+|Node1 e0a port
+Node1 e0b port
+Node2 e0a port
+Node2 e0b port
 |TBD
 |Private network or internal to the cluster; IPs will be auto-assigned when creating the LIF
 |SVM data
@@ -53,7 +58,8 @@ The following tables provide the KFS networking requirements.
 |A dedicated IP address for the client access to the data.
 |Inter cluster
 |Each node in the cluster
-|10.0.2.1 - Node110.0.2.2 - Node2
+|10.0.2.1 - Node1
+10.0.2.2 - Node2
 |TBD
 |Optional - A network used to replicate data from one cluster to the other (SnapMirror)
 |Kubernetes Master Node 01-04

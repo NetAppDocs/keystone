@@ -24,7 +24,7 @@ The Keystone service capacities include:
 * *Logical capacity.* Data placed into the NetApp Keystone system by a customer:
 ** All NetApp KFS capacities refer to a logical capacity.
 +
-For example, if a 1TiB file is stored on NetApp Keystone, then at least 1TiB of capacity must be purchased.
+For example, if a 1 TiB file is stored on NetApp Keystone, then at least 1 TiB of capacity must be purchased.
 
 * *Committed capacity.* Minimum logical capacity billed each month for the duration of the term:
 ** Capacity is committed to each performance level.
@@ -34,8 +34,8 @@ For example, if a 1TiB file is stored on NetApp Keystone, then at least 1TiB of 
 ** NetApp Keystone provides 20% capacity in excess of the committed capacity.
 ** Burst capacity can be consumed on an elastic basis and is charged on a daily, average-consumed basis.
 ** Burst capacity up to 20% is charged at a same rate as the committed capacity.
-** Contact KSM for any additional burst requirements > 20%
-** Burst capacity > 20% of committed is charged at a premium rate
+** Contact KSM for any additional burst requirements greater than 20%.
+** Burst capacity greater than 20% of committed is charged at a premium rate.
 * *Consumed/provisioned capacity.* Sum of all configured volume sizes:
 ** Capacity is provisioned through the creation, modification, deletion, or potential auto-growth of volumes.
 ** Includes snapshots and clones.

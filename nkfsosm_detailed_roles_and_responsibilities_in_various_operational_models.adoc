@@ -34,10 +34,10 @@ The customer is responsible for the following activities:
 ** Provide the necessary power, cooling, space, and network connectivity virtual machine (VM) compute, storage, management network, and cabling to storage controllers required to support the KFS service.
 ** Access and authorize as needed for NetApp to complete the installation and deinstallation and to enable the service readiness for the customer to consume.
 * Provide responses, approvals, and feedback in relation to the KFS service in a timely manner and in a timeframe that enables NetApp to meet its commitments.
-* Provide all the reasonably necessary facilities and arrangements (other than the supported environment) to enable NetApp to perform the installation services, which might include office and desktop facilities that enable access to the supported environment, email, and internet access in accordance with the customer’s policies for its own employees, power, network connections, floor space, air-conditioning and cooling, other utilities, and remote access facilities for the provision of out-of-hours services
+* Provide all the reasonably necessary facilities and arrangements (other than the supported environment) to enable NetApp to perform the installation services, which might include office and desktop facilities that enable access to the supported environment, email, and internet access in accordance with the customer’s policies for its own employees, power, network connections, floor space, air-conditioning and cooling, other utilities, and remote access facilities for the provision of out-of-hours services.
 * Ensure that the data canter services at the designated service locations are provided such that the Keystone service comprising the supported environment are provided with rack space, adequate power, ventilation, cooling in order that NetApp can provide the services. The customer will also provide data center security services that provides a secure environment in order that NetApp can enable the Keystone service.
 * Assign system administrators and operators as reasonably required by NetApp.
-* Provide the necessary security arrangements to allow NetApp personnel access, and the ability to enter and leave the service locations and other customer sites, including laptop personal computers, subject to compliance with the customer’s policies
+* Provide the necessary security arrangements to allow NetApp personnel access, and the ability to enter and leave the service locations and other customer sites, including laptop personal computers, subject to compliance with the customer’s policies.
 * Ensure that any customer-supplied, non-NetApp infrastructure and/or non-NetApp software necessary to perform the KFS services, as identified by NetApp personnel, has been installed and is maintained. The customer shall obtain any and all permissions and/or licenses from the third parties necessary for NetApp personnel to successfully enable the service.
 * Ensure that NetApp is kept apprised of key technology decisions and/or customer strategies that might impact the supported environment.
 * If there be a need to rely on electronic/network transfer of data, the customer will provision and enable any network components or services required to facilitate such data transfer.
@@ -49,7 +49,7 @@ NetApp is responsible for the following activities:
 
 * At its own expense, NetApp is to install KFS at a location identified by the customer.
 * The NetApp Service Delivery team will cooperate and coordinate with a customer-identified team to provide the following Keystone services:
-** The necessary project plan and detailed installation instructions to support the KFS service
+** The necessary project plan and detailed installation instructions to support the KFS service.
 * Provide the deployment and installation requirements that can be reviewed by the customer’s technical team:
 ** Provide responses, approvals, and feedback in relation to the KFS service in a timely manner, and in a timeframe, that enables NetApp to meet its commitments.
 * Provide detailed rack and system deployment information to be approved by the customer before the installation.
@@ -65,8 +65,8 @@ NetApp is responsible for the following activities:
 
 The following terms and conditions apply to the NetApp-operated KFS service:
 
-* Service cancellation: > 90 calendar days prior to term end
-* Keystone and non-Keystone NetApp ONTAP systems can be part of same cluster for initial data migration only and up to 90 days
+* Service cancellation: greater than 90 calendar days prior to term end
+* Keystone and non-Keystone NetApp ONTAP systems can be part of same cluster for initial data migration only and up to 90 days.
 * Two-node cluster provided in a switchless configuration only
 * Customer may not perform the following activities:
 ** Modify ONTAP version or access the CLI
@@ -82,7 +82,7 @@ The following terms and conditions apply to the NetApp-operated KFS service:
 
 ==== Service SLOs and SLAs in a NetApp-Partner Operated Model
 
-The below table lists the service SLOs and SLAs in a NetApp-partner operated model.
+The table below lists the service SLOs and SLAs in a NetApp-partner operated model.
 
 |===
 | |SLO |SLA
@@ -147,16 +147,16 @@ NetApp is responsible for the following activities:
 
 * At its own expense, NetApp is to install KFS at a location identified by the customer.
 * The NetApp Service Delivery team will cooperate and coordinate with a customer-identified team to provide the following Keystone services:
-** The necessary project plan and detailed installation instructions to support the KFS service
-* Provide deployment and installation requirements that can be reviewed by the customer’s technical team
+** The necessary project plan and detailed installation instructions to support the KFS service.
+* Provide deployment and installation requirements that can be reviewed by the customer’s technical team.
 * Send the billing invoice every month to the customer.
 
 ==== Terms and Conditions in Customer-Operated Keystone Flex Subscription Service
 
 The following terms and conditions apply to the customer-operated KFS service:
 
-* Service cancellation: > 90 calendar days prior to term end
-* Keystone and non-Keystone NetApp ONTAP systems can be part of same cluster for initial data migration only and up to 90 days
+* Service cancellation: greater than 90 calendar days prior to term end
+* Keystone and non-Keystone NetApp ONTAP systems can be part of same cluster for initial data migration only and up to 90 days.
 * Two-node cluster provided in a switchless configuration only
 * Customer may not perform the following activities:
 ** Remove NetApp’s physical or *logical access to the controller’s management ports*
@@ -224,10 +224,10 @@ The following list summarizes the roles and responsibilities:
 * Interfacing with other IT service providers: NetApp shall provide reasonable cooperation with the customer’s IT service providers or their technical team.
 * Performance of the NetApp-operated services includes, without limitation, NetApp assuming the responsibilities listed in the below table as reasonably applicable to the supported environment.
 
+*Service Selection*
 |===
 |Responsibilities |Customer-Operated |NetApp-Operated
 
-|Service Selection
 |Capacity
 |Customer
 |Customer
@@ -240,21 +240,34 @@ The following list summarizes the roles and responsibilities:
 |Operation model
 |Customer
 |Customer
-|Service Architecture
+|===
+
+*Service Architecture*
+|===
+|Responsibilities |Customer-Operated |NetApp-Operated
+
 |Design
 |NetApp
 |NetApp
 |Bill of Materials (BoM)
 |NetApp
 |NetApp
-|Equipment Ownership
+|===
+*Equipment Ownership*
+|===
+|Responsibilities |Customer-Operated |NetApp-Operated
+
 |Data plane
 |NetApp
 |NetApp
 |Control plane
 |Customer
 |NetApp
-|On-Premises Facilities
+|===
+*On-Premises Facilities*
+|===
+|Responsibilities |Customer-Operated |NetApp-Operated
+
 |Floor space
 |Customer
 |Customer

@@ -89,7 +89,6 @@ You can perform the following actions from the NetApp Service Engine portal, as 
 
 [NOTE]
 You can increase capacity to an existing subscription at any time during the term (except in the last 90 days of the term) and the service needs to be renewed) and as soon as the additional capacity is available for use, the subscription gets updated and the burst calculation from that particular sample uses the new committed capacity for burst calculation.
-
 From a billing perspective, if the new capacity goes into the next tier of pricing, the new price is used from the date of additional capacity activation.
 
 image:nkfsosm_image17.png[Error: Missing Graphic Image]
@@ -127,7 +126,7 @@ The following process describes how information is collected and processed for b
 
 image:nkfsosm_image19.png[Error: Missing Graphic Image]
 
-* If the consumed capacity for a service level is greater than what they committed, such as burst capacity, then the average burst usage for that five minute- sample is calculated using the following formula:
+* If the consumed capacity for a service level is greater than what they committed, such as burst capacity, then the average burst usage for that five minute-sample is calculated using the following formula:
 +
 `Burst used / (# of samples in an hour * # of hours in a day * # of days in the billing month)`
 

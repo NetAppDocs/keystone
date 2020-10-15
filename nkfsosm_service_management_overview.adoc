@@ -19,4 +19,4 @@ summary:
 //
 
 [.lead]
-This section details the process adopted by the Keystone Operations team to assure that the quantity and availability of the Keystone service.
+This section details the process adopted by the Keystone Operations team to assure the quality and availability of the Keystone service.

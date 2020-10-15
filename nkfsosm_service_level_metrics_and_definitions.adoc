@@ -21,7 +21,7 @@ summary:
 [.lead]
 The following terms and definitions are used within the KFS service:
 
-* *GiB, TiB, and PiB.* Measurements of data storage capacity using base of 1024 (1GiB = 10243 bytes, 1TiB = 10244 bytes, and 1PiB = 10245 bytes).
+* *GiB, TiB, and PiB.* Measurements of data storage capacity using base of 1024 (1 GiB = 1024^3^ bytes, 1 TiB = 1024^4^ bytes, and 1PiB = 1024^5^ bytes).
 * *IOPS/TiB.* The protocol operations per second requested by the application divided by the allocated logical size of the volume.
 * *Availability* is measured as a percentage of number of I/O requests successfully responded to by the service, divided by total number of I/O requests made of the service, measured at the service demarcation, in a given month, not including scheduled service downtime or unavailability of required facilities, network or other services to be provided by customer.
 * *Durability* is the percentage of data accessed without loss of fidelity, excluding customer-caused deletion or corruption.
@@ -35,7 +35,7 @@ The target IOPS per TiB performance metric is calculated based on the logical co
 ** Over a 24-hour period of five-minute measurements, the highest 10% of latency values are discarded and an average of the remaining results are taken.
 ** Latency from the network connection between the storage and the client, or latency introduced by quality of service throttling (as mentioned below) are both excluded from latency calculations.
 ** Latency SLA applies to a volume only if the following criteria is met:
-** The average IOPS per volume in an hour is greater than or equal to 100.
-** The percentage of random reads is greater than or equal to 30%; more than 70% write might have higher latency.
-** The average I/O block size is less than or equal to 32KB.
-** The IOPS/TiB delivered is equal to or less than the greater of the SLA IOPS/TiB allocated or the SLO IOPS/TiB stored.
+*** The average IOPS per volume in an hour is greater than or equal to 100.
+*** The percentage of random reads is greater than or equal to 30%; more than 70% write might have higher latency.
+*** The average I/O block size is less than or equal to 32 KB.
+*** The IOPS/TiB delivered is equal to or less than the greater of the SLA IOPS/TiB allocated or the SLO IOPS/TiB stored.

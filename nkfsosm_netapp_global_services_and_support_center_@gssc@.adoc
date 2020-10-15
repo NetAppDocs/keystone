@@ -59,7 +59,7 @@ The KSM is responsible for the following activities during the length of the con
 
 The KSM provides the following operational governance:
 
-* Operational reviewer and approver for new or existing requirements
+* Operational reviewer and approver for new or existing requirements.
 * Oversees operational configurations and changes.
 * Reviews and approves operational documentation.
 * Approves the on-boarding of all new Keystone services under the supported environment.

@@ -63,7 +63,7 @@ For the customer-operated service, customer is responsible for monitoring the in
 
 *What type of support is included in the offer?*
 
-For the NetApp-operated model, SupportEdge Expert is offered. For the customer-operated model, Support Edge Advisor is offered. For the partner- operated model, either SupportEdge Expert or Advisor is offered.
+For the NetApp-operated model, SupportEdge Expert is offered. For the customer-operated model, Support Edge Advisor is offered. For the partner-operated model, either SupportEdge Expert or Advisor is offered.
 
 *What happens if the customer terminates early?*
 

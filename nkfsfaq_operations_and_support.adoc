@@ -87,12 +87,12 @@ The following table lists the service level information.
 |Category |Descriptions/Details
 
 |Data access availability SLA
-a|* *Monthly uptime percentage* of at least 99.999% (five 9s) during any monthly billing cycle
+a|* *Monthly uptime percentage* of at least *99.999% (five 9s)* during any monthly billing cycle
 * Only covers systems comprised of NetApp AFF products
 |Performance SLO
 a|* *Targeted IOPS/TB* at the specified block sizes and configured Volume size, per the related performance level
 |Claims process
-a|* Customer inquiries regarding the SLXs should be *directed to NetApp technical support*, or email
+a|* Customer inquiries regarding the SLXs should be *directed to NetApp technical support*, or email xdl-americas-revenue@netapp.com 
 |Service credits/remediation
 a|* NetApp will evaluate all claims to determine service credits (if any) to apply against future charges
 |Contractual limitations

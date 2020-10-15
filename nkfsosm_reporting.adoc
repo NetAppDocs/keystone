@@ -21,7 +21,7 @@ summary:
 [.lead]
 The capacity trending report displays capacity usage over time for each storage service in a subscription, with the capability to view when the bursts were used.
 
-The NetApp GSSC team collects various information from the infrastructure that is deployed at customer site to produce reports for internal purposes and also for customer to view their service performance.
+The NetApp GSSC team collects various information from the infrastructure that is deployed at customer sites to produce reports for internal purposes and also for customers to view their service performance.
 
 For example, the consumed capacity trending report shown in the below figure.
 

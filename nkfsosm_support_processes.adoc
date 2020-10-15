@@ -32,7 +32,7 @@ For urgent issues, NetApp recommends that you call Keystone support instead of u
 *NetApp Service Engine Portal:*
 Raise a ticket directly from the portal describing the details of the issue or require any clarification on an issue.
 *Email:*
- is available 24x7 to resolve customer Incidents, ad-hoc customer questions, challenges, and issues related to a Keystone product or service.
+ keystone.services@netapp.com is available 24x7 to resolve customer Incidents, ad-hoc customer questions, challenges, and issues related to a Keystone product or service.
 *Phone:*
 NetApp Keystone support team are here to help, around the clock, every day. You can reach us via the numbers listed for NetApp Global Service Contacts :
 https://www.netapp.com/us/contact-us/support.aspx
@@ -51,17 +51,17 @@ The case resolution time can be significantly shortened if you have the followin
 *Changes.* Changes on storage controller, hosts, clients or network that could have triggered the issue.
 *Error messages.* Error messages on hosts/clients, switches and NetApp filer (if any).
 *Subscription ID can be found in NSE portal. This is optional.
-|If you have an open case/ticket that needs to be escalated, please email or call into the Keystone Support team and ask to speak to the tech lead or a KSDM. The NetApp Keystone tech lead or KSDM will take responsibility for problem resolution oversight and provide progress updates on a timely basis.
+|If you have an open case/ticket that needs to be escalated, please email keystone.escalations@netapp.com  or call into the Keystone Support team and ask to speak to the tech lead or a KSDM. The NetApp Keystone tech lead or KSDM will take responsibility for problem resolution oversight and provide progress updates on a timely basis.
 NetApp uses every reasonable method available, aligned with the most appropriate skilled resources, to expedite a resolution or stable workaround. Certain external factors may not be under the direct control of the NetApp Support Services personnel engaged. The following factors may limit the ability to establish a resolution or effective workaround:
 The availability and/or knowledge of systems and technical resources at the customer site to adequately diagnose and troubleshoot the problem
 Full, accurate communication of critical technical details by the customer to the Keystone support team.
 Willingness of the customer's technical contact to fully engage and cooperate with NetApp technical personnel in obtaining essential debugging data as requested.
 Remote Gateway:
-NetApp uses OpsRamp, a cloud-based remote gateway solution to proactively monitor and connect to the Keystone environment for troubleshooting purposes. For information on OpsRamp, see
+NetApp uses OpsRamp, a cloud-based remote gateway solution to proactively monitor and connect to the Keystone environment for troubleshooting purposes. For information on OpsRamp, see https://www.opsramp.com/#.
 
-A Message from the NetApp Keystone Support Team:
+*A Message from the NetApp Keystone Support Team:*
 Thank you for trusting NetApp for your data services and hybrid cloud needs. You have joined a group of leading global companies that run their businesses on NetApp technology. A very important reason for this trust is our commitment to your success. We look forward to a very successful relationship together.
-Visit for more information about Keystone.
+Visit https://www.netapp.com/us/solutions/keystone/index.aspx for more information about Keystone.
 
 |===
 
@@ -71,7 +71,7 @@ NetApp Support reacts and responds to both type of incidents. Keystone Operation
 
 image:nkfsosm_image22.png[Error: Missing Graphic Image]
 
-The service desk determines the severity of any reported incident based on the customer’s impact assessment using the urgency and impact definitions listed in the below table.
+The service desk determines the severity of any reported incident based on the customer’s impact assessment using the urgency and impact definitions listed in the below tables.
 
 *Urgency*
 |===
@@ -99,7 +99,7 @@ After receiving advice on the severity and impact of the incident, NetApp alloca
 | |Critical Impact |High Impact |Medium Impact |Low Impact
 
 |Critical Urgency
-|P 1 
+|P 1
 |P 2
 |P 2
 |P 3

@@ -30,9 +30,9 @@ Keystone architecture, design, choice of technology, and products to be used res
 
 The Keystone service delivery model includes multiple components:
 
-* Service interface with NetApp Service Engine
-* Keystone API’s for integration
-* A Keystone service infrastructure that includes storage controllers
-* Tools to manage and operate the service such as OpsRamp, Active IQ, and AIQ Unified Manager
+* Service interface with NetApp Service Engine.
+* Keystone API’s for integration.
+* A Keystone service infrastructure. that includes storage controllers
+* Tools to manage and operate the service such as OpsRamp, Active IQ, and AIQ Unified Manager.
 
 image:nkfsosm_image8.png[Error: Missing Graphic Image]

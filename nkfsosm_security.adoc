@@ -42,7 +42,7 @@ Protecting a customer’s environment from unauthorized access and actions is of
 ** Keystone firewalls reside on the Keystone management network.
 ** Provide northbound connection to the internet proxy server and the customer management network.
 ** Provide southbound management switches.
-** Allow segregation/isolation of KS management network from customer’s management network
+** Allow segregation/isolation of KS management network from customer’s management network.
 ** Disallow customer access and activities to/on the Keystone management network.
 ** Establish outbound tunnel through the customer’s HTTPS proxy to internet (no inbound connections).
 ** The only inbound connection to the management network is through HTTPS port 443 for the Keystone GUI and API access to the GUI/API interface host.
@@ -54,16 +54,16 @@ Protecting a customer’s environment from unauthorized access and actions is of
 ** Only VLANs associated with SVMs can access the customer’s data network
 ** Storage controller ports only respond to iSCSI, CIFS, or NFS protocols only
 ** IP address associated with SVMs on storage controllers use IPSpaces:
-** SVMs are associated with the VLANs
+*** SVMs are associated with the VLANs
 ** SVMs have secure virtual routing table
-** SVMs do not route any customer traffic from customers data network
-** No inter- SVM traffic or routing path possible
-** No connectivity between management network or ports to SVMs or their associated VLANs.
-** No SSH sessions to storage controller data ports possible
+*** SVMs do not route any customer traffic from customers data network
+*** No inter- SVM traffic or routing path possible
+*** No connectivity between management network or ports to SVMs or their associated VLANs.
+*** No SSH sessions to storage controller data ports possible
 * APIs:
 ** NetApp ONTAP 9 has two types of API access:
-** ZAPI, legacy SOAP/XML based API interface is used by Active IQ Unified Manager and by OpsRamp.
-** The newer REST API is used by NetApp Service Engine components for accessing controller metrics and configuration.
+*** ZAPI, legacy SOAP/XML based API interface is used by Active IQ Unified Manager and by OpsRamp.
+*** The newer REST API is used by NetApp Service Engine components for accessing controller metrics and configuration.
 ** Neither API can access stored data, but both can manipulate the systems if given the permissions required to do so.
 ** Certain hosts in NetApp management network have API access (REST/ZAPI) to e0M ports on storage controllers over HTTPS/443.
 ** After the initial Active IQ Unified Manager discovery is complete (~15 minutes), NetApp requests that Active IQ Unified Manager, OpsRamp, and NetApp Service Engine are provided with services accounts with read-only permissions.

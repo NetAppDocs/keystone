@@ -35,17 +35,17 @@ In the customer-operated version, the customer is responsible for providing the 
 |VMware OVA
 |4
 |16
-|40GB
+|40 GB
 |Active IQ Unified Manager
 |Active IQ Unified Manager
 |9.7 (VMware OVA)
 |4
 |12
-|60GB
+|60 GB
 |OpsRamp Gateway
 |OpsRamp Gateway
 |OVA
 |4
 |16
-|40GB
+|40 GB
 |===

@@ -33,7 +33,9 @@ Keystone infrastructure is configured through the OpsRamp web portal for remote 
 
 * Performance statistics, CPU, memory utilization, operating system events, and hardware events
 * Events and SNMP traps
-* System level information: make/model, DNS names, operating system configuration, and so onOpsRamp gateway is a virtual appliance that runs on VMWare vSphere with a hardened configuration of CentOS operating system.
+* System level information: make/model, DNS names, operating system configuration, and so on
+
+OpsRamp gateway is a virtual appliance that runs on VMWare vSphere with a hardened configuration of CentOS operating system.
 
 image:nkfsosm_image13.png[Error: Missing Graphic Image]
 
@@ -60,4 +62,3 @@ OpsRamp security includes the following measures:
 * OpsRamp creates an outbound tunnel via HTTPS/443 – no inbound access required.
 * OpsRamp is SOC-2 Type 2 validated by NetApp
 * NetApp internal security team scans for vulnerabilities every six months
-s

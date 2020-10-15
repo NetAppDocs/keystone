@@ -25,4 +25,4 @@ NetApp GSSC performs a series of health checks on a daily basis and also have al
 * Verify software and firmware information to ensure latest patches are applied.
 * Perform a quarterly audit of the configuration settings and compare it against the service baseline.
 
-All storage systems must have NetApp Active IQ enabled and other monitoring tools deployed, controls in place to ensure the environment does not exceed the recommended operating capacity requirements and ensure performance thresholds are set to maintain SLAs. The monitoring solution also has the capability to notify the NetApp GSSC team of a failure of any physical component through OpsRamp, which triggers emails alerts to NetApp GSSC team.
+All storage systems must have NetApp Active IQ enabled and other monitoring tools deployed, controls in place to ensure the environment does not exceed the recommended operating capacity requirements and ensure performance thresholds are set to maintain SLAs. The monitoring solution also has the capability to notify the NetApp GSSC team of a failure of any physical component through OpsRamp, which triggers email alerts to NetApp GSSC team.

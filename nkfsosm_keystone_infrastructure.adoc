@@ -38,12 +38,12 @@ NetApp AFF and FAS controllers are used based on capacity and performance servic
 |Data
 |NetApp/partner only
 |Data connectivity between user and KFS storage.
-Cisco Nexus 9K switches are selected to provide enough ports for KFS storage controllers and customer data network connectivity providing bandwidth and flexibility to provide 10/25/50/100GbE connectivity.
+Cisco Nexus 9K switches are selected to provide enough ports for KFS storage controllers and customer data network connectivity providing bandwidth and flexibility to provide 10/25/50/100 GbE connectivity.
 |Management switches
 |Control
 |NetApp/partner only
 |KFS devices’ management port connectivity.
-Cisco Nexus 9K 1GbE switches are selected to provide enough ports to attach to the devices’ management ports, as well provide 10GbE data connectivity to the management servers and storage.
+Cisco Nexus 9K 1 GbE switches are selected to provide enough ports to attach to the devices’ management ports, as well provide 10GbE data connectivity to the management servers and storage.
 |Firewalls
 |Control
 |NetApp/partner only
