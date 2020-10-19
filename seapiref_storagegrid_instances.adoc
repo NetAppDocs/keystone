@@ -1,0 +1,268 @@
+---
+sidebar: sidebar
+permalink: seapiref_storagegrid_instances.html
+keywords:
+summary:
+---
+
+= StorageGRID instances
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.508461
+//
+
+[.lead]
+Use the methods listed in the following table to set up and manage StorageGRID instances to support object storage.
+
+|===
+|HTTP Method |Path |Description
+
+|GET
+|/v2.1/storagegridinstances
+|Retrieve StorageGRID instances.
+|POST
+|/v2.1/storagegridinstances
+|Create a new StorageGRID instance to host object storage.
+|GET
+|/v2.1/storagegridinstances/{id}
+|Retrieve a StorageGRID instance by ID.
+|PUT
+|/v2.1/storagegridinstances/{id}
+|Update a StorageGRID instance.
+|===
+
+=== StorageGRID instance attributes
+
+The following table lists the StorageGRID instance attributes.
+
+|===
+|Attribute |Type |Description
+
+|id
+|String
+|The unique identifier for the StorageGRID instance.
+|name
+|String
+|The StorageGRID instance name.
+|admin_rest_uri
+|String($uri)
+|The StorageGRID admin node endpoint.
+|s3_endpoints
+|String($uri)
+|The StorageGRID endpoints.
+For example:
+[ "https://s3.examplegrid.com", "https://s3.location.company.com" ]
+|grid_username
+|String
+|The StorageGRID user name.
+|grid_password
+|String
+|The StorageGRID password.
+|tenant_username
+|String
+|The StorageGRID tenant user name.
+|tenant_password
+|String
+|The StorageGRID tenant password.
+|subscription_number
+|String
+|The Zuora subscription number.
+|===
+
+=== Retrieve StorageGRID instances
+
+Use the method listed in the following table to retrieve the StorageGRID instances. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/storagegridinstances
+|Retrieve StorageGRID instances.
+|None
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e3ba2840271823644cb8ab6",
+        "name": "NSE StorageGRID Dev1",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "admin_rest_uri": "https://sggmi-dev.dev.ausngs.netapp.au",
+        "s3_endpoints": [
+          "https://sgs3.dev.ausngs.netapp.au"
+        ],
+        "subscription_number": "A-S00004566"
+      }
+    ]
+  }
+}
+....
+
+=== Retrieve StorageGRID instances by ID
+
+Use the method listed in the following table to retrieve StorageGRID instances by ID. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/storagegridinstances/{id}
+|Retrieve a StorageGRID instance by ID.
+|id (string): The unique identifier of the StorageGRID instance.
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e3ba2840271823644cb8ab6",
+        "name": "NSE StorageGRID Dev1",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "admin_rest_uri": "https://sggmi-dev.dev.ausngs.netapp.au",
+        "s3_endpoints": [
+          "https://sgs3.dev.ausngs.netapp.au"
+        ],
+        "subscription_number": "A-S00004566"
+      }
+    ]
+  }
+}
+....
+
+=== Create a StorageGRID instance by ID
+
+Use the method listed the following table to create a StorageGRID instance by ID. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/storagegridinstances/{id}
+|Retrieve a StorageGRID instance by ID.
+|id (string): The unique identifier of the StorageGRID instance.
+|===
+
+Required request body attributes:  `none`
+
+....
+{
+  "name": "Grid1",
+  "admin_rest_uri": "https://examplegrid.com",
+  "s3_endpoints": [
+    "https://s3.examplegrid.com",
+    "https://s3.location.company.com"
+  ],
+  "grid_username": "root",
+  "grid_password": "string",
+  "tenant_username": "root",
+  "tenant_password": "string",
+  "subscription_number": "A-S00003969"
+}
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "Grid1",
+        "admin_rest_uri": "https://examplegrid.com",
+        "user_id": "5d2fb0fb4f47df00015274e3",
+        "s3_endpoints": [
+          "https://s3.examplegrid.com",
+          "https://s3.location.company.com"
+        ],
+        "subscription_number": "A-S00003969"
+      }
+    ]
+  }
+}
+....
+
+=== Modify a StorageGRID instance by ID
+
+Use the method listed in the following table to modify a StorageGRID instance by ID. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|PUT
+|/v2.1/storagegridinstances/{id}
+|Modify a StorageGRID instance by ID.
+|id (string): The unique identifier of the StorageGRID instance.
+|===
+
+Required Request Body attributes:  `none`
+
+....
+{
+  "name": "Grid1",
+  "admin_rest_uri": "https://examplegrid.com",
+  "s3_endpoints": [
+    "https://s3.examplegrid.com",
+    "https://s3.location.company.com"
+  ],
+  "grid_username": "root",
+  "grid_password": "string",
+  "tenant_username": "root",
+  "tenant_password": "string",
+  "subscription_number": "A-S00003969"
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "Grid1",
+        "admin_rest_uri": "https://examplegrid.com",
+        "user_id": "5d2fb0fb4f47df00015274e3",
+        "s3_endpoints": [
+          "https://s3.examplegrid.com",
+          "https://s3.location.company.com"
+        ],
+        "subscription_number": "A-S00003969"
+      }
+    ]
+  }
+}
+....
+
+

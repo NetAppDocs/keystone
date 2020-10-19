@@ -131,3 +131,51 @@ entries:
         url: /nkfsfaq_operations_and_support.html
       - title: NetApp Service Engine/Self-Service Access Portal
         url: /nkfsfaq_netapp_service_engine_self-service_access_portal.html
+  - title: Service Engine API Reference Guide
+    entries:
+      - title: Overview of NetApp Service Engine APIs
+        url: /seapiref_overview_of_netapp_service_engine_apis.html
+      - title: Authorization and authentication
+        url: /seapiref_authorization_and_authentication.html
+      - title: NetApp Service Engine REST APIs
+        url: /seapiref_netapp_service_engine_rest_apis.html
+      - title: Consumer APIs
+        entries:
+          - title: Overview
+            url: /seapiref_consumer_apis_overview.html
+          - title: Cloud Orchestration APIs
+            url: /seapiref_cloud_orchestration_apis.html
+          - title: Block storage APIs
+            url: /seapiref_block_storage_apis.html
+          - title: File services APIs
+            url: /seapiref_file_services_apis.html
+          - title: Object storage APIs
+            url: /seapiref_object_storage_apis.html
+          - title: Reporting APIs
+            url: /seapiref_reporting_apis.html
+          - title: (Consumer) Administration APIs
+            url: /seapiref_@consumer@_administration_apis.html
+      - title: Administrator APIs
+        entries:
+          - title: Overview
+            url: /seapiref_administrator_apis_overview.html
+          - title: Tenants
+            url: /seapiref_tenants.html
+          - title: Subtenants
+            url: /seapiref_subtenants.html
+          - title: Users
+            url: /seapiref_users.html
+          - title: Zones
+            url: /seapiref_zones.html
+          - title: Regions
+            url: /seapiref_regions.html
+          - title: ONTAP clusters
+            url: /seapiref_ontap_clusters.html
+          - title: StorageGRID instances
+            url: /seapiref_storagegrid_instances.html
+          - title: Service levels
+            url: /seapiref_service_levels.html
+          - title: Service requests
+            url: /seapiref_service_requests.html
+          - title: Jobs
+            url: /seapiref_jobs.html

@@ -1,0 +1,391 @@
+---
+sidebar: sidebar
+permalink: seapiref_service_levels.html
+keywords:
+summary:
+---
+
+= Service levels
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.556775
+//
+
+[.lead]
+Use the methods listed in the following table to retrieve, create, modify, and delete service levels.
+
+|===
+|HTTP Method |Path |Description
+
+|GET
+|/v2.1/servicelevels
+|Retrieve all service levels.
+|GET
+|/v2.1/servicelevels/{id}
+|Retrieve a service level by ID.
+|POST
+|/v2.1/servicelevels
+|Create a new service level.
+|PUT
+|/v2.1/servicelevels/{id}
+|Modify service level details by ID. 
+|DELETE
+|/v2.1/servicelevels/{id}
+|Delete a service level.
+|===
+
+=== Service level attributes
+
+The following table lists the service level attributes. 
+
+|===
+|Attribute |Type |Description
+
+|id
+|String
+|The unique identifier for the service level.
+|name
+|String
+|The service level name.
+|description
+|String
+|The description of the service level.
+|policy_name
+|String
+|Service level quality of service (QoS) name. Allowed values: nse_value, nse_performance, and nse_extreme.
+|available
+|Boolean
+|Indicates whether the service level is available for use.
+|grandfathered
+|Boolean
+|Indicates whether the service level has been retired. 
+|peak_iops_per_tb
+|Integer
+|The maximum possible IOPS per TiB.
+|expected_iops_per_tb
+|Integer
+|The minimum expected IOPS per TiB.
+|absolute_min_iops
+|Integer
+|The absolute minimum IOPS which is used as an override when the expected IOPS is less than this value.
+|peak_iops_allocation
+|String
+|The peak IOPS allocation. Allowed values: allocated_space and used_space.
+|io_block_size_kb
+|Integer
+|The I/O block size (KiB).
+|min_size_gb
+|Integer
+|The minimum size (GiB).
+|max_size_gb
+|Integer
+|The maximum size (GiB).
+|max_peak_iops
+|Integer
+|The maximum peak IOPS for the service level.
+|max_expected_iops
+|Integer
+|The maximum expected IOPS.
+|autogrow_max_percent
+|Integer
+|The autogrow maximum percent.
+|ontap_aggregates
+|–
+|The list of ONTAP aggregates. 
+An ONTAP aggregate consists of:
+* cluster_UIID: ONTAP cluster UUID
+* aggr_name: ONTAP aggregate name
+* aggr_uuid: ONTAP aggregate UUID
+* node_name: ONTAP cluster node name
+For example: 
+"ontap_aggregates": [
+    {
+      "cluster_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "aggr_name": "string",
+      "aggr_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "node_name": "node01"
+    }
+  ]
+|primary_volume_defaults
+|–
+a|* snapshot_auto_delete_target_free_space (integer): This option specifies the free space percentage at which the automatic deletion of Snapshot copies must stop. 
+* auto_size_mode (string): The autosize mode for the volume. Allowed values: off, grow, grow_shrink
+For example: 
+"primary_volume_defaults": {    "snapshot_auto_delete_target_free_space": 3,    "auto_size_mode": "grow_shrink"
+|===
+
+=== Retrieve service levels
+
+Use the method listed in the following table to retrieve all service levels. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/servicelevels
+|Retrieve all service levels.
+|None
+|===
+
+Required request body attributes: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 3 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 3,
+    "records": [
+      {
+        "name": "standard",
+        "description": "Best suited for general purpose workloads",
+        "slo": "1000IOPS/TB",
+        "min_size": 137438953472,
+        "io_block_size_kb": 32,
+        "min_size_gb": 10,
+        "max_size_gb": 40960,
+        "min_iops": 100,
+        "peak_iops_per_tb": 1000,
+        "expected_iops_per_tb": 700,
+        "max_peak_iops": 40000,
+        "max_expected_iops": 28000,
+        "max_peak_throughput": 1250,
+        "max_expected_throughput": 875
+      },
+      {
+        "name": "extreme",
+        "description": "Best suited for performance-critical workloads",
+        "slo": "12000IOPS/TB",
+        "min_size": 91625968981,
+        "io_block_size_kb": 32,
+        "min_size_gb": 10,
+        "max_size_gb": 10240,
+        "min_iops": 500,
+        "peak_iops_per_tb": 12000,
+        "expected_iops_per_tb": 8000,
+        "max_peak_iops": 120000,
+        "max_expected_iops": 60000,
+        "max_peak_throughput": 3750,
+        "max_expected_throughput": 1875
+      },
+      {
+        "name": "premium",
+        "description": "Best suited for databases and high performance workloads",
+        "slo": "4000IOPS/TB",
+        "min_size": 137438953472,
+        "io_block_size_kb": 32,
+        "min_size_gb": 10,
+        "max_size_gb": 10240,
+        "min_iops": 300,
+        "peak_iops_per_tb": 4000,
+        "expected_iops_per_tb": 3000,
+        "max_peak_iops": 40000,
+        "max_expected_iops": 30000,
+        "max_peak_throughput": 1250,
+        "max_expected_throughput": 937
+      }
+    ]
+  }
+}
+....
+
+=== Retrieve service levels by name
+
+Use the method listed in the following table to retrieve service levels by name. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/servicelevels/{name}
+|Retrieve a service level by name.
+|name (string): The name of the service level.
+|===
+
+Required request body attributes: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "name": "premium",
+        "description": "Best suited for databases and high performance workloads",
+        "slo": "4096IOPS/TB",
+        "min_size": 137438953472,
+        "io_block_size_kb": 32,
+        "min_size_gb": 10,
+        "max_size_gb": 10240,
+        "min_iops": 300,
+        "peak_iops_per_tb": 4096,
+        "expected_iops_per_tb": 3000,
+        "max_peak_iops": 40000,
+        "max_expected_iops": 30000,
+        "max_peak_throughput": 1250,
+        "max_expected_throughput": 937
+      }
+    ]
+  }
+}
+....
+
+=== Create a service level
+
+Use the method listed in the following table to create a service level. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/servicelevels
+|Create a service level.
+|None
+|===
+
+Required request body attributes: `name`, `policy_name`
+
+....
+{
+  "name": "MyServiceLevelName",
+  "description": "My new service level description",
+  "policy_name": "nse_value",
+  "available": true,
+  "grandfathered": false,
+  "peak_iops_per_tb": 1000,
+  "expected_iops_per_tb": 700,
+  "absolute_min_iops": 100,
+  "peak_iops_allocation": "allocated_space",
+  "io_block_size_kb": 32,
+  "min_size_gb": 10,
+  "max_size_gb": 40960,
+  "max_peak_iops": 20000,
+  "max_expected_iops": 5000,
+  "autogrow_max_percent": 3,
+  "ontap_aggregates": [
+    {
+      "cluster_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "aggr_name": "string",
+      "aggr_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "node_name": "node01"
+    }
+  ],
+  "primary_volume_defaults": {
+    "snapshot_auto_delete_target_free_space": 3,
+    "auto_size_mode": "grow_shrink"
+  }
+}
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "name": "MyServiceLevelName",
+        "description": "My new service level description",
+        "slo": "1000IOPS/TB",
+        "min_size": 0,
+        "io_block_size_kb": 32,
+        "min_size_gb": 10,
+        "max_size_gb": 40960,
+        "min_iops": 100,
+        "peak_iops_per_tb": 1000,
+        "expected_iops_per_tb": 700,
+        "max_peak_iops": 20000,
+        "max_expected_iops": 5000,
+        "max_peak_throughput": 625,
+        "max_expected_throughput": 156
+      }
+    ]
+  }
+}
+....
+
+=== Modify a service level
+
+Use the method listed in the following table to modify a service level. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|PUT
+|/v2.1/servicelevels/{name}
+|Modify the details of a service level.
+|name (string): The name of the service level.
+|===
+
+Required request body attributes:  `none`
+
+....
+{
+  "name": "MyNewServiceLevelName",
+  "description": "Service level description",
+  "policy_name": "nse_value",
+  "available": false,
+  "grandfathered": false,
+  "peak_iops_per_tb": 1000,
+  "expected_iops_per_tb": 700,
+  "absolute_min_iops": 100,
+  "peak_iops_allocation": "allocated_space",
+  "io_block_size_kb": 32,
+  "min_size_gb": 10,
+  "max_size_gb": 40960,
+  "max_peak_iops": 20000,
+  "max_expected_iops": 5000,
+  "autogrow_max_percent": 3,
+  "ontap_aggregates": [
+    {
+      "cluster_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "aggr_name": "string",
+      "aggr_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "node_name": "node01"
+    }
+  ],
+  "primary_volume_defaults": {
+    "snapshot_auto_delete_target_free_space": 3,
+    "auto_size_mode": "grow_shrink"
+  }
+}
+TBA
+....
+
+=== Delete service level by ID
+
+Use the method listed in the following table to delete a service level by ID. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|DELETE
+|/v2.1/servicelevels/{name}
+|Delete the service level identified by ID.
+|name (string): The name of the service level.
+|===
+
+....
+none
+No content for succesful delete
+....
+
+

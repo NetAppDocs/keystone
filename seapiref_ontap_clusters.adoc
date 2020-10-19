@@ -1,0 +1,597 @@
+---
+sidebar: sidebar
+permalink: seapiref_ontap_clusters.html
+keywords:
+summary:
+---
+
+= ONTAP clusters
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.378678
+//
+
+[.lead]
+Use the methods listed in the following table to retrieve, create, modify, and delete ONTAP clusters.
+
+|===
+|HTTP Method |Path |Description
+
+|GET
+|/v2.1/ontapclusters
+|Retrieve all ONTAP clusters.
+|GET
+|/v2.1/ontapclusters/{id}
+|Retrieve an ONTAP cluster by ID.
+|POST
+|/v2.1/ontapclusters
+|Create a new ONTAP cluster.
+|PUT
+|/v2.1/ontapclusters/{id}
+|Update ONTAP cluster inventory by ID. 
+|DELETE
+|/v2.1/ontapclusters/{id}
+|Delete an ONTAP cluster.
+|===
+
+=== ONTAP clusters attributes
+
+The following table lists the ONTAP cluster attributes.
+
+|===
+|Attribute |Type |Description
+
+|id
+|String
+|The unique identifier of the ONTAP cluster.
+|name
+|String
+|The ONTAP cluster name.
+|uuid
+|String
+|The ONTAP cluster universal unique identifier (UUID).
+|management_ip
+|String
+|The ONTAP cluster management IPv4 address.
+|username
+|String
+|The ONTAP cluster name
+|password
+|String
+|The ONTAP cluster password
+|provisioning_state
+|String
+|Identifies whether a cluster is available for provisioning operations. The options include:
+* Open
+* Closed
+|data_network_ip_cidr
+|String
+|The CIDR notation of a subnet.
+|data_network_default_gateway
+|String
+|The IPV4 address.
+|data_network_ports
+|–
+|A list of the ONTAP cluster data network ports. 
+For example: 
+[
+  {
+  "node_name": "dev-ots-per01-01",
+  "port_name": "e0c-120",
+  "parent_port": "e0c"
+  }
+]
+
+|intercluster_lifs
+|–
+|The ONTAP cluster intercluster LIFs.
+For example:
+[
+  {
+  "name": "peer1",
+  "node": "aff-01",
+  "port": "a0a-103",
+  "address": "10.128.113.232",
+  "netmask": "255.255.255.0"
+  },
+{
+  "name": "peer2",
+  "node": "aff-02",
+  "port": "a0a-103",
+  "address": "10.128.113.233",
+  "netmask": "255.255.255.0"
+  }
+]
+|svm_root_service_level
+|String
+|The ONTAP cluster storage virtual machine (SVM) root service level name.
+|zone
+|String
+|The zone name.
+|Subscription_number
+|String
+|The Zuora subscription.
+|services_available
+|–
+|List of services available and their state. 
+For example:
+{
+  "fcp": false,
+  "iscsi": true,
+  "nas": true
+  }
+|data_fcp_ports
+|–
+|List of nodes and ports for FCP-enabled ONTAP clusters. 
+For example:
+[  {   "node_name": "aff-01",   "port_name": "0g"  },  {   "node_name": "aff-01",   "port_name": "0h"
+  ]
+|is_mcc
+|Boolean
+|Indicates whether the cluster is MetroCluster enabled or not. The default is False.
+|mcc_partner_cluster
+|String
+|The identifier of the partner cluster of the current cluster in a MetroCluster pair. Required if the cluster is enabled for MetroCluster.
+|===
+
+=== Retrieve all ONTAP clusters
+
+Use the method listed in the following to retrieve all ONTAP clusters or a subset of ONTAP clusters.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/ontapclusters
+|Retrieve all ONTAP clusters.
+|offset and limit– see Pagination <xref>
+|===
+
+Required request body attributes: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 5,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 3,
+    "limit": 2,
+    "records": [
+      {
+        "id": "5c5bb9f16680a7002a5f7450",
+        "name": "dev-ots-per01",
+        "region": "au-west1",
+        "zone": "au-west1-a",
+        "uuid": "63053baa-ada4-11ea-b197-005056a4c0ef",
+        "management_ip": "10.128.115.173",
+        "username": "admin",
+        "services_available": {
+          "fcp": false,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "dev-ots-per01-01",
+            "port_name": "e0c-120",
+            "parent_port": "e0c"
+          }
+        ],
+        "data_network_ip_cidr": "10.96.120.0/24",
+        "data_network_default_gateway": "10.96.120.1",
+        "svm_root_service_level": "performance",
+        "intercluster_lifs": [
+          {
+            "name": "dev-ots-per01-01-icl01",
+            "node": "dev-ots-per01-01",
+            "port": "e0b",
+            "address": "10.128.115.144",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00003875",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": []
+      },
+      {
+        "id": "5eaf5249f038943eb46b6608",
+        "name": "aff",
+        "region": "au-east1",
+        "zone": "au-east1-b",
+        "uuid": "62d649d2-07a1-11e6-9549-00a0985c0dcb",
+        "management_ip": "10.128.113.69",
+        "username": "admin",
+        "services_available": {
+          "fcp": true,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "aff-01",
+            "port_name": "a0a-2000",
+            "parent_port": "a0a"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "a0a-2000",
+            "parent_port": "a0a"
+          }
+        ],
+        "data_network_ip_cidr": "10.50.50.0/24",
+        "data_network_default_gateway": "10.50.50.1",
+        "svm_root_service_level": "premium",
+        "intercluster_lifs": [
+          {
+            "name": "peer1",
+            "node": "aff-01",
+            "port": "a0a-103",
+            "address": "10.128.113.232",
+            "netmask": "255.255.255.0"
+          },
+          {
+            "name": "peer2",
+            "node": "aff-02",
+            "port": "a0a-103",
+            "address": "10.128.113.233",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00004635",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": [
+          {
+            "node_name": "aff-01",
+            "port_name": "0g"
+          },
+          {
+            "node_name": "aff-01",
+            "port_name": "0h"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "0g"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "0h"
+          }
+        ],
+        "is_mcc": false,
+        "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
+        "created": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+=== Retrieve ONTAP clusters by ID
+
+Use the method listed in the following to retrieve ONTAP clusters by ID.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/ontapclusters/{id}
+|Retrieve the ONTAP clusters identified by ID.
+|id (string): The unique identifier of ONTAP cluster.
+|===
+
+Required request body attributes: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5c5bb9f16680a7002a5f7450",
+        "name": "dev-ots-per01",
+        "region": "au-west1",
+        "zone": "au-west1-a",
+        "uuid": "63053baa-ada4-11ea-b197-005056a4c0ef",
+        "management_ip": "10.128.115.173",
+        "username": "admin",
+        "services_available": {
+          "fcp": false,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "dev-ots-per01-01",
+            "port_name": "e0c-120",
+            "parent_port": "e0c"
+          }
+        ],
+        "data_network_ip_cidr": "10.96.120.0/24",
+        "data_network_default_gateway": "10.96.120.1",
+        "svm_root_service_level": "performance",
+        "intercluster_lifs": [
+          {
+            "name": "dev-ots-per01-01-icl01",
+            "node": "dev-ots-per01-01",
+            "port": "e0b",
+            "address": "10.128.115.144",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00003875",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": [],
+        "is_mcc": false,
+        "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
+        "created": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+=== Create ONTAP cluster
+
+Use the API in the following table to create an ONTAP cluster. 
+
+ONTAP clusters are always created with the iSCSI service enabled. Optionally, the FCP service can be enabled if the infrastructure supports it.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/ontapclusters
+|Create an ONTAP cluster.
+|None
+|===
+
+Required request body attributes:  `name`, `uuid, management_ip`, `username`, `password`, `data_network_ip_cidr`, `data_network_default_gateway`, `intercluster_lifs`, `zone`
+
+If FCP is enabled (using the `services_available` FCP attribute), the `data_fcp_ports `are required. 
+
+If `is_mcc` is true, the `mcc_partner_cluster `is required.
+
+....
+{
+  "name": "clustername",
+  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",  
+  "management_ip": "10.128.112.165",  
+  "username": "admin",
+  "password": "ClusterPassword",
+  "provisioning_state": "open",
+  "data_network_ip_cidr": "10.96.112.0/24",
+  "data_network_default_gateway": "10.96.112.1",
+  "data_network_ports": [
+    {
+      "node_name": "clustername-01",
+      "port_name": "e0c-112",
+      "parent_port": "e0c"
+    }
+  ],
+  "intercluster_lifs": [
+    {
+      "name": "clustername-01-icl01",
+      "node": "clustername-01",
+      "port": "e0b",
+      "address": "10.128.112.222",
+      "netmask": "255.255.255.0"
+    }
+  ],
+  "svm_root_service_level": "extreme",
+  "zone": "MyZone",
+  "subscription_number": "",
+  "services_available": {
+    "fcp": false,
+    "iscsi": true,
+    "nas": true
+  },
+  "data_fcp_ports": [
+  ],
+  "is_mcc": false,
+  "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3"
+}
+{
+    "status": {
+        "user_message": "Okay. New resource created.",
+        "verbose_message": "",
+        "code": 201
+    },
+    "result": {
+        "returned_records": 1,
+        "records": [
+            {
+                "id": "5ef155b8f5591100010a75c5",
+                "name": "clustername",
+                "region": "MyRegion",
+                "zone": "MyZone",
+                "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+                "management_ip": "10.128.112.165",
+                "username": "admin",
+                "services_available": {
+                    "fcp": false,
+                    "iscsi": true,
+                    "nas": true
+                },
+                "provisioning_state": "open",
+                "data_network_ports": [
+                    {
+                        "node_name": "clustername-01",
+                        "port_name": "e0c-112",
+                        "parent_port": "e0c"
+                    }
+                ],
+                "data_network_ip_cidr": "10.96.112.0/24",
+                "data_network_default_gateway": "10.96.112.1",
+                "svm_root_service_level": "extreme",
+                "intercluster_lifs": [
+                    {
+                        "name": "clustername-01-icl01",
+                        "node": "clustername-01",
+                        "port": "e0b",
+                        "address": "10.128.112.222",
+                        "netmask": "255.255.255.0"
+                    }
+                ],
+                "subscription_number": "",
+                "created": "2020-06-23T01:07:04.563Z",
+                "data_fcp_ports": [],
+                "is_mcc": false,
+                "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
+                "created": "1995-09-07T10:40:52Z"
+            }
+        ]
+    }
+}
+....
+
+=== Modify ONTAP cluster
+
+Use the method listed in the following to modify the ONTAP cluster. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|PUT
+|/v2.1/ontapclusters/{id}
+|Modify the details of the ONTAP cluster identified by ID.
+|id (string): The unique identifier of ONTAP cluster.
+|===
+
+Required request body attributes:  `none`
+
+....
+{
+  "name": "clustername",
+  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef", 
+  "management_ip": "10.128.112.165",
+  "username": "admin",
+  "password": "ClusterPassword",
+  "provisioning_state": "open",
+  "data_network_ip_cidr": "10.96.112.0/24",
+  "data_network_default_gateway": "10.96.112.1",
+  "data_network_ports": [
+    {
+      "node_name": "dev-ots-syd01-01",
+      "port_name": "e0c-112",
+      "parent_port": "e0c"
+    }
+  ],
+  "intercluster_lifs": [
+    {
+      "name": "dev-ots-syd01-01-icl01",
+      "node": "dev-ots-syd01-01",
+      "port": "e0b",
+      "address": "10.128.112.222",
+      "netmask": "255.255.255.0"
+    }
+  ],
+  "svm_root_service_level": "standard",
+  "zone": "MyZone",
+  "subscription_number": "",
+  "services_available": {
+    "fcp": false,
+    "iscsi": true,
+    "nas": false
+  },
+  "data_fcp_ports": [
+  ]
+}
+{
+    "status": {
+        "user_message": "Okay. Accepted for processing.",
+        "verbose_message": "",
+        "code": 202
+    },
+    "result": {
+        "returned_records": 1,
+        "records": [
+            {
+                "id": "5ef155b8f5591100010a75c5",
+                "name": "clustername",
+                "region": "MyRegion",
+                "zone": "MyZone",
+                "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+                "management_ip": "10.128.112.165",
+                "username": "admin",
+                "services_available": {
+                    "fcp": false,
+                    "iscsi": true,
+                    "nas": true
+                },
+                "provisioning_state": "open",
+                "data_network_ports": [
+                    {
+                        "node_name": "dev-ots-syd01-01",
+                        "port_name": "e0c-112",
+                        "parent_port": "e0c"
+                    }
+                ],
+                "data_network_ip_cidr": "10.96.112.0/24",
+                "data_network_default_gateway": "10.96.112.1",
+                "svm_root_service_level": "standard",
+                "intercluster_lifs": [
+                    {
+                        "name": "dev-ots-syd01-01-icl01",
+                        "node": "dev-ots-syd01-01",
+                        "port": "e0b",
+                        "address": "10.128.112.222",
+                        "netmask": "255.255.255.0"
+                    }
+                ],
+                "subscription_number": "",
+                "created": "2020-06-23T01:07:04.563Z",
+                "data_fcp_ports": [],
+                "is_mcc": false,
+                "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
+                "created": "1995-09-07T10:40:52Z"
+            }
+        ]
+    }
+}
+....
+
+=== Delete an ONTAP cluster
+
+Use the method listed in the following table to delete an ONTAP cluster. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|DELETE
+|/v2.1/ontapclusters/{id}
+|Delete the ONTAP cluster identified by ID.
+|id (string): The unique identifier of the ONTAP cluster.
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+No content for succesful delete
+....
+
+

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: seapiref_consumer_apis_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:09.020858
+//
+
+[.lead]
+This section describes the following consumer APIs:
+
+* Cloud orchestration APIs
+* Block storage APIs
+* File services APIs
+* Object storage APIs
+* Reporting APIs
+* (Consumer) administration APIs
+
+

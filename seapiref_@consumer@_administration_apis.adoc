@@ -1,0 +1,257 @@
+---
+sidebar: sidebar
+permalink: seapiref_@consumer@_administration_apis.html
+keywords:
+summary:
+---
+
+= (Consumer) Administration APIs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.014016
+//
+
+[.lead]
+The (consumer) administration APIs consist of methods that allow you to perform the following tasks:
+
+* Sign in, set a password, and refresh an authentication token.
+* Retrieve jobs and view job details.
++
+See Retrieve jobs (xref> and Retrieve a job- by- job ID <xref>.
+
+* Retrieve regions. 
++
+See Retrieve regions <xref> and Retrieve Region by Name <xref>.
+
+* Retrieve service levels. 
++
+See Retrieve Service Levels (xref> and Retrieve Service Levels by Name <xref>.
+
+* Work with subtenants. 
++
+See:
+
+** Retrieve all subtenants (xref>
+** Retrieve a subtenant by ID <xref>
+** Modify a subtenant <xref>
+** Delete a subtenant <xref>
+* Work with subtenants. 
++
+See:
+
+** Retrieve all tenants (xref>
+** Retrieve a tenant by ID <xref>
+** Create a tenant <xref>
+** Modify a tenant <xref>
+** Delete a tenant <xref>
+* Retrieve users. 
++
+See Retrieve all users <xref>, Retrieve user by ID <xref>, and Retrieve user by user name <xref>  
+
+* Retrieve zones. 
++
+See Retrieve all zones (xref> and Retrieve zone by name <xref>
++
+The following table lists the consumer APIs documented in this section.
+
+|===
+|HTTP Method |Path |Description
+
+|POST
+|/v2.1/auth/password
+|Set the password for a user.
+|POST
+|/v2.1/auth/password
+|Refresh authentication JWT.
+|POST
+|/v2.1/auth/signin
+|Sign in.
+|GET
+|/v2.1/auth/regions
+|Retrieve regions.
+|GET
+|/v2.1/auth/regions/{name}
+|Retrieve regions by name.
+|GET
+|/v2.1/auth/zones
+|Retrieve zones.
+|GET
+|/v2.1/auth/zones/{name}
+|Retrieve zones by name.
+|GET
+|/v2.1/jobs/
+|Retrieve jobs.
+|GET
+|/v2.1/jobs/{id}
+|Retrieve jobs by ID.
+|===
+
+=== Reset user password
+
+Use the method listed in the following table reset the user password.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/auth/password
+|Reset the password.
+|None
+|===
+
+Required request body attributes: `username` (string), `new_password `(string)
+
+....
+{
+  "username": "MyName",
+  "old_password": "oldPassword",
+  "new_password": "newPassword"
+}
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5e61aa814559c20001df1a5f",
+          "username": "MyName",
+          "firstName": "MyFirstName",
+          "lastName": "MySurname",
+          "displayName": "CallMeMYF",
+          "email": "user@example.com",
+          "tenancies": [
+            {
+              "id": "5e5f1c4f253c820001877839",
+              "name": "MyTenant",
+              "code": "testtenantmh",
+              "role": "user"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik15TmFtZSIsImV4cCI6MTU4MzgxNjg3MX0.ZuRXjDPVtc2pH-e9wqgmszVKCBYS2PLqux2YwQ5uoAM"
+      }
+    ]
+  }
+}
+....
+
+=== Refresh authentication token
+
+Use the method listed in the following table to refresh the authentication token. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/auth/refresh
+|Refresh the authentication token.
+|None
+|===
+
+Required request body attributes: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5d914547869caefed0f3a00c",
+          "username": "myusername",
+          "firstName": "myfirstname",
+          "lastName": "",
+          "displayName": "Myfirstname Mysurname",
+          "email": "",
+          "tenancies": [
+            {
+              "id": "5d914499869caefed0f39eee",
+              "name": "MyOrg",
+              "code": "myorg",
+              "role": "admin"
+            },
+            {
+              "id": "5d9417aa869caefed0f7b4f9",
+              "name": "ABCsafe",
+              "code": "abcsafe",
+              "role": "admin"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVsbGlvdCIsImV4cCI6MTU4MzgxNzA2N30.FdKD3QhPoNdWdbMfZ0bzCMTHluIt6HNP311F482K9AY"
+      }
+    ]
+  }
+}
+....
+
+=== Sign in
+
+Use the method listed in the following table to sign in. 
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/auth/signin
+|Log in as a user.
+|None
+|===
+
+Required request body attributes: `username` (string), `new_password` (string)
+
+....
+{
+  "username": "MyName",
+  "password": "newPassword"
+}
+{
+  "status": {
+    "user_message": "Authentication succeeeded.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5e61aa814559c20001df1a5f",
+          "username": "MyName",
+          "firstName": "MyFirstName",
+          "lastName": "MySurname",
+          "displayName": "CallMeMYF",
+          "email": "user@example.com",
+          "tenancies": [
+            {
+              "id": "5e5f1c4f253c820001877839",
+              "name": "MyTenant",
+              "code": "testtenantmh",
+              "role": "user"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik15TmFtZSIsImV4cCI6MTU4MzgxNzQwMH0._u_UyYrzg_RewF-9ClIGoKQhfZYWrixZYBrsj1kh1hI"
+      }
+    ]
+  }
+}
+....

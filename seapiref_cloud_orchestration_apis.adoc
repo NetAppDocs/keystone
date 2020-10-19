@@ -1,0 +1,980 @@
+---
+sidebar: sidebar
+permalink: seapiref_cloud_orchestration_apis.html
+keywords:
+summary:
+---
+
+= Cloud Orchestration APIs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:09.029003
+//
+
+[.lead]
+The Cloud Orchestration APIs NetApp Service Engine support connecting Cloud Volumes Services to NetApp Service Engine and to work with them from within the NetApp Service Engine. Initial support is for Azure NetApp Files (ANF) with future support coming for Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+
+[NOTE]
+Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
+
+NetApp Service Engine supports the following:
+
+* Ability to register OnCommand Cloud Manager (OCCM) instances through NetApp Service Engine (a NetApp Administrator function)
+* Ability to provision/edit CVS volumes (includes the ability to take snapshots)
+* Ability to backup data to a CVS zone 
+* Ability to see CVS volumes in NSE inventory
+* Ability to see CVS usage.This section describes the APIs for:
+
+* Managing Azure NetApp Files instances
+* Managing Azure NetApp Files accounts
+* Managing Azure NetApp Files capacity pools
+
+=== Azure NetApp Files instances
+
+Use the methods listed in the following table to retrieve and create Azure NetApp Files instances.
+
+|===
+|HTTP Method |Path  |Description
+
+|GET
+|/v2.1/anf/instances
+|Retrieve all Azure NetApp Files instances.
+|POST
+|/v2.1/anf/instances
+|Create new Azure NetApp Files instances.
+|GET
+|/v2.1/anf/instances/{id}
+|Retrieve an Azure NetApp Files instance by ID.
+|GET
+|/v2.1/anf/accounts
+|Retrieve Azure NetApp Files accounts.
+|POST
+|/v2.1/anf/accounts
+|Create an Azure NetApp Files accounts
+|GET
+|/v2.1/anf/accounts/{id}
+|Retrieve an Azure NetApp Files account by ID.
+|GET
+|/v2.1/anf/pools
+|Retrieve all capacity pools.
+|POST
+|/v2.1/anf/pools
+|Create a capacity pool.
+|GET
+|/v2.1/anf/pools/{id}
+|Retrieve an Azure NetApp Files capacity pool by ID.
+|===
+
+==== Azure NetApp Files instance attributes
+
+The following table lists the Azure NetApp Files instance attributes.
+
+|===
+|Attribute |Type |Description
+
+|id
+|String
+|Unique identifier for the Azure NetApp Files instance.
+|name
+|String
+|Name of the Azure NetApp Files instance.
+|cc_working_env
+|String
+|Working environment name within Cloud Manager.
+|cc_client_id
+|String
+|Auth0 service ID.
+|cc_refresh_token
+|String
+|Auth0 refresh token.
+|cc_account_id
+|String
+|Cloud Central account ID.
+|cc_account_name
+|String
+|Cloud Central account name.
+|cc_credentials_id
+|String
+|ID of the Cloud Centra working environment.
+|azure_client_id
+|String
+|Application (Client) ID. The ID of an Active Directory service principal that Cloud Manager can use to authenticate with Azure Active Directory.
+|azure_client_secret
+|String
+|The value of client secret for service principal application.
+|azure_tenant_id
+|String
+|The Azure Active Directory ID. This is also known as tenant ID.
+|azure_subscription_id
+|String
+|The Azure Active Directory subscription ID.
+|subtenant_id
+|String
+|The subtenant ID.
+|tags
+|
+|The key-value pairs.
+|===
+
+==== Retrieve Azure NetApp Files instance
+
+|===
+|HTTP Method |Path |Description |Path Parameters
+
+|GET
+|/v2.1/anf/instances
+|Retrieve Azure NetApp Files instances.
+|tenant_id: (Optional) Return the Azure NetApp Files instances belonging to the specified tenant.
+See also Common Pagination <xref> parameters.
+|===
+
+Required request body parameters: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 10,
+    "limit": 20,
+    "offset": 0,
+    "sort_by": "created",
+    "order_by": "desc",
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "string",
+        "cc_working_env": "my-working-env",
+        "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC",
+        "cc_refresh_token": "y1tMw3lNzE8JL9jtiE29oSRxOAzYu0cdnwS_2XhjQBr9G",
+        "cc_account_id": "account-335jdf32",
+        "cc_account_name": "my-account-name",
+        "cc_credentials_id": "d336c449-aeb8-4bb3-af28-5b886c40dd00",
+        "azure_client_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
+        "azure_client_secret": "NMubGVcDqkwwGnCs6fa01tqlkTisfUd4pBBYgcxxx=",
+        "azure_tenant_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
+        "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b607790910",
+        "state": "Operational",
+        "tenant": "Acme",
+        "tenant_id": "5d2fb0fb4f47df00015274e3",
+        "subtenant": "Default Subtenant",
+        "subtenant_id": "5d2fb0fb4f47df00015274e3",
+        "tags": [
+          {
+            "key": "env",
+            "value": "test"
+          }
+        ],
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+==== Retrieve Azure NetApp Files instance by ID
+
+Use the method listed in the following table to retrieve an Azure NetApp Files instance by its identifier.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/anf/instances/{id}
+|Retrieve an Azure NetApp Files instance by ID.
+|id (string): The unique identifier of the Azure NetApp Files instance.
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 0,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "string",
+        "cc_working_env": "my-working-env",
+        "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC",
+        "cc_refresh_token": "y1tMw3lNzE8JL9jtiE29oSRxOAzYu0cdnwS_2XhjQBr9G",
+        "cc_account_id": "account-335jdf32",
+        "cc_account_name": "my-account-name",
+        "cc_credentials_id": "d336c449-aeb8-4bb3-af28-5b886c40dd00",
+        "azure_client_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
+        "azure_client_secret": "NMubGVcDqkwwGnCs6fa01tqlkTisfUd4pBBYgcxxx=",
+        "azure_tenant_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
+        "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b607790910",
+        "state": "Operational",
+        "tenant": "Acme",
+        "tenant_id": "5d2fb0fb4f47df00015274e3",
+        "subtenant": "Default Subtenant",
+        "subtenant_id": "5d2fb0fb4f47df00015274e3",
+        "tags": [
+          {
+            "key": "env",
+            "value": "test"
+          }
+        ],
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+==== Create Azure NetApp Files instances
+
+Use the method listed in the following table to create a new Azure NetApp Files instance.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/anf/instances
+|Create a Azure NetApp Files instance.
+|None
+|===
+
+Required request body attributes`: name,  cc_working_env, cc_client_id, cc_refresh_token, cc_account_id, cc_account_name, cc_credentials_id, azure_client_id, azure_client_secret, azure_tenant_id, azure_subscription_id, subtenant_id` 
+
+....
+{
+  "name": "instance1",
+  "cc_working_env": "my-working-env",
+  "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC",
+  "cc_refresh_token": "y1tMw3lNzE8JL9jtiE29oSRxOAzYu0cdnwS_2XhjQBr9G",
+  "cc_account_id": "account-335jdf32",
+  "cc_account_name": "my-account-name",
+  "cc_credentials_id": "d336c449-aeb8-4bb3-af28-5b886c40dd00",
+  "azure_client_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
+  "azure_client_secret": "NMubGVcDqkwwGnCs6fa01tqlkTisfUd4pBBYgcxxx=",
+  "azure_tenant_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
+  "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b607790910",
+  "subtenant_id": "5d2fb0fb4f47df00015274e3",
+  "tags": {
+    "key1": "Value 1",
+    "key2": "Value 2",
+    "key3": "Value 3",
+    "keyN": "Value N"
+  }
+}
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "action": "delete",
+        "job_summary": "Delete/update request is successfully submitted",
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z",
+        "object_id": "5d2fb0fb4f47df00015274e3",
+        "type": "fileserver",
+        "object_name": "testObject",
+        "status": "successful",
+        "user_id": "5d2fb0fb4f47df00015274e3"
+      }
+    ]
+  }
+}
+....
+
+=== Azure NetApp Files accounts
+
+==== Azure NetApp Files accounts attributes
+
+The following table lists the Azure NetApp Files account attributes.
+
+|===
+|Attribute |Type |Description
+
+|id
+|String
+|The unique identifier for the Azure NetApp Files account.
+|name
+|String
+|The name of the Azure NetApp Files account.
+|resource_group
+|String
+|The Azure resource group.
+|location
+|String
+|The Azure location (region/zone).
+|anf_instance_id
+|String
+|The Azure NetApp Files instance identifier.
+|tags
+|–
+|The key-value pairs.
+|===
+
+==== Retrieve Azure NetApp Files accounts
+
+|===
+|HTTP Method |Path |Description |Path Parameters
+
+|GET
+|/v2.1/anf/accounts
+|Retrieve Azure NetApp Files accounts.
+|subtenant_id: (Mandatory) The subtenant ID to which the Azure NetApp Files account belongs. 
+tenant_id: (Optional) Returns the Azure NetApp Files accounts belonging to the specified tenant.
+See also Pagination <xref> parameters.
+|===
+
+Required request body parameters: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 10,
+    "limit": 20,
+    "offset": 0,
+    "sort_by": "created",
+    "order_by": "desc",
+    "records": [
+      {
+        "id": "string",
+        "name": "myaccount",
+        "resource_group": "string",
+        "location": "string",
+        "state": "Operational",
+        "anf_instance_id": "5d2fb0fb4f47df00015274e3",
+        "tenant": "Acme",
+        "tenant_id": "5d2fb0fb4f47df00015274e3",
+        "subtenant": "Default Subtenant",
+        "subtenant_id": "5d2fb0fb4f47df00015274e3",
+        "tags": [
+          {
+            "key": "env",
+            "value": "test"
+          }
+        ],
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+==== Retrieve Azure NetApp Files account by name
+
+Use the method listed in the following table to retrieve an Azure NetApp Files account by name.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/anf/accounts/{name}
+|Retrieve an Azure NetApp Files account by name.
+|name (string): (Mandatory) The name of the Azure NetApp Files account.
+subtenant_id (string): (Mandatory) The subtenant ID to which the Azure NetApp Files account belongs. 
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 0,
+    "records": [
+      {
+        "id": "string",
+        "name": "myaccount",
+        "resource_group": "string",
+        "location": "string",
+        "state": "Operational",
+        "anf_instance_id": "5d2fb0fb4f47df00015274e3",
+        "tenant": "Acme",
+        "tenant_id": "5d2fb0fb4f47df00015274e3",
+        "subtenant": "Default Subtenant",
+        "subtenant_id": "5d2fb0fb4f47df00015274e3",
+        "tags": [
+          {
+            "key": "env",
+            "value": "test"
+          }
+        ],
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+==== Create Azure NetApp Files accounts
+
+Use the method listed in the following table to create a new Azure NetApp Files account.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/anf/accounts
+|Create a new Azure NetApp Files account.
+|None
+|===
+
+Required request body attributes`: name, resource_group, location, anf_instance_id` 
+
+....
+{
+  "name": "string",
+  "resource_group": "string",
+  "location": "string",
+  "anf_instance_id": "5d2fb0fb4f47df00015274e3",
+  "tags": {
+    "key1": "Value 1",
+    "key2": "Value 2",
+    "key3": "Value 3",
+    "keyN": "Value N"
+  }
+}
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "action": "delete",
+        "job_summary": "Delete/update request is successfully submitted",
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z",
+        "object_id": "5d2fb0fb4f47df00015274e3",
+        "type": "fileserver",
+        "object_name": "testObject",
+        "status": "successful",
+        "user_id": "5d2fb0fb4f47df00015274e3"
+      }
+    ]
+  }
+}
+....
+
+=== Azure NetApp Files capacity pools
+
+==== Capacity pools attributes
+
+The following table lists the capacity pool attributes.
+
+|===
+|Attribute |Type |Description
+
+|id
+|String
+|The unique identifier for the capacity pool.
+|name
+|String
+|The name of the capacity pool.
+|resource_group
+|String
+|The Azure resource group.
+|location
+|String
+|The Azure location (region/zone).
+|size
+|Integer
+|The size of the capacity pool in TB.
+|service_level
+|String
+|The service level name.
+|anf_account_name
+|String
+|The Azure NetApp Files account instance identifier.
+|subtenant_id
+|String
+|The subtenant ID.
+|tags
+|–
+|The key-value pairs.
+|===
+
+==== Retrieve capacity pools
+
+|===
+|HTTP Method |Path |Description |Path Parameters
+
+|GET
+|/v2.1/anf/pools
+|Retrieve capacity pools.
+|subtenant_id: (Mandatory) The subtenant ID to which the ANF account belongs. 
+tenant_id: (Optional) Return the capacity pools belonging to the specified tenant.
+See also Pagination <xref> parameters.
+|===
+
+Required request body parameters: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 10,
+    "limit": 20,
+    "offset": 0,
+    "sort_by": "created",
+    "order_by": "desc",
+    "records": [
+      {
+        "id": "string",
+        "name": "myaccount",
+        "resource_group": "string",
+        "location": "string",
+        "size": 10,
+        "service_level": "Standard",
+        "anf_account_name": "myaccount",
+        "state": "Operational",
+        "tenant": "Acme",
+        "tenant_id": "5d2fb0fb4f47df00015274e3",
+        "subtenant": "Default Subtenant",
+        "subtenant_id": "5d2fb0fb4f47df00015274e3",
+        "tags": [
+          {
+            "key": "env",
+            "value": "test"
+          }
+        ],
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+==== Retrieve capacity pool by name
+
+Use the method listed in the following table to retrieve a capacity pool by name.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/anf/pools/{name}
+|Retrieve a capacity pool by name.
+|name (string): (Mandatory) The unique name of the capacity pool.
+subtenant_id (string): (Mandatory) The subtenant ID to which the capacity pool belongs.
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 0,
+    "records": [
+      {
+        "id": "string",
+        "name": "myaccount",
+        "resource_group": "string",
+        "location": "string",
+        "size": 10,
+        "service_level": "Standard",
+        "anf_account_name": "myaccount",
+        "state": "Operational",
+        "tenant": "Acme",
+        "tenant_id": "5d2fb0fb4f47df00015274e3",
+        "subtenant": "Default Subtenant",
+        "subtenant_id": "5d2fb0fb4f47df00015274e3",
+        "tags": [
+          {
+            "key": "env",
+            "value": "test"
+          }
+        ],
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+==== Create capacity pools
+
+Use the method listed in the following table to create a new capacity pool.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/anf/pools
+|Create a capacity pool.
+|None
+|===
+
+Required request body attributes`: name, resource_group, location, size, service_level, anf_account_name, subtenant_id` 
+
+....
+{
+  "name": "string",
+  "resource_group": "string",
+  "location": "string",
+  "size": 10,
+  "service_level": "Standard",
+  "anf_account_name": "myaccount",
+  "subtenant_id": "5d2fb0fb4f47df00015274e3",
+  "tags": {
+    "key1": "Value 1",
+    "key2": "Value 2",
+    "key3": "Value 3",
+    "keyN": "Value N"
+  }
+}
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "action": "delete",
+        "job_summary": "Delete/update request is successfully submitted",
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z",
+        "object_id": "5d2fb0fb4f47df00015274e3",
+        "type": "fileserver",
+        "object_name": "testObject",
+        "status": "successful",
+        "user_id": "5d2fb0fb4f47df00015274e3"
+      }
+    ]
+  }
+}
+....
+
+==== Modify size of the capacity pool 
+
+Use the method listed in the following table to modify the size of the capacity pool.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|PUT
+|/v2.1/anf/pools/{name}
+|Modify the size of the capacity pool.
+|name (string): Mandatory: the unique name of the capacity pool.
+|===
+
+Required request body attributes:  `name, resource_group, location, anf_account_name, size, service_level, subtenant_id`
+
+....
+{
+  "name": "myaccount",
+  "resource_group": "string",
+  "location": "string",
+  "anf_account_name": "myaccount",
+  "size": 4,
+  "service_level": "Standard",
+  "subtenant_id": "5d2fb0fb4f47df00015274e3",
+  "tags": {
+    "key1": "Value 1",
+    "key2": "Value 2",
+    "key3": "Value 3",
+    "keyN": "Value N"
+  }
+}
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "action": "delete",
+        "job_summary": "Delete/update request is successfully submitted",
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z",
+        "object_id": "5d2fb0fb4f47df00015274e3",
+        "type": "fileserver",
+        "object_name": "testObject",
+        "status": "successful",
+        "user_id": "5d2fb0fb4f47df00015274e3"
+      }
+    ]
+  }
+}
+....
+
+=== Azure NetApp Files volumes
+
+==== Azure NetApp Files volume attributes
+
+The following table lists the Azure NetApp Files volume attributes.
+
+|===
+|Attribute |Type |Description
+
+|id
+|String
+|The unique identifier for the Azure NetApp Files volume.
+|name
+|String
+|The name of the Azure NetApp Files volume.
+|resource_group
+|String
+|The Azure resource group.
+|subtenant_id
+|String
+|The subtenant ID.
+|anf_account_name
+|String
+|The Azure NetApp Files account name. 
+|anf_pool_name
+|String
+|The Azure NetApp Files Pool name. 
+|location
+|String
+|The Azure location (region/zone).
+|file_path
+|String
+|Creation Token or File Path. A unique file path for accessing volume.
+|quota_size
+|Integer
+|Maximum storage quota allowed in GiB.
+|subNetID
+|String
+|The Azure Resource URL for a delegated subnet. Must have the delegation Microsoft NetApp/volumes.
+|tags
+|–
+|The key-value pairs.
+|===
+
+==== Retrieve Azure NetApp Files volumes
+
+Use the method listed in the following table to retrieve Azure NetApp Files volumes. Specifying a `tenant_id` returns only the accounts belonging to that tenant. 
+
+|===
+|HTTP Method |Path |Description |Path Parameters
+
+|GET
+|/v2.1/anf/volumes
+|Retrieve Azure NetApp Files volumes.
+|subtenant_id: (Mandatory) The subtenant ID to which the ANF volume belongs. 
+tenant_id: (Optional) Return the ANF Volumes belonging to the specified tenant.
+See also Pagination <xref> parameters.
+|===
+
+Required request body parameters: `none`.
+
+....
+none
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 10,
+    "limit": 20,
+    "offset": 0,
+    "sort_by": "created",
+    "order_by": "desc",
+    "records": [
+      {
+        "id": "string",
+        "name": "myaccount",
+        "resource_group": "string",
+        "location": "string",
+        "size": 10,
+        "service_level": "Standard",
+        "anf_account_name": "myaccount",
+        "state": "Operational",
+        "tenant": "Acme",
+        "tenant_id": "5d2fb0fb4f47df00015274e3",
+        "subtenant": "Default Subtenant",
+        "subtenant_id": "5d2fb0fb4f47df00015274e3",
+        "tags": [
+          {
+            "key": "env",
+            "value": "test"
+          }
+        ],
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+==== Retrieve Azure NetApp Files volume by name
+
+Use the method listed in the following table to retrieve an Azure NetApp Files volume by name.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/anf/volumes/{name}
+|Retrieve an Azure NetApp Files volume by name.
+|name (string): Mandatory: the unique name of the Azure NetApp Files volume.
+subtenant_id: (string) Mandatory. The subtenant ID to which the Azure NetApp Files volume belongs.
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 0,
+    "records": [
+      {
+        "id": "string",
+        "name": "myVolume",
+        "resource_group": "string",
+        "subtenant_id": "5d2fb0fb4f47df00015274e3",
+        "anf_account_name": "myaccount",
+        "anf_pool_name": "myaccount",
+        "location": "string",
+        "file_path": "myVolume",
+        "quota_size": 100,
+        "subNetId": "string",
+        "state": "Operational",
+        "tenant": "Acme",
+        "tenant_id": "5d2fb0fb4f47df00015274e3",
+        "subtenant": "Default Subtenant",
+        "tags": [
+          {
+            "key": "env",
+            "value": "test"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+==== Create Azure NetApp Files volumes
+
+Use the method listed in the following table to create a new Azure NetApp Files volume.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/anf/volumes
+|Create an Azure NetApp Files volume.
+|None
+|===
+
+Required request body attributes`: name, resource_group, subtenant_id, anf_account_name, anf_pool_name, location, file_path, quota_size, subNetID `
+
+....
+{
+  "name": "myVolume",
+  "resource_group": "string",
+  "subtenant_id": "5d2fb0fb4f47df00015274e3",
+  "anf_account_name": "myaccount",
+  "anf_pool_name": "myaccount",
+  "location": "string",
+  "file_path": "myVolume",
+  "quota_size": 100,
+  "subNetId": "string",
+  "tags": {
+    "key1": "Value 1",
+    "key2": "Value 2",
+    "key3": "Value 3",
+    "keyN": "Value N"
+  }
+}
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "action": "delete",
+        "job_summary": "Delete/update request is successfully submitted",
+        "created": "1995-09-07T10:40:52Z",
+        "updated": "1995-09-07T10:40:52Z",
+        "object_id": "5d2fb0fb4f47df00015274e3",
+        "type": "fileserver",
+        "object_name": "testObject",
+        "status": "successful",
+        "user_id": "5d2fb0fb4f47df00015274e3"
+      }
+    ]
+  }
+}
+....
+
+

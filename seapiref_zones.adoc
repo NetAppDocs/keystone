@@ -1,0 +1,240 @@
+---
+sidebar: sidebar
+permalink: seapiref_zones.html
+keywords:
+summary:
+---
+
+= Zones
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.290822
+//
+
+[.lead]
+Use the methods listed in the following table to create, modify,  and delete zones. For APIs that allow you to retrieve zones, see the (Consumer) Administration APIs.
+
+|===
+|HTTP Method |Path |Description
+
+|POST
+|/v2.1/zones
+|Create a new zone.
+|PUT
+|/v2.1/zones/{name}
+|Modify the details of a zone.
+|DELETE
+|/v2.1/zones/{name}
+|Delete a zone.
+|===
+
+=== Zone attributes
+
+The following table lists the zone attributes. 
+
+|===
+|Attribute |Type |Description
+
+|id
+|String
+|the unique identifier of the zone.
+|name
+|String
+|The zone name.
+|description
+|String
+|The description of the zone.
+|region_name
+|String
+|The name of the region in which the zone resides.
+|===
+
+=== Retrieve all zones
+
+Use the method listed in the following table to retrieve all zones or a subset of zones. Specifying a region will return only the block stores belonging to that tenant.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/zones
+|Retrieve zones.
+|(Optional) Region name (string)
+offset and limit– see Pagination <xref>
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 5,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 2,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5ce5d919b68d3b82dc34bef2",
+        "name": "au-west1-a",
+        "description": "au-west1-a",
+        "region": "au-west1"
+      }
+    ]
+  }
+....
+
+=== Retrieve a zone by name
+
+Use the method listed in the following table to retrieve a zone by the zone name.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|GET
+|/v2.1/zones/{name}
+|Retrieve a zone by name.
+|Name (string): Zone name
+|===
+
+Required request body attributes: `none`
+
+....
+none
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ce5d919b68d3b82dc34bef2",
+        "name": "au-west1-a",
+        "description": "au-west1-a",
+        "region": "au-west1"
+      }
+    ]
+  }
+}
+....
+
+=== Create a zone
+
+Use the method listed in the following table to create a zone.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|POST
+|/v2.1/zones
+|Create a new zone within a region.
+|None
+|===
+
+Required request body attributes:  `name`, `description`, `region_name`
+
+....
+{
+  "name": "MyZoneName",
+  "description": "DescriptionOfMyZone",
+  "region_name": "MyRegionName"
+}
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61741c9b64790001fe9663",
+        "name": "MyZoneName",
+        "description": "DescriptionOfMyZone",
+        "region": "MyRegionName"
+      }
+    ]
+  }
+}
+....
+
+=== Modify a zone
+
+Use the method listed in the following table to modify a zone.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|PUT
+|/v2.1/zones{name}
+|Modify a zone identified by name.
+|name (string): Name of the zone.
+|===
+
+Required request body attributes:  `none`
+
+....
+{
+  "name": "MyZoneName",
+  "description": "NewDescriptionOfMyZone"
+}
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61741c9b64790001fe9663",
+        "name": "MyZoneName",
+        "description": "NewDescriptionOfMyZone",
+        "region": "MyRegionName"
+      }
+    ]
+  }
+}
+....
+
+=== Delete a zone
+
+Use the method listed in the following table to delete a zone.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|DELETE
+|/v2.1/zones{name}
+|Delete a single zone identified by name. All storage resources within a zone must be deleted first.
+|name (string): Name of the zone.
+|===
+
+Required request body attributes:  `none`
+
+....
+none
+....
+
+No content to return on a successful deletion.
+
+

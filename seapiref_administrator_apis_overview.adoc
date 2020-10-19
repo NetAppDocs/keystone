@@ -1,0 +1,38 @@
+---
+sidebar: sidebar
+permalink: seapiref_administrator_apis_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.075614
+//
+
+[.lead]
+This section describes the following administrator APIs:
+
+* Tenants
+* Subtenants
+* Users
++
+Activities such as resetting user passwords, refreshing tokens, or logging in as a user are available as part of the Consumer API suite. See (Consumer) Administration APIs.
+
+* Zones
+* Regions
+* ONTAP clusters
+* StorageGRID instances
+* Service levels
+* Service requests
+* Jobs
+
+
