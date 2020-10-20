@@ -1,0 +1,106 @@
+---
+sidebar: sidebar
+permalink: sewebiug_managing_subscriptions.html
+keywords:
+summary:
+---
+
+= Managing subscriptions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.931424
+//
+
+[.lead]
+This section describes how to manage your subscriptions from within the NetApp Service Engine interface. For general information about accounts, subscriptions,  and services, see Billing Accounts, Subscriptions, Services,  and Performance <xref>.
+
+This section describes the following tasks:
+
+* View and manage subscribed services
+* Increase the capacity of a service
+* Add a new service
+* Terminate a subscription
+
+=== View and manage subscribed services
+
+View and manage subscribed services from the Manage Subscription page.
+
+To view or manage subscribed services for a tenant, complete the following steps:
+
+. Select the Tenant <xref>.
+. From the menu, select Subscription > Manage.
+
+image:sewebiug_image35.png[Error: Missing Graphic Image]
+
+. The Manage Subscription page displays the services for the selected subscription on the billing account associated with the tenant.  On this page, you can perform the following tasks:
+
+** View the billing account name and number.
+** Choose which subscription to view (where the billing account has multiple subscriptions), by selecting the subscription in the Subscription No field.
+** View information about the selected subscription including:
+** Subscription end date
+** Services in the subscription;  and for each service,  the committed, consumed,  and burst capacities (hover the mouse over the circles)
+
+image:sewebiug_image18.png[Error: Missing Graphic Image]
+
+** Manage the services in the selected subscription:
+** Increase the capacity of a service (see Request a Change to a Subscription)
+** View and manage requested subscription changes 
+** Add a new service
+** Terminate a subscription
+
+=== Request a change to a subscription
+
+Use this method to increase the capacity on a service when there is a need (for example,  when the usage consistently goes into burst or to meet growth requirements).
+
+==== Steps
+
+. Select the tenant <xref> to which the service belongs.
+. From the menu, select Subscription > Manage.
+. If the tenant has more than one subscription, select the subscription to which the service belongs from the Subscription No field.
+. Locate the service in the display. Use the buttons below the service to request a change.
+
+|===
+|Select  |To
+
+|Increase Capacity 
+|Increase the capacity of that service
+|===
+
+. In the dialog box that is displayed, specify the capacity required for the service,  and then click Confirm.
+
+[NOTE]
+The request appears as an unsent request in the Request Changes panel.  Before you continue, review any unsent changes in the Requested Changes list.
+
+. Submit changes. The request is sent to your system provider for consideration and action.
+
+=== Add a service to a subscription
+
+Use this method to add a service to a subscription. A subscription might only have one of each performance level, so for example,  if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
+
+==== Steps
+
+. Select the tenant <xref> to which the service belongs.
+. From the menu, select Subscription > Manage.
+. If the tenant has more than one subscription, select the subscription to which the service belongs from the Subscription No field.
+. Click Add Service. In the Add a Subscription Service dialog box, select the service type and the capacity required, and then click Confirm.
+. The request appears as an unsent request in the Request Changes panel.
+. Review any unsent changes in the Requested Changes list before continuing.
+. Submit changes.  The request is sent to your system provider for consideration and action.
+
+=== Terminate subscription
+
+Use this method to terminate a subscription. For any termination conditions that might apply to your subscription, refer to your contract.
+
+==== Steps
+
+. Select the tenant <xref> to which the subscription belongs
+. From the menu, select Subscription > Manage.
+. If the tenant has more than one subscription, select the subscription to terminate in the Subscription No field.
+. Click Terminate Subscription. The request is sent to your system provider.

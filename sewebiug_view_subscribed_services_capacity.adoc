@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: sewebiug_view_subscribed_services_capacity.html
+keywords:
+summary:
+---
+
+= View subscribed services capacity
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.121490
+//
+
+[.lead]
+The Subscribed Services pane displays information about the storage subscriptions for an account.
+
+image:sewebiug_image17.png[Error: Missing Graphic Image]
+
+For the selected account, the panel displays the service tiers that make up the selected subscription. 
+
+Each service is represented by a circle consisting of three concentric rings. The rings depict the capacities associated with the service: the inner ring displays the committed capacity, the middle ring the burst capacity and the outer ring the consumed capacity. Hover the cursor over the ring to display the relevant capacity.
+
+image:sewebiug_image18.png[Error: Missing Graphic Image]
+
+Where an account has more than one subscription, you can choose to display the subscribed services of the other subscription by selecting that in the Subscription No field.
+
+image:sewebiug_image19.png[Error: Missing Graphic Image]

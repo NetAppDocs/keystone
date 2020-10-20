@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+permalink: sewebiug_add_a_subscribed_service.html
+keywords:
+summary:
+---
+
+= Add a subscribed service
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.223431
+//
+
+[.lead]
+This section describes how to add a subscribed service.
+
+=== Before you begin
+
+=== Steps
+
+. Select Subscribed Services > Subscribed Services from the menu.
+. Click Add.
+. In the Add Subscribed Service dialog box,  select the cloud service type and then complete the relevant information for that service type:
++
+*Azure:*
+
+.. Select the Subtenant.
+.. Enter a name for the OCCM Working Environment that will be created for the service.
+.. Enter the Azure Directory (tenant) id, the Azure Client ID, Azure Client Secret and the Name.
++
+*Azure US Government*
+
+. TBA
++
+*GCP Google Cloud Platform*
++
+TBA
++
+*AWS Amazon Web Services*
++
+TBA
+
+. Specify tags for the service if required. 
+. Click Add.
+
+

@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: sewebiug_view_the_object_storage_group_and_users.html
+keywords:
+summary:
+---
+
+= View the object storage group and users
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.731881
+//
+
+[.lead]
+The User Management list displays the object storage users and groups for a specified subtenant.
+
+=== Steps
+
+. From the menu,  select Object Storage > Users.
+. Use the Subtenant drop-down menu to select another subtenant if required.
+. Use the Users and Groups links to toggle the display between users and groups.
+
+** The Users list displays the object storage users defined for the selected subtenant. For each user,  it displays their name and the object storage groups to which they belong.
+** The Groups list displays the object storage groups defined for the selected subtenant. For each group,  it displays the group name and S3 policy.
++
+For more information about how to use the features of a list,* *see List View <xref>.
+
+

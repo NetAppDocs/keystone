@@ -1,0 +1,72 @@
+---
+sidebar: sidebar
+permalink: sewebiug_managing_azure_volumes.html
+keywords:
+summary:
+---
+
+= Managing Azure volumes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.340665
+//
+
+[.lead]
+This section describes how to manage Azure volumes.
+
+[NOTE]
+Managing Azure Volumes requires customer administrator access.
+
+This section describes how to perform the following tasks:
+
+* View a list of Azure volumes.
+* Add an Azure volume.
+* Modify Azure volume details.
+* Delete an Azure volume.
+
+=== View a list of Azure volumes
+
+The Azure Volumes list displays a list of Azure volumes in the tenancies to which the logged-in user has access. To display the list, select Subscribed Services > Azure Volumes from the menu.
+
+The list displays simple information about each Azure Volume.  The action icons next to each Azure volume allow you to modify or delete the Azure volume.
+
+=== Add an Azure volume
+
+This section describes how to add an Azure volume.
+
+==== Steps
+
+. Select Subscribed Services > Azure Volumes from the menu.
+. Click Create.
+. In the Create Azure Volume dialog box,  specify the subtenant, location,  resource group, account name, service level, the Aize,  and the Azure NetApp account ID.
+. If needed, add tags to the volume.
+. Click Create.
+
+=== Modify Azure volume details
+
+Use this method to modify the details of an Azure volume. You can modify the subtenant, Azure location, Azure resource group or name of the account,  and add or remove tags. 
+
+==== Steps
+
+. Select Subscribed Services > Azure Volumes from the menu.
+. Int the list, locate the Azure volume and click the Edit icon.
+. In the Manage Azure Volume dialog box, make any changes as required.
+. Click Update.
+
+=== Delete an Azure volume
+
+Use this method to delete an Azure volume. 
+
+==== Steps
+
+. Select Subscribed Services > Azure Volumes from the menu.
+. Locate the Azure volume in the list and click the Delete icon.
+. In the Confirm Delete dialog box, enter the name of the Azure volume to be deleted.
+. Click Confirm.

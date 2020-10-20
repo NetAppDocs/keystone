@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_object_storage_user.html
+keywords:
+summary:
+---
+
+= Create Object Storage User
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.798257
+//
+
+=== Before you begin
+
+Because an object storage user belongs to an object storage group, the object storage group must exist before you can create the user.
+
+=== Steps
+
+. Display the Users List <xref>.
+. Make sure the correct subtenant is selected and the display is showing users (not groups).  
+. Click Create User.
+. In the Create User dialog box:
+.. Enter the user name.
+.. Select the group to which the member belongs.
+. Click Create. This creates a job to create the user with the specified settings.
+
+=== After you finish
+
+Create user is run as an asynchronous job <xref>. You can:
+
+* Check the status of the job in the jobs list.
+* After the job is finished, check the status of the share in the Users list.
+
+

@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: sewebiug_select_tenant.html
+keywords:
+summary:
+---
+
+= Select tenant
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.070962
+//
+
+[.lead]
+When working with the NetApp Service Engine web interface, any data that you see and any activities that you perform relate to the selected tenant. You can view the tenant at the top of the screen, as shown below.
+
+image:sewebiug_image8.png[Error: Missing Graphic Image]
+
+Most NetApp Service Engine web interface users have access to only one tenant. However, , in instances where you might have access to multiple tenants, you can change the tenant by selecting another tenant in the Tenant field.
+
+

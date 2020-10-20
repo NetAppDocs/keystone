@@ -1,0 +1,40 @@
+---
+sidebar: sidebar
+permalink: sewebiug_initialize_object_storage.html
+keywords:
+summary:
+---
+
+= Initialize object storage
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.702060
+//
+
+[.lead]
+Object storage must be initialized before it can be used.
+
+If you attempt to create a storage bucket on object storage that has not yet been initialized, you will see the prompt to initialize the storage. The following section describes the process.
+
+=== Steps
+
+. Display the Buckets list <xref> and select the Subtenant under which to create the bucket.
+. If the object storage has not been initialized for this subtenant,  the following message is displayed:
+
+image:sewebiug_image31.png[Error: Missing Graphic Image]
+
+. Click Initialize Object Storage.
+. In the Initialize Object Storage dialog box, select the quota for the object storage and click Create.
+
+image:sewebiug_image32.png[Error: Missing Graphic Image]
+
+. Check the jobs list to make sure the object storage is successfully initialized.
+
+

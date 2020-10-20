@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: sewebiug_view_buckets.html
+keywords:
+summary:
+---
+
+= View buckets
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.685539
+//
+
+[.lead]
+The Buckets list displays the existing buckets for a selected Subtenant.
+
+. To display the list, select Object Storage > Buckets from the menu.
+. Use the Subtenant drop-down menu to select another subtenant if required. 
++
+The display shows simple information for each bucket, such as:
+
+** Name
+** Date created
+** Usage
++
+For more information about how to use the features of a list,* *see List View <xref>.
+
+

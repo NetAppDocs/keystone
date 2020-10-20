@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_an_object_storage_group.html
+keywords:
+summary:
+---
+
+= Create an object storage group
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.747939
+//
+
+[.lead]
+Use this method to create a new object storage group.
+
+=== Steps
+
+. Display the Users List <xref>.
+. Make sure the correct subtenant is selected and the display is showing groups (not users).  
+. Click Create Group.
+. In the Create Group dialog box, enter the group name.
+. Select the S3 policy from the list.
+. Click Create. This creates a job to create the group with the specified settings.
+
+=== After you finish
+
+Create object storage group is run as an asynchronous job <xref>. You can check the status of the job in the jobs list.
+
+

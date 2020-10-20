@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: sewebiug_working_with_file_services.html
+keywords:
+summary:
+---
+
+= Working with file services
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.133440
+//
+
+

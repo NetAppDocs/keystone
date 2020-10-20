@@ -179,3 +179,145 @@ entries:
             url: /seapiref_service_requests.html
           - title: Jobs
             url: /seapiref_jobs.html
+  - title: Service Engine Web Interface User Guide
+    entries:
+      - title: Overview
+        url: /sewebiug_overview.html
+      - title: Billing accounts, subscriptions, services, and performance
+        url: /sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html
+      - title: Getting started
+        entries:
+          - title: Overview
+            url: /sewebiug_getting_started_overview.html
+          - title: Log in to the NetApp Service Engine web interface
+            url: /sewebiug_log_in_to_the_netapp_service_engine_web_interface.html
+          - title: Select tenant
+            url: /sewebiug_select_tenant.html
+          - title: NetApp Service Engine web interface overview
+            url: /sewebiug_netapp_service_engine_web_interface_overview.html
+      - title: View subscribed services capacity
+        url: /sewebiug_view_subscribed_services_capacity.html
+      - title: Working with file services
+        entries:
+          - title: Overview
+            url: /sewebiug_working_with_file_services_overview.html
+          - title: View servers
+            url: /sewebiug_view_servers.html
+          - title: Create a file server
+            url: /sewebiug_create_a_file_server.html
+          - title: Modify file server
+            url: /sewebiug_modify_file_server.html
+          - title: Delete file server
+            url: /sewebiug_delete_file_server.html
+          - title: View shares
+            url: /sewebiug_view_shares.html
+          - title: Create a new file share
+            url: /sewebiug_create_a_new_file_share.html
+          - title: Create file share from snapshot
+            url: /sewebiug_create_file_share_from_snapshot.html
+          - title: Modify a file share
+            url: /sewebiug_modify_a_file_share.html
+          - title: Delete a file share
+            url: /sewebiug_delete_a_file_share.html
+          - title: Create adhoc snapshot of a file share
+            url: /sewebiug_create_adhoc_snapshot_of_a_file_share.html
+      - title: Working with block storage
+        entries:
+          - title: Overview
+            url: /sewebiug_working_with_block_storage_overview.html
+          - title: View host groups
+            url: /sewebiug_view_host_groups.html
+          - title: Create a host group
+            url: /sewebiug_create_a_host_group.html
+          - title: Modify host group initiators
+            url: /sewebiug_modify_host_group_initiators.html
+          - title: Delete a host group
+            url: /sewebiug_delete_a_host_group.html
+          - title: View disks
+            url: /sewebiug_view_disks.html
+          - title: Create a new disk
+            url: /sewebiug_create_a_new_disk.html
+          - title: Create a disk from a snapshot
+            url: /sewebiug_create_a_disk_from_a_snapshot.html
+          - title: Modify a disk
+            url: /sewebiug_modify_a_disk.html
+          - title: Delete a disk
+            url: /sewebiug_delete_a_disk.html
+          - title: Create an adhoc snapshot of a disk
+            url: /sewebiug_create_an_adhoc_snapshot_of_a_disk.html
+      - title: Working with object storage
+        entries:
+          - title: Overview
+            url: /sewebiug_working_with_object_storage_overview.html
+          - title: View buckets
+            url: /sewebiug_view_buckets.html
+          - title: Initialize object storage
+            url: /sewebiug_initialize_object_storage.html
+          - title: Create buckets
+            url: /sewebiug_create_buckets.html
+          - title: View the object storage group and users
+            url: /sewebiug_view_the_object_storage_group_and_users.html
+          - title: Create an object storage group
+            url: /sewebiug_create_an_object_storage_group.html
+          - title: Modify an object storage group
+            url: /sewebiug_modify_an_object_storage_group.html
+          - title: Delete an object storage group
+            url: /sewebiug_delete_an_object_storage_group.html
+          - title: Create Object Storage User
+            url: /sewebiug_create_object_storage_user.html
+          - title: Modify an object storage user
+            url: /sewebiug_modify_an_object_storage_user.html
+          - title: Create an S3 key for a user
+            url: /sewebiug_create_an_s3_key_for_a_user.html
+          - title: Delete an S3 key for a user
+            url: /sewebiug_delete_an_s3_key_for_a_user.html
+      - title: Working with reports
+        url: /sewebiug_working_with_reports.html
+      - title: Managing subscriptions
+        url: /sewebiug_managing_subscriptions.html
+      - title: Managing service requests
+        entries:
+          - title: Overview
+            url: /sewebiug_managing_service_requests_overview.html
+          - title: Raise a service request
+            url: /sewebiug_raise_a_service_request.html
+          - title: Track a service request
+            url: /sewebiug_track_a_service_request.html
+          - title: Service request process
+            url: /sewebiug_service_request_process.html
+      - title: Managing subtenants
+        url: /sewebiug_managing_subtenants.html
+      - title: Managing users
+        entries:
+          - title: Overview
+            url: /sewebiug_managing_users_overview.html
+          - title: View a list of users
+            url: /sewebiug_view_a_list_of_users.html
+          - title: Add a user
+            url: /sewebiug_add_a_user.html
+          - title: Modify user details
+            url: /sewebiug_modify_user_details.html
+          - title: Delete a user
+            url: /sewebiug_delete_a_user.html
+      - title: Working with Cloud Manager
+        url: /sewebiug_working_with_cloud_manager.html
+      - title: Managing subscribed services
+        entries:
+          - title: Overview
+            url: /sewebiug_managing_subscribed_services_overview.html
+          - title: View a list of subscribed services
+            url: /sewebiug_view_a_list_of_subscribed_services.html
+          - title: Add a subscribed service
+            url: /sewebiug_add_a_subscribed_service.html
+          - title: Modify the subscribed service details
+            url: /sewebiug_modify_the_subscribed_service_details.html
+          - title: Delete a subscribed service
+            url: /sewebiug_delete_a_subscribed_service.html
+      - title: Managing Azure NetApp accounts
+        url: /sewebiug_managing_azure_netapp_accounts.html
+      - title: Managing Azure capacity pools
+        url: /sewebiug_managing_azure_capacity_pools.html
+      - title: Managing Azure volumes
+        url: /sewebiug_managing_azure_volumes.html
+      - title: Where to Find Additional Information
+        url: /sewebiug_where_to_find_additional_information.html

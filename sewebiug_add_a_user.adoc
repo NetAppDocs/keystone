@@ -1,0 +1,40 @@
+---
+sidebar: sidebar
+permalink: sewebiug_add_a_user.html
+keywords:
+summary:
+---
+
+= Add a user
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.122453
+//
+
+[.lead]
+This section describes how to add a user.
+
+=== Before you begin
+
+You will need:
+
+* The tenants to which the user should be given access.
+* The role that the user will be granted within each tenancy. A user can have only one role within a tenancy.
+
+=== Steps
+
+. Select Administration > Users from the menu.
+. Click Create User.
+. In the Create User dialog box,  specify the user name, email address, first name, last name, display name,  and password for the user.
+. Select the primary tenant and the role of the user in that tenancy.
+. To add additional tenancies,  click Add Tenancy to display new entry fields and select the tenant and the role of the user in that tenancy.
+. Click Create.
+
+

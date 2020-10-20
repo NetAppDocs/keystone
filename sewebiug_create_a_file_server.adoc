@@ -1,0 +1,89 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_a_file_server.html
+keywords:
+summary:
+---
+
+= Create a file server
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.166237
+//
+
+[.lead]
+File servers belong to a subtenant and are created within a zone. When creating a server, you can optionally:
+
+* Enable disaster recovery DP for the server. For more information about how disaster recovery works in NetApp Service Engine, see Disaster Recovery <xref>.
+* Make it CIFS-enabled.  For CIFS-enabled servers:
+** You must provide the Active Directory user name, Active Directory password, domain, DNS servers, server name and, optionally, the Active Directory Organizational Unit (OU).
+** The Active Directory credentials (Active Directory user name and Active Directory password) must be for a user that has the privilege to join a computer to the Active Directory domain.
+** When the Active Directory OU structure is hierarchical, as shown in the image below, specify the OUs from the lowest level to the top. In this example, to specify the Melbourne OU, set `cifs_ou` as `"cifs_ou": "ou=melbourne,ou=cifs".`
+
+image:sewebiug_image20.png[Error: Missing Graphic Image]
+
+=== Before you begin
+
+Make sure you have the following to create the server:
+
+* The subtenant that will host the server.
+* The zone in which the server belongs.
+* Networking details such as the VLAN ID, subnet, IP address (optional),  and gateway (optional). If you are unfamiliar with your network, check with your IT department for the appropriate values.
+* To enable DP on the file server, the disaster recovery zone (the zone to which the file server will be replicated).
+
+=== Steps
+
+. Display the File Servers list <xref>.
+. Click Create Server.
+. On the Create Server page complete the following fields:
+
+|===
+|Field |Description
+
+|Subtenant
+|Select the Subtenant from the list.
+|Region
+|Select the region in which the server will reside.
+|Zone
+|Select the zone in which the server will reside.
+|Name
+|Enter the server name.
+|VLAN
+|Specify the VLAN id and subnet. 
+|Subnet
+|
+|IP address
+|(Optional) Specify an IP address. If not specified, the server will be given the next available IP address.
+|Gateway
+|(Optional)
+|===
+
+. Select the services:
++
+NFS is enabled by default. The NFS protocol in use is displayed.
++
+If creating a CIFS-enabled file server:
+
+.. Toggle the CIFS-enabled button to display the CIFS related fields.
+.. Complete the Active Directory Username, Active Directory Password, Domain, DNS Servers, Server Name and, optionally, the Active Directory Organizational Unit. The Active Directory credentials must be for a user that has the privilege to join a computer to the Active Directory domain.
+. To enable disaster recovery DP on this file server:
+. Toggle the Disaster Recovery button to enable it.
+. Select the disaster recovery region and zone.
+. Select the disaster recovery replication schedule.
+. Click Create. This creates a job to create the server.
+
+=== After you finish
+
+Create server is run as an asynchronous job <xref>. You can:
+
+* Check the status of the job in the jobs list.
+* After the job is finished, check the status of the server in the Servers list.
+
+
