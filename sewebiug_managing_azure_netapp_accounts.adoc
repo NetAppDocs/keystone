@@ -1,0 +1,72 @@
+---
+sidebar: sidebar
+permalink: sewebiug_managing_azure_netapp_accounts.html
+keywords:
+summary:
+---
+
+= Managing Azure NetApp accounts
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.270062
+//
+
+[.lead]
+This section describes how to manage Azure NetApp accounts:
+
+[NOTE]
+Managing Azure NetApp accounts requires customer administrator access.
+
+In this section:
+
+* View a list of azure NetApp accounts
+* Add an Azure NetApp account
+* Modify Azure NetApp account details
+* Delete an Azure NetApp account
+
+=== View a list of Azure NetApp accounts
+
+The Azure NetApp Accounts list displays a list of all the Azure NetApp accounts in the tenancies that the logged-in user has access to. To display the list, select Subscribed Services > Azure NetApp Accounts from the menu.
+
+The list displays simple information about each Azure NetApp account.  The action icons next to each Azure NetApp account allow you to modify or delete the Azure NetApp account.
+
+=== Add an Azure NetApp account
+
+This section describes how to add an Azure NetApp account.
+
+==== Steps
+
+. Select Subscribed Services > Azure NetApp Accounts from the menu.
+. Click Create.
+. In the Create Azure NetApp Account dialog box,  specify the subtenant, the Azure location (region), the Azure resource group,  and a name for the Azure NetApp account.
+. If needed, add tags to the account.
+. Click Create.
+
+=== Modify Azure NetApp account details
+
+Use this method to modify the details of an Azure NetApp account. You can modify the subtenant, Azure location, Azure resource group or name of the account,  and add or remove tags. 
+
+==== Steps
+
+. Select Subscribed Services > Azure NetApp Accounts from the menu.
+. Locate the Azure NetApp Account in the list and click the Edit icon.
+. On the Manage Azure NetApp Account dialog box, make any changes as required.
+. Click Update.
+
+=== Delete an Azure NetApp account
+
+Use this method to delete an Azure NetApp Account. 
+
+==== Steps
+
+. Select Subscribed Services > Azure NetApp Accounts from the menu.
+. Locate the Azure NetApp account in the list and click the Delete icon.
+. In the Confirm Delete dialog box, enter the name of the Azure NetApp account to be deleted.
+. Click Confirm.

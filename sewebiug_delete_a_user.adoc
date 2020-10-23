@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: sewebiug_delete_a_user.html
+keywords:
+summary:
+---
+
+= Delete a user
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.158416
+//
+
+[.lead]
+Use this method to delete a user. 
+
+[NOTE]
+It is not possible to recover a deleted user.
+
+=== Steps
+
+. Select Administration > Users from the menu.
+. Locate the user in the list and click the Delete icon.
+. In the Confirm Delete dialog box, enter the name of the user to be deleted.
+. Click Confirm.

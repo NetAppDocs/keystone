@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: sewebiug_view_servers.html
+keywords:
+summary:
+---
+
+= View servers
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.149790
+//
+
+[.lead]
+The Servers list displays the file servers belonging to the selected tenant. To display the list, select File Services > Servers from the menu.
+
+The list displays simple information about each server such as:
+
+* Server name
+* IP address
+* Subtenant
+* Zone
+* Operational state
+* Protocols in use (NFS, CIFS)
+* The CIFS server name (if relevant).
++
+For more information on how to use the features of a list,* *see List View <xref>.
+
+

@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: sewebiug_modify_an_object_storage_group.html
+keywords:
+summary:
+---
+
+= Modify an object storage group
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.763445
+//
+
+[.lead]
+Use this method to modify details of an object storage group such as the group name and S3 policy.
+
+=== Steps
+
+. Display the Groups List <xref>.
+. Make sure the correct subtenant is selected and the display is showing groups (not users).
+. Locate the group in the list and click the Edit icon for that group. 
++
+For details about working with items in lists,  see List view actions <xref>.
+
+. In the Edit Group dialog box, enter the user name.
+. Select the S3 policy that applies to the modified group.
+. Click Create. This creates a job to modify the group with the specified settings.
+
+

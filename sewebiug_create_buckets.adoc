@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_buckets.html
+keywords:
+summary:
+---
+
+= Create buckets
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.717480
+//
+
+[.lead]
+Buckets are created under a subtenant.
+
+=== Steps
+
+. Display the Buckets list <xref> and select the subtenant under which to create the bucket.
+. Click Create Bucket.
+. In the Create Bucket dialog box, enter the name of the new bucket and click Create. This creates a job to create the bucket.
+
+=== After you finish
+
+Create bucket is run as an asynchronous job <xref>. You can:
+
+* Check the status of the job in the jobs list.
+* After the job is finished, check the status of the server in the Buckets list.
+
+
