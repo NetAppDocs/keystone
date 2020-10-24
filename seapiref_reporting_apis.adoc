@@ -24,11 +24,11 @@ Use the methods in the following table to retrieve and generate reports.
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/reports
+|`GET`
+|`/v2.1/reports`
 |Retrieve all list of reports.
-|POST
-|/v2.1/reports/{filename}
+|`POST`
+|`/v2.1/reports/{filename}`
 |Retrieve a report.
 |===
 
@@ -39,19 +39,26 @@ Use the method listed in the following table to retrieve a list of reports.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/reports
-|Retrieve all available reports for a tenant. 
+|`GET`
+|`/v2.1/reports`
+|Retrieve all available reports for a tenant.
 Reports can be filtered by date range.
-a|* tenant_id (string)
-* start(string): Retrieve reports more recent that the date specified in start.
-* end (string): Retrieve reports older that the date specified in end.
+a|* `tenant_id (string)`
+* `start(string)`: Retrieve reports more recent that the date specified in start.
+* `end (string)`: Retrieve reports older that the date specified in end.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -71,21 +78,28 @@ none
 
 ==== Retrieve a report identified by file name
 
-Use the method in the following table to retrieve a report identified by the file name. 
+Use the method in the following table to retrieve a report identified by the file name.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/reports/{filename}
+|`GET`
+|`/v2.1/reports/{filename}`
 |Retrieve a report identified by the file name.
-|filename (string): The report file name.
+|`filename (string)`: The report file name.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -102,5 +116,3 @@ none
   }
 }
 ....
-
-

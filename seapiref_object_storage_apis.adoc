@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-This section provides the APIs to manage your object storage, object storage users,  and object storage group.
+This section provides the APIs to manage your object storage, object storage users, and object storage group.
 
 The object storage workflow includes these tasks:
 
@@ -30,25 +30,25 @@ The object storage workflow includes these tasks:
 
 === Object storage groups
 
-Use the methods listed in the following table to retrieve, create,  or modify object storage groups.
+Use the methods listed in the following table to retrieve, create, or modify object storage groups.
 
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/objectiam/groups
+|`GET`
+|`/v2.1/objectiam/groups`
 |Retrieve object storage groups.
-|GET
-|/v2.1/objectiam/groups/{id}
+|`GET`
+|`/v2.1/objectiam/groups/{id}`
 |Retrieve an object storage group by ID.
-|POST
-|/v2.1/objectiam/groups
+|`POST`
+|`/v2.1/objectiam/groups`
 |Create an object storage identity access management group.
-|PUT
-|/v2.1/objectiam/groups/{id}
+|`PUT`
+|`/v2.1/objectiam/groups/{id}`
 |Modify an object storage group identified by ID.
-|DELETE
-|/v2.1/objectiam/groups/{id}
+|`DELETE`
+|`/v2.1/objectiam/groups/{id}`
 |Delete an object storage group identified by ID.
 |===
 
@@ -59,25 +59,25 @@ The following table lists the object storage attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the object storage group.
-|name
+|`name`
 |String
 |The object storage group name.
-|subtenant
+|`subtenant`
 |String
 |The name of the subtenant to which the group belongs.
-|subtenant_id
+|`subtenant_id`
 |String
 |The identifier for the subtenant to which the group belongs.
-|tenant
+|`tenant`
 |String
 |The name of the tenant to which the group belongs.
-|tenant_id
+|`tenant_id`
 |String
 |The identifier for the tenant to which the group belongs.
-|s3_policy
+|`s3_policy`
 |
 |S3 policy
 For example:
@@ -99,17 +99,25 @@ Use the method listed in the following table to retrieve all object storage grou
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectiam/groups
+|`GET`
+|`/v2.1/objectiam/groups`
 |Retrieve all object storage groups. Optionally, specify a subtenant ID to retrieve only the object storage groups associated with the subtenant.
-|subtenant_id (string): The subtenant ID associated with the Identity and Access Management (IAM) users/groups.
-offset and limit– see Pagination <xref> 
+|`subtenant_id (string)`: The subtenant ID associated with the Identity and Access Management (IAM) users/groups.
+
+`offset` and `limit`– see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -144,7 +152,7 @@ none
         }
       }
     ]
-  
+
 ....
 
 ==== Retrieve an object storage group by ID
@@ -154,16 +162,23 @@ Use the method listed in the following table to retrieve an object storage group
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectiam/groups/{id}
+|`GET`
+|`/v2.1/objectiam/groups/{id}`
 |Retrieve an object storage group by ID.
-|id (string): The unique identifier of the object storage group.
+|`id (string)`: The unique identifier of the object storage group.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -203,13 +218,15 @@ Use the method listed in the following to create an object storage group.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/objectiam/groups/
+|`POST`
+|`/v2.1/objectiam/groups/`
 |Create a new object storage group service to host object storage users.
 |None
 |===
 
-Required request body attributes:  `name`, `subtenant_id`,` s3Policy`
+Required request body attributes: `name`, `subtenant_id`, `s3Policy`
+
+*Request body example:*
 
 ....
 {
@@ -225,6 +242,11 @@ Required request body attributes:  `name`, `subtenant_id`,` s3Policy`
     ]
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -261,13 +283,15 @@ Use the method listed in the following table to modify an object storage group.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/objectiam/groups/{id}
+|`PUT`
+|`/v2.1/objectiam/groups/{id}`
 |Modify an object storage group.
-|id (string): The unique identifier of the object storage group.
+|`id (string)`: The unique identifier of the object storage group.
 |===
 
-Required request body attributes:  `name`, `subtenant_id`, `s3Policy`
+Required request body attributes: `name`, `subtenant_id`, `s3Policy`
+
+*Request body example:*
 
 ....
 {
@@ -289,6 +313,11 @@ Required request body attributes:  `name`, `subtenant_id`, `s3Policy`
     ]
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -325,16 +354,23 @@ Use the method listed in the following table to delete an object storage group b
 |===
 |HTTP Method |Path |Description |Parameters
 
-|Delete
-|/v2.1/objectiam/groups/{id}
+|`Delete`
+|`/v2.1/objectiam/groups/{id}`
 |Delete an object storage group by ID.
-|id (string): The unique identifier of the object storage group.
+|`id (string)`: The unique identifier of the object storage group.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -372,37 +408,37 @@ none
 Use the methods listed in the following table to perform the following tasks:
 
 * Retrieve, create, or modify object storage users.
-* Create S3 keys, retrieve S3 keys for a user,  or retrieve keys by key ID.
+* Create S3 keys, retrieve S3 keys for a user, or retrieve keys by key ID.
 
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/objectiam/users
+|`GET`
+|`/v2.1/objectiam/users`
 |Retrieve object storage users.
-|GET
-|/v2.1/objectiam/users/{id}
+|`GET`
+|`/v2.1/objectiam/users/{id}`
 |Retrieve an object storage user by ID.
-|POST
-|/v2.1/objectiam/users
+|`POST`
+|`/v2.1/objectiam/users`
 |Create an object storage user.
-|PUT
-|/v2.1/objectiam/users/{id}
+|`PUT`
+|`/v2.1/objectiam/users/{id}`
 |Modify an object storage user identified by ID.
-|DELETE
-|/v2.1/objectiam/users/{id}
+|`DELETE`
+|`/v2.1/objectiam/users/{id}`
 |Delete an object storage user by ID.
-|GET
-|/v2.1/objectiam/users/{user_id}/s3keys
+|`GET`
+|`/v2.1/objectiam/users/{user_id}/s3keys`
 |Get all S3 keys mapped to a user.
-|POST
-|/v2.1/objectiam/users/{user_id}/s3keys
+|`POST`
+|`/v2.1/objectiam/users/{user_id}/s3keys`
 |Create S3 keys.
-|GET
-|/v2.1/objectiam/users/{user_id}/s3keys/{key_id}
+|`GET`
+|`/v2.1/objectiam/users/{user_id}/s3keys/{key_id}`
 |Get S3 keys by key ID.
-|DELETE
-|/v2.1/objectiam/users/{user_id}/s3keys/{key_id}
+|`DELETE`
+|`/v2.1/objectiam/users/{user_id}/s3keys/{key_id}`
 |Delete S3 keys by key ID.
 |===
 
@@ -413,33 +449,33 @@ The following table lists the object storage user attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the object storage user.
-|display_name
+|`display_name`
 |String
 |The display name of the user.
-|subtenant
+|`subtenant`
 |String
 |The name of the subtenant to which the user belongs.
-|subtenant_id
+|`subtenant_id`
 |String
 |The identifier for the subtenant to which the user belongs.
-|tenant
+|`tenant`
 |String
 |The name of the tenant to which the user belongs.
-|tenant_id
+|`tenant_id`
 |String
 |The identifier for the tenant to which the user belongs.
-|objectiam_user_urn
+|`objectiam_user_urn`
 |String
 |The URN.
-|sg_group_membership
+|`sg_group_membership`
 |String
 |NetApp StorageGRID group memberships.
 For example:
 "sg_group_membership": [
-  "5d2fb0fb4f47df00015274e3"
+"5d2fb0fb4f47df00015274e3"
 ]
 |===
 
@@ -450,19 +486,25 @@ Use the method listed in the following table to retrieve all object storage user
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectiam/users
+|`GET`
+|`/v2.1/objectiam/users`
 |Retrieve all object storage users.
-|subtenant_id (string): The subtenant ID associated with the IAM users/groups.
-offset and limit– see Pagination <xref> 
+|`subtenant_id (string)`: The subtenant ID associated with the IAM users/groups.
+
+`offset` and `limit` – see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
 
 *Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -496,21 +538,28 @@ none
 
 ==== Retrieve an object storage user by ID
 
-Use the method listed in the following table to retrieve an object storage use by ID. 
+Use the method listed in the following table to retrieve an object storage use by ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectiam/users{id}
+|`GET`
+|`/v2.1/objectiam/users{id}`
 |Retrieve an object storage user by ID.
-|id: The object storage account ID.
+|`id`: The object storage account ID.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -534,23 +583,25 @@ none
       }
     ]
   }
-} 
+}
 ....
 
 ==== Create an object storage user
 
-Use the method listed in the following table to create an object storage user.  
+Use the method listed in the following table to create an object storage user.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/objectiam/users
+|`POST`
+|`/v2.1/objectiam/users`
 |Create a new object storage user.
 |None
 |===
 
-Required request body attributes:  `display_name`, `subtenant_id`, `sg_group_membership`
+Required request body attributes: `display_name`, `subtenant_id`, `sg_group_membership`
+
+*Request body example:*
 
 ....
 {
@@ -560,6 +611,11 @@ Required request body attributes:  `display_name`, `subtenant_id`, `sg_group_mem
     "5ed5fa312c356a0001a73840"
   ]
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -591,18 +647,20 @@ Required request body attributes:  `display_name`, `subtenant_id`, `sg_group_mem
 
 ==== Modify an object storage user
 
-Use the method listed in the following table to modify an object storage user.   
+Use the method listed in the following table to modify an object storage user.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/objectiam/users/{id}
+|`PUT`
+|`/v2.1/objectiam/users/{id}`
 |Modify an object storage user identified by ID.
-|id: The object storage user ID.
+|`id`: The object storage user ID.
 |===
 
-Required request body attributes:  `display_name`, `subtenant_id`, `sg_group_membership`
+Required request body attributes: `display_name`, `subtenant_id`, `sg_group_membership`
+
+*Request body example:*
 
 ....
 {
@@ -612,6 +670,11 @@ Required request body attributes:  `display_name`, `subtenant_id`, `sg_group_mem
     "5e60754f9b64790001fe937b"
   ]
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -643,21 +706,29 @@ Required request body attributes:  `display_name`, `subtenant_id`, `sg_group_mem
 
 ==== Map all S3 keys to an object storage user
 
-Use the method listed in the following table to map all S3 keys to an object storage user.   
+Use the method listed in the following table to map all S3 keys to an object storage user.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectiam/users/{user_id}/s3keys
+|`GET`
+|`/v2.1/objectiam/users/{user_id}/s3keys`
 |Create an S3 key for an object storage user.
-|user_id (string): The object storage user identifier.
+|`user_id (string)`: The object storage user identifier.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
+
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -682,26 +753,33 @@ none
 
 ==== Create an S3 key for an object storage user
 
-Use the method listed in the following to create an S3 key for an object storage user.    
+Use the method listed in the following to create an S3 key for an object storage user.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/objectiam/users/{user_id}/s3keys
+|`POST`
+|`/v2.1/objectiam/users/{user_id}/s3keys`
 |Create an S3 key for an object storage user.
-|user_id (string): The object storage user identifier.
+|`user_id (string)`: The object storage user identifier.
 |===
 
-Required request body attributes:  `expires` (string) 
+Required request body attributes: `expires` (string)
 
 [NOTE]
 The key expiry date/time is set in UTC—it must be set in the future.
+
+*Request body example:*
 
 ....
 {
   "expires": "2020-04-07T10:40:52Z"
 }
+....
+
+*Response body example:*
+
+....
   "status": {
     "user_message": "Okay. Returned 1 record.",
     "verbose_message": "",
@@ -734,17 +812,24 @@ Use the method listed in the following table to get S3 keys for an object storag
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectiam/users/{user_id}/s3keys/{key_id}
+|`GET`
+|`/v2.1/objectiam/users/{user_id}/s3keys/{key_id}`
 |Get S3 keys by key ID.
-a|* user_id (string): The object storage user ID. For example: 5e66c77809a74c0001b89598
-* key_id (string): S3 key For example: 5e66de2509a74c0001b895e7
+a|* `user_id (string)`: The object storage user ID. For example: 5e66c77809a74c0001b89598
+* `key_id (string)`: S3 key For example: 5e66de2509a74c0001b895e7
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -771,22 +856,31 @@ none
 
 ==== Delete an S3 key by key ID
 
-Use the method listed in the following table to delete an S3 key by key ID.      
+Use the method listed in the following table to delete an S3 key by key ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|Delete
-|/v2.1/objectiam/users/{user_id}/s3keys/{key_id}
+|`Delete`
+|`/v2.1/objectiam/users/{user_id}/s3keys/{key_id}`
 |Delete S3 key by key ID.
-a|* user_id (string): The object storage user ID.For example: 5e66c77809a74c0001b89598
-* key_id (string): S3 key For example: 5e66de2509a74c0001b895e7
+a|* `user_id (string)`: The object storage user ID.
+For example: 5e66c77809a74c0001b89598
+
+* `key_id (string)`: S3 key For example: 5e66de2509a74c0001b895e7
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 No content to return for succesful execution
 ....
 
@@ -800,26 +894,26 @@ Use the methods listed in the following table to perform the following tasks:
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/objectstorage/accounts
+|`GET`
+|`/v2.1/objectstorage/accounts`
 |Retrieve object storage accounts.
-|GET
-|/v2.1/objectstorage/accounts/{id}
+|`GET`
+|`/v2.1/objectstorage/accounts/{id}`
 |Retrieve an object storage account by ID.
-|POST
-|/v2.1/objectstorage/accounts
+|`POST`
+|`/v2.1/objectstorage/accounts`
 |Create an object storage account.
-|PUT
-|/v2.1/objectstorage/accounts/{id}
+|`PUT`
+|`/v2.1/objectstorage/accounts/{id}`
 |Modify an object storage account identified by ID.
-|DELETE
-|/v2.1/objectstorage/accounts/{id}
+|`DELETE`
+|`/v2.1/objectstorage/accounts/{id}`
 |Modify an object storage account identified by ID.
-|GET
-|/v2.1/objectstorage/buckets
+|`GET`
+|`/v2.1/objectstorage/buckets`
 |Get S3 buckets.
-|POST
-|/v2.1/objectstorage/buckets
+|`POST`
+|`/v2.1/objectstorage/buckets`
 |Create S3 buckets.
 |===
 
@@ -830,13 +924,13 @@ The following table lists the object storage account attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier of the object storage user.
-|subtenant_id
+|`subtenant_id`
 |String
 |The identifier of the instance of a subtenant object.
-|quota_gb
+|`quota_gb`
 |Integer
 |The size of the share or disk.
 |===
@@ -848,17 +942,24 @@ Use the method listed in the following table to retrieve all object storage acco
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectstorage/accounts
+|`GET`
+|`/v2.1/objectstorage/accounts`
 |Retrieve all object storage users.
-|offset and limit– .
-see Pagination <xref> 
+|`offset` and `limit`– .
+see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -897,16 +998,23 @@ Use the method listed in the following table to retrieve an object storage accou
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectstorage/accounts/{id}
+|`GET`
+|`/v2.1/objectstorage/accounts/{id}`
 |Retrieve an object storage account by ID.
-|id: The object storage account ID. 
+|`id`: The object storage account ID.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -934,24 +1042,31 @@ none
 
 ==== Activate an object storage account
 
-Use the method listed in the following table to activate an object storage account. 
+Use the method listed in the following table to activate an object storage account.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/objectstorage/accounts
+|`POST`
+|`/v2.1/objectstorage/accounts`
 |Activate an object storage service.
 |None
 |===
 
-Required request body attributes:  `subtenant_id, quota_gb`
+Required request body attributes: `subtenant_id, quota_gb`
+
+*Request body example:*
 
 ....
 {
   "subtenant_id": "5ecefbbef418b40001f20bd6",
   "quota_gb": 20
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -983,18 +1098,20 @@ Required request body attributes:  `subtenant_id, quota_gb`
 
 ==== Modify an object storage account
 
-Use the method listed in the following table to modify an object storage account.  
+Use the method listed in the following table to modify an object storage account.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/objectstorage/accounts/{id}
+|`PUT`
+|`/v2.1/objectstorage/accounts/{id}`
 |Modify an object storage service (such as, change the quota).
-|id (string): The object storage account ID.
+|`id (string)`: The object storage account ID.
 |===
 
-Required request body attributes:  `name`, `subtenant_id`, `quota_gb`
+Required request body attributes: `name`, `subtenant_id`, `quota_gb`
+
+*Request body example:*
 
 ....
 {
@@ -1002,6 +1119,11 @@ Required request body attributes:  `name`, `subtenant_id`, `quota_gb`
   "subtenant_id": "5ecefbbef418b40001f20bd6",
   "quota_gb": 30
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1041,13 +1163,15 @@ Use your S3 compatible utility to delete buckets. It is not possible to delete b
 |===
 |HTTP Method |Path |Description |Parameters
 
-|Delete
-|/v2.1/objectstorage/accounts/{id}
+|`Delete`
+|`/v2.1/objectstorage/accounts/{id}`
 |Delete an object storage account.
-|id (string): The object storage account ID.
+|`id (string)`: The object storage account ID.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 {
@@ -1055,6 +1179,11 @@ Required request body attributes:  `none`
   "subtenant_id": "5ecefbbef418b40001f20bd6",
   "quota_gb": 30
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -1087,28 +1216,28 @@ Use the APIs in the following table to create and retrieve object storage bucket
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/objectstorage/buckets
+|`GET`
+|`/v2.1/objectstorage/buckets`
 |Retrieve object storage buckets.
-|POST
-|/v2.1/objectstorage/buckets
+|`POST`
+|`/v2.1/objectstorage/buckets`
 |Create an object storage bucket.
 |===
 
 ==== Object storage bucket attributes
 
-The following table lists the object storage bucket attributes. 
+The following table lists the object storage bucket attributes.
 
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the object storage user.
-|Name
+|`Name`
 |String
 |The bucket name.
-|subtenant_id
+|`subtenant_id`
 |String
 |The identifier of the subtenant to which the bucket belongs.
 |===
@@ -1120,16 +1249,23 @@ Use the method listed in the following table to retrieve S3 buckets.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/objectstorage/buckets
+|`GET`
+|`/v2.1/objectstorage/buckets`
 |Retrieve S3 buckets.
-|Subtenant_id: The subtenant that owns the bucket.
+|`Subtenant_id`: The subtenant that owns the bucket.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -1146,10 +1282,11 @@ none
     ]
   }
 }
+....
 
 ==== Create S3 buckets
 
-Use the method listed in the following table to create an S3 bucket. 
+Use the method listed in the following table to create an S3 bucket.
 
 [NOTE]
 Before you can create a bucket, an object storage account for the subtenant must exist.
@@ -1157,22 +1294,29 @@ Before you can create a bucket, an object storage account for the subtenant must
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/objectstorage/buckets
+|`POST`
+|`/v2.1/objectstorage/buckets`
 |Create an S3 bucket.
 |None
 |===
 
 Required request body attributes:
 
-* `name `(string): S3 bucket name (lowercase or numeric characters only)
+* `name` (string): S3 bucket name (lowercase or numeric characters only)
 * `subtenant_id` (string): ID of the subtenant to which the S3 bucket belongs
+
+*Request body example:*
 
 ....
 {
   "name": "mybucket",
   "subtenant_id": "5ecefbbef418b40001f20bd6"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1201,5 +1345,3 @@ Required request body attributes:
   }
 }
 ....
-
-

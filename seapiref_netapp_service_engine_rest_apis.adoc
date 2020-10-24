@@ -23,7 +23,9 @@ summary:
 Many API calls return a large number of records. It is possible to limit the number of records by specifying the `offset` and `limit` values:
 
 * *Limit.* The number of records to return.
-* *Offset.* The number of records to skip before returning the first record. For example, an offset of one will skip the first record and return records starting at two.You can also sort and order the responses:
+* *Offset.* The number of records to skip before returning the first record. For example, an offset of one will skip the first record and return records starting at two.
 
-* *Sort_by.* Sort the records using the specified attribute. For example,  to sort by the create date,  specify created. 
+You can also sort and order the responses:
+
+* *Sort_by.* Sort the records using the specified attribute. For example, to sort by the create date, specify created.
 * *Order_by.* Orders the records by ascending (asc) or descending (desc) order.

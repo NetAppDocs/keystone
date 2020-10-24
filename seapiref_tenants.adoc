@@ -24,54 +24,54 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/tenants
+|`GET`
+|`/v2.1/tenants`
 |Retrieve a list of all tenants.
-|GET
-|/v2.1/tenants/{id}
+|`GET`
+|`/v2.1/tenants/{id}`
 |Retrieve a tenant by the tenant ID.
-|POST
-|/v2.1/tenants
+|`POST`
+|`/v2.1/tenants`
 |Create a new tenant.
-|PUT
-|/v2.1/tenants/{id}
+|`PUT`
+|`/v2.1/tenants/{id}`
 |Modify the details of a tenant.
-|DELETE
-|/v2.1/tenants/{id}
+|`DELETE`
+|`/v2.1/tenants/{id}`
 |Delete a tenant.
 |===
 
 === Tenant attributes
 
-The following table lists the tenant attributes. 
+The following table lists the tenant attributes.
 
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier of the tenant.
-|code
+|`code`
 |String
 |A customer-specified (or default) code that represents the tenant. This attribute can contain lowercase letters, numbers, and underscores.
-|name
+|`name`
 |String
 |The tenant name.
-|zuora_account_name
+|`zuora_account_name`
 |String
 |The billing account name: the name of the subscription in Zuora.
-|zuora_account_number
+|`zuora_account_number`
 |String
 |The billing account number: the subscription number in Zuora.
-|description
+|`description`
 |String
 |The description of the tenant.
-|usage
+|`usage`
 |–
 |The services and service details applicable to the tenant. For each service level, this attribute displays the following:
-* name: Service level name
-* used_size_gb: Service level name
-* role_name: User role (user, admin, read, partner, or root)
+*name:* Service level name
+*used_size_gb:* Service level name
+*role_name:* User role (user, admin, read, partner, or root)
 |===
 
 === Retrieve all tenants
@@ -81,16 +81,23 @@ Use the method listed in the following table to retrieve all tenants or a subset
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/tenants
+|`GET`
+|`/v2.1/tenants`
 |Retrieve all tenants.
-|offset and limit– see Pagination <xref> 
+|`offset` and `limit` – see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 2 records.",
@@ -171,7 +178,7 @@ none
       }
     ]
   }
-} 
+}
 ....
 
 === Retrieve a tenant by ID
@@ -181,16 +188,23 @@ Use the method listed in the following table to retrieve a tenant by ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/tenants/{id}
+|`GET`
+|`/v2.1/tenants/{id}`
 |Retrieve the tenant specified by the ID.
-|id (string): The unique identifier of the tenant.
+|`id (string)`: The unique identifier of the tenant.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+Request body example:
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -260,7 +274,7 @@ none
       }
     ]
   }
-} 
+}
 ....
 
 === Create a tenant
@@ -270,13 +284,15 @@ Use the method listed in the following table to create a tenant.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/tenants
+|`POST`
+|`/v2.1/tenants`
 |Create a new tenant.
 |None
 |===
 
-Required request body attributes:  `code`, `name`, `zuora_account_name`, `zuora_account_number`
+Required request body attributes: `code`, `name`, `zuora_account_name`, `zuora_account_number`
+
+*Request body example:*
 
 ....
 {
@@ -286,6 +302,11 @@ Required request body attributes:  `code`, `name`, `zuora_account_name`, `zuora_
   "zuora_account_number": "A00000415",
   "description": "DescriptionOfMyTenant"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. New resource created.",
@@ -316,13 +337,15 @@ Use the method listed in the following table to modify the tenant.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/tenants/{id}
+|`PUT`
+|`/v2.1/tenants/{id}`
 |Modify the tenant specified by the ID. You can change the name, the Zuora subscription details (account name or subscription number), and the description of the tenant.
-|id (string): The unique identifier of the tenant.
+|`id (string)`: The unique identifier of the tenant.
 |===
 
 Required request body attributes: `code`
+
+*Request body example:*
 
 ....
 {
@@ -332,6 +355,11 @@ Required request body attributes: `code`
   "zuora_account_number": "A00000415",
   "description": "New description of my tenant"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -362,17 +390,21 @@ Use the method listed in the following table to delete the tenant.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/tenants/{id}
+|`DELETE`
+|`/v2.1/tenants/{id}`
 |Delete the tenant specified by the ID.
-|id (string): The unique identifier of the tenant.
+|`id (string)`: The unique identifier of the tenant.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
-No content for successful delete
 ....
 
-
+*Response body example:*
+....
+No content for successful delete
+....

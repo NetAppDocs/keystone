@@ -24,20 +24,20 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/ontapclusters
+|`GET`
+|`/v2.1/ontapclusters`
 |Retrieve all ONTAP clusters.
-|GET
-|/v2.1/ontapclusters/{id}
+|`GET`
+|`/v2.1/ontapclusters/{id}`
 |Retrieve an ONTAP cluster by ID.
-|POST
-|/v2.1/ontapclusters
+|`POST`
+|`/v2.1/ontapclusters`
 |Create a new ONTAP cluster.
-|PUT
-|/v2.1/ontapclusters/{id}
-|Update ONTAP cluster inventory by ID. 
-|DELETE
-|/v2.1/ontapclusters/{id}
+|`PUT`
+|`/v2.1/ontapclusters/{id}`
+|Update ONTAP cluster inventory by ID.
+|`DELETE`
+|`/v2.1/ontapclusters/{id}`
 |Delete an ONTAP cluster.
 |===
 
@@ -48,39 +48,39 @@ The following table lists the ONTAP cluster attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier of the ONTAP cluster.
-|name
+|`name`
 |String
 |The ONTAP cluster name.
-|uuid
+|`uuid`
 |String
 |The ONTAP cluster universal unique identifier (UUID).
-|management_ip
+|`management_ip`
 |String
 |The ONTAP cluster management IPv4 address.
-|username
+|`username
 |String
 |The ONTAP cluster name
-|password
+|`password`
 |String
 |The ONTAP cluster password
-|provisioning_state
+|`provisioning_state`
 |String
 |Identifies whether a cluster is available for provisioning operations. The options include:
 * Open
 * Closed
-|data_network_ip_cidr
+|`data_network_ip_cidr`
 |String
 |The CIDR notation of a subnet.
-|data_network_default_gateway
+|`data_network_default_gateway`
 |String
 |The IPV4 address.
-|data_network_ports
+|`data_network_ports`
 |–
-|A list of the ONTAP cluster data network ports. 
-For example: 
+|A list of the ONTAP cluster data network ports.
+For example:
 [
   {
   "node_name": "dev-ots-per01-01",
@@ -89,7 +89,7 @@ For example:
   }
 ]
 
-|intercluster_lifs
+|`intercluster_lifs`
 |–
 |The ONTAP cluster intercluster LIFs.
 For example:
@@ -109,34 +109,34 @@ For example:
   "netmask": "255.255.255.0"
   }
 ]
-|svm_root_service_level
+|`svm_root_service_level`
 |String
 |The ONTAP cluster storage virtual machine (SVM) root service level name.
-|zone
+|`zone`
 |String
 |The zone name.
-|Subscription_number
+|`Subscription_number`
 |String
 |The Zuora subscription.
-|services_available
+|`services_available`
 |–
-|List of services available and their state. 
+|List of services available and their state.
 For example:
 {
   "fcp": false,
   "iscsi": true,
   "nas": true
   }
-|data_fcp_ports
+|`data_fcp_ports`
 |–
-|List of nodes and ports for FCP-enabled ONTAP clusters. 
+|List of nodes and ports for FCP-enabled ONTAP clusters.
 For example:
 [  {   "node_name": "aff-01",   "port_name": "0g"  },  {   "node_name": "aff-01",   "port_name": "0h"
   ]
-|is_mcc
+|`is_mcc`
 |Boolean
 |Indicates whether the cluster is MetroCluster enabled or not. The default is False.
-|mcc_partner_cluster
+|`mcc_partner_cluster`
 |String
 |The identifier of the partner cluster of the current cluster in a MetroCluster pair. Required if the cluster is enabled for MetroCluster.
 |===
@@ -148,16 +148,24 @@ Use the method listed in the following to retrieve all ONTAP clusters or a subse
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/ontapclusters
+|`GET`
+|`/v2.1/ontapclusters`
 |Retrieve all ONTAP clusters.
-|offset and limit– see Pagination <xref>
+
+|`offset` and `limit` – see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 2 records.",
@@ -290,16 +298,23 @@ Use the method listed in the following to retrieve ONTAP clusters by ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/ontapclusters/{id}
+|`GET`
+|`/v2.1/ontapclusters/{id}`
 |Retrieve the ONTAP clusters identified by ID.
-|id (string): The unique identifier of ONTAP cluster.
+|`id (string)`: The unique identifier of ONTAP cluster.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -356,30 +371,32 @@ none
 
 === Create ONTAP cluster
 
-Use the API in the following table to create an ONTAP cluster. 
+Use the API in the following table to create an ONTAP cluster.
 
 ONTAP clusters are always created with the iSCSI service enabled. Optionally, the FCP service can be enabled if the infrastructure supports it.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/ontapclusters
+|`POST`
+|`/v2.1/ontapclusters`
 |Create an ONTAP cluster.
 |None
 |===
 
-Required request body attributes:  `name`, `uuid, management_ip`, `username`, `password`, `data_network_ip_cidr`, `data_network_default_gateway`, `intercluster_lifs`, `zone`
+Required request body attributes: `name`, `uuid, management_ip`, `username`, `password`, `data_network_ip_cidr`, `data_network_default_gateway`, `intercluster_lifs`, `zone`
 
-If FCP is enabled (using the `services_available` FCP attribute), the `data_fcp_ports `are required. 
+If FCP is enabled (using the `services_available` FCP attribute), the `data_fcp_ports `are required.
 
-If `is_mcc` is true, the `mcc_partner_cluster `is required.
+If `is_mcc` is true, the `mcc_partner_cluster` is required.
+
+*Request body example:*
 
 ....
 {
   "name": "clustername",
-  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",  
-  "management_ip": "10.128.112.165",  
+  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+  "management_ip": "10.128.112.165",
   "username": "admin",
   "password": "ClusterPassword",
   "provisioning_state": "open",
@@ -414,6 +431,11 @@ If `is_mcc` is true, the `mcc_partner_cluster `is required.
   "is_mcc": false,
   "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3"
 }
+....
+
+*Response body example:*
+
+....
 {
     "status": {
         "user_message": "Okay. New resource created.",
@@ -470,23 +492,25 @@ If `is_mcc` is true, the `mcc_partner_cluster `is required.
 
 === Modify ONTAP cluster
 
-Use the method listed in the following to modify the ONTAP cluster. 
+Use the method listed in the following to modify the ONTAP cluster.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/ontapclusters/{id}
+|`PUT`
+|`/v2.1/ontapclusters/{id}`
 |Modify the details of the ONTAP cluster identified by ID.
-|id (string): The unique identifier of ONTAP cluster.
+|`id (string)`: The unique identifier of ONTAP cluster.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 {
   "name": "clustername",
-  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef", 
+  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
   "management_ip": "10.128.112.165",
   "username": "admin",
   "password": "ClusterPassword",
@@ -520,6 +544,12 @@ Required request body attributes:  `none`
   "data_fcp_ports": [
   ]
 }
+....
+
+
+*Response body example:*
+
+....
 {
     "status": {
         "user_message": "Okay. Accepted for processing.",
@@ -576,22 +606,27 @@ Required request body attributes:  `none`
 
 === Delete an ONTAP cluster
 
-Use the method listed in the following table to delete an ONTAP cluster. 
+Use the method listed in the following table to delete an ONTAP cluster.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/ontapclusters/{id}
+|`DELETE`
+|`/v2.1/ontapclusters/{id}`
 |Delete the ONTAP cluster identified by ID.
-|id (string): The unique identifier of the ONTAP cluster.
+|`id (string)`: The unique identifier of the ONTAP cluster.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
-No content for succesful delete
 ....
 
+*Response body example:*
 
+....
+No content for succesful delete
+....

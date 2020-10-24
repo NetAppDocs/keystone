@@ -21,13 +21,13 @@ summary:
 [.lead]
 In block storage systems, the data storage is broken up into individual pieces each with a unique identifier. NetApp Service Engine refers to the block data storage as a block store, and the individual pieces as disks.
 
-A block store belongs to a subtenant and a zone (one block store per zone per subtenant). A block store has networking attributes (for example, IP address or VLAN ID) that are used to access disks through the iSCSI or FC protocols. 
+A block store belongs to a subtenant and a zone (one block store per zone per subtenant). A block store has networking attributes (for example, IP address or VLAN ID) that are used to access disks through the iSCSI or FC protocols.
 
 By default, block stores are enabled to use the iSCSI protocol but can be configured to use FCP if the underlying storage allows it.
 
 Disaster recovery DP can be enabled on a block store.
 
-Disks are created on block stores. They have many configurable attributes including capacity and associated service level. DP options,  such as snapshots and disaster recovery,  can be enabled for a disk.
+Disks are created on block stores. They have many configurable attributes including capacity and associated service level. DP options, such as snapshots and disaster recovery, can be enabled for a disk.
 
 Access to disks is controlled through host groups. Host groups consist of initiator node names; by mapping one or more host groups to a disk, you can define which initiators have access to the disk. For more information on host groups, see Host groups.
 
@@ -39,28 +39,28 @@ This section describes the APIs for:
 
 === Block stores
 
-Use the methods listed in the following table to retrieve, create, modify,  and delete block stores.
+Use the methods listed in the following table to retrieve, create, modify, and delete block stores.
 
 |===
-|HTTP Method |Path  |Description
+|HTTP Method |Path |Description
 
-|GET
-|/v2.1/blockstores
+|`GET`
+|`/v2.1/blockstores`
 |Retrieve all block stores.
-|POST
-|/v2.1/blockstores
+|`POST`
+|`/v2.1/blockstores`
 |Create a new block store service to host disks (LUNs).
-|GET
-|/v2.1/blockstores/{id}
+|`GET`
+|`/v2.1/blockstores/{id}`
 |Retrieve a block store by ID.
-|PUT
-|/v2.1/blockstores/{id}
+|`PUT`
+|`/v2.1/blockstores/{id}`
 |Modify a block store identified by ID.
-|DELETE
-|/v2.1/blockstores/{id}
+|`DELETE`
+|`/v2.1/blockstores/{id}`
 |Delete a block store identified by ID. All disks must be deleted before a block store can be deleted.
-|POST
-|/v2.1/blockstores/{id}/tags
+|`POST`
+|`/v2.1/blockstores/{id}/tags`
 |Create tags on the block store identified by ID.
 |===
 
@@ -71,35 +71,35 @@ The following table lists the block store attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the block store.
-|subtenant_id
+|`subtenant_id`
 |String
 |The subtenant ID of the subtenant to which the block store belongs.
-|zone
+|`zone`
 |String
 |The zone name.
-|dr_zone
+|`dr_zone`
 |String
 |The disaster recovery zone name.
 Optionally, specifying a disaster recovery zone name automatically replicates all storage to the disaster recovery zone.
-|dr_schedule
+|`dr_schedule`
 |String
 |The disaster recovery schedule can be one of (hourly, four-hourly, or daily).
-|subnet
+|`subnet`
 |String
 |The Classless Inter-Domain Routing (CIDR) notation of a subnet.
-|vlan_id
+|`vlan_id`
 |String
 |The VLAN ID.
-|service_iscsi_enabled
+|`service_iscsi_enabled`
 |Boolean
 |Indicates if the iSCSI protocol is available on the block store; always set to true.
-|service_fcp_enabled
+|`service_fcp_enabled`
 |Boolean
 |Indicates if the FCP is enabled on the block store; disabled by default.
-|fcp_target_wwpns
+|`fcp_target_wwpns`
 |Boolean
 |A list of worldwide port names (WWPNs) assigned to the FC ports; the WWPNs are returned when creating an FC-enabled block store.
 |===
@@ -111,17 +111,23 @@ Use the method listed in the following table to retrieve all block stores or a s
 |===
 |HTTP Method |Path |Description |Path Parameters
 
-|GET
-|/v2.1/blockstores
+|`GET`
+|`/v2.1/blockstores`
 |Retrieve all block stores.
-|tenant_id: (Optional) The return of block stores belonging to the specified tenant.
+|`tenant_id`: (Optional) The return of block stores belonging to the specified tenant.
 offset and limit– see Pagination <xref>
 |===
 
 Required request body parameters: `none`
 
+*Request body example:*
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -169,7 +175,7 @@ none
       }
     ]
   }
-} 
+}
 ....
 
 ==== Retrieve block store by ID
@@ -179,16 +185,23 @@ Use the method listed in the following table to retrieve a block store by its id
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/blockstores/{id}
+|`GET`
+|`/v2.1/blockstores/{id}`
 |Retrieve a block store by ID.
-|id (string): The unique identifier of the block store.
+|`id (string)`: The unique identifier of the block store.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -246,23 +259,24 @@ none
 
 ==== Create block stores
 
-Use the method listed in the following table to create a new block store instance to host disks (LUNs). Block stores always have the iSCSI service enabled. Optionally,  you can enable the FCP service if the infrastructure allows it.
+Use the method listed in the following table to create a new block store instance to host disks (LUNs). Block stores always have the iSCSI service enabled. Optionally, you can enable the FCP service if the infrastructure allows it.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/blockstores
+|`POST`
+|`/v2.1/blockstores`
 |Create a block store.
 |None
 |===
 
 Required request body attributes`: tenant_id`, `subtenant_id`, `zone`, `subnet`, `vlan_id`
 
-Set` service_fcp_enabled` to `true` to enable FCP (only possible if the underlying infrastructure allows it).
+Set `service_fcp_enabled` to `true` to enable FCP (only possible if the underlying infrastructure allows it).
 
-Optionally,  specify a disaster recovery zone name (`dr_zone`) to allow replication of all storage to the disaster recovery zone.
+Optionally, specify a disaster recovery zone name (`dr_zone`) to allow replication of all storage to the disaster recovery zone.
 
+*Request body example:*
 ....
 {
   "service_fcp_enabled": false,
@@ -277,6 +291,11 @@ Optionally,  specify a disaster recovery zone name (`dr_zone`) to allow replicat
     "keyB": "Value B"
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -308,11 +327,10 @@ Optionally,  specify a disaster recovery zone name (`dr_zone`) to allow replicat
 
 ==== Modify block store by ID
 
-Use the method listed in the following table to modify the block store identified by ID.  You can:
+Use the method listed in the following table to modify the block store identified by ID. You can:
 
-* Enable disaster recovery on a block store. 
+Enable disaster recovery on a block store.
 
-[NOTE]
 You cannot disable disaster recovery on a block store it is has previously been enabled.
 
 * Modify the disaster recovery schedule.
@@ -320,13 +338,15 @@ You cannot disable disaster recovery on a block store it is has previously been 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/blockstores/{id}
+|`PUT`
+|`/v2.1/blockstores/{id}`
 |Modify the block store by ID.
-|id (string): The unique identifier of the block store.
+|`id (string)`: The unique identifier of the block store.
 |===
 
 Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 {
@@ -336,6 +356,12 @@ Required request body attributes: `none`
     "keyC": "Value C"
   }
 }
+
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -367,24 +393,30 @@ Required request body attributes: `none`
 
 ==== Delete a block store
 
-Use the method listed in the following table to delete the block store by ID. 
+Use the method listed in the following table to delete the block store by ID.
 
-[NOTE]
-Before you attempt to delete the block store,  make sure that any disks that might have been on the block store have been deleted.
+Before you attempt to delete the block store, make sure that any disks that might have been on the block store have been deleted.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/blockstores/{id}
+|`DELETE`
+|`/v2.1/blockstores/{id}`
 |Delete the block store by ID.
-|id (string): The unique identifier of the block store.
+|`id (string)`: The unique identifier of the block store.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -415,25 +447,31 @@ none
 
 ==== Create tags on a block store
 
-Use the method listed in the following table to create tags on a block store. 
+Use the method listed in the following table to create tags on a block store.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/blockstores/{id}/tags
+|`POST`
+|`/v2.1/blockstores/{id}/tags`
 |Create tags on the block store by ID.
 |Tags
 |===
 
 Required request body attributes: `tags as key-value pairs`
 
+*Request body example:*
 ....
 {
   "keyA": "Value A",
   "keyB": "Value B",
   "keyC": "Value C"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 3 records.",
@@ -462,34 +500,34 @@ Required request body attributes: `tags as key-value pairs`
 
 === Disks
 
-Use the methods listed in the following table to retrieve, create, modify,  and delete disks.
+Use the methods listed in the following table to retrieve, create, modify, and delete disks.
 
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/disks
+|`GET`
+|`/v2.1/disks`
 |Retrieve all disks.
-|POST
-|/v2.1/disks
+|`POST`
+|`/v2.1/disks`
 |Creates a new disk.
-|GET
-|/v2.1/disks/{id}
+|`GET`
+|`/v2.1/disks/{id}`
 |Retrieve disk by ID.
-|PUT
-|/v2.1/disks/{id}
+|`PUT`
+|`/v2.1/disks/{id}`
 |Modify disk.
-|DELETE 
-|/v2.1/disks/{id}
+|`DELETE`
+|`/v2.1/disks/{id}`
 |Delete disk.
-|POST
-|/v2.1/disks/{id}/snapshot/{name}
+|`POST`
+|`/v2.1/disks/{id}/snapshot/{name}`
 |Create snapshot.
-|DELETE
-|/v2.1/disks/{id}/snapshot/{name}
+|`DELETE`
+|`/v2.1/disks/{id}/snapshot/{name}`
 |Delete snapshot.
-|POST
-|/v2.1/disks/{id}/tags
+|`POST`
+|`/v2.1/disks/{id}/tags`
 |Create tags.
 |===
 
@@ -500,36 +538,38 @@ The following table lists the disk attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |string
 |The ID of the disk.
-|subtenant_id
+|`subtenant_id`
 |String
 |Subtenant ID of the subtenant to which the block store belongs.
-|zone
+|`zone`
 |String
 |Zone name.
-|name
+|`name`
 |String
 |Disk name.
-|disk_path
+|`disk_path`
 |String
 |Disk path.
-|protocol
+|`protocol`
 |String
 |Storage protocol for block device access.
 Options: iSCSI, FCP.
-|os_type
+|`os_type`
 |String
 |Host operating system type: one of Windows, Linux, Solaris, or VMware.
-|hostgroup_mappings
+|`hostgroup_mappings`
 |Array
 |Array of host group names mapped or to be mapped to the disk. When mapping host groups to disks, the host group type (iSCSI or FC) must match the disk protocol.
 For example:
+----
 "hostgroup_mappings": [
     "ExistingHG", "myhg1"
   ]
-|hostgroups
+----
+|`hostgroups`
 |
 |Used to define new host groups when creating or modifying disks. For more information on host groups, see Host groups <xref>.
 Example:
@@ -548,13 +588,13 @@ Example:
       ]
     }
   ]
-|service_level
+|`service_level`
 |String
 |Service level name: Standard, Premium, or Extreme.
-|size_gb
+|`size_gb`
 |Integer
 |The size of the share or disk.
-|snapshot_policy
+|`snapshot_policy`
 |String
 |The snapshot policy. If enabled, create snapshots automatically according to the schedules.
 For example:
@@ -583,9 +623,9 @@ For example:
     }
   }
 
-|backup_policy
+|`backup_policy`
 |String
-|Backup policy for the disk. Must be enabled to allow backups. When enabled, backups occur around 0:00 UTC. The backup policy defines the number of backups of each type retained. 
+|Backup policy for the disk. Must be enabled to allow backups. When enabled, backups occur around 0:00 UTC. The backup policy defines the number of backups of each type retained.
 For example:
 "backup_policy": {
     "enabled": false,
@@ -595,13 +635,13 @@ For example:
     "monthly_backups_to_keep": 12,
     "adhoc_backups_to_keep": 10
   }
-|dr_enabled
+|`dr_enabled`
 |Boolean
 |Enable disaster recovery replication to a different zone.
-|clone_from_disk_id
+|`clone_from_disk_id`
 |String
 |Disk ID.
-|clone_from_snapshot_name
+|`clone_from_snapshot_name`
 |String
 |Snapshot name.
 |===
@@ -613,17 +653,23 @@ Use the method listed in the following table to retrieve all disks or a subset o
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/disks
+|`GET`
+|`/v2.1/disks`
 |Retrieve all disks.
-|tenant_id: (Optional) The return of disks belonging to the specified tenant.
+|`tenant_id`: (Optional) The return of disks belonging to the specified tenant.
 offset and limit(see Pagination <xref>)
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -742,21 +788,27 @@ none
 
 ==== Retrieve disk by ID
 
-Use the method listed in the following table to retrieve a disk by ID. 
+Use the method listed in the following table to retrieve a disk by ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/disks/{id}
+|`GET`
+|`/v2.1/disks/{id}`
 |Retrieve a disk by ID.
-|id (string): The unique identifier of the disk.
+|`id (string):` The unique identifier of the disk.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
 
+*Request body example:*
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -854,22 +906,24 @@ Use the method listed in the following table to create a new disk.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/disks
+|`POST`
+|`/v2.1/disks`
 |Create a new disk.
 |None
 |===
 
-Required request body attributes:  `subtenant_id`, `zone`, `name`, `disk_path`, `protocol`, `os_type`, `hostgroup_mappings`, `service_level`, `size_gb`
+Required request body attributes: `subtenant_id`, `zone`, `name`, `disk_path`, `protocol`, `os_type`, `hostgroup_mappings`, `service_level`, `size_gb`
 
-This example creates a new disk that uses the FC protocol. The disk is created without snapshots, backups or disaster recover DP enabled. 
+*Request body (example 1):*
 
-A new host group is created as part of the process and mapped to the disk. It is created under the same block store and have the same os_type, protocol,  and tenancy as the disk being created. The new host group:
+This example creates a new disk that uses the FC protocol. The disk is created without snapshots, backups or disaster recover DP enabled.
+
+A new host group is created as part of the process and mapped to the disk. It is created under the same block store and have the same os_type, protocol, and tenancy as the disk being created. The new host group:
 
 * Is defined in the host groups block and has a name and one initiator. Because this is an FC host group and an alias, the initiator consists of a WWPN.
 
 ....
-"hostgroups": 
+"hostgroups":
 [    {      "name": "MyNewHG",       "initiators": [        {          "alias": "ServerA",           "initiator": "20:7f:00:a0:98:5c:0d:da"        }      ]    }  ]
 Is mapped to the disk through `hostgroup_mappings`:   "hostgroup_mappings": [    "MyNewHG"  ]
 {
@@ -929,6 +983,11 @@ Is mapped to the disk through `hostgroup_mappings`:   "hostgroup_mappings": [   
   },
   "dr_enabled": false
 }
+....
+
+*Response body (example 1):*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -978,6 +1037,11 @@ This example creates a new disk from a snapshot of an existing disk. The disk pr
  "clone_from_disk_id": "5f3f0ada61485800017102b7",
   "clone_from_snapshot_name": "BD4Snapshot"
 }
+....
+
+*Response body (example 2):*
+
+....
 {
   "status": {
     "user_message": "Hostgroup 'ExistingHG' with ID '5f3e12c86148580001710265' is in an 'Operational' state.",
@@ -1009,25 +1073,28 @@ This example creates a new disk from a snapshot of an existing disk. The disk pr
 
 ==== Modify disk by ID
 
-Use the method listed in the following table to modify the disk details by ID. You can modify the disk name, service level, size, host group mapping, snapshot policy,  and backup policy. If the disk exists on a block store that is disaster-recovery enabled, you can enable disaster recovery. You cannot disable disaster recovery.
+Use the method listed in the following table to modify the disk details by ID. You can modify the disk name, service level, size, host group mapping, snapshot policy, and backup policy. If the disk exists on a block store that is disaster-recovery enabled, you can enable disaster recovery. You cannot disable disaster recovery.
 
-[NOTE]
- You cannot modify the protocol (iSCSI or FCP) in use for the disk.
+You cannot modify the protocol (iSCSI or FCP) in use for the disk.
 
-You can also create a new host group, populate it with initiators and map it to the disk. For more information on host groups,  see Host groups <xref>.
+You can also create a new host group, populate it with initiators and map it to the disk. For more information on host groups, see Host groups <xref>.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/disks/{id}
+|`PUT`
+|`/v2.1/disks/{id}`
 |Modify the disk by ID.
-|id (string): The unique identifier of the disk.
+|`id (string):` The unique identifier of the disk.
 |===
 
 Required request body attributes: `none`
 
+*Request body (example 1):*
+
 In this example, the request modifies the name and size of the disk and disables the snapshot policy.
+
+....
   "name": "BlueDisk4NewName",
   "service_level": "standard",
   "size_gb": 40,
@@ -1056,6 +1123,11 @@ In this example, the request modifies the name and size of the disk and disables
     }
   }
 }
+....
+
+*Response body (example 1):*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1085,6 +1157,8 @@ In this example, the request modifies the name and size of the disk and disables
 }
 ....
 
+*Request body (example 2):*
+
 In this example, the request maps the disk to two host groups: ExistingHG and NewHG. NewHG is a new (iSCSI) host group that is defined as part of this request with two initiators with aliases ServerDE and Server HK.
 
 ....
@@ -1109,6 +1183,11 @@ In this example, the request maps the disk to two host groups: ExistingHG and Ne
     }
   ]
 }
+....
+
+*Response body (example 2):*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1140,21 +1219,28 @@ In this example, the request maps the disk to two host groups: ExistingHG and Ne
 
 ==== Delete a disk
 
-Use the method listed the following table to delete a disk. 
+Use the method listed the following table to delete a disk.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/disks/{id}
+|`DELETE`
+|``/v2.1/disks/{id}`
 |Delete the disk by ID.
-|id (string): The unique identifier of the disk.
+|`id (string):` The unique identifier of the disk.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1191,19 +1277,26 @@ Use the method listed in the following table to create tags on a disk.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/disks/{id}/tags
+|`POST`
+|`/v2.1/disks/{id}/tags`
 |Create tags on the disk identified by ID.
-|id (string): The unique identifier of the disk.
+|`id (string)`: The unique identifier of the disk.
 |===
 
-Required request body attributes:  `tags of key value pair attributes`
+Required request body attributes: `tags of key value pair attributes`
+
+*Request body example:*
 
 ....
 {
   "key8": "Value 8",
   "key9": "Value 9"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 2 records.",
@@ -1228,28 +1321,33 @@ Required request body attributes:  `tags of key value pair attributes`
 
 ==== Create a snapshot of a disk
 
-Use the method listed in the following table to create a snapshot of a disk. 
+Use the method listed in the following table to create a snapshot of a disk.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/disks/{id}/snapshot/{name}
+|`POST`
+|`/v2.1/disks/{id}/snapshot/{name}`
 |Create a snapshot of the named disk.
 |id (string): The ID of the disk of which to create the snapshot.
 name (string): The name of the snapshot.
 |===
 
-* Required request body attributes:  `none`
+* Required request body attributes: `none`
 * Optional attributes: `snapmirror_label` (string)
 
-[NOTE]
-This is the label applied to the snapshot and can be one of:  hourly, daily, weekly, or monthly.
+This is the label applied to the snapshot and can be one of: hourly, daily, weekly, or monthly.
 
+*Request body example:*
 ....
 {
   "snapmirror_label": "hourly"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1281,22 +1379,29 @@ This is the label applied to the snapshot and can be one of:  hourly, daily, wee
 
 ==== Delete the snapshot of a disk
 
-Use the method listed in the following table to delete the snapshot of a disk. 
+Use the method listed in the following table to delete the snapshot of a disk.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/disks/{id}/snapshot/{name}
+|`DELETE`
+|`/v2.1/disks/{id}/snapshot/{name}`
 |Delete the snapshot with the name {name} of the disk identified by ID.
-a|* id (string): The ID of the disk.
-* name (string): The name of the snapshot.
+a|* `id (string):` The ID of the disk.
+* `name (string):` The name of the snapshot.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1333,11 +1438,11 @@ Access control to disks is managed with host groups. Host groups are groups of i
 Host groups are protocol specific. They can be either:
 
 * FC protocol host groups: these consist of initiators that are FC WWPNs; for example, 20:56:00:a0:98:5c:0d:da.
-* iSCSI protocol host groups: these consist of initiators that are iSCSI qualified names (IQNs); for example, iqn.1998-01.com.vmware:esx2).Each initiator in a host group is associated with an alias. The alias allows a simple way to identify the initiator (for example,  esxserver1).
+* iSCSI protocol host groups: these consist of initiators that are iSCSI qualified names (IQNs); for example, iqn.1998-01.com.vmware:esx2).Each initiator in a host group is associated with an alias. The alias allows a simple way to identify the initiator (for example, esxserver1).
 
-Empty host groups (without any initiators) can be created and mapped to the disks as placeholders; these must be fully defined to allow access to the disks. 
+Empty host groups (without any initiators) can be created and mapped to the disks as placeholders; these must be fully defined to allow access to the disks.
 
-Host groups are mapped to disks when a disk is created or modified. For more information,  see Create Disks <xref> or Modify Disk by ID <xref>.  It is possible to create and populate new host groups as part of these processes. 
+Host groups are mapped to disks when a disk is created or modified. For more information, see Create Disks <xref> or Modify Disk by ID <xref>. It is possible to create and populate new host groups as part of these processes.
 
 Use the methods listed the following table to perform the following tasks:
 
@@ -1347,35 +1452,35 @@ Use the methods listed the following table to perform the following tasks:
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/hostgroups
+|`GET`
+|`/v2.1/hostgroups`
 |Retrieve all host groups.
-|POST
-|/v2.1/hostgroups
+|`POST`
+|`/v2.1/hostgroups`
 |Creates a new host group
-|GET
-|/v2.1/hostgroups/{id}
+|`GET`
+|`/v2.1/hostgroups/{id}`
 |Retrieve a host group by ID
-|DELETE
-|/v2.1/hostgroups/{id}
-|Deleted a host group by ID. 
-|POST
-|/v2.1/hostgroup/{id}/tags
+|`DELETE`
+|`/v2.1/hostgroups/{id}`
+|Deleted a host group by ID.
+|`POST`
+|`/v2.1/hostgroup/{id}/tags`
 |Create tags on a host group.
-|GET
-|/v2.1/hostgroups/{id}/initiators
+|`GET`
+|`/v2.1/hostgroups/{id}/initiators`
 |Retrieve the initiators in a host group.
-|POST
-|/v2.1/hostgroups/{id}/initiators
+|`POST`
+|`/v2.1/hostgroups/{id}/initiators`
 |Add an initiator to a host group.
-|GET
-|/v2.1/hostgroups/{id}/initiators/{alias}
+|`GET`
+|`/v2.1/hostgroups/{id}/initiators/{alias}`
 |Retrieve an initiator from a host group by the initiator’s alias.
-|PATCH
-|/v2.2/hostgroups/{id}/initiators/{alias}
+|`PATCH`
+|`/v2.2/hostgroups/{id}/initiators/{alias}``
 |Modify the initiator matching the specified alias in a host group
-|DELETE
-|/v2.1/hostgroup/{id}/initiators/{alias }
+|`DELETE`
+|`/v2.1/hostgroup/{id}/initiators/{alias }`
 |Delete a single initiator from a host group
 |===
 
@@ -1386,37 +1491,38 @@ The following table lists the host group attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The subtenant ID of the subtenant to which the block store belongs.
-|name
+|`name`
 |String
 |The host group name.
-|subtenant
+|`subtenant`
 |String
 |The name of the subtenant to which the host group belongs.
-|subtenant_id
+|`subtenant_id`
 |String
 |The ID of the subtenant to which the host group belongs.
-|blockstore_id
+|`blockstore_id`
 |String
-|The ID of the block store to which the host group belongs. 
-|zone
+|The ID of the block store to which the host group belongs.
+|`zone``
 |String
 |The zone name.
-|protocol
+|`protocol`
 |String
 |The protocol for host group. Options: iSCSI, FCP.
-|os_type
+|`os_type`
 |String
 |Host operating system type: one of Windows, Linux, or VMware.
-|initiators
+|`initiators`
 |–
-|The initiators and their aliases that are defined for the host group. 
-For host groups of type iSCSI, the initiators are iSCSI Qualified Names (IQNs). 
+|The initiators and their aliases that are defined for the host group.
+For host groups of type iSCSI, the initiators are iSCSI Qualified Names (IQNs).
 For host groups of type FCP, the initiators are FC WWPNs.
-Each initiator has an alias to simplify identification of the initiator. 
+Each initiator has an alias to simplify identification of the initiator.
 For example:
+----
 },
 {
    "alias" : "esxserver1",
@@ -1426,7 +1532,8 @@ For example:
    "alias" : "esxserver2",
    "initiator": "iqn.1998-01.com.vmware:esx2"
 }
-|tags
+----
+|`tags`
 |–
 |Key-value pairs.
 |===
@@ -1438,17 +1545,24 @@ Use the method listed in the following table to retrieve all host groups or a su
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/hostgroups
+|`GET`
+|`/v2.1/hostgroups`
 |Retrieve all host groups.
-|tenant_id: (Optional) The return the host groups belonging to the specified tenant.
+|`tenant_id`: (Optional) The return the host groups belonging to the specified tenant.
 offset and limit(see Pagination <xref>)
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -1509,21 +1623,28 @@ none
 
 ==== Retrieve host group by ID
 
-Use the method listed in the following table to retrieve a host group by ID. 
+Use the method listed in the following table to retrieve a host group by ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/hostgroups
+|`GET`
+|`/v2.1/hostgroups`
 |Retrieve a host group by ID.
-|id: (string): The unique identifier of the host group.
+|`id: (string)`: The unique identifier of the host group.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -1584,16 +1705,23 @@ Use the method listed in the following table to delete a host group.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/hostgroups/{id}
+|`DELETE`
+|`/v2.1/hostgroups/{id}`
 |Delete the host group identified by ID.
-|id (string): The unique identifier of the host group.
+|`id (string)`: The unique identifier of the host group.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1625,24 +1753,31 @@ none
 
 ==== Create tags on a host group
 
-Use the method listed in the following table to create tags on a host group. 
+Use the method listed in the following table to create tags on a host group.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/hostgroups/{id}/tags
+|`POST`
+|`/v2.1/hostgroups/{id}/tags`
 |Create tags on the host group identified by ID.
-|id (string): The unique identifier of the host group.
+|`id (string)`: The unique identifier of the host group.
 |===
 
 Required request body attributes: `tags as key-value pairs`.
+
+*Request body example:*
 
 ....
 {
   "keyA": "Value A",
   "keyZ": "Value Z"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 2 records.",
@@ -1667,21 +1802,28 @@ Required request body attributes: `tags as key-value pairs`.
 
 ==== Retrieve the initiators in a host group
 
-Use the method listed in the following table to retrieve the initiators in the host group identified by ID. 
+Use the method listed in the following table to retrieve the initiators in the host group identified by ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/hostgroups/{id}/initiators
+|`GET`
+|`/v2.1/hostgroups/{id}/initiators`
 |Retrieve the initiators in the host group identified by ID.
 |id: (string): The unique identifier of the host group.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -1702,26 +1844,33 @@ none
 
 ==== Add an initiator to a host group
 
-Use the method listed in the following table to retrieve the initiators in a host group. 
+Use the method listed in the following table to retrieve the initiators in a host group.
 
 When adding initiators to a host group, the initiator must match the host group protocol: use IQNs for host groups with the iSCSI protocol, and WWPNs for host groups with the FC protocol.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/hostgroups/{id}/initiators
+|`POST`
+|`/v2.1/hostgroups/{id}/initiators`
 |Create an initiator in the host group identified by ID.
-|id: (string). The unique identifier of the host group.
+|`id: (string)`. The unique identifier of the host group.
 |===
 
 Required request body attributes: `alias, initiator`
+
+*Request body example:*
 
 ....
 {
   "alias": "myserverB",
   "initiator": "20:58:00:a0:98:5c:0d:da"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1758,17 +1907,23 @@ Use the method listed in the following table to retrieve the initiator matching 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/hostgroups/{id}/initiators
+|`GET`
+|`/v2.1/hostgroups/{id}/initiators`
 |Create an initiator in the host group identified by ID.
-|id: (string): The unique identifier of the host group.
+|`id: (string)`: The unique identifier of the host group.
 alias (string): The alias of the initiator.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -1792,19 +1947,26 @@ Use the method listed in the following table to retrieve the initiator matching 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PATCH
-|/v2.1/hostgroups/{id}/initiators/{alias}
+|`PATCH`
+|`/v2.1/hostgroups/{id}/initiators/{alias}`
 |Modify the initiator specified by the alias in the host group identified by ID.
-|id: (string): The unique identifier of the host group.
+|`id: (string):` The unique identifier of the host group.
 alias (string): The alias of the initiator.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 {
   "initiator": "20:59:00:a0:98:5c:0d:da"
 }
+....
+
+Response body example:
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1838,23 +2000,29 @@ Required request body attributes: `none`
 
 Use the method listed in the following table to remove an initiator from the host group identified by ID.
 
-[NOTE]
 Removing an initiator from a host group affects all disks to which the host group is mapped.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/hostgroups/{id}/initiators/{alias}
+|`DELETE`
+|`/v2.1/hostgroups/{id}/initiators/{alias}`
 |Remove the initiator specified by the alias from the host group identified by ID.
-|id: (string): The unique identifier of the host group.
+|`id: (string)`: The unique identifier of the host group.
 alias (string): The alias of the initiator.
 |===
 
 Required request body attributes: `none`.
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Accepted for processing.",
@@ -1883,5 +2051,3 @@ none
   }
 }
 ....
-
-

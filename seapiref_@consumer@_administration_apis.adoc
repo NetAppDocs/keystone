@@ -24,72 +24,72 @@ The (consumer) administration APIs consist of methods that allow you to perform 
 * Sign in, set a password, and refresh an authentication token.
 * Retrieve jobs and view job details.
 +
-See Retrieve jobs (xref> and Retrieve a job- by- job ID <xref>.
+See link:seapiref_jobs.html.html#retrieve-jobs>[Retrieve jobs] and link:seapiref_jobs.html.html#retrieve-a-job-by-job-id>[Retrieve a job-by-job ID].
 
-* Retrieve regions. 
+* Retrieve regions.
 +
-See Retrieve regions <xref> and Retrieve Region by Name <xref>.
+See link:seapiref_regions.html#retrieve-regions>[Retrieve regions] and link:seapiref_regions.html#retrieve-a-region-by-name>[Retrieve a region by name].
 
-* Retrieve service levels. 
+* Retrieve service levels.
 +
-See Retrieve Service Levels (xref> and Retrieve Service Levels by Name <xref>.
+See link:seapiref_service_levels.html#retrieve-service-levels>[Retrieve Service Levels] and link:seapiref_service_levels.html#retrieve-service-levels-by-name>[Retrieve Service Levels by Name].
 
-* Work with subtenants. 
+* Work with subtenants.
 +
 See:
 
-** Retrieve all subtenants (xref>
-** Retrieve a subtenant by ID <xref>
-** Modify a subtenant <xref>
-** Delete a subtenant <xref>
-* Work with subtenants. 
+** link:seapiref_subtenants.html#retrieve-all-subtenants>[Retrieve all subtenants]
+** link:seapiref_subtenants.html#retrieve-a-subtenant-by-id>[Retrieve a subtenant by ID]
+** link:seapiref_subtenants.html#modify-a-subtenant-by-id>[Modify a subtenant]
+** link:seapiref_subtenants.html#delete-a-subtenant-by-id>[Delete a subtenant by ID]
+* Work with subtenants.
 +
 See:
 
-** Retrieve all tenants (xref>
-** Retrieve a tenant by ID <xref>
-** Create a tenant <xref>
-** Modify a tenant <xref>
-** Delete a tenant <xref>
-* Retrieve users. 
+** link:seapiref_tenants.html#retrieve-all-tenants>[Retrieve all tenants]
+** link:seapiref_tenants.html#retrieve-a-tenant-by-id>[Retrieve a tenant by ID]
+** link:seapiref_tenants.html#create-a-tenant>[Create a tenant]
+** link:seapiref_tenants.html#modify-the-tenant>[Modify the tenant]
+** link:seapiref_tenants.html#delete-the-tenant>[Delete the tenant]
+* Retrieve users.
 +
-See Retrieve all users <xref>, Retrieve user by ID <xref>, and Retrieve user by user name <xref>  
+link:seapiref_users.html#retrieve-all-users>[Retrieve all users], link:seapiref_users.html#retrieve-a-user-by-id>[Retrieve a user by ID], and link:seapiref_users.html#retrieve-a-user-by-user-name>[Retrieve a user by user name].
 
-* Retrieve zones. 
+* Retrieve zones.
 +
-See Retrieve all zones (xref> and Retrieve zone by name <xref>
-+
+See link:seapiref_zones.html#retrieve-all-zones>[Retrieve all zones] and link:seapiref_zones.html#retrieve-a-zone-by-name>[Retrieve a zone by name]
+
 The following table lists the consumer APIs documented in this section.
 
 |===
 |HTTP Method |Path |Description
 
-|POST
-|/v2.1/auth/password
+|`POST`
+|`/v2.1/auth/password`
 |Set the password for a user.
-|POST
-|/v2.1/auth/password
+|`POST`
+|`/v2.1/auth/password`
 |Refresh authentication JWT.
-|POST
-|/v2.1/auth/signin
+|`POST`
+|`/v2.1/auth/signin`
 |Sign in.
-|GET
-|/v2.1/auth/regions
+|`GET`
+|`/v2.1/auth/regions`
 |Retrieve regions.
-|GET
-|/v2.1/auth/regions/{name}
+|`GET`
+|`/v2.1/auth/regions/{name}`
 |Retrieve regions by name.
-|GET
-|/v2.1/auth/zones
+|`GET`
+|`/v2.1/auth/zones`
 |Retrieve zones.
-|GET
-|/v2.1/auth/zones/{name}
+|`GET`
+|`/v2.1/auth/zones/{name}`
 |Retrieve zones by name.
-|GET
-|/v2.1/jobs/
+|`GET`
+|`/v2.1/jobs/`
 |Retrieve jobs.
-|GET
-|/v2.1/jobs/{id}
+|`GET`
+|`/v2.1/jobs/{id}`
 |Retrieve jobs by ID.
 |===
 
@@ -100,13 +100,15 @@ Use the method listed in the following table reset the user password.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/auth/password
+|`POST`
+|`/v2.1/auth/password`
 |Reset the password.
 |None
 |===
 
-Required request body attributes: `username` (string), `new_password `(string)
+Required request body attributes: `username` (string), `new_password` (string)
+
+*Request body example:*
 
 ....
 {
@@ -114,6 +116,11 @@ Required request body attributes: `username` (string), `new_password `(string)
   "old_password": "oldPassword",
   "new_password": "newPassword"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -149,21 +156,26 @@ Required request body attributes: `username` (string), `new_password `(string)
 
 === Refresh authentication token
 
-Use the method listed in the following table to refresh the authentication token. 
+Use the method listed in the following table to refresh the authentication token.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/auth/refresh
+|`POST`
+|`/v2.1/auth/refresh`
 |Refresh the authentication token.
 |None
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
 ....
 none
+....
+
+*Response body example:*
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -205,24 +217,30 @@ none
 
 === Sign in
 
-Use the method listed in the following table to sign in. 
+Use the method listed in the following table to sign in.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/auth/signin
+|`POST`
+|`/v2.1/auth/signin`
 |Log in as a user.
 |None
 |===
 
 Required request body attributes: `username` (string), `new_password` (string)
 
+*Request body example:*
 ....
 {
   "username": "MyName",
   "password": "newPassword"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Authentication succeeeded.",

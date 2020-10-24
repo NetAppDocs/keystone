@@ -24,40 +24,40 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/subtenants
+|`GET`
+|`/v2.1/subtenants`
 |Retrieve subtenants.
-|GET
-|/v2.1/subtenants/{id}
+|`GET`
+|`/v2.1/subtenants/{id}`
 |Retrieve a subtenant by the subtenant ID.
-|POST
-|/v2.1/subtenants
+|`POST`
+|`/v2.1/subtenants``
 |Create a new subtenant.
-|PUT
-|/v2.1/subtenants/{id}
+|`PUT`
+|`/v2.1/subtenants/{id}`
 |Modify the details of a subtenant. You can modify the name of the subtenant.
-|DELETE
-|/v2.1/subtenants/{id}
+|`DELETE`
+|`/v2.1/subtenants/{id}`
 |Delete a subtenant.
 |===
 
 === Subtenant attributes
 
-The following table lists the subtenant attributes. 
+The following table lists the subtenant attributes.
 
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier of the subtenant.
-|name
+|`name`
 |String
 |The subtenant name.
-|code
+|`code`
 |String
 |A customer-specified (or default) code that represents the subtenant.
-|tenant_id
+|`tenant_id`
 |String
 |The identifier of the tenant to which the subtenant belongs.
 |===
@@ -69,17 +69,24 @@ Use the method listed in the following table to retrieve all subtenants or a sub
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/subtenants
+|`GET`
+|`/v2.1/subtenants`
 |Retrieve subtenants.
-|tenant_id: (Optional) Return the subtenants belonging to the specified tenant.
-offset and limit– see  
+|`tenant_id`: (Optional) Return the subtenants belonging to the specified tenant.
+offset and limit– see
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 2 records.",
@@ -121,16 +128,23 @@ Use the method listed in the following to retrieve a subtenant by ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/subtenants/{id}
+|`GET`
+|`/v2.1/subtenants/{id}`
 |Retrieve the subtenant specified by the ID.
-|id (string): The unique identifier of the subtenant.
+|`id (string)`: The unique identifier of the subtenant.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -160,13 +174,15 @@ Use the method listed in the following table to create a subtenant.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/subtenants
+|`POST`
+|`/v2.1/subtenants`
 |Create a new subtenant.
 |None
 |===
 
-Required request body attributes:  `name`, `code`, `tenant_id`
+Required request body attributes: `name`, `code`, `tenant_id`
+
+*Request body example:*
 
 ....
 {
@@ -174,6 +190,11 @@ Required request body attributes:  `name`, `code`, `tenant_id`
   "code": "mynewsubtenant",
   "tenant_id": "5ed5ac802c356a0001a735af"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. New resource created.",
@@ -203,18 +224,25 @@ Use the method listed in the following table to modify a subtenant by ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/subtenants/{id}
+|`PUT`
+|`/v2.1/subtenants/{id}`
 |Modify the subtenant specified by the ID. You can change the subtenant name.
-|id (string): The unique identifier of the subtenant.
+|`id (string)`: The unique identifier of the subtenant.
 |===
 
-Required request body attributes:  `name`
+Required request body attributes: `name`
+
+*Request body example:*
 
 ....
 {
   "name": "MyModifiedSubtenant"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -244,17 +272,22 @@ Use the method listed in the following table to delete a subtenant by ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/subtenants/{id}
+|`DELETE`
+|`/v2.1/subtenants/{id}`
 |Delete the subtenant specified by the ID.
-|id (string): The unique identifier of the subtenant.
+|`id (string)`: The unique identifier of the subtenant.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
-No content for succesful delete
 ....
 
+*Response body example:*
 
+....
+No content for succesful delete
+....

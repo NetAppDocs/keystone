@@ -24,17 +24,17 @@ Use the methods listed in the following table to set up and manage StorageGRID i
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/storagegridinstances
+|`GET`
+|`/v2.1/storagegridinstances`
 |Retrieve StorageGRID instances.
-|POST
-|/v2.1/storagegridinstances
+|`POST`
+|`/v2.1/storagegridinstances`
 |Create a new StorageGRID instance to host object storage.
-|GET
-|/v2.1/storagegridinstances/{id}
+|`GET`
+|`/v2.1/storagegridinstances/{id}`
 |Retrieve a StorageGRID instance by ID.
-|PUT
-|/v2.1/storagegridinstances/{id}
+|`PUT`
+|`/v2.1/storagegridinstances/{id}`
 |Update a StorageGRID instance.
 |===
 
@@ -45,54 +45,61 @@ The following table lists the StorageGRID instance attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the StorageGRID instance.
-|name
+|`name`
 |String
 |The StorageGRID instance name.
-|admin_rest_uri
+|`admin_rest_uri`
 |String($uri)
 |The StorageGRID admin node endpoint.
-|s3_endpoints
+|`s3_endpoints`
 |String($uri)
 |The StorageGRID endpoints.
 For example:
-[ "https://s3.examplegrid.com", "https://s3.location.company.com" ]
-|grid_username
+[ `"https://s3.examplegrid.com", "https://s3.location.company.com"` ]
+|`grid_username`
 |String
 |The StorageGRID user name.
-|grid_password
+|`grid_password`
 |String
 |The StorageGRID password.
-|tenant_username
+|`tenant_username`
 |String
 |The StorageGRID tenant user name.
-|tenant_password
+|`tenant_password`
 |String
 |The StorageGRID tenant password.
-|subscription_number
+|`subscription_number`
 |String
 |The Zuora subscription number.
 |===
 
 === Retrieve StorageGRID instances
 
-Use the method listed in the following table to retrieve the StorageGRID instances. 
+Use the method listed in the following table to retrieve the StorageGRID instances.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/storagegridinstances
+|`GET`
+|`/v2.1/storagegridinstances`
 |Retrieve StorageGRID instances.
 |None
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -119,21 +126,28 @@ none
 
 === Retrieve StorageGRID instances by ID
 
-Use the method listed in the following table to retrieve StorageGRID instances by ID. 
+Use the method listed in the following table to retrieve StorageGRID instances by ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/storagegridinstances/{id}
+|`GET`
+|`/v2.1/storagegridinstances/{id}`
 |Retrieve a StorageGRID instance by ID.
-|id (string): The unique identifier of the StorageGRID instance.
+|`id (string)`: The unique identifier of the StorageGRID instance.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -160,18 +174,20 @@ none
 
 === Create a StorageGRID instance by ID
 
-Use the method listed the following table to create a StorageGRID instance by ID. 
+Use the method listed the following table to create a StorageGRID instance by ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/storagegridinstances/{id}
+|`POST``
+|`/v2.1/storagegridinstances/{id}`
 |Retrieve a StorageGRID instance by ID.
-|id (string): The unique identifier of the StorageGRID instance.
+|`id (string):` The unique identifier of the StorageGRID instance.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 {
@@ -187,6 +203,11 @@ Required request body attributes:  `none`
   "tenant_password": "string",
   "subscription_number": "A-S00003969"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -214,18 +235,20 @@ Required request body attributes:  `none`
 
 === Modify a StorageGRID instance by ID
 
-Use the method listed in the following table to modify a StorageGRID instance by ID. 
+Use the method listed in the following table to modify a StorageGRID instance by ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/storagegridinstances/{id}
+|`PUT`
+|`/v2.1/storagegridinstances/{id}`
 |Modify a StorageGRID instance by ID.
-|id (string): The unique identifier of the StorageGRID instance.
+|`id (string)`: The unique identifier of the StorageGRID instance.
 |===
 
-Required Request Body attributes:  `none`
+Required Request Body attributes: `none`
+
+*Request body example:*
 
 ....
 {
@@ -240,6 +263,11 @@ Required Request Body attributes:  `none`
   "tenant_username": "root",
   "tenant_password": "string",
   "subscription_number": "A-S00003969"
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -264,5 +292,3 @@ Required Request Body attributes:  `none`
   }
 }
 ....
-
-

@@ -24,87 +24,87 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/servicelevels
+|`GET`
+|`/v2.1/servicelevels`
 |Retrieve all service levels.
-|GET
-|/v2.1/servicelevels/{id}
+|`GET`
+|`/v2.1/servicelevels/{id}`
 |Retrieve a service level by ID.
-|POST
-|/v2.1/servicelevels
+|`POST`
+|`/v2.1/servicelevels`
 |Create a new service level.
-|PUT
-|/v2.1/servicelevels/{id}
-|Modify service level details by ID. 
-|DELETE
-|/v2.1/servicelevels/{id}
+|`PUT`
+|`/v2.1/servicelevels/{id}`
+|Modify service level details by ID.
+|`DELETE`
+|`/v2.1/servicelevels/{id}`
 |Delete a service level.
 |===
 
 === Service level attributes
 
-The following table lists the service level attributes. 
+The following table lists the service level attributes.
 
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the service level.
-|name
+|`name`
 |String
 |The service level name.
-|description
+|`description`
 |String
 |The description of the service level.
-|policy_name
+|`policy_name`
 |String
 |Service level quality of service (QoS) name. Allowed values: nse_value, nse_performance, and nse_extreme.
-|available
+|`available`
 |Boolean
 |Indicates whether the service level is available for use.
-|grandfathered
+|`grandfathered`
 |Boolean
-|Indicates whether the service level has been retired. 
-|peak_iops_per_tb
+|Indicates whether the service level has been retired.
+|`peak_iops_per_tb`
 |Integer
 |The maximum possible IOPS per TiB.
-|expected_iops_per_tb
+|`expected_iops_per_tb`
 |Integer
 |The minimum expected IOPS per TiB.
-|absolute_min_iops
+|`absolute_min_iops`
 |Integer
 |The absolute minimum IOPS which is used as an override when the expected IOPS is less than this value.
-|peak_iops_allocation
+|`peak_iops_allocation`
 |String
 |The peak IOPS allocation. Allowed values: allocated_space and used_space.
-|io_block_size_kb
+|`io_block_size_kb`
 |Integer
 |The I/O block size (KiB).
-|min_size_gb
+|`min_size_gb`
 |Integer
 |The minimum size (GiB).
-|max_size_gb
+|`max_size_gb`
 |Integer
 |The maximum size (GiB).
-|max_peak_iops
+|`max_peak_iops`
 |Integer
 |The maximum peak IOPS for the service level.
-|max_expected_iops
+|`max_expected_iops`
 |Integer
 |The maximum expected IOPS.
-|autogrow_max_percent
+|`autogrow_max_percent`
 |Integer
 |The autogrow maximum percent.
-|ontap_aggregates
+|`ontap_aggregates`
 |–
-|The list of ONTAP aggregates. 
+|The list of ONTAP aggregates.
 An ONTAP aggregate consists of:
 * cluster_UIID: ONTAP cluster UUID
 * aggr_name: ONTAP aggregate name
 * aggr_uuid: ONTAP aggregate UUID
 * node_name: ONTAP cluster node name
-For example: 
+For example:
 "ontap_aggregates": [
     {
       "cluster_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -113,31 +113,38 @@ For example:
       "node_name": "node01"
     }
   ]
-|primary_volume_defaults
+|`primary_volume_defaults`
 |–
-a|* snapshot_auto_delete_target_free_space (integer): This option specifies the free space percentage at which the automatic deletion of Snapshot copies must stop. 
+a|* snapshot_auto_delete_target_free_space (integer): This option specifies the free space percentage at which the automatic deletion of Snapshot copies must stop.
 * auto_size_mode (string): The autosize mode for the volume. Allowed values: off, grow, grow_shrink
-For example: 
+For example:
 "primary_volume_defaults": {    "snapshot_auto_delete_target_free_space": 3,    "auto_size_mode": "grow_shrink"
 |===
 
 === Retrieve service levels
 
-Use the method listed in the following table to retrieve all service levels. 
+Use the method listed in the following table to retrieve all service levels.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/servicelevels
+|`GET`
+|`/v2.1/servicelevels`
 |Retrieve all service levels.
 |None
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 3 records.",
@@ -202,21 +209,28 @@ none
 
 === Retrieve service levels by name
 
-Use the method listed in the following table to retrieve service levels by name. 
+Use the method listed in the following table to retrieve service levels by name.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/servicelevels/{name}
+|`GET`
+|`/v2.1/servicelevels/{name}`
 |Retrieve a service level by name.
-|name (string): The name of the service level.
+|`name (string)`: The name of the service level.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -249,18 +263,20 @@ none
 
 === Create a service level
 
-Use the method listed in the following table to create a service level. 
+Use the method listed in the following table to create a service level.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/servicelevels
+|`POST`
+|`/v2.1/servicelevels`
 |Create a service level.
 |None
 |===
 
 Required request body attributes: `name`, `policy_name`
+
+*Request body example:*
 
 ....
 {
@@ -292,6 +308,11 @@ Required request body attributes: `name`, `policy_name`
     "auto_size_mode": "grow_shrink"
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. New resource created.",
@@ -324,18 +345,20 @@ Required request body attributes: `name`, `policy_name`
 
 === Modify a service level
 
-Use the method listed in the following table to modify a service level. 
+Use the method listed in the following table to modify a service level.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/servicelevels/{name}
+|`PUT`
+|`/v2.1/servicelevels/{name}`
 |Modify the details of a service level.
-|name (string): The name of the service level.
+|`name (string)`: The name of the service level.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 {
@@ -367,25 +390,35 @@ Required request body attributes:  `none`
     "auto_size_mode": "grow_shrink"
   }
 }
+....
+
+*Response body example:*
+
+....
 TBA
 ....
 
 === Delete service level by ID
 
-Use the method listed in the following table to delete a service level by ID. 
+Use the method listed in the following table to delete a service level by ID.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/servicelevels/{name}
+|`DELETE`
+|`/v2.1/servicelevels/{name}`
 |Delete the service level identified by ID.
-|name (string): The name of the service level.
+|`name (string)`: The name of the service level.
 |===
+
+*Request body example:*
 
 ....
 none
-No content for succesful delete
 ....
 
+*Response body example:*
 
+....
+No content for succesful delete
+....

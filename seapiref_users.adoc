@@ -24,77 +24,77 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/users
+|`GET`
+|`/v2.1/users`
 |Retrieve a list of all users.
-|GET
-|/v2.1/users/{id}
+|`GET`
+|`/v2.1/users/{id}`
 |Retrieve a user by the user ID.
-|POST
-|/v2.1/users
+|`POST`
+|`/v2.1/users`
 |Create a new user.
-|PUT
-|/v2.1/users/{id}
-|Modify the details of a user. 
-|DELETE
-|/v2.1/users/{id}
+|`PUT`
+|`/v2.1/users/{id}`
+|Modify the details of a user.
+|`DELETE`
+|`/v2.1/users/{id}`
 |Delete a user.
-|GET
-|/v2.1/users/{username}
+|`GET`
+|`/v2.1/users/{username}`
 |Retrieve a user by the user name.
 |===
 
 === User attributes
 
-The following table lists the user attributes. 
+The following table lists the user attributes.
 
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier of the user.
-|username
+|`username`
 |String
 |The user name.
-|password
+|`password`
 |String
 |The user’s password.
-|firstName
+|`firstName`
 |String
 |The user’s first name.
-|lastName
+|`lastName`
 |String
 |The user’s last name.
-|displayName
+|`displayName`
 |String
 |The user’s display name.
-|email
+|`email`
 |String
 |The user’s email address.
-|phone
+|`phone`
 |String
 |The user’s phone number.
-|profileImageURL
+|`profileImageURL`
 |String
 |The URL of the users’ profile image.
-|tenant_id
+|`tenant_id`
 |String
 |The primary tenant identifier for this user.
-|tenancies
+|`tenancies`
 |–
 |The tenancy to which the user belongs; an array consisting of:
-* tenant_id, and
-* role_name 
+* `tenant_id`, and
+* `role_name`
 This is the user role; one of user, admin, read, partner, or root.
-|provider
+|`provider`
 |String
-|Authentication provider: local or activeDirectory
-|provider data
+|Authentication provider: `local` or `activeDirectory`
+|`provider data`
 |–
 |Authentication provider details, consisting of:
-* email_address, and
-* member_of (group membership)
+* `email_address`, and
+* `member_of` (group membership)
 |===
 
 === Retrieve all users
@@ -104,16 +104,23 @@ Use the method listed in the following table to retrieve all users.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/users
+|`GET`
+|`/v2.1/users`
 |Retrieve all users.
 |None
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -151,16 +158,23 @@ Use the method listed in the following table to retrieve a user by ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/users
+|`GET`
+|`/v2.1/users`
 |Retrieve a user by ID.
-|id (string): The unique identifier of the user.
+|`id (string)`: The unique identifier of the user.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -198,16 +212,23 @@ Use the method listed in the following table to retrieve a user by the user name
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/users
+|`GET`
+|`/v2.1/users`
 |Retrieve a user by user name.
-|username (string): The user name of the user.
+|`username (string)`: The user name of the user.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -245,13 +266,15 @@ Use the method listed in the following table to create a user.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/users
+|`POST`
+|`/v2.1/users`
 |Create a new user.
 |None
 |===
 
 Required request body attributes: `username`, `tenant_id`, `tenancies, provider`
+
+*Request body example:*
 
 ....
 {
@@ -276,6 +299,11 @@ Required request body attributes: `username`, `tenant_id`, `tenancies, provider`
     "member_of": "string"
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. New resource created.",
@@ -313,13 +341,15 @@ Use the method listed in the following table to modify a user by user ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/users/{id}
+|`PUT`
+|`/v2.1/users/{id}`
 |Modify a user identified by the user ID. You can modify the user name, display name, password, email address, phone number, profile image URL, and tenancy details.
-|id (string): The unique identifier of the user.
+|`id (string)`: The unique identifier of the user.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 {
@@ -338,6 +368,11 @@ Required request body attributes:  `none`
     }
   ]
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -375,17 +410,22 @@ Use the method listed in the following table to delete a user by ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/users/{name}
+|`DELETE`
+|`/v2.1/users/{name}`
 |Delete the user identified by the ID.
-|id (string): The unique identifier of the user.
+|`id (string)`: The unique identifier of the user.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
-No content for succesful delete
 ....
 
+*Response body example:*
 
+....
+No content for succesful delete
+....

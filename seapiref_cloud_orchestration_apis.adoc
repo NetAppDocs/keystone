@@ -21,14 +21,13 @@ summary:
 [.lead]
 The Cloud Orchestration APIs NetApp Service Engine support connecting Cloud Volumes Services to NetApp Service Engine and to work with them from within the NetApp Service Engine. Initial support is for Azure NetApp Files (ANF) with future support coming for Amazon Web Services (AWS) and Google Cloud Platform (GCP).
 
-[NOTE]
 Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
 
 NetApp Service Engine supports the following:
 
 * Ability to register OnCommand Cloud Manager (OCCM) instances through NetApp Service Engine (a NetApp Administrator function)
 * Ability to provision/edit CVS volumes (includes the ability to take snapshots)
-* Ability to backup data to a CVS zone 
+* Ability to backup data to a CVS zone
 * Ability to see CVS volumes in NSE inventory
 * Ability to see CVS usage.This section describes the APIs for:
 
@@ -41,34 +40,34 @@ NetApp Service Engine supports the following:
 Use the methods listed in the following table to retrieve and create Azure NetApp Files instances.
 
 |===
-|HTTP Method |Path  |Description
+|HTTP Method |Path |Description
 
-|GET
-|/v2.1/anf/instances
+|`GET`
+|`/v2.1/anf/instances`
 |Retrieve all Azure NetApp Files instances.
-|POST
-|/v2.1/anf/instances
+|`POST`
+|`/v2.1/anf/instances`
 |Create new Azure NetApp Files instances.
-|GET
-|/v2.1/anf/instances/{id}
+|`GET`
+|`/v2.1/anf/instances/{id}`
 |Retrieve an Azure NetApp Files instance by ID.
-|GET
-|/v2.1/anf/accounts
+|`GET`
+|`/v2.1/anf/accounts`
 |Retrieve Azure NetApp Files accounts.
-|POST
-|/v2.1/anf/accounts
+|`POST`
+|`/v2.1/anf/accounts`
 |Create an Azure NetApp Files accounts
-|GET
-|/v2.1/anf/accounts/{id}
+|`GET`
+|`/v2.1/anf/accounts/{id}`
 |Retrieve an Azure NetApp Files account by ID.
-|GET
-|/v2.1/anf/pools
+|`GET`
+|`/v2.1/anf/pools`
 |Retrieve all capacity pools.
-|POST
-|/v2.1/anf/pools
+|`POST`
+|`/v2.1/anf/pools``
 |Create a capacity pool.
-|GET
-|/v2.1/anf/pools/{id}
+|`GET`
+|`/v2.1/anf/pools/{id}`
 |Retrieve an Azure NetApp Files capacity pool by ID.
 |===
 
@@ -79,46 +78,46 @@ The following table lists the Azure NetApp Files instance attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |Unique identifier for the Azure NetApp Files instance.
-|name
+|`name`
 |String
 |Name of the Azure NetApp Files instance.
-|cc_working_env
+|`cc_working_env`
 |String
 |Working environment name within Cloud Manager.
-|cc_client_id
+|`cc_client_id`
 |String
 |Auth0 service ID.
-|cc_refresh_token
+|`cc_refresh_token`
 |String
 |Auth0 refresh token.
-|cc_account_id
+|`cc_account_id`
 |String
 |Cloud Central account ID.
-|cc_account_name
+|`cc_account_name`
 |String
 |Cloud Central account name.
-|cc_credentials_id
+|`cc_credentials_id`
 |String
 |ID of the Cloud Centra working environment.
-|azure_client_id
+|`azure_client_id`
 |String
 |Application (Client) ID. The ID of an Active Directory service principal that Cloud Manager can use to authenticate with Azure Active Directory.
-|azure_client_secret
+|`azure_client_secret`
 |String
 |The value of client secret for service principal application.
-|azure_tenant_id
+|`azure_tenant_id`
 |String
 |The Azure Active Directory ID. This is also known as tenant ID.
-|azure_subscription_id
+|`azure_subscription_id`
 |String
 |The Azure Active Directory subscription ID.
-|subtenant_id
+|`subtenant_id`
 |String
 |The subtenant ID.
-|tags
+|`tags`
 |
 |The key-value pairs.
 |===
@@ -128,17 +127,24 @@ The following table lists the Azure NetApp Files instance attributes.
 |===
 |HTTP Method |Path |Description |Path Parameters
 
-|GET
-|/v2.1/anf/instances
+|`GET`
+|`/v2.1/anf/instances`
 |Retrieve Azure NetApp Files instances.
-|tenant_id: (Optional) Return the Azure NetApp Files instances belonging to the specified tenant.
-See also Common Pagination <xref> parameters.
+|`tenant_id:` (Optional) Return the Azure NetApp Files instances belonging to the specified tenant.
+See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination] parameters.
 |===
 
 Required request body parameters: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -192,16 +198,23 @@ Use the method listed in the following table to retrieve an Azure NetApp Files i
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/anf/instances/{id}
+|`GET`
+|`/v2.1/anf/instances/{id}`
 |Retrieve an Azure NetApp Files instance by ID.
-|id (string): The unique identifier of the Azure NetApp Files instance.
+|`id (string):` The unique identifier of the Azure NetApp Files instance.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -250,14 +263,15 @@ Use the method listed in the following table to create a new Azure NetApp Files 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/anf/instances
+|`POST`
+|`/v2.1/anf/instances`
 |Create a Azure NetApp Files instance.
 |None
 |===
 
-Required request body attributes`: name,  cc_working_env, cc_client_id, cc_refresh_token, cc_account_id, cc_account_name, cc_credentials_id, azure_client_id, azure_client_secret, azure_tenant_id, azure_subscription_id, subtenant_id` 
+Required request body attributes: `name, cc_working_env, cc_client_id, cc_refresh_token, cc_account_id, cc_account_name, cc_credentials_id, azure_client_id, azure_client_secret, azure_tenant_id, azure_subscription_id, subtenant_id`
 
+*Request body example:*
 ....
 {
   "name": "instance1",
@@ -279,6 +293,11 @@ Required request body attributes`: name,  cc_working_env, cc_client_id, cc_refre
     "keyN": "Value N"
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -314,22 +333,22 @@ The following table lists the Azure NetApp Files account attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the Azure NetApp Files account.
-|name
+|`name`
 |String
 |The name of the Azure NetApp Files account.
-|resource_group
+|`resource_group`
 |String
 |The Azure resource group.
-|location
+|`location`
 |String
 |The Azure location (region/zone).
-|anf_instance_id
+|`anf_instance_id`
 |String
 |The Azure NetApp Files instance identifier.
-|tags
+|`tags`
 |–
 |The key-value pairs.
 |===
@@ -339,18 +358,25 @@ The following table lists the Azure NetApp Files account attributes.
 |===
 |HTTP Method |Path |Description |Path Parameters
 
-|GET
-|/v2.1/anf/accounts
+|`GET`
+|`/v2.1/anf/accounts`
 |Retrieve Azure NetApp Files accounts.
-|subtenant_id: (Mandatory) The subtenant ID to which the Azure NetApp Files account belongs. 
-tenant_id: (Optional) Returns the Azure NetApp Files accounts belonging to the specified tenant.
-See also Pagination <xref> parameters.
+|`subtenant_id:` (Mandatory) The subtenant ID to which the Azure NetApp Files account belongs.
+`tenant_id:` (Optional) Returns the Azure NetApp Files accounts belonging to the specified tenant.
+See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination] parameters.
 |===
 
 Required request body parameters: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -397,17 +423,24 @@ Use the method listed in the following table to retrieve an Azure NetApp Files a
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/anf/accounts/{name}
+|`GET`
+|`/v2.1/anf/accounts/{name}`
 |Retrieve an Azure NetApp Files account by name.
-|name (string): (Mandatory) The name of the Azure NetApp Files account.
-subtenant_id (string): (Mandatory) The subtenant ID to which the Azure NetApp Files account belongs. 
+|`name (string):` (Mandatory) The name of the Azure NetApp Files account.
+`subtenant_id (string):` (Mandatory) The subtenant ID to which the Azure NetApp Files account belongs.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -449,13 +482,15 @@ Use the method listed in the following table to create a new Azure NetApp Files 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/anf/accounts
+|`POST`
+|`/v2.1/anf/accounts`
 |Create a new Azure NetApp Files account.
 |None
 |===
 
-Required request body attributes`: name, resource_group, location, anf_instance_id` 
+Required request body attributes: `name, resource_group, location, anf_instance_id`
+
+*Request body example:*
 
 ....
 {
@@ -470,6 +505,11 @@ Required request body attributes`: name, resource_group, location, anf_instance_
     "keyN": "Value N"
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -505,31 +545,31 @@ The following table lists the capacity pool attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the capacity pool.
-|name
+|`name`
 |String
 |The name of the capacity pool.
-|resource_group
+|`resource_group`
 |String
 |The Azure resource group.
-|location
+|`location`
 |String
 |The Azure location (region/zone).
-|size
+|`size`
 |Integer
 |The size of the capacity pool in TB.
-|service_level
+|`service_level`
 |String
 |The service level name.
-|anf_account_name
+|`anf_account_name`
 |String
 |The Azure NetApp Files account instance identifier.
-|subtenant_id
+|`subtenant_id`
 |String
 |The subtenant ID.
-|tags
+|`tags`
 |–
 |The key-value pairs.
 |===
@@ -539,18 +579,26 @@ The following table lists the capacity pool attributes.
 |===
 |HTTP Method |Path |Description |Path Parameters
 
-|GET
-|/v2.1/anf/pools
+|`GET`
+|`/v2.1/anf/pools`
 |Retrieve capacity pools.
-|subtenant_id: (Mandatory) The subtenant ID to which the ANF account belongs. 
-tenant_id: (Optional) Return the capacity pools belonging to the specified tenant.
-See also Pagination <xref> parameters.
+|`subtenant_id:` (Mandatory) The subtenant ID to which the ANF account belongs.
+
+`tenant_id:` (Optional) Return the capacity pools belonging to the specified tenant.
+See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination] parameters.
 |===
 
 Required request body parameters: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -599,17 +647,25 @@ Use the method listed in the following table to retrieve a capacity pool by name
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/anf/pools/{name}
+|`GET`
+|`/v2.1/anf/pools/{name}`
 |Retrieve a capacity pool by name.
-|name (string): (Mandatory) The unique name of the capacity pool.
-subtenant_id (string): (Mandatory) The subtenant ID to which the capacity pool belongs.
+|`name (string):` (Mandatory) The unique name of the capacity pool.
+
+`subtenant_id (string):` (Mandatory) The subtenant ID to which the capacity pool belongs.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+Request body example:
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -653,13 +709,15 @@ Use the method listed in the following table to create a new capacity pool.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/anf/pools
+|`POST`
+|`/v2.1/anf/pools`
 |Create a capacity pool.
 |None
 |===
 
-Required request body attributes`: name, resource_group, location, size, service_level, anf_account_name, subtenant_id` 
+Required request body attributes: `name, resource_group, location, size, service_level, anf_account_name, subtenant_id`
+
+*Request body example:*
 
 ....
 {
@@ -677,6 +735,11 @@ Required request body attributes`: name, resource_group, location, size, service
     "keyN": "Value N"
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -703,20 +766,22 @@ Required request body attributes`: name, resource_group, location, size, service
 }
 ....
 
-==== Modify size of the capacity pool 
+==== Modify size of the capacity pool
 
 Use the method listed in the following table to modify the size of the capacity pool.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/anf/pools/{name}
+|`PUT`
+|`/v2.1/anf/pools/{name}`
 |Modify the size of the capacity pool.
-|name (string): Mandatory: the unique name of the capacity pool.
+|`name (string):` Mandatory: the unique name of the capacity pool.
 |===
 
-Required request body attributes:  `name, resource_group, location, anf_account_name, size, service_level, subtenant_id`
+Required request body attributes: `name, resource_group, location, anf_account_name, size, service_level, subtenant_id`
+
+*Request body example:*
 
 ....
 {
@@ -734,6 +799,11 @@ Required request body attributes:  `name, resource_group, location, anf_account_
     "keyN": "Value N"
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -769,60 +839,68 @@ The following table lists the Azure NetApp Files volume attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier for the Azure NetApp Files volume.
-|name
+|`name`
 |String
 |The name of the Azure NetApp Files volume.
-|resource_group
+|`resource_group`
 |String
 |The Azure resource group.
-|subtenant_id
+|`subtenant_id`
 |String
 |The subtenant ID.
-|anf_account_name
+|`anf_account_name`
 |String
-|The Azure NetApp Files account name. 
-|anf_pool_name
+|The Azure NetApp Files account name.
+|`anf_pool_name`
 |String
-|The Azure NetApp Files Pool name. 
-|location
+|The Azure NetApp Files Pool name.
+|`location`
 |String
 |The Azure location (region/zone).
-|file_path
+|`file_path`
 |String
 |Creation Token or File Path. A unique file path for accessing volume.
-|quota_size
+|`quota_size`
 |Integer
 |Maximum storage quota allowed in GiB.
-|subNetID
+|`subNetID`
 |String
 |The Azure Resource URL for a delegated subnet. Must have the delegation Microsoft NetApp/volumes.
-|tags
+|`tags`
 |–
 |The key-value pairs.
 |===
 
 ==== Retrieve Azure NetApp Files volumes
 
-Use the method listed in the following table to retrieve Azure NetApp Files volumes. Specifying a `tenant_id` returns only the accounts belonging to that tenant. 
+Use the method listed in the following table to retrieve Azure NetApp Files volumes. Specifying a `tenant_id` returns only the accounts belonging to that tenant.
 
 |===
 |HTTP Method |Path |Description |Path Parameters
 
-|GET
-|/v2.1/anf/volumes
+|`GET`
+|`/v2.1/anf/volumes`
 |Retrieve Azure NetApp Files volumes.
-|subtenant_id: (Mandatory) The subtenant ID to which the ANF volume belongs. 
-tenant_id: (Optional) Return the ANF Volumes belonging to the specified tenant.
-See also Pagination <xref> parameters.
+|`subtenant_id:` (Mandatory) The subtenant ID to which the ANF volume belongs.
+
+`tenant_id:` (Optional) Return the ANF Volumes belonging to the specified tenant.
+See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination] parameters.
 |===
 
 Required request body parameters: `none`.
 
+*Request body example:*
+
 ....
 none
+....
+
+
+*Response body example:*
+....
 {
   "status": {
     "user_message": "string",
@@ -871,17 +949,24 @@ Use the method listed in the following table to retrieve an Azure NetApp Files v
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/anf/volumes/{name}
+|`GET`
+|`/v2.1/anf/volumes/{name}`
 |Retrieve an Azure NetApp Files volume by name.
-|name (string): Mandatory: the unique name of the Azure NetApp Files volume.
-subtenant_id: (string) Mandatory. The subtenant ID to which the Azure NetApp Files volume belongs.
+|`name (string):` Mandatory: the unique name of the Azure NetApp Files volume.
+
+`subtenant_id:` (string) Mandatory. The subtenant ID to which the Azure NetApp Files volume belongs.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
 
+*Request body example:*
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -925,13 +1010,15 @@ Use the method listed in the following table to create a new Azure NetApp Files 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/anf/volumes
+|`POST`
+|`/v2.1/anf/volumes`
 |Create an Azure NetApp Files volume.
 |None
 |===
 
-Required request body attributes`: name, resource_group, subtenant_id, anf_account_name, anf_pool_name, location, file_path, quota_size, subNetID `
+Required request body attributes: `name, resource_group, subtenant_id, anf_account_name, anf_pool_name, location, file_path, quota_size, subNetID`
+
+*Request body example:*
 
 ....
 {
@@ -951,6 +1038,11 @@ Required request body attributes`: name, resource_group, subtenant_id, anf_accou
     "keyN": "Value N"
   }
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -976,5 +1068,3 @@ Required request body attributes`: name, resource_group, subtenant_id, anf_accou
   }
 }
 ....
-
-
