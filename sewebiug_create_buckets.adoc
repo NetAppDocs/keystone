@@ -23,7 +23,7 @@ Buckets are created under a subtenant.
 
 === Steps
 
-. Display the Buckets list <xref> and select the subtenant under which to create the bucket.
+. Display the link:sewebiug_view_buckets.html#view-buckets[Buckets list] and select the subtenant under which to create the bucket.
 . Click Create Bucket.
 . In the Create Bucket dialog box, enter the name of the new bucket and click Create. This creates a job to create the bucket.
 
@@ -33,5 +33,3 @@ Create bucket is run as an asynchronous job <xref>. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the server in the Buckets list.
-
-

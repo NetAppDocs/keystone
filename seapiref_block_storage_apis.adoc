@@ -115,7 +115,7 @@ Use the method listed in the following table to retrieve all block stores or a s
 |`/v2.1/blockstores`
 |Retrieve all block stores.
 |`tenant_id`: (Optional) The return of block stores belonging to the specified tenant.
-offset and limit– see Pagination <xref>
+offset and limit– see link:seapiref_netapp_service_engine_rest_apis.html[Pagination]
 |===
 
 Required request body parameters: `none`
@@ -270,7 +270,7 @@ Use the method listed in the following table to create a new block store instanc
 |None
 |===
 
-Required request body attributes`: tenant_id`, `subtenant_id`, `zone`, `subnet`, `vlan_id`
+Required request body attributes: `tenant_id`, `subtenant_id`, `zone`, `subnet`, `vlan_id`
 
 Set `service_fcp_enabled` to `true` to enable FCP (only possible if the underlying infrastructure allows it).
 
@@ -562,7 +562,7 @@ Options: iSCSI, FCP.
 |Host operating system type: one of Windows, Linux, Solaris, or VMware.
 |`hostgroup_mappings`
 |Array
-|Array of host group names mapped or to be mapped to the disk. When mapping host groups to disks, the host group type (iSCSI or FC) must match the disk protocol.
+a|Array of host group names mapped or to be mapped to the disk. When mapping host groups to disks, the host group type (iSCSI or FC) must match the disk protocol.
 For example:
 ----
 "hostgroup_mappings": [
@@ -571,7 +571,9 @@ For example:
 ----
 |`hostgroups`
 |
-|Used to define new host groups when creating or modifying disks. For more information on host groups, see Host groups <xref>.
+a|Used to define new host groups when creating or modifying disks. For more information on host groups, see link:seapiref_block_storage_apis.html#host-groups[Host groups].
+
+----
 Example:
 "hostgroups": [
     {
@@ -588,6 +590,7 @@ Example:
       ]
     }
   ]
+----
 |`service_level`
 |String
 |Service level name: Standard, Premium, or Extreme.
@@ -596,8 +599,9 @@ Example:
 |The size of the share or disk.
 |`snapshot_policy`
 |String
-|The snapshot policy. If enabled, create snapshots automatically according to the schedules.
+a|The snapshot policy. If enabled, create snapshots automatically according to the schedules.
 For example:
+----
 "snapshot_policy": {
     "enabled": true,
     "hourly_schedule": {
@@ -622,11 +626,12 @@ For example:
       "snapshots_to_keep": 12
     }
   }
-
+----
 |`backup_policy`
 |String
-|Backup policy for the disk. Must be enabled to allow backups. When enabled, backups occur around 0:00 UTC. The backup policy defines the number of backups of each type retained.
+a|Backup policy for the disk. Must be enabled to allow backups. When enabled, backups occur around 0:00 UTC. The backup policy defines the number of backups of each type retained.
 For example:
+----
 "backup_policy": {
     "enabled": false,
     "backup_zone": "au-west1-a",
@@ -635,6 +640,7 @@ For example:
     "monthly_backups_to_keep": 12,
     "adhoc_backups_to_keep": 10
   }
+----
 |`dr_enabled`
 |Boolean
 |Enable disaster recovery replication to a different zone.
@@ -657,7 +663,7 @@ Use the method listed in the following table to retrieve all disks or a subset o
 |`/v2.1/disks`
 |Retrieve all disks.
 |`tenant_id`: (Optional) The return of disks belonging to the specified tenant.
-offset and limit(see Pagination <xref>)
+offset and limit (see link:seapiref_netapp_service_engine_rest_apis.html[Pagination])
 |===
 
 Required request body attributes: `none`
@@ -1077,7 +1083,7 @@ Use the method listed in the following table to modify the disk details by ID. Y
 
 You cannot modify the protocol (iSCSI or FCP) in use for the disk.
 
-You can also create a new host group, populate it with initiators and map it to the disk. For more information on host groups, see Host groups <xref>.
+You can also create a new host group, populate it with initiators and map it to the disk. For more information on host groups, see link:seapiref_block_storage_apis.html#host-groups[Host groups].
 
 |===
 |HTTP Method |Path |Description |Parameters
@@ -1442,7 +1448,7 @@ Host groups are protocol specific. They can be either:
 
 Empty host groups (without any initiators) can be created and mapped to the disks as placeholders; these must be fully defined to allow access to the disks.
 
-Host groups are mapped to disks when a disk is created or modified. For more information, see Create Disks <xref> or Modify Disk by ID <xref>. It is possible to create and populate new host groups as part of these processes.
+Host groups are mapped to disks when a disk is created or modified. For more information, see link:seapiref_netapp_service_engine_rest_apis.html#create-disks[Create Disks] or link:seapiref_netapp_service_engine_rest_apis.html#modify-disk-by-id[Modify Disk by ID]. It is possible to create and populate new host groups as part of these processes.
 
 Use the methods listed the following table to perform the following tasks:
 
@@ -1517,7 +1523,7 @@ The following table lists the host group attributes.
 |Host operating system type: one of Windows, Linux, or VMware.
 |`initiators`
 |–
-|The initiators and their aliases that are defined for the host group.
+a|The initiators and their aliases that are defined for the host group.
 For host groups of type iSCSI, the initiators are iSCSI Qualified Names (IQNs).
 For host groups of type FCP, the initiators are FC WWPNs.
 Each initiator has an alias to simplify identification of the initiator.
@@ -1549,7 +1555,7 @@ Use the method listed in the following table to retrieve all host groups or a su
 |`/v2.1/hostgroups`
 |Retrieve all host groups.
 |`tenant_id`: (Optional) The return the host groups belonging to the specified tenant.
-offset and limit(see Pagination <xref>)
+offset and limit (see link:seapiref_netapp_service_engine_rest_apis.html[Pagination])
 |===
 
 Required request body attributes: `none`

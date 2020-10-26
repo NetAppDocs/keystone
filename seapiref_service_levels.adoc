@@ -98,13 +98,15 @@ The following table lists the service level attributes.
 |The autogrow maximum percent.
 |`ontap_aggregates`
 |–
-|The list of ONTAP aggregates.
+a|The list of ONTAP aggregates.
 An ONTAP aggregate consists of:
-* cluster_UIID: ONTAP cluster UUID
-* aggr_name: ONTAP aggregate name
-* aggr_uuid: ONTAP aggregate UUID
-* node_name: ONTAP cluster node name
+
+* `cluster_UIID: ONTAP cluster UUID`
+* `aggr_name: ONTAP aggregate name`
+* `aggr_uuid: ONTAP aggregate UUID`
+* `node_name: ONTAP cluster node name`
 For example:
+----
 "ontap_aggregates": [
     {
       "cluster_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -113,12 +115,15 @@ For example:
       "node_name": "node01"
     }
   ]
+----
 |`primary_volume_defaults`
 |–
 a|* snapshot_auto_delete_target_free_space (integer): This option specifies the free space percentage at which the automatic deletion of Snapshot copies must stop.
 * auto_size_mode (string): The autosize mode for the volume. Allowed values: off, grow, grow_shrink
 For example:
+----
 "primary_volume_defaults": {    "snapshot_auto_delete_target_free_space": 3,    "auto_size_mode": "grow_shrink"
+----
 |===
 
 === Retrieve service levels

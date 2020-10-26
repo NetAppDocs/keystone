@@ -19,48 +19,48 @@ summary:
 //
 
 [.lead]
-This section describes how to create a new disk by directly specifying the disk details. For instructions on how to create a disk based on a snapshot of an existing disk, see Create Disk from Snapshot <xref>.
+This section describes how to create a new disk by directly specifying the disk details. For instructions on how to create a disk based on a snapshot of an existing disk, see link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot[Create a disk from a snapshot].
 
 === Before you begin
 
 * If block storage is available but not initialized, you will be asked to initialize it before you can create the disk. To initialize the block store, you need:
 ** The VLAN ID and subnet for the block store. If you are not familiar with your network environment, please check with you IT department for the relevant values.
 ** The protocol to be used. By default, block stores have the iSCSI service enabled. You can optionally enable the FCP service if the infrastructure allows it.
-** The disaster recovery region, zone,  and schedule if you wish to enable disaster recovery DP for the disk. For more information, see Disaster Recovery <xref>.
+** The disaster recovery region, zone, and schedule if you wish to enable disaster recovery DP for the disk. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 * Identify or define the host groups to be mapped to the disk. You can also create a host group as part of the disk creation.
-* If you would like to enable disaster recovery DP options for the disk, you must create the disk on a block store that is disaster recovery enabled. For more information,  see Disaster Recovery <xref>.
-* You can define a backup policy to capture backups of the disk on a scheduled basis. For more information,  see Backups <xref>.
+* If you would like to enable disaster recovery DP options for the disk, you must create the disk on a block store that is disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+* You can define a backup policy to capture backups of the disk on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
 
 === Steps
 
-. Display the Disks list <xref>.
+. Display the link:sewebiug_view_disks.html#view-disks[Disks list].
 . Click Create Disk.
 . In the Create Disk dialog box, select Create New Disk.
-
++
 image:sewebiug_image26.png[Error: Missing Graphic Image]
-
++
 The Create Disk page is displayed.
-
++
 . Select the protocol for accessing the disk: iSCSI or FCP.
-. Select the subtenant, region, and zone,  and subtenant for the new disk. The block store details for the selected region, zone,  and subtenant display. 
-. If block storage is not enabled in the selected zone for the selected subtenant, a message displays to initialize it. 
-
+. Select the subtenant, region, and zone, and subtenant for the new disk. The block store details for the selected region, zone, and subtenant display.
+. If block storage is not enabled in the selected zone for the selected subtenant, a message displays to initialize it.
++
 image:sewebiug_image27.png[Error: Missing Graphic Image]
-
++
 . Click Initialize Block Storage.
 . In the Initialize Block Storage dialog box:
-.. In the iSCSI panel, specify the VLAN and Subnet. 
+.. In the iSCSI panel, specify the VLAN and Subnet.
 +
 The iSCSI service is enabled for all disks by default.
 
 . If required, enable the FCP protocol (only available if the underlying infrastructure supports it).
-. If required, enable the disaster recovery options (enable and select Region, Zone,  and Schedule).
-
+. If required, enable the disaster recovery options (enable and select Region, Zone, and Schedule).
++
 image:sewebiug_image28.png[Error: Missing Graphic Image]
-
++
 . Click Create to initialize the block store. Wait until the block store initializes. The display returns to Create Disk page.
 . Complete the following fields:
-
++
 |===
 |Field |Description
 
@@ -71,8 +71,8 @@ image:sewebiug_image28.png[Error: Missing Graphic Image]
 |OS Type
 |Select an operating system for the disk.
 |Host Groups
-|This list displays existing host groups that match the protocol, OS type, subtenant and zone selected for the disk. 
-Select one or more host groups. 
+|This list displays existing host groups that match the protocol, OS type, subtenant and zone selected for the disk.
+Select one or more host groups.
 To define a new host group, see the next step.
 |===
 
@@ -83,7 +83,7 @@ To define a new host group, see the next step.
 .. If required, add tags (key-value pairs) to the host group in the Tags section.
 .. Click Create. The system creates the host group and displays a message when it is successfully created.
 .. To map the newly created host group to the disk, go to the Host Groups field and select it.
-. If disaster recovery is enabled on the underlying block store, disaster recovery replication is automatically enabled for the new disk.  If you wish to exclude the disk from disaster recovery replications, toggle the Data Protection Enable Disaster Recovery for This Disk button so that disaster recovery is disabled.
+. If disaster recovery is enabled on the underlying block store, disaster recovery replication is automatically enabled for the new disk. If you wish to exclude the disk from disaster recovery replications, toggle the Data Protection Enable Disaster Recovery for This Disk button so that disaster recovery is disabled.
 . Select a performance service level.
 +
 Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
@@ -92,7 +92,7 @@ Select an option to view the performance details for that level (as peak/expecte
 . To enable backups for this disk:
 .. Toggle to enable the Backup Policy to display the Backup Policy fields.
 .. Specify the backup zone.
-.. Specify how many of each type of backup to keep: daily, weekly,  and/or monthly.
+.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
 . If snapshots are required for this disk:
 .. Toggle to enable the Snapshot Policy to display the Snapshot Policy fields.
 .. Specify when to create the snapshots:
@@ -100,7 +100,7 @@ Select an option to view the performance details for that level (as peak/expecte
 ** *Hourly.* Specify which minute (of the hour) to take snapshot (check) and the number of hourly snapshots to retain.
 ** *Daily.* Specify when (hour and minute) to take the snapshot (check) and the number of hourly snapshots to retain.
 ** *Weekly.* Specify when (day of the week, hour and minute) to take snapshot (check) and the number of weekly snapshots to retain.
-** *Monthly. *Specify when (day of the month, hour,  and minute) to take snapshot and the number of monthly snapshots to retain.
+** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
 
 . If you want to add tags (key-value pairs) to the disk, specify them in the Tags section.
 . Click Create. This creates a job to create the disk.
@@ -111,5 +111,3 @@ Create disk is run as an asynchronous job <xref>. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the disk in the Disks list.
-
-

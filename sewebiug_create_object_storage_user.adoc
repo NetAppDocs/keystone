@@ -24,8 +24,8 @@ Because an object storage user belongs to an object storage group, the object st
 
 === Steps
 
-. Display the Users List <xref>.
-. Make sure the correct subtenant is selected and the display is showing users (not groups).  
+. Display the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
+. Make sure the correct subtenant is selected and the display is showing users (not groups).
 . Click Create User.
 . In the Create User dialog box:
 .. Enter the user name.
@@ -38,5 +38,3 @@ Create user is run as an asynchronous job <xref>. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the share in the Users list.
-
-

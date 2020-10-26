@@ -578,8 +578,9 @@ The following table lists the file share attributes.
 |The security style for the file share: UNIX or NTFS.
 |`snapshot_policy`
 |String
-|The snapshot policy. If enabled, create snapshots automatically according to the schedules.
+a|The snapshot policy. If enabled, create snapshots automatically according to the schedules.
 For example:
+----
 "snapshot_policy": {
     "enabled": true,
     "hourly_schedule": {
@@ -604,10 +605,13 @@ For example:
       "snapshots_to_keep": 12
     }
   }
+----
+
 |`backup_policy`
 |–
-|The backup policy for the share (must be enabled to allow backups). When enabled, backups occur around 0:00 UTC. The backup policy defines the number of backups of each type retained.
+a|The backup policy for the share (must be enabled to allow backups). When enabled, backups occur around 0:00 UTC. The backup policy defines the number of backups of each type retained.
 For example:
+----
 "backup_policy": {
     "enabled": false,
     "backup_zone": "au-west1-a",
@@ -616,10 +620,13 @@ For example:
     "monthly_backups_to_keep": 12,
     "adhoc_backups_to_keep": 10
   }
+----
+
 |`export_policy`
 |–
-|An array of export policy rules.
+a|An array of export policy rules.
 For example:
+----
 },
   "export_policy": [
     {
@@ -631,6 +638,8 @@ For example:
 client_match: (string) CIDR notation for NFS access
 access: (string) eg rw
 superuser: (boolean)
+----
+
 |`dr_enabled`
 |Boolean
 |–

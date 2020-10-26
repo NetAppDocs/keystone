@@ -23,8 +23,8 @@ Use this method to create a new object storage group.
 
 === Steps
 
-. Display the Users List <xref>.
-. Make sure the correct subtenant is selected and the display is showing groups (not users).  
+. Display the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
+. Make sure the correct subtenant is selected and the display is showing groups (not users).
 . Click Create Group.
 . In the Create Group dialog box, enter the group name.
 . Select the S3 policy from the list.
@@ -33,5 +33,3 @@ Use this method to create a new object storage group.
 === After you finish
 
 Create object storage group is run as an asynchronous job <xref>. You can check the status of the job in the jobs list.
-
-

@@ -21,8 +21,6 @@ summary:
 [.lead]
 The Users list displays a list of all the users in the tenancies that the logged-in user has access to. To display the list, select Administration > Users from the menu.
 
-The list displays simple information about each user such as the user name, first and last name,  email address, primary tenancy,  and date created.
+The list displays simple information about each user such as the user name, first and last name, email address, primary tenancy, and date created.
 
 The action icons next to each user allow you to modify or delete the user.
-
-

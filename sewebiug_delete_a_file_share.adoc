@@ -23,17 +23,17 @@ This section describes how to delete a file share.
 
 *Attention:*
 
-* You cannot undo deletion of a share. After it is deleted,  data cannot be recovered.
+* You cannot undo deletion of a share. After it is deleted, data cannot be recovered.
 * Deleting a primary file share will delete all associated backups
 
 === Steps
 
-. Display the Shares list <xref>.
-. Locate the share in the list and click the Delete icon for that share. (For details about working with items in lists,  see List view actions <xref>).
-. In the Confirm Delete dialog box,  enter the file share name to confirm that you want to delete the file share.
-
+. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. Locate the share in the list and click the Delete icon for that share. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
+. In the Confirm Delete dialog box, enter the file share name to confirm that you want to delete the file share.
++
 image:sewebiug_image25.png[Error: Missing Graphic Image]
-
++
 . Click Confirm. This creates a job to delete the share.
 
 === After you finish
@@ -42,5 +42,3 @@ Delete share is run as an asynchronous job <xref>. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, verify that the share has been removed from the Shares list.
-
-

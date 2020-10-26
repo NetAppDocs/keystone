@@ -24,40 +24,40 @@ The (consumer) administration APIs consist of methods that allow you to perform 
 * Sign in, set a password, and refresh an authentication token.
 * Retrieve jobs and view job details.
 +
-See link:seapiref_jobs.html.html#retrieve-jobs>[Retrieve jobs] and link:seapiref_jobs.html.html#retrieve-a-job-by-job-id>[Retrieve a job-by-job ID].
+See link:seapiref_jobs.html#retrieve-jobs[Retrieve jobs] and link:seapiref_jobs.html#retrieve-a-job-by-job-id[Retrieve a job-by-job ID].
 
 * Retrieve regions.
 +
-See link:seapiref_regions.html#retrieve-regions>[Retrieve regions] and link:seapiref_regions.html#retrieve-a-region-by-name>[Retrieve a region by name].
+See link:seapiref_regions.html#retrieve-regions[Retrieve regions] and link:seapiref_regions.html#retrieve-a-region-by-name[Retrieve a region by name].
 
 * Retrieve service levels.
 +
-See link:seapiref_service_levels.html#retrieve-service-levels>[Retrieve Service Levels] and link:seapiref_service_levels.html#retrieve-service-levels-by-name>[Retrieve Service Levels by Name].
+See link:seapiref_service_levels.html#retrieve-service-levels[Retrieve Service Levels] and link:seapiref_service_levels.html#retrieve-service-levels-by-name[Retrieve Service Levels by Name].
 
 * Work with subtenants.
 +
 See:
 
-** link:seapiref_subtenants.html#retrieve-all-subtenants>[Retrieve all subtenants]
-** link:seapiref_subtenants.html#retrieve-a-subtenant-by-id>[Retrieve a subtenant by ID]
-** link:seapiref_subtenants.html#modify-a-subtenant-by-id>[Modify a subtenant]
-** link:seapiref_subtenants.html#delete-a-subtenant-by-id>[Delete a subtenant by ID]
+** link:seapiref_subtenants.html#retrieve-all-subtenants[Retrieve all subtenants]
+** link:seapiref_subtenants.html#retrieve-a-subtenant-by-id[Retrieve a subtenant by ID]
+** link:seapiref_subtenants.html#modify-a-subtenant-by-id[Modify a subtenant]
+** link:seapiref_subtenants.html#delete-a-subtenant-by-id[Delete a subtenant by ID]
 * Work with subtenants.
 +
 See:
 
-** link:seapiref_tenants.html#retrieve-all-tenants>[Retrieve all tenants]
-** link:seapiref_tenants.html#retrieve-a-tenant-by-id>[Retrieve a tenant by ID]
-** link:seapiref_tenants.html#create-a-tenant>[Create a tenant]
-** link:seapiref_tenants.html#modify-the-tenant>[Modify the tenant]
-** link:seapiref_tenants.html#delete-the-tenant>[Delete the tenant]
+** link:seapiref_tenants.html#retrieve-all-tenants[Retrieve all tenants]
+** link:seapiref_tenants.html#retrieve-a-tenant-by-id[Retrieve a tenant by ID]
+** link:seapiref_tenants.html#create-a-tenant[Create a tenant]
+** link:seapiref_tenants.html#modify-the-tenant[Modify the tenant]
+** link:seapiref_tenants.html#delete-the-tenant[Delete the tenant]
 * Retrieve users.
 +
-link:seapiref_users.html#retrieve-all-users>[Retrieve all users], link:seapiref_users.html#retrieve-a-user-by-id>[Retrieve a user by ID], and link:seapiref_users.html#retrieve-a-user-by-user-name>[Retrieve a user by user name].
+link:seapiref_users.html#retrieve-all-users[Retrieve all users], link:seapiref_users.html#retrieve-a-user-by-id[Retrieve a user by ID], and link:seapiref_users.html#retrieve-a-user-by-user-name[Retrieve a user by user name].
 
 * Retrieve zones.
 +
-See link:seapiref_zones.html#retrieve-all-zones>[Retrieve all zones] and link:seapiref_zones.html#retrieve-a-zone-by-name>[Retrieve a zone by name]
+See link:seapiref_zones.html#retrieve-all-zones[Retrieve all zones] and link:seapiref_zones.html#retrieve-a-zone-by-name[Retrieve a zone by name]
 
 The following table lists the consumer APIs documented in this section.
 

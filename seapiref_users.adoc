@@ -83,7 +83,8 @@ The following table lists the user attributes.
 |The primary tenant identifier for this user.
 |`tenancies`
 |–
-|The tenancy to which the user belongs; an array consisting of:
+a|The tenancy to which the user belongs; an array consisting of:
+
 * `tenant_id`, and
 * `role_name`
 This is the user role; one of user, admin, read, partner, or root.
@@ -92,7 +93,8 @@ This is the user role; one of user, admin, read, partner, or root.
 |Authentication provider: `local` or `activeDirectory`
 |`provider data`
 |–
-|Authentication provider details, consisting of:
+a|Authentication provider details, consisting of:
+
 * `email_address`, and
 * `member_of` (group membership)
 |===

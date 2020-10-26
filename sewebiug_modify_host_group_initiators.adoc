@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-You can modify a host group to add, remove or amend initiators. 
+You can modify a host group to add, remove or amend initiators.
 
 Modifying a host group will modify access for each disk mapped to the host group.
 
@@ -27,12 +27,12 @@ You cannot modify the alias of an initiator. To change the alias, delete the ini
 
 === Steps
 
-. Display the Host Groups <xref> list.
+. Display the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
 . Locate the host group in the list and click the Edit icon for that host group.
 +
 To modify an existing initiator, locate the initiator in the list, edit the initiator value and click Update.
 +
-To add an initiator: 
+To add an initiator:
 
 .. click Add Initiator.
 .. Specify the Alias and Initiator.
@@ -40,6 +40,4 @@ To add an initiator:
 +
 To remove an initiator from the host group, locate the initiator in the list and click the Delete icon.
 
-. Click Done. 
-
-
+. Click Done.

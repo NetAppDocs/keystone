@@ -21,7 +21,7 @@ summary:
 [.lead]
 You can change the disk name, the host group mapping, performance service level, capacity, and snapshot policy.
 
-Using this method,  you can move your disks to different performance levels if available.
+Using this method, you can move your disks to different performance levels if available.
 
 === Before you begin
 
@@ -29,9 +29,9 @@ The disk must be in an operational state.
 
 === Steps
 
-. Display the Disks list <xref>.
-. Locate the disk in the list and click the Edit icon for that disk. (For details about working with items in lists,  see List view actions <xref>).
-. Make any changes as required; refer to Create new Disk <xref> for field descriptions.
+. Display the link:sewebiug_view_disks.html#view-disks[Disks list].
+. Locate the disk in the list and click the Edit icon for that disk. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
+. Make any changes as required; refer to link:sewebiug_create_a_new_disk.html[Create a new disk] for field descriptions.
 . Click Done. This creates a job to modify the disk.
 
 === After you finish
@@ -40,5 +40,3 @@ Modify disk is run as an asynchronous job <xref>. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the disk in the Disks list.
-
-

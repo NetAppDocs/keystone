@@ -26,7 +26,5 @@ Managing users requires customer administrator access.
 
 * View a list of users.
 * Add a user.
-* Modify user details such as first name, last name, display name, the tenancies to which the user has access,  and the role of the user within those tenancies.
+* Modify user details such as first name, last name, display name, the tenancies to which the user has access, and the role of the user within those tenancies.
 * Delete a user.
-
-

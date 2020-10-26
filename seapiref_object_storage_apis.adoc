@@ -79,8 +79,9 @@ The following table lists the object storage attributes.
 |The identifier for the tenant to which the group belongs.
 |`s3_policy`
 |
-|S3 policy
+a|S3 policy
 For example:
+----
 "s3_policy": {
     "Statement": [
       {
@@ -90,6 +91,7 @@ For example:
       }
     ]
   }
+----
 |===
 
 === Retrieve object storage groups

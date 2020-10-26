@@ -19,28 +19,28 @@ summary:
 //
 
 [.lead]
-This section describes how to create a new share by directly specifying the share details. To create a new share based on a snapshot of an existing share, see Create Share from Snapshot <xref>.
+This section describes how to create a new share by directly specifying the share details. To create a new share based on a snapshot of an existing share, see link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share[Create Share from Snapshot].
 
 === Before you begin
 
 * A share is created on a file server. The file server must exist and be in an operational state before you can create a new file share.
-* To enable disaster recovery options for the share, you must create the share on a server that is disaster recovery enabled. For more information,  see Disaster Recovery <xref>.
-* You can define a backup policy to capture backups of the file share on a scheduled basis. For more information,  see Backups <xref>.
-* You can define a snapshot policy to capture snapshots of the file share on a scheduled basis. For more information,  see Snapshots <xref>.
+* To enable disaster recovery options for the share, you must create the share on a server that is disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+* You can define a backup policy to capture backups of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
+* You can define a snapshot policy to capture snapshots of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots].
 
 === Steps
 
-. Display the Shares list <xref>.
+. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
 . Click Create Share.
 . In the Create Share dialog box, select Create New Share.
-
++
 image:sewebiug_image22.png[Error: Missing Graphic Image]
-
++
 The Create Share page is displayed.
-
-. Select the share type: NFS, CIFS,  or Multiprotocol.
++
+. Select the share type: NFS, CIFS, or Multiprotocol.
 . Complete the following fields:
-
++
 |===
 |Field |Description
 
@@ -58,34 +58,37 @@ For CIFS shares, adding a $ character to the end of the share path will make it 
 |Security Style
 |Select the security style applicable to the file share.
 |===
-
-. If disaster recovery is enabled on the underlying file server, disaster recovery replication is automatically enabled for the new share.  If you want to exclude the share from disaster recovery replication, toggle the Data Protection Enable Disaster Recovery for This Share button so that disaster recovery is disabled.
++
+. If disaster recovery is enabled on the underlying file server, disaster recovery replication is automatically enabled for the new share. If you want to exclude the share from disaster recovery replication, toggle the Data Protection Enable Disaster Recovery for This Share button so that disaster recovery is disabled.
 . Select a Performance Service Level.
-
++
 [NOTE]
 Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
 
++
 . Specify the capacity of the file share.
-
++
 [NOTE]
 NetApp Service Engine displays a warning and the capacity bar changes color if the specified capacity puts the consumed capacity into burst (or even more into burst if it is already in burst). The capacity check is performed against the total capacity for all subscriptions in the tenancy.
 
++
 . To enable backups for this file share:
 .. Toggle to enable the Backup Policy to display the Backup Policy fields.
 .. Specify the backup zone.
-.. Specify how many of each type of backup to keep: daily, weekly,  and/or monthly.
+.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
 . If snapshots are required for this file share:
 .. Toggle to enable the Snapshot Policy to display the Snapshot Policy fields.
 .. Specify when to create the snapshots:
 
 ** *Hourly.* Specify which minute (of the hour) to take snapshot and the number of hourly snapshots to retain.
 ** *Daily.* Specify when (hour and minute) to take the snapshot the number of hourly snapshots to retain.
-** *Weekly.  *Specify when (day of the week, hour,  and minute) to take snapshot and the number of weekly snapshots to retain.
-** *Monthly.* Specify when (day of the month, hour,  and minute) to take snapshot and the number of monthly snapshots to retain.
-
+** *Weekly.* Specify when (day of the week, hour, and minute) to take snapshot and the number of weekly snapshots to retain.
+** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
++
 [NOTE]
 Export Policies do not apply to CIFS access.
 
++
 . For NFS type shares only, specify the Export Policy.
 . If you want to add tags (key-value pairs) to the file share, specify them in the Tags section.
 . Click Create. This creates a job to create the share.
@@ -93,10 +96,8 @@ Export Policies do not apply to CIFS access.
 === After you finish
 
 * For CIFs type shares only: to make the shares available by host name, your domain administrator must update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
-** With DNS records updated,  use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
+** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
 ** With no DNS records updated, you must use the IP address to access the share i.e. file://IP/share[\\IP\share^]
 * Create share is run as an asynchronous job <xref>. You can:
 ** Check the status of the job in the jobs list.
 ** After the job is finished, check the status of the share in the Shares list.
-
-

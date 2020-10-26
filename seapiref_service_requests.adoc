@@ -63,9 +63,10 @@ The following table lists the service request attributes.
 |`subscription`
 |String
 |The Zuora subscription number.
-|``commitment`
+|`commitment`
 |–
-|Subscription commitment details, including:
+a|Subscription commitment details, including:
+
 * Service level (string): Service level: Standard, Premium, or Extreme.
 * New_commitment (integer): New total capacity required.
 |`zone`

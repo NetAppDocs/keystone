@@ -35,7 +35,7 @@ This section describes how to perform the following tasks:
 
 The Azure Volumes list displays a list of Azure volumes in the tenancies to which the logged-in user has access. To display the list, select Subscribed Services > Azure Volumes from the menu.
 
-The list displays simple information about each Azure Volume.  The action icons next to each Azure volume allow you to modify or delete the Azure volume.
+The list displays simple information about each Azure Volume. The action icons next to each Azure volume allow you to modify or delete the Azure volume.
 
 === Add an Azure volume
 
@@ -45,13 +45,13 @@ This section describes how to add an Azure volume.
 
 . Select Subscribed Services > Azure Volumes from the menu.
 . Click Create.
-. In the Create Azure Volume dialog box,  specify the subtenant, location,  resource group, account name, service level, the Aize,  and the Azure NetApp account ID.
+. In the Create Azure Volume dialog box, specify the subtenant, location, resource group, account name, service level, the Aize, and the Azure NetApp account ID.
 . If needed, add tags to the volume.
 . Click Create.
 
 === Modify Azure volume details
 
-Use this method to modify the details of an Azure volume. You can modify the subtenant, Azure location, Azure resource group or name of the account,  and add or remove tags. 
+Use this method to modify the details of an Azure volume. You can modify the subtenant, Azure location, Azure resource group or name of the account, and add or remove tags.
 
 ==== Steps
 
@@ -62,7 +62,7 @@ Use this method to modify the details of an Azure volume. You can modify the sub
 
 === Delete an Azure volume
 
-Use this method to delete an Azure volume. 
+Use this method to delete an Azure volume.
 
 ==== Steps
 

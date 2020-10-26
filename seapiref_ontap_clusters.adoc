@@ -68,7 +68,8 @@ The following table lists the ONTAP cluster attributes.
 |The ONTAP cluster password
 |`provisioning_state`
 |String
-|Identifies whether a cluster is available for provisioning operations. The options include:
+a|Identifies whether a cluster is available for provisioning operations. The options include:
+
 * Open
 * Closed
 |`data_network_ip_cidr`
@@ -79,7 +80,8 @@ The following table lists the ONTAP cluster attributes.
 |The IPV4 address.
 |`data_network_ports`
 |–
-|A list of the ONTAP cluster data network ports.
+a|A list of the ONTAP cluster data network ports.
+----
 For example:
 [
   {
@@ -88,10 +90,12 @@ For example:
   "parent_port": "e0c"
   }
 ]
+----
 
 |`intercluster_lifs`
 |–
-|The ONTAP cluster intercluster LIFs.
+a|The ONTAP cluster intercluster LIFs.
+----
 For example:
 [
   {
@@ -109,6 +113,7 @@ For example:
   "netmask": "255.255.255.0"
   }
 ]
+----
 |`svm_root_service_level`
 |String
 |The ONTAP cluster storage virtual machine (SVM) root service level name.
@@ -120,19 +125,23 @@ For example:
 |The Zuora subscription.
 |`services_available`
 |–
-|List of services available and their state.
+a|List of services available and their state.
 For example:
+----
 {
   "fcp": false,
   "iscsi": true,
   "nas": true
   }
+----
 |`data_fcp_ports`
 |–
-|List of nodes and ports for FCP-enabled ONTAP clusters.
+a|List of nodes and ports for FCP-enabled ONTAP clusters.
 For example:
+----
 [  {   "node_name": "aff-01",   "port_name": "0g"  },  {   "node_name": "aff-01",   "port_name": "0h"
   ]
+----
 |`is_mcc`
 |Boolean
 |Indicates whether the cluster is MetroCluster enabled or not. The default is False.

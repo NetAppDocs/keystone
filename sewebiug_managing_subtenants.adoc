@@ -32,11 +32,11 @@ Managing subtenants requires customer administrator access.
 
 The Subtenants list displays a list of all the subtenants in a NetApp Service Engine installation. To display the list, select Administration > Subtenants from the menu.
 
-The list displays simple information about each subtenant,  such as:
+The list displays simple information about each subtenant, such as:
 
 * Name
 * Tenant name (under which the subtenant is created)
-* Code (a unique code within NetApp Service Engine that represents the subtenant) 
+* Code (a unique code within NetApp Service Engine that represents the subtenant)
 
 === Add a Subtenant
 
@@ -50,7 +50,7 @@ You will need:
 
 ==== Steps
 
-. From the menu,  select Administration > Subtenants.
+. From the menu, select Administration > Subtenants.
 . Click Create Subtenant.
 . In the Create Subtenant dialog box, enter a name and code for the subtenant.
 . Click Confirm.
@@ -76,7 +76,7 @@ Make sure that there are no storage components provisioned under the subtenant t
 
 ==== Steps
 
-. Select Administration > Subtenants from the menu. 
+. Select Administration > Subtenants from the menu.
 . Locate the subtenant in the list and click the Delete icon.
-. In the Confirm Delete dialog box,  enter the name of the subtenant to be deleted.
+. In the Confirm Delete dialog box, enter the name of the subtenant to be deleted.
 . Click Confirm.

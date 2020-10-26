@@ -30,9 +30,9 @@ The file share must be in the operational state.
 
 === Steps
 
-. Display the Shares list <xref>.
-. Locate the share in the list and click the Edit icon for that share. (For details about working with items in lists,  see List view actions <xref>).
-. Make any changes as required;  for field descriptions, see Create new File Share <xref>.
+. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. Locate the share in the list and click the Edit icon for that share. (For details about working with items in lists,  see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
+. Make any changes as required;  for field descriptions, see link:sewebiug_create_a_new_file_share.html[Create a new file share].
 . Click Done. This creates a job to modify the share.
 
 === After you finish
@@ -41,5 +41,3 @@ Modify share is run as an asynchronous job <xref>. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the share in the Shares list.
-
-

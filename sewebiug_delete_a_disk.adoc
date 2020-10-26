@@ -28,13 +28,13 @@ This section describes how to delete a disk.
 
 === Steps
 
-. Display the Disks list <xref>.
-. Locate the disk in the list and click the Delete icon for that disk. (For details about working with items in lists,  see List view actions <xref>).
+. Display the link:sewebiug_view_disks.html#view-disks[Disks list].
+. Locate the disk in the list and click the Delete icon for that disk. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
 . In the Confirm Delete dialog box, enter the disk name to confirm that you want to delete the disk.
-
++
 image:sewebiug_image30.png[Error: Missing Graphic Image]
-
-. Click Confirm. This creates a job to delete the disk. 
++
+. Click Confirm. This creates a job to delete the disk.
 
 === After you finish
 
@@ -42,5 +42,3 @@ Delete disk is run as an asynchronous job <xref>. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, verify that the disk has been removed from the Disks list.
-
-

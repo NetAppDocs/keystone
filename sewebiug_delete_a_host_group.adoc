@@ -23,9 +23,7 @@ You can delete a host group if there are no disks mapped to the host group.
 
 === Steps
 
-. Display the Host Groups <xref> list.
-. Locate the host group in the list and click the Delete icon for that host group. 
+. Display the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
+. Locate the host group in the list and click the Delete icon for that host group.
 . At the Confirm Delete dialog, enter the host group name to confirm that you want to delete the host group.
 . Click Confirm.
-
-

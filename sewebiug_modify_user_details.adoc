@@ -21,7 +21,7 @@ summary:
 [.lead]
 Use this method to modify a user’s details. You can:
 
-* Modify the user’s first name, last name,  and display name.
+* Modify the user’s first name, last name, and display name.
 * Add or remove tenancies to which the user has access.
 * Modify the role of the user in each tenancy to which the user has access.
 
@@ -34,5 +34,3 @@ Use this method to modify a user’s details. You can:
 . To grant the user access to another tenancy, click Add Tenancy and select the Tenant and the Role of the user in that tenancy in the new entry fields.
 . To remove access for the user to a tenancy, locate the tenancy in the Tenancies list and select the Delete icon.
 . Click Update.
-
-
