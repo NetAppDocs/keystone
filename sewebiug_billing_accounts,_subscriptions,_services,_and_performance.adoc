@@ -55,7 +55,7 @@ As burst usage incurs additional cost, the NetApp Service Engine GUI displays:
 
 * A notification when a proposed change in provisioning will result in using burst capacity.
 * A notification to a Customer Admin when a subscription has gone in to burst usage.
-* How many days and in what quantity burst usage has been used for a service, in the Capacity Report. For more information see Capacity Usage link:sewebiug_working_with_reports.html#capacity-usage[Capacity usage].
+* How many days and in what quantity burst usage has been used for a service, in the Capacity Report. For more information see link:sewebiug_working_with_reports.html#capacity-usage[Capacity usage].
 
 ==== Notification when a proposed change will result in using burst capacity
 

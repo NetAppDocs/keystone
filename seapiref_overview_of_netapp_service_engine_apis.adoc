@@ -33,7 +33,7 @@ You should use this guide if you want to use the storage provider, NetApp ONTAP 
 
 ==== Constructing a URL to directly access REST APIs
 
-You can access the REST APIs directly through a programming language, such as Python, C#, C++, JavaScript, and so on. To access the REST APIs in the `https://<hostname>/api` format, enter the host name or IP address and the URL.
+You can access the REST APIs directly through a programming language, such as Python, C#, C++, JavaScript, and so on. To access the REST APIs in the `https:// <hostname> /api` format, enter the host name or IP address and the URL.
 
 ==== Consumer and administrator APIs
 
