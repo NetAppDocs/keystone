@@ -38,7 +38,7 @@ image:sewebiug_image30.png[Error: Missing Graphic Image]
 
 === After you finish
 
-Delete disk is run as an asynchronous job <xref>. You can:
+Delete disk is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, verify that the disk has been removed from the Disks list.

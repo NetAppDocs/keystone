@@ -37,7 +37,7 @@ If disaster recovery is already enabled, it cannot be disabled. For more informa
 
 === After you finish
 
-Modify server is run as an asynchronous <xref> job. You can:
+Modify server is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the sever in the Servers list.

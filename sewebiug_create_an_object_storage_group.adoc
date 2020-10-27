@@ -32,4 +32,4 @@ Use this method to create a new object storage group.
 
 === After you finish
 
-Create object storage group is run as an asynchronous job <xref>. You can check the status of the job in the jobs list.
+Create object storage group is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can check the status of the job in the jobs list.

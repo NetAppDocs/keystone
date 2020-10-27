@@ -81,7 +81,7 @@ If creating a CIFS-enabled file server:
 
 === After you finish
 
-Create server is run as an asynchronous job <xref>. You can:
+Create server is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the server in the Servers list.

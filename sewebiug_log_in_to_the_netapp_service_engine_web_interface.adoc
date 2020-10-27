@@ -36,7 +36,8 @@ The following table lists the role-based access descriptions.
 |Role |Access
 
 |Customer administrator
-|The first customer administrator user is created by the NetApp Keystone team:
+a|The first customer administrator user is created by the NetApp Keystone team:
+
 * Full access to provision and manage storage through NetApp Service Engine (including file servers and block stores).
 * Can raise service requests and incidents.
 * Can assign roles to other users of NetApp Service Engine.

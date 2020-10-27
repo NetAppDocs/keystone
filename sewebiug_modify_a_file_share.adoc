@@ -37,7 +37,7 @@ The file share must be in the operational state.
 
 === After you finish
 
-Modify share is run as an asynchronous job <xref>. You can:
+Modify share is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the share in the Shares list.

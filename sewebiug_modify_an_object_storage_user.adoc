@@ -27,7 +27,7 @@ Use this method to modify details of an object storage user such as the user nam
 . Make sure the correct subtenant is selected and the display is showing Users (not Groups).
 . Locate the user in the list and click the Edit icon for that group.
 +
-For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview#list-view[List view actions].
+For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
 
 . In the Edit User dialog box:
 .. Enter the user name.

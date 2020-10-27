@@ -98,6 +98,6 @@ Export Policies do not apply to CIFS access.
 * For CIFs type shares only: to make the shares available by host name, your domain administrator must update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
 ** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
 ** With no DNS records updated, you must use the IP address to access the share i.e. file://IP/share[\\IP\share^]
-* Create share is run as an asynchronous job <xref>. You can:
+* Create share is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
 ** Check the status of the job in the jobs list.
 ** After the job is finished, check the status of the share in the Shares list.

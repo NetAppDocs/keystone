@@ -45,7 +45,7 @@ A List view is used to display a list of objects. For example, the list of serve
 
 From a List view, you can:
 
-* Perform actions on the items in the list: see link:sewebiug_netapp_service_engine_web_interface_overview#list-view[List view actions].
+* Perform actions on the items in the list: see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
 
 image:sewebiug_image10.png[Error: Missing Graphic Image]
 

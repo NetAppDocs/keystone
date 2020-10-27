@@ -185,7 +185,9 @@ MetroCluster is a DP feature which synchronously replicates data and configurati
 NetApp Service Engine managed sites that are configured with MetroCluster can support synchronous disaster recovery for File and Block storage in the following way.
 
 * Zones can be configured to support synchronous disaster recovery.
-* Disks/shares created in these zones synchronously replicate to the disaster recovery zone. *Notes:*
+* Disks/shares created in these zones synchronously replicate to the disaster recovery zone.
+
+*Notes:*
 
 * Synchronous disaster recovery incurs cost at synchronous disaster recovery subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges[Data Protection, Consumed Capacity, and Charges].
 

@@ -36,7 +36,7 @@ The disk must be in an operational state.
 
 === After you finish
 
-Modify disk is run as an asynchronous job <xref>. You can:
+Modify disk is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the disk in the Disks list.
