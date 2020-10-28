@@ -26,9 +26,10 @@ This section describes how to create a new disk by directly specifying the disk 
 * If block storage is available but not initialized, you will be asked to initialize it before you can create the disk. To initialize the block store, you need:
 ** The VLAN ID and subnet for the block store. If you are not familiar with your network environment, please check with you IT department for the relevant values.
 ** The protocol to be used. By default, block stores have the iSCSI service enabled. You can optionally enable the FCP service if the infrastructure allows it.
-** The disaster recovery region, zone, and schedule if you wish to enable disaster recovery DP for the disk. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+** The disaster recovery region, zone, and schedule if you want to enable asynchronous disaster recovery DP for the disk. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 * Identify or define the host groups to be mapped to the disk. You can also create a host group as part of the disk creation.
-* If you would like to enable disaster recovery DP options for the disk, you must create the disk on a block store that is disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+* To enable asynchronous disaster recovery DP options for the disk, you must create the disk on a block store that is asynchronous disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+* To enable synchronous disaster recovery for a disk, create the disk in a zone that is MetroCluster-enabled.
 * You can define a backup policy to capture backups of the disk on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
 
 === Steps
@@ -54,7 +55,8 @@ image:sewebiug_image27.png[Error: Missing Graphic Image]
 The iSCSI service is enabled for all disks by default.
 
 . If required, enable the FCP protocol (only available if the underlying infrastructure supports it).
-. If required, enable the disaster recovery options (enable and select Region, Zone, and Schedule).
+. If required, enable the Asynchronous Disaster Recovery options (enable and select Region, Zone, and Schedule).
+. If the zone selected is MCC-enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled. Disks created in this block store synchronously replicate to the zone displayed in the Synchronous Disaster Recovery panel.
 +
 image:sewebiug_image28.png[Error: Missing Graphic Image]
 +
@@ -83,16 +85,11 @@ To define a new host group, see the next step.
 .. If required, add tags (key-value pairs) to the host group in the Tags section.
 .. Click Create. The system creates the host group and displays a message when it is successfully created.
 .. To map the newly created host group to the disk, go to the Host Groups field and select it.
-. If disaster recovery is enabled on the underlying block store, disaster recovery replication is automatically enabled for the new disk. If you wish to exclude the disk from disaster recovery replications, toggle the Data Protection Enable Disaster Recovery for This Disk button so that disaster recovery is disabled.
 . Select a performance service level.
 +
 Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
 
 . Specify the capacity of the disk.
-. To enable backups for this disk:
-.. Toggle to enable the Backup Policy to display the Backup Policy fields.
-.. Specify the backup zone.
-.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
 . If snapshots are required for this disk:
 .. Toggle to enable the Snapshot Policy to display the Snapshot Policy fields.
 .. Specify when to create the snapshots:
@@ -101,7 +98,12 @@ Select an option to view the performance details for that level (as peak/expecte
 ** *Daily.* Specify when (hour and minute) to take the snapshot (check) and the number of hourly snapshots to retain.
 ** *Weekly.* Specify when (day of the week, hour and minute) to take snapshot (check) and the number of weekly snapshots to retain.
 ** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
-
+. If asynchronous disaster recovery is enabled on the underlying block store, asynchronous disaster recovery replication is automatically enabled for the new disk. If you wish to exclude the disk from asynchronous disaster recovery replications, toggle the Asynchronous Disaster Recovery toggle so that asynchronous disaster recovery is disabled.
+. If the disk is being created in a zone that is MetroCluster-enabled, the Synchronous Disaster Recovery button is enabled and cannot be disabled. The disk will be replicated to the zone displayed in the Synchronous Disaster Recovery panel.
+. To enable backups for this disk:
+.. Toggle to enable the Backup Policy to display the Backup Policy fields.
+.. Specify the backup zone.
+.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
 . If you want to add tags (key-value pairs) to the disk, specify them in the Tags section.
 . Click Create. This creates a job to create the disk.
 

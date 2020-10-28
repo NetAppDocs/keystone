@@ -22,7 +22,7 @@ summary:
 This section describes how to manage Azure NetApp accounts:
 
 [NOTE]
-Managing Azure NetApp accounts requires customer administrator access.
+Managing Azure NetApp accounts requires Customer Admin access.
 
 In this section:
 
@@ -41,23 +41,32 @@ The list displays simple information about each Azure NetApp account. The action
 
 This section describes how to add an Azure NetApp account.
 
+=== Before you begin
+
+You will need:
+* The subtenant to which the Azure NetApp Account belongs
+* The ANF Instance
+* The Azure location (region)
+* The Azure Resource Group
+* A name for the account
+
 ==== Steps
 
 . Select Subscribed Services > Azure NetApp Accounts from the menu.
 . Click Create.
 . In the Create Azure NetApp Account dialog box, specify the subtenant, the Azure location (region), the Azure resource group, and a name for the Azure NetApp account.
 . If needed, add tags to the account.
-. Click Create.
+. Click Create. When created successfully, the account state will be Succeeded (can be viewed in the Azure NetApp Accounts list).
 
-=== Modify Azure NetApp account details
+=== Modify Azure NetApp account tags
 
-Use this method to modify the details of an Azure NetApp account. You can modify the subtenant, Azure location, Azure resource group or name of the account, and add or remove tags. 
+Use this method to modify tags associated with an Azure NetApp account.
 
 ==== Steps
 
 . Select Subscribed Services > Azure NetApp Accounts from the menu.
 . Locate the Azure NetApp Account in the list and click the Edit icon.
-. On the Manage Azure NetApp Account dialog box, make any changes as required.
+. On the Manage Azure NetApp Account dialog box, add, remove, or edit tags as required.
 . Click Update.
 
 === Delete an Azure NetApp account

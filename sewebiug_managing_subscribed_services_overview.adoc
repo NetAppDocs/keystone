@@ -23,20 +23,18 @@ When registered with the NetApp Service Engine, you can manage your cloud volume
 
 * Azure NetApp Files (ANF)
 * (Future) Amazon Web Services (AWS)
-* (Future) Google Cloud Platform (GCP) 
+* (Future) Google Cloud Platform (GCP)
 +
 You can only register existing CVS subscriptions with NetApp Service Engine; to create a new subscription, create the CVS subscription in the normal way and then register it with the NetApp Service Engine using your subscription credentials.
 +
 This section describes how to manage subscribed services
 
 [NOTE]
-Managing subscribed services requires customer administrator access.
+Managing subscribed services requires Customer Admin access.
 
 You can:
 
 * View a list of subscribed services
-* Add a subscribed service 
+* Add a subscribed service
 * Modify subscribed service details
 * Delete a subscribed service
-
-

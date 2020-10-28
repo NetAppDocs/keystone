@@ -120,7 +120,7 @@ Snapshots contribute to the consumed capacity of a service.
 
 ==== Backups
 
-Backup refers to taking a copy of an item, replicating it, and storing the copy in a zone other than the original zone. NetApp Service Engine offers backups on file and block storage (requires a DP service on the subscription). Backups of shares/disks are stored in the backup zone on the lowest cost performance tier on subscription.
+Backup refers to taking a copy of an item, replicating it, and storing the copy in a zone other than the original zone ., which has the respective protocol enabled (in case of block storage only) and is non-MetroCluster enabled. NetApp Service Engine offers backups on file and block storage (requires a DP service on the subscription). Backups of shares/disks are stored in the backup zone on the lowest cost performance tier (that is Standard) on subscription.
 
 Backups can be configured at the time of creation of a new share/disk or later added to an existing share/disk.
 
@@ -129,7 +129,7 @@ Backups can be configured at the time of creation of a new share/disk or later a
 * Backups occur at a fixed time, around 0:00 UTC.
 * Backups occur as defined by the backup policy set for the share/disk. The backup policy determines:
 ** If backups are enabled
-** The zone to which the backups are replicated; a backup zone is any zone in NetApp Service Engine other than the zone in which the original share or disk resides. Once set, the backup zone cannot be changed.
+** The zone to which the backups are replicated; a backup zone is any zone in NetApp Service Engine other than the zone in which the original share or disk resides, which has the respective protocol enabled (in case of block storage only) and is non-MetroCluster enabled. Once set, the backup zone cannot be changed.
 ** The number of backups to keep (retention) of each interval (daily, weekly, or monthly).
 +
 Scheduled backups are taken regularly and cannot be deleted but will be aged out as determined by the retention policy.
@@ -157,7 +157,7 @@ NetApp Service Engine supports asynchronous disaster recovery by providing the a
 
 Asynchronous disaster recovery is available on file and block storage and requires a DP service on the subscription.
 
-The disaster recovery zone must be a zone within NetApp Service Engine that is different to the zone in which the primary volume is created. Disaster recovery replicas of shares/disks are stored in the disaster recovery zone at the same performance tier as the original share/disk.
+The disaster recovery zone must be a zone within NetApp Service Engine that is different to the zone in which the primary volume is created, and  should not be a MetroCluster partner if the source zone is MetroCluster enabled. Disaster recovery replicas of shares/disks are stored in the disaster recovery zone at the same performance tier as the original share/disk.
 
 Enabling asynchronous disaster recovery replication for a primary volume requires:
 
@@ -189,7 +189,7 @@ NetApp Service Engine managed sites that are configured with MetroCluster can su
 
 *Notes:*
 
-* Synchronous disaster recovery incurs cost at synchronous disaster recovery subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges[Data Protection, Consumed Capacity, and Charges].
+* Synchronous disaster recovery incurs costs at synchronous disaster recovery subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges[Data Protection, Consumed Capacity, and Charges].
 
 === Data protection, consumed capacity, and charges
 
@@ -202,7 +202,7 @@ The figures in this section describe how DP charges are calculated.
 In asynchronous disaster recovery, usage and cost is made up of the following charges:
 
 * Original volume capacity charged at the performance tier on which it resides.
-* Disaster recovery copy charged at the same performance tier (disaster recovery copies are stored at the same tier).
+* Disaster recovery copy charged at the same performance tier at the destination or disaster recovery zone (disaster recovery copies are stored at the same tier).
 * DP service charge (for the capacity of the original volume).
 
 image:sewebiug_image4.png[Error: Missing Graphic Image]
