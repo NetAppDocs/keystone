@@ -24,8 +24,9 @@ This section describes how to create a new share by directly specifying the shar
 === Before you begin
 
 * A share is created on a file server. The file server must exist and be in an operational state before you can create a new file share.
-* To enable disaster recovery options for the share, you must create the share on a server that is disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+* To enable asynchronous disaster recovery options for the share, you must create the share on a server that has asynchronous disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 * You can define a backup policy to capture backups of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
+* To enable synchronous disaster recovery for a share, create the share in a zone that is MetroCluster-enabled.
 * You can define a snapshot policy to capture snapshots of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots].
 
 === Steps
@@ -59,7 +60,6 @@ For CIFS shares, adding a $ character to the end of the share path will make it 
 |Select the security style applicable to the file share.
 |===
 +
-. If disaster recovery is enabled on the underlying file server, disaster recovery replication is automatically enabled for the new share. If you want to exclude the share from disaster recovery replication, toggle the Data Protection Enable Disaster Recovery for This Share button so that disaster recovery is disabled.
 . Select a Performance Service Level.
 +
 [NOTE]
@@ -72,10 +72,8 @@ Select an option to view the performance details for that level (as peak/expecte
 NetApp Service Engine displays a warning and the capacity bar changes color if the specified capacity puts the consumed capacity into burst (or even more into burst if it is already in burst). The capacity check is performed against the total capacity for all subscriptions in the tenancy.
 
 +
-. To enable backups for this file share:
-.. Toggle to enable the Backup Policy to display the Backup Policy fields.
-.. Specify the backup zone.
-.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
+. If asynchronous disaster recovery is enabled on the underlying file server, asynchronous disaster recovery replication is automatically enabled for the new share. If you wish to exclude the share from asynchronous disaster recovery replication, toggle the Asynchronous Disaster Recovery button so that it is disabled.
+. If the share is being created in a zone that is MetroCluster-enabled, the Synchronous Disaster Recovery button is automatically enabled and cannot be disabled. The share will be replicated to the zone displayed in the panel below the Synchronous Disaster Recovery toggle.
 . If snapshots are required for this file share:
 .. Toggle to enable the Snapshot Policy to display the Snapshot Policy fields.
 .. Specify when to create the snapshots:
@@ -84,12 +82,16 @@ NetApp Service Engine displays a warning and the capacity bar changes color if t
 ** *Daily.* Specify when (hour and minute) to take the snapshot the number of hourly snapshots to retain.
 ** *Weekly.* Specify when (day of the week, hour, and minute) to take snapshot and the number of weekly snapshots to retain.
 ** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
+. To enable backups for this file share:
+.. Toggle to enable the Backup Policy to display the Backup Policy fields.
+.. Specify the backup zone.
+.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
+. For NFS type shares only, specify the Export Policy.
 +
 [NOTE]
 Export Policies do not apply to CIFS access.
 
 +
-. For NFS type shares only, specify the Export Policy.
 . If you want to add tags (key-value pairs) to the file share, specify them in the Tags section.
 . Click *Create*. This creates a job to create the share.
 
