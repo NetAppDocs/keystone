@@ -21,7 +21,10 @@ summary:
 [.lead]
 This section describes how to add a subscribed service.
 
+NetApp Service Engine can currently support Azure NetApp Files with future support planned for Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+
 === Before you begin
+You need the information about the subscribed services, including credentials to connect to the service. The information varies with the subscribed service type.
 
 === Steps
 
@@ -33,19 +36,19 @@ This section describes how to add a subscribed service.
 
 .. Select the Subtenant.
 .. Enter a name for the OCCM Working Environment that will be created for the service.
-.. Enter the Azure Directory (tenant) id, the Azure Client ID, Azure Client Secret and the Name.
+.. Enter the Azure Directory (tenant) id, the Azure Client ID, Azure Client Secret and the Name of the subscribed service.
 +
 *Azure US Government*
-
-. TBA
++
+Not currently supported
 +
 *GCP Google Cloud Platform*
 +
-TBA
+Not currently supported
 +
 *AWS Amazon Web Services*
 +
-TBA
+Not currently supported
 
 . Specify tags for the service if required.
-. Click Add.
+. Click Create.

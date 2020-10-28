@@ -23,19 +23,17 @@ This section describes the Capacity Usage report.
 
 === Capacity usage
 
-The Capacity Usage page displays capacity usage over time for each storage service in a subscription. Use the graphical reports on this page to view the trend in capacity usage over time. The reports show committed and burst usage.
-
-Placeholder: update graph to show burst usage banner when available, and rate plans underneath the capacity graph.
+The Capacity Usage page displays capacity usage over time for each storage service in a subscription. Use the graphical reports on this page to view the trends usage for both storage services, as well as add-on services such as Data Protection and over time. When a service is in burst, a banner displays the burst capacity used in the current billing cycle.
 
 image:sewebiug_image33.png[Error: Missing Graphic Image]
 
 To display the Capacity Usage page, select Reports > Capacity Usage from the menu.
 
-To view the capacity usage for a service, complete the following steps:
+To view the capacity usage for a service, perform the following steps:
 
-. Select the subscription containing the service from the Subscription No drop-down menu. The page displays the services available.
-. Scroll the page to display the service of interest.
-. Use the period filters to limit the display to the selected period.
+. Select the subscription containing the service from the Subscription No menu.
+. You can choose to view the capacity usage for base Service Levels or Data Protection services. The page displays the services available.
+. You can scroll the page to view the services, and use the period filters to limit the display to a selected period.
 
 === Performance report
 
@@ -64,5 +62,5 @@ image:sewebiug_image34.png[Error: Missing Graphic Image]
 
 The graphs show the performance of the storage over time. You can:
 
-* Choose the period to display by selecting the period filters or click and drag on the graph. 
+* Choose the period to display by selecting the period filters or click and drag on the graph.
 * Hover a mouse over a point in the graph to see more information for that point.

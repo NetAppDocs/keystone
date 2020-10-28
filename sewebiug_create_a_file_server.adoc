@@ -34,9 +34,9 @@ image:sewebiug_image20.png[Error: Missing Graphic Image]
 Make sure you have the following to create the server:
 
 * The subtenant that will host the server.
-* The zone in which the server belongs.
+* The region and zone in which the server belongs.
 * Networking details such as the VLAN ID, subnet, IP address (optional), and gateway (optional). If you are unfamiliar with your network, check with your IT department for the appropriate values.
-* To enable DP on the file server, the disaster recovery zone (the zone to which the file server will be replicated).
+* To enable asynchronous disaster recovery  on the file server, the disaster recovery zone (the zone to which the file server will be replicated).
 
 === Steps
 
@@ -73,10 +73,11 @@ If creating a CIFS-enabled file server:
 
 .. Toggle the CIFS-enabled button to display the CIFS related fields.
 .. Complete the Active Directory Username, Active Directory Password, Domain, DNS Servers, Server Name and, optionally, the Active Directory Organizational Unit. The Active Directory credentials must be for a user that has the privilege to join a computer to the Active Directory domain.
-. To enable disaster recovery DP on this file server:
-. Toggle the Disaster Recovery button to enable it.
-. Select the disaster recovery region and zone.
-. Select the disaster recovery replication schedule.
+. To enable asynchronous disaster recovery DP on this file server:
+.. Toggle the Asynchronous Disaster Recovery button to enable it.
+.. Select the disaster recovery region and zone.
+.. Select the disaster recovery replication schedule.
+. If synchronous disaster recovery DP is enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled. 
 . Click Create. This creates a job to create the server.
 
 === After you finish
