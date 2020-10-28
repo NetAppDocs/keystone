@@ -23,14 +23,12 @@ Use this method to modify details of an object storage group such as the group n
 
 === Steps
 
-. Display the Groups List <xref>.
+. Display the link:sewebiug_view_host_groups.html#view-host-groups[Groups List].
 . Make sure the correct subtenant is selected and the display is showing groups (not users).
-. Locate the group in the list and click the Edit icon for that group. 
+. Locate the group in the list and click the Edit icon for that group.
 +
-For details about working with items in lists,  see List view actions <xref>.
+For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
 
 . In the Edit Group dialog box, enter the user name.
 . Select the S3 policy that applies to the modified group.
 . Click Create. This creates a job to modify the group with the specified settings.
-
-

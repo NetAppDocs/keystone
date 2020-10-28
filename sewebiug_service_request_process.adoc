@@ -21,12 +21,12 @@ summary:
 [.lead]
 This section describes a simplified service request process flow.
 
-The figure below shows the flow as a diagram,  and the table below it describes the actors, actions,  and status of the service request as a result of the action. 
+The figure below shows the flow as a diagram, and the table below it describes the actors, actions, and status of the service request as a result of the action.
 
 image:sewebiug_image45.png[Error: Missing Graphic Image]
 
 |===
-| |Who |Action |Status of Request in NetApp Service Engine after action  |Notification
+| |Who |Action |Status of Request in NetApp Service Engine after action |Notification
 
 |1
 |NetApp Service Engine
@@ -62,14 +62,14 @@ a|* Automated email indicating status is Pending.
 * Communicate via email to request additional information
 |7
 |Customer
-|Provide more information. 
+|Provide more information.
 |Pending
 |Communicate via email
-|8 
+|8
 |
 |Repeat steps 6 and 7 until there is sufficient information to progress the request.
 |Pending
-|Communicate via email to request additional information 
+|Communicate via email to request additional information
 |9
 |NetApp Fulfilment Engineer
 |Fulfil request
@@ -79,11 +79,11 @@ a|* Automated email indicating status is Pending.
 |NetApp Fulfilment Engineer
 |Resolve request and advise customer request is resolved.
 |Resolved
-a|* Email to request confirmation Service Request is resolved 
+a|* Email to request confirmation Service Request is resolved
 * Automated email indicating status is Resolved.
 |11
 |Customer
-|Advise Service Request is resolved. 
+|Advise Service Request is resolved.
 |Resolved
 |Email to confirm Service Request is resolved.
 |12

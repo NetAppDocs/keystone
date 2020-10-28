@@ -22,24 +22,22 @@ summary:
 You can make the following changes to an existing server:
 
 . Change the server name
-. Make the server CIFS-enabled, and specify the Active Directory user name and password, Active Directory domain,  DNS Server, Server name and optionally the Active Directory Organizational Unit. . The Active Directory credentials must be for a user that has the privilege to join a computer to the Active Directory domain. 
-. Enable disaster recovery DP by specifying a region or zone to replicate the server to. 
+. Make the server CIFS-enabled, and specify the Active Directory user name and password, Active Directory domain, DNS Server, Server name and optionally the Active Directory Organizational Unit. The Active Directory credentials must be for a user that has the privilege to join a computer to the Active Directory domain.
+. Enable disaster recovery DP by specifying a region or zone to replicate the server to.
 
 [NOTE]
-If disaster recovery is already enabled, it cannot be disabled. For more information,  see Disaster Recovery <xref>.
+If disaster recovery is already enabled, it cannot be disabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 
 === Steps
 
-. Display the File Servers list <xref>.
-. Locate the server in the list and click the Edit icon for that server. (For details about working with items in lists,  see List View Actions <xref>).
-. Make any changes as required; refer to Create File Server <xref> for field descriptions.
+. Display the link:sewebiug_view_servers.html#view-servers[File Servers list].
+. Locate the server in the list and click the Edit icon for that server. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
+. Make any changes as required; refer to link:sewebiug_create_a_file_server.html[Create a file server] for field descriptions.
 . Click Done. This creates a job to modify the server.
 
 === After you finish
 
-Modify server is run as an asynchronous <xref> job. You can:
+Modify server is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the sever in the Servers list.
-
-

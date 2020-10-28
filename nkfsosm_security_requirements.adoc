@@ -19,13 +19,13 @@ summary:
 //
 
 [.lead]
-The security requirements include:  
+The security requirements include:
 
 * Provide an allow list for firewalls.
-* The access control list (ACL) for API’s RBAC and Active IQ Unified Manager (Table 15).
+* The access control list (ACL) for API’s RBAC and Active IQ Unified Manager.
 
 |===
-|Source |Destination URL/IP Addresses |Connectivity  |Protocol |Port |Description
+|Source |Destination URL/IP Addresses |Connectivity |Protocol |Port |Description
 
 |Kubernetes nodes
 |github.com
@@ -44,7 +44,7 @@ The security requirements include:
 |Outbound
 |HTTP, HTTPS
 |80,443
-|Docker registry auth 
+|Docker registry auth
 |Kubernetes nodes
 |registry-1.docker.io
 |Outbound
@@ -100,39 +100,13 @@ The security requirements include:
 |443
 |Cloud monitoring and NetApp Support tunnel connectivity
 |OpsRamp Gateway
-| 
+|140.239.76.0/24
+206.80.7.128/26
+63.251.89.0/24
+199.250.248.0/24
+74.217.75.0/24
 |Outbound
 |HTTPS
 |443
 |Cloud monitoring and NetApp Support tunnel connectivity
-|
-|140.239.76.0/24
-|
-|
-|
-|
-|
-|206.80.7.128/26
-|
-|
-|
-|
-|
-|63.251.89.0/24
-|
-|
-|
-|
-|
-|199.250.248.0/24
-|
-|
-|
-|
-|
-|74.217.75.0/24
-|
-|
-|
-|
 |===

@@ -21,7 +21,7 @@ summary:
 [.lead]
 Use this method to modify the details of a subscribed service’s details. You can:
 
-* Modify the details for each service,  as listed in the table below.
+* Modify the details for each service, as listed in the table below.
 * Add or remove tags for the service.
 
 |===
@@ -31,9 +31,9 @@ Use this method to modify the details of a subscribed service’s details. You c
 |Azure Client ID, Azure Client Secret, and name
 |Azure US Government
 |TBA
-|GCP 
+|GCP
 |TBA
-|AWS 
+|AWS
 |TBA
 |===
 
@@ -43,5 +43,3 @@ Use this method to modify the details of a subscribed service’s details. You c
 . Locate the subscribed service in the list and click the Edit icon.
 . On the Update Subscribed Service dialog box, make any changes as required.
 . Click Update.
-
-

@@ -19,39 +19,39 @@ summary:
 //
 
 [.lead]
-Use the methods listed in the following table to create, modify,  and delete zones. For APIs that allow you to retrieve zones, see the (Consumer) Administration APIs.
+Use the methods listed in the following table to create, modify, and delete zones. For APIs that allow you to retrieve zones, see the (Consumer) Administration APIs.
 
 |===
 |HTTP Method |Path |Description
 
-|POST
-|/v2.1/zones
+|`POST`
+|`/v2.1/zones`
 |Create a new zone.
-|PUT
-|/v2.1/zones/{name}
+|`PUT`
+|`/v2.1/zones/{name}`
 |Modify the details of a zone.
-|DELETE
-|/v2.1/zones/{name}
+|`DELETE`
+|`/v2.1/zones/{name}`
 |Delete a zone.
 |===
 
 === Zone attributes
 
-The following table lists the zone attributes. 
+The following table lists the zone attributes.
 
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |the unique identifier of the zone.
-|name
+|`name`
 |String
 |The zone name.
-|description
+|`description`
 |String
 |The description of the zone.
-|region_name
+|`region_name`
 |String
 |The name of the region in which the zone resides.
 |===
@@ -63,17 +63,24 @@ Use the method listed in the following table to retrieve all zones or a subset o
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/zones
+|`GET`
+|`/v2.1/zones`
 |Retrieve zones.
 |(Optional) Region name (string)
-offset and limit– see Pagination <xref>
+`offset` and `limit` – see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -105,16 +112,23 @@ Use the method listed in the following table to retrieve a zone by the zone name
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/zones/{name}
+|`GET`
+|`/v2.1/zones/{name}`
 |Retrieve a zone by name.
-|Name (string): Zone name
+|`Name (string)`: Zone name
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -142,13 +156,15 @@ Use the method listed in the following table to create a zone.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/zones
+|`POST`
+|`/v2.1/zones`
 |Create a new zone within a region.
 |None
 |===
 
-Required request body attributes:  `name`, `description`, `region_name`
+Required request body attributes: `name`, `description`, `region_name`
+
+*Request body example:*
 
 ....
 {
@@ -156,6 +172,11 @@ Required request body attributes:  `name`, `description`, `region_name`
   "description": "DescriptionOfMyZone",
   "region_name": "MyRegionName"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. New resource created.",
@@ -183,19 +204,26 @@ Use the method listed in the following table to modify a zone.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/zones{name}
+|`PUT`
+|`/v2.1/zones{name}`
 |Modify a zone identified by name.
-|name (string): Name of the zone.
+|`name (string)`: Name of the zone.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 {
   "name": "MyZoneName",
   "description": "NewDescriptionOfMyZone"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -223,18 +251,20 @@ Use the method listed in the following table to delete a zone.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/zones{name}
+|`DELETE`
+|`/v2.1/zones{name}`
 |Delete a single zone identified by name. All storage resources within a zone must be deleted first.
-|name (string): Name of the zone.
+|`name (string)`: Name of the zone.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
 ....
 
+*Response body example:*
+
 No content to return on a successful deletion.
-
-

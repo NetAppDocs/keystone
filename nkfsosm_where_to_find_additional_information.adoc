@@ -21,5 +21,7 @@ summary:
 [.lead]
 To learn more about the information that is described in this document, review the following documents and/or websites:
 
-* NetApp Keystone https://www.netapp.com/us/solutions/keystone/index.aspx[https://www.netapp.com/us/solutions/keystone/index.aspx^] 
-* NetApp Product Documentation https://docs.netapp.com[https://docs.netapp.com^]
+* NetApp Keystone
+ https://www.netapp.com/us/solutions/keystone/index.aspx[https://www.netapp.com/us/solutions/keystone/index.aspx^]
+* NetApp Product Documentation
+ https://docs.netapp.com[https://docs.netapp.com^]

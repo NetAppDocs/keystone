@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-NetApp Keystone data protection service refers to methods that support back up of data and the ability to recover if required. Available data protection services include (Table 2):
+NetApp Keystone data protection service refers to methods that support back up of data and the ability to recover if required. Available data protection services include:
 
 * Snapshots of disks and shares
 * Backups of disks and shares (requires data protection service as part of the subscription)
@@ -29,28 +29,26 @@ NetApp Keystone data protection service refers to methods that support back up o
 Backup and Disaster recovery service are available as add-on service, while snapshot is available as part of basic storage service
 
 |===
-| |Single Region Snapshots(Available as Part of Basic Storage Service) |Multiregion Backup(Data Protection Add-On) |Multiregion Disaster Recover(Data Protection Add-On)
+| |Single Region Snapshots (Available as Part of Basic Storage Service) |Multiregion Backup (Data Protection Add-On) |Multiregion Disaster Recover (Data Protection Add-On)
 
 |Use case
 |Mitigate the risk of user or application data deletion or corruption, not against infrastructure loss or failure
 |Mitigate the risk of complete loss of data on the primary volume due to infrastructure loss or failure
 |Mitigate the risk of complete loss of data on the primary volume due to infrastructure loss or failure for a recovery time objective
-|Policy 
+|Policy
 |Hourly, daily, weekly and monthly
-|Number of backups to retain based on hourly, daily, weekly, and monthly snapshots 
+|Number of backups to retain based on hourly, daily, weekly, and monthly snapshots
 |1 hour, 4 hours, and daily
 |Topology
 |Source only
-|Backup 
-|Async replication target 
-|Target replication service level1
+|Backup
+|Async replication target
+|Target replication service level^1^
 |n/a
 |Standard
 |Same as primary
-|1Additional storage capacity to be subscribed
 |===
+^1^Additional storage capacity to be subscribed
 
 [NOTE]
-NetApp KFS service does not back up the data by default—it is the customer’s responsibility to subscribe to the add- on data protection services and configure for data backup and disaster recovery services. NetApp also supports protecting the data on to a non-Keystone storage system, and will aid in establishing the relationship. However,  NetApp is not responsible for any backup failures.
-
-
+NetApp KFS service does not back up the data by default—it is the customer’s responsibility to subscribe to the add-on data protection services and configure for data backup and disaster recovery services. NetApp also supports protecting the data on to a non-Keystone storage system, and will aid in establishing the relationship. However, NetApp is not responsible for any backup failures.

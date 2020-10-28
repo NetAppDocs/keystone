@@ -21,24 +21,24 @@ summary:
 [.lead]
 The capacity trending report displays capacity usage over time for each storage service in a subscription, with the capability to view when the bursts were used.
 
-The NetApp GSSC team collects various information from the infrastructure that is deployed at customer site to produce reports for internal purposes and also for customer to view their service performance.
+The NetApp GSSC team collects various information from the infrastructure that is deployed at customer sites to produce reports for internal purposes and also for customers to view their service performance.
 
-For example, the consumed capacity trending report shown in Figure 20.
+For example, the consumed capacity trending report shown in the below figure.
 
 image:nkfsosm_image21.png[Error: Missing Graphic Image]
 
-Table 19 summarizes the reports available, the delivery method,  and the frequency.
+The below table summarizes the reports available, the delivery method, and the frequency.
 
 |===
 |Reports |Delivery method |Frequency
 
-|File share inventory report – inventory on all the file shares that are created 
+|File share inventory report – inventory on all the file shares that are created
 |NetApp Service Engine
 |Real-time
-|Disks inventory report – inventory on all the file shares that are created 
+|Disks inventory report – inventory on all the file shares that are created
 |NetApp Service Engine
 |Real-time
-|Object inventory report – inventory on all the file shares that are created 
+|Object inventory report – inventory on all the file shares that are created
 |NetApp Service Engine
 |Real-time
 |Consumed capacity trending report
@@ -55,7 +55,7 @@ Table 19 summarizes the reports available, the delivery method,  and the frequen
 |Monthly/quarterly
 |===
 
-The customer provides the following reports to KSM with regard to capacity management, during the term at the frequencies shown in Table 20, so that the customer can rely on the service levels relating to capacity management.
+The customer provides the following reports to KSM with regard to capacity management, during the term at the frequencies shown in the below table, so that the customer can rely on the service levels relating to capacity management.
 
 |===
 |Sub-Category |Description |Minimum Frequency |Minimum Granularity |Historical Record
@@ -71,5 +71,3 @@ The customer provides the following reports to KSM with regard to capacity manag
 |Quarterly
 |n/a
 |===
-
-

@@ -19,20 +19,20 @@ summary:
 //
 
 [.lead]
-This section describes the KFS infrastructure architecture and management application for the NetApp-  and customer- operated environments (Figure 7).
+This section describes the KFS infrastructure architecture and management application for the NetApp- and customer-operated environments.
 
-Keystone architecture, design, choice of technology,  and products to be used reside solely with NetApp.  NetApp reserves the rights to take the following actions:  
+Keystone architecture, design, choice of technology, and products to be used reside solely with NetApp. NetApp reserves the rights to take the following actions:
 
 * Select, substitute, or repurpose products.
 * Refresh products with new technology when deemed appropriate.
 * Increase or decrease capacity of the products to meet service requirements.
-* Modify architecture, technology, and/or products to meet service requirements.The Keystone service delivery model includes multiple components:
+* Modify architecture, technology, and/or products to meet service requirements.
 
-* Service interface with NetApp Service Engine
-* Keystone API’s for integration
-* A Keystone service infrastructure that includes storage controllers
-* Tools to manage and operate the service such as OpsRamp, Active IQ, and AIQ Unified Manager
+The Keystone service delivery model includes multiple components:
+
+* Service interface with NetApp Service Engine.
+* Keystone API’s for integration.
+* A Keystone service infrastructure. that includes storage controllers
+* Tools to manage and operate the service such as OpsRamp, Active IQ, and AIQ Unified Manager.
 
 image:nkfsosm_image8.png[Error: Missing Graphic Image]
-
-

@@ -21,10 +21,10 @@ summary:
 [.lead]
 NetApp KFS offers three operational models:
 
-* *NetApp- operated model* allows the customer to subscribe to the offered services (according to the selected performance tiers and storage service types) and selects the NetApp- operated option at an extra cost. NetApp defines the architecture and products, installs at the customer premises, and manages the day-to-day infrastructure management operations by using NetApp storage and IT resources. Available storage service types are file, block,  and object.
-* *Partner- operated* *model* is similar to the NetApp-operated model, but with the partner operating the service for their end customer. In this model, the partner is the referenced contracted party.
-* *Customer- operated* *model* allows the customer to subscribe to an offered service, according to the selected performance tiers and storage service types. NetApp defines the architecture and products and installs at the customer premises and allows customers to manage the infrastructure using their storage and IT resources.Figure 6 summarizes the overall Keystone lifecycle model and categorizes the associated services.
+* *NetApp-operated model* allows the customer to subscribe to the offered services (according to the selected performance tiers and storage service types) and selects the NetApp-operated option at an extra cost. NetApp defines the architecture and products, installs at the customer premises, and manages the day-to-day infrastructure management operations by using NetApp storage and IT resources. Available storage service types are file, block, and object.
+* *Partner-operated* *model* is similar to the NetApp-operated model, but with the partner operating the service for their end customer. In this model, the partner is the referenced contracted party.
+* *Customer-operated* *model* allows the customer to subscribe to an offered service, according to the selected performance tiers and storage service types. NetApp defines the architecture and products and installs at the customer premises and allows customers to manage the infrastructure using their storage and IT resources.
+
+The bellow figure summarizes the overall Keystone lifecycle model and categorizes the associated services.
 
 image:nkfsosm_image7.png[Error: Missing Graphic Image]
-
-

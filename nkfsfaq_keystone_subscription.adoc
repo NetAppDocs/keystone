@@ -21,7 +21,7 @@ summary:
 [.lead]
 *What is the minimum committed capacity?*
 
-The minimum committed capacity for a NetApp Keystone Subscription is 100TiB, per site across one or more service tiers.
+The minimum committed capacity for a NetApp Keystone Subscription is 100 TiB, per site across one or more service tiers.
 
 *What does a NetApp Keystone subscription map to?*
 
@@ -41,7 +41,7 @@ Yes, new subscriptions can have new terms separate from any existing subscriptio
 
 *Can a customer mix multiple subscriptions on the same ONTAP cluster?*
 
-No, each cluster is assigned to a particular subscription. 
+No, each cluster is assigned to a particular subscription.
 
 *Can the customer reduce the committed capacity?*
 
@@ -51,11 +51,11 @@ No. During a term, the committed capacity can only be increased but not decrease
 
 The customer can increase and decrease usage up to 20% above the committed capacity. The burst capacity usage is measured on a daily basis and billed only when used.
 
-For example, if the committed capacity is 100TiB, customers can burst up to 120TiB.
+For example, if the committed capacity is 100 TiB, customers can burst up to 120 TiB.
 
 *Is there a premium charge for using burst?*
 
-The burst capacity usage up to 20% of committed capacity is billed at the same rate as committed capacity, any usage above 20% of committed capacity is billed at 50% premium
+The burst capacity usage up to 20% of committed capacity is billed at the same rate as committed capacity, any usage above 20% of committed capacity is billed at 50% premium.
 
 *What is the benefit of burst capacity?*
 

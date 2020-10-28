@@ -20,38 +20,36 @@ summary:
 
 === Steps
 
-. From the menu,  select Support > Service requests and click New Service Request.
-
+. From the menu, select Support > Service requests and click New Service Request.
++
 image:sewebiug_image36.png[Error: Missing Graphic Image]
-
++
 . On the New Service Request page, select the category and priority for the request, and then click Next.
-
++
 image:sewebiug_image37.png[Error: Missing Graphic Image]
-
++
 . Select the subtenant and service type. If the Zone field is available, select the zone.
-
++
 image:sewebiug_image38.png[Error: Missing Graphic Image]
-
-. Enter a short summary of the request. In the larger text field,  add a full description of the request. Then click Next.
-
++
+. Enter a short summary of the request. In the larger text field, add a full description of the request. Then click Next.
++
 image:sewebiug_image39.png[Error: Missing Graphic Image]
-
-. Review the request details. If you want to correct anything,  use the Back button to return to the previous page and correct the details. If all the details are correct, click Submit. 
-
++
+. Review the request details. If you want to correct anything, use the Back button to return to the previous page and correct the details. If all the details are correct, click Submit.
++
 image:sewebiug_image40.png[Error: Missing Graphic Image]
-
-. NetApp Service Engine creates the service request. The service request number displays on the screen,  and the service request also appears in the Service Requests list. 
-
++
+. NetApp Service Engine creates the service request. The service request number displays on the screen, and the service request also appears in the Service Requests list.
++
 image:sewebiug_image41.png[Error: Missing Graphic Image]
-
++
 . View the status of the request. A newly opened service request has a status of New.
-
++
 image:sewebiug_image42.png[Error: Missing Graphic Image]
-
-. To view details of the request, click the View icon. Click Close to return to the Service Request List. 
-
++
+. To view details of the request, click the View icon. Click Close to return to the Service Request List.
++
 image:sewebiug_image43.png[Error: Missing Graphic Image]
-
-. An email is sent to the requestor indicating the request has been created. The email is sent to the email addressed registered for the requesting NetApp Service Engine user. 
-
-
++
+. An email is sent to the requestor indicating the request has been created. The email is sent to the email addressed registered for the requesting NetApp Service Engine user.

@@ -31,6 +31,4 @@ The list displays simple information about each server such as:
 * Protocols in use (NFS, CIFS)
 * The CIFS server name (if relevant).
 +
-For more information on how to use the features of a list,* *see List View <xref>.
-
-
+For more information on how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].

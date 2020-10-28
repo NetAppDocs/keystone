@@ -24,87 +24,96 @@ Use the methods listed in the following table to create and retrieve service req
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/tenants/{tenant_id}/servicerequests
+|`GET`
+|`/v2.1/tenants/{tenant_id}/servicerequests`
 |Retrieve service requests.
-|GET
-|/v2.1/tenants/{tenant_id}/servicerequests/{id}
+|`GET`
+|`/v2.1/tenants/{tenant_id}/servicerequests/{id}`
 |Retrieve a service request by ID.
-|POST
-|/v2.1/tenants/{tenant_id}/servicerequests/
+|`POST`
+|`/v2.1/tenants/{tenant_id}/servicerequests/`
 |Create a service request.
-|GET
-|/v2.1/tenants/{tenant_id}/servicerequests/categories
+|`GET`
+|`/v2.1/tenants/{tenant_id}/servicerequests/categories`
 |Retrieve service request categories.
 |===
 
 === Service request attributes
 
-The following table lists the service request attributes. 
+The following table lists the service request attributes.
 
 |===
 |Attribute |Type |Description
 
-|Id
-|String 
-|An identifier for the service request. For example: SRQ0035952014.
-|subject
-|String 
+|`Id`
+|String
+|An identifier for the service request. For example: `SRQ0035952014.`
+|`subject`
+|String
 |The subject of the service request.
-|comment
-|String 
+|`comment`
+|String
 |A comment on the service request
-|category
-|String 
+|`category`
+|String
 |The category of the request: Backup, disaster recovery, technical, other, or subscription.
-|priority
-|String 
-|The priority of the service request: very low, low, normal, high, or urgent. 
-|subscription
-|String 
+|`priority`
+|String
+|The priority of the service request: very low, low, normal, high, or urgent.
+|`subscription`
+|String
 |The Zuora subscription number.
-|commitment
+|`commitment`
 |–
-|Subscription commitment details, including:
+a|Subscription commitment details, including:
+
 * Service level (string): Service level: Standard, Premium, or Extreme.
 * New_commitment (integer): New total capacity required.
-|zone
-|String 
+|`zone`
+|String
 |The zone name.
-|subtenant_id
-|String 
+|`subtenant_id`
+|String
 |The subtenant identifier.
-|storage_object_type
-|String 
+|`storage_object_type`
+|String
 |Storage object type: File server or block store.
-|storage_object_id
-|String 
-|The identifier of the storage object. 
+|`storage_object_id`
+|String
+|The identifier of the storage object.
 For example:
-5d2fb0fb4f47df00015274e3
-|service_type
-|String 
+`5d2fb0fb4f47df00015274e3`
+|`service_type`
+|String
 |The service type: File services, block storage, or object storage.
 |===
 
 === Retrieve service requests
 
-Use the method listed in the following table to retrieve service request categories for the specified tenant. 
+Use the method listed in the following table to retrieve service request categories for the specified tenant.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/tenants/{tenant_id}/servicerequests
+|`GET``
+|`/v2.1/tenants/{tenant_id}/servicerequests`
 |Retrieve service requests.
-|tenant_id: (Optional) Return the service requests for the specified tenant.
-offset and limit– see Pagination <xref>
+|`tenant_id`: (Optional) Return the service requests for the specified tenant.
+
+`offset` and `limit`– see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -140,15 +149,23 @@ Use the method listed in the following table to retrieve a service request by se
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/tenants/{tenant_id}/servicerequests/{id}
+|`GET`
+|`/v2.1/tenants/{tenant_id}/servicerequests/{id}`
 |Retrieve a service request by ID.
-a|* tenant_id: Tenant ID
-* id: Service request IDFor example: SRQ0035952014
+a|* `tenant_id`: Tenant ID
+* `id`: Service request IDFor example: SRQ0035952014
 |===
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -179,28 +196,29 @@ Use the method listed in the following table to create a service request.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/tenants/{tenant_id}/servicerequests/categories
+|`POST`
+|`/v2.1/tenants/{tenant_id}/servicerequests/categories`
 |Create a service request.
-|tenant_id: The tenant identifier.
+|`tenant_id`: The tenant identifier.
 |===
 
-Required request body attributes: the required attributes are dependent on the category of service request.  The following table lists the request body attributes. 
+Required request body attributes: the required attributes are dependent on the category of service request. The following table lists the request body attributes.
 
 |===
-|Category |Required 
+|Category |Required
 
 |Subscription
-|subscription and commitment
+|`subscription` and `commitment`
 |Disaster recovery
-|storage_object_type, subtenant_id, and storage_object_id 
+|`storage_object_type`, `subtenant_id`, and `storage_object_id`
 |Technical
-|subtenant_id and service_type
-If service_type is file services or block storage, zone is required.
+|`subtenant_id` and `service_type`
+If `service_type` is file services or block storage, zone is required.
 |Other
 |Zone
 |===
 
+*Request body example:*
 ....
 {
   "subject": "string",
@@ -218,6 +236,11 @@ If service_type is file services or block storage, zone is required.
   "storage_object_id": "5d2fb0fb4f47df00015274e3",
   "service_type": "File Services"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -247,16 +270,23 @@ The following table lists the retrieve service request categories for a specifie
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/tenants/{tenant_id}/servicerequests/categories
+|`GET`
+|`/v2.1/tenants/{tenant_id}/servicerequests/categories`
 |Retrieve service requests categories.
-|tenant_id: (Optional) Return the service requests for a specified tenant.
+|`tenant_id:` (Optional) Return the service requests for a specified tenant.
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 5 records.",
@@ -290,5 +320,3 @@ none
   }
 }
 ....
-
-

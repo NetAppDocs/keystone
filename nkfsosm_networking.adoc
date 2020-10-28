@@ -19,8 +19,6 @@ summary:
 //
 
 [.lead]
-Depending on customer requirements and the storage controllers used, KFS can provide 10Gb, 40Gb, and 100Gb connectivity to the customer.
+Depending on customer requirements and the storage controllers used, KFS can provide 10 Gb, 40 Gb, and 100 Gb connectivity to the customer.
 
-NetApp will provide the required transceivers for NetApp- provided Keystone devices only.  The customer is responsible for suppling transceivers required for customer devices and cabling to the NetApp- provided Keystone devices.
-
-
+NetApp will provide the required transceivers for NetApp-provided Keystone devices only. The customer is responsible for suppling transceivers required for customer devices and cabling to the NetApp-provided Keystone devices.

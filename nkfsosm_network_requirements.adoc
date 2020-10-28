@@ -19,16 +19,17 @@ summary:
 //
 
 [.lead]
-Table 10 and Table 11 provide the KFS networking requirements.
+The following tables provide the KFS networking requirements.
 
 === IP Address Requirements (Customer-Operated)
 
 |===
-|Interface/Resource |Config. Spec |IPs |DNSName |Description
+|Interface/Resource |Config. Spec |IPs |DNS Name |Description
 
-|Service processor 
+|Service processor
 |Each node in the cluster
-|10.0.0.1 - Node1 Service Processor10.0.0.2 - Node2 Service Processor
+|10.0.0.1 - Node1 Service Processor
+10.0.0.2 - Node2 Service Processor
 |TBD
 |A remote management device that enables you to access, monitor, and troubleshoot a node remotely.
 |Cluster management
@@ -38,12 +39,16 @@ Table 10 and Table 11 provide the KFS networking requirements.
 |Admin storage virtual machine (SVM) to manage the entire cluster from a single console
 |Node management
 |Each node in the cluster
-|10.0.0.4 - Node1 Management10.0.0.5 - Node2 Management
+|10.0.0.4 - Node1 Management
+10.0.0.5 - Node2 Management
 |TBD
-|A dedicated IP address for managing a particular node 
+|A dedicated IP address for managing a particular node
 |Cluster-interconnect
 |Two ports of each node in the cluster
-|Node1 e0a portNode1 e0b portNode2 e0a portNode2 e0b port
+|Node1 e0a port
+Node1 e0b port
+Node2 e0a port
+Node2 e0b port
 |TBD
 |Private network or internal to the cluster; IPs will be auto-assigned when creating the LIF
 |SVM data
@@ -51,9 +56,10 @@ Table 10 and Table 11 provide the KFS networking requirements.
 |10.0.1.5 - Data SVM110.0.1.6 - Data SVM2
 |TBD
 |A dedicated IP address for the client access to the data.
-|Inter cluster 
+|Inter cluster
 |Each node in the cluster
-|10.0.2.1 - Node110.0.2.2 - Node2
+|10.0.2.1 - Node1
+10.0.2.2 - Node2
 |TBD
 |Optional - A network used to replicate data from one cluster to the other (SnapMirror)
 |Kubernetes Master Node 01-04
@@ -71,7 +77,7 @@ Table 10 and Table 11 provide the KFS networking requirements.
 |10.0.3.18
 |aiqum01
 |Active IQ unified Manager
-|OpsRamp Gateway 
+|OpsRamp Gateway
 |Static IP address
 |10.0.3.19
 |opsgw01
@@ -80,54 +86,47 @@ Table 10 and Table 11 provide the KFS networking requirements.
 
 === Customer Firewall Requirements (Customer- and NetApp-Operated)
 
-Table 11 lists the customer firewall port and rules requirements.
+The below table lists the customer firewall port and rules requirements.
 
 |===
-|Network Port Requirements
+|Source |Destination |Name |Ports |Bi-Directional? |Category |Description
 
-|Source
-|Destination
-|Name
-|Ports
-|Bi-Directional?
-|Category
-|Description
 |All VMs
 |Internet (as per URL whitelist table below)
 |HTTP, HTTPS
 |80, 443
 |No
-|NetApp Service Engine 
+|NetApp Service Engine
 |Software package downloads and operating system updates
 |All VMs
 |8.8.8.8,1.1.1.1
 |DNS
 |UDP 53
 |No
-|NetApp Service Engine 
+|NetApp Service Engine
 |Public or private DNS services
 |All VMs
 |au.pool.ntp.org
 |NTP
 |UDP 123
 |No
-|NetApp Service Engine 
+|NetApp Service Engine
 |Time keeping
 |Kubernetes Worker Node(s)
 |NetApp ONTAP Cluster Management IP Address
 |HTTPS
 |443
 |No
-|NetApp Service Engine 
+|NetApp Service Engine
 |Control/Management plane traffic to drive Ansible automation using ZAPI/REST
 |Kubernetes Worker Nodes
 |Active IQ Unified Manager
 |MySQL
 |3306
 |No
-|NetApp Service Engine 
+|NetApp Service Engine
 |Active IQ Unified Manager MySQL database queries
-|Kubernetes Worker  Nodes
+|Kubernetes Worker Nodes
 |Active Directory
 |LDAP
 |389
@@ -173,10 +172,10 @@ Table 11 lists the customer firewall port and rules requirements.
 
 === Allow List (Customer- and NetApp-Operated)
 
-Table 12 lists provide the “Allow List” of URLs and IP addresses for outbound internet access, required for transfer of consumption data and updates.
+The below table lists provide the “Allow List” of URLs and IP addresses for outbound internet access, required for transfer of consumption data and updates.
 
 |===
-|Source |Destination URL/IP Addresses |Connectivity  |Protocol |Port |Description
+|Source |Destination URL/IP Addresses |Connectivity |Protocol |Port |Description
 
 |Kubernetes nodes
 |github.com
@@ -195,7 +194,7 @@ Table 12 lists provide the “Allow List” of URLs and IP addresses for outboun
 |Outbound
 |HTTP, HTTPS
 |80,443
-|Docker registry auth 
+|Docker registry auth
 |Kubernetes nodes
 |registry-1.docker.io
 |Outbound
@@ -251,41 +250,13 @@ Table 12 lists provide the “Allow List” of URLs and IP addresses for outboun
 |443
 |Cloud monitoring and NetApp Support tunnel connectivity
 |OpsRamp Gateway
-| 
+| 140.239.76.0/24
+206.80.7.128/26
+63.251.89.0/24
+199.250.248.0/24
+74.217.75.0/24
 |Outbound
 |HTTPS
 |443
 |Cloud monitoring and NetApp Support tunnel connectivity
-|
-|140.239.76.0/24
-|
-|
-|
-|
-|
-|206.80.7.128/26
-|
-|
-|
-|
-|
-|63.251.89.0/24
-|
-|
-|
-|
-|
-|199.250.248.0/24
-|
-|
-|
-|
-|
-|74.217.75.0/24
-|
-|
-|
-|
 |===
-
-

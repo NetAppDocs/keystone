@@ -20,5 +20,3 @@ summary:
 
 [.lead]
 The customer is responsible for providing the floor space to host KFS equipment. NetApp will provide the weight specifications based on final configuration.
-
-

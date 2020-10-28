@@ -25,17 +25,19 @@ The list price is defined at $/GB/month for each performance level and add-on so
 
 *Is migration service included?*
 
-No. Data migration must be done as a separate statement of work (SOW) through a partner or NetApp Professional Services. 
+No. Data migration must be done as a separate statement of work (SOW) through a partner or NetApp Professional Services.
 
 *What is included as part of the $/GB monthly payment?*
 
-The monthly storage costs include: 
+The monthly storage costs include:
 
 * Discovery services before service deployment.
 * Installation of the hardware and software required to meet the service levels.
 * (Optional) Continuous management and operations of the hardware and software.
 * Customer success manager services. The customer success manager is the primary NetApp point of contact for the customer. That manager is responsible for capacity planning and monitoring the capacity, performance, and data protection service levels.
-* Storage cost and any add-on software.*What software licenses and services are not part of the offering and are billed separately?*
+* Storage cost and any add-on software.
+
+*What software licenses and services are not part of the offering and are billed separately?*
 
 No additional software licenses to manage the storage are required. Migration and any API integration with existing business process are billed separately.
 
@@ -45,7 +47,7 @@ Please work with deal desk for discount rates and quotes.
 
 *What is the unit of billing?*
 
-Billing is based on the total amount of committed (also called “reserved”) capacity. For example, if the customer subscribes for 100TiB at the highest performance service level—Extreme—which is priced at $117/TiB/month, then the monthly bill is 100 TiB x $117 = $11,700/month.
+Billing is based on the total amount of committed (also called “reserved”) capacity. For example, if the customer subscribes for 100 TiB at the highest performance service level—Extreme—which is priced at $117/TiB/month, then the monthly bill is 100 TiB x $117 = $11,700/month.
 
 The price used in the example is for illustration purposes only; it is not the final price.
 
@@ -54,7 +56,9 @@ The price used in the example is for illustration purposes only; it is not the f
 Consumption billing has two parts:
 
 * Fixed payment based on the committed capacity
-* Variable payment matched to capacity used in excess of committed capacity (burst)*What is the billing frequency?*
+* Variable payment matched to capacity used in excess of committed capacity (burst)
+
+*What is the billing frequency?*
 
 By default, the billing frequency is monthly. In certain cases, there is flexibility for the customer to negotiate a quarterly or a yearly upfront payment.
 
@@ -64,8 +68,8 @@ NetApp Keystone Success Manager or ng-keystone-escalations can be contacted for 
 
 *What information is included on the invoice?*
 
-The invoice includes the charges for the committed capacity, any charges for using burst capacity plus any applicable taxes
+The invoice includes the charges for the committed capacity, any charges for using burst capacity plus any applicable taxes.
 
 *Who is responsible for data center costs?*
 
-The customer is responsible for data center costs, which includes space, power,  and cooling.
+The customer is responsible for data center costs, which includes space, power, and cooling.

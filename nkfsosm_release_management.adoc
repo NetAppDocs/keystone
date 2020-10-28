@@ -19,12 +19,10 @@ summary:
 //
 
 [.lead]
-NetApp provides release management services to ensure the secure, controlled deployment of releases into the customer’s supported environment in accordance with the NetApp release management and NetApp service methodology. This includes the definition, creation,  and documentation of release plans, creation of change requests required for the release plan, ensuring that software and firmware currency is up- to- date and the ongoing reviews of the supported environment.
+NetApp provides release management services to ensure the secure, controlled deployment of releases into the customer’s supported environment in accordance with the NetApp release management and NetApp service methodology. This includes the definition, creation, and documentation of release plans, creation of change requests required for the release plan, ensuring that software and firmware currency is up-to-date and the ongoing reviews of the supported environment.
 
 Release management services include:
 
 * Creating a release plan if requested by the customer.
-* Assessing the impact of each release on the managed services; any affected parties of which NetApp is or ought reasonably to be aware,  and notifying the customer of those impacts.
+* Assessing the impact of each release on the managed services; any affected parties of which NetApp is or ought reasonably to be aware, and notifying the customer of those impacts.
 * Updating the release plan upon the implementation of all releases.
-
-

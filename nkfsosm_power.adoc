@@ -19,6 +19,4 @@ summary:
 //
 
 [.lead]
-The customer is responsible for providing the required power.  NetApp will provide the power requirement specifications based on 200V rating (Typical A, Max A, Typical W, Max W, Power cord type,  and quantity), based on the final configuration.  All components have redundant power supplies. NetApp will provide the in-cabinet power cords.
-
-
+The customer is responsible for providing the required power. NetApp will provide the power requirement specifications based on 200V rating (Typical A, Max A, Typical W, Max W, Power cord type, and quantity), based on the final configuration. All components have redundant power supplies. NetApp will provide the in-cabinet power cords.

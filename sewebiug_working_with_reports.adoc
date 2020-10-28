@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-This section describes the Capacity Usage report. 
+This section describes the Capacity Usage report.
 
 === Capacity usage
 
@@ -37,13 +37,13 @@ To view the capacity usage for a service, complete the following steps:
 . Scroll the page to display the service of interest.
 . Use the period filters to limit the display to the selected period.
 
-=== Performance report 
+=== Performance report
 
 The Performance page (shown in the image below) displays information about the performance of individual disks or shares. It displays information on three performance measures:
 
 * Input/output operations per second per tebibyte (IOPS/TiB).
 +
-The rate at which IOPS is occurring on the storage device. 
+The rate at which IOPS is occurring on the storage device.
 
 * Throughput in MBps.
 +
@@ -64,5 +64,5 @@ image:sewebiug_image34.png[Error: Missing Graphic Image]
 
 The graphs show the performance of the storage over time. You can:
 
-* Choose the period to display by selecting the period filters or click and drag on the graph.  
+* Choose the period to display by selecting the period filters or click and drag on the graph. 
 * Hover a mouse over a point in the graph to see more information for that point.

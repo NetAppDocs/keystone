@@ -19,25 +19,25 @@ summary:
 //
 
 [.lead]
-Use the methods listed in the following table to create, modify,  and delete regions. For APIs that allow you to retrieve regions, see the (Consumer) Administration APIs.
+Use the methods listed in the following table to create, modify, and delete regions. For APIs that allow you to retrieve regions, see the (Consumer) Administration APIs.
 
 |===
 |HTTP Method |Path |Description
 
-|GET
-|/v2.1/regions
+|`GET`
+|`/v2.1/regions`
 |Get regions.
-|GET
-|/v2.1/regions/{name}
+|`GET`
+|`/v2.1/regions/{name}`
 |Get regions by name.
-|POST
-|/v2.1/regions
+|`POST`
+|`/v2.1/regions`
 |Create a new region.
-|PUT
-|/v2.1/regions/{name}
+|`PUT`
+|`/v2.1/regions/{name}`
 |Modify the details of a region.
-|DELETE
-|/v2.1/regions/{name}
+|`DELETE`
+|`/v2.1/regions/{name}`
 |Delete a region.
 |===
 
@@ -48,13 +48,13 @@ The following table lists the region attributes.
 |===
 |Attribute |Type |Description
 
-|id
+|`id`
 |String
 |The unique identifier of the region.
-|name
+|`name`
 |String
 |The region name.
-|description
+|`description`
 |String
 |The description of the region.
 |===
@@ -66,16 +66,23 @@ Use the method listed in the following table to retrieve all regions or a subset
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/regions
+|`GET`
+|`/v2.1/regions`
 |Retrieve regions.
-|offset and limit– see Pagination <xref>
+|`offset` and `limit`– see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -103,21 +110,28 @@ none
 
 === Retrieve a region by name
 
-Use the method listed in the following table to retrieve a region by name. 
+Use the method listed in the following table to retrieve a region by name.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/regions/{name}
+|`GET`
+|`/v2.1/regions/{name}`
 |Retrieve a region by name.
-|name (string): The region name.
+|`name (string)`: The region name.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "string",
@@ -142,24 +156,31 @@ none
 
 === Create a region
 
-Use the method listed in the following table to create a region. 
+Use the method listed in the following table to create a region.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|POST
-|/v2.1/regions
+|`POST`
+|`/v2.1/regions`
 |Create a new region.
 |None
 |===
 
-Required request body attributes:  `name`
+Required request body attributes: `name`
+
+*Request body example:*
 
 ....
 {
   "name": "MyRegionName",
   "description": "DescriptionOfMyRegion"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. New resource created.",
@@ -184,24 +205,31 @@ Required request body attributes:  `name`
 
 === Modify a region
 
-Use the method listed in the following table to modify a region. 
+Use the method listed in the following table to modify a region.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|PUT
-|/v2.1/regions/{name}
+|`PUT`
+|`/v2.1/regions/{name}`
 |Modify a region identified by name. You can change the name and description of the region.
-|name (string): The name of the region.
+|`name (string)`: The name of the region.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 {
   "name": "MyRegionName",
   "description": "NewDescriptionOfMyRegion"
 }
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -224,22 +252,27 @@ Required request body attributes:  `none`
 
 === Delete a region
 
-Use the method listed in the following table to delete a region. 
+Use the method listed in the following table to delete a region.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
-|DELETE
-|/v2.1/regions{name}
+|`DELETE`
+|`/v2.1/regions{name}`
 |Delete a single region identified by name. All zones within a region must be deleted first.
-|Name (string): The name of the region.
+|`Name (string)`: The name of the region.
 |===
 
-Required request body attributes:  `none`
+Required request body attributes: `none`
+
+*Request body example:*
 
 ....
 none
-No content for succesful delete
 ....
 
+*Response body example:*
 
+....
+No content for succesful delete
+....

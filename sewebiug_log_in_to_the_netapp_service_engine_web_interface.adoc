@@ -23,20 +23,21 @@ To use the NetApp Service Engine web interface, you must have an account. Your a
 
 NetApp Service Engine allows you to log in using the following credentials:
 
-* User name and password (see Log in with User Name and Password <xref>)
-* NetApp SSO (see Log in with NetApp SSO <xref>)
+* User name and password (see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-user-name-and-password[Log in with user name and password])
+* NetApp SSO (see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-netapp-sso[Log in with NetApp SSO])
 +
 Confirm the sign-in option in use with your NetApp Service Engine instance with your NetApp Service Engine administrator.
 
 === Role-based access
 
-The following table lists the role-based access descriptions. 
+The following table lists the role-based access descriptions.
 
 |===
 |Role |Access
 
 |Customer administrator
-|The first customer administrator user is created by the NetApp Keystone team:
+a|The first customer administrator user is created by the NetApp Keystone team:
+
 * Full access to provision and manage storage through NetApp Service Engine (including file servers and block stores).
 * Can raise service requests and incidents.
 * Can assign roles to other users of NetApp Service Engine.
@@ -59,7 +60,7 @@ To log in with a user name and password, you need:
 . In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
 . Select Local user sign in.
 . On the Log in to NetApp Keystone page, enter your user name and password and click Log In.
-. After successful login,  the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI,  see NetApp Service Engine Web Interface Overview <xref>.
+. After successful login, the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
 
 [NOTE]
 If your login is successful but you cannot see the dashboard, check with your NetApp Service Engine portal administrator to ensure that your NetApp Service Engine portal account has been assigned the correct role.
@@ -78,7 +79,7 @@ To log in with NetApp SSO, you need:
 . Select NetApp SSO.
 . On the SSO log- in page, enter your user name and password and click Sign In.
 +
-After the successful login the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI,  see NetApp Service Engine Web Interface Overview <xref>.
+After the successful login the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
 
 === Log out of the NetApp Service Engine web interface
 
@@ -87,5 +88,3 @@ After the successful login the NetApp Service Engine web interface loads, open a
 . To log out of the interface, click the user icon and click Sign Out.
 
 image:sewebiug_image7.png[Error: Missing Graphic Image]
-
-

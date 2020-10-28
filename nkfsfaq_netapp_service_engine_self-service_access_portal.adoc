@@ -21,15 +21,15 @@ summary:
 [.lead]
 *What is NetApp Service Engine?*
 
-NetApp Service Engine is a self-service portal that is available in the NetApp-operated model for customers to log into and provision storage based on their subscription. The tool also provides reports on what their consumption levels are against their subscription and initiate any service requests or subscription changes. 
+NetApp Service Engine is a self-service portal that is available in the NetApp-operated model for customers to log into and provision storage based on their subscription. The tool also provides reports on what their consumption levels are against their subscription and initiate any service requests or subscription changes.
 
-*NetApp Service Engine required in the customer- operated model?*
+*NetApp Service Engine required in the customer-operated model?*
 
-In a customer- operated model, NetApp Service Engine is required. It provides basic reports on the consumption details and is required to collect and report the billing information.
+In a customer-operated model, NetApp Service Engine is required. It provides basic reports on the consumption details and is required to collect and report the billing information.
 
 *Where is NetApp Service Engine installed?*
 
-In a NetApp- operated model, NetApp Service Engine is installed locally on the NetApp provided compute resources. In a customer- operated model, NetApp Service Engine is installed on the customer- provided compute resources.
+In a NetApp-operated model, NetApp Service Engine is installed locally on the NetApp provided compute resources. In a customer-operated model, NetApp Service Engine is installed on the customer-provided compute resources.
 
 *Who can log into NetApp Service Engine?*
 
@@ -43,7 +43,7 @@ NetApp Service Engine provides role-based access control (RBAC), and each user c
 
 The following access controls are available:
 
-* *Customer Admin.* An administrative person from the customer side who has rights to create file services (which defines Active Directory authentication servers,  networking, and so on), changes to subscription, create new users,  and so on.
+* *Customer Admin.* An administrative person from the customer side who has rights to create file services (which defines Active Directory authentication servers, networking, and so on), changes to subscription, create new users, and so on.
 * *Read-only.* Has access to portal but cannot create any storage or change anything.
 * *User.* Has rights to provision storage, resize, view reports, but cannot perform any administrative job like creating file servers, change subscription, etc.,
 * *App.* Specific results depend on each customer’s installation in accordance with published specifications.

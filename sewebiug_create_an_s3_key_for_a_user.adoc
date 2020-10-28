@@ -19,17 +19,17 @@ summary:
 //
 
 [.lead]
-Use this method to create an S3 key for a user. 
+Use this method to create an S3 key for a user.
 
 Make sure that you capture the key immediately after it is created. There is no way to retrieve key details after it has been created.
 
 === Steps
 
-. Display the Users List <xref>.
+. Display the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
 . Make sure the correct subtenant is selected and the display is showing users (not groups).
-. Locate the user in the list and click the Key icon for that group. 
+. Locate the user in the list and click the Key icon for that group.
 +
-For details about working with items in lists,  see List view actions <xref>.
+For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
 
 . The Manage S3 Keys dialog box displays showing the list of keys for the user.
 . If there are no existing keys for the user, click Create S3 Key to display the fields to create a key.
@@ -41,5 +41,3 @@ Make sure that you capture the key details before closing the S3 Key Details dia
 
 . Click Close.
 . Click Close again to close the Manage S3 Keys dialog.
-
-

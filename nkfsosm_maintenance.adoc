@@ -37,19 +37,17 @@ NetApp will perform update and maintenance activities for all NetApp provided eq
 The Keystone service security levels include:
 
 * *Standard.* Maintenance activity not affecting availability or performance (most).
-* *Disruptive*.  Maintenance activity that might affect availability or performance (very few).
+* *Disruptive*. Maintenance activity that might affect availability or performance (very few).
 * *Critical.* Maintenance activity that might or might not affect availability or performance but required to be performed at earliest opportunity (rare; for example, related to data corruption).
 
 === Notification and Scheduling
 
 * The KSM communicates activity details and works with the customer to schedule based on severity.
 * For noncritical updates, NetApp provides at least a one-month notice within which to schedule.
-* Due their nature, critical updates (for example,  data corruption) must be performed at the earliest opportunity,  but within the recommended time frame.
+* Due their nature, critical updates (for example, data corruption) must be performed at the earliest opportunity, but within the recommended time frame.
 +
 If a critical update is not scheduled within the recommended time frame, then any decrease in performance or availability will not be counted against performance or service availability SLAs.
 
 === SLAs
 
 Scheduled maintenance down time, if any, will not be counted against performance or service availability SLAs.
-
-

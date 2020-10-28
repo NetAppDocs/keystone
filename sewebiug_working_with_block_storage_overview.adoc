@@ -21,24 +21,26 @@ summary:
 [.lead]
 In block storage systems, the data storage is broken up into individual pieces each with a unique identifier. NetApp Service Engine refers to the block data storage as a block store, and the individual pieces as disks.
 
-Block stores belong to a subtenant and are specified within a zone (one block store per zone per subtenant). A block store has networking attributes (for example,  IP address and VLAN ID) which are used to access disks through the iSCSI or FC protocol. Disaster recovery DP can be enabled on a block store. For more information, see Disaster Recovery <xref>.
+Block stores belong to a subtenant and are specified within a zone (one block store per zone per subtenant). A block store has networking attributes (for example, IP address and VLAN ID) which are used to access disks through the iSCSI or FC protocol. Disaster recovery DP can be enabled on a block store. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery.html[Disaster recovery].
 
 Block stores must be initialized before they can be used. Where block storage is available and it has not been initialized, it can be initialized prior to creating the first disk on the block store as part of the Create Disk process.
 
-Disks are created on block stores. Disks have many configurable attributes included capacity and associated service level. DP options such as Snapshots <xref> and Disaster Recovery <xref> can be enabled for a disk.
+Disks are created on block stores. Disks have many configurable attributes included capacity and associated service level. DP options such as link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots] and link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery] can be enabled for a disk.
 
 Access to disks is controlled through host groups. Host groups consist of initiator node names; by mapping one or more host groups to a disk, you can define which initiators have access to the disk.
 
 Host groups:
 
 * Are protocol specific. They can be either:
-** FC protocol host groups: these consist of initiators that are FC World Wide Port Names (WWPNs). For example,  `20:56:00:a0:98:5c:0d:da`).
+** FC protocol host groups: these consist of initiators that are FC World Wide Port Names (WWPNs). For example, `20:56:00:a0:98:5c:0d:da`).
 ** iSCSI protocol host groups: these consist of initiators that are iSCSI qualified names (IQNs). For example, `iqn.1998-01.com.vmware:esx2`.
 * Consist of alias/initiator pairs. An alias allows a simple way to identify the initiator. For example, `esxserver1`.
 * Can be created without any initiators. Empty host groups can be mapped to disks as placeholders but must be fully defined to allow access to the disk. Using host groups allows for:
 
 * Mapping multiple disks to the same set of initiators
-* Updating the set of initiators across multiple disksThis section contains information on: 
+* Updating the set of initiators across multiple disks.
+
+This section contains information on:
 
 * Working with host groups:
 ** View host groups
@@ -52,5 +54,3 @@ Host groups:
 ** Modify a disk
 ** Delete a disk
 ** Create an adhoc snapshot of a disk
-
-

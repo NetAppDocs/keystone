@@ -28,17 +28,25 @@ Use the method listed in the following table to retrieve all jobs or a subset of
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/jobs
+|`GET`
+|`/v2.1/jobs`
 |Retrieve jobs.
-|tenant_id: (Optional) Return the block stores belonging to the specified tenant.
-offset and limit– see Pagination <xref>
+|`tenant_id`: (Optional) Return the block stores belonging to the specified tenant.
+
+`offset` and `limit`– see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
 |===
 
 Required request body attributes: `none`
 
+*Request body example:*
+
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -101,16 +109,23 @@ Use the method listed in the following table to retrieve a job by ID.
 |===
 |HTTP Method |Path |Description |Parameters
 
-|GET
-|/v2.1/jobs/{id}
+|`GET`
+|`/v2.1/jobs/{id}`
 |Retrieve a job by ID.
-|id (string): The unique identifier for the job.
+|`id (string)`: The unique identifier for the job.
 |===
 
-Required request body attributes:  `job identifier`
+Required request body attributes: `job identifier`
+
+*Request body example:*
 
 ....
 none
+....
+
+*Response body example:*
+
+....
 {
   "status": {
     "user_message": "Okay. Returned 1 record.",
@@ -173,7 +188,9 @@ The job object returned in the HTTP response contains several properties. You ca
 * NORMAL
 * WARNING
 * PARTIAL_FAILURES
-* ERRORThere are two techniques you can use when polling a job object to detect a terminal state for the task, either success or failure:
+* ERROR
+
+There are two techniques you can use when polling a job object to detect a terminal state for the task, either success or failure:
 
 * Standard polling request: The current job state is returned immediately.
 * Long polling request: When the job state moves to NORMAL, ERROR, or PARTIAL_FAILURES.
