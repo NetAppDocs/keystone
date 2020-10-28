@@ -33,7 +33,7 @@ Keystone uses SnapVault technology for backup operations and SnapMirror for disa
 
 image:nkfsosm_image3.png[Error: Missing Graphic Image]
 
-=== Keystone Flex Subscription Benefits
+== Keystone Flex Subscription Benefits
 
 KFS provides the following benefits:
 
