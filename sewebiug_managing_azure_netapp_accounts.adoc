@@ -44,21 +44,21 @@ This section describes how to add an Azure NetApp account.
 ==== Steps
 
 . Select Subscribed Services > Azure NetApp Accounts from the menu.
-. Click Create.
+. Click *Create*.
 . In the Create Azure NetApp Account dialog box, specify the subtenant, the Azure location (region), the Azure resource group, and a name for the Azure NetApp account.
 . If needed, add tags to the account.
-. Click Create.
+. Click *Create*.
 
 === Modify Azure NetApp account details
 
-Use this method to modify the details of an Azure NetApp account. You can modify the subtenant, Azure location, Azure resource group or name of the account, and add or remove tags. 
+Use this method to modify the details of an Azure NetApp account. You can modify the subtenant, Azure location, Azure resource group or name of the account, and add or remove tags.
 
 ==== Steps
 
 . Select Subscribed Services > Azure NetApp Accounts from the menu.
 . Locate the Azure NetApp Account in the list and click the Edit icon.
 . On the Manage Azure NetApp Account dialog box, make any changes as required.
-. Click Update.
+. Click *Update*.
 
 === Delete an Azure NetApp account
 
@@ -69,4 +69,4 @@ Use this method to delete an Azure NetApp Account.
 . Select Subscribed Services > Azure NetApp Accounts from the menu.
 . Locate the Azure NetApp account in the list and click the Delete icon.
 . In the Confirm Delete dialog box, enter the name of the Azure NetApp account to be deleted.
-. Click Confirm.
+. Click *Confirm*.

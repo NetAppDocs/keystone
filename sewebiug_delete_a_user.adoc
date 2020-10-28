@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-Use this method to delete a user. 
+Use this method to delete a user.
 
 [NOTE]
 It is not possible to recover a deleted user.
@@ -29,4 +29,4 @@ It is not possible to recover a deleted user.
 . Select Administration > Users from the menu.
 . Locate the user in the list and click the Delete icon.
 . In the Confirm Delete dialog box, enter the name of the user to be deleted.
-. Click Confirm.
+. Click *Confirm*.

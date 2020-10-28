@@ -33,7 +33,7 @@ If disaster recovery is already enabled, it cannot be disabled. For more informa
 . Display the link:sewebiug_view_servers.html#view-servers[File Servers list].
 . Locate the server in the list and click the Edit icon for that server. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
 . Make any changes as required; refer to link:sewebiug_create_a_file_server.html[Create a file server] for field descriptions.
-. Click Done. This creates a job to modify the server.
+. Click *Done*. This creates a job to modify the server.
 
 === After you finish
 

@@ -31,8 +31,8 @@ You will need:
 === Steps
 
 . Select Administration > Users from the menu.
-. Click Create User.
+. Click *Create User*.
 . In the Create User dialog box, specify the user name, email address, first name, last name, display name, and password for the user.
 . Select the primary tenant and the role of the user in that tenancy.
-. To add additional tenancies, click Add Tenancy to display new entry fields and select the tenant and the role of the user in that tenancy.
-. Click Create.
+. To add additional tenancies, click *Add Tenancy* to display new entry fields and select the tenant and the role of the user in that tenancy.
+. Click *Create*.

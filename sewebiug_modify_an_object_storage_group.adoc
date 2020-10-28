@@ -31,4 +31,4 @@ For details about working with items in lists, see link:sewebiug_netapp_service_
 
 . In the Edit Group dialog box, enter the user name.
 . Select the S3 policy that applies to the modified group.
-. Click Create. This creates a job to modify the group with the specified settings.
+. Click *Create*. This creates a job to modify the group with the specified settings.

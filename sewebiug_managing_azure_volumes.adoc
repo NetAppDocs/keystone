@@ -44,10 +44,10 @@ This section describes how to add an Azure volume.
 ==== Steps
 
 . Select Subscribed Services > Azure Volumes from the menu.
-. Click Create.
+. Click *Create*.
 . In the Create Azure Volume dialog box, specify the subtenant, location, resource group, account name, service level, the Aize, and the Azure NetApp account ID.
 . If needed, add tags to the volume.
-. Click Create.
+. Click *Create*.
 
 === Modify Azure volume details
 
@@ -58,7 +58,7 @@ Use this method to modify the details of an Azure volume. You can modify the sub
 . Select Subscribed Services > Azure Volumes from the menu.
 . Int the list, locate the Azure volume and click the Edit icon.
 . In the Manage Azure Volume dialog box, make any changes as required.
-. Click Update.
+. Click *Update*.
 
 === Delete an Azure volume
 
@@ -69,4 +69,4 @@ Use this method to delete an Azure volume.
 . Select Subscribed Services > Azure Volumes from the menu.
 . Locate the Azure volume in the list and click the Delete icon.
 . In the Confirm Delete dialog box, enter the name of the Azure volume to be deleted.
-. Click Confirm.
+. Click *Confirm*.

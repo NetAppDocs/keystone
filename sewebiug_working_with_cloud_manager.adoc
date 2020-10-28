@@ -22,7 +22,7 @@ summary:
 NetApp Service Engine can connect to NetApp Cloud Manager. This section describes how a NetApp administrator user can perform the following tasks:
 
 * Connect to Cloud Manager
-* View the status of the connection to Cloud Manager 
+* View the status of the connection to Cloud Manager
 
 === Connect to Cloud Manager
 
@@ -40,8 +40,8 @@ You will need:
 . Specify the OCCM API Endpoint URL
 . Enter the Client ID.
 . Enter the OCCM refresh token.
-. Click Update.
+. Click *Update*.
 
 === View the status of the connection to Cloud Manager
 
-https://jira.ngage.netapp.com/browse/NSEKEY-1703[https://jira.ngage.netapp.com/browse/NSEKEY-1703^] 
+https://jira.ngage.netapp.com/browse/NSEKEY-1703[https://jira.ngage.netapp.com/browse/NSEKEY-1703^]

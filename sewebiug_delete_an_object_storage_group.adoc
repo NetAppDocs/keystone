@@ -26,4 +26,4 @@ Use this method to delete an Object Storage group.
 . Display link:sewebiug_view_host_groups.html#view-host-groups[the Groups List].
 . Make sure the correct subtenant is selected and the display is showing groups (not users).
 . Locate the group in the list and click the Delete icon for that group.
-. To confirm the delete action,  click Confirm. The object storage group is removed from the list.
+. To confirm the delete action,  click *Confirm*. The object storage group is removed from the list.

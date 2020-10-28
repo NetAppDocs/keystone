@@ -41,7 +41,7 @@ Make sure you have the following to create the server:
 === Steps
 
 . Display the link:sewebiug_view_servers.html#view-servers[File Servers list].
-. Click Create Server.
+. Click *Create Server*.
 . On the Create Server page complete the following fields:
 +
 |===
@@ -77,7 +77,7 @@ If creating a CIFS-enabled file server:
 . Toggle the Disaster Recovery button to enable it.
 . Select the disaster recovery region and zone.
 . Select the disaster recovery replication schedule.
-. Click Create. This creates a job to create the server.
+. Click *Create*. This creates a job to create the server.
 
 === After you finish
 

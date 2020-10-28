@@ -24,8 +24,8 @@ Buckets are created under a subtenant.
 === Steps
 
 . Display the link:sewebiug_view_buckets.html#view-buckets[Buckets list] and select the subtenant under which to create the bucket.
-. Click Create Bucket.
-. In the Create Bucket dialog box, enter the name of the new bucket and click Create. This creates a job to create the bucket.
+. Click *Create Bucket*.
+. In the Create Bucket dialog box, enter the name of the new bucket and click *Create*. This creates a job to create the bucket.
 
 === After you finish
 

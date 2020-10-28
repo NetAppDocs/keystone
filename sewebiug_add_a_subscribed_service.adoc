@@ -26,7 +26,7 @@ This section describes how to add a subscribed service.
 === Steps
 
 . Select Subscribed Services > Subscribed Services from the menu.
-. Click Add.
+. Click *Add*.
 . In the Add Subscribed Service dialog box, select the cloud service type and then complete the relevant information for that service type:
 +
 *Azure:*
@@ -48,4 +48,4 @@ TBA
 TBA
 
 . Specify tags for the service if required.
-. Click Add.
+. Click *Add*.

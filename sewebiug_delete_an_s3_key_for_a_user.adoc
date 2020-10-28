@@ -31,5 +31,5 @@ For details about working with items in lists, see link:sewebiug_netapp_service_
 
 . The Manage S3 Keys dialog displays showing the list of keys for the user.
 . In the list of keys, locate the key to delete and click the Delete icon.
-. Click Confirm to confirm the delete action. The key is removed from the list of user keys.
-. Click Close to close the Manage S3 Keys dialog box.
+. Click *Confirm* to confirm the delete action. The key is removed from the list of user keys.
+. Click *Close* to close the Manage S3 Keys dialog box.

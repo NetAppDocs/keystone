@@ -31,7 +31,7 @@ This section describes how to create a new share by directly specifying the shar
 === Steps
 
 . Display the link:sewebiug_view_shares.html#view-shares[Shares list].
-. Click Create Share.
+. Click *Create Share*.
 . In the Create Share dialog box, select Create New Share.
 +
 image:sewebiug_image22.png[Error: Missing Graphic Image]
@@ -91,7 +91,7 @@ Export Policies do not apply to CIFS access.
 +
 . For NFS type shares only, specify the Export Policy.
 . If you want to add tags (key-value pairs) to the file share, specify them in the Tags section.
-. Click Create. This creates a job to create the share.
+. Click *Create*. This creates a job to create the share.
 
 === After you finish
 

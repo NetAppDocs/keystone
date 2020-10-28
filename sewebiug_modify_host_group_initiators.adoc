@@ -30,14 +30,14 @@ You cannot modify the alias of an initiator. To change the alias, delete the ini
 . Display the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
 . Locate the host group in the list and click the Edit icon for that host group.
 +
-To modify an existing initiator, locate the initiator in the list, edit the initiator value and click Update.
+To modify an existing initiator, locate the initiator in the list, edit the initiator value and click *Update*.
 +
 To add an initiator:
 
-.. click Add Initiator.
+.. click *Add Initiator*.
 .. Specify the Alias and Initiator.
-.. Click Create.
+.. Click *Create*.
 +
 To remove an initiator from the host group, locate the initiator in the list and click the Delete icon.
 
-. Click Done.
+. Click *Done*.

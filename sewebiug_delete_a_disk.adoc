@@ -34,7 +34,7 @@ This section describes how to delete a disk.
 +
 image:sewebiug_image30.png[Error: Missing Graphic Image]
 +
-. Click Confirm. This creates a job to delete the disk.
+. Click *Confirm*. This creates a job to delete the disk.
 
 === After you finish
 

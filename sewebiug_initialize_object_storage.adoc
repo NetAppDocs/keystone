@@ -30,8 +30,8 @@ If you attempt to create a storage bucket on object storage that has not yet bee
 +
 image:sewebiug_image31.png[Error: Missing Graphic Image]
 +
-. Click Initialize Object Storage.
-. In the Initialize Object Storage dialog box, select the quota for the object storage and click Create.
+. Click *Initialize Object Storage*.
+. In the Initialize Object Storage dialog box, select the quota for the object storage and click *Create*.
 +
 image:sewebiug_image32.png[Error: Missing Graphic Image]
 +

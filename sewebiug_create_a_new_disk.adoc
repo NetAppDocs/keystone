@@ -34,7 +34,7 @@ This section describes how to create a new disk by directly specifying the disk 
 === Steps
 
 . Display the link:sewebiug_view_disks.html#view-disks[Disks list].
-. Click Create Disk.
+. Click *Create Disk*.
 . In the Create Disk dialog box, select Create New Disk.
 +
 image:sewebiug_image26.png[Error: Missing Graphic Image]
@@ -47,7 +47,7 @@ The Create Disk page is displayed.
 +
 image:sewebiug_image27.png[Error: Missing Graphic Image]
 +
-. Click Initialize Block Storage.
+. Click *Initialize Block Storage*.
 . In the Initialize Block Storage dialog box:
 .. In the iSCSI panel, specify the VLAN and Subnet.
 +
@@ -58,7 +58,7 @@ The iSCSI service is enabled for all disks by default.
 +
 image:sewebiug_image28.png[Error: Missing Graphic Image]
 +
-. Click Create to initialize the block store. Wait until the block store initializes. The display returns to Create Disk page.
+. Click *Create* to initialize the block store. Wait until the block store initializes. The display returns to Create Disk page.
 . Complete the following fields:
 +
 |===
@@ -77,11 +77,11 @@ To define a new host group, see the next step.
 |===
 
 . If required, create a new host group:
-.. Click Create Host Group. The Create Host Group dialog is displayed.
+.. Click *Create Host Group*. The Create Host Group dialog is displayed.
 .. :Specify the Name of the host group.
 .. Add the Initiators for the group. For each initiator, specify the alias and the initiator.
 .. If required, add tags (key-value pairs) to the host group in the Tags section.
-.. Click Create. The system creates the host group and displays a message when it is successfully created.
+.. Click *Create*. The system creates the host group and displays a message when it is successfully created.
 .. To map the newly created host group to the disk, go to the Host Groups field and select it.
 . If disaster recovery is enabled on the underlying block store, disaster recovery replication is automatically enabled for the new disk. If you wish to exclude the disk from disaster recovery replications, toggle the Data Protection Enable Disaster Recovery for This Disk button so that disaster recovery is disabled.
 . Select a performance service level.
@@ -103,7 +103,7 @@ Select an option to view the performance details for that level (as peak/expecte
 ** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
 
 . If you want to add tags (key-value pairs) to the disk, specify them in the Tags section.
-. Click Create. This creates a job to create the disk.
+. Click *Create*. This creates a job to create the disk.
 
 === After you finish
 
