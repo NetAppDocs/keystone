@@ -1,6 +1,7 @@
 ---
 sidebar: sidebar
 permalink: index.html
+keywords: netapp, keystone, service, offering,
 summary: Welcome to the Keystone documentation portal.
 ---
 
