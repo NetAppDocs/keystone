@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_capacity_and_performance_management.html
-keywords:
-summary:
+keywords: netapp, keystone, capacity, performance, management,
+summary: Capacity and performance management
 ---
 
 = Capacity and Performance Management

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_users_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, managing users, overview,
+summary: Keystone managing users overview
 ---
 
 = Overview

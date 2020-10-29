@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsfaq_service_offer_details.html
-keywords:
-summary:
+keywords: netapp, keystone, service, offer, details,
+summary: Service offer details
 ---
 
 = Service Offer Details

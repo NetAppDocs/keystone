@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_working_with_file_services_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, working, file, services, overview,
+summary: Keystone working with file services overview
 ---
 
 = Overview
@@ -20,5 +20,3 @@ summary:
 
 [.lead]
 This section describes how to manage your file servers and NFS/CIFS file shares. You can view information about your file servers and share, create, modify,  and delete them.
-
-

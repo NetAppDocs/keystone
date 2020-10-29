@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_getting_started_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, getting, started, overview,
+summary: Keystone getting started overview
 ---
 
 = Overview
@@ -26,6 +26,4 @@ This section describes how to get started by using the NetApp Service Engine por
 ** Log in with NetApp SSO
 ** Log out of the NetApp Service Engine web interface
 * Select tenant
-* NetApp Service Engine web interface overview 
-
-
+* NetApp Service Engine web interface overview

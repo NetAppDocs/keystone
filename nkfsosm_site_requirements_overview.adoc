@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_site_requirements.html
-keywords:
-summary:
+keywords: netapp, keystone, site, requirements,
+summary: Keystone site requirements
 ---
 
 = Site Requirements

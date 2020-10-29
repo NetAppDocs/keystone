@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_an_s3_key_for_a_user.html
-keywords:
-summary:
+keywords: netapp, keystone, create, S3, key, user,
+summary: Keystone create an S3 key for a user
 ---
 
 = Create an S3 key for a user

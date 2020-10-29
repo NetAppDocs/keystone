@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_view_subscribed_services_capacity.html
-keywords:
-summary:
+keywords: netapp, keystone, view, subscribed, services, capacity,
+summary: Keystone view subscribed services capacity
 ---
 
 = View subscribed services capacity
@@ -23,7 +23,7 @@ The Subscribed Services pane displays information about the storage subscription
 
 image:sewebiug_image17.png[Error: Missing Graphic Image]
 
-For the selected account, the panel displays the service tiers that make up the selected subscription. 
+For the selected account, the panel displays the service tiers that make up the selected subscription.
 
 Each service is represented by a circle consisting of three concentric rings. The rings depict the capacities associated with the service: the inner ring displays the committed capacity, the middle ring the burst capacity and the outer ring the consumed capacity. Hover the cursor over the ring to display the relevant capacity.
 

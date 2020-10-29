@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_delete_file_server.html
-keywords:
-summary:
+keywords: netapp, keystone, delete, file, server,
+summary: Keystone delete file server
 ---
 
 = Delete file server

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_an_adhoc_snapshot_of_a_disk.html
-keywords:
-summary:
+keywords: netapp, keystone, create, adhoc, snapshot, disk
+summary: Keystone create an adhoc snapshot of a disk
 ---
 
 = Create an adhoc snapshot of a disk

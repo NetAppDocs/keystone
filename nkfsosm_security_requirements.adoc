@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_security_requirements.html
-keywords:
-summary:
+keywords: netapp, keystone, security, requirements,
+summary: Keystone security requirements
 ---
 
 = Security Requirements

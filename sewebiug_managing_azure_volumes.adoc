@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_azure_volumes.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, azure, volumes,
+summary: Keystone managing Azure volumes
 ---
 
 = Managing Azure volumes

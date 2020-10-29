@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_netapp_service_engine_rest_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, service, engine, rest, apis,
+summary: NetApp service engine REST APIs
 ---
 
 = NetApp Service Engine REST APIs

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_a_file_server.html
-keywords:
-summary:
+keywords: netapp, keystone, create, file, server,
+summary: Keystone create a file server
 ---
 
 = Create a file server
@@ -84,7 +84,7 @@ If creating a CIFS-enabled file server:
 .. Toggle the Asynchronous Disaster Recovery button to enable it.
 .. Select the disaster recovery region and zone.
 .. Select the disaster recovery replication schedule.
-. If synchronous disaster recovery DP is enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled. 
+. If synchronous disaster recovery DP is enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled.
 . Click Create. This creates a job to create the server.
 >>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3
 

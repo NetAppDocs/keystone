@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_delete_a_file_share.html
-keywords:
-summary:
+keywords: netapp, keystone, delete, file, share,
+summary: Keystone delete a file share
 ---
 
 = Delete a file share

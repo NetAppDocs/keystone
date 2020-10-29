@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_working_with_object_storage_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, working, object, storage, overview,
+summary: Keystone working with object storage overview
 ---
 
 = Overview
@@ -31,11 +31,9 @@ Each object storage user has associated S3 keys that allow access to the object 
 This section describes how to manage your object storage, including how to:
 
 * Initialize object storage.
-* Create S3 buckets. 
+* Create S3 buckets.
 +
 It is not possible to delete S3 buckets through the NetApp Service Engine web portal; delete these buckets using an S3 compatible browser.
 
 * Create and manage object storage groups.
 * Create and manage object storage users, including creating S3 keys.
-
-

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_keystone_service_delivery_architecture.html
-keywords:
-summary:
+keywords: netapp, keystone, service, delivery, architecture,
+summary: Keystone service delivery architecture
 ---
 
 = Keystone Service Delivery Architecture

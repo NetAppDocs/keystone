@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_view_shares.html
-keywords:
-summary:
+keywords: netapp, keystone, view, shares,
+summary: Keystone view shares
 ---
 
 = View shares

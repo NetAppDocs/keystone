@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_azure_capacity_pools.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, azure, capacity, pools,
+summary: Keystone managing Azure capacity pools
 ---
 
 = Managing Azure capacity pools

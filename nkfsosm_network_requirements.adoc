@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_network_requirements.html
-keywords:
-summary:
+keywords: netapp, keystone, network, requirements,
+summary: Network requirements
 ---
 
 = Network Requirements

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_service_level_metrics_and_definitions.html
-keywords:
-summary:
+keywords: netapp, keystone, service, level, metrics, definitions,
+summary: Keystone service level metrics and definitions
 ---
 
 = Service Level Metrics and Definitions

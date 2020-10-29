@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_netapp_service_engine.html
-keywords:
-summary:
+keywords: netapp, keystone, service, engine,
+summary: NetApp service engine
 ---
 
 = NetApp Service Engine

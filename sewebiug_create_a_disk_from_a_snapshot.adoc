@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_a_disk_from_a_snapshot.html
-keywords:
-summary:
+keywords: netapp, keystone, create, disk, snapshot,
+summary: Keystone create a disk from a snapshot
 ---
 
 = Create a disk from a snapshot

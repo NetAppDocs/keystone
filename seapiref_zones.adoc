@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_zones.html
-keywords:
-summary:
+keywords: netapp, keystone, zones,
+summary: Keystone zones
 ---
 
 = Zones

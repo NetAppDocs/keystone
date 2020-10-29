@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_a_new_disk.html
-keywords:
-summary:
+keywords: netapp, keystone, create, new, disk,
+summary: Keystone create a new disk
 ---
 
 = Create a new disk

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_working_with_cloud_manager.html
-keywords:
-summary:
+keywords: netapp, keystone, working, cloud, manager,
+summary: Keystone working with cloud manager
 ---
 
 = Working with Cloud Manager

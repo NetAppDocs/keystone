@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_a_file_share.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, file, share,
+summary: Keystone modify a file share
 ---
 
 = Modify a file share

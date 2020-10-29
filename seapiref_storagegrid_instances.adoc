@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_storagegrid_instances.html
-keywords:
-summary:
+keywords: netapp, keystone, storagegrid, instances,
+summary: Keystone StorageGRID instances
 ---
 
 = StorageGRID instances

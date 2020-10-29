@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_add_a_subscribed_service.html
-keywords:
-summary:
+keywords: netapp, keystone, add, subscribed, service,
+summary: Keystone add a subscribed service
 ---
 
 = Add a subscribed service

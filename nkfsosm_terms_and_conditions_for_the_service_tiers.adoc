@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_terms_and_conditions_for_the_service_tiers.html
-keywords:
-summary:
+keywords: netapp, keystone, terms, conditions, service, tiers,
+summary: Keystone terms and conditions for the service tiers
 ---
 
 = Terms and Conditions for the Service Tiers

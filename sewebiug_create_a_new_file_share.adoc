@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_a_new_file_share.html
-keywords:
-summary:
+keywords: netapp, keystone, create, new, file, share,
+summary: Keystone create a new file share
 ---
 
 = Create a new file share

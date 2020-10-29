@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_reporting.html
-keywords:
-summary:
+keywords: netapp, keystone, reporting,
+summary: Keystone reporting
 ---
 
 = Reporting

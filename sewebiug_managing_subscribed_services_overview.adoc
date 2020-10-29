@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_subscribed_services_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, subscribed, services, overview,
+summary: Keystone managing subscribed services overview
 ---
 
 = Overview

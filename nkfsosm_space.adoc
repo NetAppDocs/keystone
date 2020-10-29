@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_space.html
-keywords:
-summary:
+keywords: netapp, keystone, space,
+summary: Keystone space
 ---
 
 = Space

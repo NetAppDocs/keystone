@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_administrator_apis_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, administrator, apis, overview,
+summary: Keystone administrator APIs overview
 ---
 
 = Overview
@@ -34,5 +34,3 @@ Activities such as resetting user passwords, refreshing tokens, or logging in as
 * Service levels
 * Service requests
 * Jobs
-
-

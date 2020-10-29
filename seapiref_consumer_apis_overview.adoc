@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_consumer_apis_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, consumer, apis, overview,
+summary: Keystone consumer APIs overview
 ---
 
 = Overview
@@ -27,5 +27,3 @@ This section describes the following consumer APIs:
 * Object storage APIs
 * Reporting APIs
 * (Consumer) administration APIs
-
-

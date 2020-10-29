@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_working_with_block_storage_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, working, block, storage, overview,
+summary: Keystone working with block storage overview
 ---
 
 = Overview

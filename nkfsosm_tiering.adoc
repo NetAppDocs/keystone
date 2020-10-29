@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_tiering.html
-keywords:
-summary:
+keywords: netapp, keystone, tiering,
+summary: Keystone tiering
 ---
 
 = Tiering

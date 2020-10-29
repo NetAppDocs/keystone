@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_initialize_object_storage.html
-keywords:
-summary:
+keywords: netapp, keystone, initialize, object, storage,
+summary: Keystone initialize object storage
 ---
 
 = Initialize object storage

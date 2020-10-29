@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_log_in_to_the_netapp_service_engine_web_interface.html
-keywords:
-summary:
+keywords: netapp, keystone, log, in, netapp, service, engine, web, interface,
+summary: Log in to the NetApp service engine web interface
 ---
 
 = Log in to the NetApp Service Engine web interface

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_keystone_flex_subscription_operations.html
-keywords:
-summary:
+keywords: netapp, keystone, flex, subscription, operations,
+summary: Keystone flex subscription operations
 ---
 
 = Keystone Flex Subscription Operations

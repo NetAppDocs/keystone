@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_data_protection.html
-keywords:
-summary:
+keywords: netapp, keystone, data, protection,
+summary: Data protection
 ---
 
 = Data Protection

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_delete_a_host_group.html
-keywords:
-summary:
+keywords: netapp, keystone, delete, host, group,
+summary: Keystone delete a host group
 ---
 
 = Delete a host group

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_racks.html
-keywords:
-summary:
+keywords: netapp, keystone, racks,
+summary: Keystone racks
 ---
 
 = Racks

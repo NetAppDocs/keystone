@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_host_group_initiators.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, host, group, initiators,
+summary: Keystone modify host group initiators
 ---
 
 = Modify host group initiators

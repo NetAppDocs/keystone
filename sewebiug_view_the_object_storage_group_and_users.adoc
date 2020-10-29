@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_view_the_object_storage_group_and_users.html
-keywords:
-summary:
+keywords: netapp, keystone, view, object, storage, group, users,
+summary: Keystone view the object storage group and users
 ---
 
 = View the object storage group and users

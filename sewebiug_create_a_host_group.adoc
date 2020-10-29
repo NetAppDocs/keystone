@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_a_host_group.html
-keywords:
-summary:
+keywords: netapp, keystone, create, host, group,
+summary: Keystone create a host group
 ---
 
 = Create a host group

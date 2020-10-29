@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_security.html
-keywords:
-summary:
+keywords: netapp, keystone, security,
+summary: Keystone security
 ---
 
 = Security

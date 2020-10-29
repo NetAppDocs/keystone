@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_user_details.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, user, details,
+summary: Keystone modify user details
 ---
 
 = Modify user details

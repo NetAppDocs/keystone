@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_file_server.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, file, server,
+summary: Modify file server
 ---
 
 = Modify file server

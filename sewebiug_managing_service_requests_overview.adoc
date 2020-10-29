@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_service_requests_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, service, requests, overview,
+summary: Keystone managing service requests overview
 ---
 
 = Overview
@@ -26,8 +26,6 @@ Place a service request for:
 * A technical issue with NetApp Service Engine
 * Any other issue that is not covered in this listThis section describes:
 
-* How to raise a service request 
-* How to track a service request 
+* How to raise a service request
+* How to track a service request
 * The service request process
-
-

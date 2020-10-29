@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_subscribed_services.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, subscribed, services,
+summary: Keystone managing subscribed services
 ---
 
 = Managing subscribed services
@@ -17,5 +17,3 @@ summary:
 //
 // 2020-10-20 10:59:40.190007
 //
-
-

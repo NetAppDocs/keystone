@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_an_object_storage_group.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, object, storage, group
+summary: Keystone modify an object storage group
 ---
 
 = Modify an object storage group

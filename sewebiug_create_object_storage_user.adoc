@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_object_storage_user.html
-keywords:
-summary:
+keywords: netapp, keystone, create, object, storage, user,
+summary: Keystone create object storage user
 ---
 
 = Create Object Storage User

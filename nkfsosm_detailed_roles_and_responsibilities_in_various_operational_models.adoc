@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_detailed_roles_and_responsibilities_in_various_operational_models.html
-keywords:
-summary:
+keywords: netapp, keystone, detailed, roles, responsibilities, operational, models,
+summary: Detailed roles and responsibilities in various operational models
 ---
 
 = Detailed Roles and Responsibilities in Various Operational Models

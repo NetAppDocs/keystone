@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_view_servers.html
-keywords:
-summary:
+keywords: netapp, keystone, view, servers,
+summary: Keystone view servers
 ---
 
 = View servers

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_performance.html
-keywords:
-summary:
+keywords: netapp, keystone, performance,
+summary: Keystone performance
 ---
 
 = Performance

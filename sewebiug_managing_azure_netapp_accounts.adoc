@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_azure_netapp_accounts.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, azure, accounts,
+summary: Managing Azure NetApp accounts
 ---
 
 = Managing Azure NetApp accounts

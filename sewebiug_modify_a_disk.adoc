@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_a_disk.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, disk,
+summary: Keystone modify a disk
 ---
 
 = Modify a disk

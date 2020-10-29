@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_delete_a_disk.html
-keywords:
-summary:
+keywords: netapp, keystone, delete, disk,
+summary: Keystone delete a disk
 ---
 
 = Delete a disk

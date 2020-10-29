@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_service_levels.html
-keywords:
-summary:
+keywords: netapp, keystone, service, levels,
+summary: Keystone service levels
 ---
 
 = Service levels

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_an_object_storage_user.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, object, storage, user,
+summary: Keystone modify an object storage user
 ---
 
 = Modify an object storage user

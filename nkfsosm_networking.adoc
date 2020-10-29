@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_networking.html
-keywords:
-summary:
+keywords: netapp, keystone, networking,
+summary: Keystone networking
 ---
 
 = Networking

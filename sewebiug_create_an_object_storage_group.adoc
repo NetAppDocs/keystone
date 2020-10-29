@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_an_object_storage_group.html
-keywords:
-summary:
+keywords: netapp, keystone, create, object, storage, group,
+summary: Keystone create an object storage group
 ---
 
 = Create an object storage group

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_software_for_keystone_flex_subscription_service.html
-keywords:
-summary:
+keywords: netapp, keystone,  software, flex, subscription, service,
+summary: Software for keystone flex subscription service
 ---
 
 = Software for Keystone Flex Subscription Service

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_adhoc_snapshot_of_a_file_share.html
-keywords:
-summary:
+keywords: netapp, keystone, create, adhoc, snapshot, file, share,
+summary: Keystone create adhoc snapshot of a file share
 ---
 
 = Create adhoc snapshot of a file share

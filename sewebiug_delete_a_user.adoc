@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_delete_a_user.html
-keywords:
-summary:
+keywords: netapp, keystone, delete, user,
+summary: Keystone delete a user
 ---
 
 = Delete a user

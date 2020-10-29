@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_file_share_from_snapshot.html
-keywords:
-summary:
+keywords: netapp, keystone, create, file, share, snapshot,
+summary: Keystone create file share from snapshot
 ---
 
 = Create file share from snapshot

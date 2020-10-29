@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_the_subscribed_service_details.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, subscribed, service, details,
+summary: Keystone modify the subscribed service details
 ---
 
 = Modify the subscribed service details

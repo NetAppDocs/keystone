@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_@consumer@_administration_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, consumer, administration, apis,
+summary: Keystone (consumer) administration APIs
 ---
 
 = (Consumer) Administration APIs
