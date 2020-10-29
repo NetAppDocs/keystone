@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: nkfsosm_site_requirements.html
+permalink: nkfsosm_site_requirements_overview.html
 keywords: netapp, keystone, site, requirements,
 summary: Keystone site requirements
 ---
