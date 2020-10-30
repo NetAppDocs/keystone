@@ -51,8 +51,4 @@ Not currently supported
 Not currently supported
 
 . Specify tags for the service if required.
-<<<<<<< HEAD
-. Click *Add*.
-=======
-. Click Create.
->>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3
+. Click *Create*.
