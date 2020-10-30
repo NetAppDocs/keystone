@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsfaq_netapp_service_engine_self-service_access_portal.html
-keywords:
-summary:
+keywords:  netapp, keystone, service, engine, self-service, acess, portal,
+summary: NetApp Service Engine/Self-Service Access Portal
 ---
 
 = NetApp Service Engine/Self-Service Access Portal

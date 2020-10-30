@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html
-keywords:
-summary:
+keywords: netapp, keystone, global, services, support, center, gssc,
+summary: NetApp Global Services and Support Center (GSSC)
 ---
 
 = NetApp Global Services and Support Center (GSSC)

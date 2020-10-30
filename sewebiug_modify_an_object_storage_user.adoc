@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_an_object_storage_user.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, object, storage, user,
+summary: Keystone modify an object storage user
 ---
 
 = Modify an object storage user
@@ -32,4 +32,4 @@ For details about working with items in lists, see link:sewebiug_netapp_service_
 . In the Edit User dialog box:
 .. Enter the user name.
 .. Select the object storage group to which the user belongs.
-. Click Update. This creates a job to create the user with the specified settings.
+. Click *Update*. This creates a job to create the user with the specified settings.

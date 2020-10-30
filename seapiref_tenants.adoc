@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_tenants.html
-keywords:
-summary:
+keywords: netapp, keystone, tenants,
+summary: Keystone tenants
 ---
 
 = Tenants

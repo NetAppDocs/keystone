@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_a_host_group.html
-keywords:
-summary:
+keywords: netapp, keystone, create, host, group,
+summary: Keystone create a host group
 ---
 
 = Create a host group
@@ -43,7 +43,7 @@ If the block store for a subtenant/zone combination has not been previously init
 === Steps
 
 . link:sewebiug_view_host_groups.html#view-host-groups[Display the Host Groups] list.
-. Click Create Host Group.
+. Click *Create Host Group*.
 . On the Create Host Group page:
 .. Select the protocol: iSCSI or FCP.
 .. Select the subtenant, region, and zone and for the host group.
@@ -51,7 +51,7 @@ If the block store for a subtenant/zone combination has not been previously init
 . Select the OS Type: the disk operating system.
 . Add the Initiators for the group. For each initiator, specify the alias and the initiator.
 . If required, add tags (key-value pairs) to the host group in the Tags section.
-. Click Create. This creates the host group.
+. Click *Create*. This creates the host group.
 
 === After you finish
 

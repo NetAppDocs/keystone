@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_power.html
-keywords:
-summary:
+keywords: netapp, keystone, power,
+summary: Keystone power
 ---
 
 = Power

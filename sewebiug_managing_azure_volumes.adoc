@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_azure_volumes.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, azure, volumes,
+summary: Keystone managing Azure volumes
 ---
 
 = Managing Azure volumes
@@ -56,10 +56,17 @@ You will need:
 ==== Steps
 
 . Select Subscribed Services > Azure Volumes from the menu.
+<<<<<<< HEAD
+. Click *Create*.
+. In the Create Azure Volume dialog box, specify the subtenant, location, resource group, account name, service level, the Aize, and the Azure NetApp account ID.
+. If needed, add tags to the volume.
+. Click *Create*.
+=======
 . Click Create.
 . In the Create Azure Volume dialog box, specify the subtenant, the ANF account, the VNet, the Subnet, the Capacity Pool, the Name of the volume, the File Path and the Quota.
 . If required, add tags to the volume.
 . Click Create. When created successfully, the capacity pool state will be Succeeded (can be viewed in the Azure Volumes list).
+>>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3
 
 === Modify Azure volume details
 
@@ -70,7 +77,7 @@ Use this method to modify an Azure Volume’s details. You can modify the File p
 . Select Subscribed Services > Azure Volumes from the menu.
 . Int the list, locate the Azure volume and click the Edit icon.
 . In the Manage Azure Volume dialog box, make any changes as required.
-. Click Update.
+. Click *Update*.
 
 === Delete an Azure volume
 
@@ -81,4 +88,4 @@ Use this method to delete an Azure volume.
 . Select Subscribed Services > Azure Volumes from the menu.
 . Locate the Azure volume in the list and click the Delete icon.
 . In the Confirm Delete dialog box, enter the name of the Azure volume to be deleted.
-. Click Confirm.
+. Click *Confirm*.

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_a_file_server.html
-keywords:
-summary:
+keywords: netapp, keystone, create, file, server,
+summary: Keystone create a file server
 ---
 
 = Create a file server
@@ -41,7 +41,7 @@ Make sure you have the following to create the server:
 === Steps
 
 . Display the link:sewebiug_view_servers.html#view-servers[File Servers list].
-. Click Create Server.
+. Click *Create Server*.
 . On the Create Server page complete the following fields:
 +
 |===
@@ -73,12 +73,20 @@ If creating a CIFS-enabled file server:
 
 .. Toggle the CIFS-enabled button to display the CIFS related fields.
 .. Complete the Active Directory Username, Active Directory Password, Domain, DNS Servers, Server Name and, optionally, the Active Directory Organizational Unit. The Active Directory credentials must be for a user that has the privilege to join a computer to the Active Directory domain.
+<<<<<<< HEAD
+. To enable disaster recovery DP on this file server:
+. Toggle the Disaster Recovery button to enable it.
+. Select the disaster recovery region and zone.
+. Select the disaster recovery replication schedule.
+. Click *Create*. This creates a job to create the server.
+=======
 . To enable asynchronous disaster recovery DP on this file server:
 .. Toggle the Asynchronous Disaster Recovery button to enable it.
 .. Select the disaster recovery region and zone.
 .. Select the disaster recovery replication schedule.
-. If synchronous disaster recovery DP is enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled. 
+. If synchronous disaster recovery DP is enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled.
 . Click Create. This creates a job to create the server.
+>>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3
 
 === After you finish
 

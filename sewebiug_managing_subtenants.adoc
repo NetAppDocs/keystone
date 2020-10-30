@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_subtenants.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, subtenants,
+summary: Keystone managing subtenants
 ---
 
 = Managing subtenants
@@ -51,9 +51,9 @@ You will need:
 ==== Steps
 
 . From the menu, select Administration > Subtenants.
-. Click Create Subtenant.
+. Click *Create Subtenant*.
 . In the Create Subtenant dialog box, enter a name and code for the subtenant.
-. Click Confirm.
+. Click *Confirm*.
 
 === Change a subtenant name
 
@@ -64,7 +64,7 @@ Use this method to change the name of a subtenant.
 . Select Administration > Subtenants from the menu.
 . Locate the subtenant in the list and click the Edit icon.
 . Enter a new name for the subtenant.
-. Click Update.
+. Click *Update*.
 
 === Delete a subtenant
 
@@ -79,4 +79,4 @@ Make sure that there are no storage components provisioned under the subtenant t
 . Select Administration > Subtenants from the menu.
 . Locate the subtenant in the list and click the Delete icon.
 . In the Confirm Delete dialog box, enter the name of the subtenant to be deleted.
-. Click Confirm.
+. Click *Confirm*.

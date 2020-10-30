@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_maintenance.html
-keywords:
-summary:
+keywords: netapp, keystone, maintenance,
+summary: Keystone maintenance
 ---
 
 = Maintenance

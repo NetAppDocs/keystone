@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_service_request_process.html
-keywords:
-summary:
+keywords: netapp, keystone, service, request, process,
+summary: Keystone service request process
 ---
 
 = Service request process

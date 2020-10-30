@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_release_management.html
-keywords:
-summary:
+keywords: netapp, keystone, release, management,
+summary: Keystone release management
 ---
 
 = Release Management

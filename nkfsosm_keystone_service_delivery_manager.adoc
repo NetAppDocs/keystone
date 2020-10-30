@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_keystone_service_delivery_manager.html
-keywords:
-summary:
+keywords: netapp, keystone, service, delivery, manager,
+summary: Keystone service delivery manager
 ---
 
 = Keystone Service Delivery Manager

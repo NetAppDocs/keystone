@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, service, engine, web, portal,
+summary: NetApp service engine web portal overview
 ---
 
 = Overview
@@ -34,7 +34,7 @@ image:sewebiug_image1.png[Error: Missing Graphic Image]
 
 A single NetApp Service Engine instance can support one or more tenants. NetApp Service Engine uses the concepts of tenant and subtenant as hierarchical entities that own or manage the storage service.
 
-A tenant can be a customer, partner, or a billing entity. A tenant holds the subscription (or multiple subscriptions) to the NetApp Keystone storage service. 
+A tenant can be a customer, partner, or a billing entity. A tenant holds the subscription (or multiple subscriptions) to the NetApp Keystone storage service.
 
 A subtenant is an entity wholly within the tenant. It can be used for show back, security separation, and so on.
 

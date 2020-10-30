@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_modify_the_subscribed_service_details.html
-keywords:
-summary:
+keywords: netapp, keystone, modify, subscribed, service, details,
+summary: Keystone modify the subscribed service details
 ---
 
 = Modify the subscribed service details
@@ -42,4 +42,4 @@ Use this method to modify the details of a subscribed service’s details. You c
 . Select Subscribed Services > Subscribed Services from the menu.
 . Locate the subscribed service in the list and click the Edit icon.
 . On the Update Subscribed Service dialog box, make any changes as required.
-. Click Update.
+. Click *Update*.

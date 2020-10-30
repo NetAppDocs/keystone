@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_track_a_service_request.html
-keywords:
-summary:
+keywords: netapp, keystone, track, service, request,
+summary: Keystone track a service request
 ---
 
 = Track a service request

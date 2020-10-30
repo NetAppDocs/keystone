@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, kfs, overview,
+summary: NetApp KFS overview
 ---
 
 = Overview

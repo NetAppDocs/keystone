@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_version_history.html
-keywords:
-summary:
+keywords: netapp, keystone, version, history,
+summary: Keystone version history
 ---
 
 = Version History

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_support_processes.html
-keywords:
-summary:
+keywords: netapp, keystone, support, processes,
+summary: Keystone support processes
 ---
 
 = Support Processes

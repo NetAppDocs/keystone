@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_system_expansion.html
-keywords:
-summary:
+keywords: netapp, keystone, system, expansion,
+summary: Keystone system expansion
 ---
 
 = System Expansion

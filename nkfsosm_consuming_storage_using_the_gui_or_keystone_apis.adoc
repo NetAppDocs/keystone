@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_consuming_storage_using_the_gui_or_keystone_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, consuming, storage, using, GUI, Keystone, APIs,
+summary: Consuming storage using the GUI or Keystone APIs
 ---
 
 = Consuming Storage Using the GUI or Keystone APIs

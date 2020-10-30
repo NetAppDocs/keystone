@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_select_tenant.html
-keywords:
-summary:
+keywords: netapp, keystone select, tenant,
+summary: Keystone select tenant
 ---
 
 = Select tenant

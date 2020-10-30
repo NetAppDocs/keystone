@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html
-keywords:
-summary:
+keywords: netapp, keystone, billing, accounts, subscriptions, services, performance,
+summary: Keystone billing accounts, subscriptions, services, and performance
 ---
 
 = Billing accounts, subscriptions, services, and performance

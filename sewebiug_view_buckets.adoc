@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_view_buckets.html
-keywords:
-summary:
+keywords: netapp, keystone, view, buckets,
+summary: Keystone view buckets
 ---
 
 = View buckets

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_keystone_infrastructure.html
-keywords:
-summary:
+keywords: netapp, keystone, infrastructure,
+summary: Keystone infrastructure
 ---
 
 = Keystone Infrastructure

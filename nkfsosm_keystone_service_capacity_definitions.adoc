@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_keystone_service_capacity_definitions.html
-keywords:
-summary:
+keywords: netapp, keystone, service, capacity, definitions,
+summary: Keystone service capacity definitions
 ---
 
 = Keystone Service Capacity Definitions

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_add_a_subscribed_service.html
-keywords:
-summary:
+keywords: netapp, keystone, add, subscribed, service,
+summary: Keystone add a subscribed service
 ---
 
 = Add a subscribed service
@@ -29,7 +29,7 @@ You need the information about the subscribed services, including credentials to
 === Steps
 
 . Select Subscribed Services > Subscribed Services from the menu.
-. Click Add.
+. Click *Add*.
 . In the Add Subscribed Service dialog box, select the cloud service type and then complete the relevant information for that service type:
 +
 *Azure:*
@@ -51,4 +51,8 @@ Not currently supported
 Not currently supported
 
 . Specify tags for the service if required.
+<<<<<<< HEAD
+. Click *Add*.
+=======
 . Click Create.
+>>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3

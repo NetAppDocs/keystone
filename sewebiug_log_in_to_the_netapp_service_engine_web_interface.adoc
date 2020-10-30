@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_log_in_to_the_netapp_service_engine_web_interface.html
-keywords:
-summary:
+keywords: netapp, keystone, log, in, netapp, service, engine, web, interface,
+summary: Log in to the NetApp service engine web interface
 ---
 
 = Log in to the NetApp Service Engine web interface
@@ -59,7 +59,7 @@ To log in with a user name and password, you need:
 
 . In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
 . Select Local user sign in.
-. On the Log in to NetApp Keystone page, enter your user name and password and click Log In.
+. On the Log in to NetApp Keystone page, enter your user name and password and click *Log In*.
 . After successful login, the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
 
 [NOTE]
@@ -77,7 +77,7 @@ To log in with NetApp SSO, you need:
 
 . In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
 . Select NetApp SSO.
-. On the SSO log- in page, enter your user name and password and click Sign In.
+. On the SSO log- in page, enter your user name and password and click *Sign In*.
 +
 After the successful login the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
 
@@ -85,6 +85,6 @@ After the successful login the NetApp Service Engine web interface loads, open a
 
 ==== Steps
 
-. To log out of the interface, click the user icon and click Sign Out.
+. To log out of the interface, click the user icon and click *Sign Out*.
 
 image:sewebiug_image7.png[Error: Missing Graphic Image]

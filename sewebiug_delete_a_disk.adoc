@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_delete_a_disk.html
-keywords:
-summary:
+keywords: netapp, keystone, delete, disk,
+summary: Keystone delete a disk
 ---
 
 = Delete a disk
@@ -34,7 +34,7 @@ This section describes how to delete a disk.
 +
 image:sewebiug_image30.png[Error: Missing Graphic Image]
 +
-. Click Confirm. This creates a job to delete the disk.
+. Click *Confirm*. This creates a job to delete the disk.
 
 === After you finish
 

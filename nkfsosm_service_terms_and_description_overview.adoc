@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_service_terms_and_description_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, service, terms, description, overview,
+summary: Keystone service terms and description overview
 ---
 
 = Overview

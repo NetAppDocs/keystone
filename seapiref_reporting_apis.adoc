@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_reporting_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, reporting, apis,
+summary: Keystone reporting APIs
 ---
 
 = Reporting APIs

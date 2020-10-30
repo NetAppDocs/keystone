@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_cloud_orchestration_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, cloud, orchestration, apis,
+summary: Keystone cloud orchestration APIs
 ---
 
 = Cloud Orchestration APIs

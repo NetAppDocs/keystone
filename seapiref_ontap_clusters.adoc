@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_ontap_clusters.html
-keywords:
-summary:
+keywords: netapp, keystone, ontap, clusters,
+summary: Keystone ONTAP clusters
 ---
 
 = ONTAP clusters

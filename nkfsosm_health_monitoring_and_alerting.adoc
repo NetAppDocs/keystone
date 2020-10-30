@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_health_monitoring_and_alerting.html
-keywords:
-summary:
+keywords: netapp, keystone, health, monitoring, alerting,
+summary: Health monitoring and alerting
 ---
 
 = Health Monitoring and Alerting

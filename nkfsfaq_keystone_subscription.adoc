@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsfaq_keystone_subscription.html
-keywords:
-summary:
+keywords: netapp, keystone, subscription, subscriptions,
+summary: Keystone Subscription
 ---
 
 = Keystone Subscription

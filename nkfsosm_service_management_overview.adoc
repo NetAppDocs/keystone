@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_service_management_overview.html
-keywords:
-summary:
+keywords: netapp, keystone, service, management, overview,
+summary: Keystone operations overview
 ---
 
 = Overview

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_delete_file_server.html
-keywords:
-summary:
+keywords: netapp, keystone, delete, file, server,
+summary: Keystone delete file server
 ---
 
 = Delete file server
@@ -36,7 +36,7 @@ To delete a file server, you must first delete all shares that exist on the serv
 +
 image:sewebiug_image21.png[Error: Missing Graphic Image]
 +
-. Click Confirm. This creates a job to delete the server.
+. Click *Confirm*. This creates a job to delete the server.
 
 === After you finish
 

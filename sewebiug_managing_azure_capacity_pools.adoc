@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_azure_capacity_pools.html
-keywords:
-summary:
+keywords: netapp, keystone, managing, azure, capacity, pools,
+summary: Keystone managing Azure capacity pools
 ---
 
 = Managing Azure capacity pools
@@ -53,6 +53,15 @@ You will need:
 ==== Steps
 
 . Select Subscribed Services > Azure Capacity Pools from the menu.
+<<<<<<< HEAD
+. Click *Create*.
+. TBA
+. Click *Create*.
+
+=== Modify Azure capacity pool details
+
+Use this method to modify the details of an Azure capacity pool. You can modify the subtenant, ANF account, Azure resource group, pool name, pool service level, size of the pool, and add or remove tags.
+=======
 . Click Create.
 . In the Create Azure Capacity Pool dialog box, specify the Subtenant, the ANF Account, the Service Level, the Name and the size.
 . Add tags to the capacity pool if required.
@@ -62,13 +71,14 @@ You will need:
 === Modify Azure capacity pool details
 
 Use this method to modify an Azure Capacity Pool’s details. You can modify the service level the size of the pool, and you can add or remove tags.
+>>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3
 
 ==== Steps
 
 . Select Subscribed Services > Azure Capacity Pools from the menu.
 . From the list, locate the Azure capacity pool and click the Edit icon.
 . In the Manage Azure Capacity Pool dialog box, make any changes as required.
-. Click Update.
+. Click *Update*.
 
 === Delete an Azure capacity pool
 
@@ -79,4 +89,4 @@ Use this method to delete an Azure capacity pool.
 . Select Subscribed Services > Azure Capacity Pools from the menu.
 . From the list, locate the Azure capacity pool and click the Delete icon.
 . In the Confirm Delete dialog box, enter the name of the Azure capacity pool to be deleted.
-. Click Confirm.
+. Click *Confirm*.

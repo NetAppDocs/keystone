@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_overview_of_netapp_service_engine_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, overview, service, engine, apis,
+summary: Keystone overview of NetApp service engine APIs
 ---
 
 = Overview of NetApp Service Engine APIs

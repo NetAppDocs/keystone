@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_object_storage_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, object, storage, apis,
+summary: Keystone object storage APIs
 ---
 
 = Object storage APIs

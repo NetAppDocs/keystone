@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_consumer_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, consumer, apis,
+summary: Keystone consumer APIs
 ---
 
 = Consumer APIs
@@ -17,5 +17,3 @@ summary:
 //
 // 2020-10-19 09:25:09.013046
 //
-
-

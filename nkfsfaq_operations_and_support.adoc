@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsfaq_operations_and_support.html
-keywords:
-summary:
+keywords: netapp, keystone, operations, support,
+summary: Operations and Support
 ---
 
 = Operations and Support
@@ -92,7 +92,7 @@ a|* *Monthly uptime percentage* of at least *99.999% (five 9s)* during any month
 |Performance SLO
 a|* *Targeted IOPS/TB* at the specified block sizes and configured Volume size, per the related performance level
 |Claims process
-a|* Customer inquiries regarding the SLXs should be *directed to NetApp technical support*, or email xdl-americas-revenue@netapp.com 
+a|* Customer inquiries regarding the SLXs should be *directed to NetApp technical support*, or email xdl-americas-revenue@netapp.com
 |Service credits/remediation
 a|* NetApp will evaluate all claims to determine service credits (if any) to apply against future charges
 |Contractual limitations

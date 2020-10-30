@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_authorization_and_authentication.html
-keywords:
-summary:
+keywords: netapp, keystone, authorization, authentication,
+summary: Keystone authorization and authentication
 ---
 
 = Authorization and authentication

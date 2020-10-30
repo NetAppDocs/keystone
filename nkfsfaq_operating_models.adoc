@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsfaq_operating_models.html
-keywords:
-summary:
+keywords: netapp, keystone, operating, models,
+summary: Operating Models
 ---
 
 = Operating Models

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_service_requests.html
-keywords:
-summary:
+keywords: netapp, keystone, service, requests,
+summary: Keystone managing service requests
 ---
 
 = Managing service requests
@@ -17,5 +17,3 @@ summary:
 //
 // 2020-10-20 10:59:39.991754
 //
-
-

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_users.html
-keywords:
-summary:
+keywords: netapp, keystone, users,
+summary: Keystone users
 ---
 
 = Users

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsfaq_keystone_pricing_and_billing.html
-keywords:
-summary:
+keywords: netapp, keystone, pricing, billing,
+summary: Keystone Pricing and Billing
 ---
 
 = Keystone Pricing and Billing

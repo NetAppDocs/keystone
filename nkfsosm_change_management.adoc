@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_change_management.html
-keywords:
-summary:
+keywords: netapp, keystone, change, management,
+summary: Change management
 ---
 
 = Change Management

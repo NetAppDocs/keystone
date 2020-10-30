@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_vms_@customer-operated@.html
-keywords:
-summary:
+keywords: netapp, keystone, VMs, customer-operated,
+summary: Keystone VMs (customer-operated)
 ---
 
 = VMs (Customer-Operated)

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_remote_access.html
-keywords:
-summary:
+keywords: netapp, keystone, remote, access,
+summary: Keystone remote access
 ---
 
 = Remote Access
