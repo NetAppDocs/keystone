@@ -56,31 +56,18 @@ You will need:
 . Click *Create*.
 . In the Create Azure NetApp Account dialog box, specify the subtenant, the Azure location (region), the Azure resource group, and a name for the Azure NetApp account.
 . If needed, add tags to the account.
-<<<<<<< HEAD
-. Click *Create*.
-=======
-. Click Create. When created successfully, the account state will be Succeeded (can be viewed in the Azure NetApp Accounts list).
->>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3
+. Click *Create*. When created successfully, the account state will be Succeeded (can be viewed in the Azure NetApp Accounts list).
 
 === Modify Azure NetApp account tags
 
-<<<<<<< HEAD
-Use this method to modify the details of an Azure NetApp account. You can modify the subtenant, Azure location, Azure resource group or name of the account, and add or remove tags.
-=======
 Use this method to modify tags associated with an Azure NetApp account.
->>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3
 
 ==== Steps
 
 . Select Subscribed Services > Azure NetApp Accounts from the menu.
 . Locate the Azure NetApp Account in the list and click the Edit icon.
-<<<<<<< HEAD
-. On the Manage Azure NetApp Account dialog box, make any changes as required.
-. Click *Update*.
-=======
 . On the Manage Azure NetApp Account dialog box, add, remove, or edit tags as required.
-. Click Update.
->>>>>>> a2b4609fe5b769f256e32536cb22b0199886b8c3
+. Click *Update*.
 
 === Delete an Azure NetApp account
 

@@ -290,8 +290,6 @@ entries:
             url: /sewebiug_modify_user_details.html
           - title: Delete a user
             url: /sewebiug_delete_a_user.html
-      - title: Working with Cloud Manager
-        url: /sewebiug_working_with_cloud_manager.html
       - title: Managing subscribed services
         entries:
           - title: Overview
