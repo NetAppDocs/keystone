@@ -120,7 +120,7 @@ Snapshots contribute to the consumed capacity of a service.
 
 ==== Backups
 
-Backup refers to taking a copy of an item, replicating it, and storing the copy in a zone other than the original zone ., which has the respective protocol enabled (in case of block storage only) and is non-MetroCluster enabled. NetApp Service Engine offers backups on file and block storage (requires a DP service on the subscription). Backups of shares/disks are stored in the backup zone on the lowest cost performance tier (that is Standard) on subscription.
+Backup refers to taking a copy of an item, replicating it, and storing the copy in a zone other than the original zone, which has the respective protocol enabled (in case of block storage only) and is non-MetroCluster enabled. NetApp Service Engine offers backups on file and block storage (requires a DP service on the subscription). Backups of shares/disks are stored in the backup zone on the lowest cost performance tier (that is Standard) on subscription.
 
 Backups can be configured at the time of creation of a new share/disk or later added to an existing share/disk.
 

@@ -44,6 +44,7 @@ This section describes how to add an Azure volume.
 ==== Before you begin
 
 You will need:
+
 * The subtenant to which the Azure Volume belongs
 *	The ANF Account
 *	Azure Virtual Network (VNet) and Subnet

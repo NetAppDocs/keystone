@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_cloud_orchestration_apis.html
-keywords: netapp, keystone, cloud, orchestration, apis,
-summary: Keystone cloud orchestration APIs
+keywords:
+summary:
 ---
 
 = Cloud Orchestration APIs
@@ -23,17 +23,12 @@ The Cloud Orchestration APIs NetApp Service Engine support connecting Cloud Volu
 
 Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
 
-NetApp Service Engine supports the following:
-
-* Ability to register OnCommand Cloud Manager (OCCM) instances through NetApp Service Engine (a NetApp Administrator function)
-* Ability to provision/edit CVS volumes (includes the ability to take snapshots)
-* Ability to backup data to a CVS zone
-* Ability to see CVS volumes in NSE inventory
-* Ability to see CVS usage.This section describes the APIs for:
+This section describes the APIs for:
 
 * Managing Azure NetApp Files instances
 * Managing Azure NetApp Files accounts
 * Managing Azure NetApp Files capacity pools
+* Managing Azure NetApp Files Volumes
 
 === Azure NetApp Files instances
 
@@ -146,49 +141,59 @@ none
 
 ....
 {
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "total_records": 10,
-    "limit": 20,
-    "offset": 0,
-    "sort_by": "created",
-    "order_by": "desc",
-    "records": [
-      {
-        "id": "5d2fb0fb4f47df00015274e3",
-        "name": "string",
-        "cc_working_env": "my-working-env",
-        "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC",
-        "cc_refresh_token": "y1tMw3lNzE8JL9jtiE29oSRxOAzYu0cdnwS_2XhjQBr9G",
-        "cc_account_id": "account-335jdf32",
-        "cc_account_name": "my-account-name",
-        "cc_credentials_id": "d336c449-aeb8-4bb3-af28-5b886c40dd00",
-        "azure_client_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
-        "azure_client_secret": "NMubGVcDqkwwGnCs6fa01tqlkTisfUd4pBBYgcxxx=",
-        "azure_tenant_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
-        "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b607790910",
-        "state": "Operational",
-        "tenant": "Acme",
-        "tenant_id": "5d2fb0fb4f47df00015274e3",
-        "subtenant": "Default Subtenant",
-        "subtenant_id": "5d2fb0fb4f47df00015274e3",
-        "tags": [
-          {
-            "key": "env",
-            "value": "test"
-          }
-        ],
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z"
-      }
-    ]
+    "status": {
+      "user_message": "Okay. Returned 1 record.",
+      "verbose_message": "",
+      "code": 200
+    },
+    "result": {
+      "returned_records": 1,
+      "records": [
+        {
+          "id": "5f8742c615bd300001348664",
+          "name": "ANFinstance1",
+          "cc_working_env": "my-working-env",
+          "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXVVC",
+          "cc_refresh_token": "y1tNIrwNzE8JL9jtiE29oSRxOBpNM0cdnwS_2XhjBBr9G",
+          "cc_account_id": "account-myaccount",
+          "cc_account_name": "existing-account-name",
+          "cc_credentials_id": "",
+          "azure_client_id": "d336c449-aeb8-4bb3-af28-5b886c40ddbb",
+          "azure_client_secret": "UwdTj07CKoau5ELSg.efN0~g4QX9E_qVVV",
+          "azure_tenant_id": "e8256bbc-dd2e-478d-9fe4-30a448eaaaaa",
+          "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b6077909101abcdqqqqqq",
+          "state": "Operational",
+          "status": "",
+          "tenant": "Ferrari",
+          "tenant_id": "5f594827f43c170001c53ebb",
+          "subtenant": "FerrariSubtenant1",
+          "subtenant_id": "5f594827f43c170001c53ebc",
+          "tags": [
+            {
+              "key": "key2",
+              "value": "Value 2"
+            },
+            {
+              "key": "key3",
+              "value": "Value 3"
+            },
+            {
+              "key": "keyN",
+              "value": "Value N"
+            },
+            {
+              "key": "key1",
+              "value": "Value 1"
+            }
+          ],
+          "created": "2020-10-12T08:59:07.304Z",
+          "updated": "2020-10-12T08:59:07.304Z",
+          "job_tasks": null,
+          "jobs": null
+        }
+      ]
+    }
   }
-}
 ....
 
 ==== Retrieve Azure NetApp Files instance by ID
@@ -215,44 +220,58 @@ none
 *Response body example:*
 
 ....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 0,
-    "records": [
-      {
-        "id": "5d2fb0fb4f47df00015274e3",
-        "name": "string",
-        "cc_working_env": "my-working-env",
-        "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC",
-        "cc_refresh_token": "y1tMw3lNzE8JL9jtiE29oSRxOAzYu0cdnwS_2XhjQBr9G",
-        "cc_account_id": "account-335jdf32",
-        "cc_account_name": "my-account-name",
-        "cc_credentials_id": "d336c449-aeb8-4bb3-af28-5b886c40dd00",
-        "azure_client_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
-        "azure_client_secret": "NMubGVcDqkwwGnCs6fa01tqlkTisfUd4pBBYgcxxx=",
-        "azure_tenant_id": "53ba6f2b-6d52-4f5c-8ae0-7adc20808854",
-        "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b607790910",
-        "state": "Operational",
-        "tenant": "Acme",
-        "tenant_id": "5d2fb0fb4f47df00015274e3",
-        "subtenant": "Default Subtenant",
-        "subtenant_id": "5d2fb0fb4f47df00015274e3",
-        "tags": [
-          {
-            "key": "env",
-            "value": "test"
-          }
-        ],
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z"
-      }
-    ]
-  }
+"status": {
+  "user_message": "Okay. Returned 1 record.",
+  "verbose_message": "",
+  "code": 200
+},
+"result": {
+  "returned_records": 1,
+  "records": [
+    {
+      "id": "5f8742c615bd300001348664",
+      "name": "ANFinstance1",
+      "cc_working_env": "my-working-env",
+      "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXVVC",
+      "cc_refresh_token": "y1tNIrwNzE8JL9jtiE29oSRxOBpNM0cdnwS_2XhjBBr9G",
+      "cc_account_id": "account-myaccount",
+      "cc_account_name": "existing-account-name",
+      "cc_credentials_id": "",
+      "azure_client_id": "d336c449-aeb8-4bb3-af28-5b886c40ddbb",
+      "azure_client_secret": "UwdTj07CKoau5ELSg.efN0~g4QX9E_qVVV",
+      "azure_tenant_id": "e8256bbc-dd2e-478d-9fe4-30a448eaaaaa",
+      "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b6077909101abcdqqqqqq",
+      "state": "Operational",
+      "status": "",
+      "tenant": "Ferrari",
+      "tenant_id": "5f594827f43c170001c53ebb",
+      "subtenant": "FerrariSubtenant1",
+      "subtenant_id": "5f594827f43c170001c53ebc",
+      "tags": [
+        {
+          "key": "key2",
+          "value": "Value 2"
+        },
+        {
+          "key": "key3",
+          "value": "Value 3"
+        },
+        {
+          "key": "keyN",
+          "value": "Value N"
+        },
+        {
+          "key": "key1",
+          "value": "Value 1"
+        }
+      ],
+      "created": "2020-10-12T08:59:07.304Z",
+      "updated": "2020-10-12T08:59:07.304Z",
+      "job_tasks": null,
+      "jobs": null
+    }
+  ]
+}
 }
 ....
 
@@ -269,7 +288,7 @@ Use the method listed in the following table to create a new Azure NetApp Files 
 |None
 |===
 
-Required request body attributes: `name, cc_working_env, cc_client_id, cc_refresh_token, cc_account_id, cc_account_name, cc_credentials_id, azure_client_id, azure_client_secret, azure_tenant_id, azure_subscription_id, subtenant_id`
+Required request body attributes: `name, cc_working_env, cc_client_id, cc_refresh_token, cc_account_id, cc_account_name, azure_client_id, azure_client_secret, azure_tenant_id, azure_subscription_id, subtenant_id`
 
 *Request body example:*
 ....
@@ -322,6 +341,50 @@ Required request body attributes: `name, cc_working_env, cc_client_id, cc_refres
     ]
   }
 }
+....
+
+==== Manage tags for Azure NetApp Files instances
+
+Use the method listed in Table 7 to specify tags for the named Azure NetApp Files instance.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`POST`
+|`/v2.1/anf/instances/{id}/tags`
+|Manage tags for an Azure NetApp Files instance.
+|`id (string)``: The unique identifier of the Azure NetApp Files instance.
+|===
+
+Required request body attributes: `key-value pairs`
+
+*Request body example:*
+....
+{
+  "env": "test"
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "key": "env",
+        "value": "test"
+      }
+    ]
+  }
+}
+
 ....
 
 === Azure NetApp Files accounts
@@ -1016,7 +1079,7 @@ Use the method listed in the following table to create a new Azure NetApp Files 
 |None
 |===
 
-Required request body attributes: `name, resource_group, subtenant_id, anf_account_name, anf_pool_name, location, file_path, quota_size, subNetID`
+Required request body attributes: `name, resource_group, subtenant_id, anf_account_name, anf_pool_name, virtual_network, location, file_path, quota_size, subNetID`
 
 *Request body example:*
 
@@ -1027,10 +1090,14 @@ Required request body attributes: `name, resource_group, subtenant_id, anf_accou
   "subtenant_id": "5d2fb0fb4f47df00015274e3",
   "anf_account_name": "myaccount",
   "anf_pool_name": "myaccount",
+  "virtual_network": "anf-vnet",
   "location": "string",
   "file_path": "myVolume",
   "quota_size": 100,
   "subNetId": "string",
+  "protocol_types": [
+    "string"
+  ],
   "tags": {
     "key1": "Value 1",
     "key2": "Value 2",

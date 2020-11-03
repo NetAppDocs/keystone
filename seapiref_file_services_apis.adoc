@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_file_services_apis.html
-keywords: netapp, keystone, file, services, apis,
-summary: Keystone file services APIs
+keywords:
+summary:
 ---
 
 = File services APIs
@@ -411,6 +411,10 @@ Required request body attributes: `none`
 ==== Delete a file server
 
 Use the method listed in the following table to delete a file server.
+
+[NOTE]
+
+After deleting CIFS-enabled file servers, the Active Directory computer object remains. Ask your Active Directory admin to manually remove the computer object for the deleted file server from Active Directory.
 
 |===
 |HTTP Method |Path |Description |Parameters
