@@ -345,7 +345,7 @@ Required request body attributes: `name, cc_working_env, cc_client_id, cc_refres
 
 ==== Manage tags for Azure NetApp Files instances
 
-Use the method listed in Table 7 to specify tags for the named Azure NetApp Files instance.
+Use the method listed in the following table to specify tags for the named Azure NetApp Files instance.
 
 |===
 |HTTP Method |Path |Description |Parameters
