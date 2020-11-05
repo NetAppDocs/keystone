@@ -107,6 +107,12 @@ entries:
         url: /nkfsosm_where_to_find_additional_information.html
       - title: Version History
         url: /nkfsosm_version_history.html
+  - title: Release Notes
+    entries:
+      - title: What's new
+        url: /rn_whats_new.html
+      - title: Known issues
+        url: /rn_known_issues.html
   - title: Keystone Flex Subscription FAQ
     url: /nkfsfaq_overview.html
     entries:

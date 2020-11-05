@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: rn_known_issues.html
+keywords: netapp, keystone, release notes, known issues
+summary: known issues in NetApp Service Engine
+---
+
+= Known issues in NetApp Service Engine
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-11-05
+//
+
+[.lead]
+The following known issue has been introduced in this release of NetApp Service Engine.
+
+== Limitations in synchronous data protection
+
+There is an issue where the VLANs, IPspaces, and Broadcast domains are not defined on the secondary partner of an MetroCluster cluster. This issue can affect recovery of data from the replica zone.
+
+*Workaround*
+
+Place a Service Request for GSSC to perform a manual network configuration on the partner cluster. The network configuration can be done in advance if the network components (VLAN, IPspace, and Broadcast domains) are known.
