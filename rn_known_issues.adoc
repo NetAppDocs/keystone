@@ -19,7 +19,7 @@ summary: known issues in NetApp Service Engine
 //
 
 [.lead]
-The following known issue has been introduced in this release of NetApp Service Engine.
+The following known issue has been reported in this release of NetApp Service Engine.
 
 == Limitations in synchronous data protection
 

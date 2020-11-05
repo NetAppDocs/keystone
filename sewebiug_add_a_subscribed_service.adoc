@@ -21,7 +21,7 @@ summary: Keystone add a subscribed service
 [.lead]
 This section describes how to add a subscribed service.
 
-NetApp Service Engine can currently support Azure NetApp Files with future support planned for Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+NetApp Service Engine supports Azure NetApp Files.
 
 === Before you begin
 You need the information about the subscribed services, including credentials to connect to the service. The information varies with the subscribed service type.
@@ -38,17 +38,6 @@ You need the information about the subscribed services, including credentials to
 .. Enter a name for the OCCM Working Environment that will be created for the service.
 .. Enter the Azure Directory (tenant) id, the Azure Client ID, Azure Client Secret and the Name of the subscribed service.
 +
-*Azure US Government*
-+
-Not currently supported
-+
-*GCP Google Cloud Platform*
-+
-Not currently supported
-+
-*AWS Amazon Web Services*
-+
-Not currently supported
 
 . Specify tags for the service if required.
 . Click *Create*.
