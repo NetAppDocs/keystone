@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: sewebiug_getting_started_overview.html
+keywords: netapp, keystone, getting, started, overview,
+summary: Keystone getting started overview
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.019319
+//
+
+[.lead]
+This section describes how to get started by using the NetApp Service Engine portal. It includes:
+
+* Log in to the NetApp Service Engine web interface:
+** Log in with a user name and password
+** Log in with NetApp SSO
+** Log out of the NetApp Service Engine web interface
+* Select tenant
+* NetApp Service Engine web interface overview

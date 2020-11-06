@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: sewebiug_modify_host_group_initiators.html
+keywords: netapp, keystone, modify, host, group, initiators,
+summary: Keystone modify host group initiators
+---
+
+= Modify host group initiators
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.471811
+//
+
+[.lead]
+You can modify a host group to add, remove or amend initiators.
+
+Modifying a host group will modify access for each disk mapped to the host group.
+
+You cannot modify the alias of an initiator. To change the alias, delete the initiator from the group and then re-create it.
+
+=== Steps
+
+. Display the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
+. Locate the host group in the list and click the Edit icon for that host group.
++
+To modify an existing initiator, locate the initiator in the list, edit the initiator value and click *Update*.
++
+To add an initiator:
+
+.. click *Add Initiator*.
+.. Specify the Alias and Initiator.
+.. Click *Create*.
++
+To remove an initiator from the host group, locate the initiator in the list and click the Delete icon.
+
+. Click *Done*.

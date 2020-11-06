@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_adhoc_snapshot_of_a_file_share.html
+keywords: netapp, keystone, create, adhoc, snapshot, file, share,
+summary: Keystone create adhoc snapshot of a file share
+---
+
+= Create adhoc snapshot of a file share
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.374015
+//
+
+[.lead]
+This section describes how to create an adhoc snapshot of a file share.
+
+=== Steps
+
+. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. Locate the share in the list and click the Snapshot icon for that share. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
+. In the Create Snapshot dialog, enter a name for your snapshot and click *Create*.
+
+=== After you finish
+
+The snapshot can take a few minutes to become available.

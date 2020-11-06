@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: index.html
+keywords: netapp, keystone, service, offering,
+summary: Welcome to the Keystone documentation portal.
+---
+
+= Documentation for the NetApp Keystone service offering
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+This site contains the documentation for the NetApp Keystone service offering.

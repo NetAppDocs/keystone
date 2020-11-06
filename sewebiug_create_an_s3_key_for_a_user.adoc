@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_an_s3_key_for_a_user.html
+keywords: netapp, keystone, create, S3, key, user,
+summary: Keystone create an S3 key for a user
+---
+
+= Create an S3 key for a user
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.838769
+//
+
+[.lead]
+Use this method to create an S3 key for a user.
+
+Make sure that you capture the key immediately after it is created. There is no way to retrieve key details after it has been created.
+
+=== Steps
+
+. Display the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
+. Make sure the correct subtenant is selected and the display is showing users (not groups).
+. Locate the user in the list and click the Key icon for that group.
++
+For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
+
+. The Manage S3 Keys dialog box displays showing the list of keys for the user.
+. If there are no existing keys for the user, click *Create S3 Key* to display the fields to create a key.
+. If you want the key to expire, specify the expiry date and expiry time in UTC. Otherwise, leave the default values for these fields.
+. To create the key, click the checkmark. The S3 Key Details dialog box is displayed showing the access key and secret key.
+. Copy both the access and secret key in preparation of advising the user of the details.
++
+Make sure that you capture the key details before closing the S3 Key Details dialog box. After closed, the key details will be obscured and you will not be able to retrieve them.
+
+. Click *Close*.
+. Click *Close* again to close the Manage S3 Keys dialog.

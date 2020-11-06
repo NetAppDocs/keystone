@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_health_monitoring_and_alerting.html
+keywords: netapp, keystone, health, monitoring, alerting,
+summary: Health monitoring and alerting
+---
+
+= Health Monitoring and Alerting
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.810181
+//
+
+[.lead]
+NetApp GSSC performs a series of health checks on a daily basis and also have alerts and notifications, which immediately trigger email notifications. Below are some of the activities performed by NetApp GSSC team:
+
+* Health checks of the infrastructure executed daily, covering configuration, availability, performance and capacity. Health checks also encompasses switches, controllers, firewalls and storage.
+* Verify software and firmware information to ensure latest patches are applied.
+* Perform a quarterly audit of the configuration settings and compare it against the service baseline.
+
+All storage systems must have NetApp Active IQ enabled and other monitoring tools deployed, controls in place to ensure the environment does not exceed the recommended operating capacity requirements and ensure performance thresholds are set to maintain SLAs. The monitoring solution also has the capability to notify the NetApp GSSC team of a failure of any physical component through OpsRamp, which triggers email alerts to NetApp GSSC team.

@@ -1,0 +1,58 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_a_disk_from_a_snapshot.html
+keywords: netapp, keystone, create, disk, snapshot,
+summary: Keystone create a disk from a snapshot
+---
+
+= Create a disk from a snapshot
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.581938
+//
+
+[.lead]
+This section describes how to create a new disk from a snapshot. The process can use an existing snapshot or can create an immediate adhoc snapshot that will be used for the cloning operation. For information about:
+
+* How to create a new disk directly (see link:sewebiug_create_a_new_disk.html#create-a-new-disk[Create a new disk])
+* Snapshots (see link:sewebiug_view_disks.html#[Create a disk from a snapshot])
+
+=== Steps
+
+. Display the Disks list (link:sewebiug_view_disks.html#view-disks[View disks]).
+. To create the disk from a snapshot, you can either:
+.. Click *Create Disk*, select Clone from snapshot, and then go to step 3; or
++
+image:sewebiug_image29.png[Error: Missing Graphic Image]
++
+.. Locate the disk in the list, click the Create disk from the snapshot icon and then go to step 4.
+. Select the disk containing the snapshot to clone by selecting checkbox in the Select column, then click *Next*.
++
+[NOTE]
+Filter the list by region, zone, and subtenant to quickly locate the disk in the list.
+
++
+. To use an existing snapshot, select the snapshot to clone; you can filter the list by schedule type or search for the snapshot by name (partial matches accepted).
++
+[NOTE]
+To create a new snapshot, do not select a snapshot.
+
++
+. Click *Next*.
+. If the disk has no snapshot, a snapshot will be created as you proceed. Enter the new disk name and disk path and select an operating system type.
+. Review the other selections that are inherited from the snapshot and select or amend as required. For field descriptions, see link:sewebiug_create_a_new_disk.html#create-a-new-disk[Create a new disk]).
+. Click *Create*. This creates a job to create the clone with the specified settings.
+
+=== After you finish
+
+Create disk is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+
+* Check the status of the job in the jobs list.
+* After the job is finished, check the status of the disk in the Disks list.

@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_an_adhoc_snapshot_of_a_disk.html
+keywords: netapp, keystone, create, adhoc, snapshot, disk
+summary: Keystone create an adhoc snapshot of a disk
+---
+
+= Create an adhoc snapshot of a disk
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.647338
+//
+
+[.lead]
+This section describes how to create an adhoc snapshot of a disk.
+
+=== Steps
+
+. Display the link:sewebiug_view_disks.html#view-disks[Disks list].
+. Locate the disk in the list and click the Snapshot icon for that disk. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview#list-view[List view actions]).
+. In the Create Snapshot dialog box, enter a name for your snapshot and click *Create*.
+
+=== After you finish
+
+The snapshot might take a few minutes to become available.

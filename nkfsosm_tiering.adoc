@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_tiering.html
+keywords: netapp, keystone, tiering,
+summary: Keystone tiering
+---
+
+= Tiering
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.062540
+//
+
+[.lead]
+NetApp KFS service includes a tiering capability that identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed on-premises by NetApp.
+
+The add-on tiering capability is available only with Extreme and Premium service tiers. NetApp assumes 25% of data is hot and 75% is less frequently used and can be moved to a cold storage.

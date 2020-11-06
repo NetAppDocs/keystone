@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: sewebiug_working_with_file_services_overview.html
+keywords: netapp, keystone, working, file, services, overview,
+summary: Keystone working with file services overview
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.139229
+//
+
+[.lead]
+This section describes how to manage your file servers and NFS/CIFS file shares. You can view information about your file servers and share, create, modify,  and delete them.

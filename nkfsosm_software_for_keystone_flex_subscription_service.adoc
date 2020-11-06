@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_software_for_keystone_flex_subscription_service.html
+keywords: netapp, keystone,  software, flex, subscription, service,
+summary: Software for keystone flex subscription service
+---
+
+= Software for Keystone Flex Subscription Service
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.254058
+//
+
+[.lead]
+The below table lists the software components KFS service.
+
+|===
+|Software |Description
+
+|NetApp Service Engine
+|NetApp Service Engine is the orchestration application that allows customers to automate provisioning, service level monitoring, and reporting.
+|Active IQ Unified Manager
+|Active IQ Unified Manager enables NetApp to monitor health and performance of ONTAP storage systems.
+|OpsRamp
+|OpsRamp enables remote monitoring, operations, management, and support of the on-premises Keystone system.
+|===

@@ -1,0 +1,379 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_detailed_roles_and_responsibilities_in_various_operational_models.html
+keywords: netapp, keystone, detailed, roles, responsibilities, operational, models,
+summary: Detailed roles and responsibilities in various operational models
+---
+
+= Detailed Roles and Responsibilities in Various Operational Models
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.095803
+//
+
+[.lead]
+This section defines the roles and responsibilities of NetApp, partners, and customers in each of the operating models.
+
+=== NetApp-Operated Keystone Flex Subscription Service
+
+This section details the customer’s responsibilities, NetApp’s responsibilities, the terms and conditions, and the service and support SLAs and SLOs in the NetApp-operated KFS service.
+
+==== Customer Responsibilities
+
+The customer is responsible for the following activities:
+
+* At its own expense, the customer is to prepare the site for installation of the KFS service.
+* Cooperate and coordinate the installation, deployment, and deinstallation of the Keystone services, including:
+** Provide the necessary power, cooling, space, and network connectivity virtual machine (VM) compute, storage, management network, and cabling to storage controllers required to support the KFS service.
+** Access and authorize as needed for NetApp to complete the installation and deinstallation and to enable the service readiness for the customer to consume.
+* Provide responses, approvals, and feedback in relation to the KFS service in a timely manner and in a timeframe that enables NetApp to meet its commitments.
+* Provide all the reasonably necessary facilities and arrangements (other than the supported environment) to enable NetApp to perform the installation services, which might include office and desktop facilities that enable access to the supported environment, email, and internet access in accordance with the customer’s policies for its own employees, power, network connections, floor space, air-conditioning and cooling, other utilities, and remote access facilities for the provision of out-of-hours services.
+* Ensure that the data canter services at the designated service locations are provided such that the Keystone service comprising the supported environment are provided with rack space, adequate power, ventilation, cooling in order that NetApp can provide the services. The customer will also provide data center security services that provides a secure environment in order that NetApp can enable the Keystone service.
+* Assign system administrators and operators as reasonably required by NetApp.
+* Provide the necessary security arrangements to allow NetApp personnel access, and the ability to enter and leave the service locations and other customer sites, including laptop personal computers, subject to compliance with the customer’s policies.
+* Ensure that any customer-supplied, non-NetApp infrastructure and/or non-NetApp software necessary to perform the KFS services, as identified by NetApp personnel, has been installed and is maintained. The customer shall obtain any and all permissions and/or licenses from the third parties necessary for NetApp personnel to successfully enable the service.
+* Ensure that NetApp is kept apprised of key technology decisions and/or customer strategies that might impact the supported environment.
+* If there be a need to rely on electronic/network transfer of data, the customer will provision and enable any network components or services required to facilitate such data transfer.
+* Ensure that NetApp has access to the customer’s service management systems and processes required by NetApp to deliver KFS services.
+
+==== NetApp Responsibilities
+
+NetApp is responsible for the following activities:
+
+* At its own expense, NetApp is to install KFS at a location identified by the customer.
+* The NetApp Service Delivery team will cooperate and coordinate with a customer-identified team to provide the following Keystone services:
+** The necessary project plan and detailed installation instructions to support the KFS service.
+* Provide the deployment and installation requirements that can be reviewed by the customer’s technical team:
+** Provide responses, approvals, and feedback in relation to the KFS service in a timely manner, and in a timeframe, that enables NetApp to meet its commitments.
+* Provide detailed rack and system deployment information to be approved by the customer before the installation.
+* Provide capacity and health monitoring information to the customer as needed or on a mutually identified cadence.
+* Work with the customer-identified technical team to enable any critical updates as needed to support the hardware and software configurations to provide KFS service.
+* 24/7 customer support to Keystone service.
+* The upkeep and maintenance of the systems under KFS.
+* Work with the customer’s technical team every quarter to evaluate software upgrades and maintenance updates needed and collaborate accordingly.
+* Align with the customer’s change management process to upgrade, system downtime for regular maintenance, and other critical updates as needed.
+* Send the billing invoice every month to the customer.
+
+==== Terms and Conditions in a NetApp-Operated Keystone Flex Subscription Service
+
+The following terms and conditions apply to the NetApp-operated KFS service:
+
+* Service cancellation: greater than 90 calendar days prior to term end
+* Keystone and non-Keystone NetApp ONTAP systems can be part of same cluster for initial data migration only and up to 90 days.
+* Two-node cluster provided in a switchless configuration only
+* Customer may not perform the following activities:
+** Modify ONTAP version or access the CLI
+** Add or remove NICs or alter the hardware in any manner
+** Remove NetApp’s physical or logical access to the controller’s management ports
+** Remove NetApp’s ability to monitor consumption or health
+* Customer to inform KSM prior to:
+** Shutting down Keystone equipment
+** Modifying any cabling to Keystone equipment
+** Moving or relocating Keystone equipment
+* The customer is solely responsible for the conversion and migration of data to the Keystone system.
+* The customer is solely responsible for deletion and wiping of data from Keystone system upon cancelation and return of system.
+
+==== Service SLOs and SLAs in a NetApp-Partner Operated Model
+
+The table below lists the service SLOs and SLAs in a NetApp-partner operated model.
+
+|===
+| |SLO |SLA
+
+|Service availability
+|–
+|99.999%
+|Data durability
+|–
+|99.9999999%
+|Performance level
+|–
+|Per performance level
+|===
+
+==== Support SLOs in a NetApp-Partner Operated Model
+
+In a KFS NetApp- or partner-operated model, the SupportEdge Expert level is leveraged and the following SLAs are offered:
+
+* Availability (99.999%)
+* Performance (as defined by the performance service levels)
+* Incident response time (elapsed time between the receipt of a call regarding, or alert for an incident and acknowledgement by a member of the Keystone team)
+* Restoration of service time (when data access is made available to customer after an incident)
+
+|===
+|Severity |Response Time |Restoration of Service Time
+
+|1
+|30 minutes
+|2 hours
+|2
+|1 hour
+|4 hours
+|3
+|2 hours
+|8 hours
+|4
+|4 hours
+|Next business day
+|===
+
+[NOTE]
+For information about the Support Edge Expert, see https://www.netapp.com/us/media/supportedge-expert-service.pdf[SupportEdge Expert Product Description^].
+
+=== Customer-Operated Keystone Flex Subscription Service
+
+This section details the customer’s responsibilities, NetApp’s responsibilities, the terms and conditions, and the service and support SLAs and SLOs in the customer-operated KFS service.
+
+==== Customer Responsibilities
+
+The customer is responsible for the following activities:
+
+* At its own expense, the customer is to prepare the site for installation of the KFS service.
+* Cooperate and coordinate the installation, deployment, and deinstallation of the Keystone services, including:
+** Provide the necessary power, cooling, space, and network connectivity VM compute, storage, management network, and cabling to storage controllers required to support the KFS service.
+** Access and authorize as needed for NetApp to complete the installation and deinstallation and to enable the service readiness for the customer to consume.
+* Clear the invoice within 10 days of monthly billing.
+
+==== NetApp Responsibilities
+
+NetApp is responsible for the following activities:
+
+* At its own expense, NetApp is to install KFS at a location identified by the customer.
+* The NetApp Service Delivery team will cooperate and coordinate with a customer-identified team to provide the following Keystone services:
+** The necessary project plan and detailed installation instructions to support the KFS service.
+* Provide deployment and installation requirements that can be reviewed by the customer’s technical team.
+* Send the billing invoice every month to the customer.
+
+==== Terms and Conditions in Customer-Operated Keystone Flex Subscription Service
+
+The following terms and conditions apply to the customer-operated KFS service:
+
+* Service cancellation: greater than 90 calendar days prior to term end
+* Keystone and non-Keystone NetApp ONTAP systems can be part of same cluster for initial data migration only and up to 90 days.
+* Two-node cluster provided in a switchless configuration only
+* Customer may not perform the following activities:
+** Remove NetApp’s physical or *logical access to the controller’s management ports*
+** Remove NetApp’s ability to monitor consumption or health
+* Customer to inform KSM prior to:
+** Shutting down Keystone equipment
+** Modifying any cabling to Keystone equipment
+** Moving or relocating Keystone equipment
+* 20% burst capacity provided at same rate as the committed capacity
+* Customer to apply purchased performance quality-of-service (QoS) levels to each volume.
+* The customer is solely responsible for the conversion and migration of *data to the Keystone system*.
+* The customer is solely responsible for deletion and wiping of data from Keystone system upon cancelation and return of system.
+
+==== Service SLOs and SLAs in a Customer-Partner Operated Model
+
+The below table lists the service SLOs and SLAs in a customer-partner operated model.
+
+|===
+| |SLO |SLA
+
+|Service availability
+|99.999%
+|–
+|Data durability
+|–
+|99.9999999%
+|Performance level
+|Per performance level
+|–
+|===
+
+==== Support SLOs in a Customer-Operated Model
+
+In a KFS NetApp- or customer-operated model, the SupportEdge Advisor support level is leveraged and the following SLOs are offered:
+
+* Availability (99.999%)
+* Incident response time (elapsed time between the receipt of a call regarding, or alert for an incident and acknowledgement by a member of the Keystone team)
+* Restoration of service time (when data access is made available to customer after an incident)
+
+|===
+|Severity |Response Time |Restoration of Service Time
+
+|1
+|30 minutes
+|2 hours
+|2
+|1 hour
+|4 hours
+|3
+|2 hours
+|8 hours
+|4
+|4 hours
+|Next business day
+|===
+
+[NOTE]
+Please refer to https://www.netapp.com/us/media/supportedge-advisor-service.pdf[https://www.netapp.com/us/media/supportedge-advisor-service.pdf^] for more details on the support levels provided in customer operated model
+
+=== Roles and Responsibilities Summary
+
+The following list summarizes the roles and responsibilities:
+
+* NetApp will deliver, install, configure, and enable the applicable service (including applicable version of NetApp Service Engine at a customer-designated data center or a CoLo. NetApp will be responsible for the deinstallation at the end of the contract term or if the customer chooses to terminate the contract sooner.
+* Interfacing with other IT service providers: NetApp shall provide reasonable cooperation with the customer’s IT service providers or their technical team.
+* Performance of the NetApp-operated services includes, without limitation, NetApp assuming the responsibilities listed in the below table as reasonably applicable to the supported environment.
+
+*Service Selection*
+|===
+|Responsibilities |Customer-Operated |NetApp-Operated
+
+|Capacity
+|Customer
+|Customer
+|Performance levels
+|Customer
+|Customer
+|Data protection
+|Customer
+|Customer
+|Operation model
+|Customer
+|Customer
+|===
+
+*Service Architecture*
+|===
+|Responsibilities |Customer-Operated |NetApp-Operated
+
+|Design
+|NetApp
+|NetApp
+|Bill of Materials (BoM)
+|NetApp
+|NetApp
+|===
+*Equipment Ownership*
+|===
+|Responsibilities |Customer-Operated |NetApp-Operated
+
+|Data plane
+|NetApp
+|NetApp
+|Control plane
+|Customer
+|NetApp
+|===
+*On-Premises Facilities*
+|===
+|Responsibilities |Customer-Operated |NetApp-Operated
+
+|Floor space
+|Customer
+|Customer
+|Racks
+|Customer
+|Customer
+|PDUs
+|Customer
+|Customer
+|Power
+|Customer
+|Customer
+|Cooling
+|Customer
+|Customer
+|Power cables device to PDUs
+|NetApp
+|NetApp
+|Keystone device port transceivers
+|NetApp
+|NetApp
+|Customer device port transceivers
+|Customer
+|Customer
+|Customer network to the Keystone device port cables
+|Customer
+|Customer
+|Internet connectivity
+|Customer
+|Customer
+|Deployment
+|Data plane stack
+|NetApp
+|NetApp
+|Control plane stack
+|n/a
+|NetApp
+|Shipping
+|NetApp
+|NetApp
+|Racking
+|NetApp
+|NetApp
+|Cabling
+|NetApp
+|NetApp
+|Keystone S/W NetApp Service Engine
+|NetApp
+|NetApp
+|Keystone additions and updates
+|NetApp
+|NetApp
+|Deinstallation
+|NetApp
+Customer (if prior to term end)
+|NetApp
+Customer (if prior to term end)
+|Support
+|Customer support
+|NetApp
+|NetApp
+|Keystone Service Delivery Manager (KSDM)
+|NetApp
+|NetApp
+|KSM
+|NetApp
+|NetApp
+|Maintenance
+|Data plane equipment
+|NetApp
+|NetApp
+|Control plane equipment
+|Customer
+|NetApp
+|Updates
+|Hardware
+|NetApp
+|NetApp
+|Operating system, firmware
+|NetApp
+|NetApp
+|Software
+|NetApp
+|NetApp
+|Capacity or performance
+|NetApp
+|NetApp
+|Operations
+|Provisioning
+|Customer
+(via controller operating system and tools)
+|Customer
+(via Keystone service GUI and Keystone service APIs)
+|Configuring a QoS policy to each Volume
+|Customer
+|NetApp
+|Monitoring (consumption)
+|NetApp
+|NetApp
+|Monitoring (health, availability, capacity, and performance)
+|Customer and NetApp
+|NetApp
+|Management (health, availability, capacity, and performance)
+|Customer
+|NetApp
+|Governance
+|Customer and NetApp
+|Customer and NetApp
+|===

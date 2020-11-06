@@ -1,0 +1,1285 @@
+---
+sidebar: sidebar
+permalink: seapiref_file_services_apis.html
+keywords:
+summary:
+---
+
+= File services APIs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:09.559170
+//
+
+[.lead]
+This section describes the APIs required to manage your file servers and file shares.
+
+Before you create the file shares that will be housed on the file server, you must create a file server.
+
+The file service APIs are grouped as follows:
+
+* APIs for managing file servers (including creating file server tags)
+* APIs for managing File share (including creating and deleting file share snapshots and creating file share tags)
+
+=== File server APIs
+
+Use the methods listed in the following table to retrieve, create, modify, and delete file servers, and to add tags to a file server.
+
+|===
+|HTTP Method |Path |Description
+
+|`GET`
+|`/v2.1/fileservers`
+|Retrieve all file servers.
+|`POST`
+|`/v2.1/fileservers`
+|Create a new file server service to host file shares.
+|`GET`
+|`/v2.1/fileservers/{id}`
+|Retrieve a file server by ID.
+|`PUT`
+|`/v2.1/fileservers/{id}`
+|Modify a file server identified by ID.
+|`DELETE`
+|`/v2.1/fileservers/{id}`
+|Delete a file server identified by ID.
+All file shares must be deleted before a file server can be deleted.
+|`POST`
+|`/v2.1/fileservers/{id}/tags`
+|Create tags of key value pair attributes on file servers identified by ID.
+|===
+
+==== File server attributes
+
+The following table lists the file server attributes.
+
+|===
+|Attribute |Type |Description
+
+|`id`
+|String
+|Unique identifier for the file server.
+|`name`
+|String
+|File server name.
+|`subtenant_id`
+|String
+|Identifier for the subtenant to which the file server belongs.
+|`zone`
+|String
+|Zone name.
+|`dr_zone`
+|String
+|Disaster recovery zone name.
+Optionally, specifying a disaster recovery zone name automatically replicates all storage to the disaster recovery zone.
+|`dr_schedule`
+|String
+|Disaster recovery schedule.
+|`cifs_enabled`
+|Boolean
+|Identifies whether the CIFS protocol is enabled on a file server.
+|`cifs_ad_username`
+|String
+|The Active Directory user name for joining a file server to an Active Directory domain.
+|`cifs_ad_password`
+|String
+|The Active Directory password for joining a file server to an Active Directory domain.
+|`cifs_domain`
+|String
+|The DNS domain of the CIFS domain.
+|`cifs_dns_servers`
+|String
+|The DNS servers of the CIFS domain; a comma-separated list.
+|`cifs_server_name`
+|String
+|The CIFS server name.
+|`cifs_ou`
+|String
+|The Active Directory Organizational Unit (OU) to which the CIFS server belongs.
+|`subnet`
+|String
+|The subnet (in CIDR notation).
+|`vlan_id`
+|String
+|The VLAN ID.
+|`ip_addr`
+|String
+|The IP (IPv4) address of the NFS/CIFS server.
+|`Gateway`
+|String
+|The IP address of the gateway.
+|===
+
+==== Retrieve file servers
+
+Use the method listed in the following table to retrieve all file servers or a subset of the file servers. Specifying a `tenant_id` will return only the file servers belonging to that tenant.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`GET`
+|`/v2.1/fileservers`
+|Retrieve file servers.
+|`tenant_id:` (Optional) Return the block stores belonging to the specified tenant.
+
+`offset` and `limit` (see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination])
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 96,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5f2a18456db25e0001968b0f",
+        "name": "myCIFSserver",
+        "ip_addr": "10.10.81.60",
+        "state": "Operational",
+        "cifs_enabled": true,
+        "cifs_domain": "example.corp",
+        "cifs_server_name": "myCIFSserver",
+        "cifs_dns_servers": "10.10.81.200",
+        "region": "au-east1",
+        "zone": "au-east1-a",
+        "dr_available": false,
+        "dr_zone": "",
+        "dr_schedule": "",
+        "tenant": "MyCorp",
+        "tenant_id": "5d914499869caefed0f39eee",
+        "subtenant": "MYDivision",
+        "subtenant_id": "5ec75e0b6a9c4f00019cf6bb",
+        "vlan_id": "881",
+        "subnet": "10.10.81.0/24",
+        "gateway": "10.10.81.1",
+        "tags": [],
+        "dr_zones_available": [
+          "au-east2-a",
+          "au-west1-a",
+          "au-east1-b",
+          "au-east1-fcp"
+        ],
+        "created": "2020-08-05T02:24:05.455Z",
+        "updated": "2020-08-05T02:24:05.455Z"
+      }
+    ]
+  }
+}
+....
+
+==== Retrieve a file server by ID
+
+Use the information in the following table to retrieve a file server by ID.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`GET`
+|`/v2.1/fileservers/{id}`
+|Retrieve a file server by ID.
+|`id (string)`: The unique identifier of the file server.
+|===
+
+Required request body attributes: `none`.
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5f2a18456db25e0001968b0f",
+        "name": "myCIFSserver",
+        "ip_addr": "10.10.81.60",
+        "state": "Operational",
+        "cifs_enabled": true,
+        "cifs_domain": "example.corp",
+        "cifs_server_name": "myCIFSserver",
+        "cifs_dns_servers": "10.10.81.200",
+        "region": "au-east1",
+        "zone": "au-east1-a",
+        "dr_available": false,
+        "dr_zone": "",
+        "dr_schedule": "",
+        "tenant": "MyCorp",
+        "tenant_id": "5d914499869caefed0f39eee",
+        "subtenant": "MYdivision",
+        "subtenant_id": "5ec75e0b6a9c4f00019cf6bb",
+        "vlan_id": "881",
+        "subnet": "10.10.81.0/24",
+        "gateway": "10.10.81.1",
+        "tags": [],
+        "dr_zones_available": [
+          "au-east2-a",
+          "au-west1-a",
+          "au-east1-b",
+          "au-east1-fcp"
+        ],
+        "created": "2020-08-05T02:24:05.455Z",
+        "updated": "2020-08-05T02:24:05.455Z"
+      }
+    ]
+  }
+}
+....
+
+==== Create a file server
+
+Use the method listed in the following to create a file server.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`POST`
+|`/v2.1/fileservers`
+|Create a new file server.
+|None
+|===
+
+Required request body attributes: `name`, `subtenant_id`, `zone`, `subnet`, `vlan_id`
+
+For CIFS servers:
+
+* Required attributes: `cifs_enabled` set to true, `cifs_ad_password`, `cifs_domain`, `cifs_dns_servers`, `cifs_server_name`.
+* The Active Directory credentials (`cifs_ad_username` and `cifs_ad_password`) must be for a user that has the privilege to join a computer to the Active Directory domain.
+* When the Active Directory OU structure is hierarchical, as shown in the figure below, specify the OUs from the lowest level to the top. For example, to specify the Melbourne OU, set `cifs_ou` as `"cifs_ou": "ou=melbourne,ou=cifs"`.
+
+image:seapiref_image2.png[Error: Missing Graphic Image]
+
+*Request body example:*
+
+....
+{
+  "name": "myCIFSserver",
+  "subtenant_id": "5ec75e0b6a9c4f00019cf6bb",
+  "zone": "au-east1-a",
+  "cifs_enabled": true,
+  "cifs_ad_username": "administrator",
+  "cifs_ad_password": "mycifsadPassword",
+  "cifs_domain": "example.corp",
+  "cifs_dns_servers": "10.10.81.200",
+  "cifs_server_name": "myCIFSserver",
+  "cifs_ou": "ou=melbourne,ou=cifs",
+  "subnet": "10.10.81.0/24",
+  "vlan_id": "881",
+  "ip_addr": "",
+  "gateway": ""
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5f2a18456db25e0001968b0e",
+        "action": "create",
+        "job_summary": "Create request is successfully submitted",
+        "created": "2020-08-05T02:24:05.442202487Z",
+        "updated": "2020-08-05T02:24:05.442202487Z",
+        "object_id": "5f2a18456db25e0001968b0f",
+        "type": "fileserver",
+        "object_name": "myCIFSserver",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5d914547869caefed0f3a00c",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+==== Modify a file server
+
+Use the method listed in the following table to modify a file server.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`PUT`
+|`/v2.1/fileservers{id}`
+|Modify a file server identified by ID.
+|`id (string)`: The unique identifier of the file server.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+{
+  "name": "MyNewServer",
+  "cifs_enabled": false,
+  "cifs_ad_username": "",
+  "cifs_ad_password": "",
+  "cifs_domain": "",
+  "cifs_dns_servers": "",
+  "cifs_server_name": "",
+  "cifs_ou": " ",
+  "dr_zone": "",
+  "dr_schedule": "daily",
+  "tags": {
+    "key1": "Value 1",
+    "key2": "Value 2",
+    "key3": "Value 3",
+    "keyN": "Value N"
+  }
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5e2c02c356a0001a7377b",
+        "action": "update",
+        "job_summary": "Update request is successfully submitted",
+        "created": "2020-06-02T05:25:20.919354819Z",
+        "updated": "2020-06-02T05:25:20.919354819Z",
+        "object_id": "5ecf0e32f418b40001f20bf3",
+        "object_type": "ontap_fileservers",
+        "object_name": "MyNewServer",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+==== Delete a file server
+
+Use the method listed in the following table to delete a file server.
+
+[NOTE]
+
+After deleting CIFS-enabled file servers, the Active Directory computer object remains. Ask your Active Directory admin to manually remove the computer object for the deleted file server from Active Directory.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`DELETE`
+|`/v2.1/fileservers/{id}`
+|Delete a file server identified by ID.
+All shares must be deleted before a file server can be deleted.
+|`id (string)`: The unique identifier of the file server.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ee232c356a0001a737c7",
+        "action": "delete",
+        "job_summary": "Delete request is successfully submitted",
+        "created": "2020-06-02T06:13:55.584093253Z",
+        "updated": "2020-06-02T06:13:55.584093253Z",
+        "object_id": "5ed5e6cb2c356a0001a73790",
+        "object_type": "ontap_fileservers",
+        "object_name": "MyFileServer",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+==== Create tags on a file server
+
+Use the method listed in the following table to create tags on a file server.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`POST`
+|`/v2.1/fileservers/{id}/tags`
+|Create tags on file server identified by ID.
+|Tags
+|===
+
+Required request body attributes: `tags of key value pair attributes`
+
+*Request body example:*
+
+....
+{
+  "key8": "Value 8",
+  "key9": "Value 9"
+
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "records": [
+      {
+        "key": "key9",
+        "value": "Value 9"
+      },
+      {
+        "key": "key8",
+        "value": "Value 8"
+      }
+    ]
+  }
+}
+....
+
+=== File share APIs
+
+Use the methods listed in the following table to retrieve, create, modify, and delete a file share, to add tags to a file share, or to create or delete a snapshot of the file share.
+
+|===
+|HTTP Method |Path |Description
+
+|`GET`
+|`/v2.1/fileshares`
+|Retrieve all file shares.
+|`POST`
+|`/v2.1/fileshares`
+|Create a new file share service to host file shares.
+|`GET`
+|`/v2.1/fileshares/{id}`
+|Retrieve a file share by ID.
+|`PUT`
+|`/v2.1/fileshares/{id}`
+|Modify a file share identified by ID.
+|`DELETE`
+|`/v2.1/fileshares/{id}`
+|Delete a file share identified by ID. All file shares must be deleted before a file share can be deleted.
+|`POST`
+|`/v2.1/fileshares/{id}/tags`
+|Create tags of key-value pair attributes on file shares identified by ID.
+|`POST`
+|`/v2.1/fileshares/{id}/snapshot/{name}`
+|Create a snapshot of the file share identified by ID, labelled {name}.
+|`DELETE`
+|`/v2.1/fileshares/{id}/snapshot/{name}`
+|Delete the snapshot labelled {name} of the disk identified by ID.
+|===
+
+==== File share attributes
+
+The following table lists the file share attributes.
+
+|===
+|Attribute |Type |Description
+
+|`id`
+|String
+|The unique identifier for the file share.
+|`name`
+|String
+|The file share name.
+|`share_path`
+|String
+|The file share path. For CIFS shares, adding a $ character to the end of the share path will make it a hidden share (for example, pathtomyhiddenshare$).
+|`fileserver_id`
+|String
+|The file server identifier.
+|`size_gb`
+|Integer
+|The size of the share or disk.
+|`service_level`
+|String
+|The name of the service level applicable to the file share: Standard, Premium, or Extreme.
+|`protocol`
+|String
+|The protocol for the file share to be accessed: NFS, CIFS, or multiprotocol.
+|`security_style`
+|String
+|The security style for the file share: UNIX or NTFS.
+|`snapshot_policy`
+|String
+a|The snapshot policy. If enabled, create snapshots automatically according to the schedules.
+For example:
+----
+"snapshot_policy": {
+    "enabled": true,
+    "hourly_schedule": {
+      "minute": 10,
+      "snapshots_to_keep": 24
+    },
+    "daily_schedule": {
+      "hour": "4",
+      "minute": 10,
+      "snapshots_to_keep": 7
+    },
+    "weekly_schedule": {
+      "day_of_week": 5,
+      "hour": 23,
+      "minute": 10,
+      "snapshots_to_keep": 52
+    },
+    "monthly_schedule": {
+      "day_of_month": 15,
+      "hour": 23,
+      "minute": 10,
+      "snapshots_to_keep": 12
+    }
+  }
+----
+
+|`backup_policy`
+|–
+a|The backup policy for the share (must be enabled to allow backups). When enabled, backups occur around 0:00 UTC. The backup policy defines the number of backups of each type retained.
+For example:
+----
+"backup_policy": {
+    "enabled": false,
+    "backup_zone": "au-west1-a",
+    "daily_backups_to_keep": 7,
+    "weekly_backups_to_keep": 4,
+    "monthly_backups_to_keep": 12,
+    "adhoc_backups_to_keep": 10
+  }
+----
+
+|`export_policy`
+|–
+a|An array of export policy rules.
+For example:
+----
+},
+  "export_policy": [
+    {
+      "client_match": "10.0.0.0/24",
+      "access": "rw",
+      "superuser": true
+    }
+  ]
+client_match: (string) CIDR notation for NFS access
+access: (string) eg rw
+superuser: (boolean)
+----
+
+|`dr_enabled`
+|Boolean
+|–
+|`clone_from_fileshare_id`
+|String
+|The file share ID.
+|`clone_from_snapshot_name`
+|String
+|The snapshot name.
+|===
+
+==== Retrieve file shares
+
+Use the method listed in the following table to retrieve all file shares or a subset of the file shares. Specifying a `tenant_id` will return only the file shares belonging to that tenant.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|``GET`
+|`/v2.1/fileshares`
+|Retrieve all file shares.
+|`tenant_id`:(Optional) Return the block stores belonging to the specified tenant.
+
+`offset` and `limit` (see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination])
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 1,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 20,
+    "records": [
+      {
+        "id": "5ed5e7ae2c356a0001a737a3",
+        "tenant_id": "5ed5ac802c356a0001a735af",
+        "subtenant_id": "5ed5e62d2c356a0001a7378d",
+        "subtenant": "MyNewSubtenant",
+        "fileserver_id": "5ed5e6cb2c356a0001a73790",
+        "fileserver_name": "MyFileServer",
+        "name": "MyShare",
+        "share_path": "PathToMyShare",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "protocol": "nfs",
+        "security_style": "",
+        "snapshots": [],
+        "snapshot_policy": {
+          "enabled": true,
+          "hourly_schedule": {
+            "job_schedule_name": "hourly-10-min-past-hour",
+            "snapshots_to_keep": 24,
+            "minute": 10
+          },
+          "daily_schedule": {
+            "job_schedule_name": "daily-10-min-past-4am",
+            "hour": "4",
+            "minute": 10,
+            "snapshots_to_keep": 7
+          },
+          "weekly_schedule": {
+            "job_schedule_name": "weekly-on-friday-10-min-past-11pm",
+            "hour": 23,
+            "minute": 10,
+            "day_of_week": 5,
+            "snapshots_to_keep": 52
+          },
+          "monthly_schedule": {
+            "job_schedule_name": "monthly-on-day-15-10-min-past-11pm",
+            "hour": 23,
+            "minute": 10,
+            "day_of_month": 15,
+            "snapshots_to_keep": 12
+          }
+        },
+        "export_policy": [
+          {
+            "client_match": "10.0.0.0/24",
+            "access": "rw",
+            "superuser": true
+          }
+        ],
+        "backup_policy": {
+          "enabled": false,
+          "backup_zone": "",
+          "daily_backups_to_keep": 0,
+          "weekly_backups_to_keep": 0,
+          "monthly_backups_to_keep": 0,
+          "adhoc_backups_to_keep": 0
+        },
+        "service_level": "extreme",
+        "size_gb": 10,
+        "tags": [],
+        "job_tasks": [],
+        "state": "Operational",
+        "fileserver_ip": "10.0.0.7",
+        "nfs_endpoint": "10.0.0.7:/PathToMyShare",
+        "cifs_endpoint": "\\\\cifs01\\PathToMyShare",
+        "zone": "au-east1-a",
+        "dr_available": false,
+        "dr_enabled": false,
+        "backups": []
+      }
+    ]
+  }
+}
+....
+
+==== Retrieve a file share by ID
+
+Use the method listed in the following table to retrieve a file share by ID.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`GET`
+|`/v2.1/fileshares/{id}`
+|Retrieve a file share by ID.
+|`id (string)`: The unique identifier of the file share.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5e7ae2c356a0001a737a3",
+        "tenant_id": "5ed5ac802c356a0001a735af",
+        "subtenant_id": "5ed5e62d2c356a0001a7378d",
+        "subtenant": "MyNewSubtenant",
+        "fileserver_id": "5ed5e6cb2c356a0001a73790",
+        "fileserver_name": "MyFileServer",
+        "name": "MyShare",
+        "share_path": "PathToMyShare",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "protocol": "nfs",
+        "security_style": "",
+        "snapshots": [],
+        "snapshot_policy": {
+          "enabled": true,
+          "hourly_schedule": {
+            "job_schedule_name": "hourly-10-min-past-hour",
+            "snapshots_to_keep": 24,
+            "minute": 10
+          },
+          "daily_schedule": {
+            "job_schedule_name": "daily-10-min-past-4am",
+            "hour": "4",
+            "minute": 10,
+            "snapshots_to_keep": 7
+          },
+          "weekly_schedule": {
+            "job_schedule_name": "weekly-on-friday-10-min-past-11pm",
+            "hour": 23,
+            "minute": 10,
+            "day_of_week": 5,
+            "snapshots_to_keep": 52
+          },
+          "monthly_schedule": {
+            "job_schedule_name": "monthly-on-day-15-10-min-past-11pm",
+            "hour": 23,
+            "minute": 10,
+            "day_of_month": 15,
+            "snapshots_to_keep": 12
+          }
+        },
+        "export_policy": [
+          {
+            "client_match": "10.0.0.0/24",
+            "access": "rw",
+            "superuser": true
+          }
+        ],
+        "backup_policy": {
+          "enabled": false,
+          "backup_zone": "",
+          "daily_backups_to_keep": 0,
+          "weekly_backups_to_keep": 0,
+          "monthly_backups_to_keep": 0,
+          "adhoc_backups_to_keep": 0
+        },
+        "service_level": "extreme",
+        "size_gb": 10,
+        "tags": [],
+        "job_tasks": [],
+        "state": "Operational",
+        "fileserver_ip": "10.0.0.7",
+        "nfs_endpoint": "10.0.0.7:/PathToMyShare",
+        "cifs_endpoint": "\\\\cifs01\\PathToMyShare",
+        "zone": "au-east1-a",
+        "dr_available": false,
+        "dr_enabled": false,
+        "backups": []
+      }
+    ]
+  }
+}
+....
+
+==== Create a file share
+
+Use the method listed in the following table to create a file share.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`POST`
+|`/v2.1/fileshares`
+|Create a new file share.
+|None
+|===
+
+Required request body attributes: `name`, `share_path`, `fileserver_id`, `size_gb`, `service_level, client_match`, `protocol`, `security style`, `snapshot_policy`, `export_policy`
+
+*Request body example:*
+
+....
+{
+  "name": "MyShare",
+  "share_path": "PathToMyShare",
+  "fileserver_id": "5ed5e6cb2c356a0001a73790",
+  "size_gb": 10,
+  "service_level": "extreme",
+  "protocol": "nfs",
+  "security_style": "unix",
+  "snapshot_policy": {
+    "enabled": true,
+    "hourly_schedule": {
+      "minute": 10,
+      "snapshots_to_keep": 24
+    },
+    "daily_schedule": {
+      "hour": "4",
+      "minute": 10,
+      "snapshots_to_keep": 7
+    },
+    "weekly_schedule": {
+      "day_of_week": 5,
+      "hour": 23,
+      "minute": 10,
+      "snapshots_to_keep": 52
+    },
+    "monthly_schedule": {
+      "day_of_month": 15,
+      "hour": 23,
+      "minute": 10,
+      "snapshots_to_keep": 12
+    }
+  },
+  "backup_policy": {
+    "enabled": false,
+    "backup_zone": "au-west1-a",
+    "daily_backups_to_keep": 7,
+    "weekly_backups_to_keep": 4,
+    "monthly_backups_to_keep": 12,
+    "adhoc_backups_to_keep": 10
+  },
+  "export_policy": [
+    {
+      "client_match": "10.0.0.0/24",
+      "access": "rw",
+      "superuser": true
+    }
+  ],
+  "dr_enabled": false,
+  "clone_from_fileshare_id": "",
+  "clone_from_snapshot_name": ""
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5e7ae2c356a0001a737a4",
+        "action": "create",
+        "job_summary": "Create request is successfully submitted",
+        "created": "2020-06-02T05:46:22.899728732Z",
+        "updated": "2020-06-02T05:46:22.899728732Z",
+        "object_id": "5ed5e7ae2c356a0001a737a3",
+        "object_type": "ontap_fileshares",
+        "object_name": "MyShare",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+....
+
+==== Modify a file share
+
+Use the method listed in the following table to modify a file share.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`PUT`
+|`/v2.1/fileshares{id}`
+|Modify a file share identified by ID.
+|`id (string)`: The unique identifier of the file share.
+|===
+
+Required request body attributes: `name, size_gb, service_level, client_match, protocol, snapshot_policy, export_policy`
+
+*Request body example:*
+
+....
+{
+  "name": "MyShare",
+  "size_gb": 20,
+  "service_level": "standard",
+  "protocol": "nfs",
+  "snapshot_policy": {
+    "enabled": true,
+    "hourly_schedule": {
+      "minute": 10,
+      "snapshots_to_keep": 24
+    },
+    "daily_schedule": {
+      "hour": "4",
+      "minute": 10,
+      "snapshots_to_keep": 7
+    },
+    "weekly_schedule": {
+      "day_of_week": 5,
+      "hour": 23,
+      "minute": 10,
+      "snapshots_to_keep": 52
+    },
+    "monthly_schedule": {
+      "day_of_month": 15,
+      "hour": 23,
+      "minute": 10,
+      "snapshots_to_keep": 12
+    }
+  },
+  "backup_policy": {
+    "enabled": false,
+    "backup_zone": "",
+    "daily_backups_to_keep": 7,
+    "weekly_backups_to_keep": 4,
+    "monthly_backups_to_keep": 12,
+    "adhoc_backups_to_keep": 10
+  },
+  "export_policy": [
+    {
+      "client_match": "10.0.0.0/24",
+      "access": "rw",
+      "superuser": true
+    }
+  ],
+  "dr_enabled": false
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5e94d2c356a0001a737a9",
+        "action": "update",
+        "job_summary": "Update request is successfully submitted",
+        "created": "2020-06-02T05:53:17.715035105Z",
+        "updated": "2020-06-02T05:53:17.715035105Z",
+        "object_id": "5ed5e7ae2c356a0001a737a3",
+        "object_type": "ontap_fileshares",
+        "object_name": "MyShare",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+==== Delete a file share
+
+Use the method listed in the following table to delete a file share.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`DELETE`
+|`/v2.1/fileshares/{id}`
+|Delete a file share identified by ID.
+|`id (string)`: The unique identifier of the file share.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+Response body example:
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5edba2c356a0001a737c2",
+        "action": "delete",
+        "job_summary": "Delete request is successfully submitted",
+        "created": "2020-06-02T06:12:10.854517357Z",
+        "updated": "2020-06-02T06:12:10.854517357Z",
+        "object_id": "5ed5e7ae2c356a0001a737a3",
+        "object_type": "ontap_fileshares",
+        "object_name": "MyShare",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+==== Create a snapshot of a file share
+
+Use the method listed in the following to create a snapshot of a file share.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`POST`
+|`/v2.1/fileshares/{id}/snapshot/{name}`
+|Create a snapshot of the named file share.
+a|* `id (string)`: The ID of the file share.
+* `name (string)`: The name of the snapshot.
+|===
+
+* Required request body attributes: `none`
+* Optional attributes: `snapmirror_label` (string). This is the label applied to the snapshot; it can be hourly, daily, weekly, or monthly.
+
+*Request body example:*
+
+....
+{
+  "snapmirror_label": "hourly"
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e6867bd0ad88a0001bc3305",
+        "action": "create",
+        "job_summary": "",
+        "created": "2020-03-11T04:23:25.076846044Z",
+        "updated": "2020-03-11T04:23:25.076846044Z",
+        "object_id": "5df6fb394f92710001087b0e",
+        "object_type": "ontap_fileshares",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+==== Delete the snapshot of a file share
+
+Use the method listed in the following table to delete the snapshot of a file share.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`DELETE`
+|`/v2.1/fileshares/{id}/snapshot/{name}`
+|Delete the snapshot of the named file share.
+a|* `id (string)`: The ID of the file share.
+* `name (string)`: The name of the snapshot.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "action": "string",
+        "object_id": "5d2fb0fb4f47df00015274e3",
+        "object_type": "string",
+        "status": "string",
+        "status_detail": "string",
+        "last_error": "string",
+        "user_id": "5d2fb0fb4f47df00015274e3",
+        "link": "string"
+      }
+    ]
+  }
+}
+....
+
+==== Create tags on a file share
+
+Use the method listed in the following table to create tags on a file share.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`POST`
+|`/v2.1/fileshares/{id}/tags`
+|Create tags on the file share identified by ID.
+|`id (string)`: The unique identifier of the file share.
+|===
+
+Required request body attributes: `tags of key-value pair attributes`
+
+*Request body example:*
+
+....
+{
+  "key8": "Value 8",
+  "key9": "Value 9"
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "records": [
+      {
+        "key": "MyKey1",
+        "value": "MyValue1"
+      },
+      {
+        "key": "MyKey2",
+        "value": "MyValue2"
+      }
+    ]
+  }
+}
+....

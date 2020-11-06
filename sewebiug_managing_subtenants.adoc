@@ -1,0 +1,82 @@
+---
+sidebar: sidebar
+permalink: sewebiug_managing_subtenants.html
+keywords: netapp, keystone, managing, subtenants,
+summary: Keystone managing subtenants
+---
+
+= Managing subtenants
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.062164
+//
+
+[.lead]
+This section describes how to manage subtenants:
+
+* View a list of subtenants
+* Add a subtenant
+* Delete a subtenant
+
+[NOTE]
+Managing subtenants requires customer administrator access.
+
+=== View a list of subtenants
+
+The Subtenants list displays a list of all the subtenants in a NetApp Service Engine installation. To display the list, select Administration > Subtenants from the menu.
+
+The list displays simple information about each subtenant, such as:
+
+* Name
+* Tenant name (under which the subtenant is created)
+* Code (a unique code within NetApp Service Engine that represents the subtenant)
+
+=== Add a Subtenant
+
+This section describes how to add a subtenant.
+
+===== Before you begin
+
+You will need:
+
+* A code that represents the subtenant. This must be unique within a NetApp Service Engine instance and consist of lower-case characters.
+
+==== Steps
+
+. From the menu, select Administration > Subtenants.
+. Click *Create Subtenant*.
+. In the Create Subtenant dialog box, enter a name and code for the subtenant.
+. Click *Confirm*.
+
+=== Change a subtenant name
+
+Use this method to change the name of a subtenant.
+
+==== Steps
+
+. Select Administration > Subtenants from the menu.
+. Locate the subtenant in the list and click the Edit icon.
+. Enter a new name for the subtenant.
+. Click *Update*.
+
+=== Delete a subtenant
+
+Use this method to delete a subtenant.
+
+==== Before you begin
+
+Make sure that there are no storage components provisioned under the subtenant to be deleted. You cannot delete a subtenant that has existing storage already provisioned.
+
+==== Steps
+
+. Select Administration > Subtenants from the menu.
+. Locate the subtenant in the list and click the Delete icon.
+. In the Confirm Delete dialog box, enter the name of the subtenant to be deleted.
+. Click *Confirm*.

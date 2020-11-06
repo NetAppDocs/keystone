@@ -1,0 +1,85 @@
+---
+sidebar: sidebar
+permalink: sewebiug_managing_azure_volumes.html
+keywords: netapp, keystone, managing, azure, volumes,
+summary: Keystone managing Azure volumes
+---
+
+= Managing Azure volumes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.340665
+//
+
+[.lead]
+This section describes how to manage Azure volumes.
+
+[NOTE]
+Managing Azure Volumes requires Customer Admin access.
+
+This section describes how to perform the following tasks:
+
+* View a list of Azure volumes.
+* Add an Azure volume.
+* Modify Azure volume details.
+* Delete an Azure volume.
+
+=== View a list of Azure volumes
+
+The Azure Volumes list displays a list of Azure Volumes pools for a specified subtenant and location. To display the list, select Subscribed Services > Azure Volumes from the menu.
+
+The list displays simple information about each Azure Volume. The action icons next to each Azure volume allow you to modify or delete the Azure volume.
+
+=== Add an Azure volume
+
+This section describes how to add an Azure volume.
+
+==== Before you begin
+
+You will need:
+
+* The subtenant to which the Azure Volume belongs
+*	The ANF Account
+*	Azure Virtual Network (VNet) and Subnet
+*	The capacity pool to house the volume
+*	A name for the volume
+*	The file path
+*	The quota (size) of the volume
+
+
+==== Steps
+
+. Select Subscribed Services > Azure Volumes from the menu.
+. Click *Create*.
+. In the Create Azure Volume dialog box, specify the subtenant, the ANF account, the VNet, the Subnet, the Capacity Pool, the Name of the volume, the File Path and the Quota.
+. If required, add tags to the volume.
+. Click *Create*. When created successfully, the capacity pool state will be Succeeded (can be viewed in the Azure Volumes list).
+
+=== Modify Azure volume details
+
+Use this method to modify an Azure Volume’s details. You can modify the File path and Quota, and add or remove tags.
+
+==== Steps
+
+. Select Subscribed Services > Azure Volumes from the menu.
+. Int the list, locate the Azure volume and click the Edit icon.
+. In the Manage Azure Volume dialog box, make any changes as required.
+. Click *Update*.
+
+=== Delete an Azure volume
+
+Use this method to delete an Azure volume.
+
+==== Steps
+
+. Select Subscribed Services > Azure Volumes from the menu.
+. Locate the Azure volume in the list and click the Delete icon.
+. In the Confirm Delete dialog box, enter the name of the Azure volume to be deleted.
+. Click *Confirm*.

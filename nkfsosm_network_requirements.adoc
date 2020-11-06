@@ -1,0 +1,262 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_network_requirements.html
+keywords: netapp, keystone, network, requirements,
+summary: Network requirements
+---
+
+= Network Requirements
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.344084
+//
+
+[.lead]
+The following tables provide the KFS networking requirements.
+
+=== IP Address Requirements (Customer-Operated)
+
+|===
+|Interface/Resource |Config. Spec |IPs |DNS Name |Description
+
+|Service processor
+|Each node in the cluster
+|10.0.0.1 - Node1 Service Processor
+10.0.0.2 - Node2 Service Processor
+|TBD
+|A remote management device that enables you to access, monitor, and troubleshoot a node remotely.
+|Cluster management
+|Cluster level
+|10.0.0.3 - Cluster Admin Vserver
+|TBD
+|Admin storage virtual machine (SVM) to manage the entire cluster from a single console
+|Node management
+|Each node in the cluster
+|10.0.0.4 - Node1 Management
+10.0.0.5 - Node2 Management
+|TBD
+|A dedicated IP address for managing a particular node
+|Cluster-interconnect
+|Two ports of each node in the cluster
+|Node1 e0a port
+Node1 e0b port
+Node2 e0a port
+Node2 e0b port
+|TBD
+|Private network or internal to the cluster; IPs will be auto-assigned when creating the LIF
+|SVM data
+|SVM level
+|10.0.1.5 - Data SVM110.0.1.6 - Data SVM2
+|TBD
+|A dedicated IP address for the client access to the data.
+|Inter cluster
+|Each node in the cluster
+|10.0.2.1 - Node1
+10.0.2.2 - Node2
+|TBD
+|Optional - A network used to replicate data from one cluster to the other (SnapMirror)
+|Kubernetes Master Node 01-04
+|Static IP address
+|10.0.3.10-13
+|k8m01
+|Kubernetes Master Node VM
+|Kubernetes Worker node 01-04
+|Static IP address
+|10.0.3.14-17
+|k8m01
+|Kubernetes Worker Node VM
+|AIQ Unified Manager
+|Static IP address
+|10.0.3.18
+|aiqum01
+|Active IQ unified Manager
+|OpsRamp Gateway
+|Static IP address
+|10.0.3.19
+|opsgw01
+|OpsRamp Gateway
+|===
+
+=== Customer Firewall Requirements (Customer- and NetApp-Operated)
+
+The below table lists the customer firewall port and rules requirements.
+
+|===
+|Source |Destination |Name |Ports |Bi-Directional? |Category |Description
+
+|All VMs
+|Internet (as per URL whitelist table below)
+|HTTP, HTTPS
+|80, 443
+|No
+|NetApp Service Engine
+|Software package downloads and operating system updates
+|All VMs
+|8.8.8.8,1.1.1.1
+|DNS
+|UDP 53
+|No
+|NetApp Service Engine
+|Public or private DNS services
+|All VMs
+|au.pool.ntp.org
+|NTP
+|UDP 123
+|No
+|NetApp Service Engine
+|Time keeping
+|Kubernetes Worker Node(s)
+|NetApp ONTAP Cluster Management IP Address
+|HTTPS
+|443
+|No
+|NetApp Service Engine
+|Control/Management plane traffic to drive Ansible automation using ZAPI/REST
+|Kubernetes Worker Nodes
+|Active IQ Unified Manager
+|MySQL
+|3306
+|No
+|NetApp Service Engine
+|Active IQ Unified Manager MySQL database queries
+|Kubernetes Worker Nodes
+|Active Directory
+|LDAP
+|389
+|No
+|NetApp Service Engine
+|Active Directory authentication
+|OpsRamp Gateway
+|NetApp ONTAP Cluster Management IP Address
+|HTTPS, SSH, SNMP
+|443, 22, 161, 162
+|Yes
+|OpsRamp
+|Monitoring of the ONTAP controllers
+|NetApp ONTAP Controller Nodes
+|OpsRamp Gateway
+|HTTP, HTTPS, SNMP
+|80,443, 161, 162
+|Yes
+|OpsRamp
+|Monitoring of the ONTAP controllers
+|OpsRamp Gateway
+|Cluster Switches
+|SNMP
+|161,162
+|Yes
+|OpsRamp
+|Monitoring of the ONTAP cluster switches
+|Jump/Util Servers
+|NetApp ONTAP Controllers
+|HTTP, HTTPS, SSH
+|80, 443, 22
+|No
+|Operations
+|Management of ONTAP clusters
+|Active IQ Unified Manager
+|NetApp ONTAP Controllers
+|HTTPS
+|443
+|No
+|NetApp Service Engine Operations
+|Management of ONTAP clusters
+|===
+
+=== Allow List (Customer- and NetApp-Operated)
+
+The below table lists provide the “Allow List” of URLs and IP addresses for outbound internet access, required for transfer of consumption data and updates.
+
+|===
+|Source |Destination URL/IP Addresses |Connectivity |Protocol |Port |Description
+
+|Kubernetes nodes
+|github.com
+|Outbound
+|HTTP, HTTPS
+|80,443
+|NetApp Service Engine platform configuration management
+|Kubernetes nodes
+|rest.zuora.com
+|Outbound
+|HTTP, HTTPS
+|80,443
+|NetApp cloud billing
+|Kubernetes nodes
+|auth.docker.io
+|Outbound
+|HTTP, HTTPS
+|80,443
+|Docker registry auth
+|Kubernetes nodes
+|registry-1.docker.io
+|Outbound
+|HTTP, HTTPS
+|80,443
+|Docker Hub images; general Docker images including NetApp Service Engine pods
+|Kubernetes nodes
+|production.cloudflare.docker.com
+|Outbound
+|HTTP, HTTPS
+|80,443
+|Docker Hub images; general Docker images including NetApp Service Engine pods
+|Kubernetes nodes
+|quay.io
+|Outbound
+|HTTP, HTTPS
+|80,443
+|Quay images - Prometheus Pods
+|Kubernetes nodes
+|cdn.quay.io
+|Outbound
+|HTTP, HTTPS
+|80,443
+|Quay images - Prometheus Pods
+|Kubernetes nodes
+|k8s.gcr.io
+|Outbound
+|HTTP, HTTPS
+|80,443
+|Google images - Kubernetes Cluster Pods
+|Kubernetes nodes
+|storage.googleapis.com
+|Outbound
+|HTTP, HTTPS
+|80,443
+|Google images - Kubernetes Cluster Pods
+|Kubernetes nodes
+|kubernetes-charts.storage.googleapis.com
+|Outbound
+|HTTP, HTTPS
+|80,443
+|Helm repository
+|All CentOS VMs
+|rackspace.com
+|Outbound
+|HTTP, HTTPS
+|80,443
+|CentOS yum package mirror
+|OpsRamp Gateway
+|netapp.api.opsramp.com
+|Outbound
+|HTTPS
+|443
+|Cloud monitoring and NetApp Support tunnel connectivity
+|OpsRamp Gateway
+| 140.239.76.0/24
+206.80.7.128/26
+63.251.89.0/24
+199.250.248.0/24
+74.217.75.0/24
+|Outbound
+|HTTPS
+|443
+|Cloud monitoring and NetApp Support tunnel connectivity
+|===

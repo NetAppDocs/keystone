@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+permalink: sewebiug_view_shares.html
+keywords: netapp, keystone, view, shares,
+summary: Keystone view shares
+---
+
+= View shares
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.249287
+//
+
+[.lead]
+The Shares list displays the file shares belonging to the selected Tenant. To display the list, select File Services > Shares from the menu.
+
+The Shares list displays simple information about each share such as:
+
+* Share name
+* Server on which it resides
+* Share path
+* Subtenant to which it belongs
+* Zone in which it exists
+* Service level
+* Operational state (operational, updating, or contact support)
+* Creation dateFor more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].

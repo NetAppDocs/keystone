@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: sewebiug_modify_user_details.html
+keywords: netapp, keystone, modify, user, details,
+summary: Keystone modify user details
+---
+
+= Modify user details
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.139556
+//
+
+[.lead]
+Use this method to modify a user’s details. You can:
+
+* Modify the user’s first name, last name, and display name.
+* Add or remove tenancies to which the user has access.
+* Modify the role of the user in each tenancy to which the user has access.
+
+=== Steps:
+
+. Select Administration > Users from the menu.
+. Locate the user in the list and click the Edit icon.
+. On the Edit User dialog box, make any changes as required.
+. To change the role of the user in a tenancy, locate the tenancy in the Tenancies list and select the new role.
+. To grant the user access to another tenancy, click *Add Tenancy* and select the Tenant and the Role of the user in that tenancy in the new entry fields.
+. To remove access for the user to a tenancy, locate the tenancy in the Tenancies list and select the Delete icon.
+. Click *Update*.

@@ -1,0 +1,25 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_data_migration_service.html
+keywords: netapp, keystone, data, migration, service,
+summary: Data migration service
+---
+
+= Data Migration Service
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:49.017160
+//
+
+[.lead]
+Data migration is not part of Keystone service. A customer can avail NetApp PS, partner services or do it on their own. This applies whether the data source is a NetApp system or non-NetApp system. NetApp supports providing customer with all requisite assistance and information to perform the migration.
+
+[NOTE]
+To evaluate options on migration services, work with the KSM.

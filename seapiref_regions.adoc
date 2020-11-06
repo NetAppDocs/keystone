@@ -1,0 +1,278 @@
+---
+sidebar: sidebar
+permalink: seapiref_regions.html
+keywords: netapp, keystone, regions,
+summary: Keystone regions
+---
+
+= Regions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.333558
+//
+
+[.lead]
+Use the methods listed in the following table to create, modify, and delete regions. For APIs that allow you to retrieve regions, see the (Consumer) Administration APIs.
+
+|===
+|HTTP Method |Path |Description
+
+|`GET`
+|`/v2.1/regions`
+|Get regions.
+|`GET`
+|`/v2.1/regions/{name}`
+|Get regions by name.
+|`POST`
+|`/v2.1/regions`
+|Create a new region.
+|`PUT`
+|`/v2.1/regions/{name}`
+|Modify the details of a region.
+|`DELETE`
+|`/v2.1/regions/{name}`
+|Delete a region.
+|===
+
+=== Region attributes
+
+The following table lists the region attributes.
+
+|===
+|Attribute |Type |Description
+
+|`id`
+|String
+|The unique identifier of the region.
+|`name`
+|String
+|The region name.
+|`description`
+|String
+|The description of the region.
+|===
+
+=== Retrieve regions
+
+Use the method listed in the following table to retrieve all regions or a subset of regions.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`GET`
+|`/v2.1/regions`
+|Retrieve regions.
+|`offset` and `limit`– see link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination]
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 4,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5e7bf44daab46c00014ce77f",
+        "name": "au-east8",
+        "description": "This is the new region description",
+        "zones": []
+      }
+    ]
+  }
+}
+....
+
+=== Retrieve a region by name
+
+Use the method listed in the following table to retrieve a region by name.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`GET`
+|`/v2.1/regions/{name}`
+|Retrieve a region by name.
+|`name (string)`: The region name.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "au-east1",
+        "description": "string",
+        "zones": [
+          "au-east1-a"
+        ]
+      }
+    ]
+  }
+}
+....
+
+=== Create a region
+
+Use the method listed in the following table to create a region.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`POST`
+|`/v2.1/regions`
+|Create a new region.
+|None
+|===
+
+Required request body attributes: `name`
+
+*Request body example:*
+
+....
+{
+  "name": "MyRegionName",
+  "description": "DescriptionOfMyRegion"
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e616f849b64790001fe9658",
+        "name": "MyRegionName",
+        "Description": "DescriptionOfMyRegion",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "created": "0001-01-01T00:00:00Z",
+        "tags": null
+      }
+    ]
+  }
+}
+....
+
+=== Modify a region
+
+Use the method listed in the following table to modify a region.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`PUT`
+|`/v2.1/regions/{name}`
+|Modify a region identified by name. You can change the name and description of the region.
+|`name (string)`: The name of the region.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+{
+  "name": "MyRegionName",
+  "description": "NewDescriptionOfMyRegion"
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e616f849b64790001fe9658",
+        "name": "MyRegionName",
+        "description": "NewDescriptionOfMyRegion",
+        "zones": []
+      }
+    ]
+  }
+}
+....
+
+=== Delete a region
+
+Use the method listed in the following table to delete a region.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`DELETE`
+|`/v2.1/regions{name}`
+|Delete a single region identified by name. All zones within a region must be deleted first.
+|`Name (string)`: The name of the region.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+No content for succesful delete
+....

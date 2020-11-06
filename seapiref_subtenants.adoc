@@ -1,0 +1,293 @@
+---
+sidebar: sidebar
+permalink: seapiref_subtenants.html
+keywords: netapp, keystone, subtenants,
+summary: Keystone subtenants
+---
+
+= Subtenants
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.172017
+//
+
+[.lead]
+Use the methods listed in the following table to retrieve, create, modify, and delete subtenants.
+
+|===
+|HTTP Method |Path |Description
+
+|`GET`
+|`/v2.1/subtenants`
+|Retrieve subtenants.
+|`GET`
+|`/v2.1/subtenants/{id}`
+|Retrieve a subtenant by the subtenant ID.
+|`POST`
+|`/v2.1/subtenants``
+|Create a new subtenant.
+|`PUT`
+|`/v2.1/subtenants/{id}`
+|Modify the details of a subtenant. You can modify the name of the subtenant.
+|`DELETE`
+|`/v2.1/subtenants/{id}`
+|Delete a subtenant.
+|===
+
+=== Subtenant attributes
+
+The following table lists the subtenant attributes.
+
+|===
+|Attribute |Type |Description
+
+|`id`
+|String
+|The unique identifier of the subtenant.
+|`name`
+|String
+|The subtenant name.
+|`code`
+|String
+|A customer-specified (or default) code that represents the subtenant.
+|`tenant_id`
+|String
+|The identifier of the tenant to which the subtenant belongs.
+|===
+
+=== Retrieve all subtenants
+
+Use the method listed in the following table to retrieve all subtenants or a subset of all subtenants. Specifying a `tenant_id` will return only the subtenants belonging to that tenant.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`GET`
+|`/v2.1/subtenants`
+|Retrieve subtenants.
+|`tenant_id`: (Optional) Return the subtenants belonging to the specified tenant.
+offset and limit– see
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 202,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 2,
+    "records": [      {
+        "id": "5e7c3af8aab46c00014ce878",
+        "description": "",
+        "name": "MySubtenant",
+        "code": "mysubtenant",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant"
+      },
+      {
+        "id": "5d9144f3869caefed0f39f82",
+        "description": "",
+        "name": "Mysubtenant2",
+        "code": "myothersubtenant",
+        "tenant_id": "5d914499869caefed0f39eee",
+        "tenant": "MyTenant"
+      }
+    ]
+  }
+}
+....
+
+=== Retrieve a subtenant by ID
+
+Use the method listed in the following to retrieve a subtenant by ID.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`GET`
+|`/v2.1/subtenants/{id}`
+|Retrieve the subtenant specified by the ID.
+|`id (string)`: The unique identifier of the subtenant.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e7c3af8aab46c00014ce878",
+        "description": "",
+        "name": "MySubtenant",
+        "code": "subtenantcode",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant"
+      }
+    ]
+  }
+}
+....
+
+=== Create a subtenant
+
+Use the method listed in the following table to create a subtenant.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`POST`
+|`/v2.1/subtenants`
+|Create a new subtenant.
+|None
+|===
+
+Required request body attributes: `name`, `code`, `tenant_id`
+
+*Request body example:*
+
+....
+{
+  "name": "MySubtenant",
+  "code": "mynewsubtenant",
+  "tenant_id": "5ed5ac802c356a0001a735af"
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ecefbbef418b40001f20bd6",
+        "description": "",
+        "name": "MyNewSubtenant",
+        "code": "mynewsubtenant",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant"
+      }
+    ]
+  }
+}
+....
+
+=== Modify a subtenant by ID
+
+Use the method listed in the following table to modify a subtenant by ID.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`PUT`
+|`/v2.1/subtenants/{id}`
+|Modify the subtenant specified by the ID. You can change the subtenant name.
+|`id (string)`: The unique identifier of the subtenant.
+|===
+
+Required request body attributes: `name`
+
+*Request body example:*
+
+....
+{
+  "name": "MyModifiedSubtenant"
+}
+....
+
+*Response body example:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ecefbbef418b40001f20bd6",
+        "description": "",
+        "name": "MyNewSubtenant",
+        "code": "mynewsubtenant",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant"
+      }
+    ]
+  }
+}
+....
+
+=== Delete a subtenant by ID
+
+Use the method listed in the following table to delete a subtenant by ID.
+
+|===
+|HTTP Method |Path |Description |Parameters
+
+|`DELETE`
+|`/v2.1/subtenants/{id}`
+|Delete the subtenant specified by the ID.
+|`id (string)`: The unique identifier of the subtenant.
+|===
+
+Required request body attributes: `none`
+
+*Request body example:*
+
+....
+none
+....
+
+*Response body example:*
+
+....
+No content for succesful delete
+....

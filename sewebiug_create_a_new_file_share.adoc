@@ -1,0 +1,105 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_a_new_file_share.html
+keywords: netapp, keystone, create, new, file, share,
+summary: Keystone create a new file share
+---
+
+= Create a new file share
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.265100
+//
+
+[.lead]
+This section describes how to create a new share by directly specifying the share details. To create a new share based on a snapshot of an existing share, see link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share[Create Share from Snapshot].
+
+=== Before you begin
+
+* A share is created on a file server. The file server must exist and be in an operational state before you can create a new file share.
+* To enable asynchronous disaster recovery options for the share, you must create the share on a server that has asynchronous disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+* To enable synchronous disaster recovery for a share, create the share in a zone that is MetroCluster-enabled.
+* You can define a backup policy to capture backups of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
+* You can define a snapshot policy to capture snapshots of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots].
+
+=== Steps
+
+. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. Click *Create Share*.
+. In the Create Share dialog box, select Create New Share.
++
+image:sewebiug_image22.png[Error: Missing Graphic Image]
++
+The Create Share page is displayed.
++
+. Select the share type: NFS, CIFS, or Multiprotocol.
+. Complete the following fields:
++
+|===
+|Field |Description
+
+|Name
+|Enter the share name.
+|Share Path
+|Enter the path for the file share.
+For CIFS shares, adding a $ character to the end of the share path will make it a hidden share (for example, pathtomyhiddenshare$).
+|Region
+|Select the region in which the share resides.
+|Zone
+|Select the zone in which the share will reside.
+|File Server
+|Select the file server to host the share.
+|Security Style
+|Select the security style applicable to the file share.
+|===
++
+. Select a Performance Service Level.
++
+[NOTE]
+Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
+
++
+. Specify the capacity of the file share.
++
+[NOTE]
+NetApp Service Engine displays a warning and the capacity bar changes color if the specified capacity puts the consumed capacity into burst (or even more into burst if it is already in burst). The capacity check is performed against the total capacity for all subscriptions in the tenancy.
+
++
+. If asynchronous disaster recovery is enabled on the underlying file server, asynchronous disaster recovery replication is automatically enabled for the new share. If you wish to exclude the share from asynchronous disaster recovery replication, toggle the Asynchronous Disaster Recovery button so that it is disabled.
+. If the share is being created in a zone that is MetroCluster-enabled, the Synchronous Disaster Recovery button is automatically enabled and cannot be disabled. The share will be replicated to the zone displayed in the panel below the Synchronous Disaster Recovery toggle.
+. If snapshots are required for this file share:
+.. Toggle to enable the Snapshot Policy to display the Snapshot Policy fields.
+.. Specify when to create the snapshots:
+
+** *Hourly.* Specify which minute (of the hour) to take snapshot and the number of hourly snapshots to retain.
+** *Daily.* Specify when (hour and minute) to take the snapshot the number of hourly snapshots to retain.
+** *Weekly.* Specify when (day of the week, hour, and minute) to take snapshot and the number of weekly snapshots to retain.
+** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
+. To enable backups for this file share:
+.. Toggle to enable the Backup Policy to display the Backup Policy fields.
+.. Specify the backup zone.
+.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
+. For NFS type shares only, specify the Export Policy.
++
+[NOTE]
+Export Policies do not apply to CIFS access.
+
++
+. If you want to add tags (key-value pairs) to the file share, specify them in the Tags section.
+. Click *Create*. This creates a job to create the share.
+
+=== After you finish
+
+* For CIFs type shares only: to make the shares available by host name, your domain administrator must update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
+** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
+** With no DNS records updated, you must use the IP address to access the share i.e. file://IP/share[\\IP\share^]
+* Create share is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+** Check the status of the job in the jobs list.
+** After the job is finished, check the status of the share in the Shares list.

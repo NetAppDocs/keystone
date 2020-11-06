@@ -1,0 +1,66 @@
+---
+sidebar: sidebar
+permalink: sewebiug_working_with_reports.html
+keywords: netapp, keystone, working, reports,
+summary: Keystone working with reports
+---
+
+= Working with reports
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.892417
+//
+
+[.lead]
+This section describes the Capacity Usage report.
+
+=== Capacity usage
+
+The Capacity Usage page displays capacity usage over time for each storage service in a subscription. Use the graphical reports on this page to view the trends usage for both storage services, as well as add-on services such as Data Protection and over time. When a service is in burst, a banner displays the burst capacity used in the current billing cycle.
+
+image:sewebiug_image33.png[Error: Missing Graphic Image]
+
+To display the Capacity Usage page, select Reports > Capacity Usage from the menu.
+
+To view the capacity usage for a service, perform the following steps:
+
+. Select the subscription containing the service from the Subscription No menu.
+. You can choose to view the capacity usage for base Service Levels or Data Protection services. The page displays the services available.
+. You can scroll the page to view the services, and use the period filters to limit the display to a selected period.
+
+=== Performance report
+
+The Performance page (shown in the image below) displays information about the performance of individual disks or shares. It displays information on three performance measures:
+
+* Input/output operations per second per tebibyte (IOPS/TiB).
++
+The rate at which IOPS is occurring on the storage device.
+
+* Throughput in MBps.
++
+Throughput measures the data transfer rate to and from the storage media in megabytes per second.
+
+* Latency (ms).
++
+Average time for reads/writes from the disk/share in milliseconds.
++
+To display the Performance page, select Reports > Performance from the menu.
++
+To display the performance details for a disk/share, complete the following steps.
+
+. Select the Subtenant, Region and Zone, and then the storage object type to display either Disks or Shares for the disk or share. The page displays the list of storage objects meeting the selected criteria, showing the latest performance data for those objects.
+. To view the trend in performance data for a selected share or disk, locate the storage object in the list and click to expand the panel. The performance graphs for the selected object display.
+
+image:sewebiug_image34.png[Error: Missing Graphic Image]
+
+The graphs show the performance of the storage over time. You can:
+
+* Choose the period to display by selecting the period filters or click and drag on the graph.
+* Hover a mouse over a point in the graph to see more information for that point.

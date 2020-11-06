@@ -1,0 +1,122 @@
+---
+sidebar: sidebar
+permalink: nkfsfaq_service_offer_details.html
+keywords: netapp, keystone, service, offer, details,
+summary: Service offer details
+---
+
+= Service Offer Details
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:15:36.873936
+//
+
+[.lead]
+*What is offered as part of Keystone Flex Subscription?*
+
+Keystone Flex Subscription is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
+
+*What storage service offers are provided as part of Keystone Flex Subscription?*
+
+The following chart shows the data storage performance tiers offerings.
+
+image:nkfsfaq_image3.png[Error: Missing Graphic Image]
+
+*What add-on services are supported?*
+
+Advanced data protection (backup and disaster recovery) and Hybrid Cloud Tiering with FabricPool are add-on services that can be chosen at an additional cost.
+
+*What service levels does NetApp guarantee with the service?*
+
+In a NetApp operated scenario, NetApp Keystone guarantees IOPS/TiB for the storage that is provisioned and the latency for each service level.
+
+*What is the typical length of term of a NetApp Keystone Flex Subscription agreement?*
+
+The NetApp Keystone Flex Subscription offers 12- , 24- , and 36-month term periods.
+
+*How does the customer access the storage?*
+
+The customer can only provision storage and change provisioned storage to available settings, either through a management portal or through APIs. The customer cannot directly log in to the storage equipment. For example, the customer is not provided with NetApp ONTAP System Manager or administrative access to the systems.
+
+*How do customers manage the service?*
+
+NetApp Service Engine is the orchestration and management tool that the customer can use to provision storage and get reports on the service usage.
+
+*Are APIs provided to integrate with customer tools?*
+
+Yes, RESTful APIs are available to integrate into the customer’s own applications.
+
+*Who does the monitoring and operations?*
+
+For the NetApp-operated service, NetApp is responsible for monitoring the infrastructure remotely so that the service is delivered according to the agreed expectations.
+
+For the partner-operated service, partner is responsible for monitoring the infrastructure remotely so that the service is delivered according to the agreed expectations.
+
+For the customer-operated service, customer is responsible for monitoring the infrastructure and raise any issues to NetApp.
+
+*What type of support is included in the offer?*
+
+For the NetApp-operated model, SupportEdge Expert is offered. For the customer-operated model, Support Edge Advisor is offered. For the partner-operated model, either SupportEdge Expert or Advisor is offered.
+
+*What happens if the customer terminates early?*
+
+The minimum service commitment is 12 months. If the customer cancels the service early, the residual value needs to be paid up upfront.
+
+*Is there an opportunity to convert into a purchase after the initial term is completed?*
+
+No. The offer does not include an option to convert into a purchase. Additionally, previously purchased NetApp products are outside the scope of this program.
+
+*What are the responsibilities of NetApp and the customer?*
+
+The responsibilities are outlined in the table below.
+
+|===
+|Action (RACI = Responsible, Accountable, Consulted, Informed) |NetApp |Customer
+
+|Provide storage performance SLAs, data protection SLAs, and provisioning API SLAs
+|R, A, C, I
+|–
+|Provide and manage hardware, software, and labor to provide the SLAs
+|R, A, C, I
+|–
+|Storage SLA reports, dashboards, and billings reports
+|R, A, C
+|I
+|Availability of 20% burst capacity over committed capacity
+|R, A, I
+|C
+|Provide storage request and incident management (service SLA)
+|R, A
+|C, I
+|All other storage service management including events, problems, changes, assets, and all other operations processes
+|R, A, C, I
+|
+|Provide data center power, space, and cooling per NetApp specifications
+|C, I
+|R, A
+|Provide customer network connection to service router per NetApp specifications
+|C, I
+|R, A
+|Respond to data center and customer network incidents and problems (data center failure)
+|C, I
+|R, A
+|Manage customer network, compute, and application events, incidents, problems, changes, assets, and other operations processes
+|–
+|R, A, C, I
+|Provide provisioning automation and orchestration to storage API
+|–
+|R, A, C,I
+|Perform data and application recovery and restoration
+|–
+|R, A, C,I
+|Report storage SLA violation claims
+|C, I
+|R, A
+|===

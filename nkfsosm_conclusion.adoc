@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_conclusion.html
+keywords: netapp, keystone, conclusion,
+summary: Keystone Flex Subscription conclusion
+---
+
+= Conclusion
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:49.026524
+//
+
+[.lead]
+Keystone Flex Subscription is a fully managed storage service providing the flexibility to host multiple workloads of different performance needs and pay for what you want, with an easy to use self-service portal providing the complete view on the service and ability to consume storage without the need to know the technologies behind the scenes. NetApp and NetApp partners provide a dedicated team to ensure that all the critical elements are monitored. They use a set of tools to ensure service is delivered as promised and support the customer throughout their journey.

@@ -1,0 +1,71 @@
+---
+sidebar: sidebar
+permalink: nkfsfaq_overview.html
+keywords: netapp, keystone, overview,
+summary: NetApp Keystone Overview
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:15:36.817851
+//
+
+[.lead]
+*What is NetApp Keystone?*
+
+NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives, consisting of Keystone Flex Pay, and Keystone Flex Subscription.
+
+* *Keystone Flex Pay.* A portfolio of payment solutions including traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
+* *Keystone Flex Subscription (formerly On-Premises Cloud Consumption (OPCC)).* Pay-as-you-grow subscription-based service that brings a cloud-like experience on premises, with an outcome-based service option (NetApp-operated), as shown in the figure below.
+
+image:nkfsfaq_image1.png[Error: Missing Graphic Image]
+
+*How does NetApp Keystone benefit my customers?*
+
+NetApp Keystone is the bridge that connects the pillars of our capex and hybrid cloud strategy— delivering agility, financial flexibility, and reduced financial risk that helps customers meet their cash flow and business needs.
+
+The NetApp Keystone brand offers a portfolio of flexible payment solutions that include traditional financing, leasing, and fixed/variable options for cash-conscious customers along with Keystone Flex Subscription. Here is how to position each of the offerings:
+
+* *Keystone Flex Pay (financial flexibility, payment solutions):*
+** Prefer to own the asset title, but need payment/financial flexibility (rental model, lease, loan, installments)
+** Stringent security requirements with no external data connectivity options to enable subscription
+** Workloads have predictable capacity growth and aligns with capex budgets
+** Well-managed infrastructure with high asset utilization
+** Prefer to procure storage on a raw-capacity basis and retain efficiency benefits
+* *Keystone Flex Subscription (OPEX, cloud-like experience):*
+** Prefer 100% OPEX, so assets will not end up on your customer’s balance sheet
+** Internal/external Service Providers looking to align costs with usage/revenue
+** Workloads with unpredictable capacity growth
+** Reallocated IT resources from typical storage tasks (migrations, tech refresh, upgrades, and so on)
+** Short-term solution before migrating workloads to the cloud
+** Repatriating workloads back from the cloud to on- premises
+
+*What is Keystone Flex Subscription?*
+
+Keystone Flex Subscription is a new, flexible, on-premises subscription-based procurement model. It enables customers to accelerate time to value by removing the hurdles around managing the resources and going through the lengthy procurement cycle. Keystone Flex Subscription allows customers to align economics to their business priorities, as shown in the figure below.
+
+image:nkfsfaq_image2.png[Error: Missing Graphic Image]
+
+*What does on-premises mean?*
+
+On-premises is defined as a customer-owned data center or customer-owned space in a colocation facility. The customer is responsible for the space, power, and cooling.
+
+*What are the benefits of Keystone Flex Subscription services?*
+
+Some benefits of Keystone Flex Subscription services are:
+
+* Frees up IT staff from complicated storage-related tasks and allows them to focus on application management
+* Reduces upfront capital investment
+* Allows customers to meet their demands without overprovisioning
+* Aligns data storage costs with business needs/activity
+* Simplifies infrastructure provisioning by bypassing complex organizational procurement procedures
+* Keeps data secure on their premises
+* Enables proper control over compliance, performance, and security

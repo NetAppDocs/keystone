@@ -1,0 +1,103 @@
+---
+sidebar: sidebar
+permalink: nkfsfaq_operations_and_support.html
+keywords: netapp, keystone, operations, support,
+summary: Operations and Support
+---
+
+= Operations and Support
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:15:37.043322
+//
+
+[.lead]
+*How do I view the subscription usage?*
+
+NetApp Service Engine provides a dashboard view, with information on all the services that are subscribed to and how much is consumed, as shown in the figure below.
+
+For details about NetApp Service Engine, see link:https://nkfsosm_netapp_service_engine.html[here].
+
+image:nkfsfaq_image5.png[Error: Missing Graphic Image]
+
+*How do I report any issues with the service?*
+
+NetApp Keystone support can be reached through these various channels:
+
+* Support email: mailto:keystone.services@netapp.com[keystone.services@netapp.com^]
+* Escalations email: mailto:keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
+* Telephone (24/7):
+** 888.4.NETAPP (US and Canada)(888.463.8277)
+** 00.800.44.638277 (EMEA/Europe)
+** +800.800.80.800 (Asia/Pacific)
+
+Follow IVR Options for direct NetApp Keystone Support – 2 - 2 – 5 and enter keystone code <7003 >
+
+*Can I order new storage service?*
+
+Yes, new storage service or expansion to storage service can be requested from the NetApp Service Engine portal. The request is processed by the NetApp Keystone operations team before making it available for use.
+
+*Are increases to storage commitments available immediately?*
+
+Depending the amount of capacity requested, a determination is made whether the capacity is already deployed, or it requires additional equipment to be shipped and installed.
+
+*Can workloads be moved between the tiers?*
+
+Yes, workloads can be moved between tiers, provided the user has subscribed to the tier the workload is moving to. However, we do not recommend moving from a higher tier to a lower tier because it can cause a performance degradation. The process is achieved by simply editing the file share and changing the service level setting.
+
+*What software version (for example, ONTAP) is installed as default?*
+
+Depending on the service tier subscribed (for example, ONTAP with File and Block services, SANtricity for Block, and StorageGrid for Object) NetApp Keystone installs the latest stable release with no security or feature issues.
+
+*How often does the NetApp Keystone team update the software version?*
+
+There is no defined frequency. The NetApp Keystone team selects the right stable version and for security patches, bug fixes, or feature additions, decides to update. The Keystone Success Manager is engaged with the Customer Data Centre team to get window on when we can do that.
+
+*Can the customer request a particular software version?*
+
+No. NetApp Keystone has standardized the software version across all its customer base.
+
+*Will the customer be informed about software upgrades?*
+
+Yes. All maintenance/upgrade activities are communicated to and scheduled at a mutually agreeable time with the customer by the NetApp Keystone Success Manager.
+
+*Who ensures customer applications are compatible with the NetApp Keystone environment?*
+
+The NetApp Keystone team does not have any visibility into customer application. It is up to the customer to ensure they work with the NetApp Keystone Success Manager to share their application requirements.
+
+*What triggers an expansion of the environment?*
+
+Additional equipment is added by the NetApp Keystone team for the following scenarios:
+
+* To meet the agreed upon SLAs
+* To satisfy the customer request to increase the capacity or add on a new service
+
+*What happens if the service levels are not met?*
+
+The following table lists the service level information.
+
+|===
+|Category |Descriptions/Details
+
+|Data access availability SLA
+a|* *Monthly uptime percentage* of at least *99.999% (five 9s)* during any monthly billing cycle
+* Only covers systems comprised of NetApp AFF products
+|Performance SLO
+a|* *Targeted IOPS/TB* at the specified block sizes and configured Volume size, per the related performance level
+|Claims process
+a|* Customer inquiries regarding the SLXs should be *directed to NetApp technical support*, or email xdl-americas-revenue@netapp.com
+|Service credits/remediation
+a|* NetApp will evaluate all claims to determine service credits (if any) to apply against future charges
+|Contractual limitations
+a|* Customer *must initiate a case* with NetApp technical support *within four weeks* of the incident
+* Customer is only eligible to receive *one service credit per month per account*
+* The service credit (*not to exceed 20%* of minimum payment for initial committed capacity) can only be applied to toward customer’s future charges
+* Availability will be *measured* and *reported separately* for each service
+|===

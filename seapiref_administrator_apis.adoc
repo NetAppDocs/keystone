@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: seapiref_administrator_apis.html
+keywords: netapp, keystone, administrator, apis,
+summary: Keystone administrator APIs
+---
+
+= Administrator APIs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:10.069713
+//

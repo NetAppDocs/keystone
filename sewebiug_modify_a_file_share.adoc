@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: sewebiug_modify_a_file_share.html
+keywords: netapp, keystone, modify, file, share,
+summary: Keystone modify a file share
+---
+
+= Modify a file share
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.339081
+//
+
+[.lead]
+You can change the share name, the share type (CIFS, NFS, multi-protocol), service level, capacity, snapshot policy, export policy,  and tags.
+
+[NOTE]
+Using this method,  you can move your shares to different performance levels if available.
+
+=== Before you begin
+
+The file share must be in the operational state.
+
+=== Steps
+
+. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. Locate the share in the list and click the Edit icon for that share. (For details about working with items in lists,  see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
+. Make any changes as required;  for field descriptions, see link:sewebiug_create_a_new_file_share.html[Create a new file share].
+. Click *Done*. This creates a job to modify the share.
+
+=== After you finish
+
+Modify share is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+
+* Check the status of the job in the jobs list.
+* After the job is finished, check the status of the share in the Shares list.

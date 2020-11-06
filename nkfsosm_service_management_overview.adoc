@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_service_management_overview.html
+keywords: netapp, keystone, service, management, overview,
+summary: Keystone operations overview
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.799449
+//
+
+[.lead]
+This section details the process adopted by the Keystone Operations team to assure the quality and availability of the Keystone service.

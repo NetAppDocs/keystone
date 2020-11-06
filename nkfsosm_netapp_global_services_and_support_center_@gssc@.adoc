@@ -1,0 +1,65 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html
+keywords: netapp, keystone, global, services, support, center, gssc,
+summary: NetApp Global Services and Support Center (GSSC)
+---
+
+= NetApp Global Services and Support Center (GSSC)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.538983
+//
+
+[.lead]
+NetApp provides operational services remotely to NetApp Keystone customers. These services encompass a range of operational disciplines across storage management activities, including asset and configuration management, capacity and performance management, change management, event, incident and problem management, service request fulfillment, and reporting. NetApp will demonstrate a state of control and supporting evidence available as required.
+
+The proposed NetApp Operational Services are a global service and support model delivered by NetApp GSSC. These services are delivered remotely, primarily from India, and will expanded to other Geo’s in future. The overall operational management from GSSC is listed in the below figure.
+
+image:nkfsosm_image14.png[Error: Missing Graphic Image]
+
+KSM will complement GSSC to enable 24/7 support to Keystone customers.
+
+The KSM owns the customer’s utilization and experience with the Keystone service. The KSM’s primary role is to ensure that the customer/NetApp relationships are maintained. The KSDM is the primary contact for customer meetings, customer reporting, and customer communication between the customer and NetApp.
+
+The KSM is the primary contact for the customer to manage the overall KFS service. The KSM works with various stakeholders within NetApp and with the customer.
+
+The KSM is responsible for the following activities during the length of the contract:
+
+* Reports to the customer’s account team and to the customer-identified teams.
+* Is the primary customer interface for the NetApp-operated services.
+* Provides service oversight across all supported environments, service locations, and service functions.
+* Coordinates with the KSDM to chair the operations review meetings.
+* Is the point of escalation for all critical incidents; keeps the account team updated on the operational status with respect to the supported environment.
+* Oversees the following reviews:
+** Service delivery review
+** Capacity reviews
+** Performance reviews
+** Availability review
+** Maintenance review
+** Incident review
+** Escalation review
+** Billing review
+** Planning
+** Best practices review
+* Is a customer advocate
+* Expected of customer:
+** Capacity and performance demand plan (each month)
+** Strategic plan (each six months)
+** Communications
+
+=== Operational Governance
+
+The KSM provides the following operational governance:
+
+* Operational reviewer and approver for new or existing requirements.
+* Oversees operational configurations and changes.
+* Reviews and approves operational documentation.
+* Approves the on-boarding of all new Keystone services under the supported environment.

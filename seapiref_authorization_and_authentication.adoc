@@ -1,0 +1,78 @@
+---
+sidebar: sidebar
+permalink: seapiref_authorization_and_authentication.html
+keywords: netapp, keystone, authorization, authentication,
+summary: Keystone authorization and authentication
+---
+
+= Authorization and authentication
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:08.988624
+//
+
+[.lead]
+The NetApp Service Engine REST API is accessible by using any web browser or programming platform that can issue HTTP requests. NetApp Service Engine supports basic HTTP authentication mechanism as well as Java Web Token (JWT) Bearer authentication. Before you call an API, you must authenticate a user.
+
+=== HTTP status codes
+
+While running the APIs or troubleshooting issues, you should be aware of the various HTTP status codes and error codes that are used by NetApp Service Engine APIs.
+
+The following table lists the error codes related to authentication.
+
+|===
+|HTTP Status Code |Status Code Title |Description
+
+|200
+|OK
+|Returned on successful execution of synchronous API calls.
+|201
+|Created
+|Creation of new resources by synchronous calls, such as configuration of Active Directory.
+|202
+|Accepted
+|Returned on successful execution of asynchronous calls for provisioning functions, such as creating LUNs and files shares.
+|400
+|Invalid Request
+|Indicates input validation failure. User must correct the inputs, for example, valid keys in a request body.
+|401
+|Unauthorized Request
+|You are not authorized to view the resource/unauthorized.
+|403
+|Forbidden Request
+|Accessing the resource you were trying to reach is forbidden.
+|404
+|Resource Not Found
+|The resource you were trying to reach is not found.
+|405
+|Method Not Allowed
+|Method not allowed.
+|412
+|Precondition Failed
+|One or more preconditions were not met.
+
+|500
+|Internal Server Error
+|Internal server error. Failed to get a response from the server.
+This internal server error might or might not be permanent. For example, if you run a GET or GET ALL operation and receive this error, it is recommended that you repeat this operation for a minimum of five retries. If it is a permanent error, then the status code returned continues to be 500. If the operation succeeds, the status code returned is 200.
+|===
+
+=== Recommendations for using the APIs
+
+When using the APIs, you should follow certain recommended practices:
+
+* For a valid execution, make sure all response content type are in the following format:
++
+....
+application/json
+....
+
+* While updating array values, you must update the entire string of values. You cannot append values to an array—you can only replace an existing array.
+* Avoid querying objects by using a combination of the filter operators wildcard (`*`) and pipe (`|`). It might retrieve an incorrect number of objects.

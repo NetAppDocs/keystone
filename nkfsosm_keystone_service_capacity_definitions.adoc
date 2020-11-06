@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_keystone_service_capacity_definitions.html
+keywords: netapp, keystone, service, capacity, definitions,
+summary: Keystone service capacity definitions
+---
+
+= Keystone Service Capacity Definitions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:47.956229
+//
+
+[.lead]
+The Keystone service capacities include:
+
+* *Logical capacity.* Data placed into the NetApp Keystone system by a customer:
+** All NetApp KFS capacities refer to a logical capacity.
++
+For example, if a 1 TiB file is stored on NetApp Keystone, then at least 1 TiB of capacity must be purchased.
+
+* *Committed capacity.* Minimum logical capacity billed each month for the duration of the term:
+** Capacity is committed to each performance level.
+** Committed capacity cannot be decreased during the term.
+** Committed capacity and additional performance levels can be added during the term.
+* *Burst capacity.* Logical capacity, in excess of committed capacity:
+** NetApp Keystone provides 20% capacity in excess of the committed capacity.
+** Burst capacity can be consumed on an elastic basis and is charged on a daily, average-consumed basis.
+** Burst capacity up to 20% is charged at a same rate as the committed capacity.
+** Contact KSM for any additional burst requirements greater than 20%.
+** Burst capacity greater than 20% of committed is charged at a premium rate.
+* *Consumed/provisioned capacity.* Sum of all configured volume sizes:
+** Capacity is provisioned through the creation, modification, deletion, or potential auto-growth of volumes.
+** Includes snapshots and clones.
+** The amount of data stored within provisioned capacity is not considered.
+** The amount of data actually written to disk is not considered.
+* *Billed capacity.* Monthly bill = (committed capacity [TiB] * committed rate [$/TiB]) + (daily average provisioned burst capacity [TiB] * burst rate [$/TiB]):
+** The monthly bill contains a minimum charge based on the committed capacity.
++
+The monthly bill varies beyond the minimum charge based on daily average burst capacity consumption.

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar
+permalink: sewebiug_modify_the_subscribed_service_details.html
+keywords: netapp, keystone, modify, subscribed, service, details,
+summary: Keystone modify the subscribed service details
+---
+
+= Modify the subscribed service details
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.243717
+//
+
+[.lead]
+Use this method to modify the details of a subscribed service’s details. You can:
+
+* Modify the details for each service, as listed in the table below.
+* Add or remove tags for the service.
+
+|===
+|Cloud Platform |You Can Modify:
+
+|Azure
+|Azure Client ID, Azure Client Secret, and name
+|Azure US Government
+|TBA
+|GCP
+|TBA
+|AWS
+|TBA
+|===
+
+=== Steps
+
+. Select Subscribed Services > Subscribed Services from the menu.
+. Locate the subscribed service in the list and click the Edit icon.
+. On the Update Subscribed Service dialog box, make any changes as required.
+. Click *Update*.

@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: sewebiug_modify_a_disk.html
+keywords: netapp, keystone, modify, disk,
+summary: Keystone modify a disk
+---
+
+= Modify a disk
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.608174
+//
+
+[.lead]
+You can change the disk name, the host group mapping, performance service level, capacity, and snapshot policy.
+
+Using this method, you can move your disks to different performance levels if available.
+
+=== Before you begin
+
+The disk must be in an operational state.
+
+=== Steps
+
+. Display the link:sewebiug_view_disks.html#view-disks[Disks list].
+. Locate the disk in the list and click the Edit icon for that disk. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
+. Make any changes as required; refer to link:sewebiug_create_a_new_disk.html[Create a new disk] for field descriptions.
+. Click *Done*. This creates a job to modify the disk.
+
+=== After you finish
+
+Modify disk is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+
+* Check the status of the job in the jobs list.
+* After the job is finished, check the status of the disk in the Disks list.

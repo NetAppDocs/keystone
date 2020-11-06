@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_networking.html
+keywords: netapp, keystone, networking,
+summary: Keystone networking
+---
+
+= Networking
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-08 17:14:48.335432
+//
+
+[.lead]
+Depending on customer requirements and the storage controllers used, KFS can provide 10 Gb, 40 Gb, and 100 Gb connectivity to the customer.
+
+NetApp will provide the required transceivers for NetApp-provided Keystone devices only. The customer is responsible for suppling transceivers required for customer devices and cabling to the NetApp-provided Keystone devices.

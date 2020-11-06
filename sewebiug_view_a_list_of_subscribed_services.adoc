@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: sewebiug_view_a_list_of_subscribed_services.html
+keywords: netapp, keystone, view, list, subscribed, services,
+summary: Keystone view a list of subscribed services
+---
+
+= View a list of subscribed services
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:40.214680
+//
+
+[.lead]
+The Subscribed Services list displays a list of all the subscribed services in the selected tenancy. 
+
+To view the list, select Subscribed Services > Subscribed Services from the menu.
+
+The list displays simple information about each subscribed service.
+
+The action icons next to each subscribed service allow you to modify or delete the subscribed service.

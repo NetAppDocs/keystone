@@ -1,0 +1,107 @@
+---
+sidebar: sidebar
+permalink: sewebiug_netapp_service_engine_web_interface_overview.html
+keywords: netapp, keystone, service, engine, web, interface, overview,
+summary: NetApp service engine web interface overview
+---
+
+= NetApp Service Engine web interface overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.082828
+//
+
+[.lead]
+The figure below is an example of the NetApp Service Engine web Interface. It consists of the following components:
+
+* *Display area.* This is the main working area of the screen; it has two views:
+** Dashboard view: Displays various tools to monitor the usage and performance of your storage.
+** List view: Displays lists of items which can be navigated and sorted (more on that later).
+* *Menu.* Use the menu to view and manage storage items, view reports, and access support.
+* *NetApp logo.* Click this at any time to return the display to the dashboard view.
+* *Tenant.* Displays the currently selected tenant. To change the tenant, see link:sewebiug_select_tenant.html[Select the tenant].
+* *Jobs.* Click to display the status of the most recent provisioning jobs. The icon changes color to display the configuration job status. For more information, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[Jobs and job status indicator].
+* *User login.* Displays the name of the currently logged-in user. Click this icon to sign out. For more information, see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface[Log out of the NetApp Service Engine web interface].
+
+image:sewebiug_image9.png[Error: Missing Graphic Image]
+
+=== Dashboard view
+
+The Dashboard view displays information about the subscribed services; it is the default view when you first log in to the screen. For information about how to view the subscribed services capacity, see link:sewebiug_view_subscribed_services_capacity.html[View Subscribed Services Capacity].
+
+[NOTE]
+To return to the Dashboard view, click the NetApp icon in the top-left corner of the screen.
+
+=== List view
+
+A List view is used to display a list of objects. For example, the list of servers that support the file shares in a subscription are displayed in a List view, as shown in the screenshot below.
+
+From a List view, you can:
+
+* Perform actions on the items in the list: see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
+
+image:sewebiug_image10.png[Error: Missing Graphic Image]
+
+==== List view actions
+
+A List view displays a list of items and provides a quick view of some of the item details (including state). In a List view, you can perform the actions listed in the following table.
+
+|===
+|Action |Description
+
+|Create an item
+|Use the Create button to create a new item.
+
+|Use Action icons
+|Use the Action icons to perform an action on the list item.
+
+
+|Sort the list
+|Use the arrow icons in the list column to sort the list by that column in ascending or descending order. The arrow icons are visible when you hover the cursor near the column name.
+
+|Change number of items displayed,
+navigate the list
+|Change the number of items displayed on the page and navigate the list using the Items per page field and the < and > icons at the bottom of the list.
+
+|Refresh the page
+|Refresh the page using the refresh icon:
+
+|===
+
+==== States: creating, updating, operational, and contact support
+
+During provisioning and modification, some storage items go through a series of steps before they become operational. The state of the storage items is displayed in the List view for those items. The objects may be in one of the following states:
+
+* *Creating.* The storage resource is being created.
+* *Updating.* The item is currently being modified.
++
+Occurs when there is a change to storage resource (file server, files hare, blockstore, disk, and so on). It includes resizing shares, changing snapshot policy settings, changing export policy, taking a snapshot, renaming items, and so on.
+
+* *Operational.* Denotes that the storage resource has been provisioned/modified correctly and is available.
+* *Contact support.* This state occurs when the provisioning or modification task fails to fully complete. For items in this state, raise a Support Request to address the issue.
+
+=== Jobs and job status indicator
+
+Some provisioning tasks in NetApp Service Engine, such as create, modify or delete storage items, take some time to complete. Rather than being executed immediately (as for synchronous tasks), these tasks are executed asynchronously. When initiating such tasks, NetApp Service Engine returns a job record. The status of the job can be tracked to indicate if a task completes successfully.
+
+The job status indicator displays the status of the currently running or last run job.
+
+|===
+|Indicator color |Description
+
+|Orange
+|A task is currently running
+|Red
+|The last task failed to complete.
+|Green
+|The last task completed successfully.
+|===
+
+Click on the status indicator to display the status of the 10 most recent tasks.

@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+permalink: sewebiug_view_host_groups.html
+keywords: netapp, keystone, view, host, groups,
+summary: Keystone view host groups
+---
+
+= View host groups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.427467
+//
+
+[.lead]
+To display the Host Group list, select Block Storage > Host Groups from the menu.
+
+The list displays the defined host groups.
+
+From this page you can create a new host group, modify a host group/ or delete a host group.

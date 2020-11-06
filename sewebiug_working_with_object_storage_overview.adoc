@@ -1,0 +1,39 @@
+---
+sidebar: sidebar
+permalink: sewebiug_working_with_object_storage_overview.html
+keywords: netapp, keystone, working, object, storage, overview,
+summary: Keystone working with object storage overview
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.667809
+//
+
+[.lead]
+Object storage requires an object storage service subscription. When an object storage service is available as part of the subscription, the storage must be initialized before it can be used.
+
+With object storage, objects are stored in S3 buckets. Access to the S3 buckets is managed through permissions set on object storage groups. Object storage users are granted membership to one or more object storage groups, inheriting permissions from the group membership.
+
+Each object storage user has associated S3 keys that allow access to the object storage.
+
+[NOTE]
+ Access to the object storage is through an S3 compatible browser.
+
+This section describes how to manage your object storage, including how to:
+
+* Initialize object storage.
+* Create S3 buckets.
++
+It is not possible to delete S3 buckets through the NetApp Service Engine web portal; delete these buckets using an S3 compatible browser.
+
+* Create and manage object storage groups.
+* Create and manage object storage users, including creating S3 keys.

@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: seapiref_consumer_apis.html
+keywords: netapp, keystone, consumer, apis,
+summary: Keystone consumer APIs
+---
+
+= Consumer APIs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-19 09:25:09.013046
+//

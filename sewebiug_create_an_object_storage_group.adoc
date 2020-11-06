@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: sewebiug_create_an_object_storage_group.html
+keywords: netapp, keystone, create, object, storage, group,
+summary: Keystone create an object storage group
+---
+
+= Create an object storage group
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-10-20 10:59:39.747939
+//
+
+[.lead]
+Use this method to create a new object storage group.
+
+=== Steps
+
+. Display the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
+. Make sure the correct subtenant is selected and the display is showing groups (not users).
+. Click *Create Group*.
+. In the Create Group dialog box, enter the group name.
+. Select the S3 policy from the list.
+. Click *Create*. This creates a job to create the group with the specified settings.
+
+=== After you finish
+
+Create object storage group is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can check the status of the job in the jobs list.
