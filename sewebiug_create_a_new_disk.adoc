@@ -54,13 +54,13 @@ image:sewebiug_image27.png[Error: Missing Graphic Image]
 +
 The iSCSI service is enabled for all disks by default.
 
-. If required, enable the FCP protocol (only available if the underlying infrastructure supports it).
-. If required, enable the Asynchronous Disaster Recovery options (enable and select Region, Zone, and Schedule).
-. If the zone selected is MCC-enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled. Disks created in this block store synchronously replicate to the zone displayed in the Synchronous Disaster Recovery panel.
+.. If required, enable the FCP protocol (only available if the underlying infrastructure supports it).
+.. If required, enable the Asynchronous Disaster Recovery options (enable and select Region, Zone, and Schedule).
+.. If the zone selected is MCC-enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled. Disks created in this block store synchronously replicate to the zone displayed in the Synchronous Disaster Recovery panel.
 +
 image:sewebiug_image28.png[Error: Missing Graphic Image]
 +
-. Click *Create* to initialize the block store. Wait until the block store initializes. The display returns to Create Disk page.
+.. Click *Create* to initialize the block store. Wait until the block store initializes. The display returns to Create Disk page.
 . Complete the following fields:
 +
 |===
@@ -80,7 +80,7 @@ To define a new host group, see the next step.
 
 . If required, create a new host group:
 .. Click *Create Host Group*. The Create Host Group dialog is displayed.
-.. :Specify the Name of the host group.
+.. Specify the Name of the host group.
 .. Add the Initiators for the group. For each initiator, specify the alias and the initiator.
 .. If required, add tags (key-value pairs) to the host group in the Tags section.
 .. Click *Create*. The system creates the host group and displays a message when it is successfully created.

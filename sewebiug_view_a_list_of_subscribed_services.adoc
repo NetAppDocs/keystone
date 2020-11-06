@@ -19,7 +19,9 @@ summary: Keystone view a list of subscribed services
 //
 
 [.lead]
-The Subscribed Services list displays a list of all the subscribed services in the selected tenancy. To display the list, select Subscribed Services > Subscribed Services from the menu.
+The Subscribed Services list displays a list of all the subscribed services in the selected tenancy. 
+
+To view the list, select Subscribed Services > Subscribed Services from the menu.
 
 The list displays simple information about each subscribed service.
 

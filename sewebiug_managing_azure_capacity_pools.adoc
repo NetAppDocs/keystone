@@ -42,7 +42,9 @@ The list displays simple information about each Azure capacity pool. The action 
 This section describes how to add an Azure capacity pool.
 
 ==== Before you begin
+
 You will need:
+
 * The subtenant to which the capacity belongs
 * The ANF account
 * The service level

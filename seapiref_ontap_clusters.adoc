@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_ontap_clusters.html
-keywords: netapp, keystone, ontap, clusters,
-summary: Keystone ONTAP clusters
+keywords:
+summary:
 ---
 
 = ONTAP clusters
@@ -292,7 +292,6 @@ none
           }
         ],
         "is_mcc": false,
-        "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
         "created": "1995-09-07T10:40:52Z"
       }
     ]
@@ -370,7 +369,6 @@ none
         "created": "2019-02-22T03:38:38.867Z",
         "data_fcp_ports": [],
         "is_mcc": false,
-        "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
         "created": "1995-09-07T10:40:52Z"
       }
     ]
@@ -438,7 +436,6 @@ If `is_mcc` is true, the `mcc_partner_cluster` is required.
   "data_fcp_ports": [
   ],
   "is_mcc": false,
-  "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3"
 }
 ....
 

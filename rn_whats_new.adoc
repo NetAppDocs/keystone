@@ -1,0 +1,88 @@
+---
+sidebar: sidebar
+permalink: rn_whats_new.html
+keywords: netapp, keystone, release notes, new features, what's new,
+summary: new features in NetApp Service Engine
+---
+
+= What's new in NetApp Service Engine
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-11-05
+//
+
+[.lead]
+The following features and enhancements have been introduced in this release of NetApp Service Engine.
+
+== MetroCluster support
+NetApp Service Engine supports sites configured with MetroCluster configurations. MetroCluster is a data protection feature of ONTAP that provides recovery point objectives (RPO) 0 or recovery time objectives (RTO) 0 using synchronous mirror for continuously available storage.
+MetroCluster support translates to a synchronous disaster recovery feature within NetApp Service Engine. Each side of an MetroCluster instance is registered as a separate zone, each with its own subscription that includes a Data Protection Advanced rate plan.
+Shares or disks created in a MetroCluster-enabled zone synchronously replicate to the second zone. The consumption of the replicated zone follows the Data Protection Advanced rate plan applicable to the zone where storage is provisioned.
+
+== Cloud Volumes Services (CVS) support
+NetApp Service Engine now has the ability to support Cloud Volumes Services (CVS). It can now support Azure NetApp Files.
+
+[NOTE]
+
+Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
+
+NetApp Service Engine supports:
+
+*	Provisioning or modifying the CVS volumes (including the ability to take snapshots)
+*	Backing up data to a CVS zone
+*	Viewing CVS volumes in NSE inventory
+*	Viewing CVS usage.
+
+== Host groups
+NetApp Service Engine supports the use of host groups. A host group is a group of FC protocol host worldwide port names (WWPNs) or iSCSI host node names (IQNs). You can define host groups and map them to disks to control which initiators have access to the disks.
+Host groups replace the need to specify individual initiators for every disk and allow for the following:
+
+*	An additional disk to be presented to the same set of initiators
+*	Updating the set of initiators across multiple disks
+
+== Burst usage and notifications
+Some NetApp Service Engine-supported storage subscriptions allow customers to use a burst capacity over their committed capacity, which is charged separately over and above the subscribed committed capacity. It is important for users to understand when they are about to use or have used burst capacity to control their usage and costs.
+
+=== Notification when a proposed change results in using burst capacity
+A notification to display a change in the proposed provisioning that will cause a subscription to go into burst. The user can choose to continue, knowing that will put the subscription into burst or choose not to continue with the action.
+link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications[Learn more].
+
+=== Notification when subscription is in burst
+
+A notification banner is displayed when a subscription is in burst.
+link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications[Learn more].
+
+=== Capacity report shows burst usage
+
+Capacity report showing the number of days the subscription has been in burst and the quantity of burst capacity used.
+link:sewebiug_working_with_reports.html#capacity-usage[Learn more]
+
+== Performance Report
+
+A new Performance Report in the NetApp Service Engine web interface displays information about the performance of individual disks or shares on the following performance measures:
+
+*	IOPS/TiB (Input/Output operations per second per tebibyte): The rate at which input and output operations per second (IOPS) occur on the storage device.
+*	Throughput in MBps: The data transfer rate to and from the storage media in megabytes per second.
+*	Latency (ms): The average time for reads and writes from the disk or share in milliseconds.
+
+== Subscription management
+
+Subscription management has been enhanced. You can now:
+
+* Request a data protection add-on, or request additional capacity for a data protection add-on for a subscription or service
+*	View data protection usage capacity
+
+== Billing enhancement
+
+Billing now supports the ability to measure and bill for snapshot usage for ONTAP (file and block) storage.
+
+== Hidden CIFS shares
+
+NetApp Service Engine supports creating hidden CIFS shares.

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_block_storage_apis.html
-keywords: netapp, keystone, block, storage, apis,
-summary: Keystone block storage APIs
+keywords:
+summary:
 ---
 
 = Block storage APIs
@@ -779,10 +779,6 @@ none
         "dr_enabled": false,
         "dr_zone": "",
         "backups": [],
-        "backup_zones_available": [
-          "dev-cl1-97-zone1",
-          "dev-aus-bri-97-cl1",
-          "dev-nz-per-96-cl1"
         ],
         "created": "2020-08-21T02:21:10.307Z",
         "updated": "2020-08-21T02:42:20.316Z"
