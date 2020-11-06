@@ -23,26 +23,22 @@ The following features and enhancements have been introduced in this release of 
 
 == MetroCluster support
 NetApp Service Engine supports sites configured with MetroCluster configurations. MetroCluster is a data protection feature of ONTAP that provides recovery point objectives (RPO) 0 or recovery time objectives (RTO) 0 using synchronous mirror for continuously available storage.
-MetroCluster support translates to a synchronous disaster recovery feature within NetApp Service Engine. Each side of an MetroCluster instance is registered as a separate zone, each with its own subscription, featuring a Data Protection Advanced rate plan.
-Shares or disks created in an MetroCluster-enabled zone synchronously replicate to the second zone; replicas consume usage against the Data Protection Advanced rate plan in the subscription applied to the zone where the storage is provisioned.
-
-[NOTE]
-
-Failover in a MetroCluster configuration is not a function of NetApp Service Engine.
+MetroCluster support translates to a synchronous disaster recovery feature within NetApp Service Engine. Each side of an MetroCluster instance is registered as a separate zone, each with its own subscription that includes a Data Protection Advanced rate plan.
+Shares or disks created in a MetroCluster-enabled zone synchronously replicate to the second zone. The consumption of the replicated zone follows the Data Protection Advanced rate plan applicable to the zone where storage is provisioned.
 
 == Cloud Volumes Services (CVS) support
-NetApp Service Engine has now the ability to support Cloud Volumes Services (CVS). It can now support Azure NetApp Files.
+NetApp Service Engine now has the ability to support Cloud Volumes Services (CVS). It can now support Azure NetApp Files.
 
 [NOTE]
 
 Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
 
-NetApp Service Engine supports the following:
+NetApp Service Engine supports:
 
-*	Ability to provision/edit CVS volumes (includes the ability to take snapshots)
-*	Ability to backup data to a CVS zone
-*	Ability to see CVS volumes in NSE inventory
-*	Ability to see CVS usage.
+*	Provisioning or modifying the CVS volumes (including the ability to take snapshots)
+*	Backing up data to a CVS zone
+*	Viewing CVS volumes in NSE inventory
+*	Viewing CVS usage.
 
 == Host groups
 NetApp Service Engine supports the use of host groups. A host group is a group of FC protocol host worldwide port names (WWPNs) or iSCSI host node names (IQNs). You can define host groups and map them to disks to control which initiators have access to the disks.
