@@ -19,12 +19,20 @@ summary: known issues in NetApp Service Engine
 //
 
 [.lead]
-The following known issue has been reported in this release of NetApp Service Engine.
+The following known issues have been reported in this release of NetApp Service Engine.
 
-== Limitations in synchronous data protection
 
-There is an issue where the VLANs, IPspaces, and Broadcast domains are not defined on the secondary partner of an MetroCluster cluster. This issue can affect recovery of data from the replica zone.
+|===
+|Known Issue |Description |Workaround
 
-*Workaround*
+|Limitations in synchronous data protection
+|There is an issue where the VLANs, IPspaces, and Broadcast domains are not defined on the secondary partner of an MetroCluster cluster. This issue can affect recovery of data from the replica zone.
+|Place a service request for GSSC to perform a manual network configuration on the partner cluster. The network configuration can be done in advance if the network components (VLAN, IPspace, and Broadcast domains) are known.
+|Cannot disable multiple volumes that are disaster-recovery enabled
+|If there are two or more volumes in a storage VM that are disaster-recovery enabled, disaster-recovery cannot be disabled for a file share or disk.
+|A support incident is raised when the file share or disk automatically goes to support. GSSC can then resolve this issue.
+|Limitation with editing backup policy
+|A backup policy, once enabled, cannot be modified.
+|Place a service request for GSSC to modify the backup policy.
 
-Place a Service Request for GSSC to perform a manual network configuration on the partner cluster. The network configuration can be done in advance if the network components (VLAN, IPspace, and Broadcast domains) are known.
+|===
