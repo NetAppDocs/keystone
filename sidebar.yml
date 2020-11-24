@@ -2,11 +2,6 @@ entries:
   - title: NetApp Keystone Flex Subscription
     url: /index.html
     entries:
-      - title: Keystone Overview
-        url: /nkfsosm_keystone_overview_overview.html
-        entries:
-          - title: Keystone Flex Subscription
-            url: /nkfsosm_keystone_flex_subscription.html
       - title: Service Terms and Description
         url: /nkfsosm_service_terms_and_description_overview.html
         entries:
