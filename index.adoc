@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, offering,
 summary: Welcome to the Keystone documentation portal.
 ---
 
-= NetApp Keystone service offering
+= Documentation for the NetApp Keystone service offering
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,14 +14,14 @@ summary: Welcome to the Keystone documentation portal.
 
 NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives to enable the on-ramp to cloud journey, which includes Keystone Flex Pay (KFP) and Keystone Flex Subscription (KFS) services.
 
-* *KFP*. KFP is a portfolio of flexible financial alternatives that include traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
-* *KFS.* Formerly known as On-Premises Cloud Consumption, KFS is pay-as-you-grow, outcome-based subscription service that brings an on-premises cloud-like experience.
+* *KFP* - KFP is a portfolio of flexible financial alternatives that include traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
+* *KFS* - Formerly known as On-Premises Cloud Consumption, KFS is pay-as-you-grow, outcome-based subscription service that brings an on-premises cloud-like experience.
 
 image:nkfsosm_image1.png[Error: Missing Graphic Image]
 
 == Keystone Flex Subscription
 
-Keystone Flex Subscription (KFS) is an outcome-based, on-premises, subscription service model. It enables customers to accelerate time to value by reducing the hurdles related to managing the unpredictable capacity growth and going through the complex procurement cycles. KFS allows customers to align economics and operations to their business priorities.
+KFS is an outcome-based, on-premises, subscription service model. It enables customers to accelerate time to value by reducing the hurdles related to managing the unpredictable capacity growth and going through the complex procurement cycles. KFS allows customers to align economics and operations to their business priorities.
 
 image:nkfsosm_image2.png[Error: Missing Graphic Image]
 
@@ -36,7 +36,7 @@ Keystone uses SnapVault technology for backup operations and SnapMirror for disa
 
 image:nkfsosm_image3.png[Error: Missing Graphic Image]
 
-=== Keystone Flex Subscription Benefits
+=== Keystone Flex Subscription benefits
 
 KFS provides the following benefits:
 
