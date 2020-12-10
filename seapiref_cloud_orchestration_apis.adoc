@@ -33,7 +33,7 @@ This section describes the APIs for:
 
 === Cloud Volumes Service instances
 
-Use the methods listed in the following table to retrieve and create Azure NetApp Files instances.
+Use the methods listed in the following table to retrieve and create Cloud Volumes Service instances.
 
 |===
 |HTTP Method |Path |Description
@@ -67,19 +67,19 @@ Use the methods listed in the following table to retrieve and create Azure NetAp
 |Retrieve an Azure NetApp Files capacity pool by ID.
 |===
 
-==== Azure NetApp Files instance attributes
+==== Cloud Volumes Service instance attributes
 
-The following table lists the Azure NetApp Files instance attributes.
+The following table lists the Cloud Volumes Service instance attributes.
 
 |===
 |Attribute |Type |Description
 
 |`id`
 |String
-|Unique identifier for the Azure NetApp Files instance.
+|Unique identifier for the Cloud Volumes Service instance.
 |`name`
 |String
-|Name of the Azure NetApp Files instance.
+|Name of the Cloud Volumes Service instance.
 |`cc_working_env`
 |String
 |Working environment name within Cloud Manager.
@@ -344,9 +344,9 @@ Required request body attributes: `name, cc_working_env, cc_client_id, cc_refres
 }
 ....
 
-==== Manage tags for Azure NetApp Files instances
+==== Manage tags for Cloud Volumes Service instances
 
-Use the method listed in the following table to specify tags for the named Azure NetApp Files instance.
+Use the method listed in the following table to specify tags for the named Cloud Volumes Service instance.
 
 |===
 |HTTP Method |Path |Description |Parameters
@@ -409,9 +409,9 @@ The following table lists the Azure NetApp Files account attributes.
 |`location`
 |String
 |The Azure location (region/zone).
-|`anf_instance_id`
+|`cvs_instance_id`
 |String
-|The Azure NetApp Files instance identifier.
+|The Cloud Volumes Service instance identifier.
 |`tags`
 |–
 |The key-value pairs.
@@ -461,7 +461,7 @@ none
         "resource_group": "string",
         "location": "string",
         "state": "Operational",
-        "anf_instance_id": "5d2fb0fb4f47df00015274e3",
+        "cvs_instance_id": "5d2fb0fb4f47df00015274e3",
         "tenant": "Acme",
         "tenant_id": "5d2fb0fb4f47df00015274e3",
         "subtenant": "Default Subtenant",
@@ -520,7 +520,7 @@ none
         "resource_group": "string",
         "location": "string",
         "state": "Operational",
-        "anf_instance_id": "5d2fb0fb4f47df00015274e3",
+        "cvs_instance_id": "5d2fb0fb4f47df00015274e3",
         "tenant": "Acme",
         "tenant_id": "5d2fb0fb4f47df00015274e3",
         "subtenant": "Default Subtenant",
@@ -552,7 +552,7 @@ Use the method listed in the following table to create a new Azure NetApp Files 
 |None
 |===
 
-Required request body attributes: `name, resource_group, location, anf_instance_id`
+Required request body attributes: `name, resource_group, location, cvs_instance_id`
 
 *Request body example:*
 
@@ -561,7 +561,7 @@ Required request body attributes: `name, resource_group, location, anf_instance_
   "name": "string",
   "resource_group": "string",
   "location": "string",
-  "anf_instance_id": "5d2fb0fb4f47df00015274e3",
+  "cvs_instance_id": "5d2fb0fb4f47df00015274e3",
   "tags": {
     "key1": "Value 1",
     "key2": "Value 2",
