@@ -19,18 +19,19 @@ summary:
 //
 
 [.lead]
-The Cloud Orchestration APIs NetApp Service Engine support connecting Cloud Volumes Services to NetApp Service Engine and to work with them from within the NetApp Service Engine. Initial support is for Azure NetApp Files (ANF) with future support coming for Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+The Cloud Orchestration APIs NetApp Service Engine support connecting Cloud Volumes Services to NetApp Service Engine and to work with them from within the NetApp Service Engine. Azure NetApp Files (ANF) and Google Cloud Platform (GCP) are supported for Cloud Volumes Services.
 
 Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
 
 This section describes the APIs for:
 
-* Managing Azure NetApp Files instances
+* Managing Cloud Volumes Service instances
 * Managing Azure NetApp Files accounts
 * Managing Azure NetApp Files capacity pools
 * Managing Azure NetApp Files Volumes
+* Managing Google Cloud volumes
 
-=== Azure NetApp Files instances
+=== Cloud Volumes Service instances
 
 Use the methods listed in the following table to retrieve and create Azure NetApp Files instances.
 
@@ -38,14 +39,14 @@ Use the methods listed in the following table to retrieve and create Azure NetAp
 |HTTP Method |Path |Description
 
 |`GET`
-|`/v2.1/anf/instances`
-|Retrieve all Azure NetApp Files instances.
+|`/v2.1/cvs/instances`
+|Retrieve all Cloud Volumes Service instances.
 |`POST`
-|`/v2.1/anf/instances`
-|Create new Azure NetApp Files instances.
+|`/v2.1/cvs/instances`
+|Create new Cloud Volumes Service instances.
 |`GET`
-|`/v2.1/anf/instances/{id}`
-|Retrieve an Azure NetApp Files instance by ID.
+|`/v2.1/cvs/instances/{id}`
+|Retrieve a Cloud Volumes Service instance by ID.
 |`GET`
 |`/v2.1/anf/accounts`
 |Retrieve Azure NetApp Files accounts.
@@ -117,15 +118,15 @@ The following table lists the Azure NetApp Files instance attributes.
 |The key-value pairs.
 |===
 
-==== Retrieve Azure NetApp Files instance
+==== Retrieve Cloud Volumes Service instance
 
 |===
 |HTTP Method |Path |Description |Path Parameters
 
 |`GET`
-|`/v2.1/anf/instances`
-|Retrieve Azure NetApp Files instances.
-|`tenant_id:` (Optional) Return the Azure NetApp Files instances belonging to the specified tenant.
+|`/v2.1/cvs/instances`
+|Retrieve Cloud Volumes Service instances.
+|`tenant_id:` (Optional) Return the Cloud Volumes Service instances belonging to the specified tenant.
 See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common Pagination] parameters.
 |===
 
@@ -196,17 +197,17 @@ none
   }
 ....
 
-==== Retrieve Azure NetApp Files instance by ID
+==== Retrieve Cloud Volumes Service instance by ID
 
-Use the method listed in the following table to retrieve an Azure NetApp Files instance by its identifier.
+Use the method listed in the following table to retrieve a Cloud Volumes Service instance by its identifier.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
 |`GET`
-|`/v2.1/anf/instances/{id}`
-|Retrieve an Azure NetApp Files instance by ID.
-|`id (string):` The unique identifier of the Azure NetApp Files instance.
+|`/v2.1/cvs/instances/{id}`
+|Retrieve a Cloud Volumes Service instance by ID.
+|`id (string):` The unique identifier of the Cloud Volumes Service instance.
 |===
 
 Required request body attributes: `none`
@@ -275,16 +276,16 @@ none
 }
 ....
 
-==== Create Azure NetApp Files instances
+==== Create Cloud Volumes Service instances
 
-Use the method listed in the following table to create a new Azure NetApp Files instance.
+Use the method listed in the following table to create a new Cloud Volumes Service instance.
 
 |===
 |HTTP Method |Path |Description |Parameters
 
 |`POST`
-|`/v2.1/anf/instances`
-|Create a Azure NetApp Files instance.
+|`/v2.1/cvs/instances`
+|Create a Cloud Volumes Service instance.
 |None
 |===
 
@@ -351,9 +352,9 @@ Use the method listed in the following table to specify tags for the named Azure
 |HTTP Method |Path |Description |Parameters
 
 |`POST`
-|`/v2.1/anf/instances/{id}/tags`
-|Manage tags for an Azure NetApp Files instance.
-|`id (string)``: The unique identifier of the Azure NetApp Files instance.
+|`/v2.1/cvs/instances/{id}/tags`
+|Manage tags for a Cloud Volumes Service instance.
+|`id (string)``: The unique identifier of the Cloud Volumes Service instance.
 |===
 
 Required request body attributes: `key-value pairs`
