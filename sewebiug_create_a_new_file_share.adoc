@@ -24,6 +24,7 @@ This section describes how to create a new share by directly specifying the shar
 === Before you begin
 
 * A share is created on a file server. The file server must exist and be in an operational state before you can create a new file share.
+* For creating a CIFS or NFS file share, the server must be enabled for the respective service. For a multiprotocol file shares, the server should support both CIFS and NFS services.
 * To enable asynchronous disaster recovery options for the share, you must create the share on a server that has asynchronous disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 * To enable synchronous disaster recovery for a share, create the share in a zone that is MetroCluster-enabled.
 * You can define a backup policy to capture backups of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
@@ -31,7 +32,7 @@ This section describes how to create a new share by directly specifying the shar
 
 === Steps
 
-. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. Go to *FILE SERVICES > Shares*.
 . Click *Create Share*.
 . In the Create Share dialog box, select Create New Share.
 +
@@ -39,7 +40,7 @@ image:sewebiug_image22.png[Error: Missing Graphic Image]
 +
 The Create Share page is displayed.
 +
-. Select the share type: NFS, CIFS, or Multiprotocol.
+. Select the share type: NFS, CIFS, or Multiprotocol. For creating
 . Complete the following fields:
 +
 |===
