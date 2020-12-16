@@ -19,10 +19,10 @@ summary: Keystone modify a file share
 //
 
 [.lead]
-You can change the share name, the share type (CIFS, NFS, multi-protocol), service level, capacity, snapshot policy, export policy,  and tags.
+You can change the share name, the share type (CIFS, NFS, multi-protocol), service level, capacity, snapshot policy, export policy,  Access Control List (ACL), and tags.
 
 [NOTE]
-Using this method,  you can move your shares to different performance levels if available.
+Using this method,  you can move your shares to different performance levels if available. You can change the share type only if the server supports the respective services.
 
 === Before you begin
 
