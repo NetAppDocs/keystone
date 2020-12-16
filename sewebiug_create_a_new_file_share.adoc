@@ -5,7 +5,7 @@ keywords: netapp, keystone, create, new, file, share,
 summary: Keystone create a new file share
 ---
 
-= Create a new file share
+= Create a file share
 :hardbreaks:
 :nofooter:
 :icons: font

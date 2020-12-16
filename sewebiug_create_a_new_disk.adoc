@@ -5,7 +5,7 @@ keywords: netapp, keystone, create, new, disk,
 summary: Keystone create a new disk
 ---
 
-= Create a new disk
+= Create a disk
 :hardbreaks:
 :nofooter:
 :icons: font
