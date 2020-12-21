@@ -92,7 +92,7 @@ NetApp Service Engine displays a warning and the capacity bar changes color if t
 .. Specify the read and write access, and whether the client has root access (superuser).
 . For a CIFS (SMB) or multi-protocol shares, specify the Access Control List (ACL) for restricting user access. This section is available for only CIFS and multi-protocol shares.
 .. Specify the Windows user or group based on the Active Directory (AD) to add to the ACL. If you specify the user name, include the user's domain in the `<domain>\<username>` format. The default value is `Everyone`.
-.. Specify the Windows permission. The default value is `Full control`. In case a user is a part of two groups, the permissions of the group that has higher privileges get applied on the user's access.
+.. Specify the Windows permission. The default value is `Full control`. If a user is a part of two groups, the permissions of the group that has higher privileges get applied on the user's access.
 
 +
 NOTE: The user or group name should follow the standard AD format. If the entered user or group does not match the user or user group configured on ONTAP, the ACL validation fails during a CIFS operation, even when the file share is operational.
