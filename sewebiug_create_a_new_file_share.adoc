@@ -63,11 +63,17 @@ For CIFS shares, adding a $ character to the end of the share path will make it 
 +
 . Select a Performance Service Level. The IOPS and throughput limits are displayed based on the service level selected.
 
++
 NOTE: Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
+
++
 
 . Specify the capacity of the file share.
 
++
 NOTE: NetApp Service Engine displays a warning and the capacity bar changes color if the specified capacity puts the consumed capacity into burst (or even more into burst if it is already in burst). The capacity check is performed against the total capacity for all subscriptions in the tenancy.
+
++
 
 . If asynchronous disaster recovery is enabled on the underlying file server, asynchronous disaster recovery replication is automatically enabled for the new share. If you wish to exclude the share from asynchronous disaster recovery replication, toggle the Asynchronous Disaster Recovery button so that it is disabled.
 . If the share is being created in a zone that is MetroCluster-enabled, the Synchronous Disaster Recovery button is automatically enabled and cannot be disabled. The share will be replicated to the zone displayed in the panel below the Synchronous Disaster Recovery toggle.
@@ -90,8 +96,10 @@ NOTE: NetApp Service Engine displays a warning and the capacity bar changes colo
 .. Specify the Windows user or group based on the Active Directory (AD) to add to the ACL. If you specify the user name, include the user's domain in the `<domain>\<username>` format. The default value is `Everyone`.
 .. Specify the Windows permission. The default value is `Full control`. If a user is a part of two groups, the permissions of the group that has higher privileges get applied on the user's access.
 
++
 NOTE: The user or group name should follow the standard AD format. If the entered user or group does not match the user or user group configured on ONTAP, the ACL validation fails during a CIFS operation, even when the file share is operational.
 
++
 . If you want to add tags (key-value pairs) to the file share, specify them in the Tags section.
 . Click *Create*. This creates a job to create the share.
 
