@@ -19,7 +19,7 @@ summary: Keystone view shares
 //
 
 [.lead]
-The Shares list displays the file shares belonging to the selected Tenant. To display the list, select File Services > Shares from the menu.
+The Shares list displays the file shares belonging to the selected Tenant. To display the list, select *File Services > Shares* from the menu.
 
 The Shares list displays simple information about each share such as:
 

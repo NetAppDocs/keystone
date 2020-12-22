@@ -5,7 +5,7 @@ keywords: netapp, keystone, create, new, file, share,
 summary: Keystone create a new file share
 ---
 
-= Create a new file share
+= Create a file share
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -24,6 +24,7 @@ This section describes how to create a new share by directly specifying the shar
 === Before you begin
 
 * A share is created on a file server. The file server must exist and be in an operational state before you can create a new file share.
+* For creating a CIFS or NFS file share, the server must be enabled for the respective service. For a multi-protocol file shares, the server should support both CIFS and NFS services.
 * To enable asynchronous disaster recovery options for the share, you must create the share on a server that has asynchronous disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 * To enable synchronous disaster recovery for a share, create the share in a zone that is MetroCluster-enabled.
 * You can define a backup policy to capture backups of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
@@ -31,7 +32,7 @@ This section describes how to create a new share by directly specifying the shar
 
 === Steps
 
-. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. Go to *FILE SERVICES > Shares*.
 . Click *Create Share*.
 . In the Create Share dialog box, select Create New Share.
 +
@@ -39,7 +40,7 @@ image:sewebiug_image22.png[Error: Missing Graphic Image]
 +
 The Create Share page is displayed.
 +
-. Select the share type: NFS, CIFS, or Multiprotocol.
+. Select the share type: NFS, CIFS, or Multi-protocol. The options are enabled based on the services that your server supports.
 . Complete the following fields:
 +
 |===
@@ -53,25 +54,27 @@ For CIFS shares, adding a $ character to the end of the share path will make it 
 |Region
 |Select the region in which the share resides.
 |Zone
-|Select the zone in which the share will reside.
+|Select the zone of the share.
 |File Server
-|Select the file server to host the share.
+|Select the file server to host the share. The list of the file server depends on the region, zone, and share type selected.
 |Security Style
-|Select the security style applicable to the file share.
+|Select the security style applicable to the file share. This list is automatically populated based on the share type selected.
 |===
 +
-. Select a Performance Service Level.
-+
-[NOTE]
-Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
+. Select a Performance Service Level. The IOPS and throughput limits are displayed based on the service level selected.
 
 +
+NOTE: Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
+
++
+
 . Specify the capacity of the file share.
-+
-[NOTE]
-NetApp Service Engine displays a warning and the capacity bar changes color if the specified capacity puts the consumed capacity into burst (or even more into burst if it is already in burst). The capacity check is performed against the total capacity for all subscriptions in the tenancy.
 
 +
+NOTE: NetApp Service Engine displays a warning and the capacity bar changes color if the specified capacity puts the consumed capacity into burst (or even more into burst if it is already in burst). The capacity check is performed against the total capacity for all subscriptions in the tenancy.
+
++
+
 . If asynchronous disaster recovery is enabled on the underlying file server, asynchronous disaster recovery replication is automatically enabled for the new share. If you wish to exclude the share from asynchronous disaster recovery replication, toggle the Asynchronous Disaster Recovery button so that it is disabled.
 . If the share is being created in a zone that is MetroCluster-enabled, the Synchronous Disaster Recovery button is automatically enabled and cannot be disabled. The share will be replicated to the zone displayed in the panel below the Synchronous Disaster Recovery toggle.
 . If snapshots are required for this file share:
@@ -86,10 +89,15 @@ NetApp Service Engine displays a warning and the capacity bar changes color if t
 .. Toggle to enable the Backup Policy to display the Backup Policy fields.
 .. Specify the backup zone.
 .. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
-. For NFS type shares only, specify the Export Policy.
+. For NFS or multi-protocol shares, specify the Export Policy. You can apply multiple export policies on a share.
+.. Add the IPv4 address (with a subnet mask expressed as a number of bits) of the client to which the rule applies.
+.. Specify the read and write access, and whether the client has root access (superuser).
+. For a CIFS (SMB) or multi-protocol shares, specify the Access Control List (ACL) for restricting user access. This section is available for only CIFS and multi-protocol shares.
+.. Specify the Windows user or group based on the Active Directory (AD) to add to the ACL. If you specify the user name, include the user's domain in the `<domain>\<username>` format. The default value is `Everyone`.
+.. Specify the Windows permission. The default value is `Full control`. If a user is a part of two groups, the permissions of the group that has higher privileges get applied on the user's access.
+
 +
-[NOTE]
-Export Policies do not apply to CIFS access.
+NOTE: The user or group name should follow the standard AD format. If the entered user or group does not match the user or user group configured on ONTAP, the ACL validation fails during a CIFS operation, even when the file share is operational.
 
 +
 . If you want to add tags (key-value pairs) to the file share, specify them in the Tags section.
