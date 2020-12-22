@@ -33,7 +33,7 @@ This section describes how to perform the following tasks:
 
 === View a list of Azure volumes
 
-The Azure Volumes list displays a list of Azure Volumes pools for a specified subtenant and location. To display the list, select Subscribed Services > Azure Volumes from the menu.
+The Azure Volumes list displays a list of Azure Volumes pools for a specified subtenant and location. To display the list, select File Services > Azure Volumes from the menu.
 
 The list displays simple information about each Azure Volume. The action icons next to each Azure volume allow you to modify or delete the Azure volume.
 
@@ -56,11 +56,11 @@ You will need:
 
 ==== Steps
 
-. Select Subscribed Services > Azure Volumes from the menu.
+. Select File Services > Azure Volumes from the menu.
 . Click *Create*.
-. In the Create Azure Volume dialog box, specify the subtenant, the ANF account, the VNet, the Subnet, the Capacity Pool, the Name of the volume, the File Path and the Quota.
+. In the Create Azure Volume dialog box, specify the subtenant, the ANF account, the VNet, the Subnet, the Capacity Pool, the Name of the volume, the File Path and the Quota. Ensure that you enter a unique file path for a successful volume creation.
 . If required, add tags to the volume.
-. Click *Create*. When created successfully, the capacity pool state will be Succeeded (can be viewed in the Azure Volumes list).
+. Click *Create*. When an Azure volume is created, the state of the volume changes to `Succeeded` (can be viewed in the Azure Volumes list).
 
 === Modify Azure volume details
 
@@ -68,9 +68,9 @@ Use this method to modify an Azure Volume’s details. You can modify the File p
 
 ==== Steps
 
-. Select Subscribed Services > Azure Volumes from the menu.
-. Int the list, locate the Azure volume and click the Edit icon.
-. In the Manage Azure Volume dialog box, make any changes as required.
+. Select File Services > Azure Volumes from the menu.
+. From the list, locate the Azure volume and click the Edit icon.
+. In the Manage Azure Volume dialog box, make any changes as required. If you are modifying the file path or quota, ensure that the file path is unique and that the quota does not exceed the available quota in the pool.
 . Click *Update*.
 
 === Delete an Azure volume
@@ -79,7 +79,7 @@ Use this method to delete an Azure volume.
 
 ==== Steps
 
-. Select Subscribed Services > Azure Volumes from the menu.
+. Select File Services > Azure Volumes from the menu.
 . Locate the Azure volume in the list and click the Delete icon.
 . In the Confirm Delete dialog box, enter the name of the Azure volume to be deleted.
 . Click *Confirm*.

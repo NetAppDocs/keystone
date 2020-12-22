@@ -33,7 +33,7 @@ This section describes how to perform the following tasks:
 
 === View a List of Azure capacity pools
 
-The Azure capacity pools list displays a list of capacity pools for a specified subtenant and location. To display the list, select Subscribed Services > Azure Capacity Pools from the menu.
+The Azure capacity pools list displays a list of capacity pools for a specified subtenant and location. To display the list, select File Services > Azure Capacity Pools from the menu.
 
 The list displays simple information about each Azure capacity pool. The action icons next to each Azure capacity pool allow you to modify or delete the Azure capacity pool.
 
@@ -54,11 +54,11 @@ You will need:
 
 ==== Steps
 
-. Select Subscribed Services > Azure Capacity Pools from the menu.
+. Select File Services > Azure Capacity Pools from the menu.
 . Click *Create*.
 . In the Create Azure Capacity Pool dialog box, specify the Subtenant, the ANF Account, the Service Level, the Name and the size.
 . Add tags to the capacity pool if required.
-. Click *Create*. When created successfully, the capacity pool state will be Succeeded (viewable in the Azure Capacity Pools list).
+. Click *Create*. When the capacity pool is created the state changes to `Succeeded` (can be viewed in the Azure Capacity Pools list).
 
 
 === Modify Azure capacity pool details
@@ -67,7 +67,7 @@ Use this method to modify an Azure Capacity Pool’s details. You can modify the
 
 ==== Steps
 
-. Select Subscribed Services > Azure Capacity Pools from the menu.
+. Select File Services > Azure Capacity Pools from the menu.
 . From the list, locate the Azure capacity pool and click the Edit icon.
 . In the Manage Azure Capacity Pool dialog box, make any changes as required.
 . Click *Update*.
@@ -78,7 +78,7 @@ Use this method to delete an Azure capacity pool.
 
 ==== Steps
 
-. Select Subscribed Services > Azure Capacity Pools from the menu.
+. Select File Services > Azure Capacity Pools from the menu.
 . From the list, locate the Azure capacity pool and click the Delete icon.
 . In the Confirm Delete dialog box, enter the name of the Azure capacity pool to be deleted.
 . Click *Confirm*.
