@@ -245,24 +245,24 @@ entries:
             url: /sewebiug_delete_a_user.html
       - title: Managing cloud subscriptions
         entries:
-          - title: Overview
-            url: /sewebiug_managing_subscribed_services_overview.html
-              - title: View a list of subscribed services
-                url: /sewebiug_view_a_list_of_subscribed_services.html
-                - title: Add a subscribed service
-                url: /sewebiug_add_a_subscribed_service.html
-                - title: Modify the subscribed service details
-                url: /sewebiug_modify_the_subscribed_service_details.html
-                - title: Delete a subscribed service
-                url: /sewebiug_delete_a_subscribed_service.html
-          - title: Managing Azure NetApp accounts
-            url: /sewebiug_managing_azure_netapp_accounts.html
-                - title: Managing Azure capacity pools
-                  url: /sewebiug_managing_azure_capacity_pools.html
-                - title: Managing Azure volumes
-                  url: /sewebiug_managing_azure_volumes.html
-                - title: Where to Find Additional Information
-                  url: /sewebiug_where_to_find_additional_information.html
+        - title: Overview
+          url: /sewebiug_managing_subscribed_services_overview.html
+            - title: View a list of subscribed services
+              url: /sewebiug_view_a_list_of_subscribed_services.html
+            - title: Add a subscribed service
+              url: /sewebiug_add_a_subscribed_service.html
+            - title: Modify the subscribed service details
+              url: /sewebiug_modify_the_subscribed_service_details.html
+            - title: Delete a subscribed service
+              url: /sewebiug_delete_a_subscribed_service.html
+        - title: Managing Azure NetApp accounts
+          url: /sewebiug_managing_azure_netapp_accounts.html
+            - title: Managing Azure capacity pools
+              url: /sewebiug_managing_azure_capacity_pools.html
+            - title: Managing Azure volumes
+              url: /sewebiug_managing_azure_volumes.html
+            - title: Where to Find Additional Information
+              url: /sewebiug_where_to_find_additional_information.html
   - title: Keystone API Reference
     entries:
       - title: Overview of NetApp Service Engine APIs
