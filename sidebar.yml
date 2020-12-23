@@ -265,8 +265,8 @@ entries:
                 url: /sewebiug_managing_azure_capacity_pools.html
               - title: Managing Azure volumes
                 url: /sewebiug_managing_azure_volumes.html
-        - title: Where to Find Additional Information
-          url: /sewebiug_where_to_find_additional_information.html
+      - title: Where to Find Additional Information
+        url: /sewebiug_where_to_find_additional_information.html
   - title: Keystone API Reference
     entries:
       - title: Overview of NetApp Service Engine APIs
