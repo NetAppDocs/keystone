@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: sewebiug_managing_gcp_cvs.html
+keywords: netapp, keystone, managing CVS for GCP, gcp, Google Cloud Volume, CVS, Cloud Volumes Service
+summary: Managing Cloud Volume Subscriptions on Google Cloud Platform
+---
+
+= Managing Cloud Volumes Service for GCP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+//
+// 2021-01-05
+//
+
+[.lead]
+Subscriptions to Cloud Volumes Service for Google Cloud Platform (GCP) are associated with specific subtenants under a tenant. A subtenant is subscribed to a single Google Cloud service. You can create and manage subscribed services (Google Cloud instances) for your tenants and subtenants and provision storage on Google Cloud based on the tenancies. The Cloud Volumes Service accounts of the tenants and subtenants should be set up before you can manage Google Cloud instances through NetApp Service Engine. For information about Cloud Volumes Service on GCP, see
+
+https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html
+
+
+[NOTE]
+ The Cloud Volumes Service accounts for the tenants and subtenants should already be configured for GCP. Contact support for the service account details. You need customer administrator access to manage Google Cloud volumes.
+
+== Managing your subscribed services on GCP
+
+You can manage your subscribed services on Google Cloud from the *SUBSCRIBED SERVICES* menu on the left navigation pane. The *Subscribed Services* page displays all the subscribed services for all subtenants of the selected tenant. You can view, modify, and delete existing subscribed services from this page. You can also add a new service by following these steps.
+
+=== Before you begin
+
+You need:
+
+* The subtenant subscribed to the Google Cloud service
+* The JSON file for the subscriber's service account that is associated with the Google Cloud instance
+* To ensure that Cloud Volumes Service for GCP is already configured on Cloud Manager by your support team. For more information, see
+
+https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html#quick-start
+
+==== Steps
+
+. Select *SUBSCRIBED SERVICES* from the menu.
+. Click *Create*, and then click *Google Cloud*.
+. On the *Create Subscribed Service* page for Google Cloud, select the subtenant for which you want to create the service, and add a name.
+. The information in the *Cloud Manager* section is automatically populated based on the Cloud Manager configuration for the subtenant's subscription. For more information, contact support.
+. In the *Google Cloud Credentials* section, add the information from the JSON file for the service account.
+. If required, add tags to the service.
+. Click *Create*. When created successfully, the service state changes to `Succeeded` on the *Subscribed Services* page.
+
+== Managing volumes on GCP
+
+Before managing cloud volumes on GCP, the Cloud Volumes Service account for the tenant should be created and the account should be subscribed to cloud volumes. Contact support for ensuring that these steps have been complete.
+
+You can manage the volumes for a subtenant on GCP from *FILE SERVICES > GCP Volumes* on the left navigation pane. The *GCP Volumes* page lists the existing cloud volumes created on GCP for the selected subtenant and corresponding region. You can view, modify, and delete existing volumes from this page. You can also provision a new cloud volume by following these steps.
+
+==== Steps
+
+. Select *FILE SERVICES > GCP Volumes* from the menu.
+. Click *Create*. The *Create GCP Volume* page is displayed.
+. Select the subtenant for which you want to create the volume.
+. Select the region and network. The list is filtered based on the Cloud Volumes Service account for the subtenant on GCP.
+. Add a name for the volume.
+. Select the appropriate Service Level.
+. Enter the file path of the volume as the creation token.
+. Assign the volume quota in bytes.
+. If required, add tags to the service.
+. Click *Create*. When created successfully, the volume changes `Succeeded` on the *GCP Volumes* page.
