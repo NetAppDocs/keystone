@@ -131,71 +131,7 @@ See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common P
 |===
 
 Required request body parameters: `none`
-
-*Request body example:*
-
-....
-none
-....
-
-*Response body example:*
-
-....
-{
-    "status": {
-      "user_message": "Okay. Returned 1 record.",
-      "verbose_message": "",
-      "code": 200
-    },
-    "result": {
-      "returned_records": 1,
-      "records": [
-        {
-          "id": "5f8742c615bd300001348664",
-          "name": "ANFinstance1",
-          "cc_working_env": "my-working-env",
-          "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXVVC",
-          "cc_refresh_token": "y1tNIrwNzE8JL9jtiE29oSRxOBpNM0cdnwS_2XhjBBr9G",
-          "cc_account_id": "account-myaccount",
-          "cc_account_name": "existing-account-name",
-          "cc_credentials_id": "",
-          "azure_client_id": "d336c449-aeb8-4bb3-af28-5b886c40ddbb",
-          "azure_client_secret": "UwdTj07CKoau5ELSg.efN0~g4QX9E_qVVV",
-          "azure_tenant_id": "e8256bbc-dd2e-478d-9fe4-30a448eaaaaa",
-          "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b6077909101abcdqqqqqq",
-          "state": "Operational",
-          "status": "",
-          "tenant": "Ferrari",
-          "tenant_id": "5f594827f43c170001c53ebb",
-          "subtenant": "FerrariSubtenant1",
-          "subtenant_id": "5f594827f43c170001c53ebc",
-          "tags": [
-            {
-              "key": "key2",
-              "value": "Value 2"
-            },
-            {
-              "key": "key3",
-              "value": "Value 3"
-            },
-            {
-              "key": "keyN",
-              "value": "Value N"
-            },
-            {
-              "key": "key1",
-              "value": "Value 1"
-            }
-          ],
-          "created": "2020-10-12T08:59:07.304Z",
-          "updated": "2020-10-12T08:59:07.304Z",
-          "job_tasks": null,
-          "jobs": null
-        }
-      ]
-    }
-  }
-....
+=
 
 ==== Retrieve Cloud Volumes Service instance by ID
 
@@ -211,70 +147,7 @@ Use the method listed in the following table to retrieve a Cloud Volumes Service
 |===
 
 Required request body attributes: `none`
-
-*Request body example:*
-
-....
-none
-....
-
-*Response body example:*
-
-....
-"status": {
-  "user_message": "Okay. Returned 1 record.",
-  "verbose_message": "",
-  "code": 200
-},
-"result": {
-  "returned_records": 1,
-  "records": [
-    {
-      "id": "5f8742c615bd300001348664",
-      "name": "ANFinstance1",
-      "cc_working_env": "my-working-env",
-      "cc_client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXVVC",
-      "cc_refresh_token": "y1tNIrwNzE8JL9jtiE29oSRxOBpNM0cdnwS_2XhjBBr9G",
-      "cc_account_id": "account-myaccount",
-      "cc_account_name": "existing-account-name",
-      "cc_credentials_id": "",
-      "azure_client_id": "d336c449-aeb8-4bb3-af28-5b886c40ddbb",
-      "azure_client_secret": "UwdTj07CKoau5ELSg.efN0~g4QX9E_qVVV",
-      "azure_tenant_id": "e8256bbc-dd2e-478d-9fe4-30a448eaaaaa",
-      "azure_subscription_id": "1933a261-d141-4c68-9d6c-13b6077909101abcdqqqqqq",
-      "state": "Operational",
-      "status": "",
-      "tenant": "Ferrari",
-      "tenant_id": "5f594827f43c170001c53ebb",
-      "subtenant": "FerrariSubtenant1",
-      "subtenant_id": "5f594827f43c170001c53ebc",
-      "tags": [
-        {
-          "key": "key2",
-          "value": "Value 2"
-        },
-        {
-          "key": "key3",
-          "value": "Value 3"
-        },
-        {
-          "key": "keyN",
-          "value": "Value N"
-        },
-        {
-          "key": "key1",
-          "value": "Value 1"
-        }
-      ],
-      "created": "2020-10-12T08:59:07.304Z",
-      "updated": "2020-10-12T08:59:07.304Z",
-      "job_tasks": null,
-      "jobs": null
-    }
-  ]
-}
-}
-....
+=
 
 ==== Create Cloud Volumes Service instances
 
@@ -314,35 +187,7 @@ Required request body attributes: `name, cc_working_env, cc_client_id, cc_refres
   }
 }
 ....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "id": "5d2fb0fb4f47df00015274e3",
-        "action": "delete",
-        "job_summary": "Delete/update request is successfully submitted",
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z",
-        "object_id": "5d2fb0fb4f47df00015274e3",
-        "type": "fileserver",
-        "object_name": "testObject",
-        "status": "successful",
-        "user_id": "5d2fb0fb4f47df00015274e3"
-      }
-    ]
-  }
-}
-....
+=
 
 ==== Manage tags for Cloud Volumes Service instances
 
@@ -365,28 +210,7 @@ Required request body attributes: `key-value pairs`
   "env": "test"
 }
 ....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "Okay. Returned 1 record.",
-    "verbose_message": "",
-    "code": 200
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "key": "env",
-        "value": "test"
-      }
-    ]
-  }
-}
-
-....
+=
 
 === Azure NetApp Files accounts
 
@@ -431,54 +255,7 @@ See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common P
 |===
 
 Required request body parameters: `none`
-
-*Request body example:*
-
-....
-none
-....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "total_records": 10,
-    "limit": 20,
-    "offset": 0,
-    "sort_by": "created",
-    "order_by": "desc",
-    "records": [
-      {
-        "id": "string",
-        "name": "myaccount",
-        "resource_group": "string",
-        "location": "string",
-        "state": "Operational",
-        "cvs_instance_id": "5d2fb0fb4f47df00015274e3",
-        "tenant": "Acme",
-        "tenant_id": "5d2fb0fb4f47df00015274e3",
-        "subtenant": "Default Subtenant",
-        "subtenant_id": "5d2fb0fb4f47df00015274e3",
-        "tags": [
-          {
-            "key": "env",
-            "value": "test"
-          }
-        ],
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z"
-      }
-    ]
-  }
-}
-....
+=
 
 ==== Retrieve Azure NetApp Files account by name
 
@@ -495,49 +272,7 @@ Use the method listed in the following table to retrieve an Azure NetApp Files a
 |===
 
 Required request body attributes: `none`
-
-*Request body example:*
-
-....
-none
-....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 0,
-    "records": [
-      {
-        "id": "string",
-        "name": "myaccount",
-        "resource_group": "string",
-        "location": "string",
-        "state": "Operational",
-        "cvs_instance_id": "5d2fb0fb4f47df00015274e3",
-        "tenant": "Acme",
-        "tenant_id": "5d2fb0fb4f47df00015274e3",
-        "subtenant": "Default Subtenant",
-        "subtenant_id": "5d2fb0fb4f47df00015274e3",
-        "tags": [
-          {
-            "key": "env",
-            "value": "test"
-          }
-        ],
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z"
-      }
-    ]
-  }
-}
-....
+=
 
 ==== Create Azure NetApp Files accounts
 
@@ -570,35 +305,7 @@ Required request body attributes: `name, resource_group, location, cvs_instance_
   }
 }
 ....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "id": "5d2fb0fb4f47df00015274e3",
-        "action": "delete",
-        "job_summary": "Delete/update request is successfully submitted",
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z",
-        "object_id": "5d2fb0fb4f47df00015274e3",
-        "type": "fileserver",
-        "object_name": "testObject",
-        "status": "successful",
-        "user_id": "5d2fb0fb4f47df00015274e3"
-      }
-    ]
-  }
-}
-....
+=
 
 === Azure NetApp Files capacity pools
 
@@ -659,50 +366,7 @@ Required request body parameters: `none`
 ....
 none
 ....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "total_records": 10,
-    "limit": 20,
-    "offset": 0,
-    "sort_by": "created",
-    "order_by": "desc",
-    "records": [
-      {
-        "id": "string",
-        "name": "myaccount",
-        "resource_group": "string",
-        "location": "string",
-        "size": 10,
-        "service_level": "Standard",
-        "anf_account_name": "myaccount",
-        "state": "Operational",
-        "tenant": "Acme",
-        "tenant_id": "5d2fb0fb4f47df00015274e3",
-        "subtenant": "Default Subtenant",
-        "subtenant_id": "5d2fb0fb4f47df00015274e3",
-        "tags": [
-          {
-            "key": "env",
-            "value": "test"
-          }
-        ],
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z"
-      }
-    ]
-  }
-}
-....
+=
 
 ==== Retrieve capacity pool by name
 
@@ -720,51 +384,7 @@ Use the method listed in the following table to retrieve a capacity pool by name
 |===
 
 Required request body attributes: `none`
-
-Request body example:
-
-....
-none
-....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 0,
-    "records": [
-      {
-        "id": "string",
-        "name": "myaccount",
-        "resource_group": "string",
-        "location": "string",
-        "size": 10,
-        "service_level": "Standard",
-        "anf_account_name": "myaccount",
-        "state": "Operational",
-        "tenant": "Acme",
-        "tenant_id": "5d2fb0fb4f47df00015274e3",
-        "subtenant": "Default Subtenant",
-        "subtenant_id": "5d2fb0fb4f47df00015274e3",
-        "tags": [
-          {
-            "key": "env",
-            "value": "test"
-          }
-        ],
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z"
-      }
-    ]
-  }
-}
-....
+==
 
 ==== Create capacity pools
 
@@ -800,35 +420,7 @@ Required request body attributes: `name, resource_group, location, size, service
   }
 }
 ....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "id": "5d2fb0fb4f47df00015274e3",
-        "action": "delete",
-        "job_summary": "Delete/update request is successfully submitted",
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z",
-        "object_id": "5d2fb0fb4f47df00015274e3",
-        "type": "fileserver",
-        "object_name": "testObject",
-        "status": "successful",
-        "user_id": "5d2fb0fb4f47df00015274e3"
-      }
-    ]
-  }
-}
-....
+==
 
 ==== Modify size of the capacity pool
 
@@ -864,35 +456,7 @@ Required request body attributes: `name, resource_group, location, anf_account_n
   }
 }
 ....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "id": "5d2fb0fb4f47df00015274e3",
-        "action": "delete",
-        "job_summary": "Delete/update request is successfully submitted",
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z",
-        "object_id": "5d2fb0fb4f47df00015274e3",
-        "type": "fileserver",
-        "object_name": "testObject",
-        "status": "successful",
-        "user_id": "5d2fb0fb4f47df00015274e3"
-      }
-    ]
-  }
-}
-....
+==
 
 === Azure NetApp Files volumes
 
@@ -956,55 +520,7 @@ See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common P
 
 Required request body parameters: `none`.
 
-*Request body example:*
-
-....
-none
-....
-
-
-*Response body example:*
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "total_records": 10,
-    "limit": 20,
-    "offset": 0,
-    "sort_by": "created",
-    "order_by": "desc",
-    "records": [
-      {
-        "id": "string",
-        "name": "myaccount",
-        "resource_group": "string",
-        "location": "string",
-        "size": 10,
-        "service_level": "Standard",
-        "anf_account_name": "myaccount",
-        "state": "Operational",
-        "tenant": "Acme",
-        "tenant_id": "5d2fb0fb4f47df00015274e3",
-        "subtenant": "Default Subtenant",
-        "subtenant_id": "5d2fb0fb4f47df00015274e3",
-        "tags": [
-          {
-            "key": "env",
-            "value": "test"
-          }
-        ],
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z"
-      }
-    ]
-  }
-}
-....
+==
 
 ==== Retrieve Azure NetApp Files volume by name
 
@@ -1027,45 +543,7 @@ Required request body attributes: `none`
 ....
 none
 ....
-
-*Response body example:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 0,
-    "records": [
-      {
-        "id": "string",
-        "name": "myVolume",
-        "resource_group": "string",
-        "subtenant_id": "5d2fb0fb4f47df00015274e3",
-        "anf_account_name": "myaccount",
-        "anf_pool_name": "myaccount",
-        "location": "string",
-        "file_path": "myVolume",
-        "quota_size": 100,
-        "subNetId": "string",
-        "state": "Operational",
-        "tenant": "Acme",
-        "tenant_id": "5d2fb0fb4f47df00015274e3",
-        "subtenant": "Default Subtenant",
-        "tags": [
-          {
-            "key": "env",
-            "value": "test"
-          }
-        ]
-      }
-    ]
-  }
-}
-....
+==
 
 ==== Create Azure NetApp Files volumes
 
@@ -1108,31 +586,75 @@ Required request body attributes: `name, resource_group, subtenant_id, anf_accou
 }
 ....
 
-*Response body example:*
+=== Managing Cloud Volumes Service for Google Cloud
 
-....
+The `/v2.1/gcp/volumes` API under the Cloud Orchestration category enables you to manage cloud volumes for your Google Cloud instance. Before running this API, ensure that the Cloud Volumes Service account for Google Cloud Platform (GCP) subscription has been enabled for the subtenant.
+
+|===
+|HTTP Verb |Path |Description |Mandatory parameters/Request body
+
+|`GET`
+|`/v2.1/gcp/volumes`
+|You can use the GET method to retrieve the details of all the Google Cloud volumes created for your subtenant's Cloud Volumes Service subscription.
+|`offset`: The number of items to skip before starting to collect the result set.
+`limit`: The numbers of items to return.
+`subtenant_id`: The ID of the subtenant subscribed to Google Cloud.
+`region`: The region of the subscribed service.
+|`GET`
+|`/v2.1/gcp/volumes`
+|You can use this method to retrieve the details of a specific Google Cloud volume created for your subtenant's Cloud Volumes Service subscription.
+|`id`: The ID of the GCP volume.
+`subtenant_id`: The ID of the subtenant subscribed to Google Cloud.
+`region`: The region of the subscribed service.
+|`POST`
+|`/v2.1/gcp/volumes`
+|Create a GCP volume for a subtenant. Add the values in the request body to create a volume with the specified parameters.
+|
+```
 {
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "id": "5d2fb0fb4f47df00015274e3",
-        "action": "delete",
-        "job_summary": "Delete/update request is successfully submitted",
-        "created": "1995-09-07T10:40:52Z",
-        "updated": "1995-09-07T10:40:52Z",
-        "object_id": "5d2fb0fb4f47df00015274e3",
-        "type": "fileserver",
-        "object_name": "testObject",
-        "status": "successful",
-        "user_id": "5d2fb0fb4f47df00015274e3"
-      }
-    ]
-  }
+  "subtenant_id": "<ID>",
+  "name": "<Name>",
+  "region": "<region>",
+  "zone": "<zone>",
+  "creation_token": "<token>",
+  "allowed_clients": "IP address of the clients allowed to access GCP",
+  "network": "<network details as entered for the GCP subscribed service>",
+  "protocol_types": [
+    "<Protocol for the connection, such as NFSv3>"
+  ],
+  "quota_bytes": <volume quota in bytes>,
+  "tags": {
+    "key1": "<value>",
+     }
 }
-....
+```
+
+|PUT
+|`/v2.1/gcp/volumes`
+|Modify a GCP volume already created for a subtenant. Add the volume ID of the volume that you want to modify and the value for the parameters that you want to modify, in the request body.
+|
+```
+{
+  "subtenant_id": "<ID>",
+  "name": "<Name>",
+  "region": "<region>",
+  "zone": "<zone>",
+  "creation_token": "<token>",
+  "allowed_clients": "IP address of the clients allowed to access GCP",
+  "network": "<network details as entered for the GCP subscribed service>",
+  "protocol_types": [
+    "<Protocol for the connection, such as NFSv3>"
+  ],
+  "quota_bytes": <volume quota in bytes>,
+  "tags": {
+    "key1": "<value>",
+     }
+}
+```
+|DELETE
+|`/v2.1/gcp/volumes`
+|You can use this method to delete a specific Google Cloud volume created for your subtenant's Cloud Volumes Service subscription.
+|`id`: The ID of the GCP volume.
+`subtenant_id`: The ID of the subtenant subscribed to Cloud Volumes Service for Google Cloud.
+`region`: The region of the subscribed service.
+|===
