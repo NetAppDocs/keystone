@@ -91,7 +91,7 @@ entries:
             url: /nkfsosm_reporting.html
           - title: Support Processes
             url: /nkfsosm_support_processes.html
-- title: Release Notes
+  - title: Release Notes
     entries:
       - title: What's new
         url: /rn_whats_new.html
