@@ -31,8 +31,6 @@ entries:
             url: /nkfsosm_software_for_keystone_flex_subscription_service.html
           - title: Keystone Infrastructure
             url: /nkfsosm_keystone_infrastructure.html
-          - title: Keystone Architecture
-            url: /nkfsosm_keystone_architecture.html
       - title: Site Requirements
         url: /nkfsosm_site_requirements_overview.html
         entries:
