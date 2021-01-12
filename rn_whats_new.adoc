@@ -53,7 +53,8 @@ A new *Backup* screen enables you to view and manage the backups of the volumes 
 
 === Provision for restricting user access on CIFS (SMB) shares
 
-You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol shares. You can specify Windows users or groups based on the Active Directory (AD) to add to the ACL. [Learn more] https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps
+You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol shares. You can specify Windows users or groups based on the Active Directory (AD) to add to the ACL.
+[Learn more]https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps
 
 = Features introduced in Keystone 2.0
 
