@@ -39,13 +39,13 @@ The following activities can be performed for Cloud Volumes Services through Net
 
 === Ability to manage objects provisioned outside of NetApp Service Engine
 
-The volumes and file shares that already exist in the customer environment can now be viewed and managed as a part of your Keystone subscription. The volumes and file shares provisioned outside of the NetApp Service Engine can now be viewed as listed on the *Shares* and *Disks* screens with the appropriate status codes. A backend process runs at an interval of every 15 minutes and imports the foreign workloads within your NetApp Service Engine instance.
+The volumes and file shares that already exist in the customer environment can now be viewed and managed as a part of your Keystone subscription. The volumes and file shares provisioned outside of the NetApp Service Engine can now be viewed as listed on the *Shares* and *Disks* screens with the appropriate status codes. A background process runs at an interval of every 15 minutes and imports the foreign workloads within your NetApp Service Engine instance.
 
 The volumes and file shares imported from the customer environment may not be in the same standard as the other volumes and shares in NetApp Service Engine. Such volumes are categorized with `Non-Standard` status. You can raise a service request from *Support > Service Request > New Service Request* for them to be standardized and managed through the NetApp Service Engine portal.
 
 === SnapCenter integration with NetApp Service Engine
 
-As a part of SnapCenter integration with NetApp Service Engine, you can now clone your volumes and file shares from the Snapshots created in your SnapCenter environment outside your NetApp Service Engine instance. While cloning a file share or volume from an existing Snapshot on the NetApp Service Engine web interface, These Snapshots are listed on the *Create Disk from Snapshot* for you to select. A backend process of acquisition runs at an interval of every 15 minutes and imports the Snapshots within your NetApp Service Engine instance.
+As a part of SnapCenter integration with NetApp Service Engine, you can now clone your volumes and file shares from the Snapshots created in your SnapCenter environment outside your NetApp Service Engine instance. While cloning a file share or volume from an existing Snapshot on the NetApp Service Engine web interface, these Snapshots are listed for selection on the *Create Disk from Snapshot* pop-up. An acquisition process runs in the background at an interval of every 15 minutes to import the Snapshots within your NetApp Service Engine instance.
 
 === New screen for maintaining backups
 
@@ -53,7 +53,7 @@ A new *Backup* screen enables you to view and manage the backups of the volumes 
 
 === Provision for restricting user access on CIFS (SMB) shares
 
-You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol shares. You can specify Windows users or groups based on the Active Directory (AD) to add to the ACL. Learn more [https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps]
+You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol shares. You can specify Windows users or groups based on the Active Directory (AD) to add to the ACL. [Learn more] https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps
 
 = Features introduced in Keystone 2.0
 
