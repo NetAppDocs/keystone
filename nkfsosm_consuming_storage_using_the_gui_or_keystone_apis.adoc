@@ -56,10 +56,6 @@ NetApp Service Engine supports the following types of storage:
 
 NetApp Service Engine provides a set of APIs to manage storage resources through a RESTful web service interface for any third-party integration. The APIs cover all the functionalities that are supported through the GUI. NetApp provides the API documentation, but it is the customer’s responsibility to integrate into their applications.
 
-*Constructing a URL to Directly Access REST APIs*
-
-REST APIs can be directly accessed through a programming language, such as Python, C#, C++, JavaScript, and so forth. Enter the host name or IP address and the URL to access the REST APIs in the format https://<NSE-url>/api.
-
 === Storage Provisioning
 
 NetApp Service Engine provides a simplified workflow to create:
@@ -76,8 +72,6 @@ Additional workflows are available to create:
 ** Configure backup policy
 ** Configure disaster recover policy
 
-image:nkfsosm_image16.png[Error: Missing Graphic Image]
-
 === Order Additional Storage and Capacity Tiers
 
 You can perform the following actions from the NetApp Service Engine portal, as shown in the below figure.
@@ -91,13 +85,9 @@ You can perform the following actions from the NetApp Service Engine portal, as 
 You can increase capacity to an existing subscription at any time during the term (except in the last 90 days of the term) and the service needs to be renewed) and as soon as the additional capacity is available for use, the subscription gets updated and the burst calculation from that particular sample uses the new committed capacity for burst calculation.
 From a billing perspective, if the new capacity goes into the next tier of pricing, the new price is used from the date of additional capacity activation.
 
-image:nkfsosm_image17.png[Error: Missing Graphic Image]
-
 === Consumption Monitoring
 
 The NetApp Service Engine web interface provides information on consumption monitoring and billing information. A user must have an account and the account is assigned to a role that determines the permissions, and therefore, which activities the user can perform. NetApp Service Engine requires the user to have a NetApp SSO account to log in.
-
-image:nkfsosm_image18.png[Error: Missing Graphic Image]
 
 The Subscribed Services pane displays information about the storage subscriptions for an account.
 
@@ -123,14 +113,9 @@ The following process describes how information is collected and processed for b
 
 * NetApp Service Engine collects the consumed capacity information every five minutes and then maps it to the service levels to which the customer has subscribed.
 * If the consumed capacity for a service level is less than what they committed (such as, no burst), then the capacity to be billed is recorded as the committed capacity.
-
-image:nkfsosm_image19.png[Error: Missing Graphic Image]
-
 * If the consumed capacity for a service level is greater than what they committed, such as burst capacity, then the average burst usage for that five minute-sample is calculated using the following formula:
 +
 `Burst used / (# of samples in an hour * # of hours in a day * # of days in the billing month)`
 
 * 288 burst calculations are made per day, and sum of all the 288 samples is then reported as averaged burst per day.
 * The sum of all average burst per day in a billing term is used to finally invoice the customer. In the above example, if the burst usage is only for four days in a billing term, the total burst usage invoiced for that month will be for 1.3TiB, sum of all burst averages reported per day.
-
-image:nkfsosm_image20.png[Error: Missing Graphic Image]

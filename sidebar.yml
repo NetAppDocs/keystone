@@ -77,19 +77,13 @@ entries:
             url: /nkfsosm_health_monitoring_and_alerting.html
           - title: Capacity and Performance Management
             url: /nkfsosm_capacity_and_performance_management.html
-          - title: Change Management
-            url: /nkfsosm_change_management.html
-          - title: Release Management
-            url: /nkfsosm_release_management.html
           - title: Maintenance
             url: /nkfsosm_maintenance.html
           - title: System Expansion
             url: /nkfsosm_system_expansion.html
           - title: Reporting
             url: /nkfsosm_reporting.html
-          - title: Support Processes
-            url: /nkfsosm_support_processes.html
-          - title: Where to Find Additional Information
+          - title: Additional Information and Support Contact
             url: /nkfsosm_where_to_find_additional_information.html
   - title: Release Notes
     entries:

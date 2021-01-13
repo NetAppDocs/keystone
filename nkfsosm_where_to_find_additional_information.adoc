@@ -5,7 +5,7 @@ keywords: netapp, keystone, where, find, additional, information,
 summary:
 ---
 
-= Where to Find Additional Information
+= Additional Information and Support Contact
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,6 +19,17 @@ summary:
 //
 
 [.lead]
+You can contact the support desk and find additional documentation in the following sections.
+
+* Global Service Contacts :
+https://www.netapp.com/us/contact-us/support.aspx
+
+* NetApp uses OpsRamp, a cloud-based remote gateway solution to proactively monitor and connect to the Keystone environment for troubleshooting purposes. For information on OpsRamp, see https://www.opsramp.com/#.
+
+* If you have an open case/ticket that needs to be escalated, please send an email to one of the following addresses:
+Keystone.services@netapp.com
+Keystone.escalations@netapp.com
+
 To learn more about the information that is described in this document, review the following documents and/or websites:
 
 * NetApp Keystone
