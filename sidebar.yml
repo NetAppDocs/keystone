@@ -138,7 +138,7 @@ entries:
             url: /sewebiug_delete_file_server.html
           - title: View shares
             url: /sewebiug_view_shares.html
-          - title: Create a new file share
+          - title: Create a file share
             url: /sewebiug_create_a_new_file_share.html
           - title: Create file share from snapshot
             url: /sewebiug_create_file_share_from_snapshot.html
@@ -162,7 +162,7 @@ entries:
             url: /sewebiug_delete_a_host_group.html
           - title: View disks
             url: /sewebiug_view_disks.html
-          - title: Create a new disk
+          - title: Create a disk
             url: /sewebiug_create_a_new_disk.html
           - title: Create a disk from a snapshot
             url: /sewebiug_create_a_disk_from_a_snapshot.html
