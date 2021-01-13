@@ -25,17 +25,10 @@ The following features and enhancements have been introduced in NetApp Service E
 
 ===  Support extended to Cloud Volumes Services for Google Cloud Platform
 
-NetApp Service Engine now has the ability to support Cloud Volumes Services for Google Cloud Platform (GCP) in addition to its existing support for Azure NetApp Files.
+NetApp Service Engine now has the ability to support Cloud Volumes Services for Google Cloud Platform (GCP) in addition to its existing support for Azure NetApp Files. You can provisioning and modify the Google Cloud volumes by using this service.
 
 [NOTE]
 Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
-
-The following activities can be performed for Cloud Volumes Services through NetApp Service Engine:
-
-*	Provisioning or modifying the Google Cloud volumes
-*	Backing up data to a Cloud Volumes Service zone
-*	Viewing Google Cloud volumes in NetApp Service Engine inventory
-*	Viewing the Google Cloud volume usage.
 
 === Ability to manage objects provisioned outside of NetApp Service Engine
 
