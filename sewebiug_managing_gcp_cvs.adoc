@@ -20,20 +20,19 @@ summary: Managing Cloud Volume Subscriptions on Google Cloud Platform
 [.lead]
 Subscriptions to Cloud Volumes Service for Google Cloud Platform (GCP) are associated with specific subtenants under a tenant. A subtenant is subscribed to a single Google Cloud service. You can create and manage subscribed services (Google Cloud instances) for your tenants and subtenants and provision storage on Google Cloud based on the tenancies. The Cloud Volumes Service accounts of the tenants and subtenants should be set up before you can manage Google Cloud instances through NetApp Service Engine. For information about Cloud Volumes Service on GCP, see https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html[Learn about Cloud Volumes Service for Google Cloud]
 
-
 [NOTE]
  The Cloud Volumes Service accounts for the tenants and subtenants should already be configured for GCP. Contact support for the service account details. You need customer administrator access to manage Google Cloud volumes.
 
 == Managing your subscribed services on GCP
 
-You can manage your subscribed services on Google Cloud from the *SUBSCRIBED SERVICES* menu on the left navigation pane. The Subscribed Services page displays all the subscribed services for all subtenants of the selected tenant. You can view, modify, and delete the subscribed services from this page. You can also add a new service by following these steps.
+You can manage your subscribed services on Google Cloud from the *SUBSCRIBED SERVICES* menu on the left navigation pane. The Subscribed Services page displays all the subscribed services for all subtenants of a selected tenant. You can view, modify, and delete the subscribed services from this page. You can also add a new service by following these steps.
 
 === Before you begin
 
 You need:
 
-* The subtenant subscribed to the Google Cloud service
-* The JSON file for the subscriber's service account that is associated with the Google Cloud instance
+* The subtenant subscribed to the Google Cloud service.
+* The JSON file for the subscriber's service account that is associated with the Google Cloud instance.
 * To ensure that Cloud Volumes Service for GCP is already configured on Cloud Manager by your support team. For more information, see https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html[Set up Cloud Volumes Service for Google Cloud]
 
 ==== Steps

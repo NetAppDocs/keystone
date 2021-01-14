@@ -25,24 +25,24 @@ The following features and enhancements have been introduced in NetApp Service E
 
 ===  Support extended to Cloud Volumes Services for Google Cloud Platform
 
-NetApp Service Engine now has the ability to support Cloud Volumes Services for Google Cloud Platform (GCP) in addition to its existing support for Azure NetApp Files. You can provisioning and modify the Google Cloud volumes by using this service.
+NetApp Service Engine now has the ability to support Cloud Volumes Services for Google Cloud Platform (GCP) in addition to its existing support for Azure NetApp Files. You can now manage subscribed services and provision and modify Google Cloud Volumes from NetApp Service Engine.
 
 [NOTE]
 Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
 
 === Ability to manage objects provisioned outside of NetApp Service Engine
 
-The volumes and file shares that already exist in the customer environment can now be viewed and managed as a part of your Keystone subscription. The volumes and file shares provisioned outside of the NetApp Service Engine can now be viewed as listed on the *Shares* and *Disks* screens with the appropriate status codes. A background process runs at an interval of every 15 minutes and imports the foreign workloads within your NetApp Service Engine instance.
+The volumes (disks and file shares) that already exist in the customer environment and belong to the storage VMs configured in NetApp Service Engine, can now be viewed and managed as a part of your Keystone subscription. The volumes provisioned outside of the NetApp Service Engine are now listed on the *Shares* and *Disks* pages with appropriate status codes. A background process runs at a periodic interval and imports the foreign workloads within your NetApp Service Engine instance.
 
-The volumes and file shares imported from the customer environment may not be in the same standard as the other volumes and shares in NetApp Service Engine. Such volumes are categorized with `Non-Standard` status. You can raise a service request from *Support > Service Request > New Service Request* for them to be standardized and managed through the NetApp Service Engine portal.
+The imported disks and file shares may not be in the same standard as the existing disks and file shares on NetApp Service Engine. After import, these disks and file shares are categorized with `Non-Standard` status. You can raise a service request from *Support > Service Request > New Service Request* for them to be standardized and managed through the NetApp Service Engine portal.
 
 === SnapCenter integration with NetApp Service Engine
 
-As a part of SnapCenter integration with NetApp Service Engine, you can now clone your volumes and file shares from the Snapshots created in your SnapCenter environment outside your NetApp Service Engine instance. While cloning a file share or volume from an existing Snapshot on the NetApp Service Engine web interface, these Snapshots are listed for selection on the *Create Disk from Snapshot* pop-up. An acquisition process runs in the background at an interval of every 15 minutes to import the Snapshots within your NetApp Service Engine instance.
+As a part of SnapCenter integration with NetApp Service Engine, you can now clone your disks and file shares from the Snapshots created in your SnapCenter environment, outside of your NetApp Service Engine instance. While cloning a file share or disk from an existing Snapshot on the NetApp Service Engine portal, these Snapshots are listed for selection on the *Create Disk from Snapshot* pop-up. An acquisition process runs in the background at a periodic interval to import the Snapshots within your NetApp Service Engine instance.
 
 === New screen for maintaining backups
 
-A new *Backup* screen enables you to view and manage the backups of the volumes and file shares created in your environment. You can edit the backup policies to break the backup relationship with the source volume or file share, and also delete the backup volume. This feature allows the backup to be retained even when the source volume is deleted, for later restoration. For restoring a file share or volume from a specific recovery point, you can raise a service request from *Support > Service Request > New Service Request*.
+The new *Backup* screen enables you to view and manage the backups of the disks and file shares created in your environment. You can edit the backup policies, break the backup relationship with the source volume, and also delete the backup volume with all its recovery points. This feature allows the backup to be retained (as an orphan backup) even when the source volume is deleted, for later restoration. For restoring a file share or disk from a specific recovery point, you can raise a service request from *Support > Service Request > New Service Request*.
 
 === Provision for restricting user access on CIFS (SMB) shares
 
