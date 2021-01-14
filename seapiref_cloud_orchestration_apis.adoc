@@ -29,7 +29,7 @@ This section describes the APIs for:
 * Managing Azure NetApp Files accounts
 * Managing Azure NetApp Files capacity pools
 * Managing Azure NetApp Files Volumes
-* Managing Google Cloud volumes
+* Managing Google Cloud Volumes
 
 === Cloud Volumes Service instances
 
@@ -595,14 +595,14 @@ The `/v2.1/gcp/volumes` API under the Cloud Orchestration category enables you t
 
 |`GET`
 |`/v2.1/gcp/volumes`
-|You can use the GET method to retrieve the details of all the Google Cloud volumes created for your subtenant's Cloud Volumes Service subscription.
+|You can use the GET method to retrieve the details of all the Google Cloud Volumes created for your subtenant's Cloud Volumes Service subscription.
 |`offset`: The number of items to skip before starting to collect the result set.
 `limit`: The numbers of items to return.
 `subtenant_id`: The ID of the subtenant subscribed to Google Cloud.
 `region`: The region of the subscribed service.
 |`GET`
 |`/v2.1/gcp/volumes`
-|You can use this method to retrieve the details of a specific Google Cloud volume created for your subtenant's Cloud Volumes Service subscription.
+|You can use this method to retrieve the details of a specific Google Cloud Volume created for your subtenant's Cloud Volumes Service subscription.
 |`id`: The ID of the GCP volume.
 `subtenant_id`: The ID of the subtenant subscribed to Google Cloud.
 `region`: The region of the subscribed service.
@@ -653,7 +653,7 @@ The `/v2.1/gcp/volumes` API under the Cloud Orchestration category enables you t
 ```
 |DELETE
 |`/v2.1/gcp/volumes`
-|You can use this method to delete a specific Google Cloud volume created for your subtenant's Cloud Volumes Service subscription.
+|You can use this method to delete a specific Google Cloud Volume created for your subtenant's Cloud Volumes Service subscription.
 |`id`: The ID of the GCP volume.
 `subtenant_id`: The ID of the subtenant subscribed to Cloud Volumes Service for Google Cloud.
 `region`: The region of the subscribed service.

@@ -21,7 +21,7 @@ summary: Managing Cloud Volume Subscriptions on Google Cloud Platform
 Subscriptions to Cloud Volumes Service for Google Cloud Platform (GCP) are associated with specific subtenants under a tenant. A subtenant is subscribed to a single Google Cloud service. You can create and manage subscribed services (Google Cloud instances) for your tenants and subtenants and provision storage on Google Cloud based on the tenancies. The Cloud Volumes Service accounts of the tenants and subtenants should be set up before you can manage Google Cloud instances through NetApp Service Engine. For information about Cloud Volumes Service on GCP, see https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html[Learn about Cloud Volumes Service for Google Cloud].
 
 [NOTE]
- The Cloud Volumes Service accounts for the tenants and subtenants should already be configured for GCP. Contact support for the service account details. You need customer administrator access to manage Google Cloud volumes.
+ The Cloud Volumes Service accounts for the tenants and subtenants should already be configured for GCP. Contact support for the service account details. You need customer administrator access to manage Google Cloud Volumes.
 
 == Managing your subscribed services on GCP
 

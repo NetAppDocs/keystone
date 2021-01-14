@@ -248,7 +248,7 @@ entries:
                 url: /sewebiug_managing_azure_capacity_pools.html
               - title: Managing Azure volumes
                 url: /sewebiug_managing_azure_volumes.html
-          - title: Managing Cloud Volume Service for Google Cloud Platform
+          - title: Managing Cloud Volumes Service for Google Cloud Platform
             url: /sewebiug_managing_gcp_cvs.html
   - title: Keystone API Reference
     entries:
