@@ -23,7 +23,7 @@ The following features and enhancements have been introduced in NetApp Service E
 
 = Features introduced in Keystone 2.0.1
 
-===  Support extended to Cloud Volumes Services for Google Cloud Platform
+=== Support extended to Cloud Volumes Services for Google Cloud Platform
 
 NetApp Service Engine now has the ability to support Cloud Volumes Services for Google Cloud Platform (GCP) in addition to its existing support for Azure NetApp Files. You can now manage subscribed services and provision and modify Google Cloud Volumes from NetApp Service Engine.
 
