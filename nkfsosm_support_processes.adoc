@@ -185,47 +185,6 @@ In the event of an unplanned outage on NetApp services, NetApp will take the fol
 
 === Escalation Process
 
-If you have an open case/ticket that needs to be escalated, please email mailto:keystone.escalations@netapp.com[keystone.escalations@netapp.com^] or call into the Keystone Support team and ask to speak to the tech lead or a KSDM. The NetApp KSM will coordinate with the tech lead or SDM will take responsibility for a problem resolution oversight and provide progress updates on a timely basis.
-
-If a management escalation is required for an ongoing incident, the KSM provides a contact to request escalated support. As a general rule, all resources (or their delegates) are available 24/7 for NetApp Keystone storage escalations. If a resource is not available and does not respond within 15 minutes (severity 1) or 30 minutes (severity 2), the customer should work with the NetApp KSM to help with the required escalations and resolution. The escalation contact information is provided in the below table.
-
-|===
-|Contact Order |Description |Name |Desk |Mobile |Email
-
-|# 1
-|NetApp Keystone Service Desk lead
-|Vaishnavi
-|+91 80 6110 3789
-|+91 97313 17488
-|Vaishnavi.JanardhanB@netapp.com
-|# 2
-|Keystone Success Manager
-|Robert Krause
-|+1 614 766 3676
-|+1 954 275 1389
-|Robert.krause@netapp.com
-|# 3
-|Tech lead
-|Kunal Giridhar
-|–
-|+91 99705 67060
-|Kunal.Girdhar@netapp.com
-|# 4
-|SDM
-|Deepu John
-|+91 80 6110 3038
-|+91 99801 53927
-|Deepu.john@netapp.com
-|# 5
-|Consultant
-|Rajkumar Ekambaram
-|+91 80 6110 5382
-|+91 96633 67687
-|Rajkumar.Ekambaram@netapp.com
-|# 6
-|Senior manager
-|Shahul Hameed
-|+91 80 6110 3032
-|+91 81056 96006
-|Shahul.Hameed@netapp.com
-|===
+If you have an open case/ticket that needs to be escalated, please send an email to one of the following addresses:
+Keystone.services@netapp.com
+Keystone.escalations@netapp.com
