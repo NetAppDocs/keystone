@@ -93,7 +93,7 @@ NOTE: NetApp Service Engine displays a warning and the capacity bar changes colo
 .. Add the IPv4 address (with a subnet mask expressed as a number of bits) of the client to which the rule applies.
 .. Specify the read and write access, and whether the client has root access (superuser).
 . For a CIFS (SMB) or multi-protocol shares, specify the Access Control List (ACL) for restricting user access. This section is available for only CIFS and multi-protocol shares.
-.. Specify the Windows user or group basedon the Active Directory (AD) settings to add to the ACL. If you specify the user name, include the user's domain in the `<domain>\<username>` format. The default value is `Everyone`.
+.. Specify the Windows user or group based on the Active Directory (AD) settings to add to the ACL. If you specify the user name, include the user's domain in the `<domain>\<username>` format. The default value is `Everyone`.
 .. Specify the Windows permission. The default value is `Full control`. If a user is a part of two groups, the permissions of the group that has higher privileges get applied on the user's access.
 
 +

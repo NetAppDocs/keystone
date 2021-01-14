@@ -25,7 +25,7 @@ The following features and enhancements have been introduced in NetApp Service E
 
 === Support extended to Cloud Volumes Services for Google Cloud Platform
 
-NetApp Service Engine now has the ability to support Cloud Volumes Services for Google Cloud Platform (GCP) in addition to its existing support for Azure NetApp Files. You can now manage subscribed services and provision and modify Google Cloud Volumes from NetApp Service Engine.
+NetApp Service Engine now has the ability to support Cloud Volumes Services for Google Cloud Platform (GCP) in addition to its existing support for Azure NetApp Files. You can now manage subscribed services, and provision and modify Google Cloud Volumes from NetApp Service Engine.
 
 [NOTE]
 Subscriptions to Cloud Volumes Services are managed outside of NetApp Service Engine. The relevant credentials are provided to NetApp Service Engine to allow connection to the cloud services.
@@ -38,16 +38,16 @@ The imported disks and file shares may not be in the same standard as the existi
 
 === SnapCenter integration with NetApp Service Engine
 
-As a part of SnapCenter integration with NetApp Service Engine, you can now clone your disks and file shares from the Snapshots created in your SnapCenter environment, outside of your NetApp Service Engine instance. While cloning a file share or disk from an existing Snapshot on the NetApp Service Engine portal, these Snapshots are listed for selection on the *Create Disk from Snapshot* pop-up. An acquisition process runs in the background at a periodic interval to import the Snapshots within your NetApp Service Engine instance.
+As a part of SnapCenter integration with NetApp Service Engine, you can now clone your disks and file shares from the Snapshots created in your SnapCenter environment, outside of your NetApp Service Engine instance. While cloning a file share or disk from an existing Snapshot on the NetApp Service Engine portal, these Snapshots are listed for your selection. An acquisition process runs in the background at a periodic interval to import the Snapshots within your NetApp Service Engine instance.
 
 === New screen for maintaining backups
 
-The new *Backup* screen enables you to view and manage the backups of the disks and file shares created in your environment. You can edit the backup policies, break the backup relationship with the source volume, and also delete the backup volume with all its recovery points. This feature allows the backup to be retained (as an orphan backup) even when the source volume is deleted, for later restoration. For restoring a file share or disk from a specific recovery point, you can raise a service request from *Support > Service Request > New Service Request*.
+The new *Backup* screen enables you to view and manage the backups of the disks and file shares created in your environment. You can edit the backup policies, break the backup relationship with the source volume, and also delete the backup volume with all its recovery points. This feature allows the backups to be retained (as orphan backups) even when the source volumes are deleted, for later restoration. For restoring a file share or disk from a specific recovery point, you can raise a service request from *Support > Service Request > New Service Request*.
 
-=== Provision for restricting user access on CIFS (SMB) shares
+=== Provision for restricting user access on CIFS shares
 
-You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol shares. You can specify Windows users or groups based on the Active Directory (AD) to add to the ACL.
-link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more].
+You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol share. You can specify Windows users or groups based on the Active Directory (AD) settings to add to the ACL.
+link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more]
 
 = Features introduced in Keystone 2.0
 
@@ -82,12 +82,12 @@ Some NetApp Service Engine-supported storage subscriptions allow customers to us
 
 ==== Notification when a proposed change results in using burst capacity
 A notification to display a change in the proposed provisioning that will cause a subscription to go into burst. The user can choose to continue, knowing that will put the subscription into burst or choose not to continue with the action.
-link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications[Learn more].
+link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications[Learn more]
 
 ==== Notification when subscription is in burst
 
 A notification banner is displayed when a subscription is in burst.
-link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications[Learn more].
+link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications[Learn more]
 
 ==== Capacity report shows burst usage
 
