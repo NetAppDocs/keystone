@@ -30,7 +30,7 @@ You need the information about the subscribed services, including credentials to
 
 . Select *Subscribed Services* from the menu.
 . Click *Create*.
-. In the Add Subscribed Service dialog box, select the cloud service type and then complete the relevant information for that service type:
+. On the Create Subscribed Service page, select the cloud service type and then complete the relevant information for that service type:
 +
 *Azure:*
 
