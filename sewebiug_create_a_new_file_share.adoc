@@ -78,22 +78,22 @@ NOTE: NetApp Service Engine displays a warning and the capacity bar changes colo
 . If asynchronous disaster recovery is enabled on the underlying file server, asynchronous disaster recovery replication is automatically enabled for the new share. If you wish to exclude the share from asynchronous disaster recovery replication, toggle the Asynchronous Disaster Recovery button so that it is disabled.
 . If the share is being created in a zone that is MetroCluster-enabled, the Synchronous Disaster Recovery button is automatically enabled and cannot be disabled. The share will be replicated to the zone displayed in the panel below the Synchronous Disaster Recovery toggle.
 . If snapshots are required for this file share:
-.. Toggle to enable the Snapshot Policy to display the Snapshot Policy fields.
-.. Specify when to create the snapshots:
+.. Toggle to enable the Snapshot Policy and view the Snapshot Policy fields.
+.. Specify when to create the Snapshots:
 
 ** *Hourly.* Specify which minute (of the hour) to take snapshot and the number of hourly snapshots to retain.
 ** *Daily.* Specify when (hour and minute) to take the snapshot the number of hourly snapshots to retain.
 ** *Weekly.* Specify when (day of the week, hour, and minute) to take snapshot and the number of weekly snapshots to retain.
 ** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
 . To enable backups for this file share:
-.. Toggle to enable the Backup Policy to display the Backup Policy fields.
+.. Toggle to enable the Backup Policy and the Backup Policy fields.
 .. Specify the backup zone.
 .. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
-. For NFS or multi-protocol shares, specify the Export Policy. You can apply multiple export policies on a share.
+. For NFS or multi-protocol shares, specify the Export Policy. You can apply multiple export policies on a share. This section is available for only NFS and multi-protocol shares.
 .. Add the IPv4 address (with a subnet mask expressed as a number of bits) of the client to which the rule applies.
 .. Specify the read and write access, and whether the client has root access (superuser).
 . For a CIFS (SMB) or multi-protocol shares, specify the Access Control List (ACL) for restricting user access. This section is available for only CIFS and multi-protocol shares.
-.. Specify the Windows user or group based on the Active Directory (AD) to add to the ACL. If you specify the user name, include the user's domain in the `<domain>\<username>` format. The default value is `Everyone`.
+.. Specify the Windows user or group based on the Active Directory (AD) settings to add to the ACL. If you specify the user name, include the user's domain in the `<domain>\<username>` format. The default value is `Everyone`.
 .. Specify the Windows permission. The default value is `Full control`. If a user is a part of two groups, the permissions of the group that has higher privileges get applied on the user's access.
 
 +

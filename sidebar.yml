@@ -31,8 +31,6 @@ entries:
             url: /nkfsosm_software_for_keystone_flex_subscription_service.html
           - title: Keystone Infrastructure
             url: /nkfsosm_keystone_infrastructure.html
-          - title: Keystone Architecture
-            url: /nkfsosm_keystone_architecture.html
       - title: Site Requirements
         url: /nkfsosm_site_requirements_overview.html
         entries:
@@ -79,29 +77,14 @@ entries:
             url: /nkfsosm_health_monitoring_and_alerting.html
           - title: Capacity and Performance Management
             url: /nkfsosm_capacity_and_performance_management.html
-          - title: Change Management
-            url: /nkfsosm_change_management.html
-          - title: Release Management
-            url: /nkfsosm_release_management.html
           - title: Maintenance
             url: /nkfsosm_maintenance.html
           - title: System Expansion
             url: /nkfsosm_system_expansion.html
           - title: Reporting
             url: /nkfsosm_reporting.html
-          - title: Support Processes
-            url: /nkfsosm_support_processes.html
-      - title: Other Services
-        url: /nkfsosm_other_services.html
-        entries:
-          - title: Data Migration Service
-            url: /nkfsosm_data_migration_service.html
-      - title: Conclusion
-        url: /nkfsosm_conclusion.html
-      - title: Where to Find Additional Information
-        url: /nkfsosm_where_to_find_additional_information.html
-      - title: Version History
-        url: /nkfsosm_version_history.html
+          - title: Additional Information and Support Contact
+            url: /nkfsosm_where_to_find_additional_information.html
   - title: Release Notes
     entries:
       - title: What's new
@@ -129,7 +112,7 @@ entries:
         url: /sewebiug_overview.html
       - title: Billing accounts, subscriptions, services, and performance
         url: /sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html
-      - title: Getting started
+      - title: Get started
         entries:
           - title: Overview
             url: /sewebiug_getting_started_overview.html
@@ -141,7 +124,7 @@ entries:
             url: /sewebiug_netapp_service_engine_web_interface_overview.html
       - title: View subscribed services capacity
         url: /sewebiug_view_subscribed_services_capacity.html
-      - title: Working with file services
+      - title: Work with file services
         entries:
           - title: Overview
             url: /sewebiug_working_with_file_services_overview.html
@@ -155,7 +138,7 @@ entries:
             url: /sewebiug_delete_file_server.html
           - title: View shares
             url: /sewebiug_view_shares.html
-          - title: Create a new file share
+          - title: Create a file share
             url: /sewebiug_create_a_new_file_share.html
           - title: Create file share from snapshot
             url: /sewebiug_create_file_share_from_snapshot.html
@@ -165,7 +148,7 @@ entries:
             url: /sewebiug_delete_a_file_share.html
           - title: Create adhoc snapshot of a file share
             url: /sewebiug_create_adhoc_snapshot_of_a_file_share.html
-      - title: Working with block storage
+      - title: Work with block storage
         entries:
           - title: Overview
             url: /sewebiug_working_with_block_storage_overview.html
@@ -179,7 +162,7 @@ entries:
             url: /sewebiug_delete_a_host_group.html
           - title: View disks
             url: /sewebiug_view_disks.html
-          - title: Create a new disk
+          - title: Create a disk
             url: /sewebiug_create_a_new_disk.html
           - title: Create a disk from a snapshot
             url: /sewebiug_create_a_disk_from_a_snapshot.html
@@ -189,7 +172,7 @@ entries:
             url: /sewebiug_delete_a_disk.html
           - title: Create an adhoc snapshot of a disk
             url: /sewebiug_create_an_adhoc_snapshot_of_a_disk.html
-      - title: Working with object storage
+      - title: Work with object storage
         entries:
           - title: Overview
             url: /sewebiug_working_with_object_storage_overview.html
@@ -215,11 +198,11 @@ entries:
             url: /sewebiug_create_an_s3_key_for_a_user.html
           - title: Delete an S3 key for a user
             url: /sewebiug_delete_an_s3_key_for_a_user.html
-      - title: Working with reports
+      - title: Work with reports
         url: /sewebiug_working_with_reports.html
-      - title: Managing subscriptions
+      - title: Manage subscriptions
         url: /sewebiug_managing_subscriptions.html
-      - title: Managing service requests
+      - title: Manage service requests
         entries:
           - title: Overview
             url: /sewebiug_managing_service_requests_overview.html
@@ -229,9 +212,9 @@ entries:
             url: /sewebiug_track_a_service_request.html
           - title: Service request process
             url: /sewebiug_service_request_process.html
-      - title: Managing subtenants
+      - title: Manage subtenants
         url: /sewebiug_managing_subtenants.html
-      - title: Managing users
+      - title: Manage users
         entries:
           - title: Overview
             url: /sewebiug_managing_users_overview.html
@@ -243,26 +226,30 @@ entries:
             url: /sewebiug_modify_user_details.html
           - title: Delete a user
             url: /sewebiug_delete_a_user.html
-      - title: Managing subscribed services
+      - title: Manage subscribed services
         entries:
-          - title: Overview
-            url: /sewebiug_managing_subscribed_services_overview.html
-          - title: View a list of subscribed services
-            url: /sewebiug_view_a_list_of_subscribed_services.html
-          - title: Add a subscribed service
-            url: /sewebiug_add_a_subscribed_service.html
-          - title: Modify the subscribed service details
-            url: /sewebiug_modify_the_subscribed_service_details.html
-          - title: Delete a subscribed service
-            url: /sewebiug_delete_a_subscribed_service.html
-      - title: Managing Azure NetApp accounts
-        url: /sewebiug_managing_azure_netapp_accounts.html
-      - title: Managing Azure capacity pools
-        url: /sewebiug_managing_azure_capacity_pools.html
-      - title: Managing Azure volumes
-        url: /sewebiug_managing_azure_volumes.html
-      - title: Where to Find Additional Information
-        url: /sewebiug_where_to_find_additional_information.html
+          - title: Managing subscribed services
+            entries:
+              - title: Overview
+                url: /sewebiug_managing_subscribed_services_overview.html
+              - title: View a list of subscribed services
+                url: /sewebiug_view_a_list_of_subscribed_services.html
+              - title: Add a subscribed service
+                url: /sewebiug_add_a_subscribed_service.html
+              - title: Modify the subscribed service details
+                url: /sewebiug_modify_the_subscribed_service_details.html
+              - title: Delete a subscribed service
+                url: /sewebiug_delete_a_subscribed_service.html
+          - title: Managing Azure NetApp Files
+            entries:
+              - title: Managing Azure NetApp accounts
+                url: /sewebiug_managing_azure_netapp_accounts.html
+              - title: Managing Azure capacity pools
+                url: /sewebiug_managing_azure_capacity_pools.html
+              - title: Managing Azure volumes
+                url: /sewebiug_managing_azure_volumes.html
+          - title: Managing Cloud Volume Service for Google Cloud Platform
+            url: /sewebiug_managing_gcp_cvs.html
   - title: Keystone API Reference
     entries:
       - title: Overview of NetApp Service Engine APIs

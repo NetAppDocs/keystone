@@ -19,7 +19,7 @@ summary: Keystone overview of NetApp service engine APIs
 //
 
 [.lead]
-NetApp Service Engine provides a set of APIs to manage your storage resources on the supported storage systems through a RESTful web service interface for any third-party integration.
+NetApp Service Engine provides a set of APIs to manage storage resources on the supported storage systems through a RESTful web service interface for any third-party integration. The APIs cover all the functionalities that are supported through the GUI. NetApp provides the API documentation, but it is the customer’s responsibility to integrate into their applications.
 
 This NetApp Service Engine API Reference Guide provides you with information about APIs and sample codes. The information provided in the guide enables you to create RESTful clients of NetApp Service Engine. The APIs are based on the Representational State Transfer (REST) architectural style.
 
