@@ -29,7 +29,7 @@ KSM will complement GSSC to enable 24/7 support to Keystone customers.
 
 The KSM owns the customer’s utilization and experience with the Keystone service. The KSM’s primary role is to ensure that the customer/NetApp relationships are maintained. The KSDM is the primary contact for customer meetings, customer reporting, and customer communication between the customer and NetApp.
 
-The KSM is the primary contact for the customer to manage the overall KFS service. The KSM works with various stakeholders within NetApp and with the customer.
+The KSM is the primary contact for the customer to manage the overall Flex Subscription service. The KSM works with various stakeholders within NetApp and with the customer.
 
 The KSM is responsible for the following activities during the length of the contract:
 

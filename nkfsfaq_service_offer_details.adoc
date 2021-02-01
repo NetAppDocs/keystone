@@ -19,11 +19,11 @@ summary: Service offer details
 //
 
 [.lead]
-*What is offered as part of Keystone Flex Subscription?*
+*What is offered as part of NetApp Keystone Flex Subscription?*
 
-Keystone Flex Subscription is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
+NetApp Keystone Flex Subscription (Flex Subscription) is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
 
-*What storage service offers are provided as part of Keystone Flex Subscription?*
+*What storage service offers are provided as part of Flex Subscription?*
 
 The following chart shows the data storage performance tiers offerings.
 
@@ -37,9 +37,9 @@ Advanced data protection (backup and disaster recovery) and Hybrid Cloud Tiering
 
 In a NetApp operated scenario, NetApp Keystone guarantees IOPS/TiB for the storage that is provisioned and the latency for each service level.
 
-*What is the typical length of term of a NetApp Keystone Flex Subscription agreement?*
+*What is the typical length of term of a Flex Subscription agreement?*
 
-The NetApp Keystone Flex Subscription offers 12- , 24- , and 36-month term periods.
+Flex Subscription offers 12- , 24- , and 36-month term periods.
 
 *How does the customer access the storage?*
 

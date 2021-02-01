@@ -19,7 +19,7 @@ summary: Service delivery architecture overview
 //
 
 [.lead]
-This section describes the KFS infrastructure architecture and management application for the NetApp- and customer-operated environments.
+This section describes the Flex Subscription infrastructure architecture and management application for the NetApp- and customer-operated environments.
 
 Keystone architecture, design, choice of technology, and products to be used reside solely with NetApp. NetApp reserves the rights to take the following actions:
 

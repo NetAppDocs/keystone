@@ -19,7 +19,7 @@ summary: Keystone performance
 //
 
 [.lead]
-KFS offers capacity at predefined performance levels. Each Performance Service Level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
+NetApp Keystone Flex Subscription offers capacity at predefined performance levels. Each Performance Service Level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
 
 Each volume within Keystone is associated with a performance service level. All I/O operations and all used storage used on the respective volume are factored into the volume’s I/O density calculation.
 

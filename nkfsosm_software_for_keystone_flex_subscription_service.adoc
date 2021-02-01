@@ -5,7 +5,7 @@ keywords: netapp, keystone,  software, flex, subscription, service,
 summary: Software for keystone flex subscription service
 ---
 
-= Software for Keystone Flex Subscription Service
+= Software for NetApp Keystone Flex Subscription Service
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary: Software for keystone flex subscription service
 //
 
 [.lead]
-The below table lists the software components KFS service.
+The below table lists the software components NetApp Keystone Flex Subscription service.
 
 |===
 |Software |Description

@@ -5,7 +5,7 @@ keywords: netapp, keystone, infrastructure,
 summary: Keystone infrastructure
 ---
 
-= Keystone Infrastructure
+= NetApp Keystone Infrastructure
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -27,7 +27,7 @@ This section describes the infrastructure components used in the customer- and N
 |Storage controllers
 |Data
 |Customer and NetApp/partner
-|Provides storage capacity for KFS
+|Provides storage capacity for NetApp Keystone Flex Subscription (Flex Subscription)
 NetApp AFF and FAS controllers are used based on capacity and performance service level requirements.
 
 |Cluster switches
@@ -37,22 +37,22 @@ NetApp AFF and FAS controllers are used based on capacity and performance servic
 |Data switches
 |Data
 |NetApp/partner only
-|Data connectivity between user and KFS storage.
-Cisco Nexus 9K switches are selected to provide enough ports for KFS storage controllers and customer data network connectivity providing bandwidth and flexibility to provide 10/25/50/100 GbE connectivity.
+|Data connectivity between user and Flex Subscription storage.
+Cisco Nexus 9K switches are selected to provide enough ports for Flex Subscription storage controllers and customer data network connectivity providing bandwidth and flexibility to provide 10/25/50/100 GbE connectivity.
 |Management switches
 |Control
 |NetApp/partner only
-|KFS devices’ management port connectivity.
+|Flex Subscription devices’ management port connectivity.
 Cisco Nexus 9K 1 GbE switches are selected to provide enough ports to attach to the devices’ management ports, as well provide 10GbE data connectivity to the management servers and storage.
 |Firewalls
 |Control
 |NetApp/partner only
-|Limit access to and protect KFS management network and KFS components.
-Palo Alto firewalls are selected to provide segregation of the KFS management network from the customer network.
+|Limit access to and protect Flex Subscription management network and Flex Subscription components.
+Palo Alto firewalls are selected to provide segregation of the Flex Subscription management network from the customer network.
 |Management servers
 |Control
 |NetApp/partner only
-|Executes KFS monitoring and management applications: NetApp Service Engine API, NetApp Service Engine GUI, OpsRamp, Active IQ Unified Manager.
+|Executes Flex Subscription monitoring and management applications: NetApp Service Engine API, NetApp Service Engine GUI, OpsRamp, Active IQ Unified Manager.
 |Management storage
 |Control
 |NetApp/partner only
@@ -61,5 +61,5 @@ Small NAS-based storage system is selected to meet the requirements of NetApp Se
 |Console switch
 |Control
 |NetApp/partner only
-|Provides serial console access to KFS devices.
+|Provides serial console access to Flex Subscription devices.
 |===

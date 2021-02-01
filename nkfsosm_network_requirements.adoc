@@ -19,7 +19,7 @@ summary: Network requirements
 //
 
 [.lead]
-The following tables provide the KFS networking requirements.
+The following tables provide the NetApp Keystone Flex Subscription networking requirements.
 
 === IP Address Requirements (Customer-Operated)
 

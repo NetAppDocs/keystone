@@ -51,4 +51,4 @@ Backup and Disaster recovery service are available as add-on service, while snap
 ^1^Additional storage capacity to be subscribed
 
 [NOTE]
-NetApp KFS service does not back up the data by default—it is the customer’s responsibility to subscribe to the add-on data protection services and configure for data backup and disaster recovery services. NetApp also supports protecting the data on to a non-Keystone storage system, and will aid in establishing the relationship. However, NetApp is not responsible for any backup failures.
+NetApp Keystone Flex Subscription service does not back up the data by default—it is the customer’s responsibility to subscribe to the add-on data protection services and configure for data backup and disaster recovery services. NetApp also supports protecting the data on to a non-Keystone storage system, and will aid in establishing the relationship. However, NetApp is not responsible for any backup failures.

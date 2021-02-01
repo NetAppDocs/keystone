@@ -5,7 +5,7 @@ keywords: netapp, keystone, pricing, billing,
 summary: Keystone Pricing and Billing
 ---
 
-= Keystone Pricing and Billing
+= NetApp Keystone Pricing and Billing
 :hardbreaks:
 :nofooter:
 :icons: font
