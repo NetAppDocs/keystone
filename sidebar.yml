@@ -32,7 +32,7 @@ entries:
           - title: Keystone Infrastructure
             url: /nkfsosm_keystone_infrastructure.html
       - title: Site Requirements
-        url: /nkfsosm_site_requirements_overview.html
+        url: /nkfsosm_site_requirements.html
         entries:
           - title: Network Requirements
             url: /nkfsosm_network_requirements.html
