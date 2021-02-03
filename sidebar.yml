@@ -31,6 +31,8 @@ entries:
             url: /nkfsosm_software_for_keystone_flex_subscription_service.html
           - title: Keystone Infrastructure
             url: /nkfsosm_keystone_infrastructure.html
+          - title: Storage operations through web portal and APIs
+            url: /nkfsosm_consuming_storage_using_the_gui_or_keystone_apis.html
       - title: Site Requirements
         url: /nkfsosm_site_requirements.html
         entries:
@@ -53,11 +55,6 @@ entries:
             url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
           - title: Keystone Service Delivery Manager
             url: /nkfsosm_keystone_service_delivery_manager.html
-      - title: Service Operations
-        url: /nkfsosm_service_operations_overview.html
-        entries:
-          - title: Consuming Storage Using the GUI or Keystone APIs
-            url: /nkfsosm_consuming_storage_using_the_gui_or_keystone_apis.html
       - title: Service Management
         url: /nkfsosm_service_management_overview.html
         entries:
