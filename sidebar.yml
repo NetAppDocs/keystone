@@ -34,18 +34,6 @@ entries:
       - title: Site Requirements
         url: /nkfsosm_site_requirements_overview.html
         entries:
-          - title: Space
-            url: /nkfsosm_space.html
-          - title: Racks
-            url: /nkfsosm_racks.html
-          - title: PDUs
-            url: /nkfsosm_pdus.html
-          - title: Power
-            url: /nkfsosm_power.html
-          - title: Cooling
-            url: /nkfsosm_cooling.html
-          - title: Networking
-            url: /nkfsosm_networking.html
           - title: Network Requirements
             url: /nkfsosm_network_requirements.html
           - title: Service Account (Customer-Operated)
