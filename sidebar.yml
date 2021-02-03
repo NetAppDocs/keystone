@@ -22,7 +22,7 @@ entries:
         entries:
           - title: Detailed Roles and Responsibilities in Various Operational Models
             url: /nkfsosm_detailed_roles_and_responsibilities_in_various_operational_models.html
-      - title: Keystone Service Delivery Architecture
+      - title: Flex Subscription infrastructure
         url: /nkfsosm_keystone_service_delivery_architecture_overview.html
         entries:
           - title: NetApp Service Engine

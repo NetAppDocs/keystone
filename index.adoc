@@ -5,21 +5,21 @@ keywords: netapp, keystone, service, offering,
 summary: Welcome to the Keystone documentation portal.
 ---
 
-= Documentation for the NetApp Keystone service offering
+= Documentation for NetApp Keystone Flex Subscription
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives to enable the on-ramp to cloud journey, which includes NetApp Keystone Flex Pay (Flex Pay) and NetApp Keystone Flex Subscription (Flex Subscription) services.
+NetApp Keystone Flex Subscription is a part of the NetApp Keystone service offering. NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives to enable the on-ramp to cloud journey, which includes NetApp Keystone Flex Pay and NetApp Keystone Flex Subscription services.
 
-* *Flex Pay* - Flex Pay is a portfolio of flexible financial alternatives that include traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
-* *Flex Subscription* - Formerly known as On-Premises Cloud Consumption, Flex Subscription is pay-as-you-grow, outcome-based subscription service that brings an on-premises cloud-like experience.
+* *NetApp Keystone Flex Pay* - NetApp Keystone Flex Pay (Flex Pay) is a portfolio of flexible financial alternatives that include traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
+* *NetApp Keystone Flex Subscription* - Formerly known as On-Premises Cloud Consumption, NetApp Keystone Flex Subscription (Flex Subscription) is pay-as-you-grow, outcome-based subscription service that brings an on-premises cloud-like experience.
 
 image:nkfsosm_image1.png[Error: Missing Graphic Image]
 
-== Flex Subscription
+== NetApp Keystone Flex Subscription
 
 Flex Subscription is an outcome-based, on-premises, subscription service model. It enables customers to accelerate time to value by reducing the hurdles related to managing the unpredictable capacity growth and going through the complex procurement cycles. Flex Subscription allows customers to align economics and operations to their business priorities.
 
@@ -36,7 +36,7 @@ NetApp Keystone uses SnapVault technology for backup operations and SnapMirror f
 
 image:nkfsosm_image3.png[Error: Missing Graphic Image]
 
-=== NetApp Keystone Flex Subscription benefits
+=== Benefits of Flex Subscription
 
 Flex Subscription provides the following benefits:
 

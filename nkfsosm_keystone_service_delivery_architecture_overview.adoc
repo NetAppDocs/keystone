@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, delivery, architecture, overview,
 summary: Service delivery architecture overview
 ---
 
-= Overview
+= Flex Subscription infrastructure
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,20 +19,20 @@ summary: Service delivery architecture overview
 //
 
 [.lead]
-This section describes the Flex Subscription infrastructure architecture and management application for the NetApp- and customer-operated environments.
+This section describes the NetApp Keystone Flex Subscription (Flex Subscription) infrastructure architecture and management application for the NetApp and customer-operated environments.
 
-Keystone architecture, design, choice of technology, and products to be used reside solely with NetApp. NetApp reserves the rights to take the following actions:
+Flex Subscription infrastructure architecture, design, choice of technology, and component products reside solely with NetApp. NetApp reserves the rights to take the following actions:
 
 * Select, substitute, or repurpose products.
 * Refresh products with new technology when deemed appropriate.
 * Increase or decrease capacity of the products to meet service requirements.
 * Modify architecture, technology, and/or products to meet service requirements.
 
-The Keystone service delivery model includes multiple components:
+The Flex Subscription infrastructure includes multiple components:
 
-* Service interface with NetApp Service Engine.
-* Keystone API’s for integration.
+* User interface (web portal) of NetApp Service Engine.
+* Keystone APIs for integration.
 * A Keystone service infrastructure. that includes storage controllers
-* Tools to manage and operate the service such as OpsRamp, Active IQ, and AIQ Unified Manager.
+* Tools to manage and operate the service such as OpsRamp, Active IQ, and Active IQ Unified Manager.
 
 image:nkfsosm_image8.png[Error: Missing Graphic Image]

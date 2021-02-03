@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: nkfsosm_performance.html
 keywords: netapp, keystone, performance,
-summary: Keystone performance
+summary: Keystone Flex Subscription performance
 ---
 
 = Performance
@@ -19,9 +19,11 @@ summary: Keystone performance
 //
 
 [.lead]
-NetApp Keystone Flex Subscription offers capacity at predefined performance levels. Each Performance Service Level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
+NetApp Keystone Flex Subscription (Flex Subscription) offers capacity at predefined performance levels.
 
-Each volume within Keystone is associated with a performance service level. All I/O operations and all used storage used on the respective volume are factored into the volume’s I/O density calculation.
+Each Performance Service Level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
+
+Each volume managed by the Flex Subscription services is associated with a performance service level. All I/O operations and all used storage used on the respective volume are factored into the volume’s I/O density calculation.
 
 The below figure defines the performance service levels.
 

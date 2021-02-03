@@ -19,7 +19,7 @@ summary: NetApp service engine
 //
 
 [.lead]
-The NetApp Service Engine web portal provides the means to manage and monitor a NetApp Keystone subscription storage service in a NetApp-, partner-, or customer-operated model. The portal consists of the following features:
+You can use the NetApp Service Engine web portal to manage and monitor a NetApp Keystone Flex Subscription storage service in a NetApp, partner, or customer-operated model. The portal consists of the following features:
 
 * A graphical interface (NetApp Service Engine web interface) that supports monitoring and simple storage provisioning.
 * A set of Keystone REST APIs that allow more advanced setup and storage management actions.
@@ -35,4 +35,4 @@ The NetApp Service Engine portal is a single interface that allows customers to 
 * Manage subscription. Order additional capacity to an existing subscription or a new service through the portal.
 * Submit service requests or support issues and view their status
 
-The complete functionality of NetApp Service Engine is available only in the NetApp-operated model, in a customer- or partner-operated model, the NetApp Service Engine functionalities are limited to reporting and subscription management.
+The complete functionality of NetApp Service Engine is available only in the NetApp-operated model. In a customer or partner-operated model, the NetApp Service Engine functionalities are limited to reporting and subscription management.

@@ -5,7 +5,7 @@ keywords: netapp, keystone, infrastructure,
 summary: Keystone infrastructure
 ---
 
-= NetApp Keystone Infrastructure
+= Flex Subscription Infrastructure
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary: Keystone infrastructure
 //
 
 [.lead]
-This section describes the infrastructure components used in the customer- and NetApp-operated offerings. The components are also classified based on whether they reside in the data versus control plane that serve to segregate user data from command and control data.
+This section describes the infrastructure components used in the customer and NetApp-operated offerings for the NetApp Keystone Flex Subscription (Flex Subscription) services. The components are also classified based on whether they reside in the data versus control plane that serve to segregate user data from command and control data.
 
 |===
 |Component |Plane |Operation Model |Purpose
@@ -27,7 +27,7 @@ This section describes the infrastructure components used in the customer- and N
 |Storage controllers
 |Data
 |Customer and NetApp/partner
-|Provides storage capacity for NetApp Keystone Flex Subscription (Flex Subscription)
+|Provides storage capacity for Flex Subscription service
 NetApp AFF and FAS controllers are used based on capacity and performance service level requirements.
 
 |Cluster switches
