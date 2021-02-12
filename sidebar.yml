@@ -17,12 +17,8 @@ entries:
             url: /nkfsosm_tiering.html
       - title: Keystone Service Delivery Operational Model
         url: /nkfsosm_overview.html
-        entries:
       - title: Flex Subscription infrastructure
         url: /nkfsosm_keystone_service_delivery_architecture_overview.html
-        entries:
-          - title: NetApp Service Engine
-            url: /nkfsosm_netapp_service_engine.html
       - title: Site Requirements
         url: /nkfsosm_site_requirements.html
       - title: Keystone Flex Subscription Operations
