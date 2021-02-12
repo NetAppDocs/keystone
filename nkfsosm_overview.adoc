@@ -28,3 +28,11 @@ NetApp Keystone Flex Subscription offers three operational models:
 The bellow figure summarizes the overall Keystone lifecycle model and categorizes the associated services.
 
 image:nkfsosm_image7.png[Error: Missing Graphic Image]
+
+=== Roles and Responsibilities Summary
+
+The following list summarizes the roles and responsibilities:
+
+* NetApp will deliver, install, configure, and enable the applicable service (including applicable version of NetApp Service Engine at a customer-designated data center or a CoLo. NetApp will be responsible for the uninstallation at the end of the contract term or if the customer chooses to terminate the contract sooner.
+* Interfacing with other IT service providers: NetApp shall provide reasonable cooperation with the customer’s IT service providers or their technical team.
+* Performance of the NetApp-operated services includes, without limitation, NetApp assuming the responsibilities listed in the below table as reasonably applicable to the supported environment.
