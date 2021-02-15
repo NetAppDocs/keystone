@@ -21,15 +21,15 @@ summary: NetApp Keystone Subscription
 [.lead]
 *What is the minimum committed capacity?*
 
-The minimum committed capacity for a NetApp Keystone Subscription is 100 TiB, per site across one or more service tiers.
+The minimum committed capacity for a NetApp Keystone Flex Subscription (Flex Subscription) is 100 TiB, per site across one or more service tiers.
 
-*What does a NetApp Keystone subscription map to?*
+*What does Flex Subscription map to?*
 
-A NetApp Keystone Subscription maps to a single site or a single data center and it can comprise of different performance service levels.
+Flex Subscription maps to a single site or a single data center and it can comprise of different performance service levels.
 
-*How does the customer increase the committed capacity in a subscription?*
+*How can I increase the committed capacity in a subscription?*
 
-Customers can submit a capacity addition request through the NetApp Service Engine management tool or through their NetApp Keystone success manager.
+You can submit a capacity addition request through the NetApp Service Engine management tool or through their NetApp Keystone success manager.
 
 *Does increasing the capacity extend the term?*
 
@@ -39,19 +39,19 @@ All the additions are co-term to the existing term period, except if the request
 
 Yes, new subscriptions can have new terms separate from any existing subscriptions.
 
-*Can a customer mix multiple subscriptions on the same ONTAP cluster?*
+*Can I mix multiple subscriptions on the same ONTAP cluster?*
 
 No, each cluster is assigned to a particular subscription.
 
-*Can the customer reduce the committed capacity?*
+*Can I reduce the committed capacity?*
 
 No. During a term, the committed capacity can only be increased but not decreased.
 
 *What is burst capacity?*
 
-The customer can increase and decrease usage up to 20% above the committed capacity. The burst capacity usage is measured on a daily basis and billed only when used.
+You can increase and decrease usage up to 20% above the committed capacity. The burst capacity usage is measured on a daily basis and billed only when used.
 
-For example, if the committed capacity is 100 TiB, customers can burst up to 120 TiB.
+For example, if the committed capacity is 100 TiB, you can burst up to 120 TiB.
 
 *Is there a premium charge for using burst?*
 
@@ -59,12 +59,12 @@ The burst capacity usage up to 20% of committed capacity is billed at the same r
 
 *What is the benefit of burst capacity?*
 
-Burst capacity gives the customer flexibility to consume storage on demand versus committing for the long term.
+Burst capacity gives you the flexibility to consume storage on demand versus committing for the long term.
 
-*Where can the customer see the committed and burst capacity usage?*
+*Where can I see the committed and burst capacity usage?*
 
 NetApp Service Engine has built-in dashboards to report consumed capacity against committed capacity.
 
-*Will there be any notifications if the customer reaches a certain percentage in committed capacity usage?*
+*Will there be any notifications if I reach a certain percentage in committed capacity usage?*
 
 Yes, the management tools provide notifications on capacity usage through the NetApp Service Engine dashboard.

@@ -21,7 +21,8 @@ summary: Keystone Pricing and Billing
 [.lead]
 *What is the list price for each service level?*
 
-The list price is defined at $/GB/month for each performance level and add-on software. Please work with deal support expert for the rate card and the quotes. Reference the rate card and the pricing calculator in the field portal.
+The list price is defined at $/GB/month for each performance level and add-on software. Contact support for the rate card and the quotes. Reference the rate card and the pricing calculator in the field portal.
+
 
 *Is migration service included?*
 
@@ -40,10 +41,6 @@ The monthly storage costs include:
 *What software licenses and services are not part of the offering and are billed separately?*
 
 No additional software licenses to manage the storage are required. Migration and any API integration with existing business process are billed separately.
-
-*Can the service price be discounted?*
-
-Please work with deal desk for discount rates and quotes.
 
 *What is the unit of billing?*
 
