@@ -5,7 +5,7 @@ keywords: netapp, keystone, subscription, subscriptions,
 summary: NetApp Keystone Subscription
 ---
 
-= NetApp Keystone Subscription
+= NetApp Keystone Flex Subscription
 :hardbreaks:
 :nofooter:
 :icons: font
