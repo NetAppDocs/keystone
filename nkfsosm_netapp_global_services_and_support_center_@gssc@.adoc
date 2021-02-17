@@ -38,7 +38,7 @@ https://www.netapp.com/us/contact-us/support.aspx
 Keystone.services@netapp.com
 Keystone.escalations@netapp.com
 
-* NetApp uses OpsRamp, a cloud-based remote gateway solution to proactively monitor and connect to the Keystone environment for troubleshooting purposes. For information on OpsRamp, see https://www.opsramp.com/#.
+* NetApp uses OpsRamp, a cloud-based remote gateway solution to proactively monitor and connect to the NetApp Keystone environment for troubleshooting purposes. For information on OpsRamp, see https://www.opsramp.com/#.
 
 
 To learn more about the information that is described in this document, review the following documents and/or websites:
