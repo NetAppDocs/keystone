@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: nkfsosm_consuming_storage_using_the_gui_or_keystone_apis.html
 keywords: netapp, keystone, consuming, storage, using, GUI, Keystone, APIs,
-summary: Consuming storage using the GUI or Keystone APIs
+summary: Consuming storage using the GUI or APIs
 ---
 
 = Storage operations through web portal and APIs
@@ -28,7 +28,7 @@ Your Flex Subscription service supports the concepts of regions and zones. A reg
 
 A single NetApp Service Engine instance can support one or more tenants. NetApp Service Engine uses the concepts of tenant and subtenant as hierarchical entities that own or manage the storage service.
 
-A tenant can be a customer, partner, or a billing entity. A tenant holds the subscription (or multiple subscriptions) to the Keystone storage service. A subtenant is an entity wholly within the tenant. It can be used for show back, security separation, and so on.
+A tenant can be a customer, partner, or a billing entity. A tenant holds the subscription (or multiple subscriptions) to the NetApp Keystone storage service. A subtenant is an entity wholly within the tenant. It can be used for show back, security separation, and so on.
 
 Storage items are created per subtenant. Each subtenant can hold multiple storage items of the type and number suitable for that subtenant.
 

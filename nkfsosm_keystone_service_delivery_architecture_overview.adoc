@@ -31,8 +31,8 @@ Flex Subscription infrastructure architecture, design, choice of technology, and
 The Flex Subscription infrastructure includes multiple components:
 
 * User interface (web portal) of NetApp Service Engine.
-* Keystone APIs for integration.
-* A Keystone service infrastructure. that includes storage controllers
+* NetApp Service Engine APIs for integration.
+* The Flex Subscription infrastructure that includes storage controllers
 * Tools to manage and operate the service such as OpsRamp, Active IQ, and Active IQ Unified Manager.
 
 For more information about NetApp Keystone integration with Active IQ, see link:https://docs.netapp.com/us-en/active-iq/[Active IQ Digital Advisor Documentation]
@@ -41,10 +41,10 @@ image:nkfsosm_image8.png[Error: Missing Graphic Image]
 
 == NetApp Service Engine
 
-You can use the NetApp Service Engine web portal to manage and monitor a NetApp Keystone Flex Subscription storage service in a NetApp, partner, or customer-operated model. The portal consists of the following features:
+You can use the NetApp Service Engine web portal to manage and monitor your Flex Subscription service in a NetApp, partner, or customer-operated model. The portal consists of the following features:
 
 * A graphical interface (NetApp Service Engine web interface) that supports monitoring and simple storage provisioning.
-* A set of Keystone REST APIs that allow more advanced setup and storage management actions.
+* A set of NetApp Service Engine REST APIs that allow more advanced setup and storage management actions.
 
 image:nkfsosm_image9.png[Error: Missing Graphic Image]
 
