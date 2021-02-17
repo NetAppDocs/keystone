@@ -43,9 +43,8 @@ entries:
       - title: NetApp Service Engine/Self-Service Access Portal
         url: /nkfsfaq_netapp_service_engine_self-service_access_portal.html
   - title: NetApp Service Engine Web Interface
+    url: /sewebiug_overview.html
     entries:
-      - title: Overview
-        url: /sewebiug_overview.html
       - title: Billing accounts, subscriptions, services, and performance
         url: /sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html
       - title: Get started
@@ -187,9 +186,8 @@ entries:
           - title: Managing Cloud Volumes Service for Google Cloud Platform
             url: /sewebiug_managing_gcp_cvs.html
   - title: NetApp Service Engine API Reference
+    url: /seapiref_overview_of_netapp_service_engine_apis.html
     entries:
-      - title: Overview of NetApp Service Engine APIs
-        url: /seapiref_overview_of_netapp_service_engine_apis.html
       - title: Authorization and authentication
         url: /seapiref_authorization_and_authentication.html
       - title: NetApp Service Engine REST APIs

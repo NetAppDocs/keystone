@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, capacity, definitions,
 summary: Keystone service capacity definitions
 ---
 
-= Flex Subscription Service Capacity Definitions
+= Flex Subscription service capacity definitions
 :hardbreaks:
 :nofooter:
 :icons: font

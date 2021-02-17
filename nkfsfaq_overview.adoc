@@ -23,8 +23,8 @@ summary: NetApp Keystone Overview
 
 NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives, consisting of NetApp Keystone Flex Pay (Flex Pay), and NetApp Keystone Flex Subscription (Flex Subscription).
 
-* *Flex Pay.* A portfolio of payment solutions including traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
-* *Flex Subscription (formerly On-Premises Cloud Consumption (OPCC)).* Pay-as-you-grow subscription-based service that brings a cloud-like experience on premises, with an outcome-based service option (NetApp-operated).
+* *Flex Pay:* A portfolio of payment solutions including traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
+* *Flex Subscription (formerly On-Premises Cloud Consumption (OPCC)):* Pay-as-you-grow subscription-based service that brings a cloud-like experience on premises, with an outcome-based service option (NetApp-operated).
 For more information, see link:https://docs.netapp.com/us-en/keystone/index.html[here]
 
 *How does NetApp Keystone benefit my customers?*

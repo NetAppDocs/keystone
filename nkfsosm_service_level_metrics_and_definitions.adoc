@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, level, metrics, definitions,
 summary: Keystone service level metrics and definitions
 ---
 
-= Service Level Metrics and Definitions
+= Service Level metrics and definitions
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary: Keystone service level metrics and definitions
 //
 
 [.lead]
-The following terms and definitions are used within the NetApp Keystone Flex Subscription service:
+The following terms and definitions are used within the NetApp Keystone Flex Subscription (Flex subscription) service:
 
 * *GiB, TiB, and PiB.* Measurements of data storage capacity using base of 1024 (1 GiB = 1024^3^ bytes, 1 TiB = 1024^4^ bytes, and 1PiB = 1024^5^ bytes).
 * *IOPS/TiB.* The protocol operations per second requested by the application divided by the allocated logical size of the volume.

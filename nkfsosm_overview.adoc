@@ -5,7 +5,7 @@ keywords: netapp, keystone, kfs, overview,
 summary: NetApp Flex Subscription overview
 ---
 
-= Overview
+= Flex Subscription operation model
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary: NetApp Flex Subscription overview
 //
 
 [.lead]
-NetApp Keystone Flex Subscription offers three operational models:
+NetApp Keystone Flex Subscription (Flex Subscription) offers three operational models:
 
 * *NetApp-operated model* allows the customer to subscribe to the offered services (according to the selected performance tiers and storage service types) and selects the NetApp-operated option at an extra cost. NetApp defines the architecture and products, installs at the customer premises, and manages the day-to-day infrastructure management operations by using NetApp storage and IT resources. Available storage service types are file, block, and object.
 * *Partner-operated* *model* is similar to the NetApp-operated model, but with the partner operating the service for their end customer. In this model, the partner is the referenced contracted party.
@@ -29,10 +29,10 @@ The bellow figure summarizes the overall Keystone lifecycle model and categorize
 
 image:nkfsosm_image7.png[Error: Missing Graphic Image]
 
-=== Roles and Responsibilities Summary
+=== Roles and responsibilities summary
 
-The following list summarizes the roles and responsibilities:
+The following list summarizes NetApp's roles and responsibilities:
 
-* NetApp will deliver, install, configure, and enable the applicable service (including applicable version of NetApp Service Engine at a customer-designated data center or a CoLo. NetApp will be responsible for the uninstallation at the end of the contract term or if the customer chooses to terminate the contract sooner.
-* Interfacing with other IT service providers: NetApp shall provide reasonable cooperation with the customer’s IT service providers or their technical team.
-* Performance of the NetApp-operated services includes, without limitation, NetApp assuming the responsibilities listed in the below table as reasonably applicable to the supported environment.
+* NetApp delivers, installs, configures, and enables the applicable service (including applicable version of NetApp Service Engine at a customer-designated data center or a CoLo. NetApp is responsible for the uninstallation at the end of the contract term or if the customer chooses to terminate the contract sooner.
+* While interfacing with other IT service providers, NetApp cooperates with the customer’s IT service providers or their technical team.
+* Performance of the NetApp-operated services are included, with the assumption that shared responsibilities are applicable to the supported environment.

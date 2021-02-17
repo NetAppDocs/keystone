@@ -19,7 +19,7 @@ NetApp Keystone Flex Subscription is a part of the NetApp Keystone service offer
 
 image:nkfsosm_image1.png[Error: Missing Graphic Image]
 
-== NetApp Keystone Flex Subscription
+== Flex Subscription
 
 Flex Subscription is an outcome-based, on-premises, subscription service model. It enables customers to accelerate time to value by reducing the hurdles related to managing the unpredictable capacity growth and going through the complex procurement cycles. Flex Subscription allows customers to align economics and operations to their business priorities.
 
@@ -32,7 +32,7 @@ Flex Subscription is a subscription-based service offering that provides storage
 * *Data Protection Advanced* provides a service with SLAs of RPO=0 by leveraging the NetApp MetroCluster capabilities.
 
 [NOTE]
-NetApp Keystone uses SnapVault technology for backup operations and SnapMirror for disaster recovery to replicate the data remotely; it does not automatically fail over and restore applications.
+Flex Subscription uses SnapVault technology for backup operations and SnapMirror for disaster recovery to replicate the data remotely; it does not automatically fail over and restore applications.
 
 image:nkfsosm_image3.png[Error: Missing Graphic Image]
 

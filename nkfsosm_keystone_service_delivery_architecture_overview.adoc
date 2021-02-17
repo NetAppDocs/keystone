@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, delivery, architecture, overview,
 summary: Service delivery architecture overview
 ---
 
-= Flex Subscription Infrastructure
+= Flex Subscription infrastructure
 :hardbreaks:
 :nofooter:
 :icons: font
