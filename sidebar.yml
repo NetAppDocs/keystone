@@ -2,24 +2,24 @@ entries:
   - title: NetApp Keystone Flex Subscription
     url: /index.html
     entries:
-      - title: Service Terms and Description
+      - title: Service terms and description
         url: /nkfsosm_service_terms_and_description_overview.html
         entries:
-          - title: Service Capacity Definitions
+          - title: Service capacity definitions
             url: /nkfsosm_keystone_service_capacity_definitions.html
           - title: Performance Service Level
             url: /nkfsosm_performance.html
-          - title: Service Level Metrics and Definitions
+          - title: Service Level metrics and definitions
             url: /nkfsosm_service_level_metrics_and_definitions.html
-          - title: Data Protection
+          - title: Data protection
             url: /nkfsosm_data_protection.html
           - title: Tiering
             url: /nkfsosm_tiering.html
-      - title: Service Delivery Operational Model
+      - title: Operational model and responsibilities
         url: /nkfsosm_overview.html
       - title: Flex Subscription infrastructure
         url: /nkfsosm_keystone_service_delivery_architecture_overview.html
-      - title: Site Requirements
+      - title: Site requirements
         url: /nkfsosm_site_requirements.html
       - title: Operations
         url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
@@ -32,15 +32,15 @@ entries:
   - title: Flex Subscription FAQ
     url: /nkfsfaq_overview.html
     entries:
-      - title: Service Offer Details
+      - title: Service offer details
         url: /nkfsfaq_service_offer_details.html
       - title: Flex Subscription
         url: /nkfsfaq_keystone_subscription.html
-      - title: Operating Models
+      - title: Operating model
         url: /nkfsfaq_operating_models.html
-      - title: Operations and Support
+      - title: Operations and support
         url: /nkfsfaq_operations_and_support.html
-      - title: NetApp Service Engine/Self-Service Access Portal
+      - title: NetApp Service Engine/Self-Service access portal
         url: /nkfsfaq_netapp_service_engine_self-service_access_portal.html
   - title: NetApp Service Engine Web Interface
     url: /sewebiug_overview.html
@@ -196,7 +196,7 @@ entries:
         entries:
           - title: Overview
             url: /seapiref_consumer_apis_overview.html
-          - title: Cloud Orchestration APIs
+          - title: Cloud orchestration APIs
             url: /seapiref_cloud_orchestration_apis.html
           - title: Block storage APIs
             url: /seapiref_block_storage_apis.html
