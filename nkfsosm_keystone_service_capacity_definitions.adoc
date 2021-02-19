@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, capacity, definitions,
 summary: Keystone service capacity definitions
 ---
 
-= Keystone Service Capacity Definitions
+= Flex Subscription service capacity definitions
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,23 +19,22 @@ summary: Keystone service capacity definitions
 //
 
 [.lead]
-The Keystone service capacities include:
+The NetApp Keystone Flex Subscription (Flex Subscription) service capacities include:
 
-* *Logical capacity.* Data placed into the NetApp Keystone system by a customer:
-** All NetApp KFS capacities refer to a logical capacity.
+* *Logical capacity.* Data placed into the Flex Subscription infrastructure by a customer:
+** All Flex Subscription capacities refer to a logical capacity.
 +
-For example, if a 1 TiB file is stored on NetApp Keystone, then at least 1 TiB of capacity must be purchased.
+For example, if a 1 TiB file is stored on the Flex Subscription infrastructure, then at least 1 TiB of capacity must be purchased.
 
 * *Committed capacity.* Minimum logical capacity billed each month for the duration of the term:
 ** Capacity is committed to each performance level.
 ** Committed capacity cannot be decreased during the term.
 ** Committed capacity and additional performance levels can be added during the term.
 * *Burst capacity.* Logical capacity, in excess of committed capacity:
-** NetApp Keystone provides 20% capacity in excess of the committed capacity.
+** Flex Subscription services provides 20% capacity in excess of the committed capacity.
 ** Burst capacity can be consumed on an elastic basis and is charged on a daily, average-consumed basis.
 ** Burst capacity up to 20% is charged at a same rate as the committed capacity.
-** Contact KSM for any additional burst requirements greater than 20%.
-** Burst capacity greater than 20% of committed is charged at a premium rate.
+** Burst capacity greater than 20% of committed is charged at a premium rate. Contact support for any additional burst requirements greater than 20%.
 * *Consumed/provisioned capacity.* Sum of all configured volume sizes:
 ** Capacity is provisioned through the creation, modification, deletion, or potential auto-growth of volumes.
 ** Includes snapshots and clones.

@@ -5,7 +5,7 @@ keywords: netapp, keystone, flex, subscription,
 summary: Keystone flex subscription
 ---
 
-= Keystone Flex Subscription
+= NetApp Keystone Flex Subscription
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,23 +19,23 @@ summary: Keystone flex subscription
 //
 
 [.lead]
-KFS is an outcome-based, on-premises, subscription service model. It enables customers to accelerate time to value by reducing the hurdles related to managing the unpredictable capacity growth and going through the complex procurement cycles. KFS allows customers to align economics and operations to their business priorities.
+NetApp Keystone Flex Subscription (Flex Subscription) is an outcome-based, on-premises, subscription service model. It enables customers to accelerate time to value by reducing the hurdles related to managing the unpredictable capacity growth and going through the complex procurement cycles. Flex Subscription allows customers to align economics and operations to their business priorities.
 
 image:nkfsosm_image2.png[Error: Missing Graphic Image]
 
-KFS is a subscription-based service offering that provides storage capacity, at predefined performance service levels, for block, file, and object data types that can be deployed on-premises and can be operated by NetApp, a partner, or the customer. In addition to the base service that KFS provides, add-on services can be chosen at an additional cost. These services are described in the below figure.
+Flex Subscription is a subscription-based service offering that provides storage capacity, at predefined performance service levels, for block, file, and object data types that can be deployed on-premises and can be operated by NetApp, a partner, or the customer. In addition to the base service that Flex Subscription provides, add-on services can be chosen at an additional cost. These services are described in the below figure.
 
 * *Data Protection Basic* service provides NetApp SnapMirror and NetApp SnapVault capabilities with default settings.
 * *Data Protection Advanced* provides a service with SLAs of RPO=0 by leveraging the NetApp MetroCluster capabilities.
 
 [NOTE]
-Keystone uses SnapVault technology for backup operations and SnapMirror for disaster recovery to replicate the data remotely; it does not automatically fail over and restore applications.
+NetApp Keystone uses SnapVault technology for backup operations and SnapMirror for disaster recovery to replicate the data remotely; it does not automatically fail over and restore applications.
 
 image:nkfsosm_image3.png[Error: Missing Graphic Image]
 
-== Keystone Flex Subscription Benefits
+== NetApp Keystone Flex Subscription Benefits
 
-KFS provides the following benefits:
+Flex Subscription provides the following benefits:
 
 * Frees up IT staff from complicated storage-related tasks and allows them to focus on application management
 * Reduces upfront capital investment

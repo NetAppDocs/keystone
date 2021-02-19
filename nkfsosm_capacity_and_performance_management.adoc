@@ -22,7 +22,7 @@ summary: Capacity and performance management
 On a daily basis, NetApp GSSC monitors the following events:
 
 [NOTE]
-The customer is not informed or impacted by these activities, which illustrates how NetApp is ensuring the Keystone service doesn’t cause any disruption to the customer.
+The customer is not informed or impacted by these activities, which illustrates how NetApp is ensuring the NetApp Keystone service doesn’t cause any disruption to the customer.
 
 * Monitor total capacity used and what is available
 * Monitor metrics to ensure SLAs can be met
@@ -42,7 +42,7 @@ Capacity and performance management follows standard ITIL processes, which ensur
 * Acted upon
 * Reported on
 
-The Keystone team proactively monitors and manages the capacity usage and performance. This process ensures capacity requirements are met in terms of usable space and performance, while providing a view of future usage based on trending characteristics. In addition to monitoring capacity, the KSM holds capacity planning meetings with the customer and receives forecast information for proactive planning and deployment of additional capacity as required.
+The NetApp Keystone team proactively monitors and manages the capacity usage and performance. This process ensures capacity requirements are met in terms of usable space and performance, while providing a view of future usage based on trending characteristics. In addition to monitoring capacity, the KSM holds capacity planning meetings with the customer and receives forecast information for proactive planning and deployment of additional capacity as required.
 
 Capacity forecasting is based on the jointly-agreed projected capacity forecast plan. The plan and timetable for deployments are necessary in order to determine the delivery schedule for NetApp to deploy hardware into the customer’s data centers. Any changes or unforeseen adjustments to the capacity plan might result in a change to the expected hardware deployment configurations and deployment timeframe.
 
@@ -52,7 +52,7 @@ It is important to establish robust processes internally to communicate the foll
 * *New growth.* Based on projects, new requirements from the internal lines of business.
 * *Customer growth.* Growth projections from sales for new customers or anticipated growth of existing customers with short and medium to long-term requirements.
 
-NetApp will continually monitor the capacity being used in the environment at a given time. Should the actual capacity written to the KFS environment exceed the forecasted capacity, NetApp will provide advance notice detailing the remaining capacity available for the given hardware deployment period.
+NetApp continually monitors the capacity being used in the environment at a given time. Should the actual capacity written to the NetApp Keystone Flex Subscription environment exceed the forecasted capacity, NetApp will provide advance notice detailing the remaining capacity available for the given hardware deployment period.
 
 During the proactive analysis, if capacity and performance issues are identified, and if it is determined that SLAs are unable to be met, additional capacity or controllers will be deployed by NetApp at no additional cost to the customer. The NetApp installation team will coordinate with the customer for data center access to perform the necessary changes.
 

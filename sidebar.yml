@@ -2,125 +2,60 @@ entries:
   - title: NetApp Keystone Flex Subscription
     url: /index.html
     entries:
-      - title: Service Terms and Description
+      - title: Service terms and description
         url: /nkfsosm_service_terms_and_description_overview.html
         entries:
-          - title: Keystone Service Capacity Definitions
+          - title: Service capacity definitions
             url: /nkfsosm_keystone_service_capacity_definitions.html
-          - title: Performance
+          - title: Performance Service Level
             url: /nkfsosm_performance.html
-          - title: Terms and Conditions for the Service Tiers
-            url: /nkfsosm_terms_and_conditions_for_the_service_tiers.html
-          - title: Service Level Metrics and Definitions
+          - title: Service Level metrics and definitions
             url: /nkfsosm_service_level_metrics_and_definitions.html
-          - title: Data Protection
+          - title: Data protection
             url: /nkfsosm_data_protection.html
           - title: Tiering
             url: /nkfsosm_tiering.html
-      - title: Keystone Service Delivery Operational Model
+      - title: Operational model and responsibilities
         url: /nkfsosm_overview.html
-        entries:
-          - title: Detailed Roles and Responsibilities in Various Operational Models
-            url: /nkfsosm_detailed_roles_and_responsibilities_in_various_operational_models.html
-      - title: Keystone Service Delivery Architecture
+      - title: Flex Subscription infrastructure
         url: /nkfsosm_keystone_service_delivery_architecture_overview.html
-        entries:
-          - title: NetApp Service Engine
-            url: /nkfsosm_netapp_service_engine.html
-          - title: Software for Keystone Flex Subscription Service
-            url: /nkfsosm_software_for_keystone_flex_subscription_service.html
-          - title: Keystone Infrastructure
-            url: /nkfsosm_keystone_infrastructure.html
-      - title: Site Requirements
-        url: /nkfsosm_site_requirements_overview.html
-        entries:
-          - title: Space
-            url: /nkfsosm_space.html
-          - title: Racks
-            url: /nkfsosm_racks.html
-          - title: PDUs
-            url: /nkfsosm_pdus.html
-          - title: Power
-            url: /nkfsosm_power.html
-          - title: Cooling
-            url: /nkfsosm_cooling.html
-          - title: Networking
-            url: /nkfsosm_networking.html
-          - title: Network Requirements
-            url: /nkfsosm_network_requirements.html
-          - title: Service Account (Customer-Operated)
-            url: /nkfsosm_service_account_@customer-operated@.html
-          - title: VMs (Customer-Operated)
-            url: /nkfsosm_vms_@customer-operated@.html
-          - title: Remote Access
-            url: /nkfsosm_remote_access.html
-          - title: Security
-            url: /nkfsosm_security.html
-          - title: Security Requirements
-            url: /nkfsosm_security_requirements.html
-      - title: Keystone Flex Subscription Operations
-        url: /nkfsosm_overview_01.html
-        entries:
-          - title: NetApp Global Services and Support Center (GSSC)
-            url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
-          - title: Keystone Service Delivery Manager
-            url: /nkfsosm_keystone_service_delivery_manager.html
-      - title: Service Operations
-        url: /nkfsosm_service_operations_overview.html
-        entries:
-          - title: Consuming Storage Using the GUI or Keystone APIs
-            url: /nkfsosm_consuming_storage_using_the_gui_or_keystone_apis.html
-      - title: Service Management
-        url: /nkfsosm_service_management_overview.html
-        entries:
-          - title: Health Monitoring and Alerting
-            url: /nkfsosm_health_monitoring_and_alerting.html
-          - title: Capacity and Performance Management
-            url: /nkfsosm_capacity_and_performance_management.html
-          - title: Maintenance
-            url: /nkfsosm_maintenance.html
-          - title: System Expansion
-            url: /nkfsosm_system_expansion.html
-          - title: Reporting
-            url: /nkfsosm_reporting.html
-          - title: Additional Information and Support Contact
-            url: /nkfsosm_where_to_find_additional_information.html
+      - title: Site requirements
+        url: /nkfsosm_site_requirements.html
+      - title: Operations
+        url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
   - title: Release Notes
     entries:
       - title: What's new
         url: /rn_whats_new.html
       - title: Known issues
         url: /rn_known_issues.html
-  - title: Keystone Flex Subscription FAQ
+  - title: Flex Subscription FAQ
     url: /nkfsfaq_overview.html
     entries:
-      - title: Service Offer Details
+      - title: Service offer details
         url: /nkfsfaq_service_offer_details.html
-      - title: Keystone Subscription
+      - title: Flex Subscription
         url: /nkfsfaq_keystone_subscription.html
-      - title: Keystone Pricing and Billing
-        url: /nkfsfaq_keystone_pricing_and_billing.html
-      - title: Operating Models
+      - title: Operating model
         url: /nkfsfaq_operating_models.html
-      - title: Operations and Support
+      - title: Operations and support
         url: /nkfsfaq_operations_and_support.html
-      - title: NetApp Service Engine/Self-Service Access Portal
+      - title: NetApp Service Engine/Self-Service access portal
         url: /nkfsfaq_netapp_service_engine_self-service_access_portal.html
-  - title: Keystone Web Interface
+  - title: NetApp Service Engine Web Interface
+    url: /sewebiug_overview.html
     entries:
-      - title: Overview
-        url: /sewebiug_overview.html
       - title: Billing accounts, subscriptions, services, and performance
         url: /sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html
       - title: Get started
         entries:
           - title: Overview
             url: /sewebiug_getting_started_overview.html
-          - title: Log in to the NetApp Service Engine web interface
+          - title: Log in
             url: /sewebiug_log_in_to_the_netapp_service_engine_web_interface.html
           - title: Select tenant
             url: /sewebiug_select_tenant.html
-          - title: NetApp Service Engine web interface overview
+          - title: View NetApp Service Engine Web Interface
             url: /sewebiug_netapp_service_engine_web_interface_overview.html
       - title: View subscribed services capacity
         url: /sewebiug_view_subscribed_services_capacity.html
@@ -250,10 +185,9 @@ entries:
                 url: /sewebiug_managing_azure_volumes.html
           - title: Managing Cloud Volumes Service for Google Cloud Platform
             url: /sewebiug_managing_gcp_cvs.html
-  - title: Keystone API Reference
+  - title: NetApp Service Engine API Reference
+    url: /seapiref_overview_of_netapp_service_engine_apis.html
     entries:
-      - title: Overview of NetApp Service Engine APIs
-        url: /seapiref_overview_of_netapp_service_engine_apis.html
       - title: Authorization and authentication
         url: /seapiref_authorization_and_authentication.html
       - title: NetApp Service Engine REST APIs
@@ -262,7 +196,7 @@ entries:
         entries:
           - title: Overview
             url: /seapiref_consumer_apis_overview.html
-          - title: Cloud Orchestration APIs
+          - title: Cloud orchestration APIs
             url: /seapiref_cloud_orchestration_apis.html
           - title: Block storage APIs
             url: /seapiref_block_storage_apis.html

@@ -82,7 +82,7 @@ NOTE: NetApp Service Engine displays a warning and the capacity bar changes colo
 .. Specify when to create the Snapshots:
 
 ** *Hourly.* Specify which minute (of the hour) to take snapshot and the number of hourly snapshots to retain.
-** *Daily.* Specify when (hour and minute) to take the snapshot the number of hourly snapshots to retain.
+** *Daily.* Specify when (hour and minute) to take the snapshot the number of daily snapshots to retain.
 ** *Weekly.* Specify when (day of the week, hour, and minute) to take snapshot and the number of weekly snapshots to retain.
 ** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
 . To enable backups for this file share:

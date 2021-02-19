@@ -19,7 +19,7 @@ summary: Keystone create file share from snapshot
 //
 
 [.lead]
-This section describes how to create a new share from a snapshot of an existing share. The process can use an existing snapshot or can create an immediate adhoc snapshot that will be used for the cloning operation. For information on:
+You can create a new share from a snapshot of an existing share. The process can use an existing snapshot or can create a snapshot immediately that is used for the cloning operation. For information on:
 
 * How to create a new share directly (see link:sewebiug_create_a_new_file_share.html#create-a-new-file-share[Create a new file share])
 * Snapshots (see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots])
