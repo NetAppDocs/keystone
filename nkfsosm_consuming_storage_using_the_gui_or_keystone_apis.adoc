@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: nkfsosm_consuming_storage_using_the_gui_or_keystone_apis.html
 keywords: netapp, keystone, consuming, storage, using, GUI, Keystone, APIs,
-summary: Consuming storage using the GUI or Keystone APIs
+summary: Consuming storage using the GUI or APIs
 ---
 
-= Consuming Storage Using the GUI or Keystone APIs
+= Storage operations through web portal and APIs
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,16 +17,18 @@ summary: Consuming storage using the GUI or Keystone APIs
 //
 // 2020-10-08 17:14:48.700600
 //
+[.lead]
+For provisioning and managing the storage objects under your NetApp Keystone Flex Subscription (Flex Subscription) service, NetApp provides you with the NetApp Service Engine web portal and NetApp Service Engine APIs. Using these, you can operate, optimize, and provision storage, add additional capacity, and monitor health, and receive alerts. In addition to generic Flex Subscription service operations, you can also monitor consumption and billing.
 
-=== Keystone GUI
+== NetApp Service Engine web portal
 
-The NetApp Service Engine web portal provides the means to manage and monitor a Keystone subscription storage service and supports monitoring and storage provisioning workflows.
+The NetApp Service Engine web portal is the primary web interface available to you to manage and monitor a Flex Subscription storage service that you have subscribed to. You can also monitor and provision storage by using this web UI.
 
-NetApp Service Engine supports the concepts of regions and zones. A region represents a data center or site, while a zone represents a storage subunit within the Region (technically a cluster within a data center/site). Multiple zones support data availability and data protection features.
+Your Flex Subscription service supports the concepts of regions and zones. A region represents a data center or site, while a zone represents a storage subunit within the Region (technically a cluster within a data center/site). Multiple zones support data availability and data protection features.
 
 A single NetApp Service Engine instance can support one or more tenants. NetApp Service Engine uses the concepts of tenant and subtenant as hierarchical entities that own or manage the storage service.
 
-A tenant can be a customer, partner, or a billing entity. A tenant holds the subscription (or multiple subscriptions) to the Keystone storage service. A subtenant is an entity wholly within the tenant. It can be used for show back, security separation, and so on.
+A tenant can be a customer, partner, or a billing entity. A tenant holds the subscription (or multiple subscriptions) to the NetApp Keystone storage service. A subtenant is an entity wholly within the tenant. It can be used for show back, security separation, and so on.
 
 Storage items are created per subtenant. Each subtenant can hold multiple storage items of the type and number suitable for that subtenant.
 
@@ -37,12 +39,13 @@ NetApp Service Engine supports the following types of storage:
 * Block storage in block stores and disks
 * File storage in file servers and file shares
 * Object storage in buckets
+* Cloud Volumes Services for Google Cloud Platform (GCP) and Azure NetApp Files
 
 |===
 |Role |Access
 
 |Customer admin
-|The first customer admin user is created by Keystone team:
+|The first customer admin user is created by the support team:
 * Full access to provision and manages storage through NetApp Service Engine (including file servers and block stores)
 * Can raise service requests and incidents
 * Can assign roles to other users of NetApp Service Engine
@@ -52,7 +55,7 @@ NetApp Service Engine supports the following types of storage:
 |Create and manage storage components consumed by end users – disks, shares, and buckets
 |===
 
-=== Keystone APIs
+=== NetApp Service Engine APIs
 
 NetApp Service Engine provides a set of APIs to manage storage resources through a RESTful web service interface for any third-party integration. The APIs cover all the functionalities that are supported through the GUI. NetApp provides the API documentation, but it is the customer’s responsibility to integrate into their applications.
 

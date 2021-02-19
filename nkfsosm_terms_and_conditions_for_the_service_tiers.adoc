@@ -5,7 +5,7 @@ keywords: netapp, keystone, terms, conditions, service, tiers,
 summary: Keystone terms and conditions for the service tiers
 ---
 
-= Terms and Conditions for the Service Tiers
+= Terms and conditions for Service Tiers
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -24,7 +24,7 @@ The service tiers terms and condition include:
 * No customer infrastructure upon which this service relies has an availability or performance incident, including the customer’s network connection to the NetApp service infrastructure, data center power and cooling, the customers DNS, Active Directory service, and Network Time Protocol (NTP).
 * The latency SLA applies to a volume only if the average IOPS per volume in an hour is greater than or equal to 100, which is required for the math calculation of IOPS divided by time to derive a number of 2 ms or lower. Any hourly sample lower than 100 IOPS cannot be considered in a group of 100 samples.
 * The Latency SLA applies to a volume only if the percentage of random read is greater than or equal to 30%; more than 70% write may have higher latency.
-* Latency SLA applies to a volume only if the average IO block size is less than or equal to 32 k; A volume with an average IO block size greater than 32 k IO block size may have higher latency.
+* Latency SLA applies to a volume only if the average IO block size is less than or equal to 32 KB. A volume with an average IO block size greater than 32 KB may have higher latency.
 * The latency SLA applies only if IOPS/GB delivered is equal to or less than the greater of the SLA IOPS/GB allocated or the service-level objective (SLO) IOPS/GB stored; the average latency might be higher for I/O consistently above the SLO.
 * Minimum volume sizes. The below table provides the minimum and maximum volume sizes available per service level.
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_maintenance.html
-keywords: netapp, keystone, maintenance,
-summary: Keystone maintenance
+keywords: netapp, NetApp Keystone, maintenance,
+summary: NetApp Keystone maintenance
 ---
 
 = Maintenance
@@ -19,7 +19,7 @@ summary: Keystone maintenance
 //
 
 [.lead]
-This section details the proactive or critical maintenance activities and scheduling to ensure reliable delivery of the Keystone service.
+This section details the proactive or critical maintenance activities and scheduling to ensure reliable delivery of the NetApp Keystone Flex Subscription service.
 
 === Coverage
 
@@ -34,9 +34,8 @@ NetApp will perform update and maintenance activities for all NetApp provided eq
 
 === Severity Level
 
-The Keystone service security levels include:
-
-* *Standard.* Maintenance activity not affecting availability or performance (most).
+The NetApp Keystone Flex Subscription service security levels include:
+Flex Subscription servicendard.* Maintenance activity not affecting availability or performance (most).
 * *Disruptive*. Maintenance activity that might affect availability or performance (very few).
 * *Critical.* Maintenance activity that might or might not affect availability or performance but required to be performed at earliest opportunity (rare; for example, related to data corruption).
 

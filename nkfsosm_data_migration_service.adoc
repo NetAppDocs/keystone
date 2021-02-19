@@ -19,7 +19,7 @@ summary: Data migration service
 //
 
 [.lead]
-Data migration is not part of Keystone service. A customer can avail NetApp PS, partner services or do it on their own. This applies whether the data source is a NetApp system or non-NetApp system. NetApp supports providing customer with all requisite assistance and information to perform the migration.
+Data migration is not part of NetApp Keystone service. A customer can avail NetApp PS, partner services or do it on their own. This applies whether the data source is a NetApp system or non-NetApp system. NetApp supports providing customer with all requisite assistance and information to perform the migration.
 
 [NOTE]
 To evaluate options on migration services, work with the KSM.

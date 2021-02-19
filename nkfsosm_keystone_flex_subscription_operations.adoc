@@ -5,7 +5,7 @@ keywords: netapp, keystone, flex, subscription, operations,
 summary: Keystone flex subscription operations
 ---
 
-= Keystone Flex Subscription Operations
+= NetApp Keystone Flex Subscription Operations
 :hardbreaks:
 :nofooter:
 :icons: font

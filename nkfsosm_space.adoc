@@ -19,4 +19,4 @@ summary: Keystone space
 //
 
 [.lead]
-The customer is responsible for providing the floor space to host KFS equipment. NetApp will provide the weight specifications based on final configuration.
+The customer is responsible for providing the floor space to host NetApp Keystone Flex Subscription equipment. NetApp will provide the weight specifications based on final configuration.

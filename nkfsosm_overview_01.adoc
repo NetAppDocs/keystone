@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: nkfsosm_overview_01.html
 keywords: netapp, keystone, kfs,
-summary: KFS overview
+summary: NetApp Keystone overview
 ---
 
 = Overview
@@ -19,4 +19,4 @@ summary: KFS overview
 //
 
 [.lead]
-KFS Services will be operationalized leveraging the NetApp Global Services and Support Center (GSSC), Keystone Success Manager (KSM), and Keystone Service Delivery Manager (KSDM).
+NetApp Keystone Flex Subscription Services will be operationalized leveraging the NetApp Global Services and Support Center (GSSC), Keystone Success Manager (KSM), and Keystone Service Delivery Manager (KSDM).

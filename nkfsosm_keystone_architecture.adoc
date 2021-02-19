@@ -29,6 +29,6 @@ image:nkfsosm_image10.png[Error: Missing Graphic Image]
 The below figure depicts the high-level Keystone customer-operated architecture.
 
 [NOTE]
-In this offering, the customer provides VMs to host the NetApp Service Engine components and the customer’s management network is used to provide connectivity to the KFS device’s management ports.
+In this offering, the customer provides VMs to host the NetApp Service Engine components and the customer’s management network is used to provide connectivity to the Flex Subscription device’s management ports.
 
 image:nkfsosm_image11.png[Error: Missing Graphic Image]
