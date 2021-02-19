@@ -20,7 +20,7 @@ summary: Operations and Support
 
 [.lead]
 *How do I view the Flex Subscription usage?*
-NetApp Service Engine provides a dashboard view, with information on all the services that are subscribed to and how much is consumed. For details about NetApp Service Engine, see link:https://sewebiug_overview.html[here].
+NetApp Service Engine provides a dashboard view, with information on all the services that are subscribed to and how much is consumed. For details about NetApp Service Engine, see link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html[here].
 
 *How do I report any issues with the service?*
 NetApp Keystone support can be reached through these various channels:
