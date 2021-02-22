@@ -1,0 +1,78 @@
+---
+sidebar: sidebar
+permalink: sewebiug_back_up_file_shares_and_disks.html
+keywords: netapp, keystone, backup, create, modify, delete, restore
+summary: Create, modify, and delete backups or restore from backups
+---
+
+= Back up file shares and disks
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can view and manage the Snapshot backups of the file shares and disks created in your environment to maintain multiple offsite copies of primary file shares and disks.
+
+The replicated file shares and disks from other zones are stored on a dedicated backup storage VM (storage virtual machine, also known as SVM) on each cluster.
+
+Backups can be performed between two separate ONTAP clusters in different zones. The standard backup policies supported by NetApp Service Engine are:
+
+* Adhoc
+* Daily
+* Weekly
+* Monthly
+
+If your volume does not follow the standard backup policies supported by NetApp Service Engine, you can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] of the *Non Standard Volume* category to fix the issue.
+
+NOTE: An adhoc (non-scheduled) backup can be performed at any time, manually through the GUI or by using APIs.
+
+You can view the list of Snapshots created for your volumes (file shares and disks) on the *Backups* page. Backups are displayed based on the selected tenant.
+
+== Create a backup object
+
+You can create Snapshots (backups or recovery-points) for your volumes by defining the backup policy when you link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html[create a file share] or link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_disk.html[create a disk].
+
+.Steps
+. Enable *Backup Policy*.
+. Specify the backup zone and the number of backups to be taken on an adhoc, daily, weekly, and/or monthly basis.
+.	Click *Create*.
+
+NOTE: You can also create or schedule backups by editing the backup policy for an existing file share or disk.
+
+== Modify a backup object
+
+For a selected backup object of a file share or disk, you can disable backup or detach the backup object from its source and make it an orphan backup. This operation will break the SnapMirror relationship with the source.
+
+You can also modify the number of backups to be taken on an adhoc, daily, weekly, and/or monthly basis.
+
+.Steps
+. Locate the backup in the list and click the edit icon for that object.
+. Make changes to the backup source and the number of each type of backup as required.
+You can break the SnapMirror relationship with the source volume by changing the backup source to *None (orphaned)*. The backups are retained as orphan backups for restoration even when the source volumes are deleted.
+. Click *Done*.
+The Snapshot is modified. If you have broken the SnapMirror relationship with the source, that is, orphaned the backup object, the name of the Source in the *Backups* tab appears as *deleted*.
+
+NOTE: You can also break the SnapMirror relationship with the source volume by disabling *Backup Policy* for the volume.
+
+== Delete a backup object
+
+Delete an unused backup volume to increase your storage space.
+
+.Steps
+.	Locate the backup in the list and click the delete icon for that object.
+.	In the Confirm Delete dialog box, enter the backup name (Source Volume name) to confirm that you want to delete the backup object.
+.	Click *Confirm*.
+
+NOTE: When a backup is deleted, all the recovery points for the backup are deleted. Also, even if you delete a primary file share or disk, the backup is retained as an orphan backup with all the recovery points for restoration. To delete the backup volume and recovery points of the deleted source, you should explicitly delete the backup object from the *Backups* tab.
+
+== Backup Restore
+
+You can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] to restore a file share or disk from a specific recovery point.
+
+.Steps
+.	Select *SUPPORT* from the left navigation pane and select *Service Requests*.
+.	Click *New Service Request*.
+.	Select *Backup Restore* as the category for the service request.
+.	Specify other details and proceed.
