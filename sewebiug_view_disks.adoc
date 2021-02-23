@@ -19,7 +19,12 @@ summary: Keystone view disks
 //
 
 [.lead]
-The Disks list displays the disks belonging to the selected tenant. To display the list, select Block Storage > Disks from the menu.
+The Disks list displays the disks belonging to the selected tenant. To view the list, select *BLOCK STORAGE > Disks* from the menu.
+
+The disks that are already a part of your existing environment and belong to the storage VMs configured in your NetApp Service Engine, can also be viewed on this screen and be managed as a part of your NetApp Keystone Flex Subscription (Flex Subscription) services. The volumes provisioned outside of the NetApp Service Engine are periodically imported and listed on this page with appropriate status codes.
+
+[NOTE]
+The imported disks might not be in the same standard as the existing disks on NetApp Service Engine. After import, these disks are categorized with `Non-Standard` status. You can raise a service request from *Support > Service Request > New Service Request* for them to be standardized and managed through the NetApp Service Engine portal.
 
 In the Disks list, view simple information about a disk such as:
 
