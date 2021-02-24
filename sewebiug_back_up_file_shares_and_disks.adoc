@@ -48,7 +48,7 @@ For a selected backup object of a file share or disk, you can disable the backup
 . Make changes to the backup source and the number of each type of backup as required.
 You can break the SnapMirror relationship with the source volume by changing the backup source to *None (orphaned)*. The backups are retained as orphan backups for restoration even when the source volumes are deleted.
 . Click *Done*.
-The Snapshot is modified. If you have broken the SnapMirror relationship with the source, that is, orphaned the backup object, the name of the Source in the *Backups* tab appears as 'deleted'.
+The Snapshot is modified. If you have broken the SnapMirror relationship with the source, that is, orphaned the backup object, the name of the Source in the *Backups* tab appears as `deleted`.
 
 NOTE: You can also break the SnapMirror relationship with the source volume by disabling *Backup Policy* for the volume.
 
