@@ -26,12 +26,9 @@ This section describes how to create a new disk from a snapshot. The process can
 
 === Steps
 
-. Display the Disks list (link:sewebiug_view_disks.html#view-disks[View disks]).
+. View the Disks list (link:sewebiug_view_disks.html#view-disks[View disks]).
 . To create the disk from a snapshot, you can either:
 .. Click *Create Disk*, select Clone from snapshot, and then go to step 3; or
-+
-image:sewebiug_image29.png[Error: Missing Graphic Image]
-+
 .. Locate the disk in the list, click the Create disk from the snapshot icon and then go to step 4.
 . Select the disk containing the snapshot to clone by selecting checkbox in the Select column, then click *Next*.
 +

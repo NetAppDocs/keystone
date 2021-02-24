@@ -5,7 +5,7 @@ keywords: netapp, keystone, create, file, share, snapshot,
 summary: Keystone create file share from snapshot
 ---
 
-= Create file share from snapshot
+= Create a file share from a snapshot
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -26,12 +26,9 @@ You can create a new share from a snapshot of an existing share. The process can
 
 === Steps
 
-. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. View the link:sewebiug_view_shares.html#view-shares[Shares list].
 . To create the file share from a snapshot, you can either:
 .. Click *Create Share*, select Clone from snapshot, then go to step 3, or
-+
-image:sewebiug_image23.png[Error: Missing Graphic Image]
-+
 .. Locate the share in the list, click the Create share from snapshot icon and then go to step 4.
 . Select the share containing the snapshot to clone by selecting the Select checkbox, then click *Next*.
 +

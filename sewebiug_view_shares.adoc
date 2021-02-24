@@ -5,7 +5,7 @@ keywords: netapp, keystone, view, shares,
 summary: Keystone view shares
 ---
 
-= View shares
+= View file shares
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,12 +19,14 @@ summary: Keystone view shares
 //
 
 [.lead]
-The Shares list displays the file shares belonging to the selected Tenant. To display the list, select *FILE SERVICES > Shares* from the menu.
+The *Shares* list displays the file shares belonging to the selected Tenant. To display the list, select *FILE SERVICES > Shares* from the menu.
 
 The file shares that are already a part of your existing environment and belong to the storage VMs configured in your NetApp Service Engine, can also be viewed on this screen and be managed as a part of your NetApp Keystone Flex Subscription (Flex Subscription) services. The file shares provisioned outside of the NetApp Service Engine are periodically imported and listed on this page with appropriate status codes.
 
+If the imported file shares are in acceptable standards of NetApp Service Engine, that is all the parameters that are required for making the shares operational are available, they are imported with the status as `Operational` and can be directly managed through NetApp Service Engine. However, some shares might not be in the same standard as the existing shares on NetApp Service Engine. After import, these file shares are categorized with `Non-Standard` status.
+
 [NOTE]
-The imported file shares might not be in the same standard as the existing disks on NetApp Service Engine. After import, these file shares are categorized with `Non-Standard` status. You can raise a service request from *Support > Service Request > New Service Request* for them to be standardized and managed through the NetApp Service Engine portal.
+   You can raise a service request for them to be standardized and managed through the NetApp Service Engine portal. For information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[here]
 
 The Shares list displays simple information about each share such as:
 
