@@ -15,6 +15,7 @@ summary: Keystone backups APIs
 [.lead]
 You can use Backup APIs to view and manage the Snapshots (backups or recovery points) of the volumes (file shares and disks) in your environment.
 
+[%autowidth]
 |===
 |HTTP Verb |Path |Description |Mandatory parameters/Request body
 
