@@ -135,6 +135,8 @@ entries:
             url: /sewebiug_delete_an_s3_key_for_a_user.html
       - title: Work with reports
         url: /sewebiug_working_with_reports.html
+      - title: Work with backups
+        url: /sewebiug_back_up_file_shares_and_disks.html
       - title: Manage subscriptions
         url: /sewebiug_managing_subscriptions.html
       - title: Manage service requests
@@ -204,6 +206,8 @@ entries:
             url: /seapiref_file_services_apis.html
           - title: Object storage APIs
             url: /seapiref_object_storage_apis.html
+          - title: Backups APIs
+            url: /seapiref_backups_apis.html  
           - title: Reporting APIs
             url: /seapiref_reporting_apis.html
           - title: (Consumer) Administration APIs
