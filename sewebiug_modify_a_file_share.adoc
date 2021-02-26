@@ -24,11 +24,9 @@ You can change the share name, the share type (CIFS, NFS, multi-protocol), servi
 [NOTE]
 Using this method,  you can move your shares to different performance levels if available. You can change the share type only if the server supports the respective services.
 
-For understanding volume states, see link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html[View disks] and link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[Object states]
-
 === Before you begin
 
-The file share must be in the operational state.
+The file share must be in the operational state. For understanding volume statuses and the steps to be taken to make them operational, see link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html[View disks] and link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[Object states]
 
 === Steps
 

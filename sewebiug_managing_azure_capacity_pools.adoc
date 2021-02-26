@@ -33,7 +33,7 @@ This section describes how to perform the following tasks:
 
 === View a List of Azure capacity pools
 
-The Azure capacity pools list displays a list of capacity pools for a specified subtenant and location. To display the list, select *FILE SERVICES > Azure Capacity Pools* from the menu.
+The Azure capacity pools list displays a list of capacity pools for a specified subtenant and location. To view the list, select *FILE SERVICES > Azure Capacity Pools* from the menu.
 
 The list displays simple information about each Azure capacity pool. The action icons next to each Azure capacity pool allow you to modify or delete the Azure capacity pool.
 

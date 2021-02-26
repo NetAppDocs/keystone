@@ -23,7 +23,7 @@ Use this method to delete an S3 key for a user.
 
 === Steps
 
-. Display the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
+. View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
 . Make sure the correct subtenant is selected and the display is showing Users (not Groups).
 . Locate the user in the list and click the Key icon for that group.
 +

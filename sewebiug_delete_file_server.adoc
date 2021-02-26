@@ -30,7 +30,7 @@ To delete a file server, you must first delete all shares that exist on the serv
 
 === Steps
 
-. Display the link:sewebiug_view_servers.html#view-servers[File Servers list].
+. View the link:sewebiug_view_servers.html#view-servers[File Servers list].
 . Locate the server in the list and click the Delete icon for that server. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
 . In the Confirm Delete dialog box, enter the file server name to confirm that you want to delete the file server.
 +

@@ -23,7 +23,7 @@ Use this method to create a new object storage group.
 
 === Steps
 
-. Display the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
+. View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
 . Make sure the correct subtenant is selected and the display is showing groups (not users).
 . Click *Create Group*.
 . In the Create Group dialog box, enter the group name.
