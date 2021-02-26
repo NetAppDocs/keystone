@@ -21,7 +21,7 @@ summary: Keystone modify a disk
 [.lead]
 You can change the disk name, the host group mapping, performance service level, capacity, and snapshot policy.
 
-Using this method, you can move your disks to different performance levels if available.
+Using this method, you can move your disks to different performance levels if available. For understanding disk states, see link:https://docs.netapp.com/us-en/keystone/sewebiug_view_disks.html[View disks] and link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[Object states]
 
 === Before you begin
 

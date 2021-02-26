@@ -46,7 +46,8 @@ For a selected backup object of a file share or disk, you can disable the backup
 .Steps
 . Locate the backup in the list and click the edit icon, at the end of the row, for that object.
 . Make changes to the backup source and the number of each type of backup as required.
-You can break the SnapMirror relationship with the source volume by changing the backup source to *None (orphaned)*. The backups are retained as orphan backups for restoration even when the source volumes are deleted.
+You can break the SnapMirror relationship with the source volume by changing the backup source to *None (orphaned)*. The backups are retained as orphan backups for restoration even when the source volumes are deleted. The state of the backup object changes, and the status of the source volume (orphan or deleted) is appended to the source volume name on the same list.
+For information about object states, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[here]
 . Click *Done*.
 The Snapshot is modified. If you have broken the SnapMirror relationship with the source, that is, orphaned the backup object, the name of the Source in the *Backups* tab appears as `deleted`.
 

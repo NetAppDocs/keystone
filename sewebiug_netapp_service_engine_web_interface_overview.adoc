@@ -47,8 +47,6 @@ From a List view, you can:
 
 * Perform actions on the items in the list: see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
 
-image:sewebiug_image10.png[Error: Missing Graphic Image]
-
 ==== List view actions
 
 A List view displays a list of items and provides a quick view of some of the item details (including state). In a List view, you can perform the actions listed in the following table.
@@ -75,17 +73,33 @@ navigate the list
 
 |===
 
-==== States: creating, updating, operational, and contact support
+=== Object states
 
-During provisioning and modification, some storage items go through a series of steps before they become operational. The state of the storage items is displayed in the List view for those items. The objects may be in one of the following states:
+During provisioning and modification, the storage objects go through a series of states before they become operational. The state of the storage objects is displayed in the List view for those items. The objects may be in one of the following states:
 
 * *Creating.* The storage resource is being created.
 * *Updating.* The item is currently being modified.
 +
 Occurs when there is a change to storage resource (file server, files hare, blockstore, disk, and so on). It includes resizing shares, changing snapshot policy settings, changing export policy, taking a snapshot, renaming items, and so on.
 
-* *Operational.* Denotes that the storage resource has been provisioned/modified correctly and is available.
+* *Operational.* Denotes that the storage resource has been provisioned/modified correctly and is available, online, and functional.
+* *Deleting.* Object is getting deleted and is being processed.
+* *Queued.*	Object is in queued state and is being processed.
+* *Imported*	Objects provisioned outside of the NetApp Service Engine are periodically imported with this status when they do not fulfil the criteria of NetApp Keystone Flex Subscription (Flex Subscription).
++
+[NOTE]
+This status typically implies that no QoS policy is applied on the object and therefore it cannot be managed by NetApp Service Engine as a part of your Flex Subscription. You can modify the object (through the edit pen) and assign an appropriate Service Level. This changes the status of that object to operational.
++
+
+* *Non-Standard.*	Objects provisioned outside of the NetApp Service Engine are periodically imported with this status when they do not fulfil the criteria of NetApp Keystone Flex Subscription (Flex Subscription).
++
+[NOTE]
+This status typically implies that the object misses one or more criteria applicable for it to be managed by NetApp Service Engine as a part of your Flex Subscription. You can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] for support to take up the issue and make the object operational.
++
+
 * *Contact support.* This state occurs when the provisioning or modification task fails to fully complete. For items in this state, raise a Support Request to address the issue.
+* *Operational (for Backup object).* Indicates that the backup object is orphaned, that is the SnapMirror relationship of the backup object with its source volume is broken.
+
 
 === Jobs and job status indicator
 
