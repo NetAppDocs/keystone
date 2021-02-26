@@ -5,7 +5,7 @@ keywords: netapp, keystone, view, host, groups,
 summary: Keystone view host groups
 ---
 
-= View host groups
+= Work with host groups
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,8 +19,87 @@ summary: Keystone view host groups
 //
 
 [.lead]
-To display the Host Group list, select Block Storage > Host Groups from the menu.
+Host groups are defined to determine access to disks. Based on the initiator nodes assigned to a host groups, the access of that host group is determined.
+
+== View host groups
+
+To view the Host Group list, select *BLOCK STORAGE > Host Groups* from the menu.
 
 The list displays the defined host groups.
 
-From this page you can create a new host group, modify a host group/ or delete a host group.
+From this page you can create a new host group, modify a host group, and delete a host group.
+
+= Create a host group
+
+There are two ways to create a host group:
+
+* From the Host Groups page, described below.
+* As part of creating a new disk. Use this method when you need to create a host group on a block store that has not yet been initialized. For more information see link:sewebiug_create_a_new_disk.html#create-a-new-disk[Create a new disk].
++
+It is possible to create an empty host group and map it to a disk as a placeholder. You must update the empty host group to add initiators before you will be able to access the storage.
+
+=== Before you begin
+
+You need the following to create the host group:
+
+* The subtenant, region and zone in which to create the host group.
+
+[NOTE]
+If the block store for a subtenant/zone combination has not been previously initialized, you will not be able to create a host group using this method. An alternative is to follow the link:sewebiug_create_a_new_disk.html#create-a-new-disk[Create a new disk] process, which allows you to initialize the block store and create a host group as part of the process.
+
+* A name for the host group
+* The host group protocol: iSCSI or FCP
+* The list of initiators to add to the group: WWPNs for FC hosts nodes or IQNs for iSCSI host node names.
+* An alias for each initiator; an alias is a simple name to identify the initiator server, or an individual port/interface on the server. For example, Server 4.
+
+=== Steps
+
+. link:sewebiug_view_host_groups.html#view-host-groups[View the host groups] list.
+. Click *Create Host Group*.
+. On the Create Host Group page:
+.. Select the protocol: iSCSI or FCP.
+.. Select the subtenant, region, and zone and for the host group.
+. Specify a name for the host group.
+. Select the OS Type: the disk operating system.
+. Add the Initiators for the group. For each initiator, specify the alias and the initiator.
+. If required, add tags (key-value pairs) to the host group in the Tags section.
+. Click *Create*. This creates the host group.
+
+=== After you finish
+
+After the host group is created, it is available for mapping to disks.
+
+== Modify host Groups
+
+You can modify a host group to add, remove or amend initiators.
+
+Modifying a host group will modify access for each disk mapped to the host group.
+
+You cannot modify the alias of an initiator. To change the alias, delete the initiator from the group and then re-create it.
+
+=== Steps
+
+. Display the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
+. Locate the host group in the list and click the Edit icon for that host group.
++
+To modify an existing initiator, locate the initiator in the list, edit the initiator value and click *Update*.
++
+To add an initiator:
+
+.. click *Add Initiator*.
+.. Specify the Alias and Initiator.
+.. Click *Create*.
++
+To remove an initiator from the host group, locate the initiator in the list and click the Delete icon.
+
+. Click *Done*.
+
+== Delete a host groups
+You can delete a host group if there are no disks mapped to the host group.
+
+=== Steps
+
+. Display the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
+. Locate the host group in the list and click the Delete icon for that host group.
+. At the Confirm Delete dialog, enter the host group name to confirm that you want to delete the host group.
+. Click *Confirm*.
