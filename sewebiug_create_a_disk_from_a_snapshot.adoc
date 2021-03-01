@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: sewebiug_create_a_disk_from_a_Snapshot.html
+permalink: sewebiug_create_a_disk_from_a_snapshot.html
 keywords: netapp, keystone, create, disk, Snapshot
 summary: Create a disk from a Snapshot
 ---

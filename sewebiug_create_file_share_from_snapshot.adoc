@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: sewebiug_create_a_file_share_from_a_Snapshot.html
+permalink: sewebiug_create_file_share_from_snapshot.html
 keywords: netapp, keystone, create, file share, Snapshot
 summary: Create a file share from a Snapshot
 ---
@@ -28,7 +28,7 @@ The new file share inherits the properties of the selected Snapshot.
 
 .After you finish
 
-* For CIFs type shares only: to make the shares available by host name, your domain administrator should update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
+* For CIFs type shares only: To make the shares available by host name, your domain administrator should update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
 ** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
 ** With no DNS records updated, you should use the IP address to access the share i.e. file://IP/share[\\IP\share^]
 * *Create Share* is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
