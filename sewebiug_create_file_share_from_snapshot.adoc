@@ -13,18 +13,25 @@ summary: Create a file share from a Snapshot
 :imagesdir: ./media/
 
 [.lead]
-You can create a new file share from an existing Snapshot. The new file share, cloned from the Snapshot, has the same properties as the file share that the Snapshot belongs to.
+You can create a new file share from an existing Snapshot. The new file share, cloned from the Snapshot, has the same properties as the file share from which the Snapshot is created.
 
 .Steps
 
 . Select *FILE SERVICES* from the left navigation pane and select *Shares*.
 . Click *Create Share* and select *Clone from snapshot*.
-You can filter file shares by region, zone, and subtenant.
+The *Select Share* screen is displayed with all the file shares for the tenant. You can filter file shares by region, zone, and subtenant. You can select any file share that is in operational state.
 . Select the checkbox next to the file share that you want and click *Next*.
-All the Snapshots associated with the file share are listed. You can search for a particular Snapshot or select the schedule type to filter the Snapshots.
+The *Select Snapshot* screen is displayed with all the Snapshots for the file share.
+
++
+[NOTE]
+For the selected file share, if you have some Snapshots created in your SnapCenter environment outside of NetApp Service Engine, you can find these Snapshots imported and listed for your selection. You can select these imported Snapshots and clone the new file shares from them.
+
++
+You can search for a particular Snapshot or select the schedule type to filter the Snapshots.
 . Select the checkbox next to the Snapshot that you want to clone from and click *Next*.
 The new file share inherits the properties of the selected Snapshot.
-. Add *Name* and *Share Path*. Update the other settings as required and click *Create*.
+. Add *Name* and *Share Path*. Update the other settings, such as assigning a *Service Level*, and click *Create*.
 
 .After you finish
 
