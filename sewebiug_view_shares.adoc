@@ -30,8 +30,10 @@ The Shares list displays simple information about each share such as:
 * Share name
 * Server on which it resides
 * Share path
+* CIFS share path (used for mounting the CIFS share with DNS integration)
 * Subtenant to which it belongs
 * Zone in which it exists
 * Service level
 * Operational state (operational, updating, or contact support)
-* Creation dateFor more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].
+* Creation date
+For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].

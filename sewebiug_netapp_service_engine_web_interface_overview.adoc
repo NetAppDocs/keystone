@@ -98,20 +98,19 @@ This status typically implies that the object misses one or more criteria to be 
 +
 
 * *Contact support.* This state occurs when the provisioning or modification task fails to fully complete. For items in this state, raise a Support Request to address the issue.
-* *Operational (for the source object of a backup).* Indicates that the backup object is orphaned, that is the SnapMirror relationship of the backup object with its source volume is broken.
-
+* *Operational (for the source object of a backup).* The following are the possible statuses:
+** With edit pen : Indicates that the backup object is operational and functioning.
+** Without edit pen: Indicates that the backup is orphaned, that is the SnapMirror relationship of the backup object with its source volume is broken, or the source volume has been removed.
 
 === Jobs and job status indicator
 
-Some provisioning tasks in NetApp Service Engine, such as create, modify or delete storage items, take some time to complete. Rather than being executed immediately (as for synchronous tasks), these tasks are executed asynchronously. When initiating such tasks, NetApp Service Engine returns a job record. The status of the job can be tracked to indicate if a task completes successfully.
-
-The job status indicator displays the status of the currently running or last run job.
+Some provisioning tasks in NetApp Service Engine, such as create, modify or delete storage items, might take some time to complete. Rather than being executed immediately (as for synchronous tasks), these tasks are executed asynchronously. When initiating such tasks, NetApp Service Engine returns a job record. The status can be tracked through the bell icon on the top right corner that indicates whether the submitted task was completed successfully. The status of the job can be also be tracked through the APIs. For information, see link:https://docs.netapp.com/us-en/keystone/seapiref_jobs.html#retrieve-jobs[here]
 
 |===
 |Indicator color |Description
 
-|Orange
-|A task is currently running
+|Black
+|A task is currently running.
 |Red
 |The last task failed to complete.
 |Green
