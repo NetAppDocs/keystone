@@ -39,5 +39,5 @@ The new file share inherits the properties of the selected Snapshot.
 ** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
 ** With no DNS records updated, you should use the IP address to access the share i.e. file://IP/share[\\IP\share^]
 * *Create Share* is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
-** Check the status of the job in the jobs list.
+** Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 ** After the job is finished, check the status of the share in the *Shares* list.
