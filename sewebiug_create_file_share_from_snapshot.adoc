@@ -1,53 +1,43 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_create_file_share_from_snapshot.html
-keywords: netapp, keystone, create, file, share, snapshot,
-summary: Keystone create file share from snapshot
+keywords: netapp, keystone, create, file share, Snapshot
+summary: Create a file share from a Snapshot
 ---
 
-= Create a file share from a snapshot
+= Create a file share from a Snapshot
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.311473
-//
-
 [.lead]
-You can create a new share from a snapshot of an existing share. The process can use an existing snapshot or can create a snapshot immediately that is used for the cloning operation. For information on:
+You can create a new file share from an existing Snapshot. The new file share, cloned from the Snapshot, has the same properties as the file share from which the Snapshot is created.
 
-* How to create a new share directly (see link:sewebiug_create_a_new_file_share.html#create-a-new-file-share[Create a new file share])
-* Snapshots (see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots])
+.Steps
 
-=== Steps
+. Select *FILE SERVICES* from the left navigation pane and select *Shares*.
+. Click *Create Share* and select *Clone from snapshot*.
+The *Select Share* screen is displayed with all the file shares for the tenant. You can filter file shares by region, zone, and subtenant. You can select any file share that is in operational state.
+. Select the checkbox next to the file share that you want and click *Next*.
+The *Select Snapshot* screen is displayed with all the Snapshots for the file share.
 
-. View the link:sewebiug_view_shares.html#view-shares[Shares list].
-. To create the file share from a snapshot, you can either:
-.. Click *Create Share*, select Clone from snapshot, then go to step 3, or
-.. Locate the share in the list, click the Create share from snapshot icon and then go to step 4.
-. Select the share containing the snapshot to clone by selecting the Select checkbox, then click *Next*.
 +
 [NOTE]
-Filter the list by region, zone and file server to quickly locate the server in the list.
+For the selected file share, if you have some Snapshots created in your SnapCenter environment outside of NetApp Service Engine, you can find these Snapshots imported and listed for your selection. You can select these imported Snapshots and clone the new file shares from them.
 
 +
-. To use an existing snapshot, select the snapshot to clone; you can filter the list by schedule type or search for the snapshot by name (partial matches accepted).
-. To create a new snapshot, do not select a snapshot.
-. Click *Next*.
-. Enter the new share name and the share path.
-. Review the other selections which are inherited from the snapshot and select or amend as required. For field descriptions, refer to link:sewebiug_create_a_new_file_share.html#create-a-new-file-share[Create new File Share].
-. Click *Create*. This creates a job to create the clone with the specified settings.
+You can search for a particular Snapshot or select the schedule type to filter the Snapshots.
+. Select the checkbox next to the Snapshot that you want to clone from and click *Next*.
+The new file share inherits the properties of the selected Snapshot.
+. Add *Name* and *Share Path*. Update the other settings, such as assigning a *Service Level*, and click *Create*.
 
-=== After you finish
+.After you finish
 
-* For CIFs type shares only: to make the shares available by host name, your domain administrator must update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
+* For CIFs type shares only: To make the shares available by host name, your domain administrator should update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
 ** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
-** With no DNS records updated, you must use the IP address to access the share i.e. file://IP/share[\\IP\share^]
-* Create share is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
-** Check the status of the job in the jobs list.
-** After the job is finished, check the status of the share in the Shares list.
+** With no DNS records updated, you should use the IP address to access the share i.e. file://IP/share[\\IP\share^]
+* *Create Share* is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+** Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
+** After the job is finished, check the status of the share in the *Shares* list.
