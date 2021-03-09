@@ -25,7 +25,7 @@ The disks that are already a part of your existing environment and belong to the
 
 If the imported disks are in acceptable standards of NetApp Service Engine, that is, if all the parameters that are required for making the disks operational are available, they are imported with the status as `Operational` and can be directly managed through NetApp Service Engine. However, some disks might not be in the same standard as the existing disks on NetApp Service Engine. After import, these disks are categorized with `Imported` or `Non-Standard` status. For understanding the disk statuses and the steps to be taken to make them operational, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[Object states]
 
-In the Disks list, view simple information about a disk such as:
+In the Disks list, view simple information. For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].
 
 * Disk name
 * Path to the disk
@@ -34,5 +34,3 @@ In the Disks list, view simple information about a disk such as:
 * Subtenant to which the disk belongs
 * Zone in which disk exists
 * Operational state
-
-For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].

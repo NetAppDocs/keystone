@@ -15,9 +15,8 @@ summary: Keystone backups APIs
 [.lead]
 You can use Backup APIs to view and manage the Snapshots (backups or recovery points) of the volumes (file shares and disks) in your environment.
 
-[cols="10%,20%,40%,30%"]
 |===
-|HTTP Verb |Path |Description |Mandatory parameters/Request body
+| HTTP Verb | Path | Description | Mandatory parameters/Request body
 
 |`GET`
 |`/v2.1/backups`
@@ -78,9 +77,7 @@ You can use Backup APIs to view and manage the Snapshots (backups or recovery po
 |`/v2.1/backups/{id}`
 |You can modify any backup object for a volume based on its ID. Add the ID of the backup object and the values that you want to modify in the request body, such as the backup policy details, number of backups to retain, and source resource ID.
 |`id`: The ID of the backup object.
-``
-{
-  "source_resource_id": "<Resource ID>",
+{ "source_resource_id": "<Resource ID>",
   "backup_policy": {
     "daily_backups_to_keep": <Number of daily backups to keep>,
     "weekly_backups_to_keep": <Number of weekly backups to keep>,
@@ -93,7 +90,8 @@ You can use Backup APIs to view and manage the Snapshots (backups or recovery po
     "keyN": "<Tag 3>"
   }
 }
-``
+[NOTE]
+You can make a backup object orphan by setting the value of the `source_resource_id` parameter as null in your `PATCH` request. This removes the SnapMirror relationship, but retains the backup volume and the recovery points under it.
 
 |`DELETE`
 |`/v2.1/backups/{id}`
