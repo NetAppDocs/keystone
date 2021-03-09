@@ -29,7 +29,7 @@ Buckets are created under a subtenant.
 
 === After you finish
 
-Create bucket is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+Create bucket is run as an asynchronous job. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the server in the Buckets list.

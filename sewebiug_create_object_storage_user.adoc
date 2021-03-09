@@ -34,7 +34,7 @@ Because an object storage user belongs to an object storage group, the object st
 
 === After you finish
 
-Create user is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+Create user is run as an asynchronous job. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the share in the Users list.

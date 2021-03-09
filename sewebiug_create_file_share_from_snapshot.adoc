@@ -38,6 +38,6 @@ The new file share inherits the properties of the selected Snapshot.
 * For CIFs type shares only: To make the shares available by host name, your domain administrator should update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
 ** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
 ** With no DNS records updated, you should use the IP address to access the share i.e. file://IP/share[\\IP\share^]
-* *Create Share* is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+* *Create Share* is run as an asynchronous job. You can:
 ** Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 ** After the job is finished, check the status of the share in the *Shares* list.
