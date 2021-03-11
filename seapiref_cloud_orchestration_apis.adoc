@@ -601,7 +601,7 @@ The `/v2.1/gcp/volumes` API under the Cloud Orchestration category enables you t
 `subtenant_id`: The ID of the subtenant subscribed to Google Cloud.
 `region`: The region of the subscribed service.
 |`GET`
-|`/v2.1/gcp/volumes`
+|`/v2.1/gcp/volumes/{id}`
 |You can use this method to retrieve the details of a specific Google Cloud Volume created for your subtenant's Cloud Volumes Service subscription.
 |`id`: The ID of the GCP volume.
 `subtenant_id`: The ID of the subtenant subscribed to Google Cloud.
@@ -613,46 +613,40 @@ The `/v2.1/gcp/volumes` API under the Cloud Orchestration category enables you t
 ```
 {
   "subtenant_id": "<ID>",
-  "name": "<Name>",
+  "name": "<Volume_name>",
   "region": "<region>",
   "zone": "<zone>",
   "creation_token": "<token>",
-  "allowed_clients": "IP address of the clients allowed to access GCP",
+  "allowed_clients": "<IP address of the clients allowed to access GCP>",
   "network": "<network details as entered for the GCP subscribed service>",
   "protocol_types": [
     "<Protocol for the connection, such as NFSv3>"
   ],
-  "quota_bytes": <volume quota in bytes>,
-  "tags": {
-    "key1": "<value>",
-     }
+  "quota_gib": <volume quota in bytes>,
+  "service_level": "<the type of Performance Service Level, such as standard>",
+  "labels": ["<tag_value>"]
 }
 ```
 
 |PUT
-|`/v2.1/gcp/volumes`
+|`/v2.1/gcp/volumes/{id}`
 |Modify a GCP volume already created for a subtenant. Add the volume ID of the volume that you want to modify and the value for the parameters that you want to modify, in the request body.
 |
 ```
 {
   "subtenant_id": "<ID>",
-  "name": "<Name>",
+  "name": "<Volume_name>",
   "region": "<region>",
   "zone": "<zone>",
-  "creation_token": "<token>",
-  "allowed_clients": "IP address of the clients allowed to access GCP",
-  "network": "<network details as entered for the GCP subscribed service>",
-  "protocol_types": [
-    "<Protocol for the connection, such as NFSv3>"
-  ],
-  "quota_bytes": <volume quota in bytes>,
-  "tags": {
-    "key1": "<value>",
-     }
+  "allowed_clients": "<IP address of the clients allowed to access GCP>",
+  "quota_gib": <volume quota in bytes>,
+  "service_level": "<the type of Performance Service Level, such as standard>",
+  "protocol_types": ["<Protocol for the connection, such as NFSv3>"],
+  "labels": ["<tag_value>"]
 }
 ```
 |DELETE
-|`/v2.1/gcp/volumes`
+|`/v2.1/gcp/volumes/{id}`
 |You can use this method to delete a specific Google Cloud Volume created for your subtenant's Cloud Volumes Service subscription.
 |`id`: The ID of the GCP volume.
 `subtenant_id`: The ID of the subtenant subscribed to Cloud Volumes Service for Google Cloud.

@@ -30,14 +30,14 @@ If asynchronous disaster recovery is already enabled, it cannot be disabled. For
 
 === Steps
 
-. Display the link:sewebiug_view_servers.html#view-servers[File Servers list].
+. View the link:sewebiug_view_servers.html#view-servers[File Servers list].
 . Locate the server in the list and click the Edit icon for that server. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
 . Make any changes as required; refer to link:sewebiug_create_a_file_server.html[Create a file server] for field descriptions.
 . Click *Done*. This creates a job to modify the server.
 
 === After you finish
 
-Modify server is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+Modify server is run as an asynchronous job. You can:
 
-* Check the status of the job in the jobs list.
+* Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 * After the job is finished, check the status of the sever in the Servers list.

@@ -33,7 +33,7 @@ In this section:
 
 === View a list of Azure NetApp accounts
 
-The Azure NetApp Accounts list displays a list of all the Azure NetApp accounts in the tenancies that the logged-in user has access to. To display the list, select *ADMINISTRATION > Azure NetApp Accounts* from the menu.
+The Azure NetApp Accounts list displays a list of all the Azure NetApp accounts in the tenancies that the logged-in user has access to. To view the list, select *ADMINISTRATION > Azure NetApp Accounts* from the menu.
 
 The list displays simple information about each Azure NetApp account. The action icons next to each Azure NetApp account allow you to modify or delete the Azure NetApp account.
 

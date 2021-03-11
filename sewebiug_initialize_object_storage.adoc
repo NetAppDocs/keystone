@@ -25,7 +25,7 @@ If you attempt to create a storage bucket on object storage that has not yet bee
 
 === Steps
 
-. Display the link:sewebiug_view_buckets.html#view-buckets[Buckets list] and select the Subtenant under which to create the bucket.
+. View the link:sewebiug_view_buckets.html#view-buckets[Buckets list] and select the Subtenant under which to create the bucket.
 . If the object storage has not been initialized for this subtenant, the following message is displayed:
 +
 image:sewebiug_image31.png[Error: Missing Graphic Image]

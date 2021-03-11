@@ -27,7 +27,7 @@ The Capacity Usage page displays capacity usage over time for each storage servi
 
 image:sewebiug_image33.png[Error: Missing Graphic Image]
 
-To display the Capacity Usage page, select Reports > Capacity Usage from the menu.
+To view the Capacity Usage page, select Reports > Capacity Usage from the menu.
 
 To view the capacity usage for a service, perform the following steps:
 
@@ -51,11 +51,11 @@ Throughput measures the data transfer rate to and from the storage media in mega
 +
 Average time for reads/writes from the disk/share in milliseconds.
 +
-To display the Performance page, select Reports > Performance from the menu.
+To view the Performance page, select Reports > Performance from the menu.
 +
-To display the performance details for a disk/share, complete the following steps.
+To view the performance details for a disk/share, complete the following steps.
 
-. Select the Subtenant, Region and Zone, and then the storage object type to display either Disks or Shares for the disk or share. The page displays the list of storage objects meeting the selected criteria, showing the latest performance data for those objects.
+. Select the Subtenant, Region and Zone, and then the storage object type to view either Disks or Shares for the disk or share. The page displays the list of storage objects meeting the selected criteria, showing the latest performance data for those objects.
 . To view the trend in performance data for a selected share or disk, locate the storage object in the list and click to expand the panel. The performance graphs for the selected object display.
 
 image:sewebiug_image34.png[Error: Missing Graphic Image]

@@ -23,7 +23,7 @@ Use this method to modify details of an object storage user such as the user nam
 
 === Steps
 
-. Display the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
+. View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
 . Make sure the correct subtenant is selected and the display is showing Users (not Groups).
 . Locate the user in the list and click the Edit icon for that group.
 +

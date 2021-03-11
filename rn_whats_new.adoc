@@ -21,7 +21,7 @@ summary: new features in NetApp Service Engine
 [.lead]
 The following features and enhancements have been introduced in NetApp Service Engine 2.0.1:
 
-= Features introduced in Keystone 2.0.1
+= Features introduced in NetApp Keystone Flex Subscription 2.0.1
 
 === Support extended to Cloud Volumes Services for Google Cloud Platform
 
@@ -32,7 +32,7 @@ Subscriptions to Cloud Volumes Services are managed outside of NetApp Service En
 
 === Ability to manage objects provisioned outside of NetApp Service Engine
 
-The volumes (disks and file shares) that already exist in the customer environment and belong to the storage VMs configured in NetApp Service Engine, can now be viewed and managed as a part of your Keystone subscription. The volumes provisioned outside of the NetApp Service Engine are now listed on the *Shares* and *Disks* pages with appropriate status codes. A background process runs at a periodic interval and imports the foreign workloads within your NetApp Service Engine instance.
+The volumes (disks and file shares) that already exist in the customer environment and belong to the storage VMs configured in NetApp Service Engine, can now be viewed and managed as a part of your NetApp Keystone Flex Subscription (Flex Subscription). The volumes provisioned outside of the NetApp Service Engine are now listed on the *Shares* and *Disks* pages with appropriate status codes. A background process runs at a periodic interval and imports the foreign workloads within your NetApp Service Engine instance.
 
 The imported disks and file shares may not be in the same standard as the existing disks and file shares on NetApp Service Engine. After import, these disks and file shares are categorized with `Non-Standard` status. You can raise a service request from *Support > Service Request > New Service Request* for them to be standardized and managed through the NetApp Service Engine portal.
 
@@ -49,7 +49,7 @@ The new *Backup* screen enables you to view and manage the backups of the disks 
 You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol share. You can specify Windows users or groups based on the Active Directory (AD) settings to add to the ACL.
 link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more]
 
-= Features introduced in Keystone 2.0
+= Features introduced in NetApp Keystone Flex Subscription 2.0
 
 === MetroCluster support
 NetApp Service Engine supports sites configured with MetroCluster configurations. MetroCluster is a data protection feature of ONTAP that provides recovery point objectives (RPO) 0 or recovery time objectives (RTO) 0 using synchronous mirror for continuously available storage.
