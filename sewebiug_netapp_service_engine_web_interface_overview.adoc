@@ -27,7 +27,7 @@ The figure below is an example of the NetApp Service Engine web Interface. It co
 * *Menu.* Use the menu to view and manage storage items, view reports, and access support.
 * *NetApp logo.* Click this at any time to return the display to the dashboard view.
 * *Tenant.* Displays the currently selected tenant. To change the tenant, see link:sewebiug_select_tenant.html[Select the tenant].
-* *Jobs.* Click to display the status of the most recent provisioning jobs. The icon changes color to display the configuration job status. For more information, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[Jobs and job status indicator].
+* *Jobs.* Click to view the status of the most recent provisioning jobs. The icon changes color to display the configuration job status. For more information, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[Jobs and job status indicator].
 * *User login.* Displays the name of the currently logged-in user. Click this icon to sign out. For more information, see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface[Log out of the NetApp Service Engine web interface].
 
 image:sewebiug_image9.png[Error: Missing Graphic Image]
@@ -41,13 +41,11 @@ To return to the Dashboard view, click the NetApp icon in the top-left corner of
 
 === List view
 
-A List view is used to display a list of objects. For example, the list of servers that support the file shares in a subscription are displayed in a List view, as shown in the screenshot below.
+A List view is used to view a list of objects. For example, the list of servers that support the file shares in a subscription are displayed in a List view, as shown in the screenshot below.
 
 From a List view, you can:
 
 * Perform actions on the items in the list: see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
-
-image:sewebiug_image10.png[Error: Missing Graphic Image]
 
 ==== List view actions
 
@@ -75,33 +73,48 @@ navigate the list
 
 |===
 
-==== States: creating, updating, operational, and contact support
+=== Object states
 
-During provisioning and modification, some storage items go through a series of steps before they become operational. The state of the storage items is displayed in the List view for those items. The objects may be in one of the following states:
+During provisioning and modification, the storage objects go through a series of states before they become operational. The state of the storage objects is displayed in the List view for those items. The objects may be in one of the following states:
 
 * *Creating.* The storage resource is being created.
 * *Updating.* The item is currently being modified.
 +
 Occurs when there is a change to storage resource (file server, files hare, blockstore, disk, and so on). It includes resizing shares, changing snapshot policy settings, changing export policy, taking a snapshot, renaming items, and so on.
 
-* *Operational.* Denotes that the storage resource has been provisioned/modified correctly and is available.
+* *Operational.* Denotes that the storage resource has been provisioned/modified correctly and is available, online, and functional.
+* *Deleting.* Object is getting deleted and is being processed.
+* *Queued.*	Object is in queued state and is being processed.
+* *Imported*	Objects provisioned outside of the NetApp Service Engine are imported with this status when they do not fulfil the criteria of NetApp Keystone Flex Subscription (Flex Subscription).
++
+[NOTE]
+This status typically implies that no QoS policy is applied on the object and therefore it cannot be managed by NetApp Service Engine as a part of your Flex Subscription. You can modify the object (through the edit pen) and assign an appropriate Service Level. This changes the status of that object to operational.
++
+
+* *Non-Standard.*	Objects provisioned outside of the NetApp Service Engine are imported with this status when they do not fulfil the criteria of NetApp Keystone Flex Subscription (Flex Subscription).
++
+[NOTE]
+This status typically implies that the object misses one or more criteria to be managed by NetApp Service Engine, as a part of your Flex Subscription. You can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] for them to be standardized and managed through the NetApp Service Engine portal and made operational by the support team.
++
+
 * *Contact support.* This state occurs when the provisioning or modification task fails to fully complete. For items in this state, raise a Support Request to address the issue.
+* *Operational (for the source object of a backup).* The following are the possible statuses:
+** With edit pen : Indicates that the backup object is operational and functioning.
+** Without edit pen: Indicates that the backup is orphaned, that is the SnapMirror relationship of the backup object with its source volume is broken, or the source volume has been removed.
 
 === Jobs and job status indicator
 
-Some provisioning tasks in NetApp Service Engine, such as create, modify or delete storage items, take some time to complete. Rather than being executed immediately (as for synchronous tasks), these tasks are executed asynchronously. When initiating such tasks, NetApp Service Engine returns a job record. The status of the job can be tracked to indicate if a task completes successfully.
-
-The job status indicator displays the status of the currently running or last run job.
+Some provisioning tasks in NetApp Service Engine, such as create, modify or delete storage items, might take some time to complete. Rather than being executed immediately (as for synchronous tasks), these tasks are executed asynchronously. When initiating such tasks, NetApp Service Engine returns a job record. The status can be tracked through the bell icon on the top right corner that indicates whether the submitted task was completed successfully. The status of the job can be also be tracked through the APIs. For information, see link:https://docs.netapp.com/us-en/keystone/seapiref_jobs.html#retrieve-jobs[here]
 
 |===
 |Indicator color |Description
 
-|Orange
-|A task is currently running
+|Black
+|A task is currently running.
 |Red
 |The last task failed to complete.
 |Green
 |The last task completed successfully.
 |===
 
-Click on the status indicator to display the status of the 10 most recent tasks.
+Click on the status indicator to view the status of the 10 most recent tasks.

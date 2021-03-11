@@ -23,7 +23,7 @@ Use this method to modify details of an object storage group such as the group n
 
 === Steps
 
-. Display the link:sewebiug_view_host_groups.html#view-host-groups[Groups List].
+. View the link:sewebiug_view_host_groups.html#view-host-groups[Groups List].
 . Make sure the correct subtenant is selected and the display is showing groups (not users).
 . Locate the group in the list and click the Edit icon for that group.
 +

@@ -30,7 +30,7 @@ Managing subtenants requires customer administrator access.
 
 === View a list of subtenants
 
-The Subtenants list displays a list of all the subtenants in a NetApp Service Engine installation. To display the list, select Administration > Subtenants from the menu.
+The Subtenants list displays a list of all the subtenants in a NetApp Service Engine installation. To view the list, select Administration > Subtenants from the menu.
 
 The list displays simple information about each subtenant, such as:
 

@@ -30,7 +30,7 @@ To delete a file server, you must first delete all shares that exist on the serv
 
 === Steps
 
-. Display the link:sewebiug_view_servers.html#view-servers[File Servers list].
+. View the link:sewebiug_view_servers.html#view-servers[File Servers list].
 . Locate the server in the list and click the Delete icon for that server. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
 . In the Confirm Delete dialog box, enter the file server name to confirm that you want to delete the file server.
 +
@@ -41,6 +41,6 @@ image:sewebiug_image21.png[Error: Missing Graphic Image]
 === After you finish
 
 * When deleting CIFS-enabled file servers, the Active Directory computer object remains. Ask your Active Directory administrator to manually remove the computer object for the deleted file server from Active Directory.
-* Delete server is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
-** Check the status of the job in the jobs list.
+* Delete server is run as an asynchronous job. You can:
+** Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 ** After the job is finished, verify that the sever has been removed from the Servers list.

@@ -40,7 +40,7 @@ Make sure you have the following to create the server:
 
 === Steps
 
-. Display the link:sewebiug_view_servers.html#view-servers[File Servers list].
+. View the link:sewebiug_view_servers.html#view-servers[File Servers list].
 . Click *Create Server*.
 . On the Create Server page complete the following fields:
 +
@@ -71,7 +71,7 @@ NFS is enabled by default. The NFS protocol in use is displayed.
 +
 If creating a CIFS-enabled file server:
 
-.. Toggle the CIFS-enabled button to display the CIFS related fields.
+.. Toggle the CIFS-enabled button to view the CIFS related fields.
 .. Complete the Active Directory Username, Active Directory Password, Domain, DNS Servers, Server Name and, optionally, the Active Directory Organizational Unit. The Active Directory credentials must be for a user that has the privilege to join a computer to the Active Directory domain.
 
 . To enable asynchronous disaster recovery DP on this file server:
@@ -83,7 +83,7 @@ If creating a CIFS-enabled file server:
 
 === After you finish
 
-Create server is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+Create server is run as an asynchronous job. You can:
 
 * Check the status of the job in the jobs list.
 * After the job is finished, check the status of the server in the Servers list.

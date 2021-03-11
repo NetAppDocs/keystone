@@ -60,9 +60,8 @@ entries:
       - title: View subscribed services capacity
         url: /sewebiug_view_subscribed_services_capacity.html
       - title: Work with file services
+        url: /sewebiug_working_with_file_services_overview.html
         entries:
-          - title: Overview
-            url: /sewebiug_working_with_file_services_overview.html
           - title: View servers
             url: /sewebiug_view_servers.html
           - title: Create a file server
@@ -84,17 +83,10 @@ entries:
           - title: Create adhoc snapshot of a file share
             url: /sewebiug_create_adhoc_snapshot_of_a_file_share.html
       - title: Work with block storage
+        url: /sewebiug_working_with_block_storage_overview.html
         entries:
-          - title: Overview
-            url: /sewebiug_working_with_block_storage_overview.html
-          - title: View host groups
+          - title: Work with host groups
             url: /sewebiug_view_host_groups.html
-          - title: Create a host group
-            url: /sewebiug_create_a_host_group.html
-          - title: Modify host group initiators
-            url: /sewebiug_modify_host_group_initiators.html
-          - title: Delete a host group
-            url: /sewebiug_delete_a_host_group.html
           - title: View disks
             url: /sewebiug_view_disks.html
           - title: Create a disk
@@ -135,6 +127,8 @@ entries:
             url: /sewebiug_delete_an_s3_key_for_a_user.html
       - title: Work with reports
         url: /sewebiug_working_with_reports.html
+      - title: Work with backups
+        url: /sewebiug_back_up_file_shares_and_disks.html
       - title: Manage subscriptions
         url: /sewebiug_managing_subscriptions.html
       - title: Manage service requests
@@ -204,6 +198,8 @@ entries:
             url: /seapiref_file_services_apis.html
           - title: Object storage APIs
             url: /seapiref_object_storage_apis.html
+          - title: Backups APIs
+            url: /seapiref_backups_apis.html
           - title: Reporting APIs
             url: /seapiref_reporting_apis.html
           - title: (Consumer) Administration APIs

@@ -19,24 +19,22 @@ summary: Keystone modify a disk
 //
 
 [.lead]
-You can change the disk name, the host group mapping, performance service level, capacity, and snapshot policy.
-
-Using this method, you can move your disks to different performance levels if available.
+You can change the disk name, the host group mapping, performance service level, capacity, and snapshot policy. Using this method, you can move your disks to different service levels if available.
 
 === Before you begin
 
-The disk must be in an operational state.
+The disk must be in an operational state. For understanding volume statuses and the steps to be taken to make them operational, see link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html[View disks] and link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[Object states]
 
 === Steps
 
-. Display the link:sewebiug_view_disks.html#view-disks[Disks list].
+. View the link:sewebiug_view_disks.html#view-disks[Disks list].
 . Locate the disk in the list and click the Edit icon for that disk. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
 . Make any changes as required; refer to link:sewebiug_create_a_new_disk.html[Create a new disk] for field descriptions.
 . Click *Done*. This creates a job to modify the disk.
 
 === After you finish
 
-Modify disk is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+Modify disk is run as an asynchronous job. You can:
 
-* Check the status of the job in the jobs list.
+* Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 * After the job is finished, check the status of the disk in the Disks list.

@@ -28,7 +28,7 @@ This section describes how to delete a file share.
 
 === Steps
 
-. Display the link:sewebiug_view_shares.html#view-shares[Shares list].
+. View the link:sewebiug_view_shares.html#view-shares[Shares list].
 . Locate the share in the list and click the Delete icon for that share. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
 . In the Confirm Delete dialog box, enter the file share name to confirm that you want to delete the file share.
 +
@@ -38,7 +38,7 @@ image:sewebiug_image25.png[Error: Missing Graphic Image]
 
 === After you finish
 
-Delete share is run as an link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery—asynchronous[asynchronous job]. You can:
+Delete share is run as an asynchronous job. You can:
 
-* Check the status of the job in the jobs list.
+* Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 * After the job is finished, verify that the share has been removed from the Shares list.

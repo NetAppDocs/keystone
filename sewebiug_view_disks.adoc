@@ -19,9 +19,13 @@ summary: Keystone view disks
 //
 
 [.lead]
-The Disks list displays the disks belonging to the selected tenant. To display the list, select Block Storage > Disks from the menu.
+The Disks list displays the disks belonging to the selected tenant. To view the list, select *BLOCK STORAGE > Disks* from the menu.
 
-In the Disks list, view simple information about a disk such as:
+The disks that are already a part of your existing environment and belong to the storage VMs configured in your NetApp Service Engine, can also be viewed on this screen and be managed as a part of your NetApp Keystone Flex Subscription (Flex Subscription) services. The disks provisioned outside of the NetApp Service Engine are periodically imported and listed on this page with appropriate status codes.
+
+If the imported disks are in acceptable standards of NetApp Service Engine, that is, if all the parameters that are required for making the disks operational are available, they are imported with the status as `Operational` and can be directly managed through NetApp Service Engine. However, some disks might not be in the same standard as the existing disks on NetApp Service Engine. After import, these disks are categorized with `Imported` or `Non-Standard` status. For understanding the disk statuses and the steps to be taken to make them operational, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[Object states]
+
+In the Disks list, view simple information. For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].
 
 * Disk name
 * Path to the disk
@@ -29,6 +33,4 @@ In the Disks list, view simple information about a disk such as:
 * Protocol
 * Subtenant to which the disk belongs
 * Zone in which disk exists
-* Operational state (operational, updating, and contact support)
-
-For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].
+* Operational state
