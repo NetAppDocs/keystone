@@ -12,19 +12,13 @@ summary: Keystone create a new disk
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.524503
-//
-
 [.lead]
 This section describes how to create a new disk by directly specifying the disk details. For instructions on how to create a disk based on a snapshot of an existing disk, see link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot[Create a disk from a snapshot].
 
 === Before you begin
 
 * If block storage is available but not initialized, you will be asked to initialize it before you can create the disk. To initialize the block store, you need:
-** The VLAN ID and subnet for the block store. If you are not familiar with your network environment, please check with you IT department for the relevant values.
+** The subnet for the block store. If you are not familiar with your network environment, please check with you IT department for the relevant values.
 ** The protocol to be used. By default, block stores have the iSCSI service enabled. You can optionally enable the FCP service if the infrastructure allows it.
 ** The disaster recovery region, zone, and schedule if you want to enable asynchronous disaster recovery DP for the disk. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 * Identify or define the host groups to be mapped to the disk. You can also create a host group as part of the disk creation.
@@ -50,7 +44,7 @@ image:sewebiug_image27.png[Error: Missing Graphic Image]
 +
 . Click *Initialize Block Storage*.
 . In the Initialize Block Storage dialog box:
-.. In the iSCSI panel, specify the VLAN and Subnet.
+.. In the iSCSI panel, specify the subnet.
 +
 The iSCSI service is enabled for all disks by default.
 

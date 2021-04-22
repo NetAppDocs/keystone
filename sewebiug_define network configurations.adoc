@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: sewebiug_define_network_configurations.html
+keywords: netapp, keystone, subnet, subtenant, create, delete
+summary: Create and delete subnets
+---
+
+= Define network configurations with subnets
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can create subnets for your subtenant and zone and attach them to your workloads to define your network configuration.
+
+File and block storage VMs are owned by subtenants in NSE, whereas they are owned by IPspaces in ONTAP. When you define the networking boundary at a subtenant level, the subtenant in NSE maps to a single ONTAP IPspace for that zone. This eliminates risk and ensures that two distinct tenants do not select the same VLAN ID and end up in the same IPspace.
+
+A subnet is aligned to a VLAN within a subtenant and zone. You should select a predefined network or subnet when provisioning file servers or block stores within NSE. You can view the list of subnets created for your subtenant on the *Subnets* page.
+
+NOTE: A configurable and unique VLAN pool is allocated to each tenant based on their requirements. When a subtenant is deleted, the VLANs associated with it are released back to the tenant VLAN pool.
+
+== Create a subnet
+
+You can create subnets for your subtenants from the *Subnets* page, available as part of *NETWORKS*. The subnet definition includes the VLAN ID that is implemented in ONTAP, the CIDR address range, and a route specification.
+
+.Steps
+. Click *Create Subnet*.
+. Specify the subtenant, zone, name of the subnet, VLAN, and Subnet CIDR. You can also add route specification and tags.
+The VLAN should be within the selected zone. Additionally, in route specification, the *Destination* should be part of the mentioned VLAN, and multiple routes can have the same value for *Metric*.
+
++
+.	Click *Create*.
+
+NOTE: You cannot edit or delete a subnet. You can only edit the tags associated with it.
