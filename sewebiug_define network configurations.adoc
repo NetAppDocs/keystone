@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: sewebiug_define_network_configurations.html
+keywords: netapp, keystone, subnet, subtenant, create, delete
+summary: Create and delete subnets
+---
+
+= Define network configurations with subnets
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can create subnets for your subtenant and zone and attach them to your workloads to define your network configuration. You can create only one network for a zone.
+
+File and block storage VMs are owned by subtenants in NetApp Service Engine, whereas they are owned by IPspaces in ONTAP. When you define the networking boundary at a subtenant level, the subtenant in NetApp Service Engine maps to a single ONTAP IPspace for that zone. This eliminates risk and ensures that two distinct tenants do not select the same VLAN ID and end up in the same IPspace. Also, each tenant can have multiple networks, and each network can have multiple VLANs.
+
+A subnet is aligned to a VLAN within a subtenant and zone. You should select a predefined network or subnet when provisioning file servers or block stores within NetApp Service Engine. You can view the list of subnets created for your subtenant on the *Subnets* page.
+
+Only a Partner admin has access to the networks of each tenant and can create subnets. Each tenant has their VLAN and port override.
+
+NOTE: A configurable and unique VLAN pool is allocated to each tenant based on their requirements. When a subtenant is deleted, the VLANs associated with it are released back to the tenant VLAN pool.
+
+== Create a subnet
+
+You can create subnets for your subtenants from the *Subnets* menu, available as part of *NETWORKS*. The subnet definition includes the VLAN ID that is implemented in ONTAP, the CIDR address range, and a route specification.
+
+.Steps
+. Click *Create Subnet*.
+. Specify the subtenant, zone, name of the subnet, VLAN, and Subnet CIDR. You can also add route specification and tags.
+The VLAN should be within the selected zone. Additionally, in route specification, the *Destination* should be unique and part of the mentioned VLAN, and multiple routes can have the same value for *Metric*.
+
++
+[NOTE]
+If a new port override is not specified, the network uses the default port and creates a new VLAN in the IP space for that tenant.
+
++
+.	Click *Create*.
+
+NOTE: You cannot edit or delete a subnet. You can only edit the tags associated with it.
