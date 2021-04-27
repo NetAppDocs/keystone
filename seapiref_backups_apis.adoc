@@ -15,33 +15,34 @@ summary: Keystone backups APIs
 [.lead]
 You can use Backup APIs to view and manage the Snapshots (backups or recovery points) of the volumes (file shares and disks) in your environment.
 
+[cols="1,1,3,2",options="header"]
 |===
 | HTTP Verb | Path | Description | Mandatory parameters/Request body
 
-|`GET`
-|`/v2.1/backups`
+a|`GET`
+a|`/v2.1/backups`
 |You can retrieve the details of all the backup objects for all the volumes created for the subtenant under tenant. Retrieves details of the source volume and the backup object, such as backup policy, zone, and tags.
-|`offset`: The number of items to skip before starting to collect the result set.
+a|`offset`: The number of items to skip before starting to collect the result set.
 `limit`: The numbers of items to return.
 
-|`GET`
-|`/v2.1/backups/{id}`
+a|`GET`
+a|`/v2.1/backups/{id}`
 |You can retrieve the details of a specific backup object created for a volume for the subtenant under tenant. Retrieves details of the source volume and the backup object, such as backup policy, zone, and tags, based on the entered ID.
-|`id`: The ID of the backup object.
+a|`id`: The ID of the backup object.
 
-|`GET`
-|`/v2.1/backups/{id}/recovery_points`
+a|`GET`
+a|`/v2.1/backups/{id}/recovery_points`
 |You can retrieve details of all the recovery points of a specific backup object. Details, such as time stamp and name are retrieved.
-|`id`: The ID of the backup object.
+a|`id`: The ID of the backup object.
 
-|`GET`
-|`/v2.1/backups/{id}/recovery_points/{name}`
+a|`GET`
+a|`/v2.1/backups/{id}/recovery_points/{name}`
 |You can retrieve details of any recovery point of a specific backup object. Details, such as time stamp and name are retrieved.
-|`id`: The ID of the backup object.
+a|`id`: The ID of the backup object.
 `name`: The name of the recovery point.
 
-|`POST`
-|`/v2.1/backups`
+a|`POST`
+a|`/v2.1/backups`
 |You can create a backup object for a particular source volume. Add the values in the request body to create a backup object with the specified parameters, such as backup policy, number of backup copies to retain, and source resource ID.
 |
 ``
@@ -62,10 +63,10 @@ You can use Backup APIs to view and manage the Snapshots (backups or recovery po
   }
 }
 ``
-|`POST`
-|`/v2.1/backups/{id}/tags`
+a|`POST`
+a|`/v2.1/backups/{id}/tags`
 |You can create or replace tags for a backup object for your subtenant. Add the ID of the backup object and the values for the tags in the "key:value pair" format in the request body.
-|`id`: The ID of the backup object.
+a|`id`: The ID of the backup object.
 ``
 {
   "key1": "<Tag 1>",
@@ -73,10 +74,10 @@ You can use Backup APIs to view and manage the Snapshots (backups or recovery po
   "keyN": "<Tag N>"
 }
 ``
-|`PATCH`
-|`/v2.1/backups/{id}`
+a|`PATCH`
+a|`/v2.1/backups/{id}`
 |You can modify any backup object for a volume based on its ID. Add the ID of the backup object and the values that you want to modify in the request body, such as the backup policy details, number of backups to retain, and source resource ID.
-|`id`: The ID of the backup object.
+a|`id`: The ID of the backup object.
 { "source_resource_id": "<Resource ID>",
   "backup_policy": {
     "daily_backups_to_keep": <Number of daily backups to keep>,
@@ -91,15 +92,18 @@ You can use Backup APIs to view and manage the Snapshots (backups or recovery po
   }
 }
 [NOTE]
+====
 You can make a backup object orphan by setting the value of the `source_resource_id` parameter as null in your `PATCH` request. This removes the SnapMirror relationship, but retains the backup volume and the recovery points under it.
+====
 
-|`DELETE`
-|`/v2.1/backups/{id}`
+a|`DELETE`
+a|`/v2.1/backups/{id}`
 |You can delete any backup object, along with all the recovery points, for a volume.
-|`id`: The ID of the backup object.
+a|`id`: The ID of the backup object.
 
-|`DELETE`
-|`/v2.1/backups/{id}/recovery_points/{name}`
+a|`DELETE`
+a|`/v2.1/backups/{id}/recovery_points/{name}`
 |You can delete any recovery point in a specific backup object for a volume.
-|`id`: The ID of the backup object.
+a|`id`: The ID of the backup object.
 `name`: The name of the recovery point.
+|===

@@ -12,74 +12,58 @@ summary: Keystone managing subscriptions
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.931424
-//
-
 [.lead]
-This section describes how to manage your subscriptions from within the NetApp Service Engine interface. For general information about accounts, subscriptions, and services, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html[Billing Accounts, Subscriptions, Services, and Performance].
+You can view and manage your Keystone subscriptions and Tenant Subscriptions using the NetApp Service Engine interface.
 
-This section describes the following tasks:
+For information on accounts, subscriptions, and services, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html[Billing Accounts, Subscriptions, Services, and Performance].
 
-* View and manage subscribed services
-* Increase the capacity of a service
-* Add a new service
-* Terminate a subscription
+== Keystone Subscriptions
 
-=== View and manage subscribed services
+If you are a partner admin, you can view and manage your Keystone Subscriptions from the *Keystone Subscriptions* menu available as part of *SUBSCRIPTIONS*.Keystone subscriptions are created by NetApp admins and can only be viewed and updated by partner admins.
 
-View and manage subscribed services from the Manage Subscription page.
+You can also view and manage the data protection and advanced protection services that you are subscribed to.
 
-To view or manage subscribed services for a tenant, complete the following steps:
+=== Increase the capacity of a subscription
 
-. link:sewebiug_select_tenant.html[Select the tenant].
-. From the menu, select Subscription > Manage.
-. The Manage Subscription page displays the services for the selected subscription associated with the tenant. On this page, you can perform the following tasks:
+You can increase the committed capacity for any of the subscribed service levels to meet growth requirements.
 
-** In case of multiple subscriptions, you can see the details by selecting the subscription in the Subscription No field.
-** View information about the selected subscription including the services in the subscription; and for each service, the committed, consumed, and burst capacities (hover the mouse over the circles)
-** Manage the services in the selected subscription:
-*** Increase the capacity of a service (see Request a Change to a Subscription)
-*** View and manage requested subscription changes
-*** Add a new service
+.Steps
 
-=== Request a change to a subscription
-
-Use this method to increase the capacity on a service when there is a need (for example, when the usage consistently goes into burst or to meet growth requirements).
-
-==== Steps
-
-. link:sewebiug_select_tenant.html[Select the tenant] to which the service belongs.
-. From the menu, select Subscription > Manage.
-. If the tenant has more than one subscription, select the subscription to which the service belongs from the Subscription No field.
-. Locate the service in the display. Use the buttons below the service to request a change.
-+
-|===
-|Select |To
-
-|Increase Capacity
-|Increase the capacity of that service
-|===
-
-. In the dialog box that is displayed, specify the capacity required for the service, and then click Confirm.
-+
-[NOTE]
-The request appears as an unsent request in the Request Changes panel. Before you continue, review any unsent changes in the Requested Changes list.
-
-. Submit changes. The request is sent to your system provider for verification and action.
+. Select the subscription that you to want to increase capacity for from the drop-down menu.
+. Click *Increase Capacity* for the service level that you want.
+. Specify the capacity (in TiB) required.
+. Click *Confirm*.
 
 === Add a service to a subscription
 
-Use this method to add a service to a subscription. A subscription might only have one of each performance level, so for example, if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
+You can add a service to a subscription. A subscription might only have one of each performance level, for example, if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
 
-==== Steps
+.Steps
 
-. link:sewebiug_select_tenant.html[Select the tenant] to which the service belongs.
-. From the menu, select Subscription > Manage.
-. If the tenant has more than one subscription, select the subscription to which the service belongs from the Subscription No field.
-. Click Add Service. In the Add a Subscription Service dialog box, select the subscription service, such as `Object` or `Premium`, and the capacity required, and then click Confirm.
-. The request appears as an unsent request in the Request Changes panel.
-. Review any unsent changes in the Requested Changes list before continuing.
-. Submit changes. The request is sent to your system provider for verification and action.
+. Select the subscription that you to want to increase capacity for from the drop-down menu.
+. Click *Add service*.
+. Select the subscription service that you want to add from the drop-down menu and add the capacity (in TiB) that you want to commit to the service level.
+. Click *Confirm*.
+
+== Tenant Subscriptions
+
+If you are a partner admin, you can create, view, and update your Tenant Subscriptions from the *Tenant Subscriptions* menu available as part of *SUBSCRIPTIONS*. If you are a tenant admin, you can only view the subscriptions.
+
+=== Create a tenant subscription
+
+You can create new subscriptions for your tenants.
+
+.Steps
+
+. Click *New Subscription*.
+. Specify the region, zone, subscription term, rate plans, and other details.
+The tenant subscription is assigned to a Keystone Subscription based on the zone selected. This is because each Keystone Subscription is tied to a zone.
+
++
+[NOTE]
+You cannot create overlapping subscriptions. The start date should be at least the next day as subscriptions start a day ahead of the specified start date. Additionally, it cannot be more than 30 days from the current date.
+
++
+. Click *Create*.
+
+NOTE: You cannot delete any subscriptions. You can only edit existing tenant subscriptions and add new service levels, increase the committed capacity for a service level, and add tags to subscriptions.
