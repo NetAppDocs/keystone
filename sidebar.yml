@@ -53,6 +53,8 @@ entries:
             url: /sewebiug_getting_started_overview.html
           - title: Log in
             url: /sewebiug_log_in_to_the_netapp_service_engine_web_interface.html
+          - title: Roles and operations of service providers and customers
+            url: /sewebiug_partner_service_provider.html
           - title: Select tenant
             url: /sewebiug_select_tenant.html
           - title: View NetApp Service Engine Web Interface
@@ -125,7 +127,7 @@ entries:
             url: /sewebiug_create_an_s3_key_for_a_user.html
           - title: Delete an S3 key for a user
             url: /sewebiug_delete_an_s3_key_for_a_user.html
-      - title: Work with reports
+      - title: View reports
         url: /sewebiug_working_with_reports.html
       - title: Work with backups
         url: /sewebiug_back_up_file_shares_and_disks.html

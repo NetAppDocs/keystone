@@ -30,9 +30,14 @@ You will need:
 
 === Steps
 
-. Select Administration > Users from the menu.
+. Select *ADMINISTRATION > Users* from the menu.
 . Click *Create User*.
 . In the Create User dialog box, specify the user name, email address, first name, last name, display name, and password for the user.
 . Select the primary tenant and the role of the user in that tenancy.
++
+[NOTE]
+You can assign privileges to a user based on their role, such as a NetApp administrator, NetApp administrator with read only privileges, partner administrator, or tenant administrator.
++
+
 . To add additional tenancies, click *Add Tenancy* to display new entry fields and select the tenant and the role of the user in that tenancy.
 . Click *Create*.

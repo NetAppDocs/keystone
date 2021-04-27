@@ -35,16 +35,13 @@ The following table lists the role-based access descriptions.
 |===
 |Role |Access
 
-|Customer administrator
-a|The first customer administrator user is created by the NetApp Keystone team:
-
-* Full access to provision and manage storage through NetApp Service Engine (including file servers and block stores).
-* Can raise service requests and incidents.
-* Can assign roles to other users of NetApp Service Engine.
-|Read-only/guest
+|Partner admin/Account owner |Can perform all tasks of managing tenants and their subscriptions. For more information, see this link.
+|Customer/tenant administrator
+|The customer or tenant administrator can perform all actions related with managing subtenants. For more information, see this link.
+|NetApp admin (read)
 |Read-only access across all components.
-|User
-|Create and manage storage components consumed by end users – disks, shares and buckets.
+|NetApp admin
+|Full access and permissions to all functions in NetApp Service Engine web portal for managing NetApp Keystone Flex Subscription, all activities for partner and tenant administration.
 |===
 
 === Log in with user name and password

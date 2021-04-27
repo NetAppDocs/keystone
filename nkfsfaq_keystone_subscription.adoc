@@ -34,8 +34,14 @@ All the additions are co-term to the existing term period, except if the request
 *Does a new subscription have flexibility to come with a new yearly term?*
 Yes, new subscriptions can have new terms separate from any existing subscriptions.
 
+*Can tenant subscription terms extend beyond the subscription term of the partner?*
+Tenant subscriptions can extend beyond the current Flex Subscription term of the partner. A warning will be displayed when subscriptions are created and also in usage reports.
+
 *Can I mix multiple subscriptions on the same ONTAP cluster?*
 No, each cluster is assigned to a particular subscription.
+
+*Can partners sell more capacity than they have purchased from NetApp to customers?*
+Tenant subscriptions are not limited by the capacity that the partner has purchased. Partners can sell more capacity than they have purchased from NetApp to their customers. The capacity that is in excess of the purchased capacity is referred to as oversubscription.
 
 *Can I reduce the committed capacity?*
 No. During a term, the committed capacity can only be increased but not decreased.
@@ -49,6 +55,9 @@ The burst capacity usage up to 20% of committed capacity is billed at the same r
 
 *What is the benefit of burst capacity?*
 Burst capacity gives you the flexibility to consume storage on demand versus committing for the long term.
+
+*How is burst capacity allocated to tenants?*
+Burst capacity is allocated to partners, who further allocate it to their customers based on requirements.
 
 *Where can I see the committed and burst capacity usage?*
 NetApp Service Engine has built-in dashboards to report consumed capacity against committed capacity.

@@ -19,8 +19,9 @@ summary: Keystone service terms and description overview
 //
 
 * NetApp Keystone Flex Subscription (Flex subscription) is available for a minimum of one year and up to three years. After the initial term, the service is renewable on an annual basis. Capacity can be increased in increments as small as 1 TiB.
-* The minimum capacity is 100 TiB per site, and each site can have one or more clusters to meet the minimum capacity requirement.
+* The minimum capacity is 100 TiB per site, and each site can have one or more clusters to meet the minimum capacity requirement. In a partner-operated model, subscriptions with flexible minimums are created for a customer, per site and across service levels.
 * The 100 TiB capacity can be one single performance level or a combination of levels.
+* Tenant subscriptions are limited to service levels that partners are subscribed to.
 * 20% of burst capacity is available at each site; any burst usage is billed only for that billing period. If you need an additional burst requirements that is greater than 20%, contact support.
 * Committed capacity or performance levels cannot be altered during a contract term.
 * Increasing capacity or changing to higher performance level during term is allowed; however, moving from a higher performance level to a lower level is not permitted.

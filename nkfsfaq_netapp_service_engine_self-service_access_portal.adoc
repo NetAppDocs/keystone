@@ -37,8 +37,8 @@ NetApp Service Engine provides role-based access control (RBAC), and each user c
 
 *What access controls are available?*
 The following access controls are available:
-
-* *Customer Admin.* An administrative person from the customer side who has rights to create file services (which defines Active Directory authentication servers, networking, and so on), changes to subscription, create new users, and so on.
+* *Partner Admin.* An administrator from the partner side who has rights to create and manage tenants, manage subscriptions for tenants, view usage reports, and manage technical aspects of storage.
+* *Customer/tenant Admin.* An administrative person from the customer side who has rights to request changes to subscription, create new users and subtenants, and also create and view file shares, disks, and buckets.
 * *Read-only.* Has access to portal but cannot create any storage or change anything.
 * *User.* Has rights to provision storage, resize, view reports, but cannot perform any administrative job like creating file servers, change subscription, etc.,
 * *App.* Specific results depend on each customer’s installation in accordance with published specifications.
