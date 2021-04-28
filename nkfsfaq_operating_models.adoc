@@ -29,7 +29,7 @@ This operating model allows the customer to subscribe to the offered services, a
 NetApp also creates and manages the partners, tenants, as applicable, and manages the subscriptions.
 
 *What is a partner-operated model?*
-The operating model for the partner or service provider is similar to the NetApp-operated model, but with the partner operating the service for their end customer. In this model, the partner is the referenced contracted party. Tenants are customers of SP/P’s and have no billing relationship with NetApp. They manage their tenancy and customers. The tenants support requests are first triaged by the service provider before being escalated to NetApp.
+The operating model for the partner or service provider is similar to the NetApp-operated model, but with the partner operating the service for their end customer. In this model, the partner is the referenced contracted party. Tenants are customers of the service providers and have no billing relationship with NetApp. They manage their tenancy and customers. The tenants support requests are first triaged by the service provider before being escalated to NetApp.
 
 *What is a customer-operated model?*
 This operating model allows the customer to subscribe to an offered service, according to the selected performance tiers and storage service types. NetApp defines the architecture and products and installs at the customer premises and allows customers to manage the infrastructure using their storage and IT resources. Available storage service types are file, block (iSCSI), and object. In this model, the customer referenced the contracted party, and this can be an end-user or partner.
