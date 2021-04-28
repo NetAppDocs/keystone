@@ -207,7 +207,7 @@ entries:
           - title: Reporting APIs
             url: /seapiref_reporting_apis.html
           - title: Create subnets using APIs
-             url: /seapiref_subnets_apis.html
+            url: /seapiref_subnets_apis.html
           - title: (Consumer) Administration APIs
             url: /seapiref_@consumer@_administration_apis.html
       - title: Administrator APIs
