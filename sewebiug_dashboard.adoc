@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: sewebiug_view_subscribed_services_capacity.html
+permalink: sewebiug_dashboard.html
 keywords: netapp, keystone, view, subscribed, services, capacity,
 summary: Keystone view subscribed services capacity
 ---

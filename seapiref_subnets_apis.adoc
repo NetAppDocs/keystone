@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
-permalink: seapiref_backups_apis.html
-keywords: netapp, keystone, backups, apis,
-summary: Keystone backups APIs
+permalink: seapiref_subnets_apis.html
+keywords: netapp, keystone, subnets, networks, apis
+summary: Keystone network APIs
 ---
 
 = Define network configurations with Subnets APIs

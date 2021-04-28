@@ -35,13 +35,13 @@ The following table lists the role-based access descriptions.
 |===
 |Role |Access
 
-|Partner admin/Account owner |Can perform all tasks of managing tenants and their subscriptions. For more information, see this link.
+|Partner admin/Account owner |Can perform all tasks of managing tenants and their subscriptions. For more information, see link:https://docs.netapp.com/us-en/keystone_keystone21_releasebranch/sewebiug_partner_service_provider.html[this link].
 |Customer/tenant administrator
-|The customer or tenant administrator can perform all actions related with managing subtenants. For more information, see this link.
+|The customer or tenant administrator can perform all actions related with managing subtenants. For more information, see link:https://docs.netapp.com/us-en/keystone_keystone21_releasebranch/sewebiug_partner_service_provider.html[this link].
 |NetApp admin (read)
 |Read-only access across all components.
 |NetApp admin
-|Full access and permissions to all functions in NetApp Service Engine web portal for managing NetApp Keystone Flex Subscription, all activities for partner and tenant administration.
+|Full access and permissions to perform all functions in NetApp Service Engine web portal for managing NetApp Keystone Flex Subscription, and all activities for partner and tenant administration.
 |===
 
 === Log in with user name and password

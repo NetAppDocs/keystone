@@ -39,6 +39,5 @@ NetApp Service Engine provides role-based access control (RBAC), and each user c
 The following access controls are available:
 * *Partner Admin.* An administrator from the partner side who has rights to create and manage tenants, manage subscriptions for tenants, view usage reports, and manage technical aspects of storage.
 * *Customer/tenant Admin.* An administrative person from the customer side who has rights to request changes to subscription, create new users and subtenants, and also create and view file shares, disks, and buckets.
-* *Read-only.* Has access to portal but cannot create any storage or change anything.
-* *User.* Has rights to provision storage, resize, view reports, but cannot perform any administrative job like creating file servers, change subscription, etc.,
-* *App.* Specific results depend on each customer’s installation in accordance with published specifications.
+* *NetApp admin (read).* A NetApp administrator, who has access to all components of the web portal, and can view all details, such as all NetApp Keystone Flex Subscription, partners and tenants subscriptions, and storage. However, this user has no permissions to create, edit, or delete.
+* *NetApp admin.* This user has full access and permissions to perform all functions in NetApp Service Engine web portal for managing NetApp Keystone Flex Subscription, and all activities for partner and tenant administration.
