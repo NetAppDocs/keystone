@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: seapiref_file_services_apis.html
-keywords:
-summary:
+keywords: netapp, keystone, file services, file servers, file shares, apis
+summary: Keystone file services APIs
 ---
 
 = File services APIs
