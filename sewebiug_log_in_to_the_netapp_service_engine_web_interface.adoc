@@ -35,9 +35,9 @@ The following table lists the role-based access descriptions.
 |===
 |Role |Access
 
-|Partner admin/Account owner |Can perform all tasks of managing tenants and their subscriptions. For more information, see link:https://docs.netapp.com/us-en/keystone_keystone21_releasebranch/sewebiug_partner_service_provider.html[this link].
+|Partner admin/Account owner |Can perform all tasks of managing tenants and their subscriptions. For more information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html[this link].
 |Customer/tenant administrator
-|The customer or tenant administrator can perform all actions related with managing subtenants. For more information, see link:https://docs.netapp.com/us-en/keystone_keystone21_releasebranch/sewebiug_partner_service_provider.html[this link].
+|The customer or tenant administrator can perform all actions related with managing subtenants. For more information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html[this link].
 |NetApp admin (read)
 |Read-only access across all components.
 |NetApp admin

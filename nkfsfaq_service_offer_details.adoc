@@ -44,7 +44,7 @@ In a customer-managed (or Lite) deployment, where the NetApp Service Engine UI a
 NetApp Service Engine is the orchestration and management tool that you can use to provision storage and get reports on the service usage.
 
 *Are APIs provided to integrate with customer tools?*
-Yes, RESTful APIs are available to integrate into your own applications.
+Yes, RESTful APIs are available to integrate into your own applications. Navigate to *SUPPORT> API Documentation* to see the API documentation for Flex Subscription services. For more information, see the link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html[Keystone Flex Subscription API guide]
 
 *Who does the monitoring and operations?*
 For the NetApp-operated service, NetApp is responsible for monitoring the infrastructure remotely so that the service is delivered according to the agreed expectations.
