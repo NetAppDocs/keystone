@@ -84,7 +84,7 @@ Select an option to view the performance details for that level (as peak/expecte
 .. Specify when to create the Snapshots:
 
 ** *Hourly.* Specify which minute (of the hour) to take Snapshot (check) and the number of hourly Snapshots to retain.
-** *Daily.* Specify when (hour and minute) to take the Snapshot (check) and the number of hourly Snapshots to retain. If you want to specify multiple hours when the Snapshot has to be taken daily, you can add the values of the hours in a comma-separated list, for example, 5,10,15, and so forth.
+** *Daily.* Specify when (hour and minute) to take the Snapshot (check) and the number of hourly Snapshots to retain. If you want to specify multiple hours when the Snapshot has to be taken daily, you can add the values of the hours in a comma-separated list, for example, 5, 10, 15, and so forth.
 ** *Weekly.* Specify when (day of the week, hour and minute) to take Snapshot (check) and the number of weekly Snapshots to retain.
 ** *Monthly.* Specify when (day of the month, hour, and minute) to take Snapshot and the number of monthly snapshots to retain.
 . If asynchronous disaster recovery is enabled on the underlying block store, asynchronous disaster recovery replication is automatically enabled for the new disk. If you wish to exclude the disk from asynchronous disaster recovery replications, toggle the Asynchronous Disaster Recovery toggle so that asynchronous disaster recovery is disabled.
