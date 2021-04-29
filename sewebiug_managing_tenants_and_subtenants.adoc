@@ -17,7 +17,7 @@ You can view and manage your tenants and subtenants using NetApp Service Engine.
 
 == Tenants
 
-If you are a Partner admin, you can create, modify, and delete a tenant from the *Tenants* menu available under *ADMINISTRATION*. Tenant admins can only view their respective Tenant Subscriptions and subtenants.
+If you are a Partner admin, you can create, modify, and delete a tenant from *ADMINISTRATION* > *Tenants*. Tenant admins can only view their respective Tenant Subscriptions and subtenants.
 
 === Create a tenant
 
@@ -38,7 +38,7 @@ If you are a Partner admin or a Tenant admin, you can view and manage subtenants
 
 === Create a subtenant
 
-If you are a Partner admin or a Tenant admin, you can create, modify, and delete a subtenant from the *Subtenants* menu available under *ADMINISTRATION*. You can also create and manage networks for each subtenant.
+If you are a Partner admin or a Tenant admin, you can create, modify, and delete a subtenant from the *ADMINISTRATION* > *Subtenants*. You can also create and manage networks for each subtenant.
 
 For more information on creating networks, see link:sewebiug_define_network_configurations.html[Define network configurations with subnets].
 
