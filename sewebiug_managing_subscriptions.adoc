@@ -45,6 +45,8 @@ You can add a service to a subscription. A subscription might only have one of e
 . Select the subscription service that you want to add from the drop-down menu and add the capacity (in TiB) that you want to commit to the service level.
 . Click *Confirm*.
 
+NOTE: If you are subscribed to extreme-tiering or premium-tiering, you can edit the performance level of any existing subscription and opt for a tiering-enabled performance level. You can also opt to move from a tiering-enabled performance level to a non-tiering performance level.
+
 == Tenant Subscriptions
 
 If you are a partner admin, you can create, view, and update your Tenant Subscriptions from *SUBSCRIPTIONS* > *Tenant Subscriptions*. If you are a tenant admin, you can only view the subscriptions.
