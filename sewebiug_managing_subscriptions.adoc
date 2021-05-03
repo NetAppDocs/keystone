@@ -19,7 +19,7 @@ For information on accounts, subscriptions, and services, see link:sewebiug_bill
 
 == Keystone Subscriptions
 
-If you are a partner admin, you can view and manage your Keystone Subscriptions from the *Keystone Subscriptions* menu available as part of *SUBSCRIPTIONS*.Keystone subscriptions are created by NetApp admins and can only be viewed and updated by partner admins.
+If you are a partner admin, you can view and manage your Keystone Subscriptions from *SUBSCRIPTIONS* > *Keystone Subscriptions*. Keystone subscriptions are created by NetApp admins and can only be viewed and updated by partner admins.
 
 You can also view and manage the data protection and advanced protection services that you are subscribed to.
 
@@ -45,9 +45,11 @@ You can add a service to a subscription. A subscription might only have one of e
 . Select the subscription service that you want to add from the drop-down menu and add the capacity (in TiB) that you want to commit to the service level.
 . Click *Confirm*.
 
+NOTE: If you are subscribed to extreme-tiering or premium-tiering, you can edit the performance level of any existing subscription and opt for a tiering-enabled performance level. You can also opt to move from a tiering-enabled performance level to a non-tiering performance level.
+
 == Tenant Subscriptions
 
-If you are a partner admin, you can create, view, and update your Tenant Subscriptions from the *Tenant Subscriptions* menu available as part of *SUBSCRIPTIONS*. If you are a tenant admin, you can only view the subscriptions.
+If you are a partner admin, you can create, view, and update your Tenant Subscriptions from *SUBSCRIPTIONS* > *Tenant Subscriptions*. If you are a tenant admin, you can only view the subscriptions.
 
 === Create a tenant subscription
 

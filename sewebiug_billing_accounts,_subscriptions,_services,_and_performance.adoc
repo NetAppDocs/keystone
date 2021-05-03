@@ -12,12 +12,6 @@ summary: Keystone billing accounts, subscriptions, services, and performance
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:38.852412
-//
-
 [.lead]
 A subscription storage service is billed to a billing account. Each billing account is linked to a tenant. A billing account can be billed for one or more subscriptions.
 
@@ -30,9 +24,11 @@ A subscription refers to a group of storage services that are subscribed to and 
 [NOTE]
 If storage is required in multiple data centers, a separate subscription is required for each data center, with separate commitments.
 
-A storage service is a subscribed-to committed storage capacity with an associated performance level. NetApp Service Engine offers file and block storage at extreme, premium, and standard performance levels, and object storage at an object performance service level.
+A storage service is a subscribed-to committed storage capacity with an associated performance level. NetApp Service Engine offers file and block storage at extreme, extreme-tiering, premium, premium-tiering, and standard performance levels, and object storage at an object performance service level.
 
-When created, file and block storage items are associated with a performance level. Moving workloads between performance service levels is possible as requirements change. The extreme, premium, and standard performance levels offer different levels of I/O performance (IOPS) and throughput (MBps) so storage can be tailored to requirements.
+The extreme-tiering and premium-tiering performance levels enable you to reduce your storage footprint and associated costs by monitoring and tiering your cold or inactive data to low-cost object storage tiers. The tiering policy is set to auto, where data left inactive for 31 days is tiered by default. You can modify this time period to be any number of days from 3 to 61 days.
+
+When created, file and block storage items are associated with a performance level. Moving workloads between performance service levels is possible as requirements change. The extreme, extreme-tiering, premium, premium-tiering, and standard performance levels offer different levels of I/O performance (IOPS) and throughput (MBps) so storage can be tailored to requirements.
 
 Burst usage is allowed on services up to a certain point; it is monitored and billed at separate charge rates (as defined in the subscription). For more information about capacity and usage, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#committed,-consumed,-and-burst-capacity,-and-excess-usage[Committed, consumed, and burst capacity, and excess usage]. DP services that support backups and disaster recovery are also offered.
 

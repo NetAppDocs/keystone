@@ -12,18 +12,15 @@ summary: NetApp Keystone Subscription
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-08 17:15:36.922050
-//
-
 [.lead]
 *What is the minimum committed capacity?*
 The minimum committed capacity for a NetApp Keystone Flex Subscription (Flex Subscription) is 100 TiB, per site across one or more service tiers.
 
 *What does Flex Subscription map to?*
 Flex Subscription maps to a single site or a single data center and it can comprise of different performance service levels.
+
+*What are the benefits of extreme-tiering and premium-tiering performance levels?*
+Tiering is enabled in the extreme-tiering and premium-tiering performance levels, which enables you to reduce your storage footprint and associated costs. NetApp assumes that 25% of your data is hot, while the remaining 75% is less frequently used or cold, and moves it to cold storage. Additionally, you can check usage reports to understand how frequently data is accessed and enable tiering service based on the information.
 
 *How can I increase the committed capacity in a subscription?*
 You can submit a capacity addition request through the NetApp Service Engine management tool or through their NetApp Keystone success manager.
