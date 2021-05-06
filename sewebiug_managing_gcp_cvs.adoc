@@ -20,14 +20,14 @@ Subscriptions to Cloud Volumes Service for Google Cloud Platform (GCP) are assoc
 
 == Managing your subscribed services on GCP
 
-You can manage your subscribed services on Google Cloud from the *SUBSCRIBED SERVICES* menu on the left navigation pane. The Subscribed Services page displays all the subscribed services for all subtenants of a selected tenant. You can view, modify, and delete the subscribed services from this page. You can also add a new service by following these steps.
+You can manage your subscribed services on Google Cloud, from the *SUBSCRIBED SERVICES* menu on the left navigation pane. The Subscribed Services page displays all the subscribed services for all subtenants of a selected tenant. You can view, modify, and delete the subscribed services from this page. You can also add a new service by following these steps.
 
 === Before you begin
 
-You need:
+You need to ensure that:
 
-* The subtenant subscribed to the Google Cloud service.
-* The JSON file for the subscriber's service account that is associated with the Google Cloud instance.
+* The subtenant is subscribed to the Google Cloud service.
+* You have the JSON file for the subscriber's service account and you are aware of the GCP project number that is associated with the Google Cloud instance.
 * To ensure that Cloud Volumes Service for GCP is already configured on Cloud Manager by your support team. For more information, see https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html[Set up Cloud Volumes Service for Google Cloud].
 
 ==== Steps
