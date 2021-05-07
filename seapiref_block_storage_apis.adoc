@@ -15,7 +15,7 @@ summary: Keystone block storage APIs
 [.lead]
 You can use Block Storage APIs to view and manage your block storage.
 
-Before you create disks, you have to create block stores. After you create disks, you have to create host groups to access them. For more information, see link:sewebiug_working_with_block_storage_overview.html[Work with block storage].
+Before you create disks, you have to create block stores. When you create a disk, you have to a create host group or select an existing host group to access the disk. For more information, see link:sewebiug_working_with_block_storage_overview.html[Work with block storage].
 
 == Block stores
 
@@ -41,6 +41,7 @@ a|`/v2.1/blockstores`
 |You can create a block store. Add the values in the request body to create a block store with the specified parameters, such as service protocol, subtenant ID, zone, subnet ID, and tags.
 a|`subtenant_id`: The ID of the subtenant.
 `zone`: The name of the zone.
+`subnet_id`: The ID of the subnet.
 
 a|`POST`
 a|`/v2.1/blockstores/{id}/tags`
@@ -91,7 +92,7 @@ a|`subtenant_id`: The ID of the subtenant.
 `protocol`: The storage protocol used for block device access.
 `os_type`: The type of the host operating system.
 `hostgroup_mappings`: The host group mappings.
-`service_level`: The name of the service level.
+`service_level`: The service level name applicable: Standard, Premium, Premium-Tiering, Extreme, or Extreme-Tiering.
 `size_gb`: The size of the disk in GBs.
 
 a|`POST`
@@ -133,13 +134,13 @@ Access control to disks is managed with host groups. You can retrieve and manage
 
 a|`GET`
 a|`/v2.1/hostgroups`
-|You can retrieve the details of all your host groups. Retrieves details of the host groups, such as name, subtenant details, tenant details, zone, protocol, initiators, disk, and tags.
+|You can retrieve the details of all your host groups. Retrieves details of the host groups, such as name, subtenant details, tenant details, zone, protocol, initiators, disks using the host group, and tags.
 a|`offset`: The number of items to skip before starting to collect the result set.
 `limit`: The numbers of items to return.
 
 a|`GET`
 a|`/v2.1/hostgroups/{id}`
-|You can retrieve the details of a specific host group. Retrieves details of the host group, such as name, subtenant details, tenant details, zone, protocol, initiators, disk, and tags based on the entered ID.
+|You can retrieve the details of a specific host group. Retrieves details of the host group, such as name, subtenant details, tenant details, zone, protocol, initiators, disks using the host groups, and tags based on the entered ID.
 a|`id`: The ID of the host group.
 
 a|`POST`
@@ -179,7 +180,7 @@ a|`GET`
 a|`/v2.1/hostgroups/{id}/initiators/{alias}`
 |You can retrieve the details of a specific initiator. Retrieves the initiator based on the entered ID and alias.
 a|`id`: The ID of the host group.
-`alias`: The alias (server name or port number) of the initiator.
+`alias`: The alias name of the initiator.
 
 a|`POST`
 a|`/v2.1/hostgroups/{id}/initiators`
@@ -189,14 +190,14 @@ a|You can create an initiator for a host group. Add the values for the initiator
 When adding initiators to a host group, the initiator should match the host group protocol: use IQNs for host groups with iSCSI protocol, and WWPNs for host groups with FC protocol.
 ====
 a|`id`: The ID of the host group.
-`alias`: The alias (server name or port number) of the initiator.
+`alias`: The alias name of the initiator.
 `initiator`: The initiator (iSCSI Qualified Names or FC WWPNs).
 
 a|`PATCH`
 a|`/v2.1/hostgroups/{id}/initiators/{alias}`
 |You can modify an initiator. Add the new initiator in the request body.
 a|`id`: The ID of the host group.
-`alias`: The alias (server name or port number) of the initiator.
+`alias`: The alias name of the initiator.
 `initiator`: The initiator (iSCSI Qualified Names or FC WWPNs).`
 
 a|`DELETE`
@@ -207,5 +208,5 @@ a|You can delete an initiator by the ID of the host group and the alias of the i
 Deleting an initiator from a host group affects all the disks to which the host group is mapped to.
 ====
 a|`id`: The ID of the host group.
-`alias`: The alias (server name or port number) of the initiator.
+`alias`: The alias name of the initiator.
 |===

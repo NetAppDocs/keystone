@@ -12,12 +12,6 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-19 09:25:09.029003
-//
-
 [.lead]
 The Cloud Orchestration APIs NetApp Service Engine support connecting Cloud Volumes Services to NetApp Service Engine and to work with them from within the NetApp Service Engine. Azure NetApp Files (ANF) and Google Cloud Platform (GCP) are supported for Cloud Volumes Services.
 
@@ -333,7 +327,7 @@ The following table lists the capacity pool attributes.
 |The size of the capacity pool in TB.
 |`service_level`
 |String
-|The service level name.
+|The service level name applicable: Ultra, Premium, or Standard.
 |`anf_account_name`
 |String
 |The Azure NetApp Files account instance identifier.

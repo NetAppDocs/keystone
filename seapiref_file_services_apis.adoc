@@ -91,7 +91,7 @@ a|`name`: The name of the file share.
 `share_path`: The path of the file share.
 `fileserver_id`: The ID of the file server.
 `size_gb`: The size of the file share in GBs.
-`service_level`: The name of the service level.
+`service_level`: The service level name applicable: Standard, Premium, Premium-Tiering, Extreme, or Extreme-Tiering.
 `protocol`: The protocol used to access the file share (NFS, CIFS, or multi-protocol).
 `security_style`: The security style (Unix or NTFS).
 `export_policy`: The export policy of the file share.
@@ -118,7 +118,7 @@ a|`/v2.1/fileshares/{id}`
 a|`id`: The ID of the file share.
 `name`: The name of the file share.
 `size_gb`: The size of the file share in GBs.
-`service_level`: The name of the service level.
+`service_level`: The service level name applicable: Standard, Premium, Premium-Tiering, Extreme, or Extreme-Tiering.
 `protocol`: The protocol used to access the file share (NFS, CIFS, or multi-protocol).
 `export_policy`: The export policy of the file share.
 
