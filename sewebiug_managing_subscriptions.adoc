@@ -19,7 +19,12 @@ For information on accounts, subscriptions, and services, see link:sewebiug_bill
 
 == Keystone Subscriptions
 
-If you are a partner admin, you can view and manage your Keystone Subscriptions from *SUBSCRIPTIONS* > *Keystone Subscriptions*. Keystone subscriptions are created by NetApp admins and can only be viewed and updated by partner admins.
+If you are a partner admin, you can view and manage your Keystone Subscriptions from *SUBSCRIPTIONS* > *Keystone Subscriptions*. Keystone subscriptions are created by NetApp admins. Partner admins can view their Keystone subscription and create service requests to:
+
+* Increase the capacity of the subscription
+* Add a service to subscription
+
+The service request is handled by the GSSC team and the Zuora team updates the corresponding subscription in Zuora.
 
 You can also view and manage the data protection and advanced protection services that you are subscribed to.
 

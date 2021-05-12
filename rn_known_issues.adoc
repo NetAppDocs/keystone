@@ -12,30 +12,38 @@ summary: known issues in NetApp Service Engine
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-11-05
-//
-
 [.lead]
 The following known issues have been reported in this release of NetApp Service Engine.
 
-
+[cols="3*",options="header"]
 |===
 |Known Issue |Description |Workaround
 
 |Limitations in synchronous data protection
 |There is an issue where the VLANs, IPspaces, and Broadcast domains are not defined on the secondary partner of an MetroCluster cluster. This issue can affect recovery of data from the replica zone.
 |Place a service request for GSSC to perform a manual network configuration on the partner cluster. The network configuration can be done in advance if the network components (VLAN, IPspace, and Broadcast domains) are known.
-|Limitations in disabling and deleting volumes that are disaster-recovery enabled
-|If there are two or more volumes in a storage VM that are disaster-recovery enabled, disaster-recovery cannot be disabled for a file share or disk.
-|Raise a service request for a clean deletion or disabling of these volumes.
-|Limitation in editing or deleting backup policy
-|A backup policy, once enabled, cannot be modified or deleted.
-|Raise a service request for GSSC to modify or remove the backup policy.
-|Disaster-recovery enabled file shares or disks to be created at an interval of 15 minutes
-|When disaster-recovery enabled file shares or disks are created at short intervals, the created volumes have a status of "Contact support". This happens due to the transfer status of the storage VM configuration.
-|Create volumes at an interval of around 15 minutes to ensure that the storage VM configuration is transferred.
-
+|Limitations in disabling and deleting volumes that are disaster recovery enabled
+|If there are two or more volumes in a storage VM that are disaster recovery enabled, disaster recovery cannot be disabled for a file share or disk.
+|Raise a service request for GSSC to resolve the issue.
+|Limitations in deleting file servers and block stores that are disaster recovery enabled
+|Deleting a disaster recovery enabled block store or file share might fail because peering is not removed due to timeout.
+|Failed deletion is available in “Contact Support” and Support will be notified via OpsRamp Ticket.
+|Limitations for long running jobs placed in "Queued” state.
+|When jobs run for an extended time, they are placed in the “Queued” state. A support ticket has to be raised to identify the issue.
+|Raise a service request for GSSC to resolve the issue.
+|Limitation when creating multiple snapshots
+|When multiple snapshots are triggered for creation, the web page initially displays only the last snapshot issued.
+|Auto job picks up the other snapshots within 15 minutes.
+|Disaster recovery enabled file servers on the secondary controllers are not deleted.
+|All primary volumes and the replication relationships are removed. However, the disaster recovery object is not deleted. This object does not consume any capacity or networking.
+|There is no workaround for this issue.
+|Limitation in disabling backup on volumes
+|Raise a service request for GSSC to resolve the issue.
+|There is no workaround for this issue.
+|Limitation with deleting network subnets
+|Customers are unable to delete network subnets.
+|Raise a service request for GSSC to resolve the issue.
+|Limitation in deleting VLAN using API
+|Deleting a VLAN that has a subnet associated with it leaves an empty subnet stub in the UI.
+|Raise a service request for GSSC to resolve the issue.
 |===
