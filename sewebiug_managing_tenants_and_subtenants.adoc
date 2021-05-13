@@ -27,7 +27,7 @@ You can create a tenant if you are a partner admin. You can also create and mana
 
 . Click *Create Tenant*.
 . Add a name and the code.
-The code that represents the tenant should be a unique within a NetApp Service Engine instance and consist of lower-case characters.
+The code that represents the tenant should be unique within a NetApp Service Engine instance and consist of lower-case characters.
 . Click *Create*.
 
 NOTE: You can only modify the name and description of an existing tenant. Additionally, you cannot delete a tenant that has subtenants or storage components associated with it.
