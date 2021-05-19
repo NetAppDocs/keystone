@@ -181,7 +181,7 @@ entries:
             url: /sewebiug_modify_user_details.html
           - title: Delete a user
             url: /sewebiug_delete_a_user.html
-      - title: Manage tenant networks
+      - title: Manage networks
         url: /sewebiug_define_network_configurations.html
   - title: NetApp Service Engine API Reference
     url: /seapiref_overview_of_netapp_service_engine_apis.html

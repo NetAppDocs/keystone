@@ -13,11 +13,11 @@ summary: Keystone managing subtenants
 :imagesdir: ./media/
 
 [.lead]
-You can view and manage your tenants and subtenants using NetApp Service Engine.
+You can view and manage your tenants and subtenants by using NetApp Service Engine. The initial tenancy is set up by NetApp support for service providers/partners and tenants. The region, zone, and subscription are already configured by support, and are available when you create tenants and subtenants under your tenancy.
 
 == Tenants
 
-If you are a Partner admin, you can create, modify, and delete a tenant from *ADMINISTRATION* > *Tenants*. Tenant admins can only view their respective Tenant Subscriptions and subtenants.
+If you are a partner admin, you can create, modify, and delete a tenant from *ADMINISTRATION* > *Tenants*. Tenant admins can only view their respective Tenant Subscriptions and subtenants. For the tenants under your partner tenancy, you can also define the network.
 
 === Create a tenant
 

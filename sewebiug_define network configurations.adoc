@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_define_network_configurations.html
-keywords: netapp, keystone, subnet, subtenant, create, delete
+keywords: netapp, keystone, subnet, subtenant, network, tenant network, IPspace, VLAN, port
 summary: Create and delete subnets
 ---
 
-= Define network configurations with subnets
+= Define networks for tenants and subtenants
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,30 +13,59 @@ summary: Create and delete subnets
 :imagesdir: ./media/
 
 [.lead]
-You can create subnets for your tenants and subtenants and attach them to your workloads to define your network configuration. You can create only one network for a zone.
+A service provider or partner admin can define networks for tenants based on their subscription zones and assign VLANs to each network. They can also create a subnet (network) with each VLAN belonging to the same zone and tenancy, and assign it to a subtenant under that tenancy.
+A predefined network or subnet is required when provisioning file servers or block stores by a subtenant. File and block storage VMs are owned by subtenants in NetApp Service Engine, whereas they are owned by IPspaces in ONTAP. When you define the networking boundary at a subtenant level, the subtenant in NetApp Service Engine maps to a single ONTAP IPspace for that zone. This eliminates risk and ensures that two distinct subtenants do not select the same VLAN ID and end up in the same IPspace.
 
-File and block storage VMs are owned by tenants and subtenants in NetApp Service Engine, whereas they are owned by IPspaces in ONTAP. When you define the networking boundary at a tenant or subtenant level, the tenant or subtenant in NetApp Service Engine maps to a single ONTAP IPspace for that zone. This eliminates risk and ensures that two distinct tenants do not select the same VLAN ID and end up in the same IPspace. Also, each tenant can have multiple networks, and each network can have multiple VLANs.
+* Only one network can be created for a zone (for each subscription, as a subscription is tied to a zone).
+* One tenant can have multiple networks, one for each zone.
+* There can be multiple VLANs for a tenant network.
+* Only one subnet can be created for a zone and VLAN combination for a subtenant.
 
-A subnet is aligned to a VLAN within a tenant or subtenant and zone. You should select a predefined network or subnet when provisioning file servers or block stores within NetApp Service Engine. You can view the list of subnets created for your tenant or subtenant on the *Subnets* page.
+[NOTE]
+A tenant admin can only view the networks for their tenancy and the subnets for subtenants.
 
-Only a Partner admin has access to the networks of each tenant and can create subnets. Each tenant has their VLAN and port override.
+== Define a network for a tenant
 
-NOTE: A configurable and unique VLAN pool is allocated to each tenant based on their requirements. When a tenant or subtenant is deleted, the VLANs associated with it are released back to the tenant VLAN pool.
+As a partner admin, you can create networks of each tenant. A configurable and unique VLAN pool can be allocated to each tenant based on their requirement. When a tenant is deleted, the VLANs associated with it are released back to the tenant VLAN pool.
 
-== Create a subnet
+.Before you begin
 
-You can create subnets for your tenants and subtenants from *NETWORKS* > *Subnets*. The subnet definition includes the VLAN ID that is implemented in ONTAP, the CIDR address range, and a route specification.
+* Ensure the tenants have been created
+* You should know the zone, VLANs, and port override configuration
 
 .Steps
+. From the *ADMINISTRATION* > *Tenants* screen, select the required tenant.
+. Click the networks  icon. The Networks screen is displayed with the list of networks for the tenant.
+. Click *Create Network*. Specify the zone, VLAN, and port override, if applicable.
++
+[NOTE]
+The port override is configured by the support team during zone configuration. If a port override is not specified, the network uses the default port and creates a new VLAN in the IPspace for that tenant.
++
+
+. Click *Create*. The new network is listed for the tenant on the Networks screen.
+
+If the network for a zone is created, you can only assign new VLANs to the network. Click the + icon and add the VLAN and port override details. Click *Update*.
+
+== Create a subnet for a subtenant
+
+As a partner admin, you can create subnets for your subtenants from *NETWORKS* > *Subnets*. The subnet definition includes the VLAN ID that is implemented in ONTAP, the CIDR address range, and a route specification. A subnet is aligned to a VLAN within a tenant and zone. You cannot create two subnets with the same VLAN for a zone.
+
+.Before you begin
+
+* The VLAN and zone configuration should already have been complete for the tenant
+* You should be aware of the requirements for the subnet to be created
+
+.Steps
+. Select the required tenant. The subtenants for whom you create the subnets should be under this tenant.
+. Click *NETWORKS* > *Subnets*. You can view the list of subnets created for your subtenants on the *Subnets* page.
 . Click *Create Subnet*.
-. Specify the tenant or subtenant, zone, name of the subnet, VLAN, and Subnet CIDR. You can also add route specification and tags.
-The VLAN should be within the selected zone. Additionally, in route specification, the *Destination* should be unique and part of the mentioned VLAN, and multiple routes can have the same value for *Metric*.
+. Specify the subtenant, zone, name of the subnet, VLAN, and Subnet CIDR. You can also add route specification and tags.
 
 +
 [NOTE]
-If a new port override is not specified, the network uses the default port and creates a new VLAN in the IP space for that tenant.
-
+In route specification, the *Destination* should be unique and part of the mentioned VLAN, and multiple routes can have the same value for *Metric*.
 +
+
 .	Click *Create*.
 
 NOTE: You cannot edit or delete a subnet. You can only edit the tags associated with it.

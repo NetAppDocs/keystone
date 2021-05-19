@@ -5,7 +5,7 @@ keywords: netapp, keystone, release notes, new features, what's new,
 summary: new features in NetApp Service Engine
 ---
 
-= What's new in NetApp Service Engine
+= What's new in this release of NetApp Keystone Flex Subscription services
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,13 +13,13 @@ summary: new features in NetApp Service Engine
 :imagesdir: ./media/
 
 [.lead]
-The following features and enhancements have been introduced in NetApp Service Engine 2.0.1:
+The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription services (Flex Subscription services):
 
-== Features introduced in NetApp Keystone Flex Subscription 2.1
+== Features introduced in NetApp Service Engine 2.1
 
-=== Keystone for Service Providers
+=== Introducing Flex Subscription services for service providers
 
-NetApp Service Engine now supports the management of a multi-tenant environment by a service provider. You can perform the functions of provisioning, reporting, billing, and managing customers having their own subscriptions.
+NetApp Service Engine now supports the management of a multi-tenant environment by a service provider. You can perform the functions of provisioning, reporting, billing, and managing customers having their own subscriptions. For supporting this feature, the following enhancements have been made:
 
 * *Dashboard:* The Dashboard displays information on the storage subscriptions, such as service tiers, capacity usage for each service level, and add-on services, for a specific subscription number. As a service provider, you can view the details of your NetApp Keystone Flex Subscription and tenant subscriptions. As a tenant administrator, you can view the details of all the tenant subscriptions for your tenancy.
 * *Reporting:* You can create capacity and performance reports with respect to your NetApp Keystone Flex Subscription usage and also for your tenant usage. As a partner administrator, you can view the capacity report for your Flex Subscription usage from *Reports* > *Keystone Usage*. As a partner admin, you can view the capacity usage reports for a specific tenant or view capacity usage reports for your tenancy as a tenant/customer admin from *Reports* > *Tenant Usage*/*Capacity Usage*.
