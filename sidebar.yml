@@ -34,10 +34,10 @@ entries:
   - title: Flex Subscription FAQ
     url: /nkfsfaq_overview.html
     entries:
-      - title: Service offer details
-        url: /nkfsfaq_service_offer_details.html
       - title: Flex Subscription
         url: /nkfsfaq_keystone_subscription.html
+      - title: Service offer details
+        url: /nkfsfaq_service_offer_details.html
       - title: Operating model
         url: /nkfsfaq_operating_models.html
       - title: NetApp Service Engine/Self-Service access portal

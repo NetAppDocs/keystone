@@ -55,7 +55,7 @@ To log in with a user name and password, you need:
 ==== Steps
 
 . In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
-. Select Local user sign in.
+. Select *Local user sign in*.
 . On the Log in to NetApp Keystone page, enter your user name and password and click *Log In*.
 . After successful login, the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
 
@@ -66,17 +66,17 @@ If your login is successful but you cannot see the dashboard, check with your Ne
 
 To log in with NetApp SSO, you need:
 
-* A NetApp SSO account; you can request an account at the NetApp Support site; from the log-in screen, follow the Create NetApp SSO account
-* The URL to the NetApp Service Engine portal
-* A web browser
+* A NetApp SSO account. You can request an account at the NetApp Support site; from the log-in screen by selecting *Create NetApp SSO account* and following the next steps.
+* The URL to the NetApp Service Engine portal.
+* A web browser.
 
 ==== Steps
 
 . In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
 . Select NetApp SSO.
-. On the SSO log- in page, enter your user name and password and click *Sign In*.
+. On the SSO login page, enter your user name and password and click *Sign In*.
 +
-After the successful login the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
+After the successful login the NetApp Service Engine web interface loads, the Flex Subscription dashboard is displayed. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
 
 === Log out of the NetApp Service Engine web interface
 

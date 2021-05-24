@@ -5,7 +5,7 @@ keywords: netapp, keystone, overview,
 summary: NetApp Keystone Overview
 ---
 
-= NetApp Keystone
+= NetApp Keystone FAQ
 :hardbreaks:
 :nofooter:
 :icons: font

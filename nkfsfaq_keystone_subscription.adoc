@@ -5,7 +5,7 @@ keywords: netapp, keystone, subscription, subscriptions,
 summary: NetApp Keystone Subscription
 ---
 
-= NetApp Keystone Flex Subscription
+= NetApp Keystone Flex Subscription FAQ
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,8 +15,20 @@ summary: NetApp Keystone Subscription
 [.lead]
 The following questions give answers to your frequent queries about NetApp Keystone Flex Subscription services.
 
-*What is the minimum committed capacity?*
-The minimum committed capacity for a NetApp Keystone Flex Subscription (Flex Subscription) is 100 TiB, per site across one or more service tiers.
+*What is offered as part of NetApp Keystone Flex Subscription?*
+NetApp Keystone Flex Subscription (Flex Subscription) is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
+
+*What storage service offers are provided as part of Flex Subscription?*
+The following chart shows the data storage performance service levels offerings.
+
+image:nkfsosm_image5.png[Error: Missing Graphic Image]
+
+*What add-on services are supported?*
+Advanced data protection (backup and disaster recovery) and Hybrid Cloud Tiering with FabricPool are add-on services that can be chosen at an additional cost.
+
+*What service levels does NetApp guarantee with the service?*
+In a NetApp operated scenario, NetApp Keystone guarantees IOPS/TiB for the storage that is provisioned and the latency for each service level.
+
 
 *What does Flex Subscription map to?*
 Flex Subscription maps to a single site or a single data center and it can comprise of different performance service levels.
@@ -24,26 +36,11 @@ Flex Subscription maps to a single site or a single data center and it can compr
 *What are the benefits of extreme-tiering and premium-tiering performance levels?*
 Tiering is enabled in the extreme-tiering and premium-tiering performance levels, which enables you to reduce your storage footprint and associated costs. NetApp assumes that 25% of your data is hot, while the remaining 75% is less frequently used or cold, and moves it to cold storage. Additionally, you can check usage reports to understand how frequently data is accessed and enable tiering service based on the information.
 
-*How can I increase the committed capacity in a subscription?*
-You can submit a capacity addition request through the NetApp Service Engine management tool or through their NetApp Keystone success manager.
-
-*Does increasing the capacity extend the term?*
-All the additions are co-term to the existing term period, except if the request is made in the last 90 days of the subscription, in which case the term must extend for at least 12 months.
-
-*Does a new subscription have flexibility to come with a new yearly term?*
-Yes, new subscriptions can have new terms separate from any existing subscriptions.
-
-*Can tenant subscription terms extend beyond the subscription term of the partner?*
-Tenant subscriptions can extend beyond the current Flex Subscription term of the partner. A warning will be displayed when subscriptions are created and also in usage reports.
-
-*Can I mix multiple subscriptions on the same ONTAP cluster?*
-No, each cluster is assigned to a particular subscription.
-
 *Can partners sell more capacity than they have purchased from NetApp to customers?*
 Tenant subscriptions are not limited by the capacity that the partner has purchased. Partners can sell more capacity than they have purchased from NetApp to their customers. The capacity that is in excess of the purchased capacity is referred to as oversubscription.
 
-*Can I reduce the committed capacity?*
-No. During a term, the committed capacity can only be increased but not decreased.
+*Are APIs provided to integrate with customer tools?*
+Yes, RESTful APIs are available to integrate into your own applications. Navigate to *SUPPORT> API Documentation* to see the API documentation for Flex Subscription services. For more information, see the link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html[Keystone Flex Subscription API guide]
 
 *What is burst capacity?*
 You can increase and decrease usage up to 20% above the committed capacity. The burst capacity usage is measured on a daily basis and billed only when used.
@@ -84,9 +81,3 @@ Yes, workloads can be moved between tiers, provided the user has subscribed to t
 
 *What software version (for example, ONTAP) is installed as default?*
 Depending on the service tier subscribed (for example, ONTAP with File and Block services, SANtricity for Block, and StorageGrid for Object) the support team installs the latest stable release with no security or feature issues.
-
-*Can I request a particular software version?*
-No. NetApp Keystone has standardized the software version across all its customer base.
-
-*Will I be informed about software upgrades?*
-Yes. All maintenance/upgrade activities are communicated to and scheduled at a mutually agreeable time with the customer by the NetApp Keystone Success Manager.
