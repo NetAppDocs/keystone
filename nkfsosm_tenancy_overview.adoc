@@ -21,6 +21,9 @@ summary: NetApp Keystone Flex Subscription Tenancy Overview
 [.lead]
 NetApp Keystone Flex Subscription (Flex Subscription) uses the concepts of *Tenant* and *Subtenant* as hierarchical entities that own logical storage resources. The concept of multi-tenancy is also supported, where multiple tenants are tied to a partner or service provider. The entities partner and service provider are used interchangeably here.
 
+[NOTE]
+In the context of Flex Subscription, a single tenancy is a NetApp-operated model, while a multi-tenancy is a partner-operated model.
+
 .Tenants
 A tenant is the primary billing entity defined in Flex Subscription. Each customer that is onboarded into Flex Subscription and holds a subscription to the services exists as a Flex Subscription tenant. The customer provides NetApp with a customer name and/or identifier for the purposes of onboarding tenants and tracking subscription dates and commitment terms.
 
@@ -31,13 +34,13 @@ Flex Subscription subtenants exist entirely within a parent tenant with a many-t
 
 image:nkfsosm_image10.png[]
 
-== Subscription model in a single-tenant environment
+== Subscription model in a NetApp-operated (single tenancy) environment
 
 * A subscription is created by NetApp admin or GSSC for a tenant and zone.
-* The subscription name is auto-generated, based on the names of the tenant and zone.
+* The subscription names are derived from the billing entity for which the tenant is subscribed.
 * In the subscription, the start-date and contract term are configured.
-* There can be only one active subscription for the combination of a tenant, zone, and service level.
-* Each subscription can have multiple rate plans, where each rate plan maps to a single service level.
+* There can be only one active subscription for each tenant-zone
+* One subscription can have multiple rate plans and each rate plan corresponds to a service level.
 * Each rate plan has a committed capacity per service level.
 * Service levels can include:
 ** Extreme
