@@ -24,18 +24,11 @@ NetApp Service Engine now supports the management of a multi-tenant environment 
 
 * *Dashboard:* The Dashboard displays information on the storage subscriptions, such as service tiers, capacity usage for each service level, and add-on data protection services, for a specific subscription number. As a service provider, you can view the details of your NetApp Keystone Flex Subscription and tenant subscriptions. As a tenant administrator, you can view the details of all the tenant subscriptions for your tenancy.
 * *Reporting:* You can create capacity and performance reports with respect to your NetApp Keystone Flex Subscription usage and also for your tenant usage. As a partner administrator, you can view the capacity report for your Flex Subscription usage from *Reports* > *Keystone Usage*. As a partner admin, you can view the capacity usage reports for a specific tenant from *Reports* > *Tenant Usage*/*Capacity Usage*. As a tenant administrator, you can view the tenancy reports from *Reports* > *Tenant Usage*.
-+
-.API support:
-You can use the `/reports` API to view the reports for your respective tenancies.
-+
-
 * *Subscription:* As a partner admin, you can view and update your Flex Subscription and tenant subscriptions from *SUBSCRIPTIONS* > *Keystone Subscriptions* and *SUBSCRIPTIONS* > *Tenant Subscriptions* respectively. As a tenant administrator, you can only view your tenant subscriptions.
 * *Users:* Based on your role, you can assign privileges to a new or existing user within a tenancy as per the requirement. The role can be NetApp administrator, NetApp administrator with read only privileges, partner administrator, or tenant administrator. As a partner administrator, you can assign only partner administrator or tenant administrator roles to new users. A tenant administrator user can assign only the tenant administrator role to other users.
 * *Networks menu:* As a partner administrator, you can view the networks defined for your tenancy. You can also create subnets for your subtenant and zone from *NETWORKS* > *Subnets*. This is required while provisioning storage by the end customers or subtenants.
-+
-.API support:
-The `/tenants/{tenant_id}/zones/{zone_name}/subnets` and `/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}/tags` APIs are being offered as a part of this release to create and view subnets for subtenants.
-+
+* API support: The `/tenants/{tenant_id}/zones/{zone_name}/subnets` and `/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}/tags` APIs are being offered as a part of this release to create and view subnets for subtenants.
+
 For more information on this feature, see the following links:
 * link:nkfsosm_overview.html[Operational model, roles, and responsibilities]
 * link:nkfsosm_tenancy_overview.html[Tenancy and multi-tenancy in Flex Subscription]
