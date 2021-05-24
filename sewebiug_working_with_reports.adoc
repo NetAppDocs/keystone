@@ -5,7 +5,7 @@ keywords: netapp, keystone, working, reports,
 summary: Keystone working with reports
 ---
 
-= Working with reports
+= View reports
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,21 +19,43 @@ summary: Keystone working with reports
 //
 
 [.lead]
-This section describes the Capacity Usage report.
+You can create capacity and performance reports with respect to your NetApp Keystone Flex Subscription usage and also for your tenant usage.
 
-=== Capacity usage
+=== Keystone subscription capacity usage report
 
-The Capacity Usage page displays capacity usage over time for each storage service in a subscription. Use the graphical reports on this page to view the trends usage for both storage services, as well as add-on services such as Data Protection and over time. When a service is in burst, a banner displays the burst capacity used in the current billing cycle.
+The Capacity Usage for Keystone Subscriptions page displays capacity usage for each storage service in a subscription over time. As a NetApp administrator, You can view the capacity usage report for all tenants and partners in a subscription. As a partner administrator, you can view the capacity report for your Flex Subscription usage.
+Use the graphical reports on this page to view the trends usage for all the storage services, as well as add-on data protection services, in separate tabs. When a service is in burst, a banner displays the burst capacity used in the current billing cycle.
 
 image:sewebiug_image33.png[Error: Missing Graphic Image]
 
-To view the Capacity Usage page, select Reports > Capacity Usage from the menu.
+To view the Capacity Usage for Keystone Subscriptions page, select *Reports > Keystone Usage* from the menu.
 
 To view the capacity usage for a service, perform the following steps:
 
-. Select the subscription containing the service from the Subscription No menu.
-. You can choose to view the capacity usage for base Service Levels or Data Protection services. The page displays the services available.
+.Steps
+
+. Select the subscription number containing the service from the *Subscription* drop-down list.
+. You can choose to view the capacity usage for base service levels or data protection services by selecting the different tabs. The page displays the service level view by default.
 . You can scroll the page to view the services, and use the period filters to limit the display to a selected period.
+
+=== Tenant subscription capacity usage report
+
+The Capacity Usage for Tenant Subscriptions page displays capacity usage over time for each tenant for the subscribed storage services in Flex Subscription. This page is available to NetApp, partner, and tenant or customer admins to view the capacity usage reports for a specific tenant.
+[NOTE]
+For the tenant administrator, the page appears as "Capacity Usage".
+
+Use the graphical reports on this page to view the trends usage for both all the storage services, as well as add-on services, such as data protection, in separate tabs. When a service is in burst, a banner displays the burst capacity used in the current billing cycle.
+
+To view the Capacity Usage for Tenant Subscriptions page, select *Reports > Tenant Usage/Capacity Usage* from the menu.
+
+To view the capacity usage for a tenant, perform the following steps:
+
+.Steps
+
+. Select the subscription number containing the service from the Subscription drop-down list.
+. You can choose to view the capacity usage for base service levels or data protection services by selecting the respective tabs. The page displays the service level view by default.
+. You can scroll the page to view the services, and use the period filters to limit the display to a selected period.
+
 
 === Performance report
 
@@ -55,12 +77,12 @@ To view the Performance page, select Reports > Performance from the menu.
 +
 To view the performance details for a disk/share, complete the following steps.
 
-. Select the Subtenant, Region and Zone, and then the storage object type to view either Disks or Shares for the disk or share. The page displays the list of storage objects meeting the selected criteria, showing the latest performance data for those objects.
-. To view the trend in performance data for a selected share or disk, locate the storage object in the list and click to expand the panel. The performance graphs for the selected object display.
+. Select the *Subtenant*, *Region*, and *Zone*, and then the storage object type to view either *Disks* or *Shares* for the disk or share. The page displays the list of storage objects meeting the selected criteria, showing the latest performance data for those objects.
+. To view the trend in performance data for a selected share or disk, locate the storage object in the list and click to expand the panel. The performance graphs for the selected object is displayed.
 
 image:sewebiug_image34.png[Error: Missing Graphic Image]
 
 The graphs show the performance of the storage over time. You can:
 
 * Choose the period to display by selecting the period filters or click and drag on the graph.
-* Hover a mouse over a point in the graph to see more information for that point.
+* Hover the cursor over a point in the graph to see more information for that point.

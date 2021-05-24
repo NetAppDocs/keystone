@@ -12,12 +12,6 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-19 09:25:10.378678
-//
-
 [.lead]
 Use the methods listed in the following table to retrieve, create, modify, and delete ONTAP clusters.
 
@@ -60,7 +54,7 @@ The following table lists the ONTAP cluster attributes.
 |`management_ip`
 |String
 |The ONTAP cluster management IPv4 address.
-|`username
+|`username`
 |String
 |The ONTAP cluster name
 |`password`
@@ -116,7 +110,7 @@ For example:
 ----
 |`svm_root_service_level`
 |String
-|The ONTAP cluster storage virtual machine (SVM) root service level name.
+|The ONTAP cluster storage virtual machine (SVM) root service level name. Applicable values are Standard, Extreme, or Premium. This service level is assigned by default to all SVMs created under the cluster. The cluster should have an associated aggregate for the service level mentioned.
 |`zone`
 |String
 |The zone name.

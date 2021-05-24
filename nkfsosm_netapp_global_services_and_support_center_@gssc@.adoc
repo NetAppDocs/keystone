@@ -40,6 +40,8 @@ Keystone.escalations@netapp.com
 
 * NetApp uses OpsRamp, a cloud-based remote gateway solution to proactively monitor and connect to the NetApp Keystone environment for troubleshooting purposes. For information on OpsRamp, see https://www.opsramp.com/#.
 
+[NOTE]
+In a partner-operated model, the tenant and subtenant’s service requests are assigned to the partner’s service desk. The partner's support tool might have integration with OpsRamp and GSSC applications. Only L3 issues are escalated to NetApp through GSSC.
 
 To learn more about the information that is described in this document, review the following documents and/or websites:
 
