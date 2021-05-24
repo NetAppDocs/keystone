@@ -13,7 +13,7 @@ summary: NetApp service engine partner, service provider functions
 :imagesdir: ./media/
 
 [.lead]
-Based on your role of a service provider/partner (used interchangeably) or a customer/tenant (used interchangeably) administrator, the views and functions on the NetApp Service Engine web portal are determined.
+Based on your role of a service provider or partner (used interchangeably) or a customer or tenant (used interchangeably) administrator, the views and functions on the NetApp Service Engine web portal are determined.
 
 == Activities that you can perform as a service provider administrator
 
@@ -33,7 +33,7 @@ The tenant subscriptions can be created based on the corresponding zones and Key
 * Create file servers or block stores and initialize block, file, and object storage as you are aware of the network requirements for provisioning each storage type for your tenants.
 * You can also create and manage subnets for your tenants,
 * View file shares, disks, and buckets created as a part of your Flex Subscription. Also create and manage object storage groups and users.
-* Draw reports for consumption against your NetApp Keystone Flex Subscription, and tenants subscriptions, and usage for all tenants, for using it in the respective billing and rating systems.
+* Create reports for consumption against your NetApp Keystone Flex Subscription, and tenants subscriptions, and usage for all tenants, for using it in the respective billing and rating systems.
 * View the billing and reporting for all the tenants and customers and for only the storage subscribed to or provisioned.
 * View and manage service requests raised by customers within your own (partner/service provider's) service request tool (integrated with OpsRamp / GSSC).
 
@@ -45,7 +45,7 @@ As a tenant administrator, you can are entitled to view the subscription details
 * Manage and host multiple subtenants and users within the Tenant Subscription Service.
 * View your zones, regions, tenancy, and subnets.
 * View file servers and create file shares, disks, and buckets.
-* Draw reports for tenants and subtenant to view the consumption data for only the storage subscribed to or provisioned for your tenancy and subtenants.
+* Create reports for tenants and subtenant to view the consumption data for only the storage subscribed to or provisioned for your tenancy and subtenants.
 * Raise and update service requests within the service provider's service request tool.
 +
 [NOTE]

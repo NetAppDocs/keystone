@@ -13,9 +13,9 @@ summary: Keystone managing subscriptions
 :imagesdir: ./media/
 
 [.lead]
-Managing subscriptions includes assigning service levels to your NetApp Keystone Flex Subscription (Flex Subscription) and Tenant Subscription services or allocating and changing capacities to the service levels by using the NetApp Service Engine interface.
+Managing subscriptions includes assigning service levels to your NetApp Keystone Flex Subscription (Flex Subscription) and tenant subscription services or allocating and changing capacities to the service levels by using the NetApp Service Engine interface.
 
-The Flex Subscriptions represented by the relationship between the service providers/partners and NetApp and the tenant subscriptions represent the relationship between the service provider and their tenants and subtenants (end customers). When NetApp admins or GSSC creates Flex Subscription services for partners and tenants, it implies that the storage allocation has been accomplished. However, unless the service levels and corresponding capacity allocation is complete, storage cannot be consumed by subtenants or end customers. Partner admins can manage storage for their Flex Subscription and tenant subscriptions. Tenant admins can only view the tenant subscription details and services for their own tenancy.
+The Flex Subscriptions represented by the relationship between the service providers/partners and NetApp and the tenant subscriptions represent the relationship between the service provider and their tenants and subtenants (end customers). When NetApp admins or GSSC creates Flex Subscription services for partners and tenants, it implies that the storage allocation has been accomplished. However, unless the service levels are created and the corresponding capacity allocation is complete, storage cannot be consumed by subtenants or end customers. Partner admins can manage storage for their Flex Subscription and tenant subscriptions. Tenant admins can only view the tenant subscription details and services for their own tenancy.
 
 == Manage Flex Subscription (Keystone Subscriptions)
 
@@ -54,9 +54,9 @@ A subscription might only have one of each performance level, for example, if yo
 
 NOTE: If you are subscribed to extreme-tiering or premium-tiering, you can edit the performance level of any existing subscription and opt for a tiering-enabled performance level. You can also opt to move from a tiering-enabled performance level to a non-tiering performance level.
 
-== Manage Tenant Subscriptions
+== Manage tenant subscriptions
 
-If you are a partner admin, you can create, view, and update your Tenant Subscriptions from *SUBSCRIPTIONS* > *Tenant Subscriptions*. If you are a tenant admin, you can only view the subscriptions.
+If you are a partner admin, you can create, view, and update your tenant subscriptions from *SUBSCRIPTIONS* > *Tenant Subscriptions*. If you are a tenant admin, you can only view the subscriptions.
 
 === Create a tenant subscription
 

@@ -40,8 +40,6 @@ entries:
         url: /nkfsfaq_keystone_subscription.html
       - title: Operating model
         url: /nkfsfaq_operating_models.html
-      - title: Operations and support
-        url: /nkfsfaq_operations_and_support.html
       - title: NetApp Service Engine/Self-Service access portal
         url: /nkfsfaq_netapp_service_engine_self-service_access_portal.html
   - title: NetApp Service Engine Web Interface

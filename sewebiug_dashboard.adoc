@@ -31,7 +31,7 @@ If you have subscribed to Data-Protection Basic services and Advanced Data Prote
 
 image:sewebiug_image17.png[Error: Missing Graphic Image]
 
-Each service that you have subscribed to, as a service provider, is represented by a circle consisting of four concentric rings. The rings depict the capacities associated with the service: the outer ring depicts the capacity that has been committed for the tenants. The middle blue ring depicts the capacity is actually consumed by the tenants under that subscription. The inner ring indicates of any burst capacity usage (in red). The innermost area gives an overview of the total capacity under Flex Subscription service that you have subscribed to. Hover the cursor over the ring to view the relevant capacity.
+Each service that you have subscribed to, as a service provider, is represented by a circle consisting of four concentric rings. The rings depict the capacities associated with the service: the outer ring depicts the capacity that has been committed for the tenants. The middle blue ring depicts the capacity is actually consumed by the tenants under that subscription. The inner ring indicates any burst capacity usage (in red). The innermost area gives an overview of the total capacity under Flex Subscription service that you have subscribed to. Hover the cursor over the ring to view the relevant capacity.
 
 image:sewebiug_image18.png[Error: Missing Graphic Image]
 
@@ -40,6 +40,7 @@ When a service provider has more than one subscription, they can scroll down to 
 === Dashboard view for the tenant
 
 For a tenant administrator, you can view only the current details of all the tenant subscriptions for your tenancy - the service levels for your subscription and any add-on services in other tabs.
-Each service that you have subscribed to, as a tenant, is represented by a circle consisting of four concentric rings. The rings depict the capacities associated with the service: the outer ring depicts the capacity that has been committed for your tenants. The middle blue ring depicts the capacity is actually consumed by the tenants under that subscription. The inner ring indicates of any burst capacity usage (in red). The innermost area gives an overview of the total capacity under Flex Subscription service that you have subscribed to. Hover the cursor over the ring to view the relevant capacity.
+
+Each service that you have subscribed to, as a tenant, is represented by a circle consisting of four concentric rings. The rings depict the capacities associated with the service: the outer ring depicts the capacity that has been committed for your tenants. The middle blue ring depicts the capacity is actually consumed by the tenants under that subscription. The inner ring indicates any burst capacity usage (in red). The innermost area gives an overview of the total capacity under Flex Subscription service that you have subscribed to. Hover the cursor over the ring to view the relevant capacity.
 [NOTE]
 If you have subscribed to Data-Protection Basic services and Advanced Data Protection services, the details of consumption are displayed in DATA PROTECTION and ADVANCED PROTECTION tabs.

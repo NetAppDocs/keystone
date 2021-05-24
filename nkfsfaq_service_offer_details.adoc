@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, offer, details,
 summary: Service offer details
 ---
 
-= Service offer details
+= Flex Subscription service offer details
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,6 +19,8 @@ summary: Service offer details
 //
 
 [.lead]
+The following questions give answers to your frequent queries about NetApp Keystone Flex Subscription service offering.
+
 *What is offered as part of NetApp Keystone Flex Subscription?*
 NetApp Keystone Flex Subscription (Flex Subscription) is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
 

@@ -5,7 +5,7 @@ keywords: netapp, keystone, overview,
 summary: NetApp Keystone Overview
 ---
 
-= Overview
+= NetApp Keystone
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,6 +19,8 @@ summary: NetApp Keystone Overview
 //
 
 [.lead]
+The following questions give answers to your frequent queries about NetApp Keystone.
+
 *What is NetApp Keystone?*
 
 NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives, consisting of NetApp Keystone Flex Pay (Flex Pay), and NetApp Keystone Flex Subscription (Flex Subscription).
