@@ -5,23 +5,54 @@ keywords: netapp, keystone, release notes, new features, what's new,
 summary: new features in NetApp Service Engine
 ---
 
-= What's new in NetApp Service Engine
+= What's new in this release of NetApp Keystone Flex Subscription services
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-11-05
-//
-
 [.lead]
-The following features and enhancements have been introduced in NetApp Service Engine 2.0.1:
+The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription (Flex Subscription) services:
 
-= Features introduced in NetApp Keystone Flex Subscription 2.0.1
+== Features introduced in NetApp Service Engine 2.1
+The new features in this release include supporting multi-tenancy in a Flex Subscription environment, and tiering capability that facilitates moving of inactive data to a lower cost local or cloud tier.
+
+=== Introducing Flex Subscription services for service providers
+
+NetApp Service Engine now supports the management of a multi-tenant environment by a service provider. You can perform the functions of provisioning, reporting, billing, and managing customers having their own subscriptions. For supporting this feature, the following enhancements have been made:
+
+* *Dashboard:* The Dashboard displays information on the storage subscriptions, such as service tiers, capacity usage for each service level, and add-on data protection services, for a specific subscription number. As a service provider, you can view the details of your NetApp Keystone Flex Subscription and tenant subscriptions. As a tenant administrator, you can view the details of all the tenant subscriptions for your tenancy.
+* *Reporting:* You can create capacity and performance reports with respect to your NetApp Keystone Flex Subscription usage and also for your tenant usage. As a partner administrator, you can view the capacity report for your Flex Subscription usage from *Reports* > *Keystone Usage*. As a partner admin, you can view the capacity usage reports for a specific tenant from *Reports* > *Tenant Usage*/*Capacity Usage*. As a tenant administrator, you can view the tenancy reports from *Reports* > *Tenant Usage*.
+* *Subscription:* As a partner admin, you can view and update your Flex Subscription and tenant subscriptions from *SUBSCRIPTIONS* > *Keystone Subscriptions* and *SUBSCRIPTIONS* > *Tenant Subscriptions* respectively. As a tenant administrator, you can only view your tenant subscriptions.
+* *Users:* Based on your role, you can assign privileges to a new or existing user within a tenancy as per the requirement. The role can be NetApp administrator, NetApp administrator with read only privileges, partner administrator, or tenant administrator. As a partner administrator, you can assign only partner administrator or tenant administrator roles to new users. A tenant administrator user can assign only the tenant administrator role to other users.
+* *Networks menu:* As a partner administrator, you can view the networks defined for your tenancy. You can also create subnets for your subtenant and zone from *NETWORKS* > *Subnets*. This is required while provisioning storage by the end customers or subtenants.
+* API support: The `/tenants/{tenant_id}/zones/{zone_name}/subnets` and `/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}/tags` APIs are being offered as a part of this release to create and view subnets for subtenants.
+
+For more information on this feature, see the following links:
+* link:nkfsosm_overview.html[Operational model, roles, and responsibilities]
+* link:nkfsosm_tenancy_overview.html[Tenancy and multi-tenancy in Flex Subscription]
+* link:sewebiug_dashboard.html[View Flex Subscription Dashboard]
+* link:sewebiug_working_with_reports.html[View reports]
+* link:sewebiug_managing_subscriptions.html[Managing subscriptions]
+* link:sewebiug_managing_tenants_and_subtenants.html[Managing tenants and subtenants]
+* link:sewebiug_define_network_configurations.html[Define networks for tenants and subtenants]
+
+=== Tiering
+
+NetApp Keystone Flex Subscription service now includes a tiering capability that leverages the NetApp FabricPool technology. It identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed on-premises by NetApp. You can opt for tiering by subscribing to the extreme-tiering or premium-tiering performance levels.
+
+The following APIs have been modified  to include new attribute values for the new tiering service levels:
+
+* File services APIs
+* Block store APIs
+
+For more information, see the following links:
+* link:nkfsosm_tiering.html[Tiering]
+* link:nkfsosm_performance.html[Performance Service Levels]
+
+
+== Features introduced in NetApp Keystone Flex Subscription 2.0.1
 
 === Support extended to Cloud Volumes Services for Google Cloud Platform
 
@@ -49,7 +80,7 @@ The new *Backup* screen enables you to view and manage the backups of the disks 
 You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol share. You can specify Windows users or groups based on the Active Directory (AD) settings to add to the ACL.
 link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more]
 
-= Features introduced in NetApp Keystone Flex Subscription 2.0
+== Features introduced in NetApp Keystone Flex Subscription 2.0
 
 === MetroCluster support
 NetApp Service Engine supports sites configured with MetroCluster configurations. MetroCluster is a data protection feature of ONTAP that provides recovery point objectives (RPO) 0 or recovery time objectives (RTO) 0 using synchronous mirror for continuously available storage.

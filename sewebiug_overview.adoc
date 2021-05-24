@@ -45,3 +45,8 @@ NetApp Service Engine supports the following types of storage:
 * Block storage in block stores and disks
 * File storage in file servers and file shares
 * Object storage in buckets
+* Cloud Volume Services for Google Cloud Platform and Azure NetApp Files
+
+=== Feature availability based on subscriptions
+
+Based on your subscription, tenancy, and role in the NetApp Service Engine operations model, the features and options (screens and tabs) become available for you. For information, see Service providers and customers and Operational model, roles, and responsibilities.

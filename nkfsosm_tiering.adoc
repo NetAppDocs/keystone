@@ -12,13 +12,19 @@ summary: Keystone tiering
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-08 17:14:48.062540
-//
-
 [.lead]
-NetApp Keystone Flex Subscription service includes a tiering capability that identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed on-premises by NetApp.
+NetApp Keystone Flex Subscription service includes a tiering capability that identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed by NetApp.
 
-The add-on tiering capability is available only with Extreme and Premium service tiers. NetApp assumes 25% of data is hot and 75% is less frequently used and can be moved to a cold storage.
+The tiering capability leverages the NetApp FabricPool technology that enables automated tiering of data to low-cost object storage tiers either on or off premises. With this capability, infrequently accessed data is automatically tiered to a lower cost storage either on premises or in the cloud, based on the services agreed upon.
+
+Partners and tenants can avail this capability easily by opting for the two preconfigured service levels, the Extreme-tiering and Premium-tiering service levels while provisioning their storage. The Extreme-tiering has the same QoS policies as the Standard, Extreme, and Premium service levels.
+
+The add-on tiering capability is available only with Extreme and Premium service tiers. NetApp assumes 25% of data is hot and 75% is less frequently used and can be moved to a cold storage. Billing is determined based on the duration per volume is in each service level.
+
+The following features are enabled:
+
+* You can create reports of the inactive data for your disks and file shares and decide upon whether to change the service level. On moving or changing the tiering policy, the latencies can be higher if data is accessed from cold tier.
+* You can change the service level of the volumes from Extreme and Premium to Extreme-tiering and Premium tiering respectively, provided that the destination tiering is enabled on the cluster.
+* Likewise, you can change the tiering service levels to non-tiering for your volumes.
+* Enable and disable backups for a volume on a tiering service level.
+* Enable and disable disaster recovery for a volume on a tiering service level.
