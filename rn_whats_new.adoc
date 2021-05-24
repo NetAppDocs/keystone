@@ -16,7 +16,7 @@ summary: new features in NetApp Service Engine
 The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription (Flex Subscription) services:
 
 == Features introduced in NetApp Service Engine 2.1
-The new features in this release include supporting multi-tenancy in a Flex Subscription environment and tiering capabilities in which the inactive data can moved to the lower cost local or cloud tier.
+The new features in this release include supporting multi-tenancy in a Flex Subscription environment, and tiering capability that facilitates moving of inactive data to a lower cost local or cloud tier.
 
 === Introducing Flex Subscription services for service providers
 
