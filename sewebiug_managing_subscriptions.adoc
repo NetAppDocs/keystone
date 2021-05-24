@@ -13,20 +13,20 @@ summary: Keystone managing subscriptions
 :imagesdir: ./media/
 
 [.lead]
-You can view and manage your Keystone subscriptions and Tenant Subscriptions using the NetApp Service Engine interface.
+Managing subscriptions includes assigning service levels to your NetApp Keystone Flex Subscription (Flex Subscription) and Tenant Subscription services or allocating and changing capacities to the service levels by using the NetApp Service Engine interface.
 
-For information on accounts, subscriptions, and services, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html[Billing Accounts, Subscriptions, Services, and Performance].
+The Flex Subscriptions represented by the relationship between the service providers/partners and NetApp and the tenant subscriptions represent the relationship between the service provider and their tenants and subtenants (end customers). When NetApp admins or GSSC creates Flex Subscription services for partners and tenants, it implies that the storage allocation has been accomplished. However, unless the service levels and corresponding capacity allocation is complete, storage cannot be consumed by subtenants or end customers. Partner admins can manage storage for their Flex Subscription and tenant subscriptions. Tenant admins can only view the tenant subscription details and services for their own tenancy.
 
-== Keystone Subscriptions
+== Manage Flex Subscription (Keystone Subscriptions)
 
-If you are a partner admin, you can view and manage your Keystone Subscriptions from *SUBSCRIPTIONS* > *Keystone Subscriptions*. Keystone subscriptions are created by NetApp admins. Partner admins can view their Keystone subscription and create service requests to:
+If you are a partner admin, you can view and manage your Flex Subscription services from *SUBSCRIPTIONS* > *Keystone Subscriptions*. *Keystone subscriptions* represent the Flex Subscription services created by NetApp admins for partners. Partner admins can view their Flex Subscription services and create service requests to:
 
 * Increase the capacity of a subscription
-* Add a service to a subscription
+* Add a service to a subscription (assign service level and capacity)
 
-The service request is handled by the GSSC team and the Zuora team updates the corresponding subscription in Zuora.
+Service requests are received and addressed by the support team.
 
-You can also view and manage the data protection and advanced protection services that you are subscribed to.
+You can also view and manage the data protection and advanced protection services that you are subscribed to, in separate tabs.
 
 === Increase the capacity of a subscription
 
@@ -41,7 +41,9 @@ You can increase the committed capacity for any of the subscribed service levels
 
 === Add a service to a subscription
 
-You can add a service to a subscription. A subscription might only have one of each performance level, for example, if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
+You can add a service to a subscription. Adding a service includes assigning a service level to your subscription and specifying the capacity for the same service level.
+
+A subscription might only have one of each performance level, for example, if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
 
 .Steps
 
@@ -52,7 +54,7 @@ You can add a service to a subscription. A subscription might only have one of e
 
 NOTE: If you are subscribed to extreme-tiering or premium-tiering, you can edit the performance level of any existing subscription and opt for a tiering-enabled performance level. You can also opt to move from a tiering-enabled performance level to a non-tiering performance level.
 
-== Tenant Subscriptions
+== Manage Tenant Subscriptions
 
 If you are a partner admin, you can create, view, and update your Tenant Subscriptions from *SUBSCRIPTIONS* > *Tenant Subscriptions*. If you are a tenant admin, you can only view the subscriptions.
 
@@ -73,4 +75,4 @@ You cannot create overlapping subscriptions. The start date should be at least t
 +
 . Click *Create*.
 
-NOTE: You cannot delete any subscriptions. You can only edit existing tenant subscriptions and add new service levels, increase the committed capacity for a service level, and add tags to subscriptions.
+You cannot delete any subscriptions. You can only edit existing tenant subscriptions and add new service levels, increase the committed capacity for a service level, and add tags to subscriptions.

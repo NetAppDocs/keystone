@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_tenancy_overview.html
+keywords: netapp, keystone, tenants, subtenants, hierarchy, tenancy
+summary: NetApp Keystone Flex Subscription Tenancy Overview
+---
+
+= Tenancy and multi-tenancy in Flex Subscription
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-21-May
+//
+
+[.lead]
+NetApp Keystone Flex Subscription (Flex Subscription) uses the concepts of *Tenant* and *Subtenant* as hierarchical entities that own logical storage resources. The concept of multi tenancy is also supported, where multiple tenants are tied to a partner or service provider. The entities partner and service provider are used interchangeably here.
+
+.Tenants
+A tenant is the primary billing entity defined in Flex Subscription. Each customer that is onboarded into Flex Subscription and holds a subscription to the services exists as a Flex Subscription tenant. The customer provides NetApp with a customer name and/or identifier for the purposes of onboarding tenants and tracking subscription dates and commitment terms.
+
+In a multi-tenancy, a partner is a tenant/customer of NetApp in a Flex Subscription environment. The partner, in turn, can bear multiple tenants or customers, who are linked to end customers/subtenants. In this model, tenants/subtenants are the customers of the service providers, and have no billing relationship with NetApp.
+
+.Subtenants
+Flex Subscription subtenants exist entirely within a parent tenant with a many-to-one relationship. Subtenants provide logical resource separation within a tenancy and are used as a basis for show-back reporting. All storage resources (that is file services, block storage, and object storage) belong to a subtenant.
+
+image:nkfsosm_image10.png[]
+
+== Subscription model in a single-tenant environment
+
+* A subscription is created by NetApp admin or GSSC for a tenant and zone.
+* The subscription name is auto-generated, based on the names of the tenant and zone.
+* In the subscription, the start-date and contract term are configured.
+* There can be only one active subscription for the combination of a tenant, zone, and service level.
+* Each subscription can have multiple rate plans, where each rate plan maps to a single service level.
+* Each rate plan has a committed capacity per service level.
+* Service levels can include:
+** Extreme
+** Extreme-Tiering
+** Performance
+** Performance-Tiering
+** Value
+** Data protection for each of the service levels
+** Advanced Data Protection for Extreme, Performance, Value
+** Storage objects
+
+== Subscription model in a multi-tenant environment
+
+* Service Providers are Flex Subscription customers and have subscriptions as tenants. The subscriptions are based on:
+** Commitment per service level and zone
+** Charged on allocated capacity with 100TiB minimum
+** Burst charges apply for 100-120% of committed capacity
+* NetApp charges the providers monthly, as a part of their usual tenancy terms.
+* For a service level to be available to tenants, the service provider or partner should first have a Flex Subscription in place for the service level.
+* The service provider creates tenant subscriptions per service level, zone, and flexible minimums.
+* Service providers can sell more capacity to their tenants than they have purchased from NetApp (oversubscription). Therefore, the capacity used by tenants is not limited by the capacity the service provider has subscribed to.
+* Tenants can use storage capacity over their subscribed amount, that will be listed as 'burst' on usage reports.
+* Tenant usage reports are available to partners for viewing on a daily or monthly basis.
+* Tenants can create subscriptions for longer duration as compared to the corresponding Flex Subscription, but a warning message is displayed to the end customer during that activity.
+* Flex Subscription for a partner is configured by NetApp admins or GSSC. Management of Flex Subscription and tenant subscriptions is performed by a user with Partner admin role.
+* Users with the tenant admin roles can only view the tenant subscription (not partner's Flex Subscription). They can update the given subscription to change capacity and service level. They can raise service request for additional subscriptions.
+* The partner admin can create another subscription either when the existing subscription is expired, or for a future date when the existing subscription is no longer valid. The start date for a new subscription must be greater than or equal to current end date.

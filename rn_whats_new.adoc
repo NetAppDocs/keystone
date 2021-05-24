@@ -13,7 +13,7 @@ summary: new features in NetApp Service Engine
 :imagesdir: ./media/
 
 [.lead]
-The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription services (Flex Subscription services):
+The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription (Flex Subscription) services:
 
 == Features introduced in NetApp Service Engine 2.1
 

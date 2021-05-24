@@ -17,6 +17,8 @@ entries:
             url: /nkfsosm_tiering.html
       - title: Operational model and responsibilities
         url: /nkfsosm_overview.html
+      - title: Tenancy and multi-tenancy in Flex Subscriptions
+        url: /nkfsosm_tenancy_overview.html  
       - title: Flex Subscription infrastructure
         url: /nkfsosm_keystone_service_delivery_architecture_overview.html
       - title: Site requirements
