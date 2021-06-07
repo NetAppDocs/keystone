@@ -60,4 +60,4 @@ You can manage the volumes for a subtenant on GCP from *FILE SERVICES > GCP Volu
 
 Watch the following video to learn how to create a volume on GCP through CVS and NetApp Service Engine:
 
-video::Crq5a1zi1Vg[youtube, width=848, height=480]
+video::Crq5a1zi1Vg[youtube, width=750, height=400]
