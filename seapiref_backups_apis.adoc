@@ -44,7 +44,7 @@ a|`id`: The ID of the backup object.
 a|`POST`
 a|`/v2.1/backups`
 |You can create a backup object for a particular source volume. Add the values in the request body to create a backup object with the specified parameters, such as backup policy, number of backup copies to retain, and source resource ID.
-|
+a|
 ``
 {
   "primary_resource_type": "<Resource Type>",
@@ -78,6 +78,7 @@ a|`PATCH`
 a|`/v2.1/backups/{id}`
 |You can modify any backup object for a volume based on its ID. Add the ID of the backup object and the values that you want to modify in the request body, such as the backup policy details, number of backups to retain, and source resource ID.
 a|`id`: The ID of the backup object.
+``
 { "source_resource_id": "<Resource ID>",
   "backup_policy": {
     "daily_backups_to_keep": <Number of daily backups to keep>,
@@ -91,10 +92,7 @@ a|`id`: The ID of the backup object.
     "keyN": "<Tag 3>"
   }
 }
-[NOTE]
-====
-You can make a backup object orphan by setting the value of the `source_resource_id` parameter as null in your `PATCH` request. This removes the SnapMirror relationship, but retains the backup volume and the recovery points under it.
-====
+``
 
 a|`DELETE`
 a|`/v2.1/backups/{id}`
@@ -107,3 +105,5 @@ a|`/v2.1/backups/{id}/recovery_points/{name}`
 a|`id`: The ID of the backup object.
 `name`: The name of the recovery point.
 |===
+
+NOTE: You can make a backup object orphan by setting the value of the `source_resource_id` parameter as null in your `PATCH` request. This removes the SnapMirror relationship, but retains the backup volume and the recovery points under it.

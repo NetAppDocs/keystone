@@ -12,34 +12,34 @@ summary: NetApp Service Engine/Self-Service Access Portal
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-08 17:15:37.133096
-//
-
 [.lead]
 The following FAQ applies to NetApp Service Engine.
 
-*What is NetApp Service Engine?*
+== What is NetApp Service Engine?
+
 NetApp Service Engine is a self-service portal that is available in the NetApp-operated model for you to log into and provision storage based on your NetApp Keystone Flex Subscription service. The tool also provides reports on what their consumption levels are against their subscription and initiate any service requests or subscription changes.
 
-*NetApp Service Engine required in the customer-operated model?*
+== NetApp Service Engine required in the customer-operated model?
+
 In a customer-operated model, NetApp Service Engine is required. It provides basic reports on the consumption details and is required to collect and report the billing information.
 
-*Where is NetApp Service Engine installed?*
+== Where is NetApp Service Engine installed?
+
 In a NetApp-operated model, NetApp Service Engine is installed locally on the NetApp provided compute resources. In a customer-operated model, NetApp Service Engine is installed on the customer-provided compute resources.
 
-*Who can log into NetApp Service Engine?*
+== Who can log into NetApp Service Engine?
+
 Users can be authenticated against NetApp SSO or local users configured in NetApp Service Engine.
 
-*How is access controlled?*
+== How is access controlled?
+
 NetApp Service Engine provides role-based access control (RBAC), and each user can be associated to a role, which defines what actions they can perform. The RBAC assignment is done by the customer using NetApp Service Engine.
 
-*What access controls are available?*
+== What access controls are available?
+
 The following access controls are available:
 
 * *Partner Admin.* An administrator from the partner side who has rights to create and manage tenants, manage subscriptions for tenants, view usage reports, and manage technical aspects of storage.
 * *Customer/tenant Admin.* An administrative person from the customer side who has rights to request changes to subscription, create new users and subtenants, and also create and view file shares, disks, and buckets.
-* *NetApp admin (read).* A NetApp administrator, who has access to all components of the web portal, and can view all details, such as all NetApp Keystone Flex Subscription, partners and tenants subscriptions, and storage. However, this user has no permissions to create, edit, or delete.
-* *NetApp admin.* This user has full access and permissions to perform all functions in NetApp Service Engine web portal for managing NetApp Keystone Flex Subscription, and all activities for partner and tenant administration.
+* *NetApp Admin (read).* A NetApp administrator, who has access to all components of the web portal, and can view all details, such as all NetApp Keystone Flex Subscription, partners and tenants subscriptions, and storage. However, this user has no permissions to create, edit, or delete.
+* *NetApp Admin.* This user has full access and permissions to perform all functions in NetApp Service Engine web portal for managing NetApp Keystone Flex Subscription, and all activities for partner and tenant administration.

@@ -57,13 +57,15 @@ a|`id`: The ID of the file server.
 a|`DELETE`
 a|`/v2.1/fileservers/{id}`
 a|You can delete any file server by its ID.
-[NOTE]
-====
-* Before you delete a file server, you should delete all the file shares mapped to it.
-* After deleting CIFS-enabled file servers, the Active Directory computer object remains. Ask your Active Directory admin to manually remove the computer object for the deleted file server from Active Directory.
-====
 a|`id`: The ID of the file server.
 |===
+
+[NOTE]
+====
+Before you delete a file server, you should delete all the file shares mapped to it.
+
+After deleting CIFS-enabled file servers, the Active Directory computer object remains. Ask your Active Directory admin to manually remove the computer object for the deleted file server from Active Directory.
+====
 
 == File Shares APIs
 
@@ -95,11 +97,6 @@ a|`name`: The name of the file share.
 `protocol`: The protocol used to access the file share (NFS, CIFS, or multi-protocol).
 `security_style`: The security style (Unix or NTFS).
 `export_policy`: The export policy of the file share.
-
-[NOTE]
-====
-For CIFS shares, adding a `$` character to the end of the share path will make it a hidden share (for example, `pathtomyhiddenshare$`).
-====
 
 a|`POST`
 a|`/v2.1/fileshares/{id}/snapshot/{name}`
@@ -133,3 +130,5 @@ a|`/v2.1/fileshares/{id}/snapshot/{name}`
 a|`id`: The ID of the file share.
 `name`: The name of the snapshot.
 |===
+
+NOTE: For CIFS shares, adding a `$` character to the end of the share path will make it a hidden share, for example, `pathtomyhiddenshare$`.

@@ -56,12 +56,10 @@ a|`id`: The ID of the block store.
 a|`DELETE`
 a|`/v2.1/blockstores/{id}`
 a|You can delete any block store by its ID.
-[NOTE]
-====
-Before you delete a block store, you should delete all the disks mapped to it.
-====
 a|`id`: The ID of the block store.
 |===
+
+NOTE: Before you delete a block store, you should delete all the disks mapped to it.
 
 == Disks
 
@@ -185,10 +183,6 @@ a|`id`: The ID of the host group.
 a|`POST`
 a|`/v2.1/hostgroups/{id}/initiators`
 a|You can create an initiator for a host group. Add the values for the initiator and its alias in the request body to create an initiator for the host group.
-[NOTE]
-====
-When adding initiators to a host group, the initiator should match the host group protocol: use IQNs for host groups with iSCSI protocol, and WWPNs for host groups with FC protocol.
-====
 a|`id`: The ID of the host group.
 `alias`: The alias name of the initiator.
 `initiator`: The initiator (iSCSI Qualified Names or FC WWPNs).
@@ -203,10 +197,13 @@ a|`id`: The ID of the host group.
 a|`DELETE`
 a|`/v2.1/hostgroups/{id}/initiators/{alias}`
 a|You can delete an initiator by the ID of the host group and the alias of the initiator.
-[NOTE]
-====
-Deleting an initiator from a host group affects all the disks to which the host group is mapped to.
-====
 a|`id`: The ID of the host group.
 `alias`: The alias name of the initiator.
 |===
+
+[NOTE]
+====
+When adding initiators to a host group, the initiator should match the host group protocol. You should use IQNs for host groups with iSCSI protocol, and WWPNs for host groups with FC protocol.
+
+Deleting an initiator from a host group affects all the disks to which the host group is mapped to.
+====
