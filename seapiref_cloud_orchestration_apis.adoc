@@ -25,7 +25,7 @@ This section describes the APIs for:
 * Managing Azure NetApp Files Volumes
 * Managing Google Cloud Volumes
 
-=== Cloud Volumes Service instances
+== Cloud Volumes Service instances
 
 Use the methods listed in the following table to retrieve and create Cloud Volumes Service instances.
 
@@ -61,7 +61,7 @@ Use the methods listed in the following table to retrieve and create Cloud Volum
 |Retrieve an Azure NetApp Files capacity pool by ID.
 |===
 
-==== Cloud Volumes Service instance attributes
+=== Cloud Volumes Service instance attributes
 
 The following table lists the Cloud Volumes Service instance attributes.
 
@@ -112,7 +112,7 @@ The following table lists the Cloud Volumes Service instance attributes.
 |The key-value pairs.
 |===
 
-==== Retrieve Cloud Volumes Service instance
+=== Retrieve Cloud Volumes Service instance
 
 |===
 |HTTP Method |Path |Description |Path Parameters
@@ -125,9 +125,8 @@ See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common P
 |===
 
 Required request body parameters: `none`
-=
 
-==== Retrieve Cloud Volumes Service instance by ID
+=== Retrieve Cloud Volumes Service instance by ID
 
 Use the method listed in the following table to retrieve a Cloud Volumes Service instance by its identifier.
 
@@ -141,9 +140,8 @@ Use the method listed in the following table to retrieve a Cloud Volumes Service
 |===
 
 Required request body attributes: `none`
-=
 
-==== Create Cloud Volumes Service instances
+=== Create Cloud Volumes Service instances
 
 Use the method listed in the following table to create a new Cloud Volumes Service instance.
 
@@ -181,9 +179,8 @@ Required request body attributes: `name, cc_working_env, cc_client_id, cc_refres
   }
 }
 ....
-=
 
-==== Manage tags for Cloud Volumes Service instances
+=== Manage tags for Cloud Volumes Service instances
 
 Use the method listed in the following table to specify tags for the named Cloud Volumes Service instance.
 
@@ -204,11 +201,10 @@ Required request body attributes: `key-value pairs`
   "env": "test"
 }
 ....
-=
 
-=== Azure NetApp Files accounts
+== Azure NetApp Files accounts
 
-==== Azure NetApp Files accounts attributes
+=== Azure NetApp Files accounts attributes
 
 The following table lists the Azure NetApp Files account attributes.
 
@@ -235,7 +231,7 @@ The following table lists the Azure NetApp Files account attributes.
 |The key-value pairs.
 |===
 
-==== Retrieve Azure NetApp Files accounts
+=== Retrieve Azure NetApp Files accounts
 
 |===
 |HTTP Method |Path |Description |Path Parameters
@@ -249,9 +245,8 @@ See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common P
 |===
 
 Required request body parameters: `none`
-=
 
-==== Retrieve Azure NetApp Files account by name
+=== Retrieve Azure NetApp Files account by name
 
 Use the method listed in the following table to retrieve an Azure NetApp Files account by name.
 
@@ -266,9 +261,8 @@ Use the method listed in the following table to retrieve an Azure NetApp Files a
 |===
 
 Required request body attributes: `none`
-=
 
-==== Create Azure NetApp Files accounts
+=== Create Azure NetApp Files accounts
 
 Use the method listed in the following table to create a new Azure NetApp Files account.
 
@@ -299,11 +293,10 @@ Required request body attributes: `name, resource_group, location, cvs_instance_
   }
 }
 ....
-=
 
-=== Azure NetApp Files capacity pools
+== Azure NetApp Files capacity pools
 
-==== Capacity pools attributes
+=== Capacity pools attributes
 
 The following table lists the capacity pool attributes.
 
@@ -339,7 +332,7 @@ The following table lists the capacity pool attributes.
 |The key-value pairs.
 |===
 
-==== Retrieve capacity pools
+=== Retrieve capacity pools
 
 |===
 |HTTP Method |Path |Description |Path Parameters
@@ -360,9 +353,8 @@ Required request body parameters: `none`
 ....
 none
 ....
-=
 
-==== Retrieve capacity pool by name
+=== Retrieve capacity pool by name
 
 Use the method listed in the following table to retrieve a capacity pool by name.
 
@@ -378,9 +370,8 @@ Use the method listed in the following table to retrieve a capacity pool by name
 |===
 
 Required request body attributes: `none`
-==
 
-==== Create capacity pools
+=== Create capacity pools
 
 Use the method listed in the following table to create a new capacity pool.
 
@@ -414,9 +405,8 @@ Required request body attributes: `name, resource_group, location, size, service
   }
 }
 ....
-==
 
-==== Modify size of the capacity pool
+=== Modify size of the capacity pool
 
 Use the method listed in the following table to modify the size of the capacity pool.
 
@@ -450,11 +440,10 @@ Required request body attributes: `name, resource_group, location, anf_account_n
   }
 }
 ....
-==
 
-=== Azure NetApp Files volumes
+== Azure NetApp Files volumes
 
-==== Azure NetApp Files volume attributes
+=== Azure NetApp Files volume attributes
 
 The following table lists the Azure NetApp Files volume attributes.
 
@@ -496,7 +485,7 @@ The following table lists the Azure NetApp Files volume attributes.
 |The key-value pairs.
 |===
 
-==== Retrieve Azure NetApp Files volumes
+=== Retrieve Azure NetApp Files volumes
 
 Use the method listed in the following table to retrieve Azure NetApp Files volumes. Specifying a `tenant_id` returns only the accounts belonging to that tenant.
 
@@ -514,9 +503,7 @@ See also link:seapiref_netapp_service_engine_rest_apis.html#pagination>[Common P
 
 Required request body parameters: `none`.
 
-==
-
-==== Retrieve Azure NetApp Files volume by name
+=== Retrieve Azure NetApp Files volume by name
 
 Use the method listed in the following table to retrieve an Azure NetApp Files volume by name.
 
@@ -537,9 +524,8 @@ Required request body attributes: `none`
 ....
 none
 ....
-==
 
-==== Create Azure NetApp Files volumes
+=== Create Azure NetApp Files volumes
 
 Use the method listed in the following table to create a new Azure NetApp Files volume.
 
@@ -580,7 +566,7 @@ Required request body attributes: `name, resource_group, subtenant_id, anf_accou
 }
 ....
 
-=== Managing Cloud Volumes Service for Google Cloud
+== Managing Cloud Volumes Service for Google Cloud
 
 The `/v2.1/gcp/volumes` API under the Cloud Orchestration category enables you to manage cloud volumes for your Google Cloud instance. Before running this API, ensure that the Cloud Volumes Service account for Google Cloud Platform (GCP) subscription has been enabled for the subtenant.
 
