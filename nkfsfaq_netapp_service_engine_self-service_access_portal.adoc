@@ -15,27 +15,27 @@ summary: NetApp Service Engine/Self-Service Access Portal
 [.lead]
 The following FAQ applies to NetApp Service Engine.
 
-== What is NetApp Service Engine?
+=== What is NetApp Service Engine?
 
 NetApp Service Engine is a self-service portal that is available in the NetApp-operated model for you to log into and provision storage based on your NetApp Keystone Flex Subscription service. The tool also provides reports on what their consumption levels are against their subscription and initiate any service requests or subscription changes.
 
-== NetApp Service Engine required in the customer-operated model?
+=== NetApp Service Engine required in the customer-operated model?
 
 In a customer-operated model, NetApp Service Engine is required. It provides basic reports on the consumption details and is required to collect and report the billing information.
 
-== Where is NetApp Service Engine installed?
+=== Where is NetApp Service Engine installed?
 
 In a NetApp-operated model, NetApp Service Engine is installed locally on the NetApp provided compute resources. In a customer-operated model, NetApp Service Engine is installed on the customer-provided compute resources.
 
-== Who can log into NetApp Service Engine?
+=== Who can log into NetApp Service Engine?
 
 Users can be authenticated against NetApp SSO or local users configured in NetApp Service Engine.
 
-== How is access controlled?
+=== How is access controlled?
 
 NetApp Service Engine provides role-based access control (RBAC), and each user can be associated to a role, which defines what actions they can perform. The RBAC assignment is done by the customer using NetApp Service Engine.
 
-== What access controls are available?
+=== What access controls are available?
 
 The following access controls are available:
 
