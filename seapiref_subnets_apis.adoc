@@ -20,7 +20,8 @@ You can use Subnets APIs to view and create subnets for your subtenant and zone.
 | HTTP Verb | Path | Description | Mandatory parameters/Request body
 
 a|`GET`
-a|`/v2.1/tenants/{tenant_id}/zones/{zone_name}/subnets`
+a|`/v2.1/tenants/{tenant_id}/`
+`zones/{zone_name}/subnets`
 |You can retrieve all the subnet objects for a tenant and zone. Retrieves details of the subnet, such as VLAN, subtenant, zone, routes, and tags.
 a|`tenant_id`: The ID of the tenant.
 `zone_name`: The name of the zone.
@@ -28,14 +29,16 @@ a|`tenant_id`: The ID of the tenant.
 `limit`: The numbers of items to return.
 
 a|`GET`
-a|`/v2.1/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}`
+a|`/v2.1/tenants/{tenant_id}/`
+`zones/{zone_name}/subnets/{id}`
 |You can retrieve the details of a specific subnet object created for a tenant and zone. Retrieves details of the subnet, such as VLAN, subtenant, zone, routes, and tags based on the entered ID.
 a|`tenant_id`: The ID of the tenant.
 `zone_name`: The name of the zone.
 `id`: The ID of the subnet.
 
 a|`POST`
-a|`/v2.1/tenants/{tenant_id}/zones/{zone_name}/subnets`
+a|`/v2.1/tenants/{tenant_id}/`
+`zones/{zone_name}/subnets`
 |You can create a subnet object for a particular tenant and zone. Add the values in the request body to create a subtenant object with the specified parameters, such as name, VLAN, CIDR, subtenant ID, routes, and tags.
 a|`tenant_id`: The ID of the tenant.
 `zone_name`: The name of the zone.
@@ -61,7 +64,8 @@ a|`tenant_id`: The ID of the tenant.
 ``
 
 a|`POST`
-a|`/v2.1/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}/tags`
+a|`/v2.1/tenants/{tenant_id}/`
+`zones/{zone_name}/subnets/{id}/tags`
 |You can create or replace tags for a subnet object for your tenant. Add the ID of the subnet object and the values for the tags in the "key:value pair" format in the request body.
 a|`tenant_id`: The ID of the tenant.
 `zone_name`: The name of the zone.

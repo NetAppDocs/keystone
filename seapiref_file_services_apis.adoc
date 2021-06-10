@@ -107,7 +107,7 @@ a|`id`: The ID of the file share.
 `name`: The name of the snapshot.
 
 a|`POST`
-a|`/v2.1/fileshares/{id}/
+a|`/v2.1/fileshares/{id}/`
 `tags`
 |You can create or replace tags for a file share. Add the ID of the file share and the values for the tags in the "key:value pair" format in the request body.
 a|`id`: The ID of the file share.
