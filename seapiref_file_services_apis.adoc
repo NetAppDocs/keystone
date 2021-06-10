@@ -45,7 +45,8 @@ a|`name`: The name of the file server.
 `subnet_id`: The ID of the subnet.
 
 a|`POST`
-a|`/v2.1/fileservers/{id}/tags`
+a|`/v2.1/fileservers/{id}/`
+`tags`
 |You can create or replace tags for a file server. Add the ID of the file server and the values for the tags in the "key:value pair" format in the request body.
 a|`id`: The ID of the file server.
 
@@ -99,13 +100,15 @@ a|`name`: The name of the file share.
 `export_policy`: The export policy of the file share.
 
 a|`POST`
-a|`/v2.1/fileshares/{id}/snapshot/{name}`
+a|`/v2.1/fileshares/{id}/`
+`snapshot/{name}`
 |You can create a snapshot of a file share.
 a|`id`: The ID of the file share.
 `name`: The name of the snapshot.
 
 a|`POST`
-a|`/v2.1/fileshares/{id}/tags`
+a|`/v2.1/fileshares/{id}/
+`tags`
 |You can create or replace tags for a file share. Add the ID of the file share and the values for the tags in the "key:value pair" format in the request body.
 a|`id`: The ID of the file share.
 
@@ -125,10 +128,12 @@ a|`/v2.1/fileshares/{id}`
 a|`id`: The ID of the file share.
 
 a|`DELETE`
-a|`/v2.1/fileshares/{id}/snapshot/{name}`
+a|`/v2.1/fileshares/{id}/`
+`snapshot/{name}`
 |You can delete any snapshot of a file share by the ID of the file share and the name of the snapshot.
 a|`id`: The ID of the file share.
 `name`: The name of the snapshot.
 |===
+
 
 NOTE: For CIFS shares, adding a `$` character to the end of the share path will make it a hidden share, for example, `pathtomyhiddenshare$`.
