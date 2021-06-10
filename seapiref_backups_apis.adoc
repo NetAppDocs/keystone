@@ -31,12 +31,14 @@ a|`/v2.1/backups/{id}`
 a|`id`: The ID of the backup object.
 
 a|`GET`
-a|`/v2.1/backups/{id}/recovery_points`
+a|`/v2.1/backups/{id}/`
+`recovery_points`
 |You can retrieve details of all the recovery points of a specific backup object. Details, such as time stamp and name are retrieved.
 a|`id`: The ID of the backup object.
 
 a|`GET`
-a|`/v2.1/backups/{id}/recovery_points/{name}`
+a|`/v2.1/backups/{id}/`
+`recovery_points/{name}`
 |You can retrieve details of any recovery point of a specific backup object. Details, such as time stamp and name are retrieved.
 a|`id`: The ID of the backup object.
 `name`: The name of the recovery point.
@@ -106,7 +108,8 @@ a|`/v2.1/backups/{id}`
 a|`id`: The ID of the backup object.
 
 a|`DELETE`
-a|`/v2.1/backups/{id}/recovery_points/{name}`
+a|`/v2.1/backups/{id}/`
+`recovery_points/{name}`
 |You can delete any recovery point in a specific backup object for a volume.
 a|`id`: The ID of the backup object.
 `name`: The name of the recovery point.
