@@ -30,7 +30,8 @@ a|`tenant_id`: The ID of the tenant.
 
 a|`GET`
 a|`/v2.1/tenants/{tenant_id}/`
-`zones/{zone_name}/subnets/{id}`
+`zones/{zone_name}/subnets/`
+`{id}`
 |You can retrieve the details of a specific subnet object created for a tenant and zone. Retrieves details of the subnet, such as VLAN, subtenant, zone, routes, and tags based on the entered ID.
 a|`tenant_id`: The ID of the tenant.
 `zone_name`: The name of the zone.
@@ -65,7 +66,8 @@ a|`tenant_id`: The ID of the tenant.
 
 a|`POST`
 a|`/v2.1/tenants/{tenant_id}/`
-`zones/{zone_name}/subnets/{id}/tags`
+`zones/{zone_name}/subnets/`
+`{id}/tags`
 |You can create or replace tags for a subnet object for your tenant. Add the ID of the subnet object and the values for the tags in the "key:value pair" format in the request body.
 a|`tenant_id`: The ID of the tenant.
 `zone_name`: The name of the zone.
