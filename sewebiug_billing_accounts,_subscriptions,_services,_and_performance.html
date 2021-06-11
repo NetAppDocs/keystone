@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Billing accounts, subscriptions, services, and performance</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Billing accounts, subscriptions, services, and performance" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" />
+	<meta property="og:description" content="Keystone billing accounts, subscriptions, services, and performance" />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/keystone/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="Keystone billing accounts, subscriptions, services, and performance">
+  <meta name="keywords" content=" netapp, keystone, billing, accounts, subscriptions, services, performance,">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/us-en/keystone/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/us-en/keystone/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/us-en/keystone/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/keystone/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/keystone/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/keystone/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/us-en/keystone/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/us-en/keystone/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/us-en/keystone/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/us-en/keystone/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/us-en/keystone/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/keystone/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/keystone/css/na-pagenav.css' type='text/css'>
+
+  
+
+  
+  <link rel='stylesheet' href='/us-en/keystone/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/us-en/keystone/js/na-search.js'></script>
+  
+
+  
+  <script src='/us-en/keystone/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/us-en/keystone/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/keystone/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/us-en/keystone/js/na-utility.js'></script>
+  <script src='/us-en/keystone/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/us-en/keystone/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/us-en/keystone/js/toc.js'></script>
+  <script src='/us-en/keystone/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Product and Solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support and Training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Customer Stories</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/us-en/keystone/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/us-en/keystone/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/us-en/keystone/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="No results were found for {query}" data-did-you-mean="Search for {suggestion}." data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"  ></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/keystone/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar"><!-- Start Language Selector --><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+        <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">Home</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">Documentation</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/us-en/keystone/">NetApp&nbsp;Keystone</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Billing accounts, subscriptions, services, and performance
+        </li>
+      </ul>
+    </div>
+
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
+    </span>
+  </a>
+</div>
+<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><div class="n-pdf-section">
+      <span class="n-pdf-section-title">Site</span>
+    </div>
+    <li>
+      <a target="_blank" href="/us-en/keystone/pdfs/fullsite-sidebar/Documentation_for_NetApp_Keystone_Flex_Subscription.pdf" >
+        <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+        Documentation for NetApp Keystone Flex Subscription
+      </a>
+    </li>
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/NetApp_Keystone_Flex_Subscription.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            NetApp Keystone Flex Subscription
+          </a>
+        </li>
+        <span>
+          
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Service_terms_and_description.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Service terms and description
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Release_Notes.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Release Notes
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Flex_Subscription_FAQ.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Flex Subscription FAQ
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/NetApp_Service_Engine_Web_Interface.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            NetApp Service Engine Web Interface
+          </a>
+        </li>
+        <span>
+          
+    <div class="n-pdf-section">
+  <span class="n-pdf-section-title">This page</span>
+</div>
+
+<li class="active">
+  <a target="_blank" href="/us-en/keystone/pdfs/pages/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.pdf" >
+    <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+    Billing accounts, subscriptions, services, and performance
+  </a>
+</li>
+
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Get_started.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Get started
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Work_with_file_services.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Work with file services
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Work_with_block_storage.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Work with block storage
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Work_with_object_storage.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Work with object storage
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Manage_subscribed_services.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Manage subscribed services
+          </a>
+        </li>
+        <span>
+          
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Managing_subscribed_services.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Managing subscribed services
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Managing_Azure_NetApp_Files.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Managing Azure NetApp Files
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Manage_service_requests.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Manage service requests
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Manage_users.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Manage users
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/NetApp_Service_Engine_API_Reference.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            NetApp Service Engine API Reference
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Consumer_APIs.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Consumer APIs
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/us-en/keystone/pdfs/sidebar/Administrator_APIs.pdf" >
+            <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>
+            Administrator APIs
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+</ul>
+
+<script>
+  $("#toggleContainerPdf li.active").parents('li').toggle('display');
+  $("#toggleContainerPdf li.active").parents('span.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+  });
+</script><ul id="mysidebar" class="nav"><li class="subfolders "><a href="index.html">
+        <div class="na-navbar-padding"> NetApp Keystone Flex Subscription</div>
+      </a>
+      <ul><li class="subfolders "><a href="nkfsosm_service_terms_and_description_overview.html">
+        <div class="na-navbar-padding"> Service terms and description</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="nkfsosm_keystone_service_capacity_definitions.html">
+        Service capacity definitions
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_performance.html">
+        Performance Service Level
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_service_level_metrics_and_definitions.html">
+        Service Level metrics and definitions
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_data_protection.html">
+        Data protection
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_tiering.html">
+        Tiering
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_overview.html">
+        Operational model and responsibilities
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_tenancy_overview.html">
+        Tenancy and multi-tenancy
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_keystone_service_delivery_architecture_overview.html">
+        Flex Subscription infrastructure
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_site_requirements.html">
+        Site requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsosm_netapp_global_services_and_support_center_@gssc@.html">
+        Operations
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Release Notes</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="rn_whats_new.html">
+        What's new
+      </a></li><li class=" "><a class="na-navbar-padding" href="rn_known_issues.html">
+        Known issues
+      </a></li></ul></li><li class="subfolders "><a href="nkfsfaq_overview.html">
+        <div class="na-navbar-padding"> Flex Subscription FAQ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="nkfsfaq_keystone_subscription.html">
+        Flex Subscription
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsfaq_service_offer_details.html">
+        Service offer details
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsfaq_operating_models.html">
+        Operating model
+      </a></li><li class=" "><a class="na-navbar-padding" href="nkfsfaq_netapp_service_engine_self-service_access_portal.html">
+        NetApp Service Engine/Self-Service access portal
+      </a></li></ul></li><li class="subfolders "><a href="sewebiug_overview.html">
+        <div class="na-navbar-padding"> NetApp Service Engine Web Interface</div>
+      </a>
+      <ul><li class="  active "><a class="na-navbar-padding" href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html">
+        Billing accounts, subscriptions, services, and performance
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Get started</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="sewebiug_getting_started_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_log_in_to_the_netapp_service_engine_web_interface.html">
+        Log in
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_partner_service_provider.html">
+        Roles and operations of service providers and customers
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_select_tenant.html">
+        Select tenant
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_netapp_service_engine_web_interface_overview.html">
+        View NetApp Service Engine Web Interface
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="sewebiug_dashboard.html">
+        View Flex Subscription Dashboard
+      </a></li><li class="subfolders "><a href="sewebiug_working_with_file_services_overview.html">
+        <div class="na-navbar-padding"> Work with file services</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="sewebiug_view_servers.html">
+        View servers
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_a_file_server.html">
+        Create a file server
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_modify_file_server.html">
+        Modify file server
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_delete_file_server.html">
+        Delete file server
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_view_shares.html">
+        View shares
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_a_new_file_share.html">
+        Create a file share
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_file_share_from_snapshot.html">
+        Create file share from snapshot
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_modify_a_file_share.html">
+        Modify a file share
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_delete_a_file_share.html">
+        Delete a file share
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_adhoc_snapshot_of_a_file_share.html">
+        Create adhoc snapshot of a file share
+      </a></li></ul></li><li class="subfolders "><a href="sewebiug_working_with_block_storage_overview.html">
+        <div class="na-navbar-padding"> Work with block storage</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="sewebiug_view_host_groups.html">
+        Work with host groups
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_view_disks.html">
+        View disks
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_a_new_disk.html">
+        Create a disk
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_a_disk_from_a_snapshot.html">
+        Create a disk from a snapshot
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_modify_a_disk.html">
+        Modify a disk
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_delete_a_disk.html">
+        Delete a disk
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_an_adhoc_snapshot_of_a_disk.html">
+        Create an adhoc snapshot of a disk
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Work with object storage</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="sewebiug_working_with_object_storage_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_view_buckets.html">
+        View buckets
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_initialize_object_storage.html">
+        Initialize object storage
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_buckets.html">
+        Create buckets
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_view_the_object_storage_group_and_users.html">
+        View the object storage group and users
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_an_object_storage_group.html">
+        Create an object storage group
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_modify_an_object_storage_group.html">
+        Modify an object storage group
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_delete_an_object_storage_group.html">
+        Delete an object storage group
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_object_storage_user.html">
+        Create Object Storage User
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_modify_an_object_storage_user.html">
+        Modify an object storage user
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_create_an_s3_key_for_a_user.html">
+        Create an S3 key for a user
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_delete_an_s3_key_for_a_user.html">
+        Delete an S3 key for a user
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Manage subscribed services</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Managing subscribed services</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_subscribed_services_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_view_a_list_of_subscribed_services.html">
+        View a list of subscribed services
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_add_a_subscribed_service.html">
+        Add a subscribed service
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_modify_the_subscribed_service_details.html">
+        Modify the subscribed service details
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_delete_a_subscribed_service.html">
+        Delete a subscribed service
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Managing Azure NetApp Files</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_azure_netapp_accounts.html">
+        Managing Azure NetApp accounts
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_azure_capacity_pools.html">
+        Managing Azure capacity pools
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_azure_volumes.html">
+        Managing Azure volumes
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_gcp_cvs.html">
+        Managing Cloud Volumes Service for Google Cloud Platform
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="sewebiug_working_with_reports.html">
+        View reports
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_back_up_file_shares_and_disks.html">
+        Work with backups
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_subscriptions.html">
+        Manage subscriptions
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Manage service requests</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_service_requests_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_raise_a_service_request.html">
+        Raise a service request
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_track_a_service_request.html">
+        Track a service request
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_service_request_process.html">
+        Service request process
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_tenants_and_subtenants.html">
+        Manage tenants and subtenants
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Manage users</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="sewebiug_managing_users_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_view_a_list_of_users.html">
+        View a list of users
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_add_a_user.html">
+        Add a user
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_modify_user_details.html">
+        Modify user details
+      </a></li><li class=" "><a class="na-navbar-padding" href="sewebiug_delete_a_user.html">
+        Delete a user
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="sewebiug_define_network_configurations.html">
+        Manage networks
+      </a></li></ul></li><li class="subfolders "><a href="seapiref_overview_of_netapp_service_engine_apis.html">
+        <div class="na-navbar-padding"> NetApp Service Engine API Reference</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="seapiref_authorization_and_authentication.html">
+        Authorization and authentication
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_netapp_service_engine_rest_apis.html">
+        NetApp Service Engine REST APIs
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Consumer APIs</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="seapiref_consumer_apis_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_cloud_orchestration_apis.html">
+        Cloud orchestration APIs
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_block_storage_apis.html">
+        Block storage APIs
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_file_services_apis.html">
+        File services APIs
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_object_storage_apis.html">
+        Object storage APIs
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_backups_apis.html">
+        Backups APIs
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_reporting_apis.html">
+        Reporting APIs
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_subnets_apis.html">
+        Create subnets using APIs
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_@consumer@_administration_apis.html">
+        (Consumer) Administration APIs
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Administrator APIs</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="seapiref_administrator_apis_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_tenants.html">
+        Tenants
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_subtenants.html">
+        Subtenants
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_users.html">
+        Users
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_zones.html">
+        Zones
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_regions.html">
+        Regions
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_ontap_clusters.html">
+        ONTAP clusters
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_storagegrid_instances.html">
+        StorageGRID instances
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_service_levels.html">
+        Service levels
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_service_requests.html">
+        Service requests
+      </a></li><li class=" "><a class="na-navbar-padding" href="seapiref_jobs.html">
+        Jobs
+      </a></li></ul></li></ul></li></ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      
+
+
+
+<div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Billing accounts, subscriptions, services, and performance</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-04-30 10:49:07 +0000">04/30/2021</time>
+    
+  
+
+<span>Contributors
+  <a target="_blank" href="https://github.com/ciarm">
+    <img  class="avatar avatar-small"
+          alt="ciarm"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/68733805?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-manini">
+    <img  class="avatar avatar-small"
+          alt="netapp-manini"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/59729581?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-reenu">
+    <img  class="avatar avatar-small"
+          alt="netapp-reenu"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64952629?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/dmp-netapp">
+    <img  class="avatar avatar-small"
+          alt="dmp-netapp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/50704017?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+  <span>
+    <a target="_blank" href="/us-en/keystone/pdfs/pages/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.pdf" role="button">
+      <img src="/us-en/keystone/images/pdf.png" width="20" height="20"/>Download PDF of this page</a>
+  </span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>A subscription storage service is billed to a billing account. Each billing account is linked to a tenant. A billing account can be billed for one or more subscriptions.</p>
+</div>
+<div class="paragraph">
+<p>A subscription refers to a group of storage services that are subscribed to and billed as one package. A subscription:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Has one or more storage services</p>
+</li>
+<li>
+<p>Has a committed duration with a subscription end date</p>
+</li>
+<li>
+<p>Can have add-ons associated with the subscription</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If storage is required in multiple data centers, a separate subscription is required for each data center, with separate commitments.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>A storage service is a subscribed-to committed storage capacity with an associated performance level. NetApp Service Engine offers file and block storage at extreme, extreme-tiering, premium, premium-tiering, and standard performance levels, and object storage at an object performance service level.</p>
+</div>
+<div class="paragraph">
+<p>The extreme-tiering and premium-tiering performance levels enable you to reduce your storage footprint and associated costs by monitoring and tiering your cold or inactive data to low-cost object storage tiers. The tiering policy is set to auto, where data left inactive for 31 days is tiered by default. You can modify this time period to be any number of days from 3 to 61 days.</p>
+</div>
+<div class="paragraph">
+<p>When created, file and block storage items are associated with a performance level. Moving workloads between performance service levels is possible as requirements change. The extreme, extreme-tiering, premium, premium-tiering, and standard performance levels offer different levels of I/O performance (IOPS) and throughput (MBps) so storage can be tailored to requirements.</p>
+</div>
+<div class="paragraph">
+<p>Burst usage is allowed on services up to a certain point; it is monitored and billed at separate charge rates (as defined in the subscription). For more information about capacity and usage, see <a href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#committed,-consumed,-and-burst-capacity,-and-excess-usage">Committed, consumed, and burst capacity, and excess usage</a>. DP services that support backups and disaster recovery are also offered.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="committed-consumed-and-burst-capacity-and-excess-usage">Committed, consumed, and burst capacity, and excess usage</h3>
+<div class="paragraph">
+<p>Consumed capacity is how much capacity has been allocated (but not necessarily used). Committed capacity is the capacity that is committed to in a subscription; the subscriber is billed at a fixed rate for the committed capacity, regardless of how much is used.</p>
+</div>
+<div class="paragraph">
+<p>Burst capacity is the capacity above the committed capacity that is allocated.</p>
+</div>
+<div class="paragraph">
+<p>Burst capacity = consumed capacity – committed capacity</p>
+</div>
+<div class="paragraph">
+<p>NetApp Service Engine monitors consumed capacity, checks the usage against the subscription, and bills for any consumed capacity that exceeds the committed capacity at the burst rate specified in the subscription. Usage is captured in five-minute increments and a daily summary is submitted to the billing engine for burst charge calculation. (Billing time is based on the local time for the underlying infrastructure for the NetApp Service Engine installation. )</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In addition to primary storage, features such as snapshots, backup, and disaster recovery replicas contribute to and are included in usage calculations.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="burst-usage-notifications">Burst usage notifications</h3>
+<div class="paragraph">
+<p>As burst usage incurs additional cost, the NetApp Service Engine GUI displays:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A notification when a proposed change in provisioning will result in using burst capacity.</p>
+</li>
+<li>
+<p>A notification to a Customer Admin when a subscription has gone in to burst usage.</p>
+</li>
+<li>
+<p>How many days and in what quantity burst usage has been used for a service, in the Capacity Report. For more information see <a href="sewebiug_working_with_reports.html#capacity-usage">Capacity usage</a>.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="notification-when-a-proposed-change-will-result-in-using-burst-capacity">Notification when a proposed change will result in using burst capacity</h4>
+<div class="paragraph">
+<p>This figure shows an example of a notification displayed when a proposed provisioning change will cause a subscription to go into burst. You can choose to continue knowing that it will put the subscription into burst or choose not to continue with the action.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image2.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+<div class="paragraph">
+<p>The following table lists when such burst notifications are displayed.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Action</th>
+<th class="tableblock halign-left valign-top">Impact at the Source</th>
+<th class="tableblock halign-left valign-top">Impact at the Destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create or resize a share/disk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exceeds commitment on the service level in the zone.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move a share/disk to a new service level.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exceeds commitment on the service level in the zone.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create or resize a share/disk on a file server/block store with disaster recovery enabled.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Exceeds commitment on the service level in the zone</p>
+</li>
+<li>
+<p>Exceeds commitment on DP in the zone</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exceeds commitment on the service level in the destination zone by the automatically created destination share/disk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move a share/disk to a new service level on a file server/block store with disaster recovery enabled.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Exceeds commitment on the service level in the zone.</p>
+</li>
+<li>
+<p>Exceeds commitment on DP in the zone.</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exceeds commitment on the service level in the destination zone by the relocated destination share/disk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable backups on a share/disk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exceeds commitment for DP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exceeds commitment on the service level in the destination zone by the automatically created destination share/disk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create a new object store tenancy.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The commitment for object capacity could be exceeded.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Increase the quota on an object store tenancy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The commitment for object capacity could be exceeded.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="notification-when-subscription-is-in-burst">Notification when subscription is in burst</h4>
+<div class="paragraph">
+<p>The following notification banner is displayed when a subscription is in burst. The notification is displayed to the customer administrator for the tenancy and is displayed until the notification is acknowledged.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image3.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="data-protection">Data protection</h3>
+<div class="paragraph">
+<p>DP refers to methods that support back up of data and the ability to recover it if required.</p>
+</div>
+<div class="paragraph">
+<p>NetApp Service Engine DP features include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Snapshots of disks and shares</p>
+</li>
+<li>
+<p>Backups of disks and shares (requires DP service as part of the subscription)</p>
+</li>
+<li>
+<p>Disaster recovery for disks and shares (requires DP or DP Advanced service as part of the subscription)</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="snapshots">Snapshots</h4>
+<div class="paragraph">
+<p>Snapshots are point-in-time copies of data. Snapshots can be cloned to form a new disk or share with the same or similar features.</p>
+</div>
+<div class="paragraph">
+<p>Snapshots can be created adhoc or automatically on a schedule as defined in a snapshot policy. The snapshot policy determines when snapshots are captured and how long they are retained.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Snapshots contribute to the consumed capacity of a service.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="backups">Backups</h4>
+<div class="paragraph">
+<p>Backup refers to taking a copy of an item, replicating it, and storing the copy in a zone other than the original zone, which has the respective protocol enabled (in case of block storage only) and is non-MetroCluster enabled. NetApp Service Engine offers backups on file and block storage (requires a DP service on the subscription). Backups of shares/disks are stored in the backup zone on the lowest cost performance tier (that is Standard) on subscription.</p>
+</div>
+<div class="paragraph">
+<p>Backups can be configured at the time of creation of a new share/disk or later added to an existing share/disk.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Backups occur at a fixed time, around 0:00 UTC.</p>
+</li>
+<li>
+<p>Backups occur as defined by the backup policy set for the share/disk. The backup policy determines:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If backups are enabled</p>
+</li>
+<li>
+<p>The zone to which the backups are replicated; a backup zone is any zone in NetApp Service Engine other than the zone in which the original share or disk resides, which has the respective protocol enabled (in case of block storage only) and is non-MetroCluster enabled. Once set, the backup zone cannot be changed.</p>
+</li>
+<li>
+<p>The number of backups to keep (retention) of each interval (daily, weekly, or monthly).</p>
+<div class="paragraph">
+<p>Scheduled backups are taken regularly and cannot be deleted but will be aged out as determined by the retention policy.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Backup replication occurs daily.</p>
+</li>
+<li>
+<p>Backups of disks or shares cannot be configured in an NetApp Service Engine instance that contains only one zone.</p>
+</li>
+<li>
+<p>Deleting a primary share or disk will delete all associated backups.</p>
+</li>
+<li>
+<p>Backups contribute to the total consumed capacity. In addition, backups incur cost at the DP subscription rate. See also <a href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges">Data Protection, Consumed Capacity, and Charges</a>.</p>
+</li>
+<li>
+<p>Restore from backup: raise a service request to restore a share or disk from backup.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="disaster-recovery">Disaster recovery</h3>
+<div class="paragraph">
+<p>Disaster recovery refers to the ability to recover to normal operations in the event of a disaster.</p>
+</div>
+<div class="paragraph">
+<p>NetApp Service Engine supports two forms of disaster recovery: Asynchronous and Synchronous.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Support for disaster recovery is dependent on the infrastructure supported by the NetApp Service Engine instance.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="disaster-recoveryasynchronous">Disaster recovery—asynchronous</h4>
+<div class="paragraph">
+<p>NetApp Service Engine supports asynchronous disaster recovery by providing the ability to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Asynchronously replicate primary volumes to a disaster recovery zone</p>
+</li>
+<li>
+<p>Failover/failback (available by service request only)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Asynchronous disaster recovery is available on file and block storage and requires a DP service on the subscription.</p>
+</div>
+<div class="paragraph">
+<p>The disaster recovery zone must be a zone within NetApp Service Engine that is different to the zone in which the primary volume is created, and  should not be a MetroCluster partner if the source zone is MetroCluster enabled. Disaster recovery replicas of shares/disks are stored in the disaster recovery zone at the same performance tier as the original share/disk.</p>
+</div>
+<div class="paragraph">
+<p>Enabling asynchronous disaster recovery replication for a primary volume requires:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Configuring the file server or block store on which the volume resides to support disaster recovery.</p>
+</li>
+<li>
+<p>Enabling or disabling disaster recovery replication of the file share or disk. By default, shares and disks are enabled for disaster recovery replication if disaster recovery is configured.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="configure-file-server-or-block-store-to-support-asynchronous-disaster-recovery">Configure file server or block store to support asynchronous disaster recovery</h5>
+<div class="paragraph">
+<p>Enable asynchronous disaster recovery on a file server or block store at creation or at a later date. After it is enabled, disaster recovery cannot be disabled, and the disaster recovery zone cannot be changed. The disaster recovery schedule specifies how often the data is replicated to the disaster recovery location (hourly, four hourly, or daily).</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="enable-asynchronous-disaster-recovery-on-file-share-or-disk">Enable asynchronous disaster recovery on file share or disk</h5>
+<div class="paragraph">
+<p>A file share or disk can only be configured for asynchronous disaster recovery replication if the parent file server or block store is first configured for asynchronous disaster recovery. By default, if replication is enabled in the parent, replication is enabled in the file shares or disks that the parent hosts. You can exclude replication of a particular share or disk by disabling disaster recovery on that share/disk. It is possible to toggle between enabling and disabling replication on these shares/disks.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Deleting a primary file server or block store will delete all disaster recovery replicated copies.</p>
+</li>
+<li>
+<p>Only one disaster recovery zone can be configured per file server or block store.</p>
+</li>
+<li>
+<p>Disaster recovery copies contribute to the total consumed capacity. In addition, disaster recovery incurs cost at the disaster recovery subscription rate. See also <a href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges">Data Protection, Consumed Capacity, and Charges</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="disaster-recoverysynchronous">Disaster recovery—synchronous</h4>
+<div class="paragraph">
+<p>MetroCluster is a DP feature which synchronously replicates data and configuration between two distinct zones which reside in separate locations or failure domains. In the event of a disaster at one site, an administrator can enable data to be served from the surviving site.</p>
+</div>
+<div class="paragraph">
+<p>NetApp Service Engine managed sites that are configured with MetroCluster can support synchronous disaster recovery for File and Block storage in the following way.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Zones can be configured to support synchronous disaster recovery.</p>
+</li>
+<li>
+<p>Disks/shares created in these zones synchronously replicate to the disaster recovery zone.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Synchronous disaster recovery incurs costs at synchronous disaster recovery subscription rate. See also <a href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges">Data Protection, Consumed Capacity, and Charges</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="data-protection-consumed-capacity-and-charges">Data protection, consumed capacity, and charges</h3>
+<div class="paragraph">
+<p>The figures in this section describe how DP charges are calculated.</p>
+</div>
+<div class="sect3">
+<h4 id="disaster-recovery-2">Disaster recovery</h4>
+<div class="sect4">
+<h5 id="asynchronous-disaster-recovery">Asynchronous disaster recovery</h5>
+<div class="paragraph">
+<p>In asynchronous disaster recovery, usage and cost is made up of the following charges:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Original volume capacity charged at the performance tier on which it resides.</p>
+</li>
+<li>
+<p>Disaster recovery copy charged at the same performance tier at the destination or disaster recovery zone (disaster recovery copies are stored at the same tier).</p>
+</li>
+<li>
+<p>DP service charge (for the capacity of the original volume).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image4.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="synchronous-disaster-recovery">Synchronous disaster recovery</h5>
+<div class="paragraph">
+<p>In synchronous disaster recovery, usage and cost is made up of the following charges:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image5.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="backup">Backup</h4>
+<div class="paragraph">
+<p>In backup, usage and cost are made up of the following charges:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Original volume capacity charged at the performance tier on which it resides.</p>
+</li>
+<li>
+<p>Backup volumes charged at the lowest available performance tier (backup copies are stored on the lowest cost available tier).</p>
+</li>
+<li>
+<p>DP service charge (for the capacity of the original volume).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image6.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div class="page-nav-contribute"  >
+      <div class="page-nav-contribute-title">CONTRIBUTE</div>
+      <a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.adoc" class="btn btn-default githubEditButton" role="button"><img src="/us-en/keystone/images/github.png" class="github-icon" />Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/keystone/issues/new?body=Page%3A%20[Billing accounts, subscriptions, services, and performance](https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html)" class="btn btn-default githubEditButton" role="button"><img src="/us-en/keystone/images/github.png" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Contributor's Guide</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2021 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/keystone/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/keystone/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/keystone/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/keystone/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/keystone/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/keystone/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/keystone/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/keystone/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/keystone/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/keystone/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/keystone/js/www-ntap.js'></script>
+  </body>
+
+  
+</html>
