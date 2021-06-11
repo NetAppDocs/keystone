@@ -12,24 +12,18 @@ summary: NetApp Keystone Overview
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-08 17:15:36.817851
-//
-
 [.lead]
 The following questions give answers to your frequent queries about NetApp Keystone.
 
-*What is NetApp Keystone?*
+=== What is NetApp Keystone?
 
 NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives, consisting of NetApp Keystone Flex Pay (Flex Pay), and NetApp Keystone Flex Subscription (Flex Subscription).
 
 * *Flex Pay:* A portfolio of payment solutions including traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
 * *Flex Subscription:* Pay-as-you-grow subscription-based service that brings a cloud-like experience on premises, with an outcome-based service option (NetApp-operated).
-For more information, see link:https://docs.netapp.com/us-en/keystone/index.html[here]
+For more information, see link:https://docs.netapp.com/us-en/keystone/index.html[here].
 
-*How does NetApp Keystone benefit my customers?*
+=== How does NetApp Keystone benefit my customers?
 
 NetApp Keystone is the bridge that connects the pillars of our capex and hybrid cloud strategy— delivering agility, financial flexibility, and reduced financial risk that helps customers meet their cash flow and business needs.
 
@@ -49,16 +43,16 @@ The NetApp Keystone brand offers a portfolio of flexible payment solutions that 
 ** Short-term solution before migrating workloads to the cloud
 ** Repatriating workloads back from the cloud to on- premises
 
-*What is Flex Subscription?*
+=== What is Flex Subscription?
 
 Flex Subscription is a new, flexible, on-premises subscription-based procurement model. It enables customers to accelerate time to value by removing the hurdles around managing the resources and going through the lengthy procurement cycle. Flex Subscription allows customers to align economics to their business priorities.
-For more information, see link:https://docs.netapp.com/us-en/keystone/index.html#netapp-keystone-flex-subscription[here]
+For more information, see link:https://docs.netapp.com/us-en/keystone/index.html#netapp-keystone-flex-subscription[here].
 
-*What does on-premises mean?*
+=== What does on-premises mean?
 
 On-premises is defined as a customer-owned data center or customer-owned space in a colocation facility. The customer is responsible for the space, power, and cooling.
 
-*What are the benefits of Flex Subscription services?*
+=== What are the benefits of Flex Subscription services?
 
 Some benefits of Flex Subscription services are:
 
@@ -69,4 +63,4 @@ Some benefits of Flex Subscription services are:
 * Simplifies infrastructure provisioning by bypassing complex organizational procurement procedures
 * Keeps data secure on their premises
 * Enables proper control over compliance, performance, and security
-For more information, see link:https://docs.netapp.com/us-en/keystone/index.html#benefits-of-flex-subscription[here]
+For more information, see link:https://docs.netapp.com/us-en/keystone/index.html#benefits-of-flex-subscription[here].

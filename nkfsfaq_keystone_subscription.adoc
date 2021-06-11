@@ -15,69 +15,69 @@ summary: NetApp Keystone Subscription
 [.lead]
 The following questions give answers to your frequent queries about NetApp Keystone Flex Subscription services.
 
-*What is offered as part of NetApp Keystone Flex Subscription?*
+=== What is offered as part of NetApp Keystone Flex Subscription?
 NetApp Keystone Flex Subscription (Flex Subscription) is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
 
-*What storage service offers are provided as part of Flex Subscription?*
+=== What storage service offers are provided as part of Flex Subscription?
 The following chart shows the data storage performance service levels offerings.
 
-image:nkfsosm_image5.png[Error: Missing Graphic Image]
+image:nkfsosm_image5.png[Flex Subscription Performance Service Levels]
 
-*What add-on services are supported?*
+=== What add-on services are supported?
 Advanced data protection (backup and disaster recovery) and Hybrid Cloud Tiering with FabricPool are add-on services that can be chosen at an additional cost.
 
-*What service levels does NetApp guarantee with the service?*
+=== What service levels does NetApp guarantee with the service?
 In a NetApp operated scenario, NetApp Keystone guarantees IOPS/TiB for the storage that is provisioned and the latency for each service level.
 
 
-*What does Flex Subscription map to?*
+=== What does Flex Subscription map to?
 Flex Subscription maps to a single site or a single data center and it can comprise of different performance service levels.
 
-*What are the benefits of extreme-tiering and premium-tiering performance levels?*
+=== What are the benefits of extreme-tiering and premium-tiering performance levels?
 Tiering is enabled in the extreme-tiering and premium-tiering performance levels, which enables you to reduce your storage footprint and associated costs. NetApp assumes that 25% of your data is hot, while the remaining 75% is less frequently used or cold, and moves it to cold storage. Additionally, you can check usage reports to understand how frequently data is accessed and enable tiering service based on the information.
 
-*Can partners sell more capacity than they have purchased from NetApp to customers?*
+=== Can partners sell more capacity than they have purchased from NetApp to customers?
 Tenant subscriptions are not limited by the capacity that the partner has purchased. Partners can sell more capacity than they have purchased from NetApp to their customers. The capacity that is in excess of the purchased capacity is referred to as oversubscription.
 
-*Are APIs provided to integrate with customer tools?*
-Yes, RESTful APIs are available to integrate into your own applications. Navigate to *SUPPORT> API Documentation* to see the API documentation for Flex Subscription services. For more information, see the link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html[Keystone Flex Subscription API guide]
+=== Are APIs provided to integrate with customer tools?
+Yes, RESTful APIs are available to integrate into your own applications. Navigate to *SUPPORT> API Documentation* to see the API documentation for Flex Subscription services. For more information, see the link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html[Keystone Flex Subscription API guide].
 
-*What is burst capacity?*
+=== What is burst capacity?
 You can increase and decrease usage up to 20% above the committed capacity. The burst capacity usage is measured on a daily basis and billed only when used.
 For example, if the committed capacity is 100 TiB, you can burst up to 120 TiB.
 
-*Is there a premium charge for using burst?*
+=== Is there a premium charge for using burst?
 The burst capacity usage up to 20% of committed capacity is billed at the same rate as committed capacity, any usage above 20% of committed capacity is billed at 50% premium.
 
-*What is the benefit of burst capacity?*
+=== What is the benefit of burst capacity?
 Burst capacity gives you the flexibility to consume storage on demand versus committing for the long term.
 
-*How is burst capacity allocated to tenants?*
+=== How is burst capacity allocated to tenants?
 Burst capacity is allocated to partners, who further allocate it to their customers based on requirements.
 
-*Where can I see the committed and burst capacity usage?*
+=== Where can I see the committed and burst capacity usage?
 NetApp Service Engine has built-in dashboards to report consumed capacity against committed capacity.
 
-*Will there be any notifications if I reach a certain percentage in committed capacity usage?*
+=== Will there be any notifications if I reach a certain percentage in committed capacity usage?
 Yes, the management tools provide notifications on capacity usage through the NetApp Service Engine dashboard.
 
-*How do I view the Flex Subscription usage?*
+=== How do I view the Flex Subscription usage?
 NetApp Service Engine provides a dashboard view, with information on all the services that are subscribed to and how much is consumed. For details about NetApp Service Engine, see link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html[here].
 
-*How do I report any issues with the service?*
+=== How do I report any issues with the service?
 NetApp Keystone support can be reached through these various channels:
 
 * Support email: mailto:keystone.services@netapp.com[keystone.services@netapp.com^]
 * Escalations email: mailto:keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
 
-*Can I order new storage service?*
+=== Can I order new storage service?
 Yes, new storage service or expansion to storage service can be requested from the NetApp Service Engine portal. The request is processed by the NetApp Keystone operations team before making it available for use.
 
-*Are increases to storage commitments available immediately?*
+=== Are increases to storage commitments available immediately?
 Depending the amount of capacity requested, a determination is made whether the capacity is already deployed, or it requires additional equipment to be shipped and installed.
 
-*Can workloads be moved between the tiers?*
+=== Can workloads be moved between the tiers?
 Yes, workloads can be moved between tiers, provided the user has subscribed to the tier the workload is moving to. However, we do not recommend moving from a higher tier to a lower tier because it can cause a performance degradation. The process is achieved by simply editing the file share and changing the service level setting.
 
-*What software version (for example, ONTAP) is installed as default?*
+=== What software version (for example, ONTAP) is installed as default?
 Depending on the service tier subscribed (for example, ONTAP with File and Block services, SANtricity for Block, and StorageGrid for Object) the support team installs the latest stable release with no security or feature issues.
