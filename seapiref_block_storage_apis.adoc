@@ -44,7 +44,8 @@ a|`subtenant_id`: The ID of the subtenant.
 `subnet_id`: The ID of the subnet.
 
 a|`POST`
-a|`/v2.1/blockstores/{id}/tags`
+a|`/v2.1/blockstores/{id}/`
+`tags`
 |You can create or replace tags for a block store. Add the ID of the block store, and the values for the tags in the "key:value pair" format in the request body.
 a|`id`: The ID of the block store.
 
@@ -56,12 +57,10 @@ a|`id`: The ID of the block store.
 a|`DELETE`
 a|`/v2.1/blockstores/{id}`
 a|You can delete any block store by its ID.
-[NOTE]
-====
-Before you delete a block store, you should delete all the disks mapped to it.
-====
 a|`id`: The ID of the block store.
 |===
+
+NOTE: Before you delete a block store, you should delete all the disks mapped to it.
 
 == Disks
 
@@ -96,13 +95,15 @@ a|`subtenant_id`: The ID of the subtenant.
 `size_gb`: The size of the disk in GBs.
 
 a|`POST`
-a|`/v2.1/disks/{id}/snapshot/{name}`
+a|`/v2.1/disks/{id}/`
+`snapshot/{name}`
 |You can create a snapshot of a disk.
 a|`id`: The ID of the disk.
 `name`: The name of the snapshot.
 
 a|`POST`
-a|`/v2.1/disks/{id}/tags`
+a|`/v2.1/disks/{id}/`
+`tags`
 |You can create or replace tags for a disk. Add the ID of the disk and the values for the tags in the "key:value pair" format in the request body.
 a|`id`: The ID of the disk.
 
@@ -118,7 +119,8 @@ a|`/v2.1/disks/{id}`
 a|`id`: The ID of the disk.
 
 a|`DELETE`
-a|`/v2.1/disks/{id}/snapshot/{name}`
+a|`/v2.1/disks/{id}/`
+`snapshot/{name}`
 |You can delete any snapshot of a disk by the ID of the disk and the name of the snapshot.
 a|`id`: The ID of the disk.
 `name`: The name of the snapshot.
@@ -153,7 +155,8 @@ a|`name`: The name of the host group.
 `os_type`: The type of the host operating system.
 
 a|`POST`
-a|`/v2.1/hostgroups/{id}/tags`
+a|`/v2.1/hostgroups/{id}/`
+`tags`
 |You can create or replace tags for a host group. Add the ID of the host group and the values for the tags in the "key:value pair" format in the request body.
 a|`id`: The ID of the host group.
 
@@ -172,41 +175,45 @@ You can use Host Groups APIs to retrieve and manage the initiators mapped to you
 | HTTP Verb | Path | Description | Mandatory parameters/Request body
 
 a|`GET`
-a|`/v2.1/hostgroups/{id}/initiators`
+a|`/v2.1/hostgroups/{id}/`
+`initiators`
 |You can retrieve the details of all your initiators. Retrieves initiators and their aliases.
 a|`id`: The ID of the host group.
 
 a|`GET`
-a|`/v2.1/hostgroups/{id}/initiators/{alias}`
+a|`/v2.1/hostgroups/{id}/`
+`initiators/{alias}`
 |You can retrieve the details of a specific initiator. Retrieves the initiator based on the entered ID and alias.
 a|`id`: The ID of the host group.
 `alias`: The alias name of the initiator.
 
 a|`POST`
-a|`/v2.1/hostgroups/{id}/initiators`
+a|`/v2.1/hostgroups/{id}/`
+`initiators`
 a|You can create an initiator for a host group. Add the values for the initiator and its alias in the request body to create an initiator for the host group.
-[NOTE]
-====
-When adding initiators to a host group, the initiator should match the host group protocol: use IQNs for host groups with iSCSI protocol, and WWPNs for host groups with FC protocol.
-====
 a|`id`: The ID of the host group.
 `alias`: The alias name of the initiator.
 `initiator`: The initiator (iSCSI Qualified Names or FC WWPNs).
 
 a|`PATCH`
-a|`/v2.1/hostgroups/{id}/initiators/{alias}`
+a|`/v2.1/hostgroups/{id}/`
+`initiators/{alias}`
 |You can modify an initiator. Add the new initiator in the request body.
 a|`id`: The ID of the host group.
 `alias`: The alias name of the initiator.
 `initiator`: The initiator (iSCSI Qualified Names or FC WWPNs).`
 
 a|`DELETE`
-a|`/v2.1/hostgroups/{id}/initiators/{alias}`
+a|`/v2.1/hostgroups/{id}/`
+`initiators/{alias}`
 a|You can delete an initiator by the ID of the host group and the alias of the initiator.
-[NOTE]
-====
-Deleting an initiator from a host group affects all the disks to which the host group is mapped to.
-====
 a|`id`: The ID of the host group.
 `alias`: The alias name of the initiator.
 |===
+
+[NOTE]
+====
+When adding initiators to a host group, the initiator should match the host group protocol. You should use IQNs for host groups with iSCSI protocol, and WWPNs for host groups with FC protocol.
+
+Deleting an initiator from a host group affects all the disks to which the host group is mapped to.
+====
