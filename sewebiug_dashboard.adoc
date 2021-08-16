@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_dashboard.html
-keywords: netapp, keystone, view, subscribed, services, capacity,
-summary: Keystone view subscribed services capacity
+keywords: netapp, keystone, view, dashboard, capacity utilization, monthly charges, alerts, service request
+summary: Dashboard view
 ---
 
 = View Flex Subscription Dashboard
@@ -12,35 +12,12 @@ summary: Keystone view subscribed services capacity
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.121490
-//
-
 [.lead]
-The Dashboard page displays information about the storage subscriptions for a specific subscription number. For the selected subscription, the dashboard displays the service tiers that make up the selected subscription. It also displays the capacity usage for each service level, and for add-on services, such as data protection and advanced protection, in additional tabs.
+The Dashboard provides a quick overview of your NetApp Keystone storage subscriptions. It displays information about the capacity used, billing against your usage, and recent alerts and service requests.
 
-image:sewebiug_image19.png[Error: Missing Graphic Image]
+The Dashboard displays important information across the following widgets, which can be clicked through for in-depth analysis:
 
-=== Dashboard view for a service provider
-
-The dashboard provides a high-level overview of the NetApp Keystone Flex Subscriptions. As a service provider/partner you can view the service levels for your subscription and the tenant services under each subscription. You can also have a view of the data usage (such as burst data) by each tenant, and can filter the usage based on a specific tenant (by selecting a specific tenant from the top right corner).
-[NOTE]
-If you have subscribed to Data-Protection Basic services and Advanced Data Protection services, the details of consumption are displayed in DATA PROTECTION and ADVANCED PROTECTION tabs.
-
-image:sewebiug_image17.png[Error: Missing Graphic Image]
-
-Each service that you have subscribed to, as a service provider, is represented by a circle consisting of four concentric rings. The rings depict the capacities associated with the service: the outer ring depicts the capacity that has been committed for the tenants. The middle blue ring depicts the capacity is actually consumed by the tenants under that subscription. The inner ring indicates any burst capacity usage (in red). The innermost area gives an overview of the total capacity under Flex Subscription service that you have subscribed to. Hover the cursor over the ring to view the relevant capacity.
-
-image:sewebiug_image18.png[Error: Missing Graphic Image]
-
-When a service provider has more than one subscription, they can scroll down to view the subscribed services of the other subscriptions.
-
-=== Dashboard view for the tenant
-
-For a tenant administrator, you can view only the current details of all the tenant subscriptions for your tenancy - the service levels for your subscription and any add-on services in other tabs.
-
-Each service that you have subscribed to, as a tenant, is represented by a circle consisting of four concentric rings. The rings depict the capacities associated with the service: the outer ring depicts the capacity that has been committed for your tenants. The middle blue ring depicts the capacity is actually consumed by the tenants under that subscription. The inner ring indicates any burst capacity usage (in red). The innermost area gives an overview of the total capacity under Flex Subscription service that you have subscribed to. Hover the cursor over the ring to view the relevant capacity.
-[NOTE]
-If you have subscribed to Data-Protection Basic services and Advanced Data Protection services, the details of consumption are displayed in DATA PROTECTION and ADVANCED PROTECTION tabs.
+* *Capacity Utilization:* Displays your capacity utilization for Keystone Flex Subscription, Keystone Flex Utility, and Cloud Services. You can view the committed and consumed capacities, as well as the capacity in burst and identify if you need to add more capacity to your subscriptions. For more information on capacity utilization, see link:sewebiug_working_with_reports.html[View reports].
+* *Monthly Charges:* Displays the aggregated monthly charges for the last three months and projected charges for the current month, based on usage trends. You can select any month to view the monthly subscription-level billing.
+* *Alerts:* Displays the summary of the most recent alerts, such as the status, message, and when it was created. For more informationon alerts, see link:sewebiug_alerts.html[Create and manage alerts].
+* *Service Requests:* Displays the summary of the most recent service requests, sorted by priority and when they were created. For more information on service requests, see link:sewebiug_raise_a_service_request.html[Raise a service request].
