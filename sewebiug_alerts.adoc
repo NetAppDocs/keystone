@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_alerts.html
-keywords: netapp, keystone, alert, create
+keywords: netapp, keystone, alert, create, custom alert
 summary: Create and manage alerts
 ---
 
@@ -13,13 +13,15 @@ summary: Create and manage alerts
 :imagesdir: ./media/
 
 [.lead]
-Alerts are messages that are triggered automatically when you provision storage or created manually to share crucial information within your environment.
+Alerts are messages that are either triggered automatically or created manually to share crucial information within your environment.
 
 When you provision storage, automatic alerts are triggered in the following scenarios:
 
 * The new disk or file share pushes the subscription into burst
 * The new disk or file share is provisioned on a new subscription
 * The consumed capacity within the subscription has crossed the threshold capacity, or is close to the committed capacity
+
+You can also create custom alerts and display them to other users. They can view and dismiss the alerts for themselves and other users within their tenancy, as required.
 
 == Create an alert in your multitenant environment
 
@@ -38,7 +40,6 @@ If you want to send the alert to all the tenants in your environment, select "Al
 +
 
 . Click *Create*.
-+
 The new alert is created.
 
 == Create an alert in your tenancy
@@ -53,5 +54,4 @@ NOTE: You can dismiss an alert that you created. However, it is dismissed only f
 . Click *Create alert*.
 . On *Create alert* screen, select the status and add the message.
 . Click *Create*.
-+
 The new alert is created.
