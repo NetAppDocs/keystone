@@ -15,17 +15,20 @@ summary: View and download billing details
 [.lead]
 You can view the monthly charges for your NetApp Keystone storage subscriptions, for example, Keystone Flex Subscription, Keystone Flex Utility, and Cloud Services.
 
-You can view the billing details for your subscribed services for the last 12 months and also the projected billing for the current month, based on usage trends. The billing against the capacity in burst for each month is highlighted. Projected billing covers the capacity that is in burst at present and the expected increase in burst capacity for the billing period.
+You can view the billing details for your subscribed services for the previous months and also the projected billing for the current month, based on the usage trends of the historical data. The billing against the capacity in burst for each month is highlighted. Projected billing covers the capacity that is in burst at present and the expected increase in burst capacity for the billing period.
 
 NOTE: If any of your subscriptions are billed annually, the invoice reflects the prorated amount instead of actual monthly invoice amount.
 
-You can view the list of all the storage subscriptions for a month and download the aggregated invoice, or the invoice for individual subscriptions.
+You can sort the data in the table by month and view the list of all the storage subscriptions for any given month.
 
 .Steps
 
 . Select *ADMINISTRATION* > *Billing* from the menu.
++
+[NOTE]
+You can also click the arrow on the top right corner of the *Monthly Charges* widget on the dashboard or any bar that represents a month in the widget to view the Billing page. All your subscriptions for the selected month are displayed.
++
+
 . Optionally, hover over the bar representing a month to view additional details.
 . Select any month listed in the table.
-The list of subscriptions, along with the associated billing, for the month is displayed.
-. Click the download button to download the invoice.
-You can download the aggregated invoice or the invoices for individual subscriptions.
+All your subscriptions for the month, along with the associated billing, is displayed.

@@ -13,7 +13,7 @@ summary: Create and manage alerts
 :imagesdir: ./media/
 
 [.lead]
-Alerts are messages that are either triggered automatically or created manually to share crucial information within your environment.
+Alerts are messages that are either triggered automatically or created manually to share information about critical events within your environment.
 
 When you provision storage, automatic alerts are triggered in the following scenarios:
 
