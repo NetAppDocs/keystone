@@ -15,7 +15,7 @@ summary: View and download billing details
 [.lead]
 You can view the monthly charges for your NetApp Keystone storage subscriptions, for example, Keystone Flex Subscription, Keystone Flex Utility, and Cloud Services.
 
-You can view the billing details for your subscribed services for the previous months and also the projected billing for the current month, based on the usage trends of the historical data. The billing against the capacity in burst for each month is highlighted. Projected billing covers the capacity that is in burst at present and the expected increase in burst capacity for the billing period.
+You can view the billing details for all your subscribed services on NetApp Keystone for the previous months and also the projected billing for the current month, based on the usage trends of the historical data. The billing against the capacity in burst for each month is highlighted. Projected billing covers the capacity that is in burst at present and the expected increase in burst capacity for the billing period.
 
 NOTE: If any of your subscriptions are billed annually, the invoice reflects the prorated amount instead of actual monthly invoice amount.
 
@@ -31,4 +31,4 @@ You can also click the arrow on the top right corner of the *Monthly Charges* wi
 
 . Optionally, hover over the bar representing a month to view additional details.
 . Select any month listed in the table.
-All your subscriptions for the month, along with the associated billing, is displayed.
+All your subscriptions for the month, along with the associated billing, is displayed in the table. The charges are split up as per the committed capacity and burst usage.

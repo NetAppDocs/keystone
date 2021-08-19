@@ -17,17 +17,17 @@ The Dashboard provides a quick overview of your NetApp Keystone storage subscrip
 
 The Dashboard displays important information across the following widgets, which can be clicked through for in-depth analysis:
 
-* *Capacity Utilization:* Displays your capacity utilization for your subscribed services, for example, Keystone Flex Subscription, Keystone Flex Utility, and Cloud Services. You can view the committed and consumed capacities, as well as the capacity in burst and identify if you need to add more capacity to your subscriptions. You can view your subscriptions for a subscribed service by clicking any of the bars on the chart. You can further view the data usage for each service level and also for add-on services, such as data-protect extreme, data-protect premium, and data-protect standard, by selecting a subscription from the list.
-* *Monthly Charges (Billing):* Displays the aggregated monthly charges or billing details for the last three months and projected charges for the current month, based on usage trends. You can select any month to view the monthly subscription-level billing. For more information on billing, see link:sewebiug_billing.html[View billing].
+* *Capacity Utilization:* Displays your capacity utilization for your subscribed services, for example, Keystone Flex Subscription, Keystone Flex Utility, and Cloud Services. Hovering your mouse over the bar charts displays the break up of the capacity utilized. You can view the committed and consumed capacities, as well as the capacity in burst and identify if you need to add more capacity to your subscriptions. Click the bar chart to view all the subscriptions for your subscribed service on a new pop-up.  On clicking the subscription charts on this pop-up, you can see a break up of the capacity utilized per service level. You can also view the utilized capacity for your add-on services, such as data protection and advanced protection, if applicable.
+* *Monthly Charges (Billing):* Displays the aggregated monthly charges for all your subscriptions. You can view the billing details for the last three months and projected charges for the current month, based on usage trends. On hovering your cursor over the chart, you can view the charges split up as per your committed and burst usage. If you have multiple subscriptions for a subscribed service, on clicking the bar chart for a month, the subscription list is displayed on the Billing screen. For more information on billing, see link:sewebiug_billing.html[View billing].
 * *Alerts:* Displays the summary of the most recent alerts, such as the status, message, and when it was created. For more information on alerts, see link:sewebiug_alerts.html[Create and manage alerts].
 * *Service Requests:* Displays the summary of the most recent service requests, sorted by priority and when they were created. For more information on service requests, see link:sewebiug_raise_a_service_request.html[Raise a service request].
 
-== Dashboard view for a service provider
+== Dashboard view for a service provider in a multi-tenancy
 
-If you are partner admin, you can view a high-level overview of your subscriptions and click through the widgets for more details. Your capacity utilization, monthly charges, and recent alerts and service requests are displayed. The monthly charges widget represents your billing relationship with NetApp.
+If you are partner administrator in a multi-tenant environment, the dashboard provides a high-level overview of all your subscribed services for NetApp Keystone. The widget data of the capacity utilization and billing details, among others, represents your subscription and billing relationship with NetApp.
 
 You can also view the capacity utilization by each tenant, by selecting a specific tenant from the top right corner. The data in the capacity utilization widget represents the data usage by the selected tenant, whereas the data in all the other widgets remain constant and represent your storage subscriptions.
 
-== Dashboard view for a tenant
+== Dashboard view for a tenant in a multi-tenancy
 
-If you are a tenant admin, you can view the capacity utilization and recent alerts and service requests for your tenancy, and click through the widgets for more details.
+If you are a tenant administrator in a multi-tenant environment, you can view the capacity utilization, recent alerts, and service requests for your tenancy, and click through the widgets for more details. Contact your  service provider for your billing details.
