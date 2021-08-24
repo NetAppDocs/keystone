@@ -14,6 +14,13 @@ summary: new features in NetApp Service Engine
 
 [.lead]
 The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription (Flex Subscription) services:
+== Features introduced in NetApp Service Engine 2.2
+he new features in this release include a revamped dashboard for new widgets on billing, capacity utilization, service requests and alerts. This release also includes new screens for billing and alerts management, and renaming of the Subscribed services menu to Cloud services.
+
+=== Enhanced dashboard view
+The NetApp Service Engine dashboard has been redesigned to include the following new components:
+
+
 
 == Features introduced in NetApp Service Engine 2.1
 The new features in this release include supporting multi-tenancy in a Flex Subscription environment, and tiering capability that facilitates moving of inactive data to a lower cost local or cloud tier.
