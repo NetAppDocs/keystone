@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_subscribed_services_overview.html
-keywords: netapp, keystone, managing, subscribed, services, overview,
-summary: Keystone managing subscribed services overview
+keywords: netapp, keystone, managing, cloud, services, overview,
+summary: Keystone managing cloud services overview
 ---
 
 = Overview
@@ -11,12 +11,6 @@ summary: Keystone managing subscribed services overview
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:40.197840
-//
 
 [.lead]
 When registered with the NetApp Service Engine, you can manage your cloud volumes services (CVS) through the NetApp Service Engine web portal. This includes:
@@ -27,14 +21,14 @@ When registered with the NetApp Service Engine, you can manage your cloud volume
 +
 You can only register existing CVS subscriptions with NetApp Service Engine; to create a new subscription, create the CVS subscription in the normal way and then register it with the NetApp Service Engine using your subscription credentials.
 +
-This section describes how to manage subscribed services
+This section describes how to manage cloud services
 
 [NOTE]
-Managing subscribed services requires Customer Admin access.
+Managing cloud services requires Customer Admin access.
 
 You can:
 
-* View a list of subscribed services
-* Add a subscribed service
-* Modify subscribed service details
-* Delete a subscribed service
+* View a list of cloud services
+* Add a cloud service
+* Modify cloud service details
+* Delete a cloud service
