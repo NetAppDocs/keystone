@@ -22,9 +22,9 @@ The Dashboard displays important information across the following widgets, which
 * *Alerts:* Displays the summary of the most recent alerts, such as the status, message, and when it was created. For more information on alerts, see link:sewebiug_alerts.html[Create and manage alerts].
 * *Service Requests:* Displays the summary of the most recent service requests, sorted by priority and when they were created. For more information on service requests, see link:sewebiug_raise_a_service_request.html[Raise a service request].
 
-image:sewebiug_image9.png[NSE Dashboard]
+image:sewebiug_image9_dashboard1.png[NSE Dashboard-1]
 
-image:sewebiug_image9_1.png[NSE Dashboard]
+image:sewebiug_image9_dashboard2.png[NSE Dashboard-2]
 
 == Dashboard view for a service provider in a multi-tenancy
 
