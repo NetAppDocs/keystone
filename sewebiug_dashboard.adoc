@@ -22,6 +22,10 @@ The Dashboard displays important information across the following widgets, which
 * *Alerts:* Displays the summary of the most recent alerts, such as the status, message, and when it was created. For more information on alerts, see link:sewebiug_alerts.html[Create and manage alerts].
 * *Service Requests:* Displays the summary of the most recent service requests, sorted by priority and when they were created. For more information on service requests, see link:sewebiug_raise_a_service_request.html[Raise a service request].
 
+image:sewebiug_image9.png[NSE Dashboard]
+
+image:sewebiug_image9_1.png[NSE Dashboard]
+
 == Dashboard view for a service provider in a multi-tenancy
 
 If you are partner administrator in a multi-tenant environment, the dashboard provides a high-level overview of all your subscribed services for NetApp Keystone. The widget data of the capacity utilization and billing details, among others, represents your subscription and billing relationship with NetApp.

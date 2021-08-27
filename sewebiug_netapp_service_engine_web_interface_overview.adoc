@@ -16,7 +16,7 @@ summary: NetApp service engine web interface overview
 The figure below is an example of the NetApp Service Engine web Interface. It consists of the following components:
 
 * *Display area.* This is the main working area of the screen; it has two views:
-** Dashboard view: Displays various tools to monitor the usage, billing, alerts, and service requests. 
+** Dashboard view: Displays various tools to monitor the usage, billing, alerts, and service requests.
 ** List view: Displays lists of items which can be navigated and sorted (more on that later).
 * *Menu.* Use the menu to view and manage storage items, view reports, and access support.
 * *NetApp logo.* Click this at any time to return the display to the dashboard view.
@@ -24,7 +24,9 @@ The figure below is an example of the NetApp Service Engine web Interface. It co
 * *Jobs.* Click to view the status of the most recent provisioning jobs. The icon changes color to display the configuration job status. For more information, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[Jobs and job status indicator].
 * *User login.* Displays the name of the currently logged-in user. Click this icon to sign out. For more information, see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface[Log out of the NetApp Service Engine web interface].
 
-image:sewebiug_image9.png[Error: Missing Graphic Image]
+image:sewebiug_image9.png[NSE Dashboard]
+
+image:sewebiug_image9_1.png[NSE Dashboard]
 
 == Dashboard view
 
