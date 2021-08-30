@@ -32,8 +32,6 @@ image:sewebiug_image9_dashboard2.png[NSE Dashboard-2]
 
 The Dashboard displays information about your NetApp Keystone storage subscriptions, such as the capacity used, billing against your usage, and recent alerts and service requests. It is the default view when you first log in to NetApp Service Engine. For more information on the Dashboard, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard].
 
-NOTE: To return to the Dashboard view, click the NetApp icon in the top-left corner of the screen.
-
 == List view
 
 A List view is used to view a list of objects. For example, the list of servers that support the file shares in a subscription are displayed in a List view, as shown in the screenshot below.
