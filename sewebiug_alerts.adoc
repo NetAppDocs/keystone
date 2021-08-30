@@ -21,6 +21,8 @@ When you provision storage, automatic alerts are triggered in the following scen
 * The new disk or file share is provisioned on a new subscription
 * The consumed capacity within the subscription has crossed the threshold capacity, or is close to the committed capacity
 
+The Alerts screen enables you to view the system-generated and user-generated alerts in your environment.
+
 You can also create custom alerts and display them to other users. They can view and dismiss the alerts for themselves and other users within their tenancy, as required.
 
 == Create an alert in your multitenant environment
