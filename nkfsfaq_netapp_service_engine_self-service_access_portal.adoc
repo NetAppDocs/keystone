@@ -46,4 +46,4 @@ The following access controls are available:
 
 === Where can I see the billing against my usage?
 
-You can view the aggregated monthly charges for your subscriptions for the last three months and projected charges for the current month in the *Monthly Charges* widget on the Dashboard. You can view detailed billing information by clicking through the widget or navigating to *ADMINISTRATION* > *Billing*.
+You can view the aggregated monthly charges for your subscriptions for the last three months in the *Monthly Charges* widget on the Dashboard. You can view detailed billing information by clicking through the widget or navigating to *ADMINISTRATION* > *Billing*.
