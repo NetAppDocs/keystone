@@ -17,8 +17,12 @@ summary: Keystone raise a service request
 //
 // 2020-10-20 10:59:40.017032
 //
+[.lead]
+The Service Requests screen enables you to raise new service requests to be attended by your own support teams or NetApp GSSC.
 
-=== Steps
+You can view the service requests that are raised in your environment and are pending resolution on the *Service Requests* on the dashboard. For creating new service requests, follow this procedure.
+
+.Steps
 
 . From the menu, select Support > Service requests and click *New Service Request*.
 +
