@@ -183,7 +183,7 @@ entries:
               url: /sewebiug_delete_a_user.html
           - title: Manage tenants and subtenants
             url: /sewebiug_managing_tenants_and_subtenants.html
-          - title: Create alerts
+          - title: View and manage alerts
             url: /sewebiug_alerts.html
       - title: Manage networks
         url: /sewebiug_define_network_configurations.html

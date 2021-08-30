@@ -16,7 +16,7 @@ summary: new features in NetApp Service Engine
 The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription (Flex Subscription) services:
 
 == Features introduced in NetApp Service Engine 2.2
-The new features in this release include a revamped dashboard for new widgets on billing, capacity utilization, service requests, and alerts. This release also includes new screens for billing and alerts management, and renaming of the Subscribed Services menu to Cloud services.
+The new features in this release include a revamped dashboard for new widgets on billing, capacity utilization, service requests, and alerts. This release also includes new screens for billing and alerts management, and renaming of the Subscribed Services menu to Cloud Services.
 
 === Enhanced dashboard view
 The NetApp Service Engine dashboard has been redesigned to include the following new components:
@@ -29,21 +29,22 @@ For more information, see link:sewebiug_dashboard.html[View Flex Subscription Da
 === New Billing screen
 A new *Billing* screen has been added for easy accessibility and calculation of your historical billing data. The screen provides a holistic view of the monthly charges associated with all your subscribed services.
 
-Navigate to this screen from the *Monthly Charges* widget on the dashboard or from *ADMINISTRATION > Billing* to view a monthly, subscription-level break up of the charges for all your subscribed services. The billing data is based on your committed and burst capacity usage, and is available for the previous months, with the projected billing for the current month.
+Navigate to this screen from the *Monthly Charges* widget on the dashboard or from *ADMINISTRATION > Billing* to view a monthly, subscription-level break up of the charges for all your subscribed services. The billing data is based on your committed and burst capacity usage, and is available for your usage in the previous months.
 For more information, see link:sewebiug_billing.html[View billing]
 
 === New Alerts screen
-A new *Alerts* screen is introduced in this release that enables you to generate custom alerts. By using this screen, you can create alert messages for critical events pertaining to your environment, and convey them to other users. They can view and dismiss the alerts, as required.
-[NOTE]
-These messages are custom alerts, and not related with the automatic, system-generated alerts.
+A new *Alerts* screen is introduced in this release that lists all system-generated and user-generated alerts. The screen also enables you to create custom alert messages for critical events concerning your environment and convey them to other users. They can view and dismiss the alerts, as required.
 
 For more information, see link:sewebiug_alerts.html[Create and manage alerts]
 
 === Enhanced user interface
-The folloiwng enhancements have been made on the NetApp Service Engine user interface:
-* The *Dashboard* menu on the on the left navigation pane presents an intuitive navigation point to access the dashboard.
+The following enhancements have been made on the NetApp Service Engine user interface:
+* The *Dashboard* menu on the left navigation pane presents an intuitive navigation point to access the dashboard.
 * The *Subscribed Services* menu on the left navigation pane has been renamed to *Cloud Services*.
 
+
+===============================================================================
+===============================================================================
 
 
 
@@ -82,6 +83,10 @@ The following APIs have been modified  to include new attribute values for the n
 For more information, see the following links:
 * link:nkfsosm_tiering.html[Tiering]
 * link:nkfsosm_performance.html[Performance Service Levels]
+
+===============================================================================
+===============================================================================
+
 
 
 == Features introduced in NetApp Keystone Flex Subscription 2.0.1
