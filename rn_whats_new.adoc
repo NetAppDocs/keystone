@@ -34,7 +34,6 @@ For more information, see link:sewebiug_billing.html[View billing]
 
 === New Alerts screen
 A new *Alerts* screen is introduced in this release that lists all system-generated and user-generated alerts. The screen also enables you to create custom alert messages for critical events concerning your environment and convey them to other users. They can view and dismiss the alerts, as required.
-
 For more information, see link:sewebiug_alerts.html[Create and manage alerts]
 
 === Enhanced user interface
@@ -116,6 +115,10 @@ The new *Backup* screen enables you to view and manage the backups of the disks 
 
 You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol share. You can specify Windows users or groups based on the Active Directory (AD) settings to add to the ACL.
 link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more]
+
+===============================================================================
+===============================================================================
+
 
 == Features introduced in NetApp Keystone Flex Subscription 2.0
 
