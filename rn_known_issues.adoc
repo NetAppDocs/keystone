@@ -40,13 +40,13 @@ The following known issues have been reported in NetApp Service Engine. You migh
 |Limitation in disabling backup on volumes
 |Raise a service request for GSSC to resolve the issue.
 |There is no workaround for this issue.
-|Limitation with deleting network subnets
+|Limitation in deleting network subnets
 |Customers are unable to delete network subnets.
 |Raise a service request for GSSC to resolve the issue.
 |Limitation in deleting VLAN using API
 |Deleting a VLAN that has a subnet associated with it leaves an empty subnet stub in the UI.
 |Raise a service request for GSSC to resolve the issue.
-|Limitation with importing storage VMs with non-standard subnet
+|Limitation in importing storage VMs with non-standard subnet
 |Storage VMs (storage virtual machines, also known as SVMs), created outside of NetApp Service Engine cannot be operational due to a non-standard subnet. The storage VMs are imported with the status `Contacted Support`.
 |Raise a service request for GSSC to resolve the issue.
 |Capacity and billing reports might be inaccurate in NetApp-managed environments
