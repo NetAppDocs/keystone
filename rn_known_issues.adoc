@@ -46,8 +46,8 @@ The following known issues have been reported in NetApp Service Engine. You migh
 |Limitation in deleting VLAN using API
 |Deleting a VLAN that has a subnet associated with it leaves an empty subnet stub in the UI.
 |Raise a service request for GSSC to resolve the issue.
-|Limitation with creation of storage VM from imported subnet
-|Storage VMs (storage virtual machines, also known as SVMs), created outside of NetApp Service Engine cannot be imported due to a non-standard subnet. The storage VMs are imported with the status `Contacted Support`.
+|Limitation with importing storage VMs with non-standard subnet
+|Storage VMs (storage virtual machines, also known as SVMs), created outside of NetApp Service Engine cannot be operational due to a non-standard subnet. The storage VMs are imported with the status `Contacted Support`.
 |Raise a service request for GSSC to resolve the issue.
 |Capacity and billing reports might be inaccurate in NetApp-managed environments
 |In a NetApp-managed environment, the capacity and billing reports generated from the UI might be affected due to missing LUN size metrics and service levels on backup volumes.
