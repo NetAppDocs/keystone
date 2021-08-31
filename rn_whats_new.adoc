@@ -15,6 +15,38 @@ summary: new features in NetApp Service Engine
 [.lead]
 The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription (Flex Subscription) services:
 
+== Features introduced in NetApp Service Engine 2.2
+The new features in this release include a revamped dashboard for new widgets on billing, capacity utilization, service requests, and alerts. This release also includes new screens for billing and alerts management, and renaming of the Subscribed Services menu to Cloud Services.
+
+=== Enhanced dashboard view
+The NetApp Service Engine dashboard has been redesigned to include the following new components:
+* *Capacity Utilization* For viewing the utilized capacity for your subscribed services.
+* *Monthly Charges (Billing)* For viewing the aggregated monthly charges for all your subscriptions.
+* *Alerts*  For viewing the summary of the most recent alerts in your environment.
+* *Service Requests* For viewing the list of the most recent service requests generated in your environment.
+For more information, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard]
+
+=== New Billing screen
+A new *Billing* screen has been added for easy accessibility and calculation of your historical billing data. The screen provides a holistic view of the monthly charges associated with all your subscribed services.
+
+Navigate to this screen from the *Monthly Charges* widget on the dashboard or from *ADMINISTRATION > Billing* to view a monthly, subscription-level break up of the charges for all your subscribed services. The billing data is based on your committed and burst capacity usage, and is available for your usage in the previous months.
+For more information, see link:sewebiug_billing.html[View billing]
+
+=== New Alerts screen
+A new *Alerts* screen is introduced in this release that lists all system-generated and user-generated alerts. The screen also enables you to create custom alert messages for critical events concerning your environment and convey them to other users. They can view and dismiss the alerts, as required.
+For more information, see link:sewebiug_alerts.html[Create and manage alerts]
+
+=== Enhanced user interface
+The following enhancements have been made on the NetApp Service Engine user interface:
+* The *Dashboard* menu on the left navigation pane presents an intuitive navigation point to access the dashboard.
+* The *Subscribed Services* menu on the left navigation pane has been renamed to *Cloud Services*.
+
+
+===============================================================================
+===============================================================================
+
+
+
 == Features introduced in NetApp Service Engine 2.1
 The new features in this release include supporting multi-tenancy in a Flex Subscription environment, and tiering capability that facilitates moving of inactive data to a lower cost local or cloud tier.
 
@@ -51,6 +83,10 @@ For more information, see the following links:
 * link:nkfsosm_tiering.html[Tiering]
 * link:nkfsosm_performance.html[Performance Service Levels]
 
+===============================================================================
+===============================================================================
+
+
 
 == Features introduced in NetApp Keystone Flex Subscription 2.0.1
 
@@ -79,6 +115,10 @@ The new *Backup* screen enables you to view and manage the backups of the disks 
 
 You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol share. You can specify Windows users or groups based on the Active Directory (AD) settings to add to the ACL.
 link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more]
+
+===============================================================================
+===============================================================================
+
 
 == Features introduced in NetApp Keystone Flex Subscription 2.0
 

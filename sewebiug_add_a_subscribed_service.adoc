@@ -1,42 +1,36 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_add_a_subscribed_service.html
-keywords: netapp, keystone, add, subscribed, service,
-summary: Keystone add a subscribed service
+keywords: netapp, keystone, add, cloud, service,
+summary: Keystone add a cloud service
 ---
 
-= Add a subscribed service
+= Add a cloud service
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:40.223431
-//
-
 [.lead]
-This section describes how to add a subscribed service.
+This section describes how to add a cloud service.
 
 NetApp Service Engine supports Azure NetApp Files.
 
 === Before you begin
-You need the information about the subscribed services, including credentials to connect to the service. The information varies with the subscribed service type.
+You need the information about the cloud services, including credentials to connect to the service. The information varies with the cloud service type.
 
 === Steps
 
-. Select *Subscribed Services* from the menu.
+. Select *Cloud Services* from the menu.
 . Click *Create*.
-. On the Create Subscribed Service page, select the cloud service type and then complete the relevant information for that service type:
+. On the Create Cloud Service page, select the cloud service type and then complete the relevant information for that service type:
 +
 *Azure:*
 
 .. Select the Subtenant.
 .. Enter a name for the OCCM Working Environment that will be created for the service.
-.. Enter the Azure Directory (tenant) id, the Azure Client ID, Azure Client Secret and the Name of the subscribed service.
+.. Enter the Azure Directory (tenant) ID, the Azure Client ID, Azure Client Secret and the Name of the cloud service.
 +
 
 . Specify tags for the service if required.

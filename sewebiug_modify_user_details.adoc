@@ -25,11 +25,11 @@ Use this method to modify a user’s details. You can:
 * Add or remove tenancies to which the user has access.
 * Modify the role of the user in each tenancy to which the user has access.
 
-=== Steps:
+.Steps:
 
-. Select Administration > Users from the menu.
+. Select *ADMINISTRATION > Users*.
 . Locate the user in the list and click the Edit icon.
-. On the Edit User dialog box, make any changes as required.
+. On the Edit User dialog box, make the changes as required.
 . To change the role of the user in a tenancy, locate the tenancy in the Tenancies list and select the new role.
 . To grant the user access to another tenancy, click *Add Tenancy* and select the Tenant and the Role of the user in that tenancy in the new entry fields.
 . To remove access for the user to a tenancy, locate the tenancy in the Tenancies list and select the Delete icon.

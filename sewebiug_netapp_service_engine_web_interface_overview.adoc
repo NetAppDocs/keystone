@@ -12,17 +12,11 @@ summary: NetApp service engine web interface overview
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.082828
-//
-
 [.lead]
 The figure below is an example of the NetApp Service Engine web Interface. It consists of the following components:
 
 * *Display area.* This is the main working area of the screen; it has two views:
-** Dashboard view: Displays various tools to monitor the usage and performance of your storage.
+** Dashboard view: Displays various tools to monitor the usage, billing, alerts, and service requests.
 ** List view: Displays lists of items which can be navigated and sorted (more on that later).
 * *Menu.* Use the menu to view and manage storage items, view reports, and access support.
 * *NetApp logo.* Click this at any time to return the display to the dashboard view.
@@ -30,16 +24,15 @@ The figure below is an example of the NetApp Service Engine web Interface. It co
 * *Jobs.* Click to view the status of the most recent provisioning jobs. The icon changes color to display the configuration job status. For more information, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[Jobs and job status indicator].
 * *User login.* Displays the name of the currently logged-in user. Click this icon to sign out. For more information, see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface[Log out of the NetApp Service Engine web interface].
 
-image:sewebiug_image9.png[Error: Missing Graphic Image]
+image:sewebiug_image9_dashboard1.png[NSE Dashboard-1]
 
-=== Dashboard view
+image:sewebiug_image9_dashboard2.png[NSE Dashboard-2]
 
-The Dashboard view displays information about the subscribed services; it is the default view when you first log in to the screen. For information about how to view the subscribed services capacity, see link:sewebiug_view_subscribed_services_capacity.html[View Subscribed Services Capacity].
+== Dashboard view
 
-[NOTE]
-To return to the Dashboard view, click the NetApp icon in the top-left corner of the screen.
+The Dashboard displays information about your NetApp Keystone storage subscriptions, such as the capacity used, billing against your usage, and recent alerts and service requests. It is the default view when you first log in to NetApp Service Engine. For more information on the Dashboard, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard].
 
-=== List view
+== List view
 
 A List view is used to view a list of objects. For example, the list of servers that support the file shares in a subscription are displayed in a List view, as shown in the screenshot below.
 
@@ -47,7 +40,7 @@ From a List view, you can:
 
 * Perform actions on the items in the list: see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
 
-==== List view actions
+=== List view actions
 
 A List view displays a list of items and provides a quick view of some of the item details (including state). In a List view, you can perform the actions listed in the following table.
 
@@ -73,7 +66,7 @@ navigate the list
 
 |===
 
-=== Object states
+== Object states
 
 During provisioning and modification, the storage objects go through a series of states before they become operational. The state of the storage objects is displayed in the List view for those items. The objects may be in one of the following states:
 
@@ -102,7 +95,7 @@ This status typically implies that the object misses one or more criteria to be 
 ** With edit pen : Indicates that the backup object is operational and functioning.
 ** Without edit pen: Indicates that the backup is orphaned, that is the SnapMirror relationship of the backup object with its source volume is broken, or the source volume has been removed.
 
-=== Jobs and job status indicator
+== Jobs and job status indicator
 
 Some provisioning tasks in NetApp Service Engine, such as create, modify or delete storage items, might take some time to complete. Rather than being executed immediately (as for synchronous tasks), these tasks are executed asynchronously. When initiating such tasks, NetApp Service Engine returns a job record. The status can be tracked through the bell icon on the top right corner that indicates whether the submitted task was completed successfully. The status of the job can be also be tracked through the APIs. For information, see link:https://docs.netapp.com/us-en/keystone/seapiref_jobs.html#retrieve-jobs[here]
 

@@ -13,7 +13,7 @@ summary: known issues in NetApp Service Engine
 :imagesdir: ./media/
 
 [.lead]
-The following known issues have been reported in this release of NetApp Service Engine.
+The following known issues have been reported in NetApp Service Engine. You might encounter these issues when you provision or use your storage as a part of your Flex Subscription.
 
 [cols="3*",options="header"]
 |===
@@ -40,10 +40,16 @@ The following known issues have been reported in this release of NetApp Service 
 |Limitation in disabling backup on volumes
 |Raise a service request for GSSC to resolve the issue.
 |There is no workaround for this issue.
-|Limitation with deleting network subnets
+|Limitation in deleting network subnets
 |Customers are unable to delete network subnets.
 |Raise a service request for GSSC to resolve the issue.
 |Limitation in deleting VLAN using API
 |Deleting a VLAN that has a subnet associated with it leaves an empty subnet stub in the UI.
+|Raise a service request for GSSC to resolve the issue.
+|Limitation in importing storage VMs with non-standard subnet
+|Storage VMs (storage virtual machines, also known as SVMs), created outside of NetApp Service Engine cannot be operational due to a non-standard subnet. The storage VMs are imported with the status `Contacted Support`.
+|Raise a service request for GSSC to resolve the issue.
+|Capacity and billing reports might be inaccurate in NetApp-managed environments
+|In a NetApp-managed environment, the capacity and billing reports generated from the UI might be affected due to missing LUN size metrics and service levels on backup volumes.
 |Raise a service request for GSSC to resolve the issue.
 |===
