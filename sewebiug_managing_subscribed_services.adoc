@@ -1,19 +1,13 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_managing_subscribed_services.html
-keywords: netapp, keystone, managing, subscribed, services,
-summary: Keystone managing subscribed services
+keywords: netapp, keystone, managing, cloud, services,
+summary: Keystone managing cloud services
 ---
 
-= Managing subscribed services
+= Managing cloud services
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:40.190007
-//

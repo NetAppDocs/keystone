@@ -61,6 +61,8 @@ entries:
             url: /sewebiug_netapp_service_engine_web_interface_overview.html
       - title: View Flex Subscription Dashboard
         url: /sewebiug_dashboard.html
+      - title: View billing
+        url: /sewebiug_billing.html
       - title: Work with file services
         url: /sewebiug_working_with_file_services_overview.html
         entries:
@@ -127,9 +129,9 @@ entries:
             url: /sewebiug_create_an_s3_key_for_a_user.html
           - title: Delete an S3 key for a user
             url: /sewebiug_delete_an_s3_key_for_a_user.html
-      - title: Manage subscribed services
+      - title: Manage Cloud services
         entries:
-          - title: Managing subscribed services
+          - title: Managing Cloud services
             entries:
               - title: Overview
                 url: /sewebiug_managing_subscribed_services_overview.html
@@ -167,20 +169,22 @@ entries:
             url: /sewebiug_track_a_service_request.html
           - title: Service request process
             url: /sewebiug_service_request_process.html
-      - title: Manage tenants and subtenants
-        url: /sewebiug_managing_tenants_and_subtenants.html
-      - title: Manage users
+      - title: Perform administrative tasks
         entries:
-          - title: Overview
-            url: /sewebiug_managing_users_overview.html
-          - title: View a list of users
-            url: /sewebiug_view_a_list_of_users.html
-          - title: Add a user
-            url: /sewebiug_add_a_user.html
-          - title: Modify user details
-            url: /sewebiug_modify_user_details.html
-          - title: Delete a user
-            url: /sewebiug_delete_a_user.html
+          - title: Manage users
+            entries:
+            - title: View a list of users
+              url: /sewebiug_view_a_list_of_users.html
+            - title: Add a user
+              url: /sewebiug_add_a_user.html
+            - title: Modify user details
+              url: /sewebiug_modify_user_details.html
+            - title: Delete a user
+              url: /sewebiug_delete_a_user.html
+          - title: Manage tenants and subtenants
+            url: /sewebiug_managing_tenants_and_subtenants.html
+          - title: View and manage alerts
+            url: /sewebiug_alerts.html
       - title: Manage networks
         url: /sewebiug_define_network_configurations.html
   - title: NetApp Service Engine API Reference
