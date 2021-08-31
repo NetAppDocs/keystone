@@ -43,3 +43,7 @@ The following access controls are available:
 * *Customer/tenant Admin.* An administrative person from the customer side who has rights to request changes to subscription, create new users and subtenants, and also create and view file shares, disks, and buckets.
 * *NetApp Admin (read).* A NetApp administrator, who has access to all components of the web portal, and can view all details, such as all NetApp Keystone Flex Subscription, partners and tenants subscriptions, and storage. However, this user has no permissions to create, edit, or delete.
 * *NetApp Admin.* This user has full access and permissions to perform all functions in NetApp Service Engine web portal for managing NetApp Keystone Flex Subscription, and all activities for partner and tenant administration.
+
+=== Where can I see the billing against my usage?
+
+You can view the aggregated monthly charges for your subscriptions for the last three months in the *Monthly Charges* widget on the Dashboard. You can view detailed billing information by clicking through the widget or navigating to *ADMINISTRATION* > *Billing*.

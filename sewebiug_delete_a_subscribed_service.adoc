@@ -1,29 +1,23 @@
 ---
 sidebar: sidebar
 permalink: sewebiug_delete_a_subscribed_service.html
-keywords: netapp, keystone, delete, subscribed, service,
-summary: Keystone delete a subscribed service
+keywords: netapp, keystone, delete, cloud, service,
+summary: Keystone delete a cloud service
 ---
 
-= Delete a subscribed service
+= Delete a cloud service
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:40.257584
-//
-
 [.lead]
 Use this method to delete a CVS subscription from the NetApp Service Engine web portal.
 
 === Steps
 
-. Select Subscribed Services > Subscribed Services from the menu.
-. Locate the subscribed service in the list and click the Delete icon.
-. In the Confirm Delete dialog box, enter the name of the subscribed service to be deleted.
+. Select *Cloud Services* > *Cloud Services* from the menu.
+. Locate the cloud service in the list and click the Delete icon.
+. In the Confirm Delete dialog box, enter the name of the cloud service to be deleted.
 . Click *Confirm*.
