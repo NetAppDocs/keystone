@@ -22,7 +22,7 @@ Subscriptions to Cloud Volumes Service for Google Cloud Platform (GCP) are assoc
 
 You can manage your cloud services on Google Cloud, from the *CLOUD SERVICES* menu on the left navigation pane. The Cloud Services page displays all the cloud services for all subtenants of a selected tenant. You can view, modify, and delete the cloud services from this page. You can also add a new service by following these steps.
 
-=== Before you begin
+.Before you begin
 
 You need to ensure that:
 
@@ -30,7 +30,7 @@ You need to ensure that:
 * You have the JSON file for the subscriber's service account and you are aware of the GCP project number that is associated with the Google Cloud instance.
 * To ensure that Cloud Volumes Service for GCP is already configured on Cloud Manager by your support team. For more information, see https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html[Set up Cloud Volumes Service for Google Cloud].
 
-==== Steps
+.Steps
 
 . Select *CLOUD SERVICES* from the menu.
 . Click *Create*, and then click *Google Cloud*.
@@ -45,7 +45,7 @@ Before managing cloud volumes on GCP, the Cloud Volumes Service account for the 
 
 You can manage the volumes for a subtenant on GCP from *FILE SERVICES > GCP Volumes* on the left navigation pane. The GCP Volumes page lists the existing cloud volumes created on GCP for the selected subtenant and corresponding region. You can view, modify, and delete the existing volumes from this page. You can also provision a new cloud volume by following these steps.
 
-==== Steps
+.Steps
 
 . Select *FILE SERVICES > GCP Volumes* from the menu.
 . Click *Create*. The Create GCP Volume page is displayed.

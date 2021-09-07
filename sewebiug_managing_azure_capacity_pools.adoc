@@ -12,12 +12,6 @@ summary: Keystone managing Azure capacity pools
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:40.303389
-//
-
 [.lead]
 This section describes how to manage Azure capacity pools:
 
@@ -41,7 +35,7 @@ The list displays simple information about each Azure capacity pool. The action 
 
 This section describes how to add an Azure capacity pool.
 
-==== Before you begin
+.Before you begin
 
 You will need:
 
@@ -52,7 +46,7 @@ You will need:
 * The size of the pool
 
 
-==== Steps
+.Steps
 
 . Select *FILE SERVICES > Azure Capacity Pools* from the menu.
 . Click *Create*.
@@ -65,7 +59,7 @@ You will need:
 
 Use this method to modify the details of an Azure capacity pool. You can modify the service level the size of the pool, and you can add or remove tags.
 
-==== Steps
+.Steps
 
 . Select *FILE SERVICES > Azure Capacity Pools* from the menu.
 . From the list, locate the Azure capacity pool and click the edit icon.
@@ -76,7 +70,7 @@ Use this method to modify the details of an Azure capacity pool. You can modify 
 
 Use this method to delete an Azure capacity pool.
 
-==== Steps
+.Steps
 
 . Select *FILE SERVICES > Azure Capacity Pools* from the menu.
 . From the list, locate the Azure capacity pool and click the delete icon.

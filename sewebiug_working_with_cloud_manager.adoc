@@ -26,7 +26,7 @@ NetApp Service Engine can connect to NetApp Cloud Manager. This section describe
 
 === Connect to Cloud Manager
 
-==== Before you begin
+.Before you begin
 
 You will need:
 
@@ -34,7 +34,7 @@ You will need:
 * The client ID of the Cloud Manager SaaS service
 * The refresh token of the Cloud Manager SaaS service
 
-==== Steps
+.Steps
 
 . Select Administration > OCCM Connection from the menu.
 . Specify the OCCM API Endpoint URL

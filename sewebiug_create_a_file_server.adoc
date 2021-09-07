@@ -23,7 +23,7 @@ File servers belong to a subtenant and are created within a zone. When creating 
 
 image:sewebiug_image20.png[Error: Missing Graphic Image]
 
-=== Before you begin
+.Before you begin
 
 Make sure you have the following to create the server:
 
@@ -32,7 +32,7 @@ Make sure you have the following to create the server:
 * Networking details such as the subnet and IP address (optional). If you are unfamiliar with your network, check with your IT department for the appropriate values.
 * To enable asynchronous disaster recovery  on the file server, the disaster recovery zone (the zone to which the file server will be replicated).
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_servers.html#view-servers[File Servers list].
 . Click *Create Server*.
@@ -71,7 +71,7 @@ If creating a CIFS-enabled file server:
 . If synchronous disaster recovery DP is enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled.
 . Click *Create*. This creates a job to create the server.
 
-=== After you finish
+.After you finish
 
 Create server is run as an asynchronous job. You can:
 
