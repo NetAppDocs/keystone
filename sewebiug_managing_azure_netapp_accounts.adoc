@@ -12,12 +12,6 @@ summary: Managing Azure NetApp accounts
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:40.270062
-//
-
 [.lead]
 This section describes how to manage Azure NetApp accounts:
 
@@ -41,7 +35,7 @@ The list displays simple information about each Azure NetApp account. The action
 
 This section describes how to add an Azure NetApp account.
 
-=== Before you begin
+.Before you begin
 
 You will need:
 
@@ -51,7 +45,7 @@ You will need:
 * The Azure Resource Group
 * A name for the account
 
-==== Steps
+.Steps
 
 . Select *ADMINISTRATION > Azure NetApp Accounts* from the menu.
 . Click *Create*.
@@ -63,7 +57,7 @@ You will need:
 
 Use this method to modify tags associated with an Azure NetApp account.
 
-==== Steps
+.Steps
 
 . Select *ADMINISTRATION > Azure NetApp Accounts* from the menu.
 . Locate the Azure NetApp Account in the list and click the edit icon.
@@ -74,7 +68,7 @@ Use this method to modify tags associated with an Azure NetApp account.
 
 Use this method to delete an Azure NetApp Account.
 
-==== Steps
+.Steps
 
 . Select *ADMINISTRATION > Azure NetApp Accounts* from the menu.
 . Locate the Azure NetApp account in the list and click the delete icon.

@@ -15,7 +15,7 @@ summary: Keystone delete a cloud service
 [.lead]
 Use this method to delete a CVS subscription from the NetApp Service Engine web portal.
 
-=== Steps
+.Steps
 
 . Select *Cloud Services* > *Cloud Services* from the menu.
 . Locate the cloud service in the list and click the Delete icon.

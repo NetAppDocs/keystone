@@ -15,14 +15,14 @@ summary: Keystone add a user
 [.lead]
 This section describes how to add a user.
 
-=== Before you begin
+.Before you begin
 
 You need:
 
 * The tenants to which the user should be given access.
 * The role that the user is to be granted within each tenancy. A user can have only one role within a tenancy.
 
-=== Steps
+.Steps
 
 . Select *ADMINISTRATION > Users* from the menu.
 . Click *Create User*.

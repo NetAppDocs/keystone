@@ -12,18 +12,12 @@ summary: Keystone initialize object storage
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.702060
-//
-
 [.lead]
 Object storage must be initialized before it can be used.
 
 If you attempt to create a storage bucket on object storage that has not yet been initialized, you will see the prompt to initialize the storage. The following section describes the process.
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_buckets.html#view-buckets[Buckets list] and select the Subtenant under which to create the bucket.
 . If the object storage has not been initialized for this subtenant, the following message is displayed:

@@ -12,12 +12,6 @@ summary: Modify file server
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.202939
-//
-
 [.lead]
 You can make the following changes to an existing server:
 
@@ -28,14 +22,14 @@ You can make the following changes to an existing server:
 [NOTE]
 If asynchronous disaster recovery is already enabled, it cannot be disabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_servers.html#view-servers[File Servers list].
 . Locate the server in the list and click the Edit icon for that server. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
 . Make any changes as required; refer to link:sewebiug_create_a_file_server.html[Create a file server] for field descriptions.
 . Click *Done*. This creates a job to modify the server.
 
-=== After you finish
+.After you finish
 
 Modify server is run as an asynchronous job. You can:
 

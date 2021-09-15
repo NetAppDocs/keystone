@@ -12,16 +12,10 @@ summary: Keystone modify an object storage group
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.763445
-//
-
 [.lead]
 Use this method to modify details of an object storage group such as the group name and S3 policy.
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_host_groups.html#view-host-groups[Groups List].
 . Make sure the correct subtenant is selected and the display is showing groups (not users).

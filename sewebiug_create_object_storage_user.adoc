@@ -12,17 +12,11 @@ summary: Keystone create object storage user
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.798257
-//
-
-=== Before you begin
+.Before you begin
 
 Because an object storage user belongs to an object storage group, the object storage group must exist before you can create the user.
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
 . Make sure the correct subtenant is selected and the display is showing users (not groups).
@@ -32,7 +26,7 @@ Because an object storage user belongs to an object storage group, the object st
 .. Select the group to which the member belongs.
 . Click *Create*. This creates a job to create the user with the specified settings.
 
-=== After you finish
+.After you finish
 
 Create user is run as an asynchronous job. You can:
 

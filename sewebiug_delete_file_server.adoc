@@ -12,23 +12,17 @@ summary: Keystone delete file server
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.230855
-//
-
 [.lead]
 *Attention:* Deleting a file server will also delete the following:
 
 * All backups associated with the file server
 * All disaster recovery replicated copies associated with the file serverYou cannot undo deletion of a server.
 
-=== Before you begin
+.Before you begin
 
 To delete a file server, you must first delete all shares that exist on the server.
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_servers.html#view-servers[File Servers list].
 . Locate the server in the list and click the Delete icon for that server. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions]).
@@ -38,7 +32,7 @@ image:sewebiug_image21.png[Error: Missing Graphic Image]
 +
 . Click *Confirm*. This creates a job to delete the server.
 
-=== After you finish
+.After you finish
 
 * When deleting CIFS-enabled file servers, the Active Directory computer object remains. Ask your Active Directory administrator to manually remove the computer object for the deleted file server from Active Directory.
 * Delete server is run as an asynchronous job. You can:

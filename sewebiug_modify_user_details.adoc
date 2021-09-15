@@ -12,12 +12,6 @@ summary: Keystone modify user details
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:40.139556
-//
-
 [.lead]
 Use this method to modify a user’s details. You can:
 
@@ -25,7 +19,7 @@ Use this method to modify a user’s details. You can:
 * Add or remove tenancies to which the user has access.
 * Modify the role of the user in each tenancy to which the user has access.
 
-.Steps:
+.Steps
 
 . Select *ADMINISTRATION > Users*.
 . Locate the user in the list and click the Edit icon.
