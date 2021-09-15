@@ -12,18 +12,12 @@ summary: Keystone create an S3 key for a user
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.838769
-//
-
 [.lead]
 Use this method to create an S3 key for a user.
 
 Make sure that you capture the key immediately after it is created. There is no way to retrieve key details after it has been created.
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
 . Make sure the correct subtenant is selected and the display is showing users (not groups).

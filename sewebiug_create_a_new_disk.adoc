@@ -15,7 +15,7 @@ summary: Keystone create a new disk
 [.lead]
 This section describes how to create a new disk by directly specifying the disk details. For instructions on how to create a disk based on a Snapshot of an existing disk, see link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot[Create a disk from a Snapshot].
 
-=== Before you begin
+.Before you begin
 
 * If block storage is available but not initialized, you will be asked to initialize it before you can create the disk. To initialize the block store, you need:
 ** The subnet for the block store. If you are not familiar with your network environment, please check with you IT department for the relevant values.
@@ -26,7 +26,7 @@ This section describes how to create a new disk by directly specifying the disk 
 * To enable synchronous disaster recovery for a disk, create the disk in a zone that is MetroCluster-enabled.
 * You can define a backup policy to capture backups of the disk on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_disks.html#view-disks[Disks list].
 . Click *Create Disk*.
@@ -96,7 +96,7 @@ Select an option to view the performance details for that level (as peak/expecte
 . If you want to add tags (key-value pairs) to the disk, specify them in the Tags section.
 . Click *Create*. This creates a job to create the disk.
 
-=== After you finish
+.After you finish
 
 Create disk is run as an asynchronous job. You can:
 

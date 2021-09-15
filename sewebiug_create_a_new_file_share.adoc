@@ -15,7 +15,7 @@ summary: Keystone create a new file share
 [.lead]
 This section describes how to create a new share by directly specifying the share details. To create a new share based on a Snapshot of an existing share, see link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share[Create Share from Snapshot].
 
-=== Before you begin
+.Before you begin
 
 * A share is created on a file server. The file server must exist and be in an operational state before you can create a new file share.
 * For creating a CIFS or NFS file share, the server must be enabled for the respective service. For a multi-protocol file shares, the server should support both CIFS and NFS services.
@@ -24,7 +24,7 @@ This section describes how to create a new share by directly specifying the shar
 * You can define a backup policy to capture backups of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
 * You can define a Snapshot policy to capture Snapshots of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots].
 
-=== Steps
+.Steps
 
 . Go to *FILE SERVICES > Shares*.
 . Click *Create Share*.
@@ -97,7 +97,7 @@ NOTE: The user or group name should follow the standard AD format. If the entere
 . If you want to add tags (key-value pairs) to the file share, specify them in the Tags section.
 . Click *Create*. This creates a job to create the share.
 
-=== After you finish
+.After you finish
 
 * For CIFs type shares only: to make the shares available by host name, your domain administrator must update the DNS records with the CIFS server name and IP address. Otherwise, the share is only accessible through the IP address. For example:
 ** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]

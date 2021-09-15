@@ -12,16 +12,10 @@ summary: Keystone view the object storage group and users
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.731881
-//
-
 [.lead]
 The User Management list displays the object storage users and groups for a specified subtenant.
 
-=== Steps
+.Steps
 
 . From the menu, select Object Storage > Users.
 . Use the Subtenant drop-down menu to select another subtenant if required.

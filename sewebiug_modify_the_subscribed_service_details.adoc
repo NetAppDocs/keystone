@@ -31,7 +31,7 @@ Use this method to modify the details of a cloud service. You can:
 |TBA
 |===
 
-=== Steps
+.Steps
 
 . Select *Cloud Services* > *Cloud Services* from the menu.
 . Locate the cloud service in the list and click the Edit icon.

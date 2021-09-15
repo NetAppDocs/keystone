@@ -12,12 +12,6 @@ summary: Log in to the NetApp service engine web interface
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.033759
-//
-
 [.lead]
 To use the NetApp Service Engine web interface, you must have an account. Your account is assigned one or more roles (by your NetApp Service Engine administrator) that determine your permissions and therefore which activities you can perform in the NetApp Service Engine portal.
 
@@ -52,7 +46,7 @@ To log in with a user name and password, you need:
 * The URL to the NetApp Service Engine portal
 * A web browser
 
-==== Steps
+.Steps
 
 . In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
 . Select *Local user sign in*.
@@ -70,7 +64,7 @@ To log in with NetApp SSO, you need:
 * The URL to the NetApp Service Engine portal.
 * A web browser.
 
-==== Steps
+.Steps
 
 . In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
 . Select NetApp SSO.
@@ -80,7 +74,7 @@ After the successful login the NetApp Service Engine web interface loads, the Fl
 
 === Log out of the NetApp Service Engine web interface
 
-==== Steps
+.Steps
 
 . To log out of the interface, click the user icon and click *Sign Out*.
 

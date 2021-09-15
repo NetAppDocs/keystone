@@ -12,16 +12,10 @@ summary: Keystone create an object storage group
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.747939
-//
-
 [.lead]
 Use this method to create a new object storage group.
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
 . Make sure the correct subtenant is selected and the display is showing groups (not users).
@@ -30,6 +24,6 @@ Use this method to create a new object storage group.
 . Select the S3 policy from the list.
 . Click *Create*. This creates a job to create the group with the specified settings.
 
-=== After you finish
+.After you finish
 
 Create object storage group is run as an asynchronous job. You can check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].

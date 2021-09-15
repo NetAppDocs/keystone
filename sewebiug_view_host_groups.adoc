@@ -12,12 +12,6 @@ summary: Keystone view host groups
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-20 10:59:39.427467
-//
-
 [.lead]
 Host groups are defined to determine access to disks. Based on the initiator nodes assigned to a host groups, the access of that host group is determined.
 
@@ -38,7 +32,7 @@ There are two ways to create a host group:
 +
 It is possible to create an empty host group and map it to a disk as a placeholder. You must update the empty host group to add initiators before you will be able to access the storage.
 
-=== Before you begin
+.Before you begin
 
 You need the following to create the host group:
 
@@ -52,7 +46,7 @@ If the block store for a subtenant/zone combination has not been previously init
 * The list of initiators to add to the group: WWPNs for FC hosts nodes or IQNs for iSCSI host node names.
 * An alias for each initiator; an alias is a simple name to identify the initiator server, or an individual port/interface on the server. For example, Server 4.
 
-=== Steps
+.Steps
 
 . link:sewebiug_view_host_groups.html#view-host-groups[View the host groups] list.
 . Click *Create Host Group*.
@@ -65,7 +59,7 @@ If the block store for a subtenant/zone combination has not been previously init
 . If required, add tags (key-value pairs) to the host group in the Tags section.
 . Click *Create*. This creates the host group.
 
-=== After you finish
+.After you finish
 
 After the host group is created, it is available for mapping to disks.
 
@@ -77,7 +71,7 @@ Modifying a host group will modify access for each disk mapped to the host group
 
 You cannot modify the alias of an initiator. To change the alias, delete the initiator from the group and then re-create it.
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
 . Locate the host group in the list and click the Edit icon for that host group.
@@ -97,7 +91,7 @@ To remove an initiator from the host group, locate the initiator in the list and
 == Delete a host groups
 You can delete a host group if there are no disks mapped to the host group.
 
-=== Steps
+.Steps
 
 . View the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
 . Locate the host group in the list and click the Delete icon for that host group.

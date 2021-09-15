@@ -17,10 +17,10 @@ This section describes how to add a cloud service.
 
 NetApp Service Engine supports Azure NetApp Files.
 
-=== Before you begin
+.Before you begin
 You need the information about the cloud services, including credentials to connect to the service. The information varies with the cloud service type.
 
-=== Steps
+.Steps
 
 . Select *Cloud Services* from the menu.
 . Click *Create*.

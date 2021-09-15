@@ -28,9 +28,6 @@ The following known issues have been reported in NetApp Service Engine. You migh
 |Limitations in deleting file servers and block stores that are disaster recovery enabled
 |Deleting a disaster recovery enabled block store or file share might fail because peering is not removed due to timeout.
 |Failed deletion is available in “Contact Support” and Support will be notified via OpsRamp Ticket.
-|Limitations for long running jobs placed in "Queued” state.
-|When jobs run for an extended time, they are placed in the “Queued” state. A support ticket has to be raised to identify the issue.
-|Raise a service request for GSSC to resolve the issue.
 |Limitation when creating multiple snapshots
 |When multiple snapshots are triggered for creation, the web page initially displays only the last snapshot issued.
 |Auto job picks up the other snapshots within 15 minutes.
