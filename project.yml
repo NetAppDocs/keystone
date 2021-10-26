@@ -1,3 +1,12 @@
+---
+settings:
+  name: Keystone
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: us-en,ja-jp,zh-cn,de-de
 sidebar:
   entries:
     - title: NetApp Keystone Flex Subscription
