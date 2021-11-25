@@ -19,16 +19,18 @@ The following features and enhancements have been introduced in this release of 
 
 The new features in this release include the following:
 
-=== Ability to view your Cloud Volumes ONTAP usage and subscription
+=== Ability to view your Cloud Volumes ONTAP usage and billing through Flex Subscription
 
-If you are a NetApp Keystone Flex Subscription customer, and also have Cloud Volumes ONTAP subscription, you can view the usage and billing on your cloud volumes through the Cloud Manager interface. Cloud Manager can now discover your NetApp Keystone Flex Subscriptions and retrieve your subscription details. On clicking the *All Services > Digital Wallet > Keystone Flex Subscription* tab, you can perform the following activities:
+If you are a NetApp Keystone Flex Subscription customer, and also have Cloud Volumes ONTAP subscription, you can view the usage and billing on your cloud volumes through Flex Subscription. Cloud Manager can now discover your Flex Subscriptions details and display them on the Cloud Manager interface. On clicking the *All Services > Digital Wallet > Keystone Flex Subscription* tab, you can perform the following activities:
 
-* View a welcome screen from which you can request your Flex Subscription administrator to associate your Cloud Manager user ID with your Flex Subscription user ID; and thereby gain access to the Keystone Flex Subscription tab.
-* View the consumption reporting for the committed and consumed capacities of the subscribed service levels for your on-premise systems and Cloud Volumes ONTAP subscriptions.
+* View a welcome screen from which you can request your Flex Subscription administrator to associate your Cloud Manager user ID with your Flex Subscription user ID; and thereby gain access to the *Keystone Flex Subscription* tab.
+* View the consumption data of the committed and consumed capacities of the subscribed services on your on-premise systems and Cloud Volumes ONTAP.
 * View the Flex Subscription details associated with your Cloud Manager account. Details, such as committed, consumed, and burst capacity are displayed.
-* Associate your Cloud Volumes ONTAP account with your Flex Subscription IDs to designate the account for billing and capacity usage reporting.
+* Link your Cloud Volumes ONTAP account with your Flex Subscription IDs to associate the account for billing and capacity usage reporting.
 * Request increasing or decreasing the committed capacity for the subscribed Flex Subscription services.
-* View the linked Flex Subscription ID as a charging method for billing the Cloud Volumes ONTAP consumption (only linked IDs).
+* View and use the linked Flex Subscription ID as a charging method for billing the Cloud Volumes ONTAP consumption (only linked IDs).
+
+For more information, see ....
 
 
 [NOTE]
