@@ -35,6 +35,8 @@ sidebar:
           url: /nkfsosm_site_requirements.html
         - title: Operations
           url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
+        - title: Flex Subscription and Active IQ
+          url: /nkfsosm-keystone-and-aiq.html
     - title: Release Notes
       entries:
         - title: What's new
