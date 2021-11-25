@@ -45,7 +45,7 @@ The features and options in the offering vary based on the models. For informati
 * Configure
 * Deploy
 * Onboard
-| icon:check[]
+|icon:check[1x]
 | None
 |Administration and monitoring
 
@@ -54,21 +54,21 @@ The features and options in the offering vary based on the models. For informati
 * Perform administrative tasks
 * Alert
 | None
-| icon:check[]
+|icon:check[1x]
 |Operations and optimization
 
 * Manage capacity
 * Manage performance
 * Manage SLA
 | None
-| icon:check[]
+|icon:check[1x]
 |Support
 
 * Support customer
 * Hardware break fix
 * Software support
 * Upgrades and patches
-| icon:check[]
+|icon:check[1x]
 | None
 
 |===
