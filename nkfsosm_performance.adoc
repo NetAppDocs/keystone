@@ -25,8 +25,70 @@ Each Performance Service Level is defined by its I/O density, which is the ratio
 
 Each volume managed by the Flex Subscription services is associated with a performance service level. All I/O operations and all used storage used on the respective volume are factored into the volume’s I/O density calculation.
 
-The below figure defines the performance service levels.
+The below table defines the performance service levels.
 
-image:nkfsosm_image5.png[Error: Missing Graphic Image]
+== Performance service levels for difference storage types
+
+The service levels for file, block, and object storage are listed here.
 
 I/O density calculations at the volume level are reported to show peak I/O density during the prior week. The peak performance is determined on an hourly time interval. I/O density reports by volume are generated monthly to gauge adherence to the respective service levels.
+
+=== File shares
+*Supported protocols*: NFS, CIFS, iSCSI, FC, and S3 (Object)
+
+|===
+|*Service level* |*Extreme* |*Premium* |*Standard* |*Value*
+|*Workload type* |*Analytics, databases* |*VDI, virtualization apps, Software dev*
+|*File shares, web servers* |*Backup*
+|*Target IOPS/TiB* |6,144 |2,048 |128 |N/A
+|*Max IOPS/TiB* |12,288 |4,096 |512 |N/A
+|*Max throughput MBps (32KB/IOP)* |384 |128 |16 |N/A
+|*Latency* |<1 ms |<2 ms |<17 ms |N/A
+.2+|*Minimum capacity*^1,2^
+4+|100 TiB^1^
+|15 TiB^2^ |25 TiB^2^ |50 TiB^2^ |50 TiB^2^
+
+|===
+
+[NOTE]
+^1^ Minimum one-year term and 100TiB minimum capacity across combination of any File and Block performance levels for NetApp direct opportunities.
+^2^ Minimum one-year term and minimum stated capacity per each service tier selected for channel led opportunities.
+
+=== Block storage
+*Supported protocols*: FC and iSCSI
+
+|===
+|*Service level* |*Extreme* |*Premium* |*Standard*
+|*Workload type* |*HPC* |*Video surveillance* |*Backup*
+|*Target IOPS/TiB*
+3+|N/A
+|*Max IOPS/TiB* |5.500 |4,000 |N/A
+|*Max throughput MBps (32KB/IOP)* |43 |31 |N/A
+|*Latency* |<0.5 ms |<0.5 ms |N/A
+|*Minimum capacity*^1,2^ |100 TiB^3^ |100 TiB^3^ |300 TiB^3^
+|===
+
+[NOTE]
+^1^ Minimum one-year term and 100TiB minimum capacity across combination of any file and block performance levels for NetApp direct opportunities.
+^2^ Minimum one-year term and minimum stated capacity per service tier selected for channel led opportunities.
+^3^ Minimum one-year term and minimum stated capacity per service tier selected for either opportunity type.
+
+=== Object storage
+*Supported protocol*: S3
+
+|===
+|*Service level* | Object
+|*Workload type* |Media repository, archiving
+|*Target IOPS/TiB*
+|N/A
+|*Max IOPS/TiB* |N/A
+|*Max throughput MBps (32KB/IOP)* |N/A
+|*Latency* |N/A
+|*Minimum capacity*^1,2^ |500 TiB^3^
+
+|===
+
+[NOTE]
+^1^ Minimum one-year term and 100TiB minimum capacity across combination of any file and block performance levels for NetApp direct opportunities.
+^2^ Minimum one-year term and minimum stated capacity per service tier selected for channel led opportunities.
+^3^ Minimum one-year term and minimum stated capacity per service tier selected for either opportunity type.

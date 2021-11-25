@@ -30,9 +30,49 @@ Flex Subscription offers three operational models for service delivery.
 
 The features and options in the offering vary based on the models. For information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html[Roles and operations of service providers and customers]
 
-This figure summarizes the overall service lifecycle model and categorizes the associated services.
+== Roles and responsibilities across the service lifecycle
 
-image:nkfsosm_image7.png[Error: Missing Graphic Image]
+* *NetApp-operated model*: The end to end management of installation, deployment, operations, monitoring, optimization and support is performed by NetApp.
+* *Partner-operated model*: The share of roles and responsibilities depends on the SLA between you and the service provider or partner. Contact your service provider for information.
+* *Customer-operated model*: The following table summarizes the overall service lifecycle model and the roles and responsibilities associated with them in a customer-operated environment.
+
+|===
+|Task |NetApp |Customer
+
+|Installation and related tasks
+
+* Install
+* Configure
+* Deploy
+* Onboard
+| icon:check[]
+| None
+|Administration and monitoring
+
+* Monitor
+* Report
+* Perform administrative tasks
+* Alert
+| None
+| icon:check[]
+|Operations and optimization
+
+* Manage capacity
+* Manage performance
+* Manage SLA
+| None
+| icon:check[]
+|Support
+
+* Support customer
+* Hardware break fix
+* Software support
+* Upgrades and patches
+| icon:check[]
+| None
+
+|===
+
 
 === Roles and responsibilities summary
 
