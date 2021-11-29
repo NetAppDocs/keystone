@@ -21,6 +21,8 @@ sidebar:
               url: /nkfsosm_performance.html
             - title: Service Level metrics and definitions
               url: /nkfsosm_service_level_metrics_and_definitions.html
+            - title: Billing
+              url: /nkfsosm_kfs_billing.html  
             - title: Data protection
               url: /nkfsosm_data_protection.html
             - title: Tiering
