@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_uscs.html
+keywords: netapp, keystone, US citizen support, USCS
+summary: Keystone Flex Subscription performance
+---
+
+= US Citizen Support (USCS)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp Keystone Flex Subscription (Flex Subscription) delivers continuous monitoring and support of the US Citizen Support (USCS) service through NetApp Global Services and Support Center (GSSC).
+
+GSSC is a geographically distributed team servicing a variety of NetApp customers. The USCS offering for Flex Subscription ensures that monitoring and support of the Flex Subscription service are delivered by citizens of USA located in USA. Onsite support and troubleshooting, where necessary for maintaining of the systems, is also included.
