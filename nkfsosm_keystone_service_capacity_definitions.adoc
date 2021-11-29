@@ -58,6 +58,6 @@ The amount of data stored within provisioned capacity, or the amount of data act
 
 == Billed capacity
 Monthly bill = (committed capacity [TiB] * committed rate [$/TiB]) + (daily average provisioned burst capacity [TiB] * burst rate [$/TiB]). The monthly bill contains a minimum charge based on the committed capacity.
-+
+
 The monthly bill varies beyond the minimum charge based on daily average burst capacity consumption.
 For more information on billing, see link:nkfsosm_kfs_billing.html[Flex Subscription billing].
