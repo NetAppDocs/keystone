@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_keystone_service_capacity_definitions.html
-keywords: netapp, keystone, service, capacity, definitions,
+keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity
 summary: Keystone service capacity definitions
 ---
 
@@ -23,17 +23,18 @@ The NetApp Keystone Flex Subscription (Flex Subscription) service capacities inc
 
 == Logical capacity
 This is the data placed into the Flex Subscription infrastructure by a customer. All Flex Subscription capacities refer to a logical capacity.
-+
 For example, if a 1 TiB file is stored on the Flex Subscription infrastructure, then at least 1 TiB of capacity must be purchased.
 
 == Committed capacity
 The minimum logical capacity billed each month for the duration of the term:
+
 ** Capacity is committed to each performance level.
 ** Committed capacity cannot be decreased during the term.
 ** Committed capacity and additional performance levels can be added during the term.
 
 === Changes to committed capacity
 During the tenure of a subscription, you can change the committed capacities. However, there are certain preconditions:
+
 *	The committed capacity cannot be decreased
 *	The committed capacity cannot be increased 90 days prior to the expiry of your subscription, unless the subscription is to be renewed for an additional 12 month term.
 * You can request changes to committed capacity through the NetApp Service Engine interface or through Keystone Success Manager.
@@ -41,6 +42,7 @@ For information about requesting changes, see link:sewebiug_raise_a_service_requ
 
 == Burst capacity
 This is the logical capacity that has exceeded the committed capacity. Note the following points:
+
 ** Flex Subscription service provides 20% capacity in excess of the committed capacity.
 ** Burst capacity can be consumed on an elastic basis and is charged on a daily basis of the consumed average.
 ** Burst capacity up to 20% is charged at a same rate as the committed capacity.
@@ -48,6 +50,7 @@ This is the logical capacity that has exceeded the committed capacity. Note the 
 
 == Consumed/provisioned capacity
 Consumed capacity refers to the capacity in TiB of storage currently being consumed on the service. Flex Subscription service considers the sum of the provisioned sizes (not the logical or physical capacity used) of all volumes on a particular Performance Service Level to be considered as consumed capacity for that Performance Service Level. This includes:
+
 ** The capacity that is provisioned through the creation, modification, deletion, or potential auto-growth of volumes.
 ** The Snapshot copies and clones.
 [NOTE]
