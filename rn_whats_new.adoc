@@ -13,7 +13,7 @@ summary: new features in NetApp Service Engine
 :imagesdir: ./media/
 
 [.lead]
-The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription (Flex Subscription) services:
+The following feature has been introduced in NetApp Service Engine 2.7 to support enhanced services of NetApp Keystone Flex Subscription (Flex Subscription):
 
 == Features introduced in NetApp Service Engine 2.7
 
@@ -30,7 +30,9 @@ If you are a NetApp Keystone Flex Subscription customer, and also have Cloud Vol
 * Request increasing or decreasing the committed capacity for the subscribed Flex Subscription services.
 * View and use the linked Flex Subscription ID as a charging method for billing the Cloud Volumes ONTAP consumption (only linked IDs).
 
-For more information, see ....
+For more information, see the following links in the Cloud Manager documents:
+link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription[Keystone Flex Subscription]
+link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions[Manage Keystone Flex Subscriptions]
 
 
 [NOTE]
@@ -149,7 +151,7 @@ link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.htm
 ===============================================================================
 
 
-== Features introduced in NetApp Keystone Flex Subscription 2.0
+== Features introduced in NetApp Service Engine 2.0
 
 === MetroCluster support
 NetApp Service Engine supports sites configured with MetroCluster configurations. MetroCluster is a data protection feature of ONTAP that provides recovery point objectives (RPO) 0 or recovery time objectives (RTO) 0 using synchronous mirror for continuously available storage.
