@@ -17,9 +17,48 @@ There are three operational models in Flex Subscriptions. These FAQs are related
 
 === What are the different operating models and who is responsible for the major activities?
 
-The following chart is an overview of the three operating models that a customer can select: NetApp Operated, Partner Operated, and Customer Operated. For each of the operating models, the chart below shows the roles and responsibilities across the service lifecycle.
+The following chart is an overview of the three operating models that a customer can select: NetApp Operated, Partner Operated, and Customer Operated.
 
-image:nkfsfaq_image4.png[Operating Models and Responsibilities]
+* *NetApp-operated model*: The end to end management of installation, deployment, operations, monitoring, optimization and support is performed by NetApp.
+* *Partner-operated model*: The share of roles and responsibilities depends on the SLA between you and the service provider or partner. Contact your service provider for information.
+* *Customer-operated model*: The following table summarizes the overall service lifecycle model and the roles and responsibilities associated with them in a customer-operated environment.
+
+|===
+|Task |NetApp |Customer
+
+|Installation and related tasks
+
+* Install
+* Configure
+* Deploy
+* Onboard
+| icon:check[]
+| None
+|Administration and monitoring
+
+* Monitor
+* Report
+* Perform administrative tasks
+* Alert
+| None
+| icon:check[]
+|Operations and optimization
+
+* Manage capacity
+* Manage performance
+* Manage SLA
+| None
+| icon:check[]
+|Support
+
+* Support customer
+* Hardware break fix
+* Software support
+* Upgrades and patches
+| icon:check[]
+| None
+
+|===
 
 === What is a NetApp-operated model?
 

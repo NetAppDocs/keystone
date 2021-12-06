@@ -21,10 +21,18 @@ sidebar:
               url: /nkfsosm_performance.html
             - title: Service Level metrics and definitions
               url: /nkfsosm_service_level_metrics_and_definitions.html
+            - title: Billing
+              url: /nkfsosm_kfs_billing.html
             - title: Data protection
               url: /nkfsosm_data_protection.html
             - title: Tiering
               url: /nkfsosm_tiering.html
+            - title: Non-returnable disk
+              url: /nkfsosm_nrd.html
+            - title: US Citizen Support
+              url: /nkfsosm_uscs.html
+            - title: Flex Subscription and Equinix
+              url: /nkfsosm_equinix.html  
         - title: Operational model and responsibilities
           url: /nkfsosm_overview.html
         - title: Tenancy and multi-tenancy
@@ -35,6 +43,8 @@ sidebar:
           url: /nkfsosm_site_requirements.html
         - title: Operations
           url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
+        - title: Flex Subscription and Active IQ
+          url: /nkfsosm-keystone-and-aiq.html
     - title: Release Notes
       entries:
         - title: What's new

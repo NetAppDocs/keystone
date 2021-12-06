@@ -13,9 +13,9 @@ summary: View and download billing details
 :imagesdir: ./media/
 
 [.lead]
-You can view the monthly charges for all the subscribed services on your Keystone Flex Subscription (Flex Subscription).
+You can view the monthly charges for all the subscribed services on your NetApp Keystone Flex Subscription (Flex Subscription) on the NetApp Service Engine dashboard and Billing screen.
 
-You can view the billing details for all your subscribed services for NetApp Keystone for the previous months. The billing against the capacity in burst for each month is highlighted.
+You can view the billing details for all your subscribed services for Flex Subscription for the previous months. The billing against the capacity in burst for each month is highlighted.
 
 NOTE: If any of your subscriptions are billed annually, the invoice reflects the prorated amount instead of actual monthly invoice amount.
 
