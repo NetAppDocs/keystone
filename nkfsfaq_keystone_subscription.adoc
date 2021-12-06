@@ -19,9 +19,7 @@ The following questions give answers to your frequent queries about NetApp Keyst
 NetApp Keystone Flex Subscription (Flex Subscription) is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
 
 === What storage service offers are provided as part of Flex Subscription?
-The following chart shows the data storage performance service levels offerings.
-
-image:nkfsosm_image5.png[Flex Subscription Performance Service Levels]
+For information, see link:nkfsosm_performance.html[Performance Service Levels]
 
 === What add-on services are supported?
 Advanced data protection (backup and disaster recovery) and Hybrid Cloud Tiering with FabricPool are add-on services that can be chosen at an additional cost.

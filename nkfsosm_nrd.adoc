@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+permalink: nkfsosm_nrd.html
+keywords: netapp, keystone, NRD, Non-returnable disk
+summary: Keystone Flex Subscription and Equinix
+---
+
+= Non-returnable disk offering
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+As a part of NetApp Keystone Flex Subscription (Flex Subscription), NetApp extends the non-returnable disk (NRD) offering.
+
+If you purchase the NRD offering for Flex Subscription, NetApp does not recover the physical storage media used during the entire service tenure because of support and maintenance activities, or at service termination when NetApp otherwise recovers all of its physical assets used in the delivery of the service.
+
+If you have purchased this service, note the following:
+
+*	Even on purchasing this service, you can opt for NetApp to recover the physical storage media.
+* In case NetApp is not responsible for recovering the media, you are entitled to destroy the storage media or disks used in the delivery of the Flex Subscription service at the end of the service tenure.
+*	You can add, modify, or terminate the NRD offering during the renewal of the subscription and not in the middle of the tenure.
+* The cost associated with the NRD offering changes based on the committed capacity of the subscription. That is, if you opt to increase your committed capacity in the middle of the subscription period, the cost of NRD is revised likewise. The increase will be proportional to the increase in the committed capacity.
+*	You can retain only the physical storage media used in your service. Controllers, shelves, cables, switches, network cards, and any other equipment owned by NetApp will be recovered by NetApp.

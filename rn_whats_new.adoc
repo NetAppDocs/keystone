@@ -13,7 +13,34 @@ summary: new features in NetApp Service Engine
 :imagesdir: ./media/
 
 [.lead]
-The following features and enhancements have been introduced in this release of NetApp Keystone Flex Subscription (Flex Subscription) services:
+The following feature has been introduced in NetApp Service Engine 2.7 to support enhanced services of NetApp Keystone Flex Subscription (Flex Subscription):
+
+== Features introduced in NetApp Service Engine 2.7
+
+The new features in this release include the following:
+
+=== Ability to view your Cloud Volumes ONTAP usage and billing through Flex Subscription
+
+If you are a NetApp Keystone Flex Subscription customer, and also have Cloud Volumes ONTAP subscription, you can view the usage and billing on your cloud volumes through Flex Subscription. Cloud Manager can now discover your Flex Subscriptions details and display them on the Cloud Manager interface. On clicking the *All Services > Digital Wallet > Keystone Flex Subscription* tab, you can perform the following activities:
+
+* View a welcome screen from which you can request your Flex Subscription administrator to associate your Cloud Manager user ID with your Flex Subscription user ID; and thereby gain access to the *Keystone Flex Subscription* tab.
+* View the consumption data of the committed and consumed capacities of the subscribed services on your on-premise systems and Cloud Volumes ONTAP.
+* View the Flex Subscription details associated with your Cloud Manager account. Details, such as committed, consumed, and burst capacity are displayed.
+* Link your Cloud Volumes ONTAP account with your Flex Subscription IDs to associate the account for billing and capacity usage reporting.
+* Request increasing or decreasing the committed capacity for the subscribed Flex Subscription services.
+* View and use the linked Flex Subscription ID as a charging method for billing the Cloud Volumes ONTAP consumption (only linked IDs).
+
+For more information, see the following links in the Cloud Manager documents:
+link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription[Keystone Flex Subscription]
+link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions[Manage Keystone Flex Subscriptions]
+
+
+[NOTE]
+The released version of NetApp Keystone Flex Subscription 2.7 is the major release after release 2.2. The internal releases between 2.2 and 2.7 have only minor fixes.
+
+
+=========================================================================
+=========================================================================
 
 == Features introduced in NetApp Service Engine 2.2
 The new features in this release include a revamped dashboard for new widgets on billing, capacity utilization, service requests, and alerts. This release also includes new screens for billing and alerts management, and renaming of the Subscribed Services menu to Cloud Services.
@@ -92,7 +119,7 @@ For more information, see the following links:
 
 
 
-== Features introduced in NetApp Keystone Flex Subscription 2.0.1
+== Features introduced in NetApp Service Engine 2.0.1
 
 === Support extended to Cloud Volumes Services for Google Cloud Platform
 
@@ -124,7 +151,7 @@ link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.htm
 ===============================================================================
 
 
-== Features introduced in NetApp Keystone Flex Subscription 2.0
+== Features introduced in NetApp Service Engine 2.0
 
 === MetroCluster support
 NetApp Service Engine supports sites configured with MetroCluster configurations. MetroCluster is a data protection feature of ONTAP that provides recovery point objectives (RPO) 0 or recovery time objectives (RTO) 0 using synchronous mirror for continuously available storage.
