@@ -21,7 +21,6 @@ If you have purchased this service, note the following:
 
 *	Even on purchasing this service, you can opt for NetApp to recover the physical storage media.
 * In case NetApp is not responsible for recovering the media, you are entitled to destroy the storage media or disks used in the delivery of the Flex Subscription service at the end of the service tenure.
-*	The customer cannot add, modify, or terminate the NRD offering in the middle of a subscription.
-*	You can add, modify, or terminate the NRD offering when renewing their subscription.
+*	You can add, modify, or terminate the NRD offering during the renewal of the subscription and not in the middle of the tenure.
 * The cost associated with the NRD offering changes based on the committed capacity of the subscription. That is, if you opt to increase your committed capacity in the middle of the subscription period, the cost of NRD is revised likewise. The increase will be proportional to the increase in the committed capacity.
-*	The customer is entitled to only retain the physical storage media used in the delivery of the service. Controllers, shelves, cables, switches, network cards, and any other equipment owned by NetApp will be recovered by NetApp.
+*	You can retain only the physical storage media used in your service. Controllers, shelves, cables, switches, network cards, and any other equipment owned by NetApp will be recovered by NetApp.

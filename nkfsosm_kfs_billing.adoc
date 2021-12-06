@@ -18,6 +18,8 @@ NetApp Keystone Flex Subscription (Flex Subscription) billing is based on commit
 
 For information about committed and burst capacity usage, see link:nkfsosm_keystone_service_capacity_definitions.html[Flex Subscription service capacity definitions].
 
+For information about how to view billing details, see link:sewebiug_billing.html[View billing].
+
 == Billing based on committed capacity
 Committed capacity refers to the capacities for various services in a single subscription, agreed upon by the parties involved (NetApp/partner and customer). This capacity is stated on each Flex Subscription order and is billed, regardless of the actual consumption.
 
@@ -31,18 +33,18 @@ When the consumed capacity is greater than the committed capacity for a given Pe
 Flex Subscription services are billed monthly and yearly.
 
 .Monthly billing
-Invoices are sent monthly, following the month for which the services are availed. For example, the invoice for the services you have used in January is delivered at the beginning of February. This invoice includes the charges for the committed capacity and any burst usage, if applicable.
+Invoices are sent monthly. For the month in which the services are availed, an invoice is sent in the next month. For example, the invoice for the services you have used in January is delivered at the beginning of February. This invoice includes the charges for the committed capacity and if applicable, any burst usage.
 
 .Annual billing
-One invoice is generated at the beginning of each subscription year, starting on the start date of the subscription for the minimum payment of the committed capacity.
+An invoice is generated at the beginning of each subscription year for the minimum payment of the committed capacity. It is generated on the start date of the subscription.
 Another invoice is sent at the end of a subscription quarter, summing up the applicable charges of any burst usage accrued in that quarter.
-If the committed capacity is changed during a subscription, then an invoice is sent on the day the change in the committed capacity is effective, for the prorated minimum payments for the rest of that subscription year.
+If the committed capacity is changed during a subscription, then an invoice is sent on the same day the change in the committed capacity is effective, for the prorated minimum payments for the rest of that subscription year.
 
 == Miscellaneous scenarios for Flex Subscription billing
-There are several scenarios for Flex Subscription billing that you should be familiar with.
+There are several scenarios for Flex Subscription billing and you should be familiar with those scenarios.
 
 === Billing for cloned volumes
-If volumes are cloned in ONTAP and you use them for backing up and restoring your data, you can continue using the clones without any additional payment. However, cloned volumes used for any other purpose and for an extensive duration in your site are charged.
+If volumes are cloned in ONTAP and you use them for backing up and restoring your data, you can continue using the clones without any additional payments. However, cloned volumes used for any other purpose in your business for an extensive duration are charged.
 
 Note the following:
 
@@ -51,14 +53,14 @@ Note the following:
 
 === Billing for MetroCluster
 Advanced Data Protection uses NetApp MetroCluster to mirror data between two physically separated clusters. On MetroCluster mirrored aggregates, data is written twice, once on each cluster. Flex Subscription service charges for consumption on each side independently, resulting in two identical consumption records.
-If you monitor your clusters through ONTAP System Manager (System Manager) or Active IQ Unified Manager (Unified Manager), you might see a discrepancy between the consumption reported on these tools and through Flex Subscription. System Manager and Unified Manager do not report volumes on the mirrored (remote) cluster, and in doing so, reports half the consumption metrics that the Flex Subscription service reports.
+If you monitor your clusters through ONTAP System Manager (System Manager) or Active IQ Unified Manager (Unified Manager), you might see a discrepancy between the consumption reported on these tools and Flex Subscription. System Manager and Unified Manager do not report volumes on the mirrored (remote) cluster, and in doing so, reports half the consumption metrics that the Flex Subscription service reports.
 
 For Example:
 Site A and Site B are set up in a MetroCluster configuration. When a user creates a volume of 10TB in site A, an identical volume of 10TB is created in site B. Flex Subscription distinguishes both the volumes and records an additional 10TB of consumption in each site, for a total increase of 20TB. System Manager and Unified Manager reports a 10TB volume created in site A.
 
-=== Billing for TMP volumes
-Occasionally, TMP (temporary) volumes are created by ONTAP when moving volumes. TMP volumes are short-lived, and the consumption on these volumes is not measured for billing.
+=== Billing for temporary volumes
+Occasionally, temporary (TMP) volumes are created by ONTAP when moving volumes. These temporary volumes are short-lived, and the consumption on these volumes is not measured for billing.
 
 === Billing and adaptive QoS policies
-Flex Subscription measures consumption based on per Performance Service Level. Each Performance Service Level is associated with a specific adaptive quality of service (QoS) policy. During deployment, you will be informed of the correct configurations of the QoS policies for your subscribed Flex Subscription services. You should adhere to these configurations during your storage management operations. To avoid unexpected billing, ensure that your volumes have the appropriate QoS policies assigned, as per the Performance Service Levels in your subscription.
+Flex Subscription measures consumption based on Performance Service Levels. Each Performance Service Level is associated with a specific adaptive quality of service (QoS) policy. During deployment, you will be informed of the details of each QoS policy for your subscribed Flex Subscription services. During storage management operations, ensure that your volumes have the appropriate QoS policies assigned as per your subscribed Performance Service Levels, to avoid unexpected billing.
 For more information about QoS policies in ONTAP, see link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html[Guarantee throughput with QoS overview].
