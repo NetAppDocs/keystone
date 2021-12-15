@@ -32,7 +32,7 @@ The following chart is an overview of the three operating models that a customer
 * Configure
 * Deploy
 * Onboard
-| icon:check[]
+|image:check.png[]
 | None
 |Administration and monitoring
 
@@ -41,21 +41,21 @@ The following chart is an overview of the three operating models that a customer
 * Perform administrative tasks
 * Alert
 | None
-| icon:check[]
+|image:check.png[]
 |Operations and optimization
 
 * Manage capacity
 * Manage performance
 * Manage SLA
 | None
-| icon:check[]
+|image:check.png[]
 |Support
 
 * Support customer
 * Hardware break fix
 * Software support
 * Upgrades and patches
-| icon:check[]
+|image:check.png[]
 | None
 
 |===
