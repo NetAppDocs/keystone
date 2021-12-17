@@ -26,7 +26,7 @@ The following chart is an overview of the three operating models that a customer
 |===
 |Task |NetApp |Customer
 
-|Installation and related tasks
+a|Installation and related tasks
 
 * Install
 * Configure
@@ -34,7 +34,7 @@ The following chart is an overview of the three operating models that a customer
 * Onboard
 |image:check.png[]
 | None
-|Administration and monitoring
+a|Administration and monitoring
 
 * Monitor
 * Report
@@ -42,14 +42,14 @@ The following chart is an overview of the three operating models that a customer
 * Alert
 | None
 |image:check.png[]
-|Operations and optimization
+a|Operations and optimization
 
 * Manage capacity
 * Manage performance
 * Manage SLA
 | None
 |image:check.png[]
-|Support
+a|Support
 
 * Support customer
 * Hardware break fix
