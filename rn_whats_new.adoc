@@ -13,15 +13,13 @@ summary: new features in NetApp Service Engine
 :imagesdir: ./media/
 
 [.lead]
-The following feature has been introduced in NetApp Service Engine 2.7 to support enhanced services of NetApp Keystone Flex Subscription (Flex Subscription):
+The release notes inform you of the new features and enhancements introduced in each release of NetApp Keystone Flex Subscription (Flex Subscription) services, along with the known limitations and fixes.
 
-== Features introduced in NetApp Service Engine 2.7
-
-The new features in this release include the following:
+== Flex Subscription services (05 December 2021)
 
 === Ability to view your Cloud Volumes ONTAP usage and billing through Flex Subscription
 
-If you are a NetApp Keystone Flex Subscription customer, and also have Cloud Volumes ONTAP subscription, you can use Flex Subscription to charge your Cloud Volumes ONTAP usage and view your billing and consumption details. Cloud Manager can now discover your Flex Subscription accounts and display the details on the Cloud Manager interface. On clicking the *All Services > Digital Wallet > Keystone Flex Subscription* tab, you can perform the following activities:
+If you are a NetApp Keystone Flex Subscription (Flex Subscription) customer, and also have Cloud Volumes ONTAP subscription, you can use Flex Subscription to charge your Cloud Volumes ONTAP usage and view your billing and consumption details. Cloud Manager can now discover your Flex Subscription accounts and display the details on the Cloud Manager interface. On clicking the *All Services > Digital Wallet > Keystone Flex Subscription* tab, you can perform the following activities:
 
 * View a welcome screen from which you can request your Flex Subscription administrator to associate your Cloud Manager user ID with your Flex Subscription user ID; and thereby gain access to the *Keystone Flex Subscription* tab.
 * View the consumption data of the committed and consumed capacities of the subscribed services on your on-premise systems and Cloud Volumes ONTAP.
@@ -35,12 +33,7 @@ link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-sub
 link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions[Manage Keystone Flex Subscriptions]
 
 
-[NOTE]
-The released version of NetApp Keystone Flex Subscription 2.7 is the major release after release 2.2. The internal releases between 2.2 and 2.7 have only minor fixes.
-
-
-=========================================================================
-=========================================================================
+The following features have been introduced in the following releases of NetApp Service Engine to support enhanced functionalities offered through NetApp Keystone Flex Subscription (Flex Subscription):
 
 == Features introduced in NetApp Service Engine 2.2
 The new features in this release include a revamped dashboard for new widgets on billing, capacity utilization, service requests, and alerts. This release also includes new screens for billing and alerts management, and renaming of the Subscribed Services menu to Cloud Services.
@@ -69,11 +62,6 @@ The following enhancements have been made on the NetApp Service Engine user inte
 
 * The *Dashboard* menu on the left navigation pane presents an intuitive navigation point to access the dashboard.
 * The *Subscribed Services* menu on the left navigation pane has been renamed to *Cloud Services*.
-
-
-===============================================================================
-===============================================================================
-
 
 
 == Features introduced in NetApp Service Engine 2.1
@@ -114,10 +102,6 @@ For more information, see the following links:
 * link:nkfsosm_tiering.html[Tiering]
 * link:nkfsosm_performance.html[Performance Service Levels]
 
-===============================================================================
-===============================================================================
-
-
 
 == Features introduced in NetApp Service Engine 2.0.1
 
@@ -146,9 +130,6 @@ The new *Backup* screen enables you to view and manage the backups of the disks 
 
 You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol share. You can specify Windows users or groups based on the Active Directory (AD) settings to add to the ACL.
 link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more].
-
-===============================================================================
-===============================================================================
 
 
 == Features introduced in NetApp Service Engine 2.0

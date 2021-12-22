@@ -77,16 +77,16 @@ Flex Subscription measures consumption based on Performance Service Levels. Each
 For more information about QoS policies in ONTAP, see link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html[Guarantee throughput with QoS overview].
 
 === Billing for SnapMirror destinations
-The pricing for the SnapMirror destination volume governed by the QoS policy for the Performance Service Level assigned on the source. However, if the source does not have an associated QoS policy, the destination is billed based on the lowest available service level.
+The pricing for the SnapMirror destination volume governed by the QoS policy for the Performance Service Level (service level) assigned on the source. However, if the source does not have an associated QoS policy, the destination is billed based on the lowest available service level.
 
 === Billing for FlexGroups
 FlexGroups are billed based on the adaptive QoS policy of the FlexGroup. The QoS policies of its constituents are not considered.
 
 === Billing for LUNs
-LUNs usually follow the same billing pattern for the volumes that are governed by QoS policies. If separate QoS policies are set on LUNs instead of those on volumes, then:
+For LUNs, usually the same billing pattern is followed as for the volumes that are governed by QoS policies. If separate QoS policies are set on LUNs, then:
 
 *	The size of the LUN is counted for consumption according to the associated service level of that LUN.
-*	The remainder of the space in the volume, if any, is charged according to the policy set on the volume.
+*	The remainder of the space in the volume, if any, is charged according to the QoS policy of the service level set on the volume.
 
 === System and root volumes
-System and root volumes are monitored as a part of the overall monitoring of the Flex Subscription service but are not counted or billed. The consumption of these volumes is not counted for billing.
+System and root volumes are monitored as a part of the overall monitoring of the Flex Subscription service but are not counted or billed. The consumption on these volumes is exempted for billing.
