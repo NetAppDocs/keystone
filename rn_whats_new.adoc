@@ -13,7 +13,7 @@ summary: new features in NetApp Service Engine
 :imagesdir: ./media/
 
 [.lead]
-The release notes inform you of the new features and enhancements introduced in each release of NetApp Keystone Flex Subscription (Flex Subscription) services, along with the known limitations and fixes.
+The release notes inform you of the new features and enhancements introduced in NetApp Keystone Flex Subscription (Flex Subscription) services, along with the known limitations and fixes.
 
 == Flex Subscription services (05 December 2021)
 
