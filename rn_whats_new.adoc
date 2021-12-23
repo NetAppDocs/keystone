@@ -32,7 +32,7 @@ link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keyst
 
 {sp} +
 {sp} +
-{sp} +
+{sp}
 The following features have been introduced in different releases of NetApp Service Engine to support enhanced functionalities offered through NetApp Keystone Flex Subscription (Flex Subscription):
 
 == Features introduced in NetApp Service Engine 2.2
@@ -62,10 +62,9 @@ The following enhancements have been made on the NetApp Service Engine user inte
 
 * The *Dashboard* menu on the left navigation pane presents an intuitive navigation point to access the dashboard.
 * The *Subscribed Services* menu on the left navigation pane has been renamed to *Cloud Services*.
-
 {sp} +
 {sp} +
-{sp} +
+{sp}
 
 == Features introduced in NetApp Service Engine 2.1
 The new features in this release include supporting multi-tenancy in a Flex Subscription environment, and tiering capability that facilitates moving of inactive data to a lower cost local or cloud tier.
@@ -107,7 +106,7 @@ For more information, see the following links:
 
 {sp} +
 {sp} +
-{sp} +
+{sp}
 
 == Features introduced in NetApp Service Engine 2.0.1
 
@@ -137,11 +136,8 @@ The new *Backup* screen enables you to view and manage the backups of the disks 
 You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol share. You can specify Windows users or groups based on the Active Directory (AD) settings to add to the ACL.
 link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more].
 
-{sp} +
-{sp} +
-{sp} +
-
 == Features introduced in NetApp Service Engine 2.0
+:hardbreaks-option:
 
 === MetroCluster support
 NetApp Service Engine supports sites configured with MetroCluster configurations. MetroCluster is a data protection feature of ONTAP that provides recovery point objectives (RPO) 0 or recovery time objectives (RTO) 0 using synchronous mirror for continuously available storage.
