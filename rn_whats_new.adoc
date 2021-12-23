@@ -109,6 +109,7 @@ For more information, see the following links:
 {sp}
 
 == Features introduced in NetApp Service Engine 2.0.1
+The new features in this release include the following:
 
 === Support extended to Cloud Volumes Services for Google Cloud Platform
 
@@ -138,6 +139,7 @@ link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.htm
 
 == Features introduced in NetApp Service Engine 2.0
 :hardbreaks-option:
+The new features in this release include the following:
 
 === MetroCluster support
 NetApp Service Engine supports sites configured with MetroCluster configurations. MetroCluster is a data protection feature of ONTAP that provides recovery point objectives (RPO) 0 or recovery time objectives (RTO) 0 using synchronous mirror for continuously available storage.
