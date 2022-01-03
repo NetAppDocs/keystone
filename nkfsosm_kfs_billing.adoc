@@ -14,7 +14,18 @@ summary: Keystone Flex Subscription billing
 
 
 [.lead]
-NetApp Keystone Flex Subscription (Flex Subscription) billing is based on committed capacity and burst consumption.
+NetApp Keystone Flex Subscription (Flex Subscription) enables predictable and upfront pricing for your storage subscription.
+
+If you prefer operational expenditures (OpEx) consumption model to capital expenditure (CapEx) or leasing, you can opt for the Flex Subscription pay-as-you-grow model for your flexible and scalable consumption needs.
+
+Flex Subscription provides you with the following billing facilities:
+
+* You can pay based on IOPS and latency committed capacity to meet various workload needs. The different performance service tiers - Extreme, Premium, Standard, and Value enable you to manage your storage based on your purchased service level for your Flex Subscription.
+* It presents predictable billing for the committed capacity and pay-per-use for variable (burst) capacity usage.
+* You can select a bundle price for hardware, core OS, and support for one $/TiB price. You have a single invoice for each storage type, file, block, object, or cloud storage services.
+* Select a flexible term for the services and payment: You can opt for 12 months, 100TiB, or more per site. Thereafter you can auto renew for 12 months or go month-to-month.
+
+Flex Subscription billing is based on committed capacity and variable burst consumption.
 
 For information about committed and burst capacity usage, see link:nkfsosm_keystone_service_capacity_definitions.html[Flex Subscription service capacity definitions].
 
@@ -64,3 +75,18 @@ Occasionally, temporary (TMP) volumes are created by ONTAP when moving volumes. 
 === Billing and adaptive QoS policies
 Flex Subscription measures consumption based on Performance Service Levels. Each Performance Service Level is associated with a specific adaptive quality of service (QoS) policy. During deployment, you will be informed of the details of each QoS policy for your subscribed Flex Subscription services. During storage management operations, ensure that your volumes have the appropriate QoS policies assigned as per your subscribed Performance Service Levels, to avoid unexpected billing.
 For more information about QoS policies in ONTAP, see link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html[Guarantee throughput with QoS overview].
+
+=== Billing for SnapMirror destinations
+The pricing for the SnapMirror destination volume governed by the QoS policy for the Performance Service Level (service level) assigned on the source. However, if the source does not have an associated QoS policy, the destination is billed based on the lowest available service level.
+
+=== Billing for FlexGroups
+FlexGroups are billed based on the adaptive QoS policy of the FlexGroup. The QoS policies of its constituents are not considered.
+
+=== Billing for LUNs
+For LUNs, usually the same billing pattern is followed as for the volumes that are governed by QoS policies. If separate QoS policies are set on LUNs, then:
+
+*	The size of the LUN is counted for consumption according to the associated service level of that LUN.
+*	The remainder of the space in the volume, if any, is charged according to the QoS policy of the service level set on the volume.
+
+=== System and root volumes
+System and root volumes are monitored as a part of the overall monitoring of the Flex Subscription service but are not counted or billed. The consumption on these volumes is exempted for billing.
