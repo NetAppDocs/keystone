@@ -39,7 +39,7 @@ The features and options in the offering vary based on the models. For informati
 |===
 |Task |NetApp |Customer
 
-|Installation and related tasks
+a|Installation and related tasks
 
 * Install
 * Configure
@@ -47,7 +47,7 @@ The features and options in the offering vary based on the models. For informati
 * Onboard
 |image:check.png[]
 | None
-|Administration and monitoring
+a|Administration and monitoring
 
 * Monitor
 * Report
@@ -55,14 +55,14 @@ The features and options in the offering vary based on the models. For informati
 * Alert
 | None
 |image:check.png[]
-|Operations and optimization
+a|Operations and optimization
 
 * Manage capacity
 * Manage performance
 * Manage SLA
 | None
 |image:check.png[]
-|Support
+a|Support
 
 * Support customer
 * Hardware break fix
