@@ -6,7 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: true
-    langs: us-en,ja-jp,zh-cn,de-de
+    langs: us-en,ja-jp,zh-cn,de-de,ko-kr
 sidebar:
   entries:
     - title: NetApp Keystone Flex Subscription
