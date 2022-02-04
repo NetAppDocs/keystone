@@ -18,11 +18,6 @@ The following known issues have been reported in NetApp Service Engine. You migh
 [cols="3*",options="header"]
 |===
 |Known Issue |Description |Workaround
-a|
-The committed capacity of the tenant subscription is not reported correctly.
-a|
-When a tenant subscription is created, and the report graphs are checked immediately (within 15 minutes of the subscription creation), the committed capacity is not reported correctly.
-a|
 Check the report at least 15 minutes after the subscription is created.
 |Limitations in synchronous data protection
 |There is an issue where the VLANs, IPspaces, and Broadcast domains are not defined on the secondary partner of an MetroCluster cluster. This issue can affect recovery of data from the replica zone.
@@ -54,4 +49,10 @@ Check the report at least 15 minutes after the subscription is created.
 |Capacity and billing reports might be inaccurate in NetApp-managed environments
 |In a NetApp-managed environment, the capacity and billing reports generated from the UI might be affected due to missing LUN size metrics and service levels on backup volumes.
 |Raise a service request for GSSC to resolve the issue.
+a|
+A 15-minute lag in reporting the committed capacity on graphs after subscription creation.
+a|
+When a tenant subscription is created, and the report graphs are checked immediately (within 15 minutes of the subscription creation), the committed capacity is not reported correctly.
+a|
+Check the report graphs at least 15 minutes after the subscription is created.
 |===
