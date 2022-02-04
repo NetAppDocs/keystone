@@ -18,7 +18,7 @@ The following known issues have been reported in NetApp Service Engine. You migh
 [cols="3*",options="header"]
 |===
 |Known Issue |Description |Workaround
-Check the report at least 15 minutes after the subscription is created.
+
 |Limitations in synchronous data protection
 |There is an issue where the VLANs, IPspaces, and Broadcast domains are not defined on the secondary partner of an MetroCluster cluster. This issue can affect recovery of data from the replica zone.
 |Place a service request for GSSC to perform a manual network configuration on the partner cluster. The network configuration can be done in advance if the network components (VLAN, IPspace, and Broadcast domains) are known.
