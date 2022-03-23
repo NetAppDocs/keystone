@@ -55,4 +55,24 @@ a|
 When a tenant subscription is created, and the report graphs are checked immediately (within 15 minutes of the subscription creation), the committed capacity is not reported correctly.
 a|
 Check the report graphs at least 15 minutes after the subscription is created.
+a|
+Change in Performance Service Levels does not move volumes
+a|
+If two different aggregates in the same cluster are used for two service levels, changing the service level on a volume to another does not move the volume to the other aggregate. Only the adaptive QoS policy is applied.
+a|
+Raise a service request for GSSC to resolve the issue.
+a|
+Creation of FCP SVM requires iSCSI activation
+a|
+For creating a storage virtual machine (SVM) and enabling FCP support on it, an iSCSI interface activation is required.
+a|
+Raise a service request for GSSC to resolve the issue.
+a|
+Limitation with multiple host groups with same initiator
+a|
+If multiple host groups are created with the same initiator name, and disks are mapped to all the host groups, the disks get mapped to only one host group on the cluster.
+a|
+Raise a service request for GSSC to resolve the issue.
+a|
+
 |===
