@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: rn_fixed_issues.html
+keywords: netapp, keystone, release notes, fixed issues, hot fixes
+summary: fixed issues in NetApp Service Engine
+---
+
+= Fixed issues in NetApp Service Engine
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The following issues that were found in a previous release of NetApp Service Engine have been fixed for you to successfully use your NetApp Keystone Flex Subscription services.
+
+[cols="3*",options="header"]
+|===
+|Issue Description |After the fix |Fixed in version
+
+|Volume move was automatically triggered when non-FabricPool aggregate existed on the cluster.
+
+Any modifications to volumes or disks triggered a volume move to another aggregate.
+|No volume move is triggered for volume operations.
+|NetApp Service Engine 2.2
+|Host groups deletion removed host groups from the NetApp Service Engine user interface (UI), but not from the cluster.
+|Resolved.
+|NetApp Service Engine 2.2
+|Host groups could be unmapped from the disks on the NetApp Service Engine UI, but not from the cluster.
+|Resolved.
+|NetApp Service Engine 2.2
+|Export policies could not be deleted from the NetApp Service Engine UI.
+|The changed policies can be saved from the UI.
+|NetApp Service Engine 2.2
+
+|===
