@@ -18,6 +18,7 @@ For more information about NetApp Keystone, see link:https://www.netapp.com/serv
 For more information about NetApp Keystone Flex Subscription, see link:https://www.netapp.com/services/subscriptions/keystone/flex-subscription[Keystone Flex Subscription]
 
 Flex Subscription is a storage-as-a-service offering that delivers a cloud-like experience on your on-premises systems with connectivity to the cloud — available on your terms.
+
 * *NetApp Keystone Flex Pay* - NetApp Keystone Flex Pay (Flex Pay) is a portfolio of flexible financial alternatives that include traditional financing, leasing, and fixed/variable options to meet your customer’s cash flow needs.
 * *NetApp Keystone Flex Subscription* - NetApp Keystone Flex Subscription (Flex Subscription) is pay-as-you-grow, outcome-based subscription service that brings an on-premises cloud-like experience.
 
