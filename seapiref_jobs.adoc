@@ -21,7 +21,7 @@ summary: Keystone jobs APIs
 [.lead]
 Use the jobs APIs to review job details. For more information about working with jobs, see Job objects API and asynchronous processes.
 
-=== Retrieve jobs
+== Retrieve jobs
 
 Use the method listed in the following table to retrieve all jobs or a subset of the jobs. Specifying a `tenant_id` will return only the jobs belonging to that tenant.
 
@@ -102,7 +102,7 @@ none
 }
 ....
 
-==== Retrieve a job by job ID
+=== Retrieve a job by job ID
 
 Use the method listed in the following table to retrieve a job by ID.
 
@@ -175,13 +175,13 @@ none
 }
 ....
 
-=== Job objects API and asynchronous processes
+== Job objects API and asynchronous processes
 
 Some of the API calls, particularly those that are used for adding or modifying resources, can take longer to complete than other calls. NetApp Service Engine processes these long-running requests asynchronously.
 
 After making an API call that runs asynchronously, the HTTP response code 202 indicates the request has been successfully validated and accepted, but not yet completed. The request is processed as a background task which continues to run after the initial HTTP response to the client. The response includes the job object anchoring the request, including its unique identifier.
 
-==== Querying the job object associated with an API request
+=== Querying the job object associated with an API request
 
 The job object returned in the HTTP response contains several properties. You can query the state property to determine if the request completed successfully. A job object can be in one of the following states:
 
@@ -195,7 +195,7 @@ There are two techniques you can use when polling a job object to detect a termi
 * Standard polling request: The current job state is returned immediately.
 * Long polling request: When the job state moves to NORMAL, ERROR, or PARTIAL_FAILURES.
 
-==== Steps for an asynchronous request
+=== Steps for an asynchronous request
 
 You can use the following high-level procedure to complete an asynchronous API call:
 

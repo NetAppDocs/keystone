@@ -41,7 +41,7 @@ Use the methods listed in the following table to create, modify, and delete regi
 |Delete a region.
 |===
 
-=== Region attributes
+== Region attributes
 
 The following table lists the region attributes.
 
@@ -59,7 +59,7 @@ The following table lists the region attributes.
 |The description of the region.
 |===
 
-=== Retrieve regions
+== Retrieve regions
 
 Use the method listed in the following table to retrieve all regions or a subset of regions.
 
@@ -108,7 +108,7 @@ none
 }
 ....
 
-=== Retrieve a region by name
+== Retrieve a region by name
 
 Use the method listed in the following table to retrieve a region by name.
 
@@ -154,7 +154,7 @@ none
 }
 ....
 
-=== Create a region
+== Create a region
 
 Use the method listed in the following table to create a region.
 
@@ -203,7 +203,7 @@ Required request body attributes: `name`
 }
 ....
 
-=== Modify a region
+== Modify a region
 
 Use the method listed in the following table to modify a region.
 
@@ -250,7 +250,7 @@ Required request body attributes: `none`
 }
 ....
 
-=== Delete a region
+== Delete a region
 
 Use the method listed in the following table to delete a region.
 

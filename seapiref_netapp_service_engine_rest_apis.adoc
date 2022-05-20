@@ -18,7 +18,7 @@ summary: NetApp service engine REST APIs
 // 2020-10-19 09:25:08.999425
 //
 
-=== Pagination
+== Pagination
 
 Many API calls return a large number of records. It is possible to limit the number of records by specifying the `offset` and `limit` values:
 

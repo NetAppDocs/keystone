@@ -32,7 +32,7 @@ Use the methods in the following table to retrieve and generate reports.
 |Retrieve a report.
 |===
 
-=== Retrieve a list of reports
+== Retrieve a list of reports
 
 Use the method listed in the following table to retrieve a list of reports.
 
@@ -76,7 +76,7 @@ none
 }
 ....
 
-==== Retrieve a report identified by file name
+=== Retrieve a report identified by file name
 
 Use the method in the following table to retrieve a report identified by the file name.
 

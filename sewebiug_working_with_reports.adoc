@@ -21,7 +21,7 @@ summary: Keystone working with reports
 [.lead]
 You can create capacity and performance reports with respect to your NetApp Keystone Flex Subscription usage and also for your tenant usage.
 
-=== Keystone subscription capacity usage report
+== Keystone subscription capacity usage report
 
 The Capacity Usage for Keystone Subscriptions page displays capacity usage for each storage service in a subscription over time. As a NetApp administrator, You can view the capacity usage report for all tenants and partners in a subscription. As a partner administrator, you can view the capacity report for your Flex Subscription usage.
 Use the graphical reports on this page to view the trends usage for all the storage services, as well as add-on data protection services, in separate tabs. When a service is in burst, a banner displays the burst capacity used in the current billing cycle.
@@ -38,7 +38,7 @@ To view the capacity usage for a service, perform the following steps:
 . You can choose to view the capacity usage for base service levels or data protection services by selecting the different tabs. The page displays the service level view by default.
 . You can scroll the page to view the services, and use the period filters to limit the display to a selected period.
 
-=== Tenant subscription capacity usage report
+== Tenant subscription capacity usage report
 
 The Capacity Usage for Tenant Subscriptions page displays capacity usage over time for each tenant for the subscribed storage services in Flex Subscription. This page is available to NetApp, partner, and tenant or customer admins to view the capacity usage reports for a specific tenant.
 [NOTE]
@@ -57,7 +57,7 @@ To view the capacity usage for a tenant, perform the following steps:
 . You can scroll the page to view the services, and use the period filters to limit the display to a selected period.
 
 
-=== Performance report
+== Performance report
 
 The Performance page (shown in the image below) displays information about the performance of individual disks or shares. It displays information on three performance measures:
 

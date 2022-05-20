@@ -28,7 +28,7 @@ The object storage workflow includes these tasks:
 * Create an object storage user.
 * Create an S3 key for user.
 
-=== Object storage groups
+== Object storage groups
 
 Use the methods listed in the following table to retrieve, create, or modify object storage groups.
 
@@ -52,7 +52,7 @@ Use the methods listed in the following table to retrieve, create, or modify obj
 |Delete an object storage group identified by ID.
 |===
 
-==== Object storage group attributes
+=== Object storage group attributes
 
 The following table lists the object storage attributes.
 
@@ -157,7 +157,7 @@ none
 
 ....
 
-==== Retrieve an object storage group by ID
+=== Retrieve an object storage group by ID
 
 Use the method listed in the following table to retrieve an object storage group by ID.
 
@@ -213,7 +213,7 @@ none
   }
 ....
 
-==== Create an object storage group
+=== Create an object storage group
 
 Use the method listed in the following to create an object storage group.
 
@@ -278,7 +278,7 @@ Required request body attributes: `name`, `subtenant_id`, `s3Policy`
 }
 ....
 
-==== Modify an object storage group
+=== Modify an object storage group
 
 Use the method listed in the following table to modify an object storage group.
 
@@ -349,7 +349,7 @@ Required request body attributes: `name`, `subtenant_id`, `s3Policy`
 }
 ....
 
-==== Delete an object storage group by ID
+=== Delete an object storage group by ID
 
 Use the method listed in the following table to delete an object storage group by ID.
 
@@ -405,7 +405,7 @@ none
   }
 ....
 
-=== Object storage users
+== Object storage users
 
 Use the methods listed in the following table to perform the following tasks:
 
@@ -444,7 +444,7 @@ Use the methods listed in the following table to perform the following tasks:
 |Delete S3 keys by key ID.
 |===
 
-==== Object storage user attributes
+=== Object storage user attributes
 
 The following table lists the object storage user attributes.
 
@@ -538,7 +538,7 @@ none
 }
 ....
 
-==== Retrieve an object storage user by ID
+=== Retrieve an object storage user by ID
 
 Use the method listed in the following table to retrieve an object storage use by ID.
 
@@ -588,7 +588,7 @@ none
 }
 ....
 
-==== Create an object storage user
+=== Create an object storage user
 
 Use the method listed in the following table to create an object storage user.
 
@@ -647,7 +647,7 @@ Required request body attributes: `display_name`, `subtenant_id`, `sg_group_memb
 }
 ....
 
-==== Modify an object storage user
+=== Modify an object storage user
 
 Use the method listed in the following table to modify an object storage user.
 
@@ -706,7 +706,7 @@ Required request body attributes: `display_name`, `subtenant_id`, `sg_group_memb
 }
 ....
 
-==== Map all S3 keys to an object storage user
+=== Map all S3 keys to an object storage user
 
 Use the method listed in the following table to map all S3 keys to an object storage user.
 
@@ -753,7 +753,7 @@ none
     ]
 ....
 
-==== Create an S3 key for an object storage user
+=== Create an S3 key for an object storage user
 
 Use the method listed in the following to create an S3 key for an object storage user.
 
@@ -807,7 +807,7 @@ The key expiry date/time is set in UTC—it must be set in the future.
 }
 ....
 
-==== Get S3 keys for an object storage user by key ID
+=== Get S3 keys for an object storage user by key ID
 
 Use the method listed in the following table to get S3 keys for an object storage user by key ID.
 
@@ -856,7 +856,7 @@ none
 }
 ....
 
-==== Delete an S3 key by key ID
+=== Delete an S3 key by key ID
 
 Use the method listed in the following table to delete an S3 key by key ID.
 
@@ -886,7 +886,7 @@ none
 No content to return for succesful execution
 ....
 
-=== Object storage accounts
+== Object storage accounts
 
 Use the methods listed in the following table to perform the following tasks:
 
@@ -919,7 +919,7 @@ Use the methods listed in the following table to perform the following tasks:
 |Create S3 buckets.
 |===
 
-==== Object storage account attributes
+=== Object storage account attributes
 
 The following table lists the object storage account attributes.
 
@@ -993,7 +993,7 @@ none
 }
 ....
 
-==== Retrieve an object storage account by ID
+=== Retrieve an object storage account by ID
 
 Use the method listed in the following table to retrieve an object storage account by ID.
 
@@ -1042,7 +1042,7 @@ none
   }
 ....
 
-==== Activate an object storage account
+=== Activate an object storage account
 
 Use the method listed in the following table to activate an object storage account.
 
@@ -1098,7 +1098,7 @@ Required request body attributes: `subtenant_id, quota_gb`
 }
 ....
 
-==== Modify an object storage account
+=== Modify an object storage account
 
 Use the method listed in the following table to modify an object storage account.
 
@@ -1155,7 +1155,7 @@ Required request body attributes: `name`, `subtenant_id`, `quota_gb`
 }
 ....
 
-==== Delete an object storage account
+=== Delete an object storage account
 
 Before you can delete an object storage account, you must first delete all associated groups, users, and buckets. Use the method listed in the following table to delete an object storage account.
 
@@ -1211,7 +1211,7 @@ Required request body attributes: `none`
 }
 ....
 
-=== Object storage buckets
+== Object storage buckets
 
 Use the APIs in the following table to create and retrieve object storage buckets.
 
@@ -1226,7 +1226,7 @@ Use the APIs in the following table to create and retrieve object storage bucket
 |Create an object storage bucket.
 |===
 
-==== Object storage bucket attributes
+=== Object storage bucket attributes
 
 The following table lists the object storage bucket attributes.
 
@@ -1244,7 +1244,7 @@ The following table lists the object storage bucket attributes.
 |The identifier of the subtenant to which the bucket belongs.
 |===
 
-==== Retrieve S3 buckets
+=== Retrieve S3 buckets
 
 Use the method listed in the following table to retrieve S3 buckets.
 
@@ -1286,7 +1286,7 @@ none
 }
 ....
 
-==== Create S3 buckets
+=== Create S3 buckets
 
 Use the method listed in the following table to create an S3 bucket.
 
