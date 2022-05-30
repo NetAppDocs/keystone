@@ -15,16 +15,16 @@ summary: Keystone Flex Subscription performance
 [.lead]
 United States Citizen Support (USCS) is an add-on offering for NetApp Keystone Flex Subscription (Flex Subscription). It entitles you to receive ongoing service delivery and support from U.S. citizens on U.S. soil.
 
-Read the following sections to understand which elements of the Flex Subscription are bound by this add-on service; and are provided under the terms of the NetApp Keystone Agreement.footnote:disclaimer1[The services and offerings described herein are subject to and limited and governed by a fully executed NetApp Keystone Agreement.]
+Read the following sections to understand which elements of Flex Subscription are bound by this add-on service; and are provided under the terms of the Flex Subscription Agreement.footnote:disclaimer1[The services and offerings described herein are subject to and limited and governed by a fully executed Flex Subscription Agreement.]
 
 == NetApp Global Services Support Center monitoring
 NetApp Global Services and Support Center (GSSC) monitors the health of your products and subscribed services, provides remote support, and collaborates with your Keystone Success Manager. All personnel monitoring the products associated with the relevant Flex Subscription order are U.S citizens operating on U.S. soil.
 
 == Keystone Success Manager
-The Keystone Success Manager is a U.S. citizen operating on U.S. soil. The Keystone Success Manager’s responsibilities remain the same as those specified in your NetApp Keystone Agreement.
+The Keystone Success Manager is a U.S. citizen operating on U.S. soil. Their responsibilities are specified in your Flex Subscription Agreement.
 
 == Deployment activities
 Where available, onsite and remote deployment and installation activities are conducted by U.S. citizens on U.S. soil. footnote:disclaimer[Availability of appropriate personnel for onsite activities is dependent of the geographical location at which Flex Subscription systems are deployed.]
 
 == Support
-Where available, the necessary onsite troubleshooting and support activities are be conducted by U.S. citizens on U.S. soil. footnote:disclaimer[Availability of appropriate personnel for onsite activities is dependent of the geographical location at which Flex Subscription systems are deployed.]
+Where available, the necessary onsite troubleshooting and support activities are conducted by U.S. citizens on U.S. soil. footnote:disclaimer[]
