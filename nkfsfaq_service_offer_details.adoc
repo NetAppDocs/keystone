@@ -15,44 +15,44 @@ summary: Service offer details
 [.lead]
 The following questions give answers to your frequent queries about NetApp Keystone Flex Subscription service offering.
 
-=== What is the minimum committed capacity?
+*What is the minimum committed capacity*
 
 The minimum committed capacity for a NetApp Keystone Flex Subscription (Flex Subscription) is 100 TiB, per site across one or more service tiers.
 
-=== What is the typical length of term of a Flex Subscription agreement?
+*What is the typical length of term of a Flex Subscription agreement*
 
 Flex Subscription offers 12, 24, and 36-month term periods.
 
-=== How can I access the storage?
+*How can I access the storage*
 
 In a NetApp-operated (standard) model, the storage controllers (ONTAP System Manager or administrative access to the systems) are owned and managed by NetApp. You can monitor and manage your storage only through NetApp Service Engine UI and APIs.
 In a customer-managed (or Lite) deployment, where the NetApp Service Engine UI and APIs are used mainly for billing functions, you can access the storage controllers, such as Active IQ Unified Manager and ONTAP System Manager, and directly access ONTAP clusters.
 
-=== How do I manage the service?
+*How do I manage the service*
 
 NetApp Service Engine is the orchestration and management tool that you can use to provision storage and get reports on the service usage.
 
-=== How can I increase the committed capacity in a subscription?
+*How can I increase the committed capacity in a subscription*
 
 You can submit a capacity addition request through the NetApp Service Engine management tool or through their NetApp Keystone success manager.
 
-=== Does increasing the capacity extend the term?
+*Does increasing the capacity extend the term*
 
 All the additions are co-term to the existing term period, except if the request is made in the last 90 days of the subscription, in which case the term must extend for at least 12 months.
 
-=== Does a new subscription have flexibility to come with a new yearly term?
+*Does a new subscription have flexibility to come with a new yearly term*
 
 Yes, new subscriptions can have new terms separate from any existing subscriptions.
 
-=== Can tenant subscription terms extend beyond the subscription term of the partner?
+*Can tenant subscription terms extend beyond the subscription term of the partner*
 
 Tenant subscriptions can extend beyond the current Flex Subscription term of the partner. A warning will be displayed when subscriptions are created and also in usage reports.
 
-=== Can I mix multiple subscriptions on the same ONTAP cluster?
+*Can I mix multiple subscriptions on the same ONTAP cluster*
 
 No, each cluster is assigned to a particular subscription.
 
-=== Who does the monitoring and operations?
+*Who does the monitoring and operations*
 
 For the NetApp-operated service, NetApp is responsible for monitoring the infrastructure remotely so that the service is delivered according to the agreed expectations.
 
@@ -60,22 +60,22 @@ For the partner-operated service, partner is responsible for monitoring the infr
 
 For the customer-operated service, customer is responsible for monitoring the infrastructure and raise any issues to NetApp.
 
-=== What happens if I terminate the service early?
+*What happens if I terminate the service early*
 
 The minimum service commitment is 12 months. If you cancel the service early, the residual value needs to be paid upfront.
 
-=== Is there an opportunity to convert into a purchase after the initial term is completed?
+*Is there an opportunity to convert into a purchase after the initial term is completed*
 No. The offer does not include an option to convert into a purchase. Additionally, previously purchased NetApp products are outside the scope of this program.
 
-=== Can I request a particular software version?
+*Can I request a particular software version*
 
 No. NetApp Keystone has standardized the software version across all its customer base.
 
-=== Will I be informed about software upgrades?
+*Will I be informed about software upgrades*
 
 Yes. All maintenance/upgrade activities are communicated to and scheduled at a mutually agreeable time with the customer by the NetApp Keystone Success Manager.
 
-=== What are the terms for adding a new subscription to an existing one for a backup site?
+*What are the terms for adding a new subscription to an existing one for a backup site*
 
 In this case, the new subscription does not co-term with the old subscription. At the time when the new subscription for the backup site is added, the terms of the first subscription is updated with your agreement to extend the term by the time after which the new subscription is added.
 
