@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: nkfsosm_uscs.html
 keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support
-summary: Keystone Flex Subscription performance
+summary: US Citizen Support (USCS)
 ---
 
 = US Citizen Support (USCS)
@@ -13,18 +13,18 @@ summary: Keystone Flex Subscription performance
 :imagesdir: ./media/
 
 [.lead]
-United States Citizen Support (USCS) is an add-on offering for NetApp Keystone Flex Subscription (Flex Subscription). It entitles you to receive ongoing service delivery and support from U.S. citizens on U.S. soil.
+United States Citizen Support (USCS) is an add-on offering for NetApp Keystone Subscriptions. It entitles you to receive ongoing service delivery and support from U.S. citizens on U.S. soil.
 
-Read the following sections to understand which elements of Flex Subscription are bound by this add-on service; and are provided under the terms of the Flex Subscription Agreement.footnote:disclaimer1[The services and offerings described herein are subject to and limited and governed by a fully executed Flex Subscription Agreement.]
+Read the following sections to understand which elements of your subscriptions are bound by this add-on service; and are provided under the terms of NetApp Keystone Agreement.footnote:disclaimer1[The services and offerings described herein are subject to and limited and governed by a fully executed NetApp Keystone Agreement.]
 
 == NetApp Global Services Support Center monitoring
-NetApp Global Services and Support Center (GSSC) monitors the health of your products and subscribed services, provides remote support, and collaborates with your Keystone Success Manager. All personnel monitoring the products associated with the relevant Flex Subscription order are U.S citizens operating on U.S. soil.
+NetApp Global Services and Support Center (GSSC) monitors the health of your products and subscribed services, provides remote support, and collaborates with your Keystone Success Manager. All personnel monitoring the products associated with the relevant subscription order are U.S citizens operating on U.S. soil.
 
 == Keystone Success Manager
-The Keystone Success Manager is a U.S. citizen operating on U.S. soil. Their responsibilities are specified in your Flex Subscription Agreement.
+The Keystone Success Manager is a U.S. citizen operating on U.S. soil. Their responsibilities are specified in your NetApp Keystone Agreement.
 
 == Deployment activities
-Where available, onsite and remote deployment and installation activities are conducted by U.S. citizens on U.S. soil. footnote:disclaimer[Availability of appropriate personnel for onsite activities is dependent of the geographical location at which Flex Subscription systems are deployed.]
+Where available, onsite and remote deployment and installation activities are conducted by U.S. citizens on U.S. soil. footnote:disclaimer[Availability of appropriate personnel for onsite activities is dependent of the geographical location at which NetApp Keystone Agreement systems are deployed.]
 
 == Support
 Where available, the necessary onsite troubleshooting and support activities are conducted by U.S. citizens on U.S. soil. footnote:disclaimer[]
