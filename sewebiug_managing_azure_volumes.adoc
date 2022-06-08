@@ -25,13 +25,13 @@ This section describes how to perform the following tasks:
 * Modify Azure volume details.
 * Delete an Azure volume.
 
-=== View a list of Azure volumes
+== View a list of Azure volumes
 
 The Azure Volumes list displays a list of Azure volumes pools for a specified subtenant and location. To view the list, select *FILE SERVICES > Azure Volumes* from the menu.
 
 The list displays simple information about each Azure volume. The action icons next to each Azure volume allow you to modify or delete the Azure volume.
 
-=== Add an Azure volume
+== Add an Azure volume
 
 This section describes how to add an Azure volume.
 
@@ -56,7 +56,7 @@ You will need:
 . If required, add tags to the volume.
 . Click *Create*. When an Azure volume is created, the state of the volume changes to `Succeeded` (can be viewed in the Azure Volumes list).
 
-=== Modify Azure volume details
+== Modify Azure volume details
 
 Use this method to modify an Azure Volume’s details. You can modify the file path and quota, and add or remove tags.
 
@@ -67,7 +67,7 @@ Use this method to modify an Azure Volume’s details. You can modify the file p
 . In the Manage Azure Volume dialog box, make the required changes. If you are modifying the file path or quota, ensure that the file path is unique and that the quota does not exceed the available quota in the pool.
 . Click *Update*.
 
-=== Delete an Azure volume
+== Delete an Azure volume
 
 Use this method to delete an Azure volume.
 

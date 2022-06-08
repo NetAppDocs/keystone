@@ -41,7 +41,7 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |Delete a subtenant.
 |===
 
-=== Subtenant attributes
+== Subtenant attributes
 
 The following table lists the subtenant attributes.
 
@@ -62,7 +62,7 @@ The following table lists the subtenant attributes.
 |The identifier of the tenant to which the subtenant belongs.
 |===
 
-=== Retrieve all subtenants
+== Retrieve all subtenants
 
 Use the method listed in the following table to retrieve all subtenants or a subset of all subtenants. Specifying a `tenant_id` will return only the subtenants belonging to that tenant.
 
@@ -121,7 +121,7 @@ none
 }
 ....
 
-=== Retrieve a subtenant by ID
+== Retrieve a subtenant by ID
 
 Use the method listed in the following to retrieve a subtenant by ID.
 
@@ -167,7 +167,7 @@ none
 }
 ....
 
-=== Create a subtenant
+== Create a subtenant
 
 Use the method listed in the following table to create a subtenant.
 
@@ -217,7 +217,7 @@ Required request body attributes: `name`, `code`, `tenant_id`
 }
 ....
 
-=== Modify a subtenant by ID
+== Modify a subtenant by ID
 
 Use the method listed in the following table to modify a subtenant by ID.
 
@@ -265,7 +265,7 @@ Required request body attributes: `name`
 }
 ....
 
-=== Delete a subtenant by ID
+== Delete a subtenant by ID
 
 Use the method listed in the following table to delete a subtenant by ID.
 

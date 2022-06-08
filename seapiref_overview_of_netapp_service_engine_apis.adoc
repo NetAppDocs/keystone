@@ -23,26 +23,26 @@ NetApp Service Engine provides a set of APIs to manage storage resources on the 
 
 This NetApp Service Engine API Reference Guide provides you with information about APIs and sample codes. The information provided in the guide enables you to create RESTful clients of NetApp Service Engine. The APIs are based on the Representational State Transfer (REST) architectural style.
 
-=== Target audience
+== Target audience
 
 This guide is intended for developers creating applications that interface with the NetApp Service Engine software through REST APIs.
 
 You should use this guide if you want to use the storage provider, NetApp ONTAP cluster, and management administration APIs for managing your storage.
 
-=== NetApp Service Engine API access and categories
+== NetApp Service Engine API access and categories
 
-==== Constructing a URL to directly access REST APIs
+=== Constructing a URL to directly access REST APIs
 
 You can access the REST APIs directly through a programming language, such as Python, C#, C++, JavaScript, and so on. To access the REST APIs in the `https:// <hostname> /api` format, enter the host name or IP address and the URL.
 
-==== Consumer and administrator APIs
+=== Consumer and administrator APIs
 
 This document splits the API descriptions into two sections consisting of:
 
 * Consumer APIs
 * Administrator APIs
 
-=== Key NetApp Service Engine concepts
+== Key NetApp Service Engine concepts
 
 NetApp Service Engine supports the concepts of regions and zones, as shown in figure below. A region represents a data center or site, while a zone represents a storage subunit within the region (technically, a cluster within a data center/site). Multiple zones support data availability and data protection (DP) features.
 

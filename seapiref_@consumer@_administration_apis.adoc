@@ -93,7 +93,7 @@ The following table lists the consumer APIs documented in this section.
 |Retrieve jobs by ID.
 |===
 
-=== Reset user password
+== Reset user password
 
 Use the method listed in the following table reset the user password.
 
@@ -154,7 +154,7 @@ Required request body attributes: `username` (string), `new_password` (string)
 }
 ....
 
-=== Refresh authentication token
+== Refresh authentication token
 
 Use the method listed in the following table to refresh the authentication token.
 
@@ -215,7 +215,7 @@ none
 }
 ....
 
-=== Sign in
+== Sign in
 
 Use the method listed in the following table to sign in.
 

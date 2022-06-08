@@ -41,7 +41,7 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |Delete a tenant.
 |===
 
-=== Tenant attributes
+== Tenant attributes
 
 The following table lists the tenant attributes.
 
@@ -74,7 +74,7 @@ The following table lists the tenant attributes.
 *role_name:* User role (user, admin, read, partner, or root)
 |===
 
-=== Retrieve all tenants
+== Retrieve all tenants
 
 Use the method listed in the following table to retrieve all tenants or a subset of all tenants.
 
@@ -181,7 +181,7 @@ none
 }
 ....
 
-=== Retrieve a tenant by ID
+== Retrieve a tenant by ID
 
 Use the method listed in the following table to retrieve a tenant by ID.
 
@@ -277,7 +277,7 @@ none
 }
 ....
 
-=== Create a tenant
+== Create a tenant
 
 Use the method listed in the following table to create a tenant.
 
@@ -330,7 +330,7 @@ Required request body attributes: `code`, `name`, `zuora_account_name`, `zuora_a
 }
 ....
 
-=== Modify the tenant
+== Modify the tenant
 
 Use the method listed in the following table to modify the tenant.
 
@@ -383,7 +383,7 @@ Required request body attributes: `code`
 }
 ....
 
-=== Delete the tenant
+== Delete the tenant
 
 Use the method listed in the following table to delete the tenant.
 
