@@ -74,9 +74,3 @@ No. NetApp Keystone has standardized the software version across all its custome
 *Will I be informed about software upgrades?*
 
 Yes. All maintenance/upgrade activities are communicated to and scheduled at a mutually agreeable time with the customer by the NetApp Keystone Success Manager.
-
-*What are the terms for adding a new subscription to an existing one for a backup site?*
-
-In this case, the new subscription does not co-term with the old subscription. At the time when the new subscription for the backup site is added, the terms of the first subscription are updated with your agreement to extend its term by the time after which the new subscription is added.
-
-For example, if you started with a subscription with Extreme service level, and after six months add a backup site (in a different location), it will be a new subscription. The new subscription cannot co-term with the existing subscription (Extreme service level) and the term of the existing subscription is extended by six months.
