@@ -35,7 +35,7 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |Delete an ONTAP cluster.
 |===
 
-=== ONTAP clusters attributes
+== ONTAP clusters attributes
 
 The following table lists the ONTAP cluster attributes.
 
@@ -144,7 +144,7 @@ For example:
 |The identifier of the partner cluster of the current cluster in a MetroCluster pair. Required if the cluster is enabled for MetroCluster.
 |===
 
-=== Retrieve all ONTAP clusters
+== Retrieve all ONTAP clusters
 
 Use the method listed in the following to retrieve all ONTAP clusters or a subset of ONTAP clusters.
 
@@ -293,7 +293,7 @@ none
 }
 ....
 
-=== Retrieve ONTAP clusters by ID
+== Retrieve ONTAP clusters by ID
 
 Use the method listed in the following to retrieve ONTAP clusters by ID.
 
@@ -370,7 +370,7 @@ none
 }
 ....
 
-=== Create ONTAP cluster
+== Create ONTAP cluster
 
 Use the API in the following table to create an ONTAP cluster.
 
@@ -490,7 +490,7 @@ If `is_mcc` is true, the `mcc_partner_cluster` is required.
 }
 ....
 
-=== Modify ONTAP cluster
+== Modify ONTAP cluster
 
 Use the method listed in the following to modify the ONTAP cluster.
 
@@ -604,7 +604,7 @@ Required request body attributes: `none`
 }
 ....
 
-=== Delete an ONTAP cluster
+== Delete an ONTAP cluster
 
 Use the method listed in the following table to delete an ONTAP cluster.
 

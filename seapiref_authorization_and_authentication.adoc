@@ -21,7 +21,7 @@ summary: Keystone authorization and authentication
 [.lead]
 The NetApp Service Engine REST API is accessible by using any web browser or programming platform that can issue HTTP requests. NetApp Service Engine supports basic HTTP authentication mechanism as well as Java Web Token (JWT) Bearer authentication. Before you call an API, you must authenticate a user.
 
-=== HTTP status codes
+== HTTP status codes
 
 While running the APIs or troubleshooting issues, you should be aware of the various HTTP status codes and error codes that are used by NetApp Service Engine APIs.
 
@@ -64,7 +64,7 @@ The following table lists the error codes related to authentication.
 This internal server error might or might not be permanent. For example, if you run a GET or GET ALL operation and receive this error, it is recommended that you repeat this operation for a minimum of five retries. If it is a permanent error, then the status code returned continues to be 500. If the operation succeeds, the status code returned is 200.
 |===
 
-=== Recommendations for using the APIs
+== Recommendations for using the APIs
 
 When using the APIs, you should follow certain recommended practices:
 

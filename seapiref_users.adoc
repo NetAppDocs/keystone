@@ -44,7 +44,7 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |Retrieve a user by the user name.
 |===
 
-=== User attributes
+== User attributes
 
 The following table lists the user attributes.
 
@@ -99,7 +99,7 @@ a|Authentication provider details, consisting of:
 * `member_of` (group membership)
 |===
 
-=== Retrieve all users
+== Retrieve all users
 
 Use the method listed in the following table to retrieve all users.
 
@@ -153,7 +153,7 @@ none
 }
 ....
 
-=== Retrieve a user by ID
+== Retrieve a user by ID
 
 Use the method listed in the following table to retrieve a user by ID.
 
@@ -207,7 +207,7 @@ none
 }
 ....
 
-=== Retrieve a user by user name
+== Retrieve a user by user name
 
 Use the method listed in the following table to retrieve a user by the user name.
 
@@ -261,7 +261,7 @@ none
 }
 ....
 
-=== Create a user
+== Create a user
 
 Use the method listed in the following table to create a user.
 
@@ -336,7 +336,7 @@ Required request body attributes: `username`, `tenant_id`, `tenancies, provider`
 }
 ....
 
-=== Modify a user by ID
+== Modify a user by ID
 
 Use the method listed in the following table to modify a user by user ID.
 
@@ -405,7 +405,7 @@ Required request body attributes: `none`
 }
 ....
 
-=== Delete a user by ID
+== Delete a user by ID
 
 Use the method listed in the following table to delete a user by ID.
 

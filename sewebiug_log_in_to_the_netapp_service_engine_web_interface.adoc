@@ -22,7 +22,7 @@ NetApp Service Engine allows you to log in using the following credentials:
 +
 Confirm the sign-in option in use with your NetApp Service Engine instance with your NetApp Service Engine administrator.
 
-=== Role-based access
+== Role-based access
 
 The following table lists the role-based access descriptions.
 

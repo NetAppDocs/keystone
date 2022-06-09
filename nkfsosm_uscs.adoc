@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm_uscs.html
-keywords: netapp, keystone, US citizen support, USCS
-summary: Keystone Flex Subscription performance
+keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support
+summary: US Citizen Support (USCS)
 ---
 
-= US Citizen Support (USCS)
+= U.S. Citizen Support (USCS)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,6 +13,18 @@ summary: Keystone Flex Subscription performance
 :imagesdir: ./media/
 
 [.lead]
-NetApp Keystone Flex Subscription (Flex Subscription) delivers continuous monitoring and support of the US Citizen Support (USCS) service through NetApp Global Services and Support Center (GSSC).
+United States Citizen Support (USCS) is an add-on offering for NetApp Keystone Subscriptions. It entitles you to receive delivery and support of ongoing Keystone services from U.S. citizens on U.S. soil.
 
-GSSC is a geographically distributed team servicing a variety of NetApp customers. The USCS offering for Flex Subscription ensures that monitoring and support of the Flex Subscription service are delivered by US citizens located in the USA. Onsite support and troubleshooting, where necessary for maintaining of the systems, is also included.
+Read the following sections to understand which elements of your subscriptions are bound by this add-on service; and are provided under the terms of NetApp Keystone Agreement.footnote:disclaimer1[The services and offerings described here are subject to, and limited and governed by a fully-executed Keystone Agreement.]
+
+== NetApp Global Services Support Center monitoring
+NetApp Global Services and Support Center (GSSC) monitors the health of your products and subscribed services, provides remote support, and collaborates with your Keystone Success Manager. All personnel monitoring the products associated with the relevant Keystone subscription orders are U.S citizens operating on U.S. soil.
+
+== Keystone Success Manager
+The Keystone Success Manager is a U.S. citizen operating on U.S. soil. Their responsibilities are specified in your NetApp Keystone Agreement.
+
+== Deployment activities
+Where available, onsite and remote deployment and installation activities are conducted by U.S. citizens on U.S. soil. footnote:disclaimer[Availability of appropriate personnel for onsite activities is dependent of the geographical location at which the Keystone systems are deployed.]
+
+== Support
+Where available, the necessary onsite troubleshooting and support activities are conducted by U.S. citizens on U.S. soil. footnote:disclaimer[]

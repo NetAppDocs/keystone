@@ -35,7 +35,7 @@ Use the methods listed in the following table to retrieve, create, modify, and d
 |Delete a service level.
 |===
 
-=== Service level attributes
+== Service level attributes
 
 The following table lists the service level attributes.
 
@@ -120,7 +120,7 @@ For example:
 ----
 |===
 
-=== Retrieve service levels
+== Retrieve service levels
 
 Use the method listed in the following table to retrieve all service levels.
 
@@ -206,7 +206,7 @@ none
 }
 ....
 
-=== Retrieve service levels by name
+== Retrieve service levels by name
 
 Use the method listed in the following table to retrieve service levels by name.
 
@@ -260,7 +260,7 @@ none
 }
 ....
 
-=== Create a service level
+== Create a service level
 
 Use the method listed in the following table to create a service level.
 
@@ -342,7 +342,7 @@ Required request body attributes: `name`, `policy_name`
 }
 ....
 
-=== Modify a service level
+== Modify a service level
 
 Use the method listed in the following table to modify a service level.
 
@@ -397,7 +397,7 @@ Required request body attributes: `none`
 TBA
 ....
 
-=== Delete service level by ID
+== Delete service level by ID
 
 Use the method listed in the following table to delete a service level by ID.
 

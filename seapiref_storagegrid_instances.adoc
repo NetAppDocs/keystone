@@ -38,7 +38,7 @@ Use the methods listed in the following table to set up and manage StorageGRID i
 |Update a StorageGRID instance.
 |===
 
-=== StorageGRID instance attributes
+== StorageGRID instance attributes
 
 The following table lists the StorageGRID instance attributes.
 
@@ -76,7 +76,7 @@ For example:
 |The Zuora subscription number.
 |===
 
-=== Retrieve StorageGRID instances
+== Retrieve StorageGRID instances
 
 Use the method listed in the following table to retrieve the StorageGRID instances.
 
@@ -124,7 +124,7 @@ none
 }
 ....
 
-=== Retrieve StorageGRID instances by ID
+== Retrieve StorageGRID instances by ID
 
 Use the method listed in the following table to retrieve StorageGRID instances by ID.
 
@@ -172,7 +172,7 @@ none
 }
 ....
 
-=== Create a StorageGRID instance by ID
+== Create a StorageGRID instance by ID
 
 Use the method listed the following table to create a StorageGRID instance by ID.
 
@@ -233,7 +233,7 @@ Required request body attributes: `none`
 }
 ....
 
-=== Modify a StorageGRID instance by ID
+== Modify a StorageGRID instance by ID
 
 Use the method listed in the following table to modify a StorageGRID instance by ID.
 

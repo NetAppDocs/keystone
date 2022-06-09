@@ -38,7 +38,7 @@ Use the methods listed in the following table to create and retrieve service req
 |Retrieve service request categories.
 |===
 
-=== Service request attributes
+== Service request attributes
 
 The following table lists the service request attributes.
 
@@ -88,7 +88,7 @@ For example:
 |The service type: File services, block storage, or object storage.
 |===
 
-=== Retrieve service requests
+== Retrieve service requests
 
 Use the method listed in the following table to retrieve service request categories for the specified tenant.
 
@@ -142,7 +142,7 @@ none
 }
 ....
 
-=== Retrieve a service request by ID
+== Retrieve a service request by ID
 
 Use the method listed in the following table to retrieve a service request by service request ID.
 
@@ -189,11 +189,11 @@ none
 }
 ....
 
-=== Create a service request
+== Create a service request
 
 Use the method listed in the following table to create a service request.
 
-|===
+|==
 |HTTP Method |Path |Description |Parameters
 
 |`POST`
@@ -263,7 +263,7 @@ If `service_type` is file services or block storage, zone is required.
   }
 ....
 
-=== Retrieve service request categories
+== Retrieve service request categories
 
 The following table lists the retrieve service request categories for a specified tenant.
 
