@@ -17,7 +17,7 @@ A service provider or partner admin can define network configurations for tenant
 
 A preconfigured tenant network is required creating the subnet. A subnet is required when a subtenant or end customer provisions file servers or block stores. File and block storage VMs are owned by subtenants in NetApp Service Engine, whereas they are owned by IPspaces in ONTAP. When you define the networking boundary at a subtenant level, the subtenant in NetApp Service Engine maps to a single ONTAP IPspace for that zone. This eliminates risk and ensures that two distinct subtenants do not select the same VLAN ID and end up in the same IPspace.
 
-* There can be multiple subnets created in each zone. For each zone under a tenancy, there is an allocated list of VLANs. For all those available VLANs, corresponding subnets can be created. There is a 1:1 mapping between a subnet and a VLAN. Whereas, there is a one is to many mapping between a zone and subnets.
+* There can be multiple subnets created in each zone. For each zone under a tenancy, there is an allocated list of VLANs. For all those available VLANs, corresponding subnets can be created. There is a 1:1 mapping between a subnet and a VLAN. Whereas, there is a one is to many mapping between subnets and zone.
 * One tenant can have multiple subnets, one for each available VLAN under a zone. They are displayed under a single network configuration for each zone.
 * There can be only one VLAN for each network subnet. Each network configuration shows a list of available VLANs.
 * Only one subnet can be created for a zone and VLAN combination for a subtenant.
@@ -37,10 +37,10 @@ As a partner admin, you can create network configurations for each tenant. A con
 .Steps
 . From *ADMINISTRATION* > *Tenants*, select the required tenant.
 . Click the network  icon. The Networks screen is displayed with the list of network configurations for the tenant.
-. Click *Create Network*. Specify the zone, VLAN, and port override, if applicable.
+. Click *Create Network*. Specify the zone, VLAN, and port override, if applicable. If the port override is defined, select the assigned port from the drop-down.
 +
 [NOTE]
-The port override is configured by the support team during zone configuration. If a port override is not specified, the network uses the default port and creates a new VLAN in the IPspace for that tenant.
+The port override is configured by the support team during zone configuration. If a port override is not specified, the network uses the default port and creates a new VLAN for that tenant.
 +
 
 . Click *Create*. The new network configuration is listed for the tenant on the Networks screen.

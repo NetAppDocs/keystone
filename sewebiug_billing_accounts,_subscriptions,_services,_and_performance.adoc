@@ -24,13 +24,24 @@ A subscription refers to a group of storage services that are subscribed to and 
 [NOTE]
 If storage is required in multiple data centers, a separate subscription is required for each data center, with separate commitments.
 
-A storage service is a subscribed-to committed storage capacity with an associated performance level. NetApp Service Engine offers file and block storage at extreme, extreme-tiering, premium, premium-tiering, and standard performance levels, and object storage at an object performance service level.
+A storage service is a subscribed-to committed storage capacity with an associated performance service level. NetApp Service Engine offers file and block storage at extreme, extreme-tiering, premium, premium-tiering, and standard performance service levels, and object storage at an object performance service level.
 
-The extreme-tiering and premium-tiering performance levels enable you to reduce your storage footprint and associated costs by monitoring and tiering your cold or inactive data to low-cost object storage tiers. The tiering policy is set to auto, where data left inactive for 31 days is tiered by default. You can modify this time period to be any number of days from 3 to 61 days.
+The extreme-tiering and premium-tiering performance service levels enable you to reduce your storage footprint and associated costs by monitoring and tiering your cold or inactive data to low-cost object storage tiers. The tiering policy is set to auto, where data left inactive for 31 days is tiered by default. You can modify this time period to be any number of days from 3 to 61 days.
 
-When created, file and block storage items are associated with a performance level. Moving workloads between performance service levels is possible as requirements change. The extreme, extreme-tiering, premium, premium-tiering, and standard performance levels offer different levels of I/O performance (IOPS) and throughput (MBps) so storage can be tailored to requirements.
+For more information, see link:https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html[Performance Service Levels].
 
-Burst usage is allowed on services up to a certain point; it is monitored and billed at separate charge rates (as defined in the subscription). For more information about capacity and usage, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#committed,-consumed,-and-burst-capacity,-and-excess-usage[Committed, consumed, and burst capacity, and excess usage]. DP services that support backups and disaster recovery are also offered.
+When created, file and block storage items are associated with a performance service level. Moving workloads between performance service levels is possible as requirements change. The extreme, extreme-tiering, premium, premium-tiering, and standard performance service levels offer different levels of I/O performance (IOPS) and throughput (MBps) so storage can be tailored to requirements.
+
+For information about tiering services, see link:https://docs.netapp.com/us-en/keystone/nkfsosm_tiering.html[Tiering].
+
+Burst usage is allowed on services up to a certain point; it is monitored and billed at separate charge rates (as defined in the subscription). For more information about capacity and usage, see link:https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#committed-consumed-and-burst-capacity-and-excess-usage[Committed, consumed, and burst capacity, and excess usage]. Data Protection services that support backups and disaster recovery are also offered.
+
+For more information, see:
+
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_block_storage_overview.html[Block storage]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_file_services_overview.html[File services]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_object_storage_overview.html[Object storage]
+* https://docs.netapp.com/us-en/ontap-metrocluster/index.html[MetroCluster documentation]
 
 == Committed, consumed, and burst capacity, and excess usage
 
@@ -72,14 +83,14 @@ The following table lists when such burst notifications are displayed.
 |n/a
 |Create or resize a share/disk on a file server/block store with disaster recovery enabled.
 a|* Exceeds commitment on the service level in the zone
-* Exceeds commitment on DP in the zone
+* Exceeds commitment on Data Protection service in the zone
 |Exceeds commitment on the service level in the destination zone by the automatically created destination share/disk.
 |Move a share/disk to a new service level on a file server/block store with disaster recovery enabled.
 a|* Exceeds commitment on the service level in the zone.
-* Exceeds commitment on DP in the zone.
+* Exceeds commitment on Data Protection service in the zone.
 |Exceeds commitment on the service level in the destination zone by the relocated destination share/disk.
 |Enable backups on a share/disk.
-|Exceeds commitment for DP.
+|Exceeds commitment for Data Protection service.
 |Exceeds commitment on the service level in the destination zone by the automatically created destination share/disk.
 |Create a new object store tenancy.
 |The commitment for object capacity could be exceeded.
@@ -97,13 +108,13 @@ image:sewebiug_image3.png[Error: Missing Graphic Image]
 
 == Data protection
 
-DP refers to methods that support back up of data and the ability to recover it if required.
+Data Protection service refers to methods that support back up of data and the ability to recover it if required.
 
-NetApp Service Engine DP features include:
+NetApp Service Engine Data Protection service features include:
 
 * Snapshots of disks and shares
-* Backups of disks and shares (requires DP service as part of the subscription)
-* Disaster recovery for disks and shares (requires DP or DP Advanced service as part of the subscription)
+* Backups of disks and shares (requires Data Protection service as part of the subscription)
+* Disaster recovery for disks and shares (requires Data Protection or Data Protection Advanced service as part of the subscription)
 
 === Snapshots
 
@@ -116,7 +127,7 @@ Snapshots contribute to the consumed capacity of a service.
 
 === Backups
 
-Backup refers to taking a copy of an item, replicating it, and storing the copy in a zone other than the original zone, which has the respective protocol enabled (in case of block storage only) and is non-MetroCluster enabled. NetApp Service Engine offers backups on file and block storage (requires a DP service on the subscription). Backups of shares/disks are stored in the backup zone on the lowest cost performance tier (that is Standard) on subscription.
+Backup refers to taking a copy of an item, replicating it, and storing the copy in a zone other than the original zone, which has the respective protocol enabled (in case of block storage only) and is non-MetroCluster enabled. NetApp Service Engine offers backups on file and block storage (requires a Data Protection service on the subscription). Backups of shares/disks are stored in the backup zone on the lowest cost performance tier (that is Standard) on subscription.
 
 Backups can be configured at the time of creation of a new share/disk or later added to an existing share/disk.
 
@@ -133,7 +144,7 @@ Scheduled backups are taken regularly and cannot be deleted but will be aged out
 * Backup replication occurs daily.
 * Backups of disks or shares cannot be configured in an NetApp Service Engine instance that contains only one zone.
 * Deleting a primary share or disk will delete all associated backups.
-* Backups contribute to the total consumed capacity. In addition, backups incur cost at the DP subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges[Data Protection, Consumed Capacity, and Charges].
+* Backups contribute to the total consumed capacity. In addition, backups incur cost at the Data Protection subscription rate. See also link:https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
 * Restore from backup: raise a service request to restore a share or disk from backup.
 
 == Disaster recovery
@@ -151,7 +162,7 @@ NetApp Service Engine supports asynchronous disaster recovery by providing the a
 * Asynchronously replicate primary volumes to a disaster recovery zone
 * Failover/failback (available by service request only)
 
-Asynchronous disaster recovery is available on file and block storage and requires a DP service on the subscription.
+Asynchronous disaster recovery is available on file and block storage and requires a Data Protection service on the subscription.
 
 The disaster recovery zone must be a zone within NetApp Service Engine that is different to the zone in which the primary volume is created, and  should not be a MetroCluster partner if the source zone is MetroCluster enabled. Disaster recovery replicas of shares/disks are stored in the disaster recovery zone at the same performance tier as the original share/disk.
 
@@ -172,11 +183,11 @@ A file share or disk can only be configured for asynchronous disaster recovery r
 
 * Deleting a primary file server or block store will delete all disaster recovery replicated copies.
 * Only one disaster recovery zone can be configured per file server or block store.
-* Disaster recovery copies contribute to the total consumed capacity. In addition, disaster recovery incurs cost at the disaster recovery subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges[Data Protection, Consumed Capacity, and Charges].
+* Disaster recovery copies contribute to the total consumed capacity. In addition, disaster recovery incurs cost at the disaster recovery subscription rate. See also link:https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
 
 === Disaster recovery—synchronous
 
-MetroCluster is a DP feature which synchronously replicates data and configuration between two distinct zones which reside in separate locations or failure domains. In the event of a disaster at one site, an administrator can enable data to be served from the surviving site.
+MetroCluster is a Data Protection feature which synchronously replicates data and configuration between two distinct zones which reside in separate locations or failure domains. In the event of a disaster at one site, an administrator can enable data to be served from the surviving site.
 
 NetApp Service Engine managed sites that are configured with MetroCluster can support synchronous disaster recovery for File and Block storage in the following way.
 
@@ -185,11 +196,11 @@ NetApp Service Engine managed sites that are configured with MetroCluster can su
 
 *Notes:*
 
-* Synchronous disaster recovery incurs costs at synchronous disaster recovery subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges[Data Protection, Consumed Capacity, and Charges].
+* Synchronous disaster recovery incurs costs at synchronous disaster recovery subscription rate. See also link:https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
 
 == Data protection, consumed capacity, and charges
 
-The figures in this section describe how DP charges are calculated.
+The figures in this section describe how Data Protection charges are calculated.
 
 === Asynchronous disaster recovery
 
@@ -197,13 +208,13 @@ In asynchronous disaster recovery, usage and cost is made up of the following ch
 
 * Original volume capacity charged at the performance tier on which it resides.
 * Disaster recovery copy charged at the same performance tier at the destination or disaster recovery zone (disaster recovery copies are stored at the same tier).
-* DP service charge (for the capacity of the original volume).
+* Data Protection service charge (for the capacity of the original volume).
 
 image:sewebiug_image4.png[Error: Missing Graphic Image]
 
 === Synchronous disaster recovery
 
-In synchronous disaster recovery, usage and cost is made up of the following charges:
+In synchronous disaster recovery, usage and cost is made up of the following:
 
 image:sewebiug_image5.png[Error: Missing Graphic Image]
 
@@ -213,6 +224,6 @@ In backup, usage and cost are made up of the following charges:
 
 * Original volume capacity charged at the performance tier on which it resides.
 * Backup volumes charged at the lowest available performance tier (backup copies are stored on the lowest cost available tier).
-* DP service charge (for the capacity of the original volume).
+* Data Protection service charge (for the capacity of the original volume).
 
 image:sewebiug_image6.png[Error: Missing Graphic Image]

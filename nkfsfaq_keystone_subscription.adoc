@@ -30,8 +30,8 @@ In a NetApp operated scenario, NetApp Keystone guarantees IOPS/TiB for the stora
 *What does Flex Subscription map to?*
 Flex Subscription maps to a single site or a single data center and it can comprise of different performance service levels.
 
-*What are the benefits of extreme-tiering and premium-tiering performance levels?*
-Tiering is enabled in the extreme-tiering and premium-tiering performance levels, which enables you to reduce your storage footprint and associated costs. NetApp assumes that 25% of your data is hot, while the remaining 75% is less frequently used or cold, and moves it to cold storage. Additionally, you can check usage reports to understand how frequently data is accessed and enable tiering service based on the information.
+*What are the benefits of extreme-tiering and premium-tiering performance service levels?*
+Tiering is enabled in the extreme-tiering and premium-tiering performance service levels, which enables you to reduce your storage footprint and associated costs. NetApp assumes that 25% of your data is hot, while the remaining 75% is less frequently used or cold, and moves it to cold storage. Additionally, you can check usage reports to understand how frequently data is accessed and enable tiering service based on the information.
 
 *Can partners sell more capacity than they have purchased from NetApp to customers?*
 Tenant subscriptions are not limited by the capacity that the partner has purchased. Partners can sell more capacity than they have purchased from NetApp to their customers. The capacity that is in excess of the purchased capacity is referred to as oversubscription.

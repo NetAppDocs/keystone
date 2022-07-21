@@ -17,6 +17,8 @@ You can view the monthly charges for all the subscribed services on your NetApp 
 
 You can view the billing details for all your subscribed services for Flex Subscription for the previous months. The billing against the capacity in burst for each month is highlighted.
 
+As a partner administrator, you can see the monthly billing breakup for a selected subtenant.
+
 NOTE: If any of your subscriptions are billed annually, the invoice reflects the prorated amount instead of actual monthly invoice amount.
 
 You can sort the data in the table by month and view the list of all the storage subscriptions for any given month.
@@ -26,9 +28,9 @@ You can sort the data in the table by month and view the list of all the storage
 . Select *ADMINISTRATION* > *Billing* from the menu.
 +
 [NOTE]
-You can also click the arrow on the top right corner of the *Monthly Charges* widget on the dashboard or any bar that represents a month in the widget to view the Billing page. All your subscriptions for the selected month are displayed.
+You can also click the arrow on the top right corner of the *Costs to Date* widget on the dashboard or any bar that represents a month in the widget to view the Billing page. All your subscriptions for the selected month are displayed.
 +
 
-. Optionally, hover over the bar representing a month to view additional details.
+. Optionally, hover over the bar chart representing a month to view additional details.
 . Select any month listed in the table.
 All your subscriptions for the month, along with the associated billing, is displayed in the table. The charges are split up as per the committed capacity and burst usage.

@@ -19,7 +19,7 @@ summary: Keystone Flex Subscription performance
 //
 
 [.lead]
-NetApp Keystone Flex Subscription (Flex Subscription) offers capacity at predefined performance levels.
+NetApp Keystone Flex Subscription (Flex Subscription) offers capacity at predefined performance service levels.
 
 Each Performance Service Level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
 

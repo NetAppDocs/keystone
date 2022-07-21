@@ -28,9 +28,9 @@ For example, if a 1 TiB file is stored on the Flex Subscription infrastructure, 
 == Committed capacity
 The minimum logical capacity billed each month for the duration of the term:
 
-** Capacity is committed to each performance level.
+** Capacity is committed to each performance service level.
 ** Committed capacity cannot be decreased during the term.
-** Committed capacity and additional performance levels can be added during the term.
+** Committed capacity and additional performance service levels can be added during the term.
 
 === Changes to committed capacity
 During the tenure of a subscription, you can change the committed capacities. However, there are certain preconditions:

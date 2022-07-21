@@ -29,9 +29,9 @@ The following table lists the role-based access descriptions.
 |===
 |Role |Access
 
-|Partner admin/Account owner |Can perform all tasks of managing tenants and their subscriptions. For more information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html[this link].
+|Partner admin/Account owner |Can perform all tasks of managing tenants and their subscriptions. For more information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-service-provider-administrator[this link].
 |Customer/tenant administrator
-|The customer or tenant administrator can perform all actions related with managing subtenants. For more information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html[this link].
+|The customer or tenant administrator can perform all actions related with managing subtenants. For more information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-customertenant-administrator[this link].
 |NetApp admin (read)
 |Read-only access across all components.
 |NetApp admin
@@ -48,9 +48,9 @@ To log in with a user name and password, you need:
 
 .Steps
 
-. In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
+. In your web browser, go to the URL for your NetApp Service Engine portal. The login page is displayed.
 . Select *Local user sign in*.
-. On the Log in to NetApp Keystone page, enter your user name and password and click *Log In*.
+. On the Log in to NetApp Service Engine page, enter your user name and password and click *Log In*.
 . After successful login, the NetApp Service Engine web interface loads, open at the dashboard. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
 
 [NOTE]
@@ -60,13 +60,13 @@ If your login is successful but you cannot see the dashboard, check with your Ne
 
 To log in with NetApp SSO, you need:
 
-* A NetApp SSO account. You can request an account at the NetApp Support site; from the log-in screen by selecting *Create NetApp SSO account* and following the next steps.
+* A NetApp SSO account. You can request an account at the NetApp Support site; from the login screen by selecting *Create NetApp SSO account* and following the next steps.
 * The URL to the NetApp Service Engine portal.
 * A web browser.
 
 .Steps
 
-. In your web browser, go to the URL for your NetApp Service Engine portal. The log- in page is displayed.
+. In your web browser, go to the URL for your NetApp Service Engine portal. The login page is displayed.
 . Select NetApp SSO.
 . On the SSO login page, enter your user name and password and click *Sign In*.
 +

@@ -43,7 +43,7 @@ You can increase the committed capacity for any of the subscribed service levels
 
 You can add a service to a subscription. Adding a service includes assigning a service level to your subscription and specifying the capacity for the same service level.
 
-A subscription might only have one of each performance level, for example, if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
+A subscription might only have one of each performance service level, for example, if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
 
 .Steps
 
@@ -52,7 +52,7 @@ A subscription might only have one of each performance level, for example, if yo
 . Select the subscription service that you want to add from the drop-down menu and add the capacity (in TiB) that you want to commit to the service level.
 . Click *Confirm*.
 
-NOTE: If you are subscribed to extreme-tiering or premium-tiering, you can edit the performance level of any existing subscription and opt for a tiering-enabled performance level. You can also opt to move from a tiering-enabled performance level to a non-tiering performance level.
+NOTE: If you are subscribed to extreme-tiering or premium-tiering, you can edit the performance service level of any existing subscription and opt for a tiering-enabled performance service level. You can also opt to move from a tiering-enabled performance service level to a non-tiering performance service level.
 
 == Manage tenant subscriptions
 
