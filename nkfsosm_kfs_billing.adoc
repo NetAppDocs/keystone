@@ -51,6 +51,9 @@ An invoice is generated at the beginning of each subscription year for the minim
 Another invoice is sent at the end of a subscription quarter, summing up the applicable charges of any burst usage accrued in that quarter.
 If the committed capacity is changed during a subscription, then an invoice is sent on the same day the change in the committed capacity is effective, for the prorated minimum payments for the rest of that subscription year.
 
+.Grace period in burst billing
+During the first 60 days of the activation of a subscription, any burst consumption that you accrue is recorded, but not charged on your Flex Subscription invoice. This grace period grants you the time to configure your storage with the appropriate Adaptive Quality of Service (AQoS) settings so that it can be properly monitored and billed. On configuring your storage correctly, you can avoid any unexpected burst charges. Any burst usage accrued after the initial grace period of 60 days will be billed on your next invoice. This grace period does not affect any modifications or renewals to your existing subscriptions.
+
 == Miscellaneous scenarios for Flex Subscription billing
 There are several scenarios for Flex Subscription billing and you should be familiar with those scenarios.
 
