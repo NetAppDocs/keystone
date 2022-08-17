@@ -17,11 +17,11 @@ The User Management list displays the object storage users and groups for a spec
 
 .Steps
 
-. From the menu, select Object Storage > Users.
+. From the menu, select *Object Storage > User Management*.
 . Use the Subtenant drop-down menu to select another subtenant if required.
 . Use the Users and Groups links to toggle the display between users and groups.
 
 ** The Users list displays the object storage users defined for the selected subtenant. For each user, it displays their name and the object storage groups to which they belong.
 ** The Groups list displays the object storage groups defined for the selected subtenant. For each group, it displays the group name and S3 policy.
 +
-For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].
+For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions[List view actions].

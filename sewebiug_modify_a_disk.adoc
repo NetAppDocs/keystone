@@ -17,7 +17,7 @@ You can change the disk name, the host group mapping, performance service level,
 
 .Before you begin
 
-The disk must be in an operational state. For understanding volume statuses and the steps to be taken to make them operational, see link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html[View disks] and link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[Object states]
+The disk must be in an operational state. For understanding volume statuses and the steps to be taken to make them operational, see link:sewebiug_view_disks.html[View disks] and link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states[Object states]
 
 .Steps
 
@@ -30,5 +30,5 @@ The disk must be in an operational state. For understanding volume statuses and 
 
 Modify disk is run as an asynchronous job. You can:
 
-* Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
+* Check the status of the job in the jobs list. For information about tracking jobs, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 * After the job is finished, check the status of the disk in the Disks list.
