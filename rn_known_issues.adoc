@@ -56,7 +56,7 @@ When a tenant subscription is created, and the report graphs are checked immedia
 a|
 Check the report graphs at least 15 minutes after the subscription is created.
 a|
-Change in Performance Service Levels does not move volumes
+Change in performance service levels does not move volumes
 a|
 If two different aggregates in the same cluster are used for two service levels, changing the service level on a volume to another does not move the volume to the other aggregate. Only the adaptive QoS policy is applied.
 a|
