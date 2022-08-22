@@ -144,7 +144,7 @@ Scheduled backups are taken regularly and cannot be deleted but will be aged out
 * Backup replication occurs daily.
 * Backups of disks or shares cannot be configured in an NetApp Service Engine instance that contains only one zone.
 * Deleting a primary share or disk will delete all associated backups.
-* Backups contribute to the total consumed capacity. In addition, backups incur cost at the Data Protection subscription rate. See also link:https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
+* Backups contribute to the total consumed capacity. In addition, backups incur cost at the Data Protection subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
 * Restore from backup: raise a service request to restore a share or disk from backup.
 
 == Disaster recovery
@@ -183,7 +183,7 @@ A file share or disk can only be configured for asynchronous disaster recovery r
 
 * Deleting a primary file server or block store will delete all disaster recovery replicated copies.
 * Only one disaster recovery zone can be configured per file server or block store.
-* Disaster recovery copies contribute to the total consumed capacity. In addition, disaster recovery incurs cost at the disaster recovery subscription rate. See also link:https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
+* Disaster recovery copies contribute to the total consumed capacity. In addition, disaster recovery incurs cost at the disaster recovery subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
 
 === Disaster recovery—synchronous
 
@@ -196,7 +196,7 @@ NetApp Service Engine managed sites that are configured with MetroCluster can su
 
 *Notes:*
 
-* Synchronous disaster recovery incurs costs at synchronous disaster recovery subscription rate. See also link:https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
+* Synchronous disaster recovery incurs costs at synchronous disaster recovery subscription rate. See also link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges[Data Protection, Consumed Capacity, and Charges].
 
 == Data protection, consumed capacity, and charges
 
@@ -215,6 +215,11 @@ image:sewebiug_image4.png[Error: Missing Graphic Image]
 === Synchronous disaster recovery
 
 In synchronous disaster recovery, usage and cost is made up of the following:
+
+* Original volume capacity charged at the performance tier on which it resides.
+* Replicated copy charged at the same performance tier at the destination (same as the source).
+* Data Protection Advanced service charge.
+
 
 image:sewebiug_image5.png[Error: Missing Graphic Image]
 

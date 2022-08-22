@@ -13,7 +13,7 @@ summary: Create, modify, and delete backups or restore from backups
 :imagesdir: ./media/
 
 [.lead]
-You can view and manage the snapshots (backups or recovery points) of the volumes (file shares and disks) created in your environment to maintain multiple copies of primary file shares and disks remotely.
+You can view and manage the backups or recovery points created based on the snapshot schedules for the volumes (file shares and disks) in your environment to remotely maintain multiple copies of the primary volumes.
 
 The replicated file shares and disks from different zones are stored on a dedicated backup storage VM (storage virtual machine, also known as SVM) on each cluster. Backups can be performed between two separate ONTAP clusters in different zones. The standard backup policies supported by NetApp Service Engine are:
 
@@ -22,7 +22,9 @@ The replicated file shares and disks from different zones are stored on a dedica
 * Weekly
 * Monthly
 
-For creating backups, your volumes should have a standard object state. For more information about object states, see link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states[Object states]. If your volume does not follow the standard backup policies supported by NetApp Service Engine, you can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] of the *Non Standard Volume* category to fix the issue.
+For creating backups from the snapshots of your volumes, you need to define the snapshot and backup schedules 
+
+For creating backups, your volumes should have a standard object state. For more information about object states, see link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states[Object states]. If your volume does not follow the standard backup policies supported by NetApp Service Engine, you can link:sewebiug_raise_a_service_request.html[raise a service request] of the *Non Standard Volume* category to fix the issue.
 
 NOTE: An adhoc (non-scheduled) backup can be performed at any time, manually through the GUI or by using APIs.
 
@@ -30,7 +32,7 @@ You can view the list of snapshots created for your file shares and disks on the
 
 == Create a backup object
 
-You can create snapshots for your volumes by defining the backup policy when you link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html[create a file share] or link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_disk.html[create a disk].
+You can create snapshots for your volumes by defining the backup policy when you link:sewebiug_create_a_new_file_share.html[create a file share] or link:sewebiug_create_a_new_disk.html[create a disk].
 
 .Steps
 . Enable *Backup Policy*.
@@ -47,7 +49,7 @@ For a selected backup object of a file share or disk, you can disable the backup
 . Locate the backup in the list and click the edit icon, at the end of the row, for that object.
 . Make changes to the backup source and the number of each type of backup as required.
 You can break the SnapMirror relationship with the source volume by changing the backup source to *None (orphaned)*. The backups are retained as orphan backups for restoration even when the source volumes are deleted. The state of the backup object changes, and the status of the source volume (orphan or deleted) is appended to the source volume name on the same list.
-For information about object states, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[here]
+For information about object states, see link:sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[here]
 . Click *Done*.
 The snapshot is modified. If you have broken the SnapMirror relationship with the source, that is, orphaned the backup object, the name of the Source in the *Backups* tab appears as `deleted`.
 
@@ -66,7 +68,7 @@ NOTE: When a backup is deleted, all the recovery points for the backup are delet
 
 == Backup Restore
 
-You can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] to restore a file share or disk from a specific recovery point.
+You can link:sewebiug_raise_a_service_request.html[raise a service request] to restore a file share or disk from a specific recovery point.
 
 .Steps
 .	Select *SUPPORT* from the left navigation pane and select *Service Requests*.
