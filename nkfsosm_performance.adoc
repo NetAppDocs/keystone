@@ -5,7 +5,7 @@ keywords: netapp, keystone, performance,
 summary: Keystone Flex Subscription performance
 ---
 
-= performance service levels
+= Performance service levels or service levels
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,15 +19,15 @@ summary: Keystone Flex Subscription performance
 //
 
 [.lead]
-NetApp Keystone Flex Subscription (Flex Subscription) offers capacity at predefined performance service levels.
+NetApp Keystone Flex Subscription (Flex Subscription) offers capacity at predefined service levels.
 
-Each performance service level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
+Each service level (service level) is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
 
-Each volume managed by the Flex Subscription services is associated with a performance service level. All I/O operations and all used storage used on the respective volume are factored into the volume’s I/O density calculation.
+Each volume managed by the Flex Subscription services is associated with a service level. All I/O operations and all used storage used on the respective volume are factored into the volume’s I/O density calculation.
 
-The below table defines the performance service levels.
+The below table defines the service levels.
 
-== Performance service levels for difference storage types
+== Service levels for difference storage types
 
 The service levels for file, block, and object storage are listed here.
 
@@ -51,7 +51,7 @@ I/O density calculations at the volume level are reported to show peak I/O densi
 |===
 
 [NOTE]
-^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block performance service levels for NetApp direct opportunities.
+^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block service levels for NetApp direct opportunities.
 ^2^ Minimum one-year term and minimum stated capacity per each service tier selected for channel led opportunities.
 
 === Block storage
@@ -69,7 +69,7 @@ I/O density calculations at the volume level are reported to show peak I/O densi
 |===
 
 [NOTE]
-^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block performance service levels for NetApp direct opportunities.
+^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block service levels for NetApp direct opportunities.
 ^2^ Minimum one-year term and minimum stated capacity per service tier selected for channel led opportunities.
 ^3^ Minimum one-year term and minimum stated capacity per service tier selected for either opportunity type.
 
@@ -89,6 +89,6 @@ I/O density calculations at the volume level are reported to show peak I/O densi
 |===
 
 [NOTE]
-^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block performance service levels for NetApp direct opportunities.
+^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block service levels for NetApp direct opportunities.
 ^2^ Minimum one-year term and minimum stated capacity per service tier selected for channel led opportunities.
 ^3^ Minimum one-year term and minimum stated capacity per service tier selected for either opportunity type.

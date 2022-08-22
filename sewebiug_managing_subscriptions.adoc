@@ -43,21 +43,19 @@ For information on tracking, see link:sewebiug_track_a_service_request.html[Trac
 
 === Add a service to a subscription
 
-You can add a service to a subscription. Adding a service includes assigning a performance service level to your subscription and specifying the capacity for the same service level.
+You can add a service to a subscription. Adding a service includes assigning a service level to your subscription and specifying the capacity for the same service level.
 
-Each subscription can have one of each performance service levels. For example, if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
+Each subscription can have one of each service levels. For example, if your subscription already contains an Extreme and a Standard service, you can add a Premium or Block service.
 
 .Steps
 
-. Select the performance service level that you to want to add to your subscription from the drop-down menu.
+. Select the service level that you to want to add to your subscription from the drop-down menu.
 . Click *Add service*.
-. Select the performance service level that you want to subscribe to from the drop-down menu, for example `Extreme-tiering`, and add the capacity (in TiB) that you want to commit to the performance service level.
+. Select the service level that you want to subscribe to from the drop-down menu, for example `Extreme-tiering`, and add the capacity (in TiB) that you want to commit to the service level.
 . Click *Confirm*. You come back to the Manage Keystone Subscriptions page.
-. Click *Submit Changes*. A service request is created for GSSC assign the performance service level to your subscription. You can view and track the progress of the service request by the SR number displayed in a message.
+. Click *Submit Changes*. A service request is created for GSSC assign the service level to your subscription. You can view and track the progress of the service request by the SR number displayed in a message.
 
 For information on tracking, see link:sewebiug_track_a_service_request.html[Track a service request].
-
-NOTE: If you are subscribed to extreme-tiering or premium-tiering, you can edit the performance service level of any existing subscription and opt for a tiering-enabled performance service level. You can also opt to move from a tiering-enabled performance service level to a non-tiering performance service level.
 
 == Manage tenant subscriptions
 
@@ -82,12 +80,12 @@ You cannot create overlapping subscriptions. The start date should be at least t
 
 You cannot delete any subscriptions. You can only edit existing tenant subscriptions and add new service levels, increase the committed capacity for a service level, and add tags to subscriptions.
 
-If you are a partner administrator, you can edit tenant subscriptions. You can add new performance service levels to a subscription and edit the capacities of the already added performance service levels. To add a new performance service level, follow these steps:
+If you are a partner administrator, you can edit tenant subscriptions. You can add new service levels to a subscription and edit the capacities of the already added service levels. To add a new service level, follow these steps:
 
 .Steps
 
 . Select the subscription that you want to edit by clicking the `+` icon.
-. On the *Add a new service level to subscription* page, select the new performance service level and add the required capacity. If the service level is already added, you cannot add or delete it.
+. On the *Add a new service level to subscription* page, select the new service level and add the required capacity. If the service level is already added, you cannot add or delete it.
 . Click *Update*.
 
 You can also add tags by clicking the tags icon for the subscription.
@@ -96,7 +94,7 @@ To edit the subscribed capacities to the service levels that are already assigne
 
 .Steps
 
-. Click and expand the subscription that you want to edit by clicking the `v` icon. The performance service levels in that subscription are displayed.
-. Select the performance service level that you want to edit by clicking the respective edit pen icon.
+. Click and expand the subscription that you want to edit by clicking the `v` icon. The service levels in that subscription are displayed.
+. Select the service level that you want to edit by clicking the respective edit pen icon.
 . Change the rate plan by increasing or decreasing the capacity in TiBs.
 . Click *Update*.

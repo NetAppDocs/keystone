@@ -13,7 +13,7 @@ summary: Keystone modify a disk
 :imagesdir: ./media/
 
 [.lead]
-You can change the disk name, the host group mapping, performance service level, capacity, and snapshot policy. Using this method, you can move your disks to different service levels if available.
+You can change the disk name, the host group mapping, service level, capacity, and snapshot policy. Using this method, you can move your disks to different service levels if available.
 
 .Before you begin
 

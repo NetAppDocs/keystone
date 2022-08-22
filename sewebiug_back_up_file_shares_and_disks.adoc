@@ -22,7 +22,7 @@ The replicated file shares and disks from different zones are stored on a dedica
 * Weekly
 * Monthly
 
-If your volume does not follow the standard backup policies supported by NetApp Service Engine, you can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] of the *Non Standard Volume* category to fix the issue.
+For creating backups, your volumes should have a standard object state. For more information about object states, see link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states[Object states]. If your volume does not follow the standard backup policies supported by NetApp Service Engine, you can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] of the *Non Standard Volume* category to fix the issue.
 
 NOTE: An adhoc (non-scheduled) backup can be performed at any time, manually through the GUI or by using APIs.
 

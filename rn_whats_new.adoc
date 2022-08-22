@@ -92,7 +92,7 @@ For more information on this feature, see the following links:
 
 === Tiering
 
-NetApp Keystone Flex Subscription service now includes a tiering capability that leverages the NetApp FabricPool technology. It identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed on-premises by NetApp. You can opt for tiering by subscribing to the extreme-tiering or premium-tiering performance service levels.
+NetApp Keystone Flex Subscription service now includes a tiering capability that leverages the NetApp FabricPool technology. It identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed on-premises by NetApp. You can opt for tiering by subscribing to the extreme-tiering or premium-tiering service levels.
 
 The following APIs have been modified  to include new attribute values for the new tiering service levels:
 
@@ -102,7 +102,7 @@ The following APIs have been modified  to include new attribute values for the n
 For more information, see the following links:
 
 * link:nkfsosm_tiering.html[Tiering]
-* link:nkfsosm_performance.html[Performance Service Levels]
+* link:nkfsosm_performance.html[service levels]
 
 {sp} +
 {sp} +

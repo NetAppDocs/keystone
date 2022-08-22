@@ -28,9 +28,9 @@ For example, if a 1 TiB file is stored on the Flex Subscription infrastructure, 
 == Committed capacity
 The minimum logical capacity billed each month for the duration of the term:
 
-** Capacity is committed to each performance service level.
+** Capacity is committed to each service level.
 ** Committed capacity cannot be decreased during the term.
-** Committed capacity and additional performance service levels can be added during the term.
+** Committed capacity and additional service levels can be added during the term.
 
 === Changes to committed capacity
 During the tenure of a subscription, you can change the committed capacities. However, there are certain preconditions:
@@ -49,7 +49,7 @@ This is the logical capacity that has exceeded the committed capacity. Note the 
 ** Burst capacity greater than 20% of committed is charged at a premium rate. Contact support for any additional burst requirements greater than 20%.
 
 == Consumed/provisioned capacity
-Consumed capacity refers to the capacity in TiB of storage currently being consumed on the service. Flex Subscription service considers the sum of the provisioned sizes (not the logical or physical capacity used) of all volumes on a particular performance service level to be considered as consumed capacity for that performance service level. This includes:
+Consumed capacity refers to the capacity in TiB of storage currently being consumed on the service. Flex Subscription service considers the sum of the provisioned sizes (not the logical or physical capacity used) of all volumes on a particular service level to be considered as consumed capacity for that service level. This includes:
 
 ** The capacity that is provisioned through the creation, modification, deletion, or potential auto-growth of volumes.
 ** The Snapshot copies and clones.

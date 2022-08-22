@@ -74,7 +74,7 @@ To define a new host group, see the next step.
 .. If required, add tags (key-value pairs) to the host group in the Tags section.
 .. Click *Create*. The system creates the host group and displays a message when it is successfully created.
 .. To map the newly created host group to the disk, go to the Host Groups field and select it.
-. Select a performance service level.
+. Select a service level.
 +
 Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
 

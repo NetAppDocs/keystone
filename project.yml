@@ -17,7 +17,7 @@ sidebar:
           entries:
             - title: Service capacity definitions
               url: /nkfsosm_keystone_service_capacity_definitions.html
-            - title: Performance Service Level
+            - title: Performance service level or service level
               url: /nkfsosm_performance.html
             - title: Service Level metrics and definitions
               url: /nkfsosm_service_level_metrics_and_definitions.html

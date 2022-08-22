@@ -55,7 +55,7 @@ For CIFS shares, adding a $ character to the end of the share path will make it 
 |Select the security style applicable to the file share. This list is automatically populated based on the share type selected.
 |===
 +
-. Select a performance service level. The IOPS and throughput limits are displayed based on the service level selected.
+. Select a service level. The IOPS and throughput limits are displayed based on the service level selected.
 
 +
 NOTE: Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.

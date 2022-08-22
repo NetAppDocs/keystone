@@ -24,13 +24,13 @@ A subscription refers to a group of storage services that are subscribed to and 
 [NOTE]
 If storage is required in multiple data centers, a separate subscription is required for each data center, with separate commitments.
 
-A storage service is a subscribed-to committed storage capacity with an associated performance service level. NetApp Service Engine offers file and block storage at extreme, extreme-tiering, premium, premium-tiering, and standard performance service levels, and object storage at an object performance service level.
+A storage service is a subscribed-to committed storage capacity with an associated service level. NetApp Service Engine offers file and block storage at extreme, extreme-tiering, premium, premium-tiering, and standard service levels, and object storage at an object service level.
 
-The extreme-tiering and premium-tiering performance service levels enable you to reduce your storage footprint and associated costs by monitoring and tiering your cold or inactive data to low-cost object storage tiers. The tiering policy is set to auto, where data left inactive for 31 days is tiered by default. You can modify this time period to be any number of days from 3 to 61 days.
+The extreme-tiering and premium-tiering service levels enable you to reduce your storage footprint and associated costs by monitoring and tiering your cold or inactive data to low-cost object storage tiers. The tiering policy is set to auto, where data left inactive for 31 days is tiered by default.
 
-For more information, see link:https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html[Performance Service Levels].
+For more information, see link:https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html[Service Levels].
 
-When created, file and block storage items are associated with a performance service level. Moving workloads between performance service levels is possible as requirements change. The extreme, extreme-tiering, premium, premium-tiering, and standard performance service levels offer different levels of I/O performance (IOPS) and throughput (MBps) so storage can be tailored to requirements.
+When created, file and block storage items are associated with a service level. Moving workloads between service levels is possible as requirements change. The extreme, extreme-tiering, premium, premium-tiering, and standard service levels offer different levels of I/O performance (IOPS) and throughput (MBps) so storage can be tailored to requirements.
 
 For information about tiering services, see link:https://docs.netapp.com/us-en/keystone/nkfsosm_tiering.html[Tiering].
 
