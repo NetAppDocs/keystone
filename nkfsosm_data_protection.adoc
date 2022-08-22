@@ -26,10 +26,10 @@ NetApp Keystone Flex Subscription (Flex Subscription) data protection service ca
 * Disaster recovery for disks and shares (requires data protection service as a part of the subscription)
 
 [NOTE]
-Backup and disaster recovery services are available as add-on services, while Snapshot is available as a part of the basic storage service.
+Backup and disaster recovery services are available as add-on services, while snapshot is available as a part of the basic storage service.
 
 |===
-| |Single Region Snapshots (Available as a part of the basic storage service) |Multi-region Backup (data protection add-on) |Multi-region Disaster Recovery (data protection add-on)
+| |Single Region snapshots (Available as a part of the basic storage service) |Multi-region Backup (data protection add-on) |Multi-region Disaster Recovery (data protection add-on)
 
 |Use case
 |Mitigate the risk of user or application data deletion or corruption, not against infrastructure loss or failure
@@ -37,7 +37,7 @@ Backup and disaster recovery services are available as add-on services, while Sn
 |Mitigate the risk of complete loss of data on the primary volume due to infrastructure loss or failure with a recovery time objective
 |Policy
 |Hourly, daily, weekly, and monthly
-|Number of backups to retain based on hourly, daily, weekly, and monthly Snapshots
+|Number of backups to retain based on hourly, daily, weekly, and monthly snapshots
 |1 hour, 4 hours, and daily
 |Topology
 |Source only

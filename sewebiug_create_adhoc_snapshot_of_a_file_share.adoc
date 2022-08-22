@@ -18,9 +18,9 @@ This section describes how to create an adhoc snapshot of a file share.
 .Steps
 
 . View the link:sewebiug_view_shares.html#view-shares[Shares list].
-. Locate the share in the list and click the Snapshot icon for that share. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
+. Locate the share in the list and click the snapshot icon for that share. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
 . In the Create Snapshot dialog, enter a name for your snapshot and click *Create*.
 
 .After you finish
 
-The snapshot can take a few minutes to become available.
+The snapshot can take a few minutes to become available. When available, you can create another share by cloning this snapshot. For information, see link:sewebiug_create_file_share_from_snapshot.html[Create a file share from a snapshot].

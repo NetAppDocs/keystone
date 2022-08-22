@@ -13,7 +13,7 @@ summary: Keystone create a new file share
 :imagesdir: ./media/
 
 [.lead]
-This section describes how to create a new share by directly specifying the share details. To create a new share based on a Snapshot of an existing share, see link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share[Create Share from Snapshot].
+This section describes how to create a new share by directly specifying the share details. To create a new share based on a snapshot of an existing share, see link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share[Create Share from snapshot].
 
 .Before you begin
 
@@ -22,7 +22,7 @@ This section describes how to create a new share by directly specifying the shar
 * To enable asynchronous disaster recovery options for the share, you must create the share on a server that has asynchronous disaster recovery enabled. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 * To enable synchronous disaster recovery for a share, create the share in a zone that is MetroCluster-enabled.
 * You can define a backup policy to capture backups of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups[Backups].
-* You can define a Snapshot policy to capture Snapshots of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots].
+* You can define a snapshot policy to capture snapshots of the file share on a scheduled basis. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots[Snapshots].
 
 .Steps
 
@@ -71,14 +71,14 @@ NOTE: NetApp Service Engine displays a warning and the capacity bar changes colo
 
 . If asynchronous disaster recovery is enabled on the underlying file server, asynchronous disaster recovery replication is automatically enabled for the new share. If you wish to exclude the share from asynchronous disaster recovery replication, toggle the Asynchronous Disaster Recovery button so that it is disabled.
 . If the share is being created in a zone that is MetroCluster-enabled, the Synchronous Disaster Recovery button is automatically enabled and cannot be disabled. The share will be replicated to the zone displayed in the panel below the Synchronous Disaster Recovery toggle.
-. If Snapshots are required for this file share:
+. If snapshots are required for this file share:
 .. Toggle to enable the Snapshot Policy and view the Snapshot Policy fields.
-.. Specify when to create the Snapshots:
+.. Specify when to create the snapshots:
 
-** *Hourly.* Specify which minute (of the hour) to take Snapshot and the number of hourly Snapshots to retain.
-** *Daily.* Specify when (hour and minute) to take the Snapshot the number of daily Snapshots to retain. If you want to specify multiple hours when the Snapshot has to be taken daily, you can add the values of the hours in a comma-separated list, for example, 5, 10, 15, and so forth.
-** *Weekly.* Specify when (day of the week, hour, and minute) to take Snapshot and the number of weekly Snapshots to retain.
-** *Monthly.* Specify when (day of the month, hour, and minute) to take Snapshot and the number of monthly Snapshots to retain.
+** *Hourly.* Specify which minute (of the hour) to take snapshot and the number of hourly snapshots to retain.
+** *Daily.* Specify when (hour and minute) to take the snapshot the number of daily snapshots to retain. If you want to specify multiple hours when the snapshot has to be taken daily, you can add the values of the hours in a comma-separated list, for example, 5, 10, 15, and so forth.
+** *Weekly.* Specify when (day of the week, hour, and minute) to take snapshot and the number of weekly snapshots to retain.
+** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
 . To enable backups for this file share:
 .. Toggle to enable the Backup Policy and the Backup Policy fields.
 .. Specify the backup zone.
@@ -103,5 +103,5 @@ NOTE: The user or group name should follow the standard AD format. If the entere
 ** With DNS records updated, use either the host name or IP to access the share: such as file://hostname/share[\\hostname\share^] or file://IP/share[\\IP\share^]
 ** With no DNS records updated, you must use the IP address to access the share i.e. file://IP/share[\\IP\share^]
 * Create share is run as an asynchronous job. You can:
-** Check the status of the job in the jobs list.
+** Check the status of the job in the jobs list. For information about tracking jobs, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 ** After the job is finished, check the status of the share in the Shares list.

@@ -13,14 +13,14 @@ summary: Keystone modify a file share
 :imagesdir: ./media/
 
 [.lead]
-You can change the share name, the share type (CIFS, NFS, multi-protocol), service level, capacity, snapshot policy, export policy,  Access Control List (ACL), and tags.
+You can change the share name, service level, capacity, snapshot policy, export policy,  Access Control List (ACL), and tags in a file share.
 
 [NOTE]
 Using this method,  you can move your shares to different performance service levels if available. You can change the share type only if the server supports the respective services.
 
 .Before you begin
 
-The file share must be in the operational state. For understanding volume statuses and the steps to be taken to make them operational, see link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html[View disks] and link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[Object states]
+The file share must be in the operational state. For understanding volume statuses and the steps to be taken to make them operational, see link:sewebiug_view_disks.html[View disks] and link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states[Object states]
 
 .Steps
 
@@ -33,5 +33,5 @@ The file share must be in the operational state. For understanding volume status
 
 Modify share is run as an asynchronous job. You can:
 
-* Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
+* Check the status of the job in the jobs list. For information about tracking jobs, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 * After the job is finished, check the status of the share in the Shares list.
