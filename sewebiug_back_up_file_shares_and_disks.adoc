@@ -13,60 +13,57 @@ summary: Create, modify, and delete backups or restore from backups
 :imagesdir: ./media/
 
 [.lead]
-You can view and manage the backups or recovery points created based on the snapshot schedules for the volumes (file shares and disks) in your environment to remotely maintain multiple copies of the primary volumes.
+You can define backup policies to create backups of the volumes (file shares and disks) in your environment and remotely maintain multiple copies of the primary volumes.
 
-The replicated file shares and disks from different zones are stored on a dedicated backup storage VM (storage virtual machine, also known as SVM) on each cluster. Backups can be performed between two separate ONTAP clusters in different zones. The standard backup policies supported by NetApp Service Engine are:
+[NOTE]
+Backups are automatically created on your system when you create or edit a backup policy for a volume. You cannot create a backup from the NetApp Service Engine interface. You can use the Backups API to create and manage backups for your volumes.
+
+For information, see link:seapiref_backups_apis.html[Backups API]
+
+Backing up your source volumes is enabled through the NetApp SnapMirror technology that is enabled with your Flex Subscription. For information, see link:index.html#flex-subscription[here].
+
+When you create or edit a volume, you define its backup schedule. The backup is taken at the intended intervals and stored at a destination system. For backups to work, the SnapMirror relationship should be established with the destination environment. The replicated file shares and disks from different zones are stored on a dedicated backup storage VM (storage virtual machine, also known as SVM) on each cluster. Backups can be performed between two separate ONTAP clusters in different zones.
+
+The standard backup policies supported by NetApp Service Engine are:
 
 * Adhoc
 * Daily
 * Weekly
 * Monthly
 
-For creating backups from the snapshots of your volumes, you need to define the snapshot and backup schedules 
+For backups being created at the backend, your volumes should be at an `Operational` state. For more information about object states, see Operational (for the source object of a backup) link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states[here].
 
-For creating backups, your volumes should have a standard object state. For more information about object states, see link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states[Object states]. If your volume does not follow the standard backup policies supported by NetApp Service Engine, you can link:sewebiug_raise_a_service_request.html[raise a service request] of the *Non Standard Volume* category to fix the issue.
+If your volume does not follow the standard backup policies supported by NetApp Service Engine, you can link:sewebiug_raise_a_service_request.html[raise a service request] of the *Non Standard Volume* category to fix the issue.
 
-NOTE: An adhoc (non-scheduled) backup can be performed at any time, manually through the GUI or by using APIs.
+You can view the list of backups created for your file shares and disks on the *Backups* page. Backups are displayed based on the selected tenant.
 
-You can view the list of snapshots created for your file shares and disks on the *Backups* page. Backups are displayed based on the selected tenant.
+== Edit a backup policy or schedule
 
-== Create a backup object
-
-You can create snapshots for your volumes by defining the backup policy when you link:sewebiug_create_a_new_file_share.html[create a file share] or link:sewebiug_create_a_new_disk.html[create a disk].
+When you create or edit files shares and disks, you can define their backup policies. Backups are taken at the backend based on the policies specified by you. For information, see: link:sewebiug_create_a_new_file_share.html[create a file share] or link:sewebiug_create_a_new_disk.html[create a disk].
 
 .Steps
 . Enable *Backup Policy*.
 . Specify the backup zone and the number of backups to be taken on an adhoc, daily, weekly, and/or monthly basis.
 .	Click *Create*.
 
-NOTE: You can also create or schedule backups by editing the backup policy for an existing file share or disk.
+NOTE: You can also schedule backups by editing the backup policy for an existing file share or disk.
 
-== Modify a backup object
+== Modify or disconnect the source of a backup
 
 For a selected backup object of a file share or disk, you can disable the backup or detach the backup object from its source and make it an orphan backup. This operation breaks the SnapMirror relationship with the source. You can also modify the number of backups to be taken on an adhoc, daily, weekly, and/or monthly basis.
 
 .Steps
-. Locate the backup in the list and click the edit icon, at the end of the row, for that object.
+. On the left navigation pane, click *BACKUPS*. You can see the list of backups created for all the objects in your environment.
+. Locate the backup in the list (searching by the volume name) and click the edit icon, at the end of the row.
 . Make changes to the backup source and the number of each type of backup as required.
 You can break the SnapMirror relationship with the source volume by changing the backup source to *None (orphaned)*. The backups are retained as orphan backups for restoration even when the source volumes are deleted. The state of the backup object changes, and the status of the source volume (orphan or deleted) is appended to the source volume name on the same list.
 For information about object states, see link:sewebiug_netapp_service_engine_web_interface_overview.html#Object-states[here]
 . Click *Done*.
 The snapshot is modified. If you have broken the SnapMirror relationship with the source, that is, orphaned the backup object, the name of the Source in the *Backups* tab appears as `deleted`.
 
-NOTE: You can also break the SnapMirror relationship with the source volume by disabling *Backup Policy* for the volume.
+NOTE: You can also break the SnapMirror relationship with the source volume by disabling *Backup Policy* for the volume from the Create Share/Edit Share and Create Disk/Edit Disk screens.
 
-== Delete a backup object
-
-Delete an unused backup volume to increase your storage space.
-
-.Steps
-.	Locate the backup in the list and click the delete icon, at the end of the row, for that object.
-.	In the *Confirm Delete* dialog box, enter the backup name (source volume name) to confirm that you want to delete the backup object.
-.	Click *Confirm*.
-
-NOTE: When a backup is deleted, all the recovery points for the backup are deleted. Also, even if you delete a primary file share or disk, the backup is retained as an orphan backup with all the recovery points for restoration. To delete the backup volume and recovery points of the deleted source, you should explicitly delete the backup object from the *Backups* tab.
-
-== Backup Restore
+== Request support for backup and restore
 
 You can link:sewebiug_raise_a_service_request.html[raise a service request] to restore a file share or disk from a specific recovery point.
 
@@ -75,3 +72,8 @@ You can link:sewebiug_raise_a_service_request.html[raise a service request] to r
 .	Click *New Service Request*.
 .	Select *Backup Restore* as the category for the service request.
 .	Specify other details and proceed.
+
+== Remove a backup object
+Deleting an unused backup volume increases your storage space. To delete a backup volume and recovery points of the deleted source, you should use the Backups API.
+
+NOTE: When a backup is deleted, all the recovery points for the backup are deleted. Also, even if you delete a primary file share or disk, the backup is retained as an orphan backup with all the recovery points for restoration.

@@ -153,7 +153,7 @@ sidebar:
               url: /sewebiug_delete_an_s3_key_for_a_user.html
         - title: Manage Cloud services
           entries:
-            - title: Managing Cloud services
+            - title: Manage Cloud services
               entries:
                 - title: Overview
                   url: /sewebiug_managing_subscribed_services_overview.html
@@ -165,19 +165,19 @@ sidebar:
                   url: /sewebiug_modify_the_subscribed_service_details.html
                 - title: Delete a subscribed service
                   url: /sewebiug_delete_a_subscribed_service.html
-            - title: Managing Azure NetApp Files
+            - title: Manage Azure NetApp Files
               entries:
-                - title: Managing Azure NetApp accounts
+                - title: Manage Azure NetApp accounts
                   url: /sewebiug_managing_azure_netapp_accounts.html
-                - title: Managing Azure capacity pools
+                - title: Manage Azure capacity pools
                   url: /sewebiug_managing_azure_capacity_pools.html
-                - title: Managing Azure volumes
+                - title: Manage Azure volumes
                   url: /sewebiug_managing_azure_volumes.html
-            - title: Managing Cloud Volumes Service for Google Cloud Platform
+            - title: Manage Cloud Volumes Service for Google Cloud Platform
               url: /sewebiug_managing_gcp_cvs.html
         - title: View reports
           url: /sewebiug_working_with_reports.html
-        - title: Work with backups
+        - title: Back up your volumes
           url: /sewebiug_back_up_file_shares_and_disks.html
         - title: Manage subscriptions
           url: /sewebiug_managing_subscriptions.html

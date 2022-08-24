@@ -13,7 +13,7 @@ summary: Keystone backups APIs
 :imagesdir: ./media/
 
 [.lead]
-You can use Backup APIs to view and manage the snapshots (backups or recovery points) of the volumes (file shares and disks) in your environment.
+You can use Backup API to view and manage the backups or recovery points of the volumes (file shares and disks) in your environment.
 
 [cols="1,1,3,2",options="header"]
 |===

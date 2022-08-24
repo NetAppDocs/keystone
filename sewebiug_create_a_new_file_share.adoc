@@ -82,7 +82,7 @@ NOTE: NetApp Service Engine displays a warning and the capacity bar changes colo
 . To enable backups for this file share:
 .. Toggle to enable the Backup Policy and the Backup Policy fields.
 .. Specify the backup zone.
-.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly.
+.. Specify how many of each type of backup to keep: daily, weekly, and/or monthly. For more information, see link:sewebiug_back_up_file_shares_and_disks.html[Back up file shares and disks].
 . For NFS or multi-protocol shares, specify the Export Policy. You can apply multiple export policies on a share. This section is available for only NFS and multi-protocol shares.
 .. Add the IPv4 address (with a subnet mask expressed as a number of bits) of the client to which the rule applies.
 .. Specify the read and write access, and whether the client has root access (superuser).
