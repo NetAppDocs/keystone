@@ -42,6 +42,6 @@ The following table provides a list of the service request statuses.
 
 You can follow the status of a service request by reviewing the status in NetApp Service Engine, as described below, or you can follow the status in the automated emails sent as part of the process.
 
-. From the menu, select Support > Service requests. The list is filtered based on the default priority of `Urgent`.
+. From the menu, select *Support > Service requests*. The list is filtered based on the default priority `Urgent`.
 . Select the required priority and status to view the list of service request.
-. Locate the service request in the list and view the status in the Status column.
+. Locate the service request in the list and view the status in the `Status` column.

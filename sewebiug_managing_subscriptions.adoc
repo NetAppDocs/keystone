@@ -26,7 +26,7 @@ If you are a partner admin, you can view and manage your Flex Subscription servi
 
 Service requests are received and addressed by the support team.
 
-You can also view and manage the data protection and advanced protection services that you are subscribed to, in separate tabs.
+You can also view and manage the data protection and advanced protection services that you are subscribed to, in separate tabs. For information, see link:index.html#flex-subscription[Data Protection and Data Protection Advanced]. 
 
 === Increase the capacity of a subscription
 

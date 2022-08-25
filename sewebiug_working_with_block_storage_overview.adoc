@@ -21,7 +21,7 @@ summary: Keystone working with block storage overview
 [.lead]
 In block storage systems, the data storage is broken up into individual pieces each with a unique identifier. NetApp Service Engine refers to the block data storage as a block store, and the individual pieces as disks.
 
-Block stores belong to a subtenant and are specified within a zone (one block store per zone per subtenant). A block store has networking attributes (for example, IP address and VLAN ID) which are used to access disks through the iSCSI or FC protocol. Disaster recovery DP can be enabled on a block store. For more information, see link:/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+Block stores belong to a subtenant and are specified within a zone (one block store per zone per subtenant). A block store has networking attributes (for example, IP address and VLAN ID) which are used to access disks through the iSCSI or FC protocol. Disaster recovery DP can be enabled on a block store. For more information, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
 
 Block stores must be initialized before they can be used. Where block storage is available and it has not been initialized, it can be initialized prior to creating the first disk on the block store as part of the Create Disk process.
 
