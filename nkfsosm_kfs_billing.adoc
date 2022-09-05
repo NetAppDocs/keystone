@@ -91,5 +91,12 @@ For LUNs, usually the same billing pattern is followed as for the volumes that a
 *	The size of the LUN is counted for consumption according to the associated service level of that LUN.
 *	The remainder of the space in the volume, if any, is charged according to the QoS policy of the service level set on the volume.
 
-=== System and root volumes
+=== Billing for FabricPool usage
+If data is tiered from a Keystone system to ONTAP Simple Storage Service (S3) object storage or NetApp StorageGRID, then the consumed capacity on the hot tier (Keystone system) will be reduced by amount of data that has been tiered off, impacting the resultant billing. This is irrespective of whether the ONTAP S3 storage or StorageGRID system is under the Keystone subscription. When the tiering facility is used in FabricPool technology, Keystone billing is determined by the duration of a volume in each service level.
+
+For tiering your data to any third party object storage, contact your Keystone Success Manager.
+
+For information on the use of FabricPool technology for your Keystone subscriptions, see link:nkfsosm_tiering.html[Tiering].
+
+=== Billing for system and root volumes
 System and root volumes are monitored as a part of the overall monitoring of the Flex Subscription service but are not counted or billed. The consumption on these volumes is exempted for billing.
