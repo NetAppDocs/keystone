@@ -36,7 +36,7 @@ The following enhancements have been made with respect to the service provider/p
 * However, the tenant can use only the service levels that have been assigned to them by the service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
 
 === Capacity units changed in APIs
-All capacity units and calculations in NetApp Service Engine APIs are converted to GiB/TiB/PiB from GB/TB/PB. This is in keeping with the existing metrics on the user interface.
+All storage capacity units and calculations in NetApp Service Engine APIs are converted to GiB, TiB, and PiB from GB, TB, and PB respectively. This is in keeping with the units displayed on the existing user interface.
 
 == View your Cloud Volumes ONTAP usage and billing (05 December 2021)
 
