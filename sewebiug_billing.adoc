@@ -36,3 +36,5 @@ You can also click the arrow on the top right corner of the *Costs to Date* widg
 . Optionally, hover over the bar chart representing a month to view additional details.
 . Select any month listed in the table.
 All your subscriptions for the month, along with the associated billing, is displayed in the table. The charges are split up as per the committed capacity and burst usage.
+
+For more information on billing, see link:nkfsosm_kfs_billing.html[Flex Subscription billing]

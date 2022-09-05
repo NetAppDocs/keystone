@@ -29,8 +29,8 @@ For the selected file share, if you have some snapshots created in your SnapCent
 You can search for a particular snapshot or select the schedule type to filter the snapshots.
 . Select the checkbox next to the snapshot that you want to clone from and click *Next*.
 The new file share inherits the properties of the selected snapshot.
-. Add *Name* and *Share Path*. Update the other settings, such as assigning a *Service Level*, and click *Create*. 
-Select the service level that best matches your needs. As a tenant, you can use only the service levels that are assigned to you by your service provider, and not any other service level, irrespective of whether the service provider has subscribed to those service levels.
+. Add *Name* and *Share Path*. Update the other settings, such as assigning a *Service Level*, and click *Create*.
+Select the service level that best matches your needs. As a tenant, you can use only the service levels that are assigned to you by your service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
 
 .After you finish
 

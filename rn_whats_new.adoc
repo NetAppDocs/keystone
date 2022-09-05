@@ -21,18 +21,19 @@ The following enhancements have been introduced in release 2.6.2 of NetApp Servi
 === Changes in the NetApp Service Engine user interface:
 These modifications in the user interface enable better user experience:
 
-* New horizontal charts have replaced the vertical bars on the dashboard to indicate the capacity utilization for your subscription. For viewing specific tenant subscriptions, you should select the appropriate tenant.
-* A refresh button has been added on the dashboard to refresh the capacity utilization data at intervals. The capacity data regeneration interval is of 15 minutes, as indicated by the hint text.
-* While configuring backup from the *Backups* screen, only those zones can be selected with which there is ONTAP storage associated.
+* New horizontal charts have replaced the vertical bars on the dashboard to indicate the capacity utilization for your subscription. For viewing specific tenant subscriptions, you should select the appropriate tenant. For more information, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard].
+* A refresh button has been added on the dashboard to refresh the capacity utilization data at intervals. The capacity data regeneration interval is of 15 minutes, as indicated by the hint text. For more information, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard].
+* While configuring backup from the *Backups* screen, only those zones can be selected with which there is ONTAP storage associated. For more information, see link:sewebiug_back_up_file_shares_and_disks.html[Back up file shares and disks].
 * A download icon image:download_icon.png[download icon] has been added for taking CSV output of the capacity utilization charts on the following screens. An icon is available for the capacities utilized for each service level subscribed.
 ** *Reports > Tenant Usage/Capacity Usage*: For the tenant administrator, the page appears as *Capacity Usage*. For a partner administrator, the page appears as *Tenant Usage*
 ** *Reports > Keystone Usage* : This screen is available for only the partner administrators.
+For more information, see link:sewebiug_working_with_reports.html[View reports].
 
-=== Added capability for using more capacity by tenants
+=== Enabling more capacity usage by tenants
 The following enhancements have been made with respect to the service provider/partner and tenant subscriptions:
 
 * The total committed capacity of all tenant subscriptions of a service provider can be greater than the committed capacity of the service provider subscription.
-* However, the tenant can use only the service levels that have been assigned to them by the service provider, and not any other service level, irrespective of whether the service provider has subscribed to those service levels.
+* However, the tenant can use only the service levels that have been assigned to them by the service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
 
 == View your Cloud Volumes ONTAP usage and billing (05 December 2021)
 
