@@ -92,7 +92,7 @@ a|`subtenant_id`: The ID of the subtenant.
 `os_type`: The type of the host operating system.
 `hostgroup_mappings`: The host group mappings.
 `service_level`: The service level name applicable: Standard, Premium, Premium-Tiering, Extreme, or Extreme-Tiering.
-`size_gb`: The size of the disk in GBs.
+`size_gb`: The size of the disk in GiBs.
 
 a|`POST`
 a|`/v2.1/disks/{id}/`

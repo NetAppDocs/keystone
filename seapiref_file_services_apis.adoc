@@ -93,7 +93,7 @@ a|`/v2.1/fileshares`
 a|`name`: The name of the file share.
 `share_path`: The path of the file share.
 `fileserver_id`: The ID of the file server.
-`size_gb`: The size of the file share in GBs.
+`size_gb`: The size of the file share in Gibs.
 `service_level`: The service level name applicable: Standard, Premium, Premium-Tiering, Extreme, or Extreme-Tiering.
 `protocol`: The protocol used to access the file share (NFS, CIFS, or multi-protocol).
 `security_style`: The security style (Unix or NTFS).
@@ -117,7 +117,7 @@ a|`/v2.1/fileshares/{id}`
 |You can modify any file share based on its ID. Add the ID of the file server and the values that you want to modify in the request body, such as such as name, protocol, snapshot policy, backup policy, and tags.
 a|`id`: The ID of the file share.
 `name`: The name of the file share.
-`size_gb`: The size of the file share in GBs.
+`size_gb`: The size of the file share in Gibs.
 `service_level`: The service level name applicable: Standard, Premium, Premium-Tiering, Extreme, or Extreme-Tiering.
 `protocol`: The protocol used to access the file share (NFS, CIFS, or multi-protocol).
 `export_policy`: The export policy of the file share.

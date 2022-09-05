@@ -5,7 +5,7 @@ keywords: netapp, keystone, performance,
 summary: Keystone Flex Subscription performance
 ---
 
-= Performance service levels or service levels
+= Service levels
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary: Keystone Flex Subscription performance
 //
 
 [.lead]
-NetApp Keystone Flex Subscription (Flex Subscription) offers capacity at predefined service levels.
+NetApp Keystone Flex Subscription (Flex Subscription) offers capacity at predefined service levels or performance service levels.
 
 Each service level (service level) is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
 
@@ -92,3 +92,9 @@ I/O density calculations at the volume level are reported to show peak I/O densi
 ^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block service levels for NetApp direct opportunities.
 ^2^ Minimum one-year term and minimum stated capacity per service tier selected for channel led opportunities.
 ^3^ Minimum one-year term and minimum stated capacity per service tier selected for either opportunity type.
+
+You can assign service levels to your subscriptions from multiple screens of the NetApp Service Engine user interface. For more information, see:
+
+*
+*
+* link:nkfsosm_tenancy_overview.html[Tenancy and multi-tenancy in Flex Subscription]
