@@ -27,7 +27,7 @@ The Capacity Usage for Keystone Subscriptions page displays capacity usage for e
 
 Use the graphical reports on this page to view the trends usage for all the service levels, as well as add-on data protection services, in separate tabs. When a service is in burst, a banner displays the burst capacity used in the current billing cycle.
 
-[2.6.2]To view the capacity usage report for each subscribed service level, you can take the CSV output by clicking the download icon image:download_icon.png[download icon] for a line item.
+[2.6.2]To view the capacity usage report for the subscribed service levels, you can take the CSV output by clicking the download icon image:download_icon.png[download icon] for each service level.
 
 image:sewebiug_image33.png[Error: Missing Graphic Image]
 
@@ -58,7 +58,7 @@ To view the capacity usage for a tenant, perform the following steps:
 . Select the subscription number containing the service from the *Subscription* drop-down list.
 . You can choose to view the capacity usage for base service levels or data protection services by selecting the respective tabs. The page displays the service level view by default.
 . You can scroll the page to view the services, and use the period filters to limit the display to a selected period.
-[2.6.2]To view the capacity usage report for each subscribed service level, you can take the CSV output by clicking the download icon image:download_icon.png[download icon] for a line item.
+[2.6.2]To view the capacity usage report for the subscribed service levels, you can take the CSV output by clicking the download icon image:download_icon.png[download icon] for a each service level.
 
 == Performance report
 
