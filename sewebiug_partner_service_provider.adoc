@@ -46,7 +46,7 @@ As a tenant administrator, you can are entitled to view the subscription details
 * Manage and edit subtenants for your tenancy.
 * View your zones, regions, subtenants, and subnets.
 * View file servers created by service providers.
-* Create file shares, disks, and buckets, and assign service levels to them. You can use only the service levels that are assigned to you by your service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
+* Create file shares, disks, and buckets, and assign service levels to them.
 * View reports for tenants and subtenant from *Reports > Capacity Utilization* to view the consumption data for only the storage subscribed to or provisioned for your tenancy and subtenants.
 * View reports for tenants and subtenant from *Reports > Performance* to view the performance and service compliance for your tenancy for each subscribed service and add-on services (Data Protection and Advanced Protection).
 +

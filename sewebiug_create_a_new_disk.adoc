@@ -76,7 +76,7 @@ To define a new host group, see the next step.
 .. To map the newly created host group to the disk, go to the Host Groups field and select it.
 . Select a service level.
 +
-NOTE: Select an option to view the performance details for that service level (as peak/expected IOPS/throughput). Select the service level that best matches your needs. As a tenant, you can use only the service levels that are assigned to you by your service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
+NOTE: Select an option to view the performance details for that service level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
 
 +
 

@@ -31,7 +31,7 @@ You can search for a particular snapshot or select the schedule type to filter t
 . Select the checkbox next to the snapshot that you want to clone from and click *Next*.
 The new disk inherits the properties of the selected snapshot.
 . Add *Name* and *Disk Path*. Update the other settings, such as assigning a *Service Level*, and click *Create*.
-Select the service level that best matches your needs. As a tenant, you can use only the service levels that are assigned to you by your service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
+Select the service level that best matches your needs.
 .After you finish
 
 *Create Disk* is run as an asynchronous job. You can:

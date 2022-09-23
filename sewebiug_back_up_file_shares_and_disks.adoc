@@ -22,7 +22,7 @@ For information, see link:seapiref_backups_apis.html[Backups API]
 
 Backing up your source volumes is enabled through the NetApp SnapMirror technology that is enabled with your Flex Subscription. For information, see link:index.html#flex-subscription[here].
 
-When you create or edit a volume, you define its backup schedule. The backup is taken at the intended intervals and stored at a destination system. For backups to work, the SnapMirror relationship should be established with the destination environment. The replicated file shares and disks from different zones are stored on a dedicated backup storage VM (storage virtual machine, also known as SVM) on each cluster. Backups can be performed between two separate ONTAP clusters in different zones. [2.6.2]The zones should always have ONTAP clusters associated.
+When you create or edit a volume, you define its backup schedule. The backup is taken at the intended intervals and stored at a destination system. For backups to work, the SnapMirror relationship should be established with the destination environment. The replicated file shares and disks from different zones are stored on a dedicated backup storage VM (storage virtual machine, also known as SVM) on each cluster. Backups can be performed between two separate ONTAP clusters in different zones.
 
 The standard backup policies supported by NetApp Service Engine are:
 
@@ -46,7 +46,7 @@ When you create or edit files shares and disks, you can define their backup poli
 . Specify the backup zone and the number of backups to be taken on an adhoc, daily, weekly, and/or monthly basis.
 .	Click *Create*.
 
-NOTE: [2.6.2]You can also schedule backups by editing the backup policy for an existing file share or disk. You can select only that zone with which there is ONTAP storage associated.
+NOTE: You can also schedule backups by editing the backup policy for an existing file share or disk.
 
 == Modify or disconnect the source of a backup
 

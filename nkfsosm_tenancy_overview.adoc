@@ -61,11 +61,10 @@ image:nkfsosm_image10.png[]
 * NetApp charges the providers monthly, as a part of their usual tenancy terms.
 * For a service level to be available to tenants, the service provider or partner should first have a Flex Subscription in place for the service level.
 * The service provider creates tenant subscriptions per service level, zone, and flexible minimums.
-* Service providers can sell more capacity to their tenants than they have purchased from NetApp (oversubscription). Therefore, the capacity used by tenants is not limited by the capacity the service provider has subscribed to. [2.6.2]The total committed capacity of all tenant subscriptions of a service provider can be greater than the committed capacity of the provider's subscription.
+* Service providers can sell more capacity to their tenants than they have purchased from NetApp (oversubscription). Therefore, the capacity used by tenants is not limited by the capacity the service provider has subscribed to.
 * Tenants can use storage capacity over their subscribed amount, that is listed as 'burst' on usage reports.
 * Tenant usage reports are available to partners for viewing on a daily or monthly basis.
 * Tenants can create subscriptions for longer duration as compared to the corresponding Flex Subscription, but a warning message is displayed to the end customer during that activity.
 * Flex Subscription for a partner is configured by NetApp admins or GSSC. Management of Flex Subscription and tenant subscriptions is performed by a user with Partner admin role.
 * Users with the tenant admin roles can only view the tenant subscription (not partner's Flex Subscription). They can update the given subscription to change capacity and service level. They can raise service requests for additional subscriptions.
-* [2.6.2]The tenant administrator can use only the service levels that are assigned to them by the service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
 * The partner admin can create another subscription either when the existing subscription is expired, or for a future date when the existing subscription is no longer valid. The start date for a new subscription must be greater than or equal to current end date.

@@ -74,11 +74,5 @@ If multiple host groups are created with the same initiator name, and disks are 
 a|
 Raise a service request for GSSC to resolve the issue.
 a|
-Capacity utilization charts impacted when Adaptive QoS policies are not applied on destination cluster LUNs
-a|
-In a disaster recovery (DR) enabled site, when a LUN is created in the source cluster with an Adaptive Quality of Service (QoS) policy assigned, the policy is not replicated on the destination cluster, thereby impacting the capacity utilization charts.
-a|
-This issue has no workaround.
-a|
 
 |===

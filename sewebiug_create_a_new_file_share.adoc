@@ -58,7 +58,7 @@ For CIFS shares, adding a $ character to the end of the share path will make it 
 . Select a service level. The IOPS and throughput limits are displayed based on the service level selected.
 
 +
-NOTE: Select an option to view the performance details for that service level (as peak/expected IOPS/throughput). Select the service level that best matches your needs. As a tenant, you can use only the service levels that are assigned to you by your service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
+NOTE: Select an option to view the performance details for that service level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
 
 +
 

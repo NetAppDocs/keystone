@@ -15,47 +15,6 @@ summary: new features in NetApp Service Engine
 [.lead]
 The release notes inform you of the new features and enhancements introduced in NetApp Keystone Flex Subscription (Flex Subscription) services, along with the known limitations and fixes.
 
-== Features introduced in NetApp Service Engine 2.6.2
-The following enhancements have been introduced in release 2.6.2 of NetApp Service Engine to support enhanced functionalities offered through NetApp Keystone Flex Subscription (Flex Subscription):
-
-=== Changes in the NetApp Service Engine user interface:
-These modifications in the user interface enable better user experience:
-
-* New horizontal charts have replaced the vertical bars on the dashboard to indicate the capacity utilization for your subscription. For viewing specific tenant subscriptions, you should select the appropriate tenant. For more information, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard].
-* A refresh button has been added on the dashboard to refresh the capacity utilization data at intervals. The capacity data regeneration interval is of 15 minutes, as indicated by the hint text. For more information, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard].
-* While configuring backup from the *Backups* screen, only those zones can be selected with which there is ONTAP storage associated. For more information, see link:sewebiug_back_up_file_shares_and_disks.html[Back up file shares and disks].
-* A download icon image:download_icon.png[download icon] has been added for taking CSV output of the capacity utilization charts on the following screens. An icon is available for the capacities utilized for each service level subscribed.
-** *Reports > Tenant Usage/Capacity Usage*: For the tenant administrator, the page appears as *Capacity Usage*. For a partner administrator, the page appears as *Tenant Usage*
-** *Reports > Keystone Usage* : This screen is available for only the partner administrators.
-For more information, see link:sewebiug_working_with_reports.html[View reports].
-
-=== Enabling more capacity usage by tenants
-The following enhancements have been made with respect to the service provider/partner and tenant subscriptions:
-
-* The total committed capacity of all tenant subscriptions of a service provider can be greater than the committed capacity of the service provider subscription.
-* However, the tenant can use only the service levels that have been assigned to them by the service provider, and not any other service level, irrespective of whether or not the service provider has subscribed to those service levels.
-
-=== Capacity units changed in APIs
-All storage capacity units and calculations in NetApp Service Engine APIs are converted to GiB, TiB, and PiB from GB, TB, and PB respectively. This is in keeping with the units displayed on the existing user interface.
-
-== View your Cloud Volumes ONTAP usage and billing (05 December 2021)
-
-If you are a NetApp Keystone Flex Subscription (Flex Subscription) customer, and also have Cloud Volumes ONTAP subscription, you can use Flex Subscription to charge your Cloud Volumes ONTAP usage and view your billing and consumption details. Cloud Manager can now discover your Flex Subscription accounts and display the details on the Cloud Manager interface. On clicking the *All Services > Digital Wallet > Keystone Flex Subscription* tab, you can perform the following activities:
-
-* View a welcome screen from which you can request your Flex Subscription administrator to associate your Cloud Manager user ID with your Flex Subscription user ID; and thereby gain access to the *Keystone Flex Subscription* tab.
-* View the consumption data of the committed and consumed capacities of the subscribed services on your on-premise systems and Cloud Volumes ONTAP.
-* View the Flex Subscription details associated with your Cloud Manager account. Details, such as committed, consumed, and burst capacity are displayed.
-* Link your Cloud Volumes ONTAP account with your Flex Subscription IDs to associate the account for billing and capacity usage reports.
-* Request increasing or decreasing the committed capacity for the subscribed Flex Subscription services.
-* View and use the linked Flex Subscription ID as a charging method for billing the Cloud Volumes ONTAP consumption (only linked IDs).
-
-For more information, see the following links in the Cloud Manager documents:
-link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription[Keystone Flex Subscription]
-link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions[Manage Keystone Flex Subscriptions]
-
-{sp} +
-{sp} +
-{sp}
 The following features have been introduced in different releases of NetApp Service Engine to support enhanced functionalities offered through NetApp Keystone Flex Subscription (Flex Subscription):
 
 == Features introduced in NetApp Service Engine 2.2
