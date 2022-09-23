@@ -17,13 +17,11 @@ Use this method to modify details of an object storage user such as the user nam
 
 .Steps
 
-. View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
-. Make sure the correct subtenant is selected and the display is showing Users (not Groups).
-. Locate the user in the list and click the Edit icon for that group.
+. View the object storage user link:sewebiug_view_the_object_storage_group_and_users.html[View object storage group and users].
+. Make sure the correct subtenant is selected and you have clicked the *Users* tab.
+. Locate the user in the list and click the edit icon for that user.
 +
-For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
+For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions[List view actions].
 
-. In the Edit User dialog box:
-.. Enter the user name.
-.. Select the object storage group to which the user belongs.
-. Click *Update*. This creates a job to create the user with the specified settings.
+. In the *Edit User* dialog box, change the object storage group for the user.
+. Click *Update*. This creates a job to update the group for the user. For information about tracking jobs, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].

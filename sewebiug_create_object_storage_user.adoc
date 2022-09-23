@@ -18,8 +18,8 @@ Because an object storage user belongs to an object storage group, the object st
 
 .Steps
 
-. View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
-. Make sure the correct subtenant is selected and the display is showing users (not groups).
+. Navigate to *OBJECT STORAGE > User Management > Users*.
+. Make sure the correct subtenant is selected and you have clicked the *Users* tab.
 . Click *Create User*.
 . In the Create User dialog box:
 .. Enter the user name.
@@ -30,5 +30,5 @@ Because an object storage user belongs to an object storage group, the object st
 
 Create user is run as an asynchronous job. You can:
 
-* Check the status of the job in the jobs list.
+* Check the status of the job in the jobs list. For information, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[Jobs and job status indicator].
 * After the job is finished, check the status of the share in the Users list.

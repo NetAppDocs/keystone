@@ -40,6 +40,14 @@ You can submit a capacity addition request through the NetApp Service Engine man
 
 All the additions are co-term to the existing term period, except if the request is made in the last 90 days of the subscription, in which case the term must extend for at least 12 months.
 
+*Can subscriptions co-term with one another?*
+
+No, subscription terms are independent of one another.
+
+*Can I add backup storage to an existing subscription?*
+
+For a backup use case, you can add capacity to an existing subscription for an existing or new service level, including Standard or Value service levels. This does not change the term of the existing subscription. There is one caveat though, that is, if you want to add capacity within the last 90 days of the subscription term ( that is the last 90 days before your subscription ends), you must also renew the subscription for at least one year.
+
 *Does a new subscription have flexibility to come with a new yearly term?*
 
 Yes, new subscriptions can have new terms separate from any existing subscriptions.

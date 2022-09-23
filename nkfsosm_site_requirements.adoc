@@ -36,6 +36,6 @@ You should provide the required power. NetApp will provide the power requirement
 NetApp can provide the cooling requirement specifications (Typical BTU, Max BTU), based on the final configuration and requirement.
 
 == Networking
-Depending on customer requirements and the storage controllers used, NetApp can provide 10 Gb, 40 Gb, and 100 Gb connectivity at the customer site.
+Depending on customer requirements and the storage controllers used, NetApp can provide 10 Gib, 40 Gib, and 100 Gib connectivity at the customer site.
 
 NetApp provides the required transceivers for NetApp-provided Flex Subscription infrastructure devices only. You should supply transceivers required for customer devices and cabling to the NetApp-provided Flex Subscription infrastructure devices.
