@@ -16,7 +16,7 @@ summary: Keystone delete file server
 *Attention:* Deleting a file server will also delete the following:
 
 * All backups associated with the file server
-* All disaster recovery replicated copies associated with the file serverYou cannot undo deletion of a server.
+* All disaster recovery replicated copies associated with the file server. You cannot undo deletion of a server.
 
 .Before you begin
 
@@ -36,5 +36,5 @@ image:sewebiug_image21.png[Error: Missing Graphic Image]
 
 * When deleting CIFS-enabled file servers, the Active Directory computer object remains. Ask your Active Directory administrator to manually remove the computer object for the deleted file server from Active Directory.
 * Delete server is run as an asynchronous job. You can:
-** Check the status of the job in the jobs list. For information about tracking jobs, see link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
+** Check the status of the job in the jobs list. For information about tracking jobs, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
 ** After the job is finished, verify that the sever has been removed from the Servers list.

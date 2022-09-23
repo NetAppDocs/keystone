@@ -13,7 +13,7 @@ summary: Keystone create a new disk
 :imagesdir: ./media/
 
 [.lead]
-This section describes how to create a new disk by directly specifying the disk details. For instructions on how to create a disk based on a Snapshot of an existing disk, see link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot[Create a disk from a Snapshot].
+This section describes how to create a new disk by directly specifying the disk details. For instructions on how to create a disk based on a snapshot of an existing disk, see link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot[Create a disk from a snapshot].
 
 .Before you begin
 
@@ -74,19 +74,21 @@ To define a new host group, see the next step.
 .. If required, add tags (key-value pairs) to the host group in the Tags section.
 .. Click *Create*. The system creates the host group and displays a message when it is successfully created.
 .. To map the newly created host group to the disk, go to the Host Groups field and select it.
-. Select a performance service level.
+. Select a service level.
 +
-Select an option to view the performance details for that level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
+NOTE: Select an option to view the performance details for that service level (as peak/expected IOPS/throughput). Select the service level that best matches your needs.
+
++
 
 . Specify the capacity of the disk.
-. If Snapshots are required for this disk:
+. If snapshots are required for this disk:
 .. Toggle to enable the Snapshot Policy to view the Snapshot Policy fields.
-.. Specify when to create the Snapshots:
+.. Specify when to create the snapshots:
 
-** *Hourly.* Specify which minute (of the hour) to take Snapshot (check) and the number of hourly Snapshots to retain.
-** *Daily.* Specify when (hour and minute) to take the Snapshot (check) and the number of hourly Snapshots to retain. If you want to specify multiple hours when the Snapshot has to be taken daily, you can add the values of the hours in a comma-separated list, for example, 5, 10, 15, and so forth.
-** *Weekly.* Specify when (day of the week, hour and minute) to take Snapshot (check) and the number of weekly Snapshots to retain.
-** *Monthly.* Specify when (day of the month, hour, and minute) to take Snapshot and the number of monthly snapshots to retain.
+** *Hourly.* Specify which minute (of the hour) to take snapshot (check) and the number of hourly snapshots to retain.
+** *Daily.* Specify when (hour and minute) to take the snapshot (check) and the number of hourly snapshots to retain. If you want to specify multiple hours when the snapshot has to be taken daily, you can add the values of the hours in a comma-separated list, for example, 5, 10, 15, and so forth.
+** *Weekly.* Specify when (day of the week, hour and minute) to take snapshot (check) and the number of weekly snapshots to retain.
+** *Monthly.* Specify when (day of the month, hour, and minute) to take snapshot and the number of monthly snapshots to retain.
 . If asynchronous disaster recovery is enabled on the underlying block store, asynchronous disaster recovery replication is automatically enabled for the new disk. If you wish to exclude the disk from asynchronous disaster recovery replications, toggle the Asynchronous Disaster Recovery toggle so that asynchronous disaster recovery is disabled.
 . If the disk is being created in a zone that is MetroCluster-enabled, the Synchronous Disaster Recovery button is enabled and cannot be disabled. The disk will be replicated to the zone displayed in the Synchronous Disaster Recovery panel.
 . To enable backups for this disk:

@@ -15,24 +15,6 @@ summary: new features in NetApp Service Engine
 [.lead]
 The release notes inform you of the new features and enhancements introduced in NetApp Keystone Flex Subscription (Flex Subscription) services, along with the known limitations and fixes.
 
-== View your Cloud Volumes ONTAP usage and billing (05 December 2021)
-
-If you are a NetApp Keystone Flex Subscription (Flex Subscription) customer, and also have Cloud Volumes ONTAP subscription, you can use Flex Subscription to charge your Cloud Volumes ONTAP usage and view your billing and consumption details. Cloud Manager can now discover your Flex Subscription accounts and display the details on the Cloud Manager interface. On clicking the *All Services > Digital Wallet > Keystone Flex Subscription* tab, you can perform the following activities:
-
-* View a welcome screen from which you can request your Flex Subscription administrator to associate your Cloud Manager user ID with your Flex Subscription user ID; and thereby gain access to the *Keystone Flex Subscription* tab.
-* View the consumption data of the committed and consumed capacities of the subscribed services on your on-premise systems and Cloud Volumes ONTAP.
-* View the Flex Subscription details associated with your Cloud Manager account. Details, such as committed, consumed, and burst capacity are displayed.
-* Link your Cloud Volumes ONTAP account with your Flex Subscription IDs to associate the account for billing and capacity usage reports.
-* Request increasing or decreasing the committed capacity for the subscribed Flex Subscription services.
-* View and use the linked Flex Subscription ID as a charging method for billing the Cloud Volumes ONTAP consumption (only linked IDs).
-
-For more information, see the following links in the Cloud Manager documents:
-link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription[Keystone Flex Subscription]
-link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions[Manage Keystone Flex Subscriptions]
-
-{sp} +
-{sp} +
-{sp}
 The following features have been introduced in different releases of NetApp Service Engine to support enhanced functionalities offered through NetApp Keystone Flex Subscription (Flex Subscription):
 
 == Features introduced in NetApp Service Engine 2.2
@@ -92,7 +74,7 @@ For more information on this feature, see the following links:
 
 === Tiering
 
-NetApp Keystone Flex Subscription service now includes a tiering capability that leverages the NetApp FabricPool technology. It identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed on-premises by NetApp. You can opt for tiering by subscribing to the extreme-tiering or premium-tiering performance levels.
+NetApp Keystone Flex Subscription service now includes a tiering capability that leverages the NetApp FabricPool technology. It identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed on-premises by NetApp. You can opt for tiering by subscribing to the extreme-tiering or premium-tiering service levels.
 
 The following APIs have been modified  to include new attribute values for the new tiering service levels:
 
@@ -102,7 +84,7 @@ The following APIs have been modified  to include new attribute values for the n
 For more information, see the following links:
 
 * link:nkfsosm_tiering.html[Tiering]
-* link:nkfsosm_performance.html[Performance Service Levels]
+* link:nkfsosm_performance.html[service levels]
 
 {sp} +
 {sp} +

@@ -28,3 +28,5 @@ The following features are enabled:
 * Likewise, you can change the tiering service levels to non-tiering for your volumes.
 * Enable and disable backups for a volume on a tiering service level.
 * Enable and disable disaster recovery for a volume on a tiering service level.
+
+For information on billing, see link:nkfsosm_kfs_billing.html#billing-for-fabricpool-usage[Billing for FabricPool usage].

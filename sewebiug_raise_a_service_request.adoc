@@ -18,17 +18,21 @@ summary: Keystone raise a service request
 // 2020-10-20 10:59:40.017032
 //
 [.lead]
-The Service Requests screen enables you to raise new service requests to be taken up by your own support team or NetApp GSSC.
+The Service Requests screen enables you to raise new service requests as a partner administrator for your or your tenants' subscriptions and submit them to your own support team or NetApp GSSC.
 
-You can view the summary of the most recent service requests, sorted by priority and creation time, on the *Service Requests* widget on the dashboard. You can also navigate to the Service Requests screen to search and view the details of all the service requests raised in your environment.  
+As a partner administrator, you can view the summary of the most recent service requests for a tenant, sorted by priority and creation time, on the *Service Requests* widget on the dashboard. You can also navigate to the Service Requests screen to search and view the details of all the service requests raised in your environment.
 
 For creating a new service request, follow this procedure.
 
 .Steps
 
 . From the menu, select *SUPPORT > Service Requests* and click *New Service Request*.
-. On the New Service Request page, select the category and priority for the request, and then click *Next*.
-. The fields on the Details screen change based on the category that you selected. Enter the required details. Click *Next*.
+. On the New Service Request page, select the category and priority for the request, and then click *Next*. The *Details* screen is displayed.
+
+[NOTE]
+The fields on the Details screen change based on the category that you select. On this screen, you need to enter the relevant details for the selected category of the service request.
+
+. Enter the required details. Click *Next*.
 . Review the request details. If you want to correct anything, use the Back button to return to the previous page and correct the details. If all the details are correct, click *Submit*.
 . The service request is created and listed on the Service Requests screen. A newly-opened service request has a `New` status.
 

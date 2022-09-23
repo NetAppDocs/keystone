@@ -15,13 +15,9 @@ summary: Keystone create a file server
 [.lead]
 File servers belong to a subtenant and are created within a zone. When creating a server, you can optionally:
 
-* Enable disaster recovery DP for the server. For more information about how disaster recovery works in NetApp Service Engine, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
-* Make it CIFS-enabled. For CIFS-enabled servers:
-** You must provide the Active Directory user name, Active Directory password, domain, DNS servers, server name and, optionally, the Active Directory Organizational Unit (OU).
-** The Active Directory credentials (Active Directory user name and Active Directory password) must be for a user that has the privilege to join a computer to the Active Directory domain.
-** When the Active Directory OU structure is hierarchical, as shown in the image below, specify the OUs from the lowest level to the top. In this example, to specify the Melbourne OU, set `cifs_ou` as `"cifs_ou": "ou=melbourne,ou=cifs".`
-
-image:sewebiug_image20.png[Error: Missing Graphic Image]
+* Enable asynchronous disaster recovery Data Protection for the server. For more information about how disaster recovery works in NetApp Service Engine, see link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery[Disaster recovery].
+* If you have a subscription for synchronous disaster recovery Data Protection, the feature is enabled by default.
+* Make it CIFS-enabled. NFS services are enabled by default.
 
 .Before you begin
 
@@ -31,7 +27,11 @@ Make sure you have the following to create the server:
 * The region and zone in which the server belongs.
 * Networking details such as the subnet and IP address (optional). If you are unfamiliar with your network, check with your IT department for the appropriate values.
 * To enable asynchronous disaster recovery  on the file server, the disaster recovery zone (the zone to which the file server will be replicated).
+* For CIFS server, you should know the Active Directory credentials, DNS servers, server name and, optionally, the Active Directory Organizational Unit (OU). The Active Directory credentials must be for a user that has the privilege to join a computer to the Active Directory domain.
 
+When the Active Directory OU structure is hierarchical, as shown in the image below, specify the OUs from the lowest level to the top. In this example, to specify the Melbourne OU, set `cifs_ou` as `"cifs_ou": "ou=melbourne,ou=cifs".`
+
+image:sewebiug_image20.png[Error: Missing Graphic Image]
 .Steps
 
 . View the link:sewebiug_view_servers.html#view-servers[File Servers list].
@@ -62,18 +62,24 @@ NFS is enabled by default. The NFS protocol in use is displayed.
 If creating a CIFS-enabled file server:
 
 .. Toggle the CIFS-enabled button to view the CIFS related fields.
-.. Complete the Active Directory Username, Active Directory Password, Domain, DNS Servers, Server Name and, optionally, the Active Directory Organizational Unit. The Active Directory credentials must be for a user that has the privilege to join a computer to the Active Directory domain.
+.. Add domain name, DNS server IP, server name and, optionally, the name for the Active Directory Organizational Unit.
 
 . To enable asynchronous disaster recovery DP on this file server:
 .. Toggle the Asynchronous Disaster Recovery button to enable it.
 .. Select the disaster recovery region and zone.
 .. Select the disaster recovery replication schedule.
-. If synchronous disaster recovery DP is enabled, the Synchronous Disaster Recovery toggle is enabled and cannot be disabled.
+[NOTE]
+If you have taken a subscription of synchronous disaster recovery Data Protection, the feature is automatically activated for your zone, and the Synchronous Disaster Recovery toggle button is enabled by default. You cannot disable the button.
+
+. Optionally, you can add tags and value.
 . Click *Create*. This creates a job to create the server.
+
+[NOTE]
+If you are creating a CIFS-enabled server, for the entered domain name (FQDN) you should enter the Active Directory username and Active Directory password, and click *Confirm*.
 
 .After you finish
 
-Create server is run as an asynchronous job. You can:
+Server creation is run as an asynchronous job. You can:
 
-* Check the status of the job in the jobs list.
-* After the job is finished, check the status of the server in the Servers list.
+* Check the status of the job in the jobs list. For information about tracking jobs, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
+* After the job is finished, check the status of the server in the Servers list on the

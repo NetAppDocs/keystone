@@ -18,9 +18,9 @@ This section describes how to create an adhoc snapshot of a disk.
 .Steps
 
 . View the link:sewebiug_view_disks.html#view-disks[Disks list].
-. Locate the disk in the list and click the Snapshot icon for that disk. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview#list-view[List view actions]).
+. Locate the disk in the list and click the snapshot icon for that disk. (For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview#list-view[List view actions]).
 . In the Create Snapshot dialog box, enter a name for your snapshot and click *Create*.
 
 .After you finish
 
-The snapshot might take a few minutes to become available.
+The snapshot might take a few minutes to become available. When available, you can create another disk by cloning this snapshot. For information, see link:sewebiug_create_a_disk_from_a_snapshot.html[Create a disk from a snapshot].

@@ -21,13 +21,14 @@ summary: Keystone view buckets
 [.lead]
 The Buckets list displays the existing buckets for a selected Subtenant.
 
-. To view the list, select Object Storage > Buckets from the menu.
+. To view the list, select *Object Storage > Buckets* from the menu.
 . Use the Subtenant drop-down menu to select another subtenant if required.
 +
 Simple information for each bucket is displayed, such as:
 
 ** Name
-** Date created
-** Usage
-+
-For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view].
+** Region
+** Size
+** Creation date
+** Objects
+** Action (such as bucket deletion)

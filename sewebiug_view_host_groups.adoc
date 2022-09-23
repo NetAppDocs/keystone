@@ -13,7 +13,7 @@ summary: Keystone view host groups
 :imagesdir: ./media/
 
 [.lead]
-Host groups are defined to determine access to disks. Based on the initiator nodes assigned to a host groups, the access of that host group is determined.
+Host groups are defined to determine access to disks. Based on the initiator nodes assigned to a host groups, the access of that host group is determined. You can add initiators when creating the host group.
 
 == View host groups
 
@@ -67,14 +67,18 @@ After the host group is created, it is available for mapping to disks.
 
 You can modify a host group to add, remove or amend initiators.
 
-Modifying a host group will modify access for each disk mapped to the host group.
+.Note these points:
 
-You cannot modify the alias of an initiator. To change the alias, delete the initiator from the group and then re-create it.
+* You cannot edit the host group if the host group is not operational, and the edit pen icon is disabled for those groups.
+
+* Modifying a host group will modify the access of each disk mapped to the host group.
+
+* You cannot modify the alias of an initiator. To change the alias, delete the initiator from the group and then re-create it.
 
 .Steps
 
 . View the link:sewebiug_view_host_groups.html#view-host-groups[Host Groups] list.
-. Locate the host group in the list and click the Edit icon for that host group.
+. Locate the host group in the list, scroll to the end of the row, and click the Edit icon (pen icon) for that host group.
 +
 To modify an existing initiator, locate the initiator in the list, edit the initiator value and click *Update*.
 +
@@ -86,7 +90,7 @@ To add an initiator:
 +
 To remove an initiator from the host group, locate the initiator in the list and click the Delete icon.
 
-. Click *Done*.
+. Click *Close*.
 
 == Delete a host groups
 You can delete a host group if there are no disks mapped to the host group.

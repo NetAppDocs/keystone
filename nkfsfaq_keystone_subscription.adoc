@@ -19,7 +19,7 @@ The following questions give answers to your frequent queries about NetApp Keyst
 NetApp Keystone Flex Subscription (Flex Subscription) is a subscription-based service offering for block, file, and object data services that can be deployed on-premises and can be operated by NetApp, a partner, or a customer.
 
 *What storage service offers are provided as part of Flex Subscription?*
-For information, see link:nkfsosm_performance.html[Performance Service Levels]
+For information, see link:nkfsosm_performance.html[Service Levels]
 
 *What add-on services are supported?*
 Advanced data protection (backup and disaster recovery) and Hybrid Cloud Tiering with FabricPool are add-on services that can be chosen at an additional cost.
@@ -28,10 +28,10 @@ Advanced data protection (backup and disaster recovery) and Hybrid Cloud Tiering
 In a NetApp operated scenario, NetApp Keystone guarantees IOPS/TiB for the storage that is provisioned and the latency for each service level.
 
 *What does Flex Subscription map to?*
-Flex Subscription maps to a single site or a single data center and it can comprise of different performance service levels.
+Flex Subscription maps to a single site or a single data center and it can comprise of different service levels.
 
-*What are the benefits of extreme-tiering and premium-tiering performance levels?*
-Tiering is enabled in the extreme-tiering and premium-tiering performance levels, which enables you to reduce your storage footprint and associated costs. NetApp assumes that 25% of your data is hot, while the remaining 75% is less frequently used or cold, and moves it to cold storage. Additionally, you can check usage reports to understand how frequently data is accessed and enable tiering service based on the information.
+*What are the benefits of extreme-tiering and premium-tiering service levels?*
+Tiering is enabled in the extreme-tiering and premium-tiering service levels, which enables you to reduce your storage footprint and associated costs. NetApp assumes that 25% of your data is hot, while the remaining 75% is less frequently used or cold, and moves it to cold storage. Additionally, you can check usage reports to understand how frequently data is accessed and enable tiering service based on the information.
 
 *Can partners sell more capacity than they have purchased from NetApp to customers?*
 Tenant subscriptions are not limited by the capacity that the partner has purchased. Partners can sell more capacity than they have purchased from NetApp to their customers. The capacity that is in excess of the purchased capacity is referred to as oversubscription.

@@ -29,4 +29,4 @@ image:sewebiug_image31.png[Error: Missing Graphic Image]
 +
 image:sewebiug_image32.png[Error: Missing Graphic Image]
 +
-. Check the jobs list to make sure the object storage is successfully initialized.
+. Check the jobs list to make sure the object storage is successfully initialized. For information, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[Jobs and job status indicator].
