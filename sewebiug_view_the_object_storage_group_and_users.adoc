@@ -5,7 +5,7 @@ keywords: netapp, keystone, view, object, storage, group, users,
 summary: Keystone view the object storage group and users
 ---
 
-= View the object storage group and users
+= View object storage group and users
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,9 +19,9 @@ The User Management list displays the object storage users and groups for a spec
 
 . From the menu, select *Object Storage > User Management*.
 . Use the Subtenant drop-down menu to select another subtenant if required.
-. Use the Users and Groups links to toggle the display between users and groups.
+. Use the *Users* and *Groups* tabs to toggle the display between users and groups.
 
 ** The Users list displays the object storage users defined for the selected subtenant. For each user, it displays their name and the object storage groups to which they belong.
-** The Groups list displays the object storage groups defined for the selected subtenant. For each group, it displays the group name and S3 policy.
+** The Groups list displays the object storage groups defined for the selected subtenant. It displays the group name and S3 policy assigned to that group. For information about bucket groups and S3 policies, see https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#access-policy-overview[Bucket and group access policies].
 +
 For more information about how to use the features of a list, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions[List view actions].

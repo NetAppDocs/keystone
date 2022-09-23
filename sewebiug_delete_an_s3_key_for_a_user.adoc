@@ -17,13 +17,13 @@ Use this method to delete an S3 key for a user.
 
 .Steps
 
-. View the link:sewebiug_view_a_list_of_users.html#view-a-list-of-users[Users List].
-. Make sure the correct subtenant is selected and the display is showing Users (not Groups).
+. View the object storage user link:sewebiug_view_the_object_storage_group_and_users.html[View object storage group and users].
+. Make sure the correct subtenant is selected and you have clicked the *Users* tab.
 . Locate the user in the list and click the Key icon for that group.
 +
-For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view[List view actions].
+For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions[List view actions].
 
-. The Manage S3 Keys dialog displays showing the list of keys for the user.
-. In the list of keys, locate the key to delete and click the Delete icon.
+. The *Manage S3 Keys* dialog displays showing the list of keys for the user.
+. In the list of keys, locate the key to delete and click the *Delete* icon.
 . Click *Confirm* to confirm the delete action. The key is removed from the list of user keys.
 . Click *Close* to close the Manage S3 Keys dialog box.
