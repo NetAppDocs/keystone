@@ -17,7 +17,7 @@ The User Management list displays the object storage users and groups for a spec
 
 .Steps
 
-. From the menu, select *Object Storage > User Management*.
+. From the menu, select *OBJECT STORAGE > User Management*.
 . Use the Subtenant drop-down menu to select another subtenant if required.
 . Use the *Users* and *Groups* tabs to toggle the display between users and groups.
 

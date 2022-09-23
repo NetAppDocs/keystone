@@ -23,6 +23,6 @@ Use this method to modify details of an object storage group such as the group n
 +
 For details about working with items in lists, see link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions[List view actions].
 
-. In the *Edit Group* dialog box, modify the group name if required.
-. Modify the S3 policy applicable for the group. For information about S3 policies, see https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy[Specify permissions in a policy].
+. In the *Edit Group* dialog box, modify the S3 policy applicable for the group. For information about S3 policies, see https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy[Specify permissions in a policy].
+. You can add additional policy statements as required.
 . Click *Update*. This creates a job to modify the group with the specified settings. For information about tracking jobs, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[here].
