@@ -76,7 +76,7 @@ The following table lists the Cloud Volumes Service instance attributes.
 |Name of the Cloud Volumes Service instance.
 |`cc_working_env`
 |String
-|Working environment name within Cloud Manager.
+|Working environment name within BlueXP.
 |`cc_client_id`
 |String
 |Auth0 service ID.
@@ -94,7 +94,7 @@ The following table lists the Cloud Volumes Service instance attributes.
 |ID of the Cloud Centra working environment.
 |`azure_client_id`
 |String
-|Application (Client) ID. The ID of an Active Directory service principal that Cloud Manager can use to authenticate with Azure Active Directory.
+|Application (Client) ID. The ID of an Active Directory service principal that BlueXP can use to authenticate with Azure Active Directory.
 |`azure_client_secret`
 |String
 |The value of client secret for service principal application.
