@@ -12,18 +12,12 @@ summary: Keystone service requests
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-19 09:25:10.623244
-//
-
 [.lead]
 Use the methods listed in the following table to create and retrieve service requests.
 
+
 |===
 |HTTP Method |Path |Description
-
 |`GET`
 |`/v2.1/tenants/{tenant_id}/servicerequests`
 |Retrieve service requests.
@@ -44,7 +38,6 @@ The following table lists the service request attributes.
 
 |===
 |Attribute |Type |Description
-
 |`Id`
 |String
 |An identifier for the service request. For example: `SRQ0035952014.`
@@ -94,7 +87,6 @@ Use the method listed in the following table to retrieve service request categor
 
 |===
 |HTTP Method |Path |Description |Parameters
-
 |`GET``
 |`/v2.1/tenants/{tenant_id}/servicerequests`
 |Retrieve service requests.
@@ -148,7 +140,6 @@ Use the method listed in the following table to retrieve a service request by se
 
 |===
 |HTTP Method |Path |Description |Parameters
-
 |`GET`
 |`/v2.1/tenants/{tenant_id}/servicerequests/{id}`
 |Retrieve a service request by ID.
@@ -164,7 +155,6 @@ none
 ....
 
 *Response body example:*
-
 ....
 {
   "status": {
@@ -189,13 +179,13 @@ none
 }
 ....
 
+
 == Create a service request
 
 Use the method listed in the following table to create a service request.
 
-|==
+|===
 |HTTP Method |Path |Description |Parameters
-
 |`POST`
 |`/v2.1/tenants/{tenant_id}/servicerequests/categories`
 |Create a service request.
@@ -206,7 +196,6 @@ Required request body attributes: the required attributes are dependent on the c
 
 |===
 |Category |Required
-
 |Subscription
 |`subscription` and `commitment`
 |Disaster recovery
@@ -269,11 +258,11 @@ The following table lists the retrieve service request categories for a specifie
 
 |===
 |HTTP Method |Path |Description |Parameters
-
 |`GET`
 |`/v2.1/tenants/{tenant_id}/servicerequests/categories`
 |Retrieve service requests categories.
 |`tenant_id:` (Optional) Return the service requests for a specified tenant.
+
 |===
 
 Required request body attributes: `none`
