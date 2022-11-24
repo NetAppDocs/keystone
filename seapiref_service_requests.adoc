@@ -12,14 +12,9 @@ summary: Keystone service requests
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-19 09:25:10.623244
-//
-
 [.lead]
 Use the methods listed in the following table to create and retrieve service requests.
+
 
 |===
 |HTTP Method |Path |Description

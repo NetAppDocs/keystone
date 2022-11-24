@@ -12,13 +12,10 @@ summary: NetApp service engine REST APIs
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-10-19 09:25:08.999425
-//
+[.lead]
+Many API calls return a large number of records. It is possible to limit the number of records by specifying the `offset` and `limit` values.
 
-Many API calls return a large number of records. It is possible to limit the number of records by specifying the `offset` and `limit` values:
+Limit these values:
 
 * *Limit.* The number of records to return.
 * *Offset.* The number of records to skip before returning the first record. For example, an offset of one will skip the first record and return records starting at two.
