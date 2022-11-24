@@ -12,6 +12,9 @@ summary: Keystone create object storage user
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+You can create users and add them to specific groups to assign object storage access to them.
+
 .Before you begin
 
 Because an object storage user belongs to an object storage group, the object storage group must exist before you can create the user.
