@@ -93,8 +93,4 @@ I/O density calculations at the volume level are reported to show peak I/O densi
 ^2^ Minimum one-year term and minimum stated capacity per service tier selected for channel led opportunities.
 ^3^ Minimum one-year term and minimum stated capacity per service tier selected for either opportunity type.
 
-You can assign service levels to your subscriptions from multiple screens of the NetApp Service Engine user interface. For more information, see:
-
-*
-*
-* link:nkfsosm_tenancy_overview.html[Tenancy and multi-tenancy in Flex Subscription]
+You can assign service levels to your subscriptions from multiple screens of the NetApp Service Engine user interface. For more information, see link:nkfsosm_tenancy_overview.html[Tenancy and multi-tenancy in Flex Subscription].
