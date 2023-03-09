@@ -5,7 +5,7 @@ keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keys
 summary: Keystone Subscription reports and graphs
 ---
 
-= Keystone Subscription dashboard and reporting
+= Digital Advisor dashboard and reporting for Flex Subscription
 :hardbreaks:
 :nofooter:
 :icons: font
