@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: nkfsosm-keystone-and-aiq.html
-keywords: netapp, keystone, aiq keystone customers, Active IQ and keystone
+keywords: netapp, keystone, aiq keystone customers, Active IQ, Digital Advisor
 summary: what can customers see in Active IQ for keystone
 ---
 
-= What can Flex Subscription customers view in Active IQ?
+= What can Flex Subscription customers view in Active IQ Digital Advisor?
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,18 +13,18 @@ summary: what can customers see in Active IQ for keystone
 :imagesdir: ./media/
 
 [.lead]
-If you have subscribed to NetApp Keystone Flex Subscription (Flex Subscription) services, you can view your usage reports and graphs on the Active IQ Digital Advisor dashboard.
+If you have subscribed to NetApp Keystone Flex Subscription (Flex Subscription) services, you can view your usage reports and graphs on the Active IQ Digital Advisor (Digital Advisor) dashboard.
 
-For more information about Active IQ Digital Advisor, see link:https://docs.netapp.com/us-en/active-iq/index.html[Active IQ Digital Advisor documentation]
+For more information about Digital Advisor, see link:https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor documentation].
 
-If your site has NetApp Service Engine installed by default, you can view the consumption charts through the NetApp Service Engine interface in addition to Active IQ Digital Advisor. However, in a customer-managed environment, you do not have access to the NetApp Service Engine interface, and you can view your capacity charts and usage reports only through the Active IQ Digital Advisor dashboard.
+If your site has NetApp Service Engine installed by default, you can view the consumption charts through the NetApp Service Engine interface in addition to Digital Advisor. However, in a customer-managed environment, you do not have access to the NetApp Service Engine interface, and you can view your capacity charts and usage reports only through the Digital Advisor dashboard.
 For information about customer-managed environments, see link:nkfsosm_overview.html[Operational model, roles, and responsibilities]
 
 The interval of metrics data collection from your site is 5 minutes.
 
-As a customer, if you have subscribed to the Flex Subscription services, you can view the following information on Active IQ Digital Advisor: 
+As a customer, if you have subscribed to the Flex Subscription services, you can view the following information on Digital Advisor: 
 
-* *Keystone Flex Subscription* widget: If you have logged in to Active IQ Digital Advisor, you can see the *Keystone Flex Subscription* widget that summarizes the capacity usage against your purchased Flex Subscription services.
-* If you click *View Details* on the widget, you can see the *Keystone - Capacity Utilization* dashboard. The *Keystone - Capacity Utilization* dashboard provides further break down and analysis of the capacity and usage data as per the services subscribed, for example, the service levels, data protection, and advanced data protection services. The dashboard also displays the consumed, committed, and burst capacity usage graphs for the last 1, 7, and 30 days, with the mean accrual burst calculated and split over your current billing period.
+* *Keystone Flex Subscription* widget: If you have logged in to Digital Advisor, you can see the *Keystone Flex Subscription* widget that summarizes the capacity usage against your purchased Flex Subscription services.
+* If you click *View Details* on the widget, you can see the *Keystone - Capacity Utilization* dashboard. The *Keystone - Capacity Utilization* dashboard provides further breakdown and analysis of the capacity and usage data as per the services subscribed, for example, the service levels, data protection, and advanced data protection services. The dashboard also displays the consumed, committed, and burst capacity usage graphs for the last 1, 7, and 30 days, with the mean accrual burst calculated and split over your current billing period.
 
 For more information, see link:https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html[View capacity utilization with NetApp Keystone Flex Subscription].

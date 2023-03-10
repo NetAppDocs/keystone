@@ -42,7 +42,7 @@ sidebar:
           url: /nkfsosm_site_requirements.html
         - title: Operations
           url: /nkfsosm_netapp_global_services_and_support_center_@gssc@.html
-        - title: Flex Subscription and Active IQ Digital Dashboard
+        - title: Flex Subscription and Active IQ Digital Advisor
           url: /nkfsosm-keystone-and-aiq.html
           entries:
             - title: View and generate reports from Active IQ Digital Advisor

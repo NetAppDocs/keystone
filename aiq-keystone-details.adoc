@@ -24,12 +24,12 @@ To view the details, perform the following steps:
 
 .Steps
 
-. On Digital Advisor, click *View More Details* on the widget to view the usage details and alerts on your volumes on the *Keystone Subscription* page. Alternately, from the left navigation pane, go to *GENERAL > Keystone Subscription*.
+. On Digital Advisor, click *View More Details* on the widget to view the usage details and alerts on your volumes on the *Keystone Subscriptions* page. Alternately, from the left navigation pane, go to *GENERAL > Keystone Subscriptions*.
 
-The details of the subscriptions, usage charts for each service level, and volume details are displayed in the different tabs on this screen.
+The details of the subscriptions, usage charts for each service level, and volume details are displayed in the different tabs on the *Keystone Subscriptions* screen.
 
 [NOTE]
-Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, up to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as 0 or `No Usage`. For other usage metrics, see link:../concepts/metrics.html#metrics-measurement[Metrics measurement]. For information about different capacities used in Keystone, see link:../concepts/supported-storage-capacity.html[Supported storage capacities].
+Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, up to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as `0` or `No Usage`. For other usage metrics, see link:../concepts/metrics.html#metrics-measurement[Metrics measurement]. For information about different capacities used in Keystone, see link:../concepts/supported-storage-capacity.html[Supported storage capacities].
 
 == View subscription details
 You can view all the subscriptions for an account name in the *Subscription Details* tab.
@@ -79,18 +79,18 @@ The following details are displayed:
 [NOTE]
 Based on the date range of your query, the usage charts are displayed in a range of 30 data points.
 +
-The bar charts appear in these colors to indicate the following consumed capacity as defined within the service level:
+The following colors in the bar charts indicate the consumed capacity as defined within the service level:
 
 ** Green: Within 80%
 ** Amber: 80% - 100% 
 ** Red: Burst usage (100% of the committed capacity to the agreed burst limit)
 ** Purple: Above the burst limit or `Above Limit`
-** Grey: Provisional usage - usage recorded when the exact data for the time period is unavailable and is substituted by the data available at the previous data collection point
+** Grey: _Provisional usage_ - usage recorded when the exact data for the time period is unavailable and is substituted by the data available at the previous data collection point
 * *Current Consumed*: Indicator for the consumed capacity (in TiB) defined for the service level. This field uses specific colors for usage:
 ** Grey: None
 ** Green: Within 80% of the committed capacity
 ** Amber: Any consumption above 80% of the committed capacity
-* *Current Burst*: Indicator for the consumed capacity within or above the defined burst limit. Any usage within the burst limit agreed upon, for example 20% above the committed capacity, is within the burst limit. Further usage is considered as usage above the burst limit. This field uses specific colors for usage:
+* *Current Burst*: Indicator for the consumed capacity within or above the defined burst limit. Any usage within the burst limit agreed upon, for example, 20% above the committed capacity is within the burst limit. Further usage is considered as usage above the burst limit. This field uses specific colors for usage:
 ** Grey: None
 ** Red: Burst 
 ** Purple: Above the burst limit 
@@ -143,35 +143,43 @@ image:sg-link-2.png[]
 You can click the *Performance Details* tab for viewing the performance details for the ONTAP volumes managed by your Keystone subscriptions.
 
 .Steps
-. Click *Performance Details* tab.
+. Click the *Performance Details* tab.
 . Select the subscription number. By default, the first subscription number is selected.
 . Select the required volume name from the list.
++
+Alternately, you can click the image:aiq-ks-time-icon.png[] icon against an ONTAP volume in the *System Details* tab to navigate to this tab.
++
 . Select the date range for the query.
 
-You can view the performance details in the following sections based on the combination of the subscription number, volume name, and the date range selected. The details are displayed as per service level assigned to the volume. You can see the cluster name, and the volume type, for example, the read and write permissions assigned to it. Any warning message associated with the volume is also displayed.
+You can view and compare the performance metrics in the following sections based on the combination of the subscription number, volume name, and the date range selected. The details are displayed as per service level assigned to the volume. You can see the cluster name and volume type, that is, the read and write permissions assigned to the volume. Any warning message associated with the volume is also displayed.
 
 [NOTE]
 The retrieved details are based on the service level objective for each service level. For example, the peak IOPS, max throughput, target latency, and other metrics are determined by the individual settings for the service level. For more information about the settings, see link:nkfsosm_performance.html[Service levels]. 
 
-The performance data displayed on the horizontal graph is averaged out over every 5 minutes and arranged as per the date range of the query. You can scroll across the graphs and hover your mouse over specific data points to drill further down into the collected data. You can view the provisional data when the exact usage data is unavailable at that point and is substituted by the data available at the previous data collection point.
+The performance data displayed on the horizontal graph is averaged out every 5 minutes and arranged as per the date range of the query. You can scroll across the graphs and hover your mouse over specific data points to drill further down into the collected data. You can view the provisional data when the exact usage data is unavailable at that point and is substituted by the data available at the previous data collection point.
 
 === IOPS/TiB
-This section displays the input output graphs for the workloads of the volume based on the date range of the query. The peak IOPS for the service level and the current IOPS (in the last five minutes, not based on the date range of the query) are displayed, along with the minimum, maximum, and average IOPS for the time range, in IOPS/TiB .
+This section displays the input-output graphs for the workloads in the volume based on the date range of the query. The peak IOPS for the service level and the current IOPS (in the last five minutes, not based on the date range of the query) are displayed, along with the minimum, maximum, and average IOPS for the time range, in IOPS/TiB.
 
 image:perf-iops.png[]
 
 === Throughput (MBps/TiB)
-This section displays the throughput graphs for the workloads of the volume based on the date range of the query. The max throughput as per the service level (SLO Max), and current throughput (in the last five minutes, not based on the date range of the query) are displayed, along with the minimum, maximum, and average throughput for the time range, in MBps/TiB.
+This section displays the throughput graphs for the workloads in the volume based on the date range of the query. The maximum throughput for the service level (SLO Max), and current throughput (in the last five minutes, not based on the date range of the query) are displayed, along with the minimum, maximum, and average throughput for the time range, in MBps/TiB.
 
 image:perf-thr.png[]
 
 === Latency (ms)
-This section displays the latency graphs for the workloads of the volume based on the date range of the query. The max latency as per the service level (SLO Max), and current latency (in the last five minutes, not based on the date range of the query) are displayed, along with the minimum, maximum, and average latency for the time range, in milliseconds.
+This section displays the latency graphs for the workloads in the volume based on the date range of the query. The maximum latency for service level (SLO Target), and current latency (in the last five minutes, not based on the date range of the query) are displayed, along with the minimum, maximum, and average latency for the time range, in milliseconds.
+
+This graph appears the following colors:
+
+* Light blue: _Latency_. This is the actual latency that includes any latency other than your Keystone service. This might include additional latency, such as the latency between your network and client.
+* Dark blue: _Effective latency_. Effective latency is the latency applicable only to your Keystone service with respect to your SLA.
 
 image:perf-lat.png[]
 
 === Logical Used (TiB)
-This section displays the provisioned and the logical used capacities of the volume. The current logical used capacity (in the last five minutes, not based on the date range of the query), and the minimum, maximum, and average usage for the time range are displayed in TiBs.
+This section displays the provisioned and the logical used capacities of the volume. The current logical used capacity (in the last five minutes, not based on the date range of the query), along with the minimum, maximum, and average usage for the time range are displayed in TiBs. On this graph, the grey area represents the committed capacity, and the yellow graph indicates the logical use.
 
 image:perf-log-usd.png[]
 
@@ -200,4 +208,4 @@ For information about AQoS policies, see link:../concepts/qos.html[Adaptive QoS]
 
 image:alert-aiq.png[]
 
-Contact support for more information on these caution and warning messages. For information, see link:../concepts/gssc.html[Generating service requests].
+Contact NetApp support for more information on these caution and warning messages. For information, see link:../concepts/gssc.html[Generating service requests].
