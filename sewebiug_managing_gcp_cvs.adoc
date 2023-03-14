@@ -52,7 +52,7 @@ You can manage the volumes for a subtenant on GCP from *FILE SERVICES > GCP Volu
 . Select the subtenant for which you want to create the volume.
 . Select the region and network. The list is filtered based on the Cloud Volumes Service account for the subtenant on GCP.
 . Add a name for the volume.
-. Select the appropriate Service Level.
+. Select the appropriate service level.
 . Enter the file path of the volume as the creation token.
 . Assign the volume quota in bytes.
 . If required, add tags for the volume.

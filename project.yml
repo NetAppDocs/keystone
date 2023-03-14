@@ -18,7 +18,7 @@ sidebar:
               url: /nkfsosm_keystone_service_capacity_definitions.html
             - title: Service levels in Flex Subscription
               url: /nkfsosm_performance.html
-            - title: Service Level metrics and definitions
+            - title: Service level metrics and definitions
               url: /nkfsosm_service_level_metrics_and_definitions.html
             - title: Billing
               url: /nkfsosm_kfs_billing.html

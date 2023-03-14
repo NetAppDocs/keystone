@@ -29,7 +29,7 @@ To view the details, perform the following steps:
 The details of the subscriptions, usage charts for each service level, and volume details are displayed in the different tabs on the *Keystone Subscriptions* screen.
 
 [NOTE]
-Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, up to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as `0` or `No Usage`. For other usage metrics, see link:../concepts/metrics.html#metrics-measurement[Metrics measurement]. For information about different capacities used in Keystone, see link:../concepts/supported-storage-capacity.html[Supported storage capacities].
+Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, up to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as `0` or `No Usage`. For other usage metrics, see link:/nkfsosm_service_level_metrics_and_definitions.html[Service level metrics and definitions]. For information about different capacities used in Keystone, see link:/nkfsosm_keystone_service_capacity_definitions.html[Flex Subscription service capacity definitions].
 
 == View subscription details
 You can view all the subscriptions for an account name in the *Subscription Details* tab.
@@ -47,6 +47,9 @@ For each subscription number, you can see the following information:
 * image:aiq-ks-time-icon.png[]: Clicking this icon opens the *Subscription Time Series* tab where you can see the historical usage data for each service level included in this subscription
 
 You can see more details by clicking the downward arrow for a subscription record. Details, such as the service level name, committed, consumed, available capacities, and current and accrued burst usage are displayed in TiB. Specific service levels that record higher consumption are highlighted. Any warnings and alerts generated for your volumes are also displayed.
+
+For information about your Keystone storage services and the relevant service levels applicable, see link:/nkfsosm_performance.html[Service levels].
+
 
 You can refer to the following usage indicators to check the usage status of each subscription:
 
@@ -154,7 +157,7 @@ Alternately, you can click the image:aiq-ks-time-icon.png[] icon against an ONTA
 You can view and compare the performance metrics in the following sections based on the combination of the subscription number, volume name, and the date range selected. The details are displayed as per service level assigned to the volume. You can see the cluster name and volume type, that is, the read and write permissions assigned to the volume. Any warning message associated with the volume is also displayed.
 
 [NOTE]
-The retrieved details are based on the service level objective for each service level. For example, the peak IOPS, maximum throughput, target latency, and other metrics are determined by the individual settings for the service level. For more information about the settings, see link:nkfsosm_performance.html[Service levels]. 
+The retrieved details are based on the service level objective for each service level. For example, the peak IOPS, maximum throughput, target latency, and other metrics are determined by the individual settings for the service level. For more information about the settings, see link:/nkfsosm_performance.html[Service levels]. 
 
 The performance data displayed on the horizontal graph is averaged out every 5 minutes and arranged as per the date range of the query. You can scroll across the graphs and hover your mouse over specific data points to drill further down into the collected data. You can view the _provisional data_ when the exact usage data is unavailable at that point and is substituted by the data available at the previous data collection point.
 
@@ -204,8 +207,8 @@ The alerts can be of two types:
 * *Information*: For issues, such as your subscriptions nearing an end, you can see information alerts. Hover your cursor over the information icon to learn more about the issue.
 * *Warning*: Issues, such as non-compliance, are displayed as warnings. For example, if there are volumes within your managed clusters that do not have adaptive QoS (AQoS) policies attached, you can see a warning message. You can click the link on the warning message to see the list of the non-compliant volumes in the *System Details* tab.
 +
-For information about AQoS policies, see link:../concepts/qos.html[Adaptive QoS].
+For information about AQoS policies, see link:/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies[Billing and adaptive QoS policies].
 
 image:alert-aiq.png[]
 
-Contact NetApp support for more information on these caution and warning messages. For information, see link:../concepts/gssc.html[Generating service requests].
+Contact NetApp support for more information on these caution and warning messages. For information, see link:/sewebiug_raise_a_service_request.html[Raise a service request].
