@@ -25,6 +25,7 @@ The interval of metrics data collection from your site is 5 minutes.
 As a customer, if you have subscribed to the Flex Subscription services, you can view the following information on Digital Advisor: 
 
 * *Keystone Flex Subscription* widget: If you have logged in to Digital Advisor, you can see the *Keystone Flex Subscription* widget that summarizes the capacity usage against your purchased Flex Subscription services.
-* If you click *View Details* on the widget, you can see the *Keystone - Capacity Utilization* dashboard. The *Keystone - Capacity Utilization* dashboard provides further breakdown and analysis of the capacity and usage data as per the services subscribed, for example, the service levels, data protection, and advanced data protection services. The dashboard also displays the consumed, committed, and burst capacity usage graphs for the last 1, 7, and 30 days, with the mean accrual burst calculated and split over your current billing period.
 
 For more information, see link:https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html[View capacity utilization with NetApp Keystone Flex Subscription].
+
+For information about the *Keystone Subscriptions* tab, see _Digital Advisor dashboard and reporting for Flex Subscription_.
