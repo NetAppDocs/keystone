@@ -77,4 +77,4 @@ Depending the amount of capacity requested, a determination is made whether the 
 Yes, workloads can be moved between tiers, provided the user has subscribed to the tier the workload is moving to. However, we do not recommend moving from a higher tier to a lower tier because it can cause a performance degradation. The process is achieved by simply editing the file share and changing the service level setting.
 
 *What software version (for example, ONTAP) is installed as default?*
-Depending on the service tier subscribed (for example, ONTAP with File and Block services, SANtricity for Block, and StorageGrid for Object) the support team installs the latest stable release with no security or feature issues.
+Depending on the service tier subscribed (for example, ONTAP with File and Block services, SANtricity for Block, and StorageGRID for Object) the support team installs the latest stable release with no security or feature issues.

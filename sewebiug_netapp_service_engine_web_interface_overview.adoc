@@ -81,7 +81,7 @@ Occurs when there is a change to storage resource (file server, files hare, bloc
 * *Imported*	Objects provisioned outside of the NetApp Service Engine are imported with this status when they do not fulfil the criteria of NetApp Keystone Flex Subscription (Flex Subscription).
 +
 [NOTE]
-This status typically implies that no QoS policy is applied on the object and therefore it cannot be managed by NetApp Service Engine as a part of your Flex Subscription. You can modify the object (through the edit pen) and assign an appropriate Service Level. This changes the status of that object to operational.
+This status typically implies that no QoS policy is applied on the object and therefore it cannot be managed by NetApp Service Engine as a part of your Flex Subscription. You can modify the object (through the edit pen) and assign an appropriate service level. This changes the status of that object to operational.
 +
 
 * *Non-Standard.*	Objects provisioned outside of the NetApp Service Engine are imported with this status when they do not fulfil the criteria of NetApp Keystone Flex Subscription (Flex Subscription).
