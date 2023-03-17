@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, level, metrics, definitions,
 summary: Keystone service level metrics and definitions
 ---
 
-= Service Level metrics and definitions
+= Service level metrics and definitions
 :hardbreaks:
 :nofooter:
 :icons: font
