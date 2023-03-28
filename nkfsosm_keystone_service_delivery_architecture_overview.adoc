@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, delivery, architecture, overview,
 summary: Service delivery architecture overview
 ---
 
-= Flex Subscription infrastructure
+= Keystone infrastructure
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,20 +19,20 @@ summary: Service delivery architecture overview
 //
 
 [.lead]
-This section describes the NetApp Keystone Flex Subscription (Flex Subscription) infrastructure architecture and management application for the NetApp and customer-operated environments.
+This section describes the NetApp Keystone infrastructure architecture and management application for the NetApp and customer-operated environments.
 
-Flex Subscription infrastructure architecture, design, choice of technology, and component products reside solely with NetApp. NetApp reserves the rights to take the following actions:
+Keystone infrastructure architecture, design, choice of technology, and component products reside solely with NetApp. NetApp reserves the rights to take the following actions:
 
 * Select, substitute, or repurpose products.
 * Refresh products with new technology when deemed appropriate.
 * Increase or decrease capacity of the products to meet service requirements.
 * Modify architecture, technology, and/or products to meet service requirements.
 
-The Flex Subscription infrastructure includes multiple components:
+The Keystone infrastructure includes multiple components:
 
 * User interface (web portal) of NetApp Service Engine.
 * NetApp Service Engine APIs for integration.
-* The Flex Subscription infrastructure that includes storage controllers
+* The Keystone infrastructure that includes storage controllers
 * Tools to manage and operate the service such as OpsRamp, Active IQ, and Active IQ Unified Manager.
 
 For more information about NetApp Keystone integration with Active IQ, see link:https://docs.netapp.com/us-en/active-iq/[Active IQ Digital Advisor Documentation]
@@ -41,7 +41,7 @@ image:nkfsosm_image8.png[Error: Missing Graphic Image]
 
 == NetApp Service Engine
 
-You can use the NetApp Service Engine web portal to manage and monitor your Flex Subscription service in a NetApp, partner, or customer-operated model. The portal consists of the following features:
+You can use the NetApp Service Engine web portal to manage and monitor your Keystone service in a NetApp, partner, or customer-operated model. The portal consists of the following features:
 
 * A graphical interface (NetApp Service Engine web interface) that supports monitoring and simple storage provisioning.
 * A set of NetApp Service Engine REST APIs that allow more advanced setup and storage management actions.

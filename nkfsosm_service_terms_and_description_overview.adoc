@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, terms, description, overview,
 summary: Keystone service terms and description overview
 ---
 
-= Flex Subscription service terms and descriptions
+= Keystone service terms and descriptions
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,9 +14,9 @@ summary: Keystone service terms and description overview
 
 
 [.lead]
-NetApp Keystone Flex Subscription (Flex Subscription) is guided by the following service terms and descriptions.
+NetApp Keystone is guided by the following service terms and descriptions.
 
-* Flex Subscription is available for a minimum of one year and up to three years. After the initial term, the service is renewable on an annual basis. Capacity can be increased in increments as small as 1 TiB.
+* Keystone services are available for a minimum of one year and up to three years. After the initial term, the service is renewable on an annual basis. Capacity can be increased in increments as small as 1 TiB.
 * The minimum capacity is 100 TiB per site, and each site can have one or more clusters to meet the minimum capacity requirement. In a partner-operated model, subscriptions with flexible minimums are created for a customer, per site and across service levels.
 * The 100 TiB capacity can be one single service level or a combination of levels.
 * Tenant subscriptions are limited to service levels that partners are subscribed to.

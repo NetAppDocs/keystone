@@ -8,7 +8,7 @@ settings:
     harmony_enabled: true
 sidebar:
   entries:
-    - title: NetApp Keystone Flex Subscription
+    - title: NetApp Keystone services
       url: /index.html
       entries:
         - title: Service terms and description
@@ -16,7 +16,7 @@ sidebar:
           entries:
             - title: Service capacity definitions
               url: /nkfsosm_keystone_service_capacity_definitions.html
-            - title: Service levels in Flex Subscription
+            - title: Service levels in Keystone
               url: /nkfsosm_performance.html
             - title: Service level metrics and definitions
               url: /nkfsosm_service_level_metrics_and_definitions.html
@@ -30,13 +30,13 @@ sidebar:
               url: /nkfsosm_nrd.html
             - title: US Citizen Support
               url: /nkfsosm_uscs.html
-            - title: Flex Subscription and Equinix
+            - title: Keystone and Equinix
               url: /nkfsosm_equinix.html
         - title: Operational model and responsibilities
           url: /nkfsosm_overview.html
         - title: Tenancy and multi-tenancy
           url: /nkfsosm_tenancy_overview.html
-        - title: Flex Subscription infrastructure
+        - title: Keystone infrastructure
           url: /nkfsosm_keystone_service_delivery_architecture_overview.html
         - title: Site requirements
           url: /nkfsosm_site_requirements.html
@@ -55,10 +55,10 @@ sidebar:
           url: /rn_fixed_issues.html
         - title: Known issues
           url: /rn_known_issues.html
-    - title: Flex Subscription FAQ
+    - title: Keystone subscriptions FAQ
       url: /nkfsfaq_overview.html
       entries:
-        - title: Flex Subscription
+        - title: Keystone subscriptions
           url: /nkfsfaq_keystone_subscription.html
         - title: Service offer details
           url: /nkfsfaq_service_offer_details.html
@@ -83,7 +83,7 @@ sidebar:
               url: /sewebiug_select_tenant.html
             - title: View NetApp Service Engine Web Interface
               url: /sewebiug_netapp_service_engine_web_interface_overview.html
-        - title: View Flex Subscription Dashboard
+        - title: View Keystone subscriptions DSashboard
           url: /sewebiug_dashboard.html
         - title: View billing
           url: /sewebiug_billing.html

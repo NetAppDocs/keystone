@@ -5,7 +5,7 @@ keywords: netapp, keystone, service, offer, details,
 summary: Service offer details
 ---
 
-= Flex Subscription service offer details
+= Keystone services offering
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,15 +13,15 @@ summary: Service offer details
 :imagesdir: ./media/
 
 [.lead]
-The following questions give answers to your frequent queries about NetApp Keystone Flex Subscription service offering.
+The following questions give answers to your frequent queries about NetApp Keystone Keystone service offering.
 
 *What is the minimum committed capacity?*
 
-The minimum committed capacity for a NetApp Keystone Flex Subscription (Flex Subscription) is 100 TiB, per site across one or more service tiers.
+The minimum committed capacity for a NetApp Keystone service is 100 TiB, per site across one or more service tiers.
 
-*What is the typical length of term of a Flex Subscription agreement?*
+*What is the typical length of term of a Keystone services agreement?*
 
-Flex Subscription offers 12, 24, and 36-month term periods.
+Keystone services offers 12, 24, and 36-month term periods.
 
 *How can I access the storage?*
 
@@ -54,7 +54,7 @@ Yes, new subscriptions can have new terms separate from any existing subscriptio
 
 *Can tenant subscription terms extend beyond the subscription term of the partner?*
 
-Tenant subscriptions can extend beyond the current Flex Subscription term of the partner. A warning will be displayed when subscriptions are created and also in usage reports.
+Tenant subscriptions can extend beyond the current Keystone services term of the partner. A warning will be displayed when subscriptions are created and also in usage reports.
 
 *Can I mix multiple subscriptions on the same ONTAP cluster?*
 
