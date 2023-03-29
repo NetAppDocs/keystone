@@ -35,7 +35,7 @@ The following table lists the role-based access descriptions.
 |NetApp admin (read)
 |Read-only access across all components.
 |NetApp admin
-|Full access and permissions to perform all functions in NetApp Service Engine web portal for managing NetApp Keystone Flex Subscription, and all activities for partner and tenant administration.
+|Full access and permissions to perform all functions in NetApp Service Engine web portal for managing NetApp Keystone subscription services, and all activities for partner and tenant administration.
 |===
 
 === Log in with user name and password
@@ -70,7 +70,7 @@ To log in with NetApp SSO, you need:
 . Select NetApp SSO.
 . On the SSO login page, enter your user name and password and click *Sign In*.
 +
-After the successful login the NetApp Service Engine web interface loads, the Flex Subscription dashboard is displayed. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
+After the successful login the NetApp Service Engine web interface loads, the Keystone subscription services dashboard is displayed. For an overview of the GUI, see link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview[NetApp Service Engine Web Interface Overview].
 
 === Log out of the NetApp Service Engine web interface
 

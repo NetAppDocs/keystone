@@ -12,7 +12,7 @@ summary: Welcome to the Keystone documentation portal.
 :linkattrs:
 :imagesdir: ./media/
 
-NetApp Keystone is a part of the NetApp Keystone service offering. NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives to enable the on-ramp to cloud journey. NetApp Keystone offers a seamless hybrid cloud experience with storage services that span on your premises and in the cloud.
+NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives to enable the on-ramp to cloud journey. NetApp Keystone offers a seamless hybrid cloud experience with storage services that span on your premises and in the cloud.
 For more information about NetApp Keystone, see link:https://www.netapp.com/services/subscriptions/keystone/[NetApp Keystone]
 
 For more information about NetApp Keystone, see https://www.netapp.com/services/keystone/[NetApp Keystone].

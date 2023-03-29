@@ -17,7 +17,7 @@ The following questions give answers to your frequent queries about NetApp Keyst
 
 *What is the minimum committed capacity?*
 
-The minimum committed capacity for a NetApp Keystone service is 100 TiB, per site across one or more service tiers.
+The minimum committed capacity for a NetApp Keystone subscription service is 100 TiB, per site across one or more service tiers.
 
 *What is the typical length of term of a Keystone services agreement?*
 

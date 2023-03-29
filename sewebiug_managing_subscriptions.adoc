@@ -13,13 +13,13 @@ summary: Keystone managing subscriptions
 :imagesdir: ./media/
 
 [.lead]
-Managing subscriptions includes assigning service levels to your NetApp Keystone Flex Subscription (Flex Subscription) and tenant subscription services or allocating and changing capacities to the service levels by using the NetApp Service Engine interface.
+Managing subscriptions includes assigning service levels to your NetApp Keystone subscription and tenant subscription services or allocating and changing capacities to the service levels by using the NetApp Service Engine interface.
 
-The Flex Subscriptions represented by the relationship between the service providers/partners and NetApp and the tenant subscriptions represent the relationship between the service provider and their tenants and subtenants (end customers). When NetApp admins or GSSC creates Flex Subscription services for partners and tenants, it implies that the storage allocation has been accomplished. However, unless the service levels are created and the corresponding capacity allocation is complete, storage cannot be consumed by subtenants or end customers. Partner admins can manage storage for their Flex Subscription and tenant subscriptions. Tenant admins can only view the tenant subscription details and services for their own tenancy.
+The subscription services represented by the relationship between the service providers/partners and NetApp and the tenant subscriptions represent the relationship between the service provider and their tenants and subtenants (end customers). When NetApp admins or GSSC creates Keystone subscription services services for partners and tenants, it implies that the storage allocation has been accomplished. However, unless the service levels are created and the corresponding capacity allocation is complete, storage cannot be consumed by subtenants or end customers. Partner admins can manage storage for their Keystone subscription services and tenant subscriptions. Tenant admins can only view the tenant subscription details and services for their own tenancy.
 
-== Manage Flex Subscription (Keystone Subscriptions)
+== Manage Keystone subscriptions
 
-If you are a partner admin, you can view and manage your Flex Subscription services from *SUBSCRIPTIONS* > *Keystone Subscriptions*. *Keystone subscriptions* represent the Flex Subscription services created by NetApp admins for partners. Partner admins can view their Flex Subscription services and create service requests to:
+If you are a partner admin, you can view and manage your Keystone subscription services from *SUBSCRIPTIONS* > *Keystone Subscriptions*. *Keystone subscriptions* represent the Keystone subscription services created by NetApp admins for partners. Partner admins can view their Keystone subscription services and create service requests to:
 
 * Increase the capacity of a subscription
 * Add a service to a subscription (assign service level and capacity)

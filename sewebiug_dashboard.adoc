@@ -5,7 +5,7 @@ keywords: netapp, keystone, view, dashboard, capacity utilization, monthly charg
 summary: Dashboard view
 ---
 
-= View Flex Subscription Dashboard
+= View Keystone Dashboard on NetApp Service Engine
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,7 +17,7 @@ The Dashboard provides a quick overview of your NetApp Keystone storage subscrip
 
 The Dashboard displays important information across the following widgets, which can be clicked through for in-depth analysis:
 
-* *Capacity Utilization:* Displays your capacity utilization for your subscribed services, for example, Keystone Flex Subscription, Keystone Flex Utility, and Cloud Services. Clicking a bar graph takes you to the broken-up utilization charts for each service level. You can view the unused, consumed, and burst usage for each service level and your add-on services, such as data protection and advanced protection. It helps you identify if you need to add more capacity to your subscriptions, or whether to opt for a different service level.
+* *Capacity Utilization:* Displays your capacity utilization for your subscribed services, for example, Keystone subscription services and Cloud Services. Clicking a bar graph takes you to the broken-up utilization charts for each service level. You can view the unused, consumed, and burst usage for each service level and your add-on services, such as data protection and advanced protection. It helps you identify if you need to add more capacity to your subscriptions, or whether to opt for a different service level.
 * *Costs to Date (Billing):* This section is available based on your partner-administrator rights. It displays the aggregated monthly charges for all your subscriptions. You can view the billing details for the last four months. On hovering your cursor over the chart, you can view the charges split up as per your committed and burst usage. If you have multiple subscriptions for a subscribed service, on clicking the bar chart for a month, the subscription list is displayed on the Billing screen. For more information on billing, see link:sewebiug_billing.html[View billing].
 * *Alerts:* Displays the summary of the most recent alerts, such as the status, message, and when it was created. For more information on alerts, see link:sewebiug_alerts.html[Create and manage alerts].
 * *Service Requests:* Displays the summary of the most recent service requests, sorted by priority and when they were created. For more information on service requests, see link:sewebiug_raise_a_service_request.html[Raise a service request].

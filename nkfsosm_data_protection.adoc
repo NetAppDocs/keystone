@@ -19,7 +19,7 @@ summary: Data protection
 //
 
 [.lead]
-NetApp Keystone services data protection service can back up your data and is able to recover it if required. The available data protection services are:
+NetApp Keystone data protection service can back up your data and is able to recover it if required. The available data protection services are:
 
 * Snapshots of disks and shares
 * Backups of disks and shares (requires data protection service as part of the subscription)

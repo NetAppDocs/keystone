@@ -50,7 +50,7 @@ image:seapiref_image1.png[Error: Missing Graphic Image]
 
 A single NetApp Service Engine instance can support one or more tenants. NetApp Service Engine uses the concepts of tenant and subtenant as hierarchical entities that own or manage the storage service.
 
-A tenant can be a customer, partner, or a billing entity. A tenant holds the subscription (or multiple subscriptions) to the Flex Subscription service.
+A tenant can be a customer, partner, or a billing entity. A tenant holds the subscription (or multiple subscriptions) to the Keystone service.
 
 A subtenant is an entity wholly within the tenant. It can be used for showback, security separation, and so on.
 
