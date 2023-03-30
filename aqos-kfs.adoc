@@ -1,0 +1,39 @@
+---
+sidebar: sidebar
+permalink: aqos-kfs.html
+keywords: aqos, qos, adaptive quality of service, quality of service
+summary: Keystone adaptive quality of service (AQoS)
+---
+
+= Adaptive Quality of Service in Keystone
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The Active IQ Digital Advisor (Digital Advisor) dashboard provides you with the capability of monitoring the usage pertaining to your NetApp Keystone subscription services and generating reports. On subscribing to Keystone services, you can view the details of your subscription and usage on the *Keystone Subscriptions* widget on the Digital Advisor dashboard.
+
+[NOTE]
+The information available here applies to both ONTAP and StorageGRID. Exceptions have been pointed out in the relevant sections.
+
+For information about the Keystone Digital Advisor widget, see https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html[View capacity utilization with NetApp Keystone Subscription^].
+
+To view the details, perform the following steps:
+
+|===
+|*Policy name* | *Extreme* and *Extreme Tiering* |*Premium* and *Premium Tiering* |*Standard* |*Value*
+|*Expected IOPS* |6144 |2048 |128 |64
+|*Expected IOPS Allocation* 
+4+| Allocated space
+|*Peak IOPS* |12288 |4096 |512 |128
+|*Peak IOPS Allocation*
+4+| Allocated space
+|*Block Size*
+4+| 32K
+|*Absolute Min IOPS/Vol* |1000 |500 |75 |75
+
+
+
+|===

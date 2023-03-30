@@ -87,7 +87,9 @@ The following colors in the bar charts indicate the consumed capacity as defined
 ** Amber: 80% - 100%.
 ** Red: Burst usage (100% of the committed capacity to the agreed burst limit)
 ** Purple: Above the burst limit or `Above Limit`.
-** Grey: _Provisional usage_ - usage recorded when the exact data for the time period is unavailable and is substituted by the data available at the previous data collection point.
++
+[NOTE]
+On hovering the mouse over a bar chart, you might view the  _Provisional usage_ data. This is the usage recorded when the exact data for the time period is unavailable and is substituted by the data available at the previous data collection point. 
 * *Current Consumed*: Indicator for the consumed capacity (in TiB) defined for the service level. This field uses specific colors for usage:
 ** Grey: None.
 ** Green: Within 80% of the committed capacity.

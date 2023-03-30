@@ -5,7 +5,7 @@ keywords: netapp, keystone, performance, service levels
 summary: Keystone performance
 ---
 
-= Service levels
+= Performance service levels in Keystone
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,11 +19,9 @@ summary: Keystone performance
 //
 
 [.lead]
-NetApp Keystone offers capacity and capacity at predefined performance service levels (service levels). Each service level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
+NetApp Keystone offers capacity and capacity at predefined performance service levels (service levels). Subject to the terms of the service description and the applicable Keystone order, service levels are defined as the ratio of the maximum IOPS (read-write input/output operations per second) per tebibyte (TiB) of the allocated space for a volume at average latency.  
 
-Each volume managed by the Keystone services is associated with a service level. All I/O operations and all used storage used on the respective volume are factored into the volume’s I/O density calculation.
-
-The below table defines the service levels.
+Each volume managed by the Keystone services is associated with a service level. All I/O operations and all used storage used on the respective volume are factored into the volume's I/O density calculation, that is IOPS per TiB per volume.
 
 == Service levels for difference storage types
 
@@ -32,16 +30,19 @@ The service levels for file, block, and object storage are listed here.
 I/O density calculations at the volume level are reported to show peak I/O density during the prior week. The peak performance is determined on an hourly time interval. I/O density reports by volume are generated monthly to gauge adherence to the respective service levels.
 
 === File service
+
 *Supported protocols*: NFS, CIFS, iSCSI, and FC
 
 |===
-|*Service level* |*Extreme* |*Premium* |*Standard* |*Value*
+|*Service level* |*Extreme* and *Extreme without Tiering*
+(Hot, non-tiered data only) |*Premium* and *Premium without Tiering*
+(Hot, non-tiered data only) |*Standard* |*Value*
 |*Workload type* |Analytics, databases |VDI, virtualization apps, Software dev
 |File shares, web servers |Backup
-|*Target IOPS/TiB* |6,144 |2,048 |128 |N/A
-|*Max IOPS/TiB* |12,288 |4,096 |512 |N/A
-|*Max throughput MBps (32KB/IOP)* |384 |128 |16 |N/A
-|*Latency* |<1 ms |<2 ms |<17 ms |N/A
+|*Target IOPS/logical TiB allocated per volume* |6,144 |2,048 |128 |N/A
+|*Maximum IOPS/ logical TiB allocated per volume* |12,288 |4,096 |512 |N/A
+|*Maximum MBps (throughput)/logical TiB allocated per volume* |384 |128 |16 |N/A
+|*Average Latency* |<1 ms |<2 ms |<17 ms |N/A
 .2+|*Minimum capacity*^1,2^
 4+|100 TiB^1^
 |15 TiB^2^ |25 TiB^2^ |50 TiB^2^ |50 TiB^2^
