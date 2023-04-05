@@ -13,14 +13,22 @@ summary: Keystone adaptive quality of service (AQoS)
 :imagesdir: ./media/
 
 [.lead]
-The Active IQ Digital Advisor (Digital Advisor) dashboard provides you with the capability of monitoring the usage pertaining to your NetApp Keystone subscription services and generating reports. On subscribing to Keystone services, you can view the details of your subscription and usage on the *Keystone Subscriptions* widget on the Digital Advisor dashboard.
+Storage quality of service (QoS) is a critical technology that ensures that applications obtain consistent and predictable performance. Without QoS, certain workloads like booting of multiple systems can take up entire resources for a period and affect other workloads. For information about QoS, see https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html[Guarantee throughput with QoS overview^].
+
+Applying QoS ensures that applications get consistent performance every time. NetApp ONTAP defines two parameters for QoS: ceilings- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-ceilings-qos-max[QoS Max^], and throughput floor- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-floors-qos-min[QoS Min^]. QoS Max represents the maximum number of IOPS or MBps or IOPS and MBps a workload can achieve. On the other hand, QoS Min guarantees that the throughput for a workload is not below a certain number of IOPS or MBps, or IOPS and MBps.
+
+== Adaptive QoS
+Adaptive QoS (AQoS) is used for Keystone services to maintain the ratio of IOPS to TBs/GBs as the size varies the QoS policy is automatically applied. For information about AQoS policies, see https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos[About adaptive QoS^].
+
+Keystone provides you with AQoS polices that you can set up once your cluster is in production. You should ensure that all your volumes are associated with the correct AQoS policies that are already created and available in your system. 
+
+An ONTAP volume becomes non-compliant if that does not have an AQoS policy applied. A volume without a QoS policy is the last on the list of priority for the system to provide any available input-output operations. However, if any input-output operations are available, then the volume could consume up to any or all available IOs.
 
 [NOTE]
-The information available here applies to both ONTAP and StorageGRID. Exceptions have been pointed out in the relevant sections.
+If you have not applied AQoS policies on your volumes correctly, those volumes will be measured and charged at the highest service level as per your subscription. This may result in unintended burst charges.
 
-For information about the Keystone Digital Advisor widget, see https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html[View capacity utilization with NetApp Keystone Subscription^].
-
-To view the details, perform the following steps:
+=== Adaptive QoS settings
+The Adaptive QoS (AQoS) settings vary with service levels.
 
 |===
 |*Policy name* | *Extreme* and *Extreme Tiering* |*Premium* and *Premium Tiering* |*Standard* |*Value*
@@ -33,7 +41,5 @@ To view the details, perform the following steps:
 |*Block Size*
 4+| 32K
 |*Absolute Min IOPS/Vol* |1000 |500 |75 |75
-
-
 
 |===
