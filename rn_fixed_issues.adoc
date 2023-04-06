@@ -13,7 +13,7 @@ summary: fixed issues in NetApp Service Engine
 :imagesdir: ./media/
 
 [.lead]
-The following issues that were found in a previous release of NetApp Service Engine have been fixed for you to successfully use your NetApp Keystone Flex Subscription services.
+The following issues that were found in a previous release of NetApp Service Engine have been fixed for you to successfully use your NetApp Keystone services.
 
 [cols="3*",options="header"]
 |===

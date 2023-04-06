@@ -4,7 +4,7 @@ permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html
 keywords: netapp, keystone, global, services, support, center, gssc,
 summary: NetApp Global Services and Support Center (GSSC)
 ---
-= Flex Subscription Services Operations
+= Keystone Services Operations
 
 :hardbreaks:
 :nofooter:
@@ -19,13 +19,13 @@ summary: NetApp Global Services and Support Center (GSSC)
 //
 
 [.lead]
-NetApp Keystone Flex Subscription Services are run by leveraging the NetApp Global Services and Support Center (GSSC), NetApp Keystone Success Manager, and NetApp Keystone Service Delivery Manager.
+NetApp Keystone Keystone Services are run by leveraging the NetApp Global Services and Support Center (GSSC), NetApp Keystone Success Manager, and NetApp Keystone Service Delivery Manager.
 
 == NetApp Global Services and Support Center (GSSC)
 NetApp provides operational services remotely to NetApp Keystone customers. These services encompass a range of operational disciplines across storage management activities, including asset and configuration management, capacity and performance management, change management, event, incident and problem management, service request fulfillment, and reporting. NetApp will demonstrate a state of control and supporting evidence available as required.
 
 == Additional Information and Support Contact
-The NetApp Global Services and Support Center (GSSC) team primarily support the services to NetApp Keystone Flex Subscription customers.
+The NetApp Global Services and Support Center (GSSC) team primarily support the services to NetApp Keystone customers.
 
 Raise a ticket directly from the NetApp Service Engine portal (*Support > Service Requests*) with the appropriate details of the issue for assistance.
 

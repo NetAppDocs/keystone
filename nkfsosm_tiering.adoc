@@ -13,7 +13,7 @@ summary: Keystone tiering
 :imagesdir: ./media/
 
 [.lead]
-NetApp Keystone Flex Subscription service includes a tiering capability that identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed by NetApp.
+NetApp Keystone service includes a tiering capability that identifies less frequently used data and tiers it to a cold storage that is owned, deployed, and managed by NetApp.
 
 The tiering capability leverages the NetApp FabricPool technology that enables automated tiering of data to low-cost object storage tiers either on or off premises. With this capability, infrequently accessed data is automatically tiered to a lower cost storage either on premises or in the cloud, based on the services agreed upon.
 

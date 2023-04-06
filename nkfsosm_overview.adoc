@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: nkfsosm_overview.html
 keywords: netapp, keystone, kfs, overview,
-summary: NetApp Flex Subscription overview
+summary: NetApp Keystone overview
 ---
 
 = Operational model, roles, and responsibilities
@@ -19,10 +19,10 @@ summary: NetApp Flex Subscription overview
 //
 
 [.lead]
-NetApp Keystone Flex Subscription (Flex Subscription) is based on the model of tenancy.
+NetApp Keystone is based on the model of tenancy.
 
 
-Flex Subscription offers three operational models for service delivery.
+Keystone offers three operational models for service delivery.
 
 * *NetApp-operated model* allows the customer to subscribe to the offered services (according to the selected performance tiers and storage service types) and selects the NetApp-operated option at an extra cost. NetApp defines the architecture and products, installs at the customer premises, and manages the day-to-day infrastructure management operations by using NetApp storage and IT resources. Available storage service types are file, block, and object. Storage subscriptions based on Cloud Volumes Service for GCP and AWS can also be managed through your NetApp Keystone instance.
 * *Partner-operated* *model* is similar to the NetApp-operated model, but with the partner operating the service for their end customers. In this model, the partner is the referenced contracted party. Tenants are customers of partners or service providers and have no billing relationship with NetApp. A partner-operated model usually has a multi-tenant environment where tenants and end customers/subtenants have their own subscriptions that are billed by the service provider/partner. The partner admin performs the administrative tasks for all the tenants. The functions that an admin can perform in a partner-operated model are different from that of an admin in a NetApp-operated model.

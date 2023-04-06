@@ -31,7 +31,7 @@ Place a service request for:
 * Backup restoration
 * Disaster recovery failover
 * A technical issue with NetApp Service Engine
-* Non-standard volumes: The volumes that are imported into your Flex Subscription do share the same standard as the existing disks and file shares on NetApp Service Engine. After import, these disks and file shares are categorized with `Non-Standard` status. You raise a service request for changing their status to a standard one.
+* Non-standard volumes: The volumes that are imported into your Keystone subscription services do share the same standard as the existing disks and file shares on NetApp Service Engine. After import, these disks and file shares are categorized with `Non-Standard` status. You raise a service request for changing their status to a standard one.
 * Any other issue that is not covered in this list.
 
 The other topics in this section discuss:
