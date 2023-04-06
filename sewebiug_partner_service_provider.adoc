@@ -19,22 +19,22 @@ Based on your role of a service provider or partner (used interchangeably) or a 
 
 As a service provider admin in a multi-tenant environment, you can perform the functions of provisioning, reporting, billing, and managing customers having their own subscriptions, through the NetApp Service Engine web UI. You can perform the following functions:
 
-* View the storage subscribed and provisioned as a part of their Flex Subscription service.
+* View the storage subscribed and provisioned as a part of their Keystone subscription service.
 +
 [NOTE]
-As a service provide, you can sell more capacity to your customers than purchased from NetApp (oversubscription). Tenant subscriptions can extend beyond the current Flex Subscription period, however a warning is displayed at subscription creation time and in dashboards/reports.
+As a service provide, you can sell more capacity to your customers than purchased from NetApp (oversubscription). Tenant subscriptions can extend beyond the current Keystone subscription period, however a warning is displayed at subscription creation time and in dashboards/reports.
 
 * Create, view, modify, and delete tenants, subtenants, and users.
 * View zones and regions for your subscriptions.
-* Manage and host multiple tenants within the Flex Subscription service: Create and manage tenant subscriptions, and view your own Flex Subscription details.
+* Manage and host multiple tenants within the Keystone subscription service: Create and manage tenant subscriptions, and view your own Keystone subscription details.
 +
 [NOTE]
-The tenant subscriptions can be created based on the corresponding zones and Keystone Flex Subscriptions. They are created as per the service levels provided under the subscribed capacity of your Flex Subscription.
+The tenant subscriptions can be created based on the corresponding zones and Keystone Keystone subscriptions. They are created as per the service levels provided under the subscribed capacity of your Keystone subscription.
 
 * Create file servers or block stores and initialize block, file, and object storage as you are aware of the network requirements for provisioning each storage type for your tenants.
 * You can also create and manage subnets for your tenants,
-* View file shares, disks, and buckets created as a part of your Flex Subscription. Also create and manage object storage groups and users.
-* Create reports for consumption against your NetApp Keystone Flex Subscription, and tenants subscriptions, and usage for all tenants, for using it in the respective billing and rating systems.
+* View file shares, disks, and buckets created as a part of your Keystone subscription. Also create and manage object storage groups and users.
+* Create reports for consumption against your Keystone subscription, and tenants subscriptions, and usage for all tenants, for using it in the respective billing and rating systems.
 * View the billing and reporting for all the tenants and customers and for only the storage subscribed to or provisioned.
 * View and manage service requests raised by customers within your own (partner/service provider's) service request tool (integrated with OpsRamp / GSSC).
 

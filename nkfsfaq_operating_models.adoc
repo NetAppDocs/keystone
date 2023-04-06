@@ -13,7 +13,7 @@ summary: Operating Models
 :imagesdir: ./media/
 
 [.lead]
-There are three operational models in Flex Subscriptions. These FAQs are related to those operational models.
+There are three operational models in Keystone services. These FAQs are related to those operational models.
 
 *What are the different operating models and who is responsible for the major activities?*
 

@@ -30,6 +30,6 @@ To begin your activities on this portal:
 ** Log in with a user name and password
 ** Log in with NetApp SSO
 For information, see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html[Log in to the NetApp Service Engine web interface]
-* Select tenant. The dashboard is displayed. For information, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard]
+* Select tenant. The dashboard is displayed. For information, see link:sewebiug_dashboard.html[View Keystone Dashboard]
 
 For NetApp Service Engine web interface overview, see link:sewebiug_netapp_service_engine_web_interface_overview.html[NetApp Service Engine web interface overview]

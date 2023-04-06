@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: nkfsosm_equinix.html
 keywords: netapp, keystone, Equinix
-summary: Keystone Flex Subscription and Equinix
+summary: Keystone Keystone services and Equinix
 ---
 
-= Flex Subscription powered by Equinix
+= Keystone services powered by Equinix
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,8 +13,8 @@ summary: Keystone Flex Subscription and Equinix
 :imagesdir: ./media/
 
 [.lead]
-NetApp has partnered with Equinix for hosting NetApp Keystone Flex Subscription (Flex Subscription) in an Equinix data center to ensure the delivery of a unified solution for you.
+NetApp has partnered with Equinix for hosting NetApp Keystone services in an Equinix data center to ensure the delivery of a unified solution for you.
 
-Flex Subscription powered by Equinix is unchanged from the standard Flex Subscription offering.
+Keystone services powered by Equinix is unchanged from the standard Keystone services offering.
 
-In addition to the standard Flex Subscription offering, you will need to select an Equinix datacenter to host your Flex Subscription equipment.
+In addition to the standard Keystone services offering, you will need to select an Equinix datacenter to host your Keystone equipment.

@@ -19,7 +19,7 @@ summary: Data protection
 //
 
 [.lead]
-NetApp Keystone Flex Subscription (Flex Subscription) data protection service can back up your data and is able to recover it if required. The available data protection services are:
+NetApp Keystone data protection service can back up your data and is able to recover it if required. The available data protection services are:
 
 * Snapshots of disks and shares
 * Backups of disks and shares (requires data protection service as part of the subscription)
@@ -51,4 +51,4 @@ Backup and disaster recovery services are available as add-on services, while sn
 ^1^Additional storage capacity to be subscribed
 
 [NOTE]
-Subscription to a basic Flex Subscription service does not automatically back up your data. You should subscribe to add-on data protection services and configure your system for data backup and disaster recovery services. If your storage system is not managed by Flex Subscription services, NetApp can still support protecting the data on your storage system and help in connecting it with your Flex Subscription services. However, NetApp is not responsible for any backup failures.
+Subscription to a basic Keystone service does not automatically back up your data. You should subscribe to add-on data protection services and configure your system for data backup and disaster recovery services. If your storage system is not managed by Keystone services, NetApp can still support protecting the data on your storage system and help in connecting it with your Keystone services. However, NetApp is not responsible for any backup failures.

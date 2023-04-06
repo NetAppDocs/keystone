@@ -22,7 +22,7 @@ The figure below is an example of the NetApp Service Engine web Interface. It co
 * *NetApp logo.* Click this at any time to return the display to the dashboard view.
 * *Tenant.* Displays the currently selected tenant. To change the tenant, see link:sewebiug_select_tenant.html[Select the tenant].
 * *Jobs.* Click to view the status of the most recent provisioning jobs. The icon changes color to display the configuration job status. For more information, see link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator[Jobs and job status indicator].
-* *User login.* Displays the name of the currently logged-in user. Click this icon to sign out. For more information, see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface[Log out of the NetApp Service Engine web interface].
+* *User login.* Displays the nKeystoneame of the currently logged-in user. Click this icon to sign out. For more information, see link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface[Log out of the NetApp Service Engine web interface].
 
 image:sewebiug_image9_dashboard1.png[NSE Dashboard-1]
 
@@ -30,7 +30,7 @@ image:sewebiug_image9_dashboard2.png[NSE Dashboard-2]
 
 == Dashboard view
 
-The Dashboard displays information about your NetApp Keystone storage subscriptions, such as the capacity used, billing against your usage, and recent alerts and service requests. It is the default view when you first log in to NetApp Service Engine. For more information on the Dashboard, see link:sewebiug_dashboard.html[View Flex Subscription Dashboard].
+The Dashboard displays information about your NetApp Keystone storage subscriptions, such as the capacity used, billing against your usage, and recent alerts and service requests. It is the default view when you first log in to NetApp Service Engine. For more information on the Dashboard, see link:sewebiug_dashboard.html[View Keystone Dashboard].
 
 === List view
 
@@ -78,16 +78,16 @@ Occurs when there is a change to storage resource (file server, files hare, bloc
 * *Operational.* Denotes that the storage resource has been provisioned/modified correctly and is available, online, and functional.
 * *Deleting.* Object is getting deleted and is being processed.
 * *Queued.*	Object is in queued state and is being processed.
-* *Imported*	Objects provisioned outside of the NetApp Service Engine are imported with this status when they do not fulfil the criteria of NetApp Keystone Flex Subscription (Flex Subscription).
+* *Imported*	Objects provisioned outside of the NetApp Service Engine are imported with this status when they do not fulfil the criteria of NetApp Keystone subscription.
 +
 [NOTE]
-This status typically implies that no QoS policy is applied on the object and therefore it cannot be managed by NetApp Service Engine as a part of your Flex Subscription. You can modify the object (through the edit pen) and assign an appropriate service level. This changes the status of that object to operational.
+This status typically implies that no QoS policy is applied on the object and therefore it cannot be managed by NetApp Service Engine as a part of your Keystone subscription. You can modify the object (through the edit pen) and assign an appropriate service level. This changes the status of that object to operational.
 +
 
-* *Non-Standard.*	Objects provisioned outside of the NetApp Service Engine are imported with this status when they do not fulfil the criteria of NetApp Keystone Flex Subscription (Flex Subscription).
+* *Non-Standard.*	Objects provisioned outside of the NetApp Service Engine are imported with this status when they do not fulfil the criteria of NetApp Keystone subscription.
 +
 [NOTE]
-This status typically implies that the object misses one or more criteria to be managed by NetApp Service Engine, as a part of your Flex Subscription. You can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] for them to be standardized and managed through the NetApp Service Engine portal and made operational by the support team.
+This status typically implies that the object misses one or more criteria to be managed by NetApp Service Engine, as a part of your Keystone subscription. You can link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[raise a service request] for them to be standardized and managed through the NetApp Service Engine portal and made operational by the support team.
 +
 
 * *Contact support.* This state occurs when the provisioning or modification task fails to fully complete. For items in this state, raise a Support Request to address the issue.
