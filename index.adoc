@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: index.html
 keywords: netapp, keystone, service, offering,
-summary: Welcome to the Keystone documentation portal.
+summary: NetApp Keystone is a pay-as-you-grow, storage-as-a-service offering for both on-premises and cloud data storage services under one subscription with the ability to reallocate storage spend across clouds.
 ---
 
 = Documentation for NetApp Keystone 
