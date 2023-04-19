@@ -19,42 +19,51 @@ summary: Keystone performances service level
 //
 
 [.lead]
-NetApp Keystone offers capacity at predefined performance service levels (service levels).
+Keystone STaaS offers data storage capacity at pre-defined performance service levels (service levels) on a subscription basis. Each volume managed by the Keystone services is associated with a service level.
 
-Each service level is defined by its I/O density, which is the ratio of performance (input/output operations per second [IOPS]) and used storage (TiB of stored data) which is IOPS/TiB.
+Each service level is defined by its I/O density, that is IOPS/TiB/volume. This is the ratio of performance (input/output operations per second [IOPS]) and allocated storage (TiB of data) which is IOPS/TiB at average latency per volume.
 
-Each volume managed by the Keystone services is associated with a service level. All I/O operations and all used storage used on the respective volume are factored into the volume's I/O density calculation.
+All I/O operations and all allocated storage on the respective volume are factored into the volume's I/O density calculation.
 
-The below table defines the service levels.
-
-== Service levels for difference storage types
-
-The service levels for file, block, and object storage are listed here.
+The service levels for the supported storage: file, block, object, and cloud services are listed here.
 
 I/O density calculations at the volume level are reported to show peak I/O density during the prior week. The peak performance is determined on an hourly time interval. I/O density reports by volume are generated monthly to gauge adherence to the respective service levels.
 
-=== File service
+The service levels for file, block, and object storage are listed here.
+
+== Service levels for file storage
 *Supported protocols*: NFS, CIFS, iSCSI, and FC
 
 |===
 |*Service level* |*Extreme* |*Premium* |*Standard* |*Value*
 |*Workload type* |Analytics, databases |VDI, virtualization apps, Software dev
 |File shares, web servers |Backup
-|*Target IOPS/TiB* |6,144 |2,048 |128 |N/A
-|*Max IOPS/TiB* |12,288 |4,096 |512 |N/A
-|*Max throughput MBps (32KB/IOP)* |384 |128 |16 |N/A
-|*Latency* |<1 ms |<2 ms |<17 ms |N/A
-.2+|*Minimum capacity*^1,2^
-4+|100 TiB^1^
-|15 TiB^2^ |25 TiB^2^ |50 TiB^2^ |50 TiB^2^
-
+|*Maximum IOPS/logical TiB allocated per volume* |12,288 |4,096 |512 |N/A
+|*Target IOPS/logical TiB allocated per volume* |6,144 |2,048 |128 |N/A
+|*Maximum MBps/logical TiB allocated per volume* |384 |128 |16 |N/A
+|*Average Latency* |<1 ms |<2 ms |<17 ms |N/A
+|*Block size* 
+4+|32K
 |===
 
-[NOTE]
-^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block service levels for NetApp direct opportunities.
-^2^ Minimum one-year term and minimum stated capacity per each service tier selected for channel led opportunities.
+=== More on service levels for file storage
 
-=== Block storage
+The service level metrics depend on the following conditions:
+
+* The service levels for file and block storage support ONTAP 9.7 and later.
+* IOPS/TiB/volume, MBps/TiB/volume, and latency values for service levels are based on the amount of logical data stored in the volume, 32KB block size, and a random combination of 70% read and 30% write IO operations.
+* Actual IOPS/TiB/volume and MBps/TiB/volume may vary based on the actual or assumed block size, system workload concurrency, or input-output operations.
+* Latency does not include the following: 
+** application or host latency
+** customer network latency to or from the controller ports
+** overheads associated with the data transfer to the object store in case of FabricPool
+** latency automatically applied by QoS to keep IO within service level maximums
+* Latency values are not applicable to MetroCluster write operations. These write operations are dependent on the distance of remote systems.
+* If one or more volumes on a storage system do not have an AQoS policy assigned, then these volumes are considered as non-compliant volumes, and no target service levels are applicable for those systems.
+* _Expected IOPS_ is targeted for FabricPool only if the tiering policy is set to "none" and no blocks are in the cloud. _Expected IOPS_ is targeted for volumes that are not in a SnapMirror synchronous relationship.
+* Workload IO operations need to be balanced across all deployed controllers, as determined by the Keystone order.
+
+== Service levels for block storage
 *Supported protocols*: FC and iSCSI
 
 |===
@@ -64,16 +73,12 @@ I/O density calculations at the volume level are reported to show peak I/O densi
 3+|N/A
 |*Max IOPS/TiB* |5.500 |4,000 |N/A
 |*Max throughput MBps (32KB/IOP)* |43 |31 |N/A
-|*Latency* |<0.5 ms |<0.5 ms |N/A
-|*Minimum capacity*^1,2^ |100 TiB^3^ |100 TiB^3^ |300 TiB^3^
+|*Average Latency* |<0.5 ms |<0.5 ms |N/A
+|*Block size* 
+3+|32K
 |===
 
-[NOTE]
-^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block service levels for NetApp direct opportunities.
-^2^ Minimum one-year term and minimum stated capacity per service tier selected for channel led opportunities.
-^3^ Minimum one-year term and minimum stated capacity per service tier selected for either opportunity type.
-
-=== Object storage
+== Service levels for object storage
 *Supported protocol*: S3
 
 |===
@@ -83,14 +88,8 @@ I/O density calculations at the volume level are reported to show peak I/O densi
 |N/A
 |*Max IOPS/TiB* |N/A
 |*Max throughput MBps (32KB/IOP)* |N/A
-|*Latency* |N/A
-|*Minimum capacity*^1,2^ |500 TiB^3^
+|*Average Latency* |N/A
 
 |===
-
-[NOTE]
-^1^ Minimum one-year term and 100TiB minimum capacity for a combination of any file share and block service levels for NetApp direct opportunities.
-^2^ Minimum one-year term and minimum stated capacity per service tier selected for channel led opportunities.
-^3^ Minimum one-year term and minimum stated capacity per service tier selected for either opportunity type.
 
 You can assign service levels to your subscriptions from multiple screens of the NetApp Service Engine user interface. For more information, see link:nkfsosm_tenancy_overview.html[Tenancy and multi-tenancy in Keystone].
