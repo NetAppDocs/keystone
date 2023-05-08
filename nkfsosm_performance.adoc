@@ -19,17 +19,13 @@ summary: Keystone performances service level
 //
 
 [.lead]
-Keystone STaaS offers data storage capacity at pre-defined performance service levels (service levels) on a subscription basis. Each volume managed by the Keystone services is associated with a service level.
+Keystone offers data storage capacity at pre-defined performance service levels (service levels) on a subscription basis. Each volume managed by the Keystone services is associated with a service level.
 
-Each service level is defined by its I/O density, that is IOPS/TiB/volume. This is the ratio of performance (input/output operations per second [IOPS]) and allocated storage (TiB of data) which is IOPS/TiB at average latency per volume.
+Each service level is defined by its I/O density, that is IOPS/TiB/volume. This is the ratio of performance (input/output operations per second [IOPS]) and allocated storage capacity (TiB) which is IOPS/TiB at average latency per volume.
 
-All I/O operations and all allocated storage on the respective volume are factored into the volume's I/O density calculation.
+I/O density for a volume is calculated at an hourly interval to report the peak I/O density. I/O density reports for volumes are generated monthly.
 
-The service levels for the supported storage: file, block, object, and cloud services are listed here.
-
-I/O density calculations at the volume level are reported to show peak I/O density during the prior week. The peak performance is determined on an hourly time interval. I/O density reports by volume are generated monthly to gauge adherence to the respective service levels.
-
-The service levels for file, block, and object storage are listed here.
+The service levels for file, block, and object storage types are listed here.
 
 == Service levels for file storage
 *Supported protocols*: NFS, CIFS, iSCSI, and FC
@@ -71,7 +67,7 @@ The service level metrics depend on the following conditions:
 |*Workload type* |HPC |Video surveillance |Backup
 |*Target IOPS/TiB*
 3+|N/A
-|*Max IOPS/TiB* |5.500 |4,000 |N/A
+|*Max IOPS/TiB* |5,500 |4,000 |N/A
 |*Max throughput MBps (32KB/IOP)* |43 |31 |N/A
 |*Average Latency* |<0.5 ms |<0.5 ms |N/A
 |*Block size* 
@@ -92,4 +88,4 @@ The service level metrics depend on the following conditions:
 
 |===
 
-You can assign service levels to your subscriptions from multiple screens of the NetApp Service Engine user interface. For more information, see link:nkfsosm_tenancy_overview.html[Tenancy and multi-tenancy in Keystone].
+
