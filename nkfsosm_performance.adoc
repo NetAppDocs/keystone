@@ -23,7 +23,7 @@ Keystone offers data storage capacity at pre-defined performance service levels 
 
 Each service level is defined by its I/O density, that is IOPS/TiB/volume. This is the ratio of performance (input/output operations per second [IOPS]) and allocated storage capacity (TiB) which is IOPS/TiB at average latency per volume.
 
-I/O density for a volume is calculated at an hourly interval to report the peak I/O density. I/O density reports for volumes are generated monthly.
+The I/O density for a volume is calculated at an hourly interval to report the peak I/O density. I/O density reports for volumes are generated monthly.
 
 The service levels for file, block, and object storage types are listed here.
 
