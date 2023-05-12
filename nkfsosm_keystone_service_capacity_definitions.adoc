@@ -1,4 +1,4 @@
----definitions
+---
 sidebar: sidebar
 permalink: nkfsosm_keystone_service_capacity_definitions.html
 keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity

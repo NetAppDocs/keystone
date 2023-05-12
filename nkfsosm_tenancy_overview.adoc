@@ -32,7 +32,7 @@ In a multi-tenancy, a partner is a tenant/customer of NetApp in a Keystone envir
 .Subtenants
 Keystone subtenants exist entirely within a parent tenant with a many-to-one relationship. Subtenants provide logical resource separation within a tenancy and are used as a basis for show-back reporting. All storage resources (that is file services, block storage, and object storage) belong to a subtenant.
 
-image:nkfsosm_image10.png[]
+image:nkfsosm_image10.png[tenancy arch]
 
 == Subscription model in a NetApp-operated (single tenancy) environment
 
