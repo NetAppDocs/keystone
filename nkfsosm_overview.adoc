@@ -45,7 +45,7 @@ a|Installation and related tasks
 * Configure
 * Deploy
 * Onboard
-|image:check.png[]
+|image:check.pngcheck[]
 | None
 a|Administration and monitoring
 
@@ -54,21 +54,21 @@ a|Administration and monitoring
 * Perform administrative tasks
 * Alert
 | None
-|image:check.png[]
+|image:check.png[check]
 a|Operations and optimization
 
 * Manage capacity
 * Manage performance
 * Manage SLA
 | None
-|image:check.png[]
+|image:check.png[check]
 a|Support
 
 * Support customer
 * Hardware break fix
 * Software support
 * Upgrades and patches
-|image:check.png[]
+|image:check.png[check]
 | None
 
 |===

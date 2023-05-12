@@ -30,10 +30,10 @@ The Adaptive QoS (AQoS) settings vary with service levels.
 
 |===
 |*Policy name* | *Extreme* and *Extreme Tiering* |*Premium* and *Premium Tiering* |*Standard* |*Value*
-|*Expected IOPS* |6144 |2048 |128 |64
+|*Expected IOPS* |6,144 |2,048 |128 |64
 |*Expected IOPS Allocation*
 4+| Allocated space
-|*Peak IOPS* |12,288 |4096 |512 |128
+|*Peak IOPS* |12,288 |4,096 |512 |128
 |*Peak IOPS Allocation*
 4+| Allocated space
 |*Block Size*
