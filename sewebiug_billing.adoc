@@ -17,7 +17,7 @@ You can view the monthly charges for all the subscribed services on your NetApp 
 
 You can view the billing details for all your subscribed services for Keystone subscription services for the previous months. The billing against the capacity in burst for each month is highlighted.
 
-image:billing.png[]
+image:billing.png[billing charts]
 
 As a partner administrator, you can see the monthly billing breakup for a selected subtenant.
 
