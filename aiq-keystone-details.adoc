@@ -60,8 +60,6 @@ image:usage-indicator.png[icons]
 
 .Index
 
-image:usage-indicator.png[icon]
-image:usage-indicator.png[icon]
 image:icon-grey.png[icon]: No capacity usage recorded against the committed capacity of the service level
 image:icon-green.png[icon]: The consumption is normal, within 80% of the committed capacity
 image:icon-amber.png[icon]: Maximum consumption, that is, the usage is about to reach 100% or more of the committed capacity. The *Consumed* column displays this indicator for any consumption above 80% of the committed capacity
