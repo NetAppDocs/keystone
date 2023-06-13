@@ -115,7 +115,7 @@ A blank chart indicates that there was no data available in your environment at 
 [NOTE]
 The *Current Consumed*, *Current Burst*, and *Accrued Burst* indicators determine the consumption with respect to the billing period of the subscription, and are not based on the date range of the query.
 
-.*Additional details for Data Protection*
+.*Additional details for Data Protection: click here*
 [%collapsible]
 ====
 If you have subscribed to the Data Protection (DP) service, you can view the breakup of the consumption data according to the MetroCluster partner sites on the *Subscription Time Series* tab. 
@@ -162,7 +162,7 @@ For information about how MetroCluster protects your data, see https://docs.neta
 == View system details
 On the *System Details* tab, you can view the consumption and other details for your volumes in ONTAP. For StorageGRID, this tab displays the nodes and their individual usage in your object storage environment.
 
-.*ONTAP volume details* 
+.*ONTAP volume details: click here* 
 [%collapsible]
 ====
 For ONTAP, the *System Details* tab displays information, such as the capacity usage, volume type, cluster, aggregate, and service level of the volumes in your storage environment managed by your Keystone subscription.
@@ -182,7 +182,7 @@ image:aiq-ks-sysdtls.png[system details tab]
 
 ==== 
 
-.*StorageGRID nodes and consumption details*
+.*StorageGRID nodes and consumption details: click here*
 [%collapsible]
 ====
 For StorageGRID, this tab displays the logical usage for the nodes in the object storage environment.
