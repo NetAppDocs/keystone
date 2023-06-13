@@ -19,7 +19,7 @@ summary: Keystone performances service level
 //
 
 [.lead]
-Keystone offers data storage capacity at pre-defined performance service levels (service levels) on a subscription basis. Each volume managed by the Keystone services is associated with a service level.
+Keystone offers data storage capacity at pre-defined performance service levels (service levels) or rate plans on a subscription basis. Each volume managed by the Keystone services is associated with a service level.
 
 Each service level is defined by its I/O density, that is IOPS/TiB/volume. This is the ratio of performance (input/output operations per second [IOPS]) and allocated storage capacity (TiB) which is IOPS/TiB at average latency per volume.
 
