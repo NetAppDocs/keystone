@@ -119,18 +119,18 @@ The *Current Consumed*, *Current Burst*, and *Accrued Burst* indicators determin
 .Click here
 [%collapsible]
 ====
-If you have subscribed to the data protection (DP) service, you can view the breakup of the consumption data for the MetroCluster partner sites on the *Subscription Time Series* tab.  
+If you have subscribed to the data protection service, you can view the breakup of the consumption data for the MetroCluster partner sites on the *Subscription Time Series* tab.  
 
 For information about data protection, see https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html[Data protection].
 
 If the clusters in your ONTAP storage environment are configured in a MetroCluster setup, the consumption data of your Keystone subscription is split in the same time series chart to display the consumption at the primary and mirror sites for the base service levels.
 
 [NOTE]
-The consumption bar charts are split for only base service levels. For DP service levels, this demarcation does not appear.
+The consumption bar charts are split for only base service levels. For data protection service levels, this demarcation does not appear.
 
 .Data protection service levels
 
-For DP service levels, the total consumption is split between the partner sites, and the usage at each partner site is reflected and billed in a separate subscription; that is one subscription for the primary site, and another for the mirror site. That is why, when you select the subscription number for the primary site on the *Subscription Time Series* tab, the consumption charts for the DP service levels display the discrete consumption details for only the primary site. Because each partner site in a MetroCluster configuration acts as a source and a mirror, the total consumption at each site includes the source and the mirror volumes created at that site.
+For data protection service levels, the total consumption is split between the partner sites, and the usage at each partner site is reflected and billed in a separate subscription; that is one subscription for the primary site, and another for the mirror site. That is why, when you select the subscription number for the primary site on the *Subscription Time Series* tab, the consumption charts for the DP service levels display the discrete consumption details for only the primary site. Because each partner site in a MetroCluster configuration acts as a source and a mirror, the total consumption at each site includes the source and the mirror volumes created at that site.
 
 [TIP]
 The tooltip beside the tacking ID of your subscription in the *Subscription Details* tab helps you identify the partner subscription in the MetroCluster setup.
@@ -151,11 +151,11 @@ image:dp-src.png[mcc primary base]
 
 .What you can see for the secondary (mirror site) subscription
 
-When you check the secondary subscription, you can see that the bar chart for the _Extreme_ service level (base service level) the same data collection point is reversed, and the consumption breakup at the primary and mirror sites is 1.05 TiB and 1.02 TiB respectively.
+When you check the secondary subscription, you can see that the bar chart for the _Extreme_ service level (base service level) the same data collection point as the partner site is reversed, and the consumption breakup at the primary and mirror sites is 1.05 TiB and 1.02 TiB respectively.
 
 image:mcc-chart-mirror.png[mcc mirror]
 
-For the _Data-Protect Extreme_ service level (data protection service level), the chart appears like this at the same collection point:
+For the _Data-Protect Extreme_ service level (data protection service level), the chart appears like this at the same collection point as at the partner site:
 
 image:dp-mir.png[mcc mirror base]
 

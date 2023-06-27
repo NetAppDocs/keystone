@@ -25,7 +25,7 @@ Each service level is defined by its I/O density, that is IOPS/TiB/volume. This 
 
 The I/O density for a volume is calculated at an hourly interval to report the peak I/O density. I/O density reports for volumes are generated monthly.
 
-You select service levels based on your storage environment, and storage and consumption needs. The base service levels are available to you by default. Specific service levels are additionally available, if you have opted for other services. For example, for the data protection service, a specific _Data-Protect <base-service-level>_ service level is assigned to your subscription.
+You select service levels based on your storage environment, and storage and consumption needs. The base service levels are available to you by default. Other service levels are additionally available, if you have opted for specific services. For example, for the data protection service, the _Data-Protect <base-service-level>_ service level is assigned to your subscription.
 
 The base service levels for file, block, and object storage types are listed here.
 
