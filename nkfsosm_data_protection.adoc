@@ -5,7 +5,7 @@ keywords: netapp, keystone, data, protection,
 summary: Data protection
 ---
 
-= Data Protection
+= Data protection
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -27,6 +27,8 @@ NetApp Keystone data protection service can back up your data and is able to rec
 
 [NOTE]
 Backup and disaster recovery services are available as add-on services, while snapshot is available as a part of the basic storage service.
+
+If you have subscribed to data protection services, specific service levels are assigned to your subscriptions, for example _Data-Protect Extreme_, _Data-Protect Premium_, and so forth. For information, see https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection[Additional details for data protection]
 
 |===
 | |Single Region snapshots (Available as a part of the basic storage service) |Multi-region Backup (data protection add-on) |Multi-region Disaster Recovery (data protection add-on)
