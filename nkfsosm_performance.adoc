@@ -25,7 +25,9 @@ Each service level is defined by its I/O density, that is IOPS/TiB/volume. This 
 
 The I/O density for a volume is calculated at an hourly interval to report the peak I/O density. I/O density reports for volumes are generated monthly.
 
-The service levels for file, block, and object storage types are listed here.
+You select service levels based on your storage environment, and storage and consumption needs. The base service levels are available to you by default. Specific service levels are additionally available, if you have opted for other services. For example, for the data protection service, a specific _Data-Protect <base-service-level>_ service level is assigned to your subscription.
+
+The base service levels for file, block, and object storage types are listed here.
 
 == Service levels for file storage
 *Supported protocols*: NFS, CIFS, iSCSI, and FC
@@ -44,7 +46,7 @@ The service levels for file, block, and object storage types are listed here.
 
 === More on service levels for file storage
 
-The service level metrics depend on the following conditions:
+The base service level metrics depend on the following conditions:
 
 * The service levels for file and block storage support ONTAP 9.7 and later.
 * IOPS/TiB/volume, MBps/TiB/volume, and latency values for service levels are based on the amount of logical data stored in the volume, 32KB block size, and a random combination of 70% read and 30% write IO operations.
