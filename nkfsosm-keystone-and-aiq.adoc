@@ -13,9 +13,21 @@ summary: what can customers see in Active IQ for keystone
 :imagesdir: ./media/
 
 [.lead]
-If you have subscribed to NetApp Keystone services, you can view your usage reports and graphs on the Active IQ Digital Advisor (Digital Advisor) dashboard.
+If you have subscribed to NetApp Keystone subscription services, you get an overview of your subscriptions on the *Keystone Subscriptions* widget of the Active IQ Digital Advisor (Digital Advisor) dashboard. You also view any warnings or alerts that require immediate attention or action.
 
-On logging in to Digital Advisor, you can see the *Keystone Subscriptions* widget that summarizes the capacity usage against your purchased Keystone services.
+The different panels on the Digital Advisor dashboard provide you with information on the capacity usage and warnings. Panels may appear selectively depending on your subscriptions and the status of your usage. You can view this information:
+
+* Capacity usage, such as:
+** Consumption exceeding 80% of the committed capacity.
+** Burst usage.
+** Consumptions above the burst capacity.
+* Miscellaneous warnings are displayed if they are applicable for you.
+** *Expiring soon*: In case your subscriptions expire within 90 days.
+** *Critical Hardware Upgrades*: Any critical hardware upgrades are pending.
+** *AQoS Warnings*: You have volumes without AQoS policies assigned.
+
+[TIP]
+Click the *Subscriptions* link on the panels to view the list of filtered subscriptions in the *All Subscriptions* tab.
 
 For more information about Digital Advisor, see link:https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor documentation].
 
