@@ -32,10 +32,8 @@ The details of the subscriptions, usage charts for each service level, and volum
 [NOTE]
 Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, and is rounded off to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as `0` or `No Usage`. For other usage metrics, see https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html[Service level metrics and definitions]. For information about different capacities used in Keystone, see https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html[Keystone service capacity definitions].
 
-== View subscription details
-You can view all the subscriptions for an account name in the *Subscription Details* tab.
-
-image:aiq-ks-dtls.png[subscription details tab]
+== View all subscriptions
+You can view a list of all your subscriptions in the *All Subscriptions* tab.
 
 For each subscription number, you can see the following information:
 
@@ -49,6 +47,15 @@ If your subscription has a data protection service level or rate plan assigned, 
 * *End date*: The end date of the subscription. A blank date indicates that the subscription has no end date, and it gets renewed automatically. Based on this date, you might see information messages for subscriptions that are nearing expiry or have auto-renewal policies attached. 
 * *Usage Status*: Indicates how much of the subscription has been used or overused. You can sort the list by this column if you want to view the highest consumption records.
 * image:aiq-ks-time-icon.png[icon]: Clicking this icon opens the *Subscription Time Series* tab where you can see the historical usage data for each service level included in this subscription.
+
+image:all-subs.png[an image of the all subscriptions tab]
+
+== View subscription details
+You can view all the subscriptions for an account name in the *Subscription Details* tab.
+
+image:aiq-ks-dtls.png[subscription details tab]
+
+
 
 You can see more details by clicking the downward arrow for a subscription record. Details, such as the service level name, committed, consumed, available capacities, and current and accrued burst usage are displayed in TiB.
 
