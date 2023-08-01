@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: aiq-keystone-details.html
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, MetroCluster, StorageGRID, consumption details
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, MetroCluster, StorageGRID, consumption details, AIQ DA
 summary: Keystone Subscription reports and graphs
 ---
 
