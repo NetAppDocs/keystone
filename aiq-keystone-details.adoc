@@ -28,6 +28,9 @@ To view your Keystone subscription and usage details, perform the following step
 . On the *Keystone Subscriptions* widget, click *View More Details* to view the usage details and alerts on your volumes on the *Keystone Subscriptions* page. Alternately, from the left navigation pane, go to *GENERAL > Keystone Subscriptions*.
 The details of the subscriptions, usage charts for each service level, and volume details are displayed in the different tabs on the *Keystone Subscriptions* screen.
 
+[TIP]
+For certain fields and columns, you might see information or warning icons and tooltips that provide you with additional information about the data.
+
 [NOTE]
 Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, and is rounded off to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as `0` or `No Usage`. For other usage metrics, see https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html[Service level metrics and definitions]. For information about different capacities used in Keystone, see https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html[Keystone service capacity definitions].
 
