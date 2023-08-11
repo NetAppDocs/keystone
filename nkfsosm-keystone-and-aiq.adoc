@@ -13,9 +13,9 @@ summary: what can customers see in Active IQ for keystone
 :imagesdir: ./media/
 
 [.lead]
-If you have subscribed to NetApp Keystone STaaS services, you get an overview of your subscriptions on the *Keystone Subscriptions* widget of the Active IQ Digital Advisor (Digital Advisor) dashboard.
+If you have subscribed to NetApp Keystone services, you get an overview of your subscriptions on the *Keystone Subscriptions* widget of the Active IQ Digital Advisor (Digital Advisor) dashboard.
 
-Digital Advisor offers a unified dashboard that provides  you with insights into various levels of your NetApp Keystone STaaS subscription details and usage information through the *Switch to old/new dashboard* button.
+Digital Advisor offers a unified dashboard that provides  you with insights into various levels of your NetApp Keystone subscription details and usage information through the *Switch to old/new dashboard* button.
 
 .Default (old) dashboard 
 

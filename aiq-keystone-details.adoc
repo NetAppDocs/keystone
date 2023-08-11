@@ -28,9 +28,6 @@ To view your Keystone subscription and usage details, perform the following step
 . On the *Keystone Subscriptions* widget, click *View More Details* to view the usage details and alerts on your volumes on the *Keystone Subscriptions* page. Alternately, from the left navigation pane, go to *GENERAL > Keystone Subscriptions*.
 The details of the subscriptions, usage charts for each service level, and volume details are displayed in the different tabs on the *Keystone Subscriptions* screen.
 
-[TIP]
-For certain fields and columns, you might see information or warning icons and tooltips that provide you with additional information about the data.
-
 [NOTE]
 Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, and is rounded off to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as `0` or `No Usage`. For other usage metrics, see https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html[Service level metrics and definitions]. For information about different capacities used in Keystone, see https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html[Keystone service capacity definitions].
 
@@ -39,12 +36,12 @@ You can view a list of your subscriptions in the *Subscriptions* tab.
 
 image:all-subs.png[an image of the all subscriptions tab]
 
-For each subscription number, you can see the following information:
+You can see the following information. For certain fields and columns, you might see information or warning icons and tooltips that provide you with additional information about the data.
 
 * *Subscription Number*: The subscription number of the Keystone subscription assigned by NetApp.
 * *Tracking ID*: The tracking ID assigned at the time of subscription activation. This is a unique ID for each subscription and site, used for tracking the subscription.
 [TIP]
-If your subscription has a data protection service level or rate plan assigned, then a tooltip helps you identify the tracking ID of the partner subscription in a MetroCluster setup. To know how to view detailed consumption by partner subscriptions in a MetroCluster configuration, see https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection[Additional details for data protection].
+If your subscription has a data protection service level or rate plan assigned, then a tooltip helps you identify the tracking ID of the partner subscription in a MetroCluster setup. To know how to view detailed consumption by partner subscriptions in a MetroCluster configuration, see https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#reference-charts-for-data-protection[Reference charts for data protection].
 * *Usage Type*: You might have subscribed to multiple Keystone (version 1) or Keystone STaaS (version 2) subscriptions. The rate plan rules for the service levels might vary for the two subscription types. By looking at the value in this column, you know whether the usage type is billed as per the provisioned or logical usage for either `v1` or `v2`. For more information about Keystone STaaS, see https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS Documentation].
 * *Billing Period*: The billing period of the subscription, such as monthly, quarterly, or annual.
 * *Start Date*: The start date of the subscription.
@@ -122,7 +119,7 @@ A blank chart indicates that there was no data available in your environment at 
 [NOTE]
 The *Current Consumed*, *Current Burst*, and *Accrued Burst* indicators determine the consumption with respect to the billing period of the subscription, and are not based on the date range of the query.
 
-=== Additional details for data protection
+=== Reference charts for data protection
 .Learn more
 [%collapsible]
 ====
