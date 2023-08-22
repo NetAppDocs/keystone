@@ -240,4 +240,4 @@ For information about AQoS policies, see https://docs.netapp.com/us-en/keystone/
 
 image:alert-aiq.png[alerts]
 
-Contact NetApp support for more information on these caution and warning messages. For information, see https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html[Raise a service request].
+Contact NetApp support for more information on these caution and warning messages. 

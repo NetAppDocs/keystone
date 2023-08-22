@@ -29,8 +29,6 @@ Keystone billing is based on committed capacity and variable burst consumption.
 
 For information about committed and burst capacity usage, see link:nkfsosm_keystone_service_capacity_definitions.html[Keystone service capacity definitions].
 
-For information about how to view billing details, see link:sewebiug_billing.html[View billing].
-
 == Billing based on committed capacity
 Committed capacity refers to the capacities for various services in a single subscription, agreed upon by the parties involved (NetApp/partner and customer). This capacity is stated on each Keystone order and is billed, regardless of the actual consumption.
 

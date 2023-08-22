@@ -37,7 +37,7 @@ Tiering is enabled in the extreme-tiering and premium-tiering service levels, wh
 Tenant subscriptions are not limited by the capacity that the partner has purchased. Partners can sell more capacity than they have purchased from NetApp to their customers. The capacity that is in excess of the purchased capacity is referred to as oversubscription.
 
 *Are APIs provided to integrate with customer tools?*
-Yes, RESTful APIs are available to integrate into your own applications. Navigate to *SUPPORT> API Documentation* to see the API documentation for Keystone services. For more information, see the link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html[Keystone Keystone API guide].
+Yes, RESTful APIs are available to integrate into your own applications. Navigate to *SUPPORT> API Documentation* to see the API documentation for Keystone services. 
 
 *What is burst capacity?*
 You can increase and decrease usage up to 20% above the committed capacity. The burst capacity usage is measured on a daily basis and billed only when used.
@@ -59,7 +59,7 @@ NetApp Service Engine has built-in dashboards to report consumed capacity agains
 Yes, the management tools provide notifications on capacity usage through the NetApp Service Engine dashboard.
 
 *How do I view the Keystone usage?*
-NetApp Service Engine provides a dashboard view, with information on all the services that are subscribed to and how much is consumed. For details about NetApp Service Engine, see link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html[here].
+NetApp Service Engine provides a dashboard view, with information on all the services that are subscribed to and how much is consumed.
 
 *How do I report any issues with the service?*
 NetApp Keystone support can be reached through these various channels:
