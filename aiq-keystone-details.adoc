@@ -45,7 +45,7 @@ If your subscription has a data protection service level or rate plan assigned, 
 * *Usage Type*: You might have subscribed to multiple Keystone (version 1) or Keystone STaaS (version 2) subscriptions. The rate plan rules for the service levels might vary for the two subscription types. By looking at the value in this column, you know whether the usage type is billed as per the provisioned or logical usage for either `v1` or `v2`. For more information about Keystone STaaS, see https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS Documentation^].
 * *Billing Period*: The billing period of the subscription, such as monthly, quarterly, or annual.
 * *Start Date*: The start date of the subscription.
-* *End date*: The end date of the subscription. A blank date indicates that the subscription has no end date, and it gets renewed automatically. Based on this date, you might see information messages for subscriptions that are nearing expiry or have auto-renewal policies attached. 
+* *End date*: The end date of the subscription. If a subscription has no end date, and it gets renewed automatically, you see `Month-on-month` instead of the date. Based on this date, you might see information messages for subscriptions that are nearing expiry or have auto-renewal policies attached. 
 * *Usage Status*: Indicates how much of the subscription has been used or overused. You can sort the list by this column if you want to view the highest consumption records.
 * image:subs-dtls-icon.png[icon]: Clicking this icon for a subscription opens the *Current Usage* tab with additional details of that subscription.
 * image:aiq-ks-time-icon.png[icon]: Clicking this icon opens the *Capacity Trend* tab where you can see the historical usage data for each service level included in this subscription.
@@ -106,7 +106,7 @@ The following colors in the bar charts indicate the consumed capacity as defined
 [NOTE]
 A blank chart indicates that there was no data available in your environment at that data collection point.
 +
-* *Current Consumed*: Indicator for the consumed capacity (in TiB) defined for the service level. This field uses specific colors for usage:
+* *Current Consumed*: Indicator for the consumed capacity (in TiB) defined for the service level. You cannot view the current consumed capacity if the consumption is in burst. This field uses specific colors for usage:
 ** Grey: None.
 ** Green: Within 80% of the committed capacity.
 ** Amber: Any consumption above 80% of the committed capacity.
