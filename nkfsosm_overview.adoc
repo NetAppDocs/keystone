@@ -28,7 +28,7 @@ Keystone offers three operational models for service delivery.
 * *Partner-operated* *model* is similar to the NetApp-operated model, but with the partner operating the service for their end customers. In this model, the partner is the referenced contracted party. Tenants are customers of partners or service providers and have no billing relationship with NetApp. A partner-operated model usually has a multi-tenant environment where tenants and end customers/subtenants have their own subscriptions that are billed by the service provider/partner. The partner admin performs the administrative tasks for all the tenants. The functions that an admin can perform in a partner-operated model are different from that of an admin in a NetApp-operated model.
 * *Customer-operated* *model* allows the customer to subscribe to an offered service, according to the selected performance tiers and storage service types. NetApp defines the architecture and products and installs at the customer premises and allows customers to manage the infrastructure using their storage and IT resources. A customer can be tied to NetApp or a partner/service provider, and based on that, the service requests can be raised and addressed to NetApp or the service provider. A customer admin can perform the administrative tasks in a customer-operated environment. These tasks are tied to the tenants and subtenants for the specific customer.
 
-The features and options in the offering vary based on the models. For information, see link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html[Roles and operations of service providers and customers]
+The features and options in the offering vary based on the models.
 
 == Roles and responsibilities across the service lifecycle
 
@@ -78,6 +78,6 @@ a|Support
 
 The following list summarizes NetApp's roles and responsibilities:
 
-* NetApp delivers, installs, configures, and enables the applicable service (including applicable version of NetApp Service Engine at a customer-designated data center or a CoLo). NetApp is responsible for the uninstallation at the end of the contract term or if the customer chooses to terminate the contract sooner.
+* NetApp delivers, installs, configures, and enables the applicable service. NetApp is responsible for the uninstallation at the end of the contract term or if the customer chooses to terminate the contract sooner.
 * While interfacing with other IT service providers, NetApp cooperates with the customer’s IT service providers or their technical team.
 * Performance of the NetApp-operated services are included, with the assumption that shared responsibilities are applicable to the supported environment.
