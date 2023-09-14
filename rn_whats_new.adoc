@@ -27,17 +27,16 @@ The NetApp Service Engine dashboard has been redesigned to include the following
 * *Monthly Charges (Billing)* For viewing the aggregated monthly charges for all your subscriptions.
 * *Alerts*  For viewing the summary of the most recent alerts in your environment.
 * *Service Requests* For viewing the list of the most recent service requests generated in your environment.
-For more information, see link:sewebiug_dashboard.html[View Keystone Dashboard].
 
 === New Billing screen
 A new *Billing* screen has been added for easy accessibility and calculation of your historical billing data. The screen provides a holistic view of the monthly charges associated with all your subscribed services.
 
 Navigate to this screen from the *Monthly Charges* widget on the dashboard or from *ADMINISTRATION > Billing* to view a monthly, subscription-level break up of the charges for all your subscribed services. The billing data is based on your committed and burst capacity usage, and is available for your usage in the previous months.
-For more information, see link:sewebiug_billing.html[View billing].
+
 
 === New Alerts screen
 A new *Alerts* screen is introduced in this release that lists all system-generated and user-generated alerts. The screen also enables you to create custom alert messages for critical events concerning your environment and convey them to other users. They can view and dismiss the alerts, as required.
-For more information, see link:sewebiug_alerts.html[Create and manage alerts].
+
 
 === Enhanced user interface
 The following enhancements have been made on the NetApp Service Engine user interface:
@@ -60,17 +59,7 @@ NetApp Service Engine now supports the management of a multi-tenant environment 
 * *Subscription:* As a partner admin, you can view and update your subscription and tenant subscriptions from *SUBSCRIPTIONS* > *Keystone Subscriptions* and *SUBSCRIPTIONS* > *Tenant Subscriptions* respectively. As a tenant administrator, you can only view your tenant subscriptions.
 * *Users:* Based on your role, you can assign privileges to a new or existing user within a tenancy as per the requirement. The role can be NetApp administrator, NetApp administrator with read only privileges, partner administrator, or tenant administrator. As a partner administrator, you can assign only partner administrator or tenant administrator roles to new users. A tenant administrator user can assign only the tenant administrator role to other users.
 * *Networks menu:* As a partner administrator, you can view the networks defined for your tenancy. You can also create subnets for your subtenant and zone from *NETWORKS* > *Subnets*. This is required while provisioning storage by the end customers or subtenants.
-* API support: The `/tenants/{tenant_id}/zones/{zone_name}/subnets` and `/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}/tags` APIs are being offered as a part of this release to create and view subnets for subtenants.
 
-For more information on this feature, see the following links:
-
-* link:nkfsosm_overview.html[Operational model, roles, and responsibilities]
-* link:nkfsosm_tenancy_overview.html[Tenancy and multi-tenancy in Keystone]
-* link:sewebiug_dashboard.html[View Keystone Dashboard]
-* link:sewebiug_working_with_reports.html[View reports]
-* link:sewebiug_managing_subscriptions.html[Managing subscriptions]
-* link:sewebiug_managing_tenants_and_subtenants.html[Managing tenants and subtenants]
-* link:sewebiug_define_network_configurations.html[Define networks for tenants and subtenants]
 
 === Tiering
 
@@ -117,7 +106,6 @@ The new *Backup* screen enables you to view and manage the backups of the disks 
 === Provision for restricting user access on CIFS shares
 
 You can now specify the Access Control List (ACL) for restricting user access on a CIFS (SMB) or multi-protocol share. You can specify Windows users or groups based on the Active Directory (AD) settings to add to the ACL.
-link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps[Learn more].
 
 == Features introduced in NetApp Service Engine 2.0
 :hardbreaks-option:
@@ -154,17 +142,14 @@ Some NetApp Service Engine-supported storage subscriptions allow customers to us
 
 ==== Notification when a proposed change results in using burst capacity
 A notification to display a change in the proposed provisioning that will cause a subscription to go into burst. The user can choose to continue, knowing that will put the subscription into burst or choose not to continue with the action.
-link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications[Learn more].
 
 ==== Notification when subscription is in burst
 
 A notification banner is displayed when a subscription is in burst.
-link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications[Learn more].
 
 ==== Capacity report shows burst usage
 
 Capacity report showing the number of days the subscription has been in burst and the quantity of burst capacity used.
-link:sewebiug_working_with_reports.html#capacity-usage[Learn more].
 
 === Performance Report
 

@@ -37,8 +37,8 @@ During the tenure of a subscription, you can change the committed capacities. Ho
 
 *	The committed capacity cannot be decreased
 *	The committed capacity cannot be increased 90 days prior to the expiry of your subscription, unless the subscription is to be renewed for an additional 12 month term.
-* You can request changes to committed capacity through the NetApp Service Engine interface or through Keystone Success Manager.
-For information about requesting changes, see link:sewebiug_raise_a_service_request.html[Raise a service request].
+* You can request changes to committed capacity through Keystone Success Manager.
+
 
 == Burst capacity
 This is the logical capacity that has exceeded the committed capacity. Note the following points:
