@@ -78,6 +78,6 @@ a|Support
 
 The following list summarizes NetApp's roles and responsibilities:
 
-* NetApp delivers, installs, configures, and enables the applicable service (including applicable version of NetApp Service Engine at a customer-designated data center or a CoLo). NetApp is responsible for the uninstallation at the end of the contract term or if the customer chooses to terminate the contract sooner.
+* NetApp delivers, installs, configures, and enables the applicable service. NetApp is responsible for the uninstallation at the end of the contract term or if the customer chooses to terminate the contract sooner.
 * While interfacing with other IT service providers, NetApp cooperates with the customer’s IT service providers or their technical team.
 * Performance of the NetApp-operated services are included, with the assumption that shared responsibilities are applicable to the supported environment.

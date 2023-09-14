@@ -27,7 +27,7 @@ NetApp provides operational services remotely to NetApp Keystone customers. Thes
 == Additional Information and Support Contact
 The NetApp Global Services and Support Center (GSSC) team primarily support the services to NetApp Keystone customers.
 
-Raise a ticket directly from the NetApp Service Engine portal (*Support > Service Requests*) with the appropriate details of the issue for assistance.
+Raise a ticket with the appropriate details of the issue for assistance.
 
 You can also use the following information to reach out to the support team.
 
