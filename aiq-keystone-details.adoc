@@ -216,12 +216,12 @@ image:sg-link-2.png[SG pop-up]
 
 == View ONTAP volume performance
 
-You can click the *Performance Details* tab for viewing the performance details for the ONTAP volumes managed by your Keystone subscriptions.
+You can click the *Performance* tab for viewing the performance details for the ONTAP volumes managed by your Keystone subscriptions.
 
 This tab might not be available to you for viewing the performance metrics on your ONTAP volumes. Contact support for viewing this tab.
 
 .Steps
-. Click the *Performance Details* tab.
+. Click the *Performance* tab.
 . Select the subscription number. By default, the first subscription number is selected.
 . Select the required volume name from the list.
 +
