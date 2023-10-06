@@ -81,7 +81,7 @@ The *Capacity Trend* tab displays historical data of your Keystone subscriptions
 .Steps
 . Click the *Capacity Trend* tab.
 . Select the required subscription for which you want to view the details. The first subscription in your account name is selected by default.
-. Select *Capacity Trend* if you want to view the historical data and analyze the capacity usage trend. Select *Accrued Burst* if you want to view the monthly burst usage data over the last year and analyze the data usage in your invoice.
+. Select *Capacity Trend* if you want to view the historical data and analyze the capacity usage trend. Select *Accrued Burst* if you want to view the historical burst usage data, and analyze the billed usage as per your invoice. 
 
 === View capacity trend
 .Learn more
@@ -90,7 +90,7 @@ The *Capacity Trend* tab displays historical data of your Keystone subscriptions
 If you have selected the *Capacity Trend* option, follow these steps:
 
 .Steps
-. Select the time range from the calendar icons in the *From Date* and *To Date* fields. For subscriptions that have expired, the default date range is the subscription start and end dates. For existing subscriptions, the default time range is from the start date of the billing period to the current date. You cannot select a future date. 
+. Select the time range from the calendar icons in the *From Date* and *To Date* fields. Select the date range for the query. The date range can be the beginning of the month or the subscription start date to the current date or the subscription end date. You cannot select a future date.
 +
 [TIP]
 For optimal performance and user experience, limit the date range of your query to three months.
@@ -101,7 +101,7 @@ The bar charts display the service level name and the capacity consumed against 
 
 image:aiq-ks-subtime-2.png[historical data]
 
-The following colors in the bar charts indicate the consumed capacity as defined within the service level:
+The following colors in the bar charts indicate the consumed capacity as defined within the service level. Monthly data across the charts is separated by a vertical line.
 
 ** Green: Within 80%.
 ** Amber: 80% - 100%.
@@ -125,13 +125,19 @@ You can click the toggle button *Show Current Usage* to view the current consump
 
 ====
 
-=== View accrued burst data
+=== View historical burst data
 .Learn more
 [%collapsible]
 ====
 
-Indicator for the accrued burst usage or consumed capacity calculated per month for the current billing period. The accrued burst usage is calculated based on the committed and consumed capacity for a service level: `(consumed - committed)/365.25/12`.
+If you have selected the *Accrued Burst* option, by default, you can see the monthly accrued burst usage data for the last 12 months. You can query by the date range of up to past 30 months.
 
+[TIP]
+Accrued burst usage or consumed capacity is calculated per month for the current billing period. The accrued burst usage is calculated based on the committed and consumed capacity for a service level by this formula: `(consumed - committed)/365.25/12`.
+
+image:accr-burst.png[accrued burst usage charts]
+
+This functionality is available in a preview-only mode. Contact your KSM to learn more about this feature.
 
 ====
 
@@ -242,7 +248,7 @@ This tab might not be available to you for viewing the performance metrics on yo
 +
 Alternately, you can click the image:aiq-ks-time-icon.png[graph icon] icon against an ONTAP volume in the *Volumes* tab to navigate to this tab.
 +
-. Select the date range for the query. The date range can be the beginning of the month or the subscription start date to the current date or the subscription end date.
+. Select the date range for the query. The date range can be the beginning of the month or the subscription start date to the current date or the subscription end date. You cannot select a future date.
 
 The retrieved details are based on the service level objective for each service level. For example, the peak IOPS, maximum throughput, target latency, and other metrics are determined by the individual settings for the service level. For more information about the settings, see https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html[Service levels]. 
 
