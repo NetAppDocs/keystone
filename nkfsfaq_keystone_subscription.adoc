@@ -65,7 +65,7 @@ NetApp Keystone support can be reached through these various channels:
 * Escalations email: mailto:keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
 
 *Can I order new storage service?*
-Yes, new storage service or expansion to storage service can be requested thourgh KSMs. The request is processed by the NetApp Keystone operations team before making it available for use.
+Yes, new storage service or expansion to storage service can be requested through KSMs. The request is processed by the NetApp Keystone operations team before making it available for use.
 
 *Are increases to storage commitments available immediately?*
 Depending the amount of capacity requested, a determination is made whether the capacity is already deployed, or it requires additional equipment to be shipped and installed.
