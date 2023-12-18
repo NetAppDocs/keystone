@@ -48,4 +48,4 @@ Keystone provides the following benefits:
 
 image:nkfsosm_image4.png[benefits]
 
-Keystone services are different from NetApp Keystone STaaS offering. For more information about NetApp Keystone STaaS, seehttps://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS].
+Keystone services are different from NetApp Keystone STaaS offering. For more information about NetApp Keystone STaaS, seehttps://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS^].

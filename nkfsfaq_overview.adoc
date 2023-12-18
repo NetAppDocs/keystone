@@ -18,7 +18,7 @@ The following questions give answers to your frequent queries about NetApp Keyst
 *What is NetApp Keystone?*
 
 NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives.
-For more information, see https://www.netapp.com/services/keystone/[NetApp Keystone].
+For more information, see https://www.netapp.com/services/keystone/[NetApp Keystone^].
 
 *How does NetApp Keystone benefit my customers?*
 
