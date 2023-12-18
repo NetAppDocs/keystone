@@ -17,17 +17,17 @@ The following questions give answers to your frequent queries about NetApp Keyst
 
 *What is NetApp Keystone?*
 
-NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives.
-For more information, see https://www.netapp.com/services/keystone/[NetApp Keystone].
+NetApp Keystone is a portfolio of on-premises capital expenditure (CapEx) alternatives.
+For more information, see https://www.netapp.com/services/keystone/[NetApp Keystone^].
 
 *How does NetApp Keystone benefit my customers?*
 
-NetApp Keystone is the bridge that connects the pillars of our capex and hybrid cloud strategy— delivering agility, financial flexibility, and reduced financial risk that helps customers meet their cash flow and business needs.
+NetApp Keystone is the bridge that connects the pillars of our CapEx and hybrid cloud strategy— delivering agility, financial flexibility, and reduced financial risk that helps customers meet their cash flow and business needs.
 
 The NetApp Keystone brand offers a portfolio of flexible payment solutions that include traditional financing, leasing, and fixed/variable options for cash-conscious customers along with Keystone services.
 
-*Keystone services (OPEX, cloud-like experience):*
-* Prefer 100% OPEX, so assets will not end up on your customer’s balance sheet
+*Keystone services (OpEx, cloud-like experience):*
+* Prefer 100% OpEx, so assets will not end up on your customer’s balance sheet
 * Internal/external Service Providers looking to align costs with usage/revenue
 * Workloads with unpredictable capacity growth
 * Reallocated IT resources from typical storage tasks (migrations, tech refresh, upgrades, and so on)
