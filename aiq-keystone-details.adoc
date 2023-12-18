@@ -75,7 +75,7 @@ The image:icon-info.png[information icon] icon next to each column provides comp
 
 For information about your Keystone storage services and the relevant service levels, see https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html[Service levels].
 
-== View historical usage data
+== Capacity Trend
 The *Capacity Trend* tab displays historical data of your Keystone subscriptions for a specific period. The vertical graphs display the usage details for the selected time range with appropriate indicators for you to compare and generate reports. 
 
 .Steps

@@ -12,10 +12,9 @@ summary: NetApp Keystone is a pay-as-you-grow, storage-as-a-service offering for
 :linkattrs:
 :imagesdir: ./media/
 
-NetApp Keystone is a portfolio of on-premises capital expenditure (capex) alternatives to enable the on-ramp to cloud journey. NetApp Keystone offers a seamless hybrid cloud experience with storage services that span on your premises and in the cloud.
+NetApp Keystone is a portfolio of on-premises capital expenditure (CapEx) alternatives to enable the on-ramp to cloud journey. NetApp Keystone offers a seamless hybrid cloud experience with storage services that span on your premises and in the cloud.
 For more information about NetApp Keystone, see link:https://www.netapp.com/services/subscriptions/keystone/[NetApp Keystone]
 
-Keystone is a storage-as-a-service offering that delivers a cloud-like experience on your on-premises systems with connectivity to the cloud — available on your terms.
 
 == Keystone
 
