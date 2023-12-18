@@ -29,11 +29,11 @@ To view your Keystone subscription and usage details, perform the following step
 The details of the subscriptions, usage charts for each service level, and volume details are displayed in the different tabs on the *Keystone Subscriptions* screen.
 
 [NOTE]
-Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, and is rounded off to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as `0` or `No Usage`. The local time entered for query in these tabs is converted to UTC time. Therefore, you might see minor differences in the data returned based on the queried time.
+Capacity consumption in Keystone subscriptions is displayed in TiBs on the dashboards and reports, and is rounded off to two decimal places. If the usage is less than 0.01 TiB, then the value is shown as `0` or `No Usage`. The data on these screens is displayed in UTC time (server timezone). When you enter a date for query, it is automatically considered to be in UTC time.
 
 For information about usage metrics, see https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html[Service level metrics and definitions]. For information about different capacities used in Keystone, see https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html[Keystone service capacity definitions].
 
-== View subscriptions 
+== Subscriptions 
 You can view a list of your subscriptions in the *Subscriptions* tab.
 
 image:all-subs.png[an image of the all subscriptions tab]
@@ -63,7 +63,7 @@ image:icon-amber.png[icon]: Maximum consumption, that is, the usage is about to 
 image:icon-red.png[icon]: The consumption is within the burst limit. The burst consumption is the consumption that tops the 100% committed capacity of a service level, and is within the agreed-upon burst usage limit, such as 120%
 image:icon-purple.png[icon]: Indicates consumption above the stipulated burst limit
 
-== View usage details for your subscriptions
+== Current Usage
 To know the details of your subscriptions, click the *Current Usage* tab, and select the required subscription number.
 
 image:aiq-ks-dtls.png[Current Usage tab]
@@ -75,7 +75,7 @@ The image:icon-info.png[information icon] icon next to each column provides comp
 
 For information about your Keystone storage services and the relevant service levels, see https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html[Service levels].
 
-== View historical usage data
+== Capacity Trend
 The *Capacity Trend* tab displays historical data of your Keystone subscriptions for a specific period. The vertical graphs display the usage details for the selected time range with appropriate indicators for you to compare and generate reports. 
 
 .Steps
@@ -190,13 +190,13 @@ For information about how MetroCluster protects your data, see https://docs.neta
 
 ====
 
-== View volumes and objects details
+== Volumes & Objects
 On the *Volumes & Objects* tab, you can view the consumption and other details for your volumes in ONTAP. For StorageGRID, this tab displays the nodes and their individual usage in your object storage environment.
 
 [NOTE]
 The name of this tab varies with the nature of deployment at your site. If you have both volumes and object storage, you can see the *Volumes & Objects* tab. If you have only volumes in your storage environment, the name changes to *Volumes*. For only object storage, you can see the *Objects* tab.
 
-=== ONTAP volume details
+=== View ONTAP volume details
 .Learn more 
 [%collapsible]
 ====
@@ -217,11 +217,11 @@ image:aiq-ks-sysdtls.png[Volumes & Objects tab]
 
 ==== 
 
-=== StorageGRID nodes and consumption details
+=== View StorageGRID nodes and consumption
 .Learn more
 [%collapsible]
 ====
-For StorageGRID, this tab displays the logical usage for the nodes in the object storage environment.
+For StorageGRID, this tab displays the logical usage for the nodes for object storage.
 
 .Steps
 
@@ -236,11 +236,12 @@ image:sg-link-2.png[SG pop-up]
 
 ====
 
-== View ONTAP volume performance
+== Performance
 
-You can click the *Performance* tab for viewing the performance details for the ONTAP volumes managed by your Keystone subscriptions.
+The *Performance* tab enables you to view the performance metrics of the ONTAP volumes managed by your Keystone subscriptions.
 
-This tab might not be available to you for viewing the performance metrics on your ONTAP volumes. Contact support for viewing this tab.
+[TIP]
+This tab is optionally available to you. Contact support for viewing this tab.
 
 .Steps
 . Click the *Performance* tab.
