@@ -81,7 +81,7 @@ The *Capacity Trend* tab displays historical data of your Keystone subscriptions
 .Steps
 . Click the *Capacity Trend* tab.
 . Select the required subscription for which you want to view the details. The first subscription in your account name is selected by default.
-. Select *Capacity Trend* if you want to view the historical data and analyze the capacity usage trend. Select *Accrued Burst* if you want to view the historical burst usage data, and analyze the billed usage as per your invoice. 
+. Select *Capacity Trend* if you want to view the historical data and analyze the capacity usage trend. Select *Invoiced Accrued Burst* if you want to view the historical burst usage data, for which invoices have been generated. You can use this data to analyze the billed usage as per your invoice.
 
 === View capacity trend
 .Learn more
@@ -126,15 +126,15 @@ You can click the toggle button *Show Current Usage* to view the consumption,  b
 
 ====
 
-=== View historical burst data
+=== View invoiced accrued burst
 .Learn more
 [%collapsible]
 ====
 
-If you have selected the *Accrued Burst* option, by default, you can see the monthly accrued burst usage data for the last 12 months. You can query by the date range of up to past 30 months.
+If you have selected the *Invoiced Accrued Burst* option, by default, you can see the monthly accrued burst usage data for the last 12 months that has been billed. You can query by the date range of up to past 30 months. Bar charts are displayed for invoiced data, and if the usage has not yet been billed, you see _Pending_ for that month.
 
 [TIP]
-Accrued burst usage or consumed capacity is calculated per month for the current billing period. The accrued burst usage is calculated based on the committed and consumed capacity for a service level by this formula: `(consumed - committed)/365.25/12`.
+The invoiced accrued burst usage is calculated per billing period, based on the committed and consumed capacity for a service level.
 
 image:accr-burst.png[accrued burst usage charts]
 
